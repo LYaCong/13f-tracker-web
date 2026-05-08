@@ -1,0 +1,151 @@
+import { createContext } from 'react'
+
+export type Language = 'en' | 'zh'
+
+export const enDict = {
+  appTitle: 'Tracker Pro',
+  searchPlaceholder: 'Filter by institution, manager, style, or ticker',
+  institutionsAvailable: '12 institutions',
+  dataDisclaimer: 'Data sourced from SEC EDGAR. For informational purposes only.',
+  loadingHistoricalFilings: 'Loading SEC filing snapshot...',
+  snapshotOnly: 'Only one bundled filing snapshot is available in this offline dataset.',
+  latestFilingUnavailable: 'Unavailable in current snapshot',
+  heatLabel: 'Heat',
+  trackedInstitutions: 'Tracked Institutions',
+  fundsMapped: 'funds mapped',
+  holdings: 'Holdings',
+  clickAnyBlock: 'Click any block below to view holding details',
+  popularTreemapTitle: 'Popular Holdings Treemap',
+  popularTreemapSub: 'Area sized by coverage, average weight, and aggregated value.',
+  focused: 'Focused',
+  avg: 'avg',
+  institutions: 'institutions',
+  clear: 'Clear',
+  backToDashboard: 'Back to Dashboard',
+  currentQuarter: 'Current Quarter',
+  quarterEndNetAssets: 'Quarter-End Net Assets',
+  holdingsCount: 'Holdings Count',
+  latestFilingDate: 'Latest Filing Date',
+  portfolioEvolution: 'Portfolio Evolution (Net Assets)',
+  portfolioEvolutionSub: 'Historical reported 13F values available in the bundled snapshot',
+  netAssets: 'Net Assets',
+  oneYChange: '1Y Change',
+  maxDrawdown: 'Max Drawdown',
+  volatility: 'Volatility',
+  sinceTrough: 'Since Trough',
+  low: 'Low',
+  med: 'Medium',
+  high: 'High',
+  institutionStyleVsSp500: 'Institution Style vs S&P 500',
+  sectorAllocation: 'Sector Allocation Comparison',
+  dominantStyle: 'Dominant Style',
+  top2Concentration: 'Top-2 Concentration',
+  combinedStyleWeight: 'Combined style weight',
+  styleBreadth: 'Style Breadth',
+  segmentsAbove10: 'Segments above 10%',
+  segment: 'Segment',
+  weight: 'Weight',
+  vsSp500: 'vs S&P 500',
+  quarterlyHoldingsOverview: 'Quarterly Holdings Overview',
+  totalPositions: 'Total Positions',
+  security: 'Security',
+  mktValueB: 'Mkt Value (B)',
+  qoqDelta: 'QoQ Delta',
+  expandAll: 'Expand All',
+  qoqPositionChanges: 'Quarter-over-Quarter Position Changes',
+  topAdds: 'Top Adds',
+  byBuyIntensity: '(by Buy Intensity)',
+  delta: 'Delta ($)',
+  shareChg: 'Share Chg',
+  postWgt: 'Post Wgt',
+  topTrims: 'Top Trims',
+  bySellIntensity: '(by Sell Intensity)',
+  new: 'New',
+  add: 'Add',
+  trim: 'Trim',
+  exit: 'Exit',
+}
+
+export type TranslationKey = keyof typeof enDict
+export type TranslationDict = Record<TranslationKey, string>
+
+export const zhDict: TranslationDict = {
+  appTitle: '13F Tracker',
+  searchPlaceholder: '按机构、经理、风格或股票代码筛选',
+  institutionsAvailable: '12 家机构',
+  dataDisclaimer: '数据来自 SEC EDGAR，仅供信息参考。',
+  loadingHistoricalFilings: '正在加载 SEC 披露快照...',
+  snapshotOnly: '当前离线数据集只打包了一个真实披露快照。',
+  latestFilingUnavailable: '当前快照未提供',
+  heatLabel: '热度',
+  trackedInstitutions: '跟踪机构',
+  fundsMapped: '家基金已映射',
+  holdings: '持仓',
+  clickAnyBlock: '点击下方任意区块查看持仓详情',
+  popularTreemapTitle: '热门持仓热力图',
+  popularTreemapSub: '面积按覆盖度、平均权重和聚合市值计算。',
+  focused: '聚焦',
+  avg: '平均',
+  institutions: '家机构',
+  clear: '清除',
+  backToDashboard: '返回总览',
+  currentQuarter: '当前季度',
+  quarterEndNetAssets: '季末净资产',
+  holdingsCount: '持仓数量',
+  latestFilingDate: '最新申报日期',
+  portfolioEvolution: '资产规模演变',
+  portfolioEvolutionSub: '展示当前打包快照内可用的历史 13F 资产规模',
+  netAssets: '净资产',
+  oneYChange: '近 1 年变化',
+  maxDrawdown: '最大回撤',
+  volatility: '波动率',
+  sinceTrough: '自低点反弹',
+  low: '低',
+  med: '中',
+  high: '高',
+  institutionStyleVsSp500: '机构风格 vs S&P 500',
+  sectorAllocation: '板块配置对比',
+  dominantStyle: '主导风格',
+  top2Concentration: '前二集中度',
+  combinedStyleWeight: '合计权重',
+  styleBreadth: '风格广度',
+  segmentsAbove10: '超过 10% 的板块数',
+  segment: '板块',
+  weight: '权重',
+  vsSp500: '相对 S&P 500',
+  quarterlyHoldingsOverview: '当季持仓概览',
+  totalPositions: '个持仓',
+  security: '标的',
+  mktValueB: '市值（十亿美元）',
+  qoqDelta: '环比变化',
+  expandAll: '展开全部',
+  qoqPositionChanges: '季度持仓变化',
+  topAdds: '增持榜',
+  byBuyIntensity: '（按买入力度）',
+  delta: '变化额（美元）',
+  shareChg: '股数变化',
+  postWgt: '最新权重',
+  topTrims: '减持榜',
+  bySellIntensity: '（按卖出力度）',
+  new: '新建仓',
+  add: '增持',
+  trim: '减持',
+  exit: '清仓',
+}
+
+export interface LanguageContextValue {
+  language: Language
+  toggleLanguage: () => void
+  lang: TranslationDict
+}
+
+export const LanguageContext = createContext<LanguageContextValue | null>(null)
+
+export function getInitialLanguage(): Language {
+  if (typeof window === 'undefined') {
+    return 'en'
+  }
+
+  const savedLanguage = window.localStorage.getItem('app-language')
+  return savedLanguage === 'zh' ? 'zh' : 'en'
+}

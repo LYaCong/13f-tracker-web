@@ -1,0 +1,243 @@
+{
+  "institution": {
+    "id": "tci",
+    "name": "TCI Fund Management Ltd",
+    "cik": "0001649339",
+    "manager": "Chris Hohn",
+    "style": "Focused",
+    "imageUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=200&h=200&fit=crop",
+    "aum": "1.38B",
+    "quarter": "2025 Q3",
+    "holdingsCount": 8
+  },
+  "radarData": [
+    {
+      "subject": "Financials",
+      "A": 0,
+      "B": 14,
+      "fullMark": 100
+    },
+    {
+      "subject": "Technology",
+      "A": 13.5,
+      "B": 31,
+      "fullMark": 100
+    },
+    {
+      "subject": "Consumer",
+      "A": 0,
+      "B": 16,
+      "fullMark": 100
+    },
+    {
+      "subject": "Energy & Utilities",
+      "A": 0,
+      "B": 7,
+      "fullMark": 100
+    },
+    {
+      "subject": "Healthcare",
+      "A": 12.8,
+      "B": 11,
+      "fullMark": 100
+    },
+    {
+      "subject": "Other",
+      "A": 73.7,
+      "B": 12,
+      "fullMark": 100
+    },
+    {
+      "subject": "Industrials",
+      "A": 0,
+      "B": 9,
+      "fullMark": 100
+    }
+  ],
+  "assetTrend": [
+    {
+      "year": "2022",
+      "value": "46.5"
+    },
+    {
+      "year": "2023",
+      "value": "94.6"
+    },
+    {
+      "year": "2024",
+      "value": "77.4"
+    },
+    {
+      "year": "2025",
+      "value": "1.4"
+    }
+  ],
+  "holdings": [
+    {
+      "cusip": "69608A108",
+      "security": "PALANTIR TECHNOLOGIES INC (PAL",
+      "weight": 66.03687160073919,
+      "rawMktValue": 912100000,
+      "mktValue": "0.91B",
+      "qOqDelta": "+0.91B",
+      "color": "#3b82f6"
+    },
+    {
+      "cusip": "67066G104",
+      "security": "NVIDIA CORPORATION (NVDA)",
+      "weight": 13.508562112998485,
+      "rawMktValue": 186580000,
+      "mktValue": "0.19B",
+      "qOqDelta": "+0.19B",
+      "color": "#1d4ed8"
+    },
+    {
+      "cusip": "717081103",
+      "security": "PFIZER INC (PFIZE)",
+      "weight": 11.068651387261271,
+      "rawMktValue": 152880000,
+      "mktValue": "0.15B",
+      "qOqDelta": "+0.15B",
+      "color": "#2dd4bf"
+    },
+    {
+      "cusip": "406216101",
+      "security": "HALLIBURTON CO (HALLI)",
+      "weight": 4.452656072191053,
+      "rawMktValue": 61500000,
+      "mktValue": "0.06B",
+      "qOqDelta": "+0.06B",
+      "color": "#a855f7"
+    },
+    {
+      "cusip": "60855R100",
+      "security": "MOLINA HEALTHCARE INC (MOLIN)",
+      "weight": 1.7318298088912192,
+      "rawMktValue": 23920000,
+      "mktValue": "0.02B",
+      "qOqDelta": "+0.02B",
+      "color": "#22c55e"
+    },
+    {
+      "cusip": "550021109",
+      "security": "LULULEMON ATHLETICA INC (LULUL",
+      "weight": 1.288229422642202,
+      "rawMktValue": 17793000,
+      "mktValue": "0.02B",
+      "qOqDelta": "-0.09B",
+      "color": "#ec4899"
+    },
+    {
+      "cusip": "78442P106",
+      "security": "SLM CORP (SLM)",
+      "weight": 0.9620557131445063,
+      "rawMktValue": 13287895,
+      "mktValue": "0.01B",
+      "qOqDelta": "+0.01B",
+      "color": "#10b981"
+    },
+    {
+      "cusip": "116794207",
+      "security": "BRUKER CORP (BRUKE)",
+      "weight": 0.9511438821320802,
+      "rawMktValue": 13137181,
+      "mktValue": "0.01B",
+      "qOqDelta": "+0.01B",
+      "color": "#f97316"
+    }
+  ],
+  "topAdds": [
+    {
+      "ticker": "PALAN",
+      "security": "PALANTIR TECHNOLOGIE",
+      "deltaValue": "+0.91B",
+      "rawDelta": 912100000,
+      "shareChange": "+100.0%",
+      "newWeight": "66.04%",
+      "type": "New"
+    },
+    {
+      "ticker": "NVDA",
+      "security": "NVIDIA CORPORATION",
+      "deltaValue": "+0.19B",
+      "rawDelta": 186580000,
+      "shareChange": "+100.0%",
+      "newWeight": "13.51%",
+      "type": "New"
+    },
+    {
+      "ticker": "PFIZE",
+      "security": "PFIZER INC",
+      "deltaValue": "+0.15B",
+      "rawDelta": 152880000,
+      "shareChange": "+100.0%",
+      "newWeight": "11.07%",
+      "type": "New"
+    },
+    {
+      "ticker": "HALLI",
+      "security": "HALLIBURTON CO",
+      "deltaValue": "+0.06B",
+      "rawDelta": 61500000,
+      "shareChange": "+100.0%",
+      "newWeight": "4.45%",
+      "type": "New"
+    },
+    {
+      "ticker": "MOLIN",
+      "security": "MOLINA HEALTHCARE IN",
+      "deltaValue": "+0.02B",
+      "rawDelta": 23920000,
+      "shareChange": "+100.0%",
+      "newWeight": "1.73%",
+      "type": "New"
+    }
+  ],
+  "topTrims": [
+    {
+      "ticker": "UNITE",
+      "security": "UNITEDHEALTH GROUP I",
+      "deltaValue": "-0.12B",
+      "rawDelta": 115428900,
+      "shareChange": "-100.0%",
+      "newWeight": "0.00%",
+      "type": "Exit"
+    },
+    {
+      "ticker": "REGEN",
+      "security": "REGENERON PHARMACEUT",
+      "deltaValue": "-0.11B",
+      "rawDelta": 112875000,
+      "shareChange": "-100.0%",
+      "newWeight": "0.00%",
+      "type": "Exit"
+    },
+    {
+      "ticker": "LULUL",
+      "security": "LULULEMON ATHLETICA ",
+      "deltaValue": "-0.09B",
+      "rawDelta": 89118000,
+      "shareChange": "-77.8%",
+      "newWeight": "1.29%",
+      "type": "Trim"
+    },
+    {
+      "ticker": "META",
+      "security": "META PLATFORMS INC",
+      "deltaValue": "-0.07B",
+      "rawDelta": 73809000,
+      "shareChange": "-100.0%",
+      "newWeight": "0.00%",
+      "type": "Exit"
+    },
+    {
+      "ticker": "LAUDE",
+      "security": "LAUDER ESTEE COS INC",
+      "deltaValue": "-0.05B",
+      "rawDelta": 52520000,
+      "shareChange": "-100.0%",
+      "newWeight": "0.00%",
+      "type": "Exit"
+    }
+  ]
+}

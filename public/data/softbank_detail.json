@@ -1,0 +1,306 @@
+{
+  "institution": {
+    "id": "softbank",
+    "name": "SoftBank Group Corp",
+    "cik": "0001065521",
+    "manager": "Masayoshi Son",
+    "style": "Aggressive",
+    "imageUrl": "https://images.unsplash.com/photo-1552058544-f2b08422138a?q=80&w=200&h=200&fit=crop",
+    "aum": "15.47B",
+    "quarter": "2025 Q4",
+    "holdingsCount": 32
+  },
+  "radarData": [
+    {
+      "subject": "Financials",
+      "A": 0,
+      "B": 14,
+      "fullMark": 100
+    },
+    {
+      "subject": "Technology",
+      "A": 0,
+      "B": 31,
+      "fullMark": 100
+    },
+    {
+      "subject": "Consumer",
+      "A": 0,
+      "B": 16,
+      "fullMark": 100
+    },
+    {
+      "subject": "Energy & Utilities",
+      "A": 0,
+      "B": 7,
+      "fullMark": 100
+    },
+    {
+      "subject": "Healthcare",
+      "A": 0.4,
+      "B": 11,
+      "fullMark": 100
+    },
+    {
+      "subject": "Other",
+      "A": 99.6,
+      "B": 12,
+      "fullMark": 100
+    },
+    {
+      "subject": "Industrials",
+      "A": 0,
+      "B": 9,
+      "fullMark": 100
+    }
+  ],
+  "assetTrend": [
+    {
+      "year": "2022",
+      "value": "6.7"
+    },
+    {
+      "year": "2023",
+      "value": "18.5"
+    },
+    {
+      "year": "2024",
+      "value": "23.4"
+    },
+    {
+      "year": "2025",
+      "value": "15.5"
+    }
+  ],
+  "holdings": [
+    {
+      "cusip": "872590104",
+      "security": "T-MOBILE US (T-MOB)",
+      "weight": 37.415273318137565,
+      "rawMktValue": 5787390436,
+      "mktValue": "5.79B",
+      "qOqDelta": "-5.03B",
+      "color": "#3b82f6"
+    },
+    {
+      "cusip": "458140100",
+      "security": "INTEL CORP (INTEL)",
+      "weight": 20.744103325337207,
+      "rawMktValue": 3208695662,
+      "mktValue": "3.21B",
+      "qOqDelta": "+0.29B",
+      "color": "#1d4ed8"
+    },
+    {
+      "cusip": "87151X101",
+      "security": "SYMBOTIC INC (SYMBO)",
+      "weight": 15.319418919687374,
+      "rawMktValue": 2369606064,
+      "mktValue": "2.37B",
+      "qOqDelta": "+0.22B",
+      "color": "#2dd4bf"
+    },
+    {
+      "cusip": "90138L109",
+      "security": "TWENTY ONE CAP INC (TWENT)",
+      "weight": 5.046390334950583,
+      "rawMktValue": 780575112,
+      "mktValue": "0.78B",
+      "qOqDelta": "+0.78B",
+      "color": "#a855f7"
+    },
+    {
+      "cusip": "874039100",
+      "security": "TAIWAN SEMICONDUCTOR MFG LTD (",
+      "weight": 3.8998065113725318,
+      "rawMktValue": 603221650,
+      "mktValue": "0.60B",
+      "qOqDelta": "+0.05B",
+      "color": "#22c55e"
+    },
+    {
+      "cusip": "G4R20B107",
+      "security": "INTER & CO I (INTER)",
+      "weight": 3.3171491547201235,
+      "rawMktValue": 513096273,
+      "mktValue": "0.51B",
+      "qOqDelta": "-0.08B",
+      "color": "#ec4899"
+    },
+    {
+      "cusip": "G5279N105",
+      "security": "Klarna Group PLC (KLARN)",
+      "weight": 2.878334541376587,
+      "rawMktValue": 445220476,
+      "mktValue": "0.45B",
+      "qOqDelta": "-0.12B",
+      "color": "#10b981"
+    },
+    {
+      "cusip": "94845U105",
+      "security": "WEBTOON ENTMT INC (WEBTO)",
+      "weight": 2.6478245407618983,
+      "rawMktValue": 409565214,
+      "mktValue": "0.41B",
+      "qOqDelta": "-0.20B",
+      "color": "#f97316"
+    },
+    {
+      "cusip": "88023B103",
+      "security": "TEMPUS AI INC (TEMPU)",
+      "weight": 2.0635469799784962,
+      "rawMktValue": 319189224,
+      "mktValue": "0.32B",
+      "qOqDelta": "-0.12B",
+      "color": "#1e3a8a"
+    },
+    {
+      "cusip": "G6683N103",
+      "security": "NU HLDGS L (NU)",
+      "weight": 1.9309363236431534,
+      "rawMktValue": 298677022,
+      "mktValue": "0.30B",
+      "qOqDelta": "+0.01B",
+      "color": "#312e81"
+    },
+    {
+      "cusip": "G9470A102",
+      "security": "VTEX (VTEX)",
+      "weight": 0.9342781736620297,
+      "rawMktValue": 144514047,
+      "mktValue": "0.14B",
+      "qOqDelta": "-0.02B",
+      "color": "#3b82f6"
+    },
+    {
+      "cusip": "16935C109",
+      "security": "CHIME FINL INC (CHIME)",
+      "weight": 0.8245728992363144,
+      "rawMktValue": 127544847,
+      "mktValue": "0.13B",
+      "qOqDelta": "+0.03B",
+      "color": "#1d4ed8"
+    },
+    {
+      "cusip": "82846H405",
+      "security": "QXO INC (QXO)",
+      "weight": 0.6822163672056353,
+      "rawMktValue": 105525154,
+      "mktValue": "0.11B",
+      "qOqDelta": "+0.00B",
+      "color": "#2dd4bf"
+    },
+    {
+      "cusip": "52567D107",
+      "security": "LEMONADE I (LEMON)",
+      "weight": 0.42589120116530726,
+      "rawMktValue": 65876805,
+      "mktValue": "0.07B",
+      "qOqDelta": "-0.12B",
+      "color": "#a855f7"
+    },
+    {
+      "cusip": "75629V104",
+      "security": "RECURSION PHARMACEUTICALS IN (",
+      "weight": 0.360572698098341,
+      "rawMktValue": 55773346,
+      "mktValue": "0.06B",
+      "qOqDelta": "-0.02B",
+      "color": "#22c55e"
+    }
+  ],
+  "topAdds": [
+    {
+      "ticker": "TWENT",
+      "security": "TWENTY ONE CAP INC",
+      "deltaValue": "+0.78B",
+      "rawDelta": 780575112,
+      "shareChange": "+100.0%",
+      "newWeight": "5.05%",
+      "type": "New"
+    },
+    {
+      "ticker": "ETORO",
+      "security": "eToro Group Ltd",
+      "deltaValue": "+0.01B",
+      "rawDelta": 11537962,
+      "shareChange": "+100.0%",
+      "newWeight": "0.18%",
+      "type": "Add"
+    },
+    {
+      "ticker": "CIRCL",
+      "security": "Circle Internet Grou",
+      "deltaValue": "+0.01B",
+      "rawDelta": 7585759,
+      "shareChange": "+100.0%",
+      "newWeight": "0.05%",
+      "type": "New"
+    },
+    {
+      "ticker": "UBER",
+      "security": "Uber Technologies, I",
+      "deltaValue": "+0.00B",
+      "rawDelta": 1511390,
+      "shareChange": "+100.0%",
+      "newWeight": "0.01%",
+      "type": "New"
+    },
+    {
+      "ticker": "ABCEL",
+      "security": "AbCellera Biologics ",
+      "deltaValue": "+0.00B",
+      "rawDelta": 1180451,
+      "shareChange": "+100.0%",
+      "newWeight": "0.01%",
+      "type": "New"
+    }
+  ],
+  "topTrims": [
+    {
+      "ticker": "NVDA",
+      "security": "NVIDIA CORPORATION",
+      "deltaValue": "-5.99B",
+      "rawDelta": 5991168880,
+      "shareChange": "-100.0%",
+      "newWeight": "0.00%",
+      "type": "Exit"
+    },
+    {
+      "ticker": "T-MOB",
+      "security": "T-MOBILE US",
+      "deltaValue": "-5.03B",
+      "rawDelta": 5026536910,
+      "shareChange": "-36.9%",
+      "newWeight": "37.42%",
+      "type": "Trim"
+    },
+    {
+      "ticker": "METSE",
+      "security": "Metsera Inc",
+      "deltaValue": "-0.19B",
+      "rawDelta": 191249980,
+      "shareChange": "-100.0%",
+      "newWeight": "0.00%",
+      "type": "Exit"
+    },
+    {
+      "ticker": "LEMON",
+      "security": "LEMONADE I",
+      "deltaValue": "-0.12B",
+      "rawDelta": 124900047,
+      "shareChange": "-74.0%",
+      "newWeight": "0.43%",
+      "type": "Trim"
+    },
+    {
+      "ticker": "INTER",
+      "security": "INTER & CO I",
+      "deltaValue": "-0.08B",
+      "rawDelta": 82299977,
+      "shareChange": "-6.2%",
+      "newWeight": "3.32%",
+      "type": "Trim"
+    }
+  ]
+}

@@ -1,0 +1,306 @@
+{
+  "institution": {
+    "id": "soros",
+    "name": "Soros Fund Management",
+    "cik": "0001029160",
+    "manager": "George Soros",
+    "style": "Macro",
+    "imageUrl": "https://images.unsplash.com/photo-1558222218-b7b54eede3f3?q=80&w=200&h=200&fit=crop",
+    "aum": "8.63B",
+    "quarter": "2025 Q4",
+    "holdingsCount": 237
+  },
+  "radarData": [
+    {
+      "subject": "Financials",
+      "A": 0.5,
+      "B": 14,
+      "fullMark": 100
+    },
+    {
+      "subject": "Technology",
+      "A": 15.9,
+      "B": 31,
+      "fullMark": 100
+    },
+    {
+      "subject": "Consumer",
+      "A": 5.4,
+      "B": 16,
+      "fullMark": 100
+    },
+    {
+      "subject": "Energy & Utilities",
+      "A": 5.9,
+      "B": 7,
+      "fullMark": 100
+    },
+    {
+      "subject": "Healthcare",
+      "A": 0.8,
+      "B": 11,
+      "fullMark": 100
+    },
+    {
+      "subject": "Other",
+      "A": 71.4,
+      "B": 12,
+      "fullMark": 100
+    },
+    {
+      "subject": "Industrials",
+      "A": 0.2,
+      "B": 9,
+      "fullMark": 100
+    }
+  ],
+  "assetTrend": [
+    {
+      "year": "2022",
+      "value": "7.3"
+    },
+    {
+      "year": "2023",
+      "value": "7.6"
+    },
+    {
+      "year": "2024",
+      "value": "6.6"
+    },
+    {
+      "year": "2025",
+      "value": "8.6"
+    }
+  ],
+  "holdings": [
+    {
+      "cusip": "023135106",
+      "security": "AMAZON COM INC (AMZN)",
+      "weight": 7.1125875686172515,
+      "rawMktValue": 613882409,
+      "mktValue": "0.61B",
+      "qOqDelta": "+0.09B",
+      "color": "#3b82f6"
+    },
+    {
+      "cusip": "78468R556",
+      "security": "SPDR SERIES TRUST (SPDR)",
+      "weight": 4.813893898066201,
+      "rawMktValue": 415483782,
+      "mktValue": "0.42B",
+      "qOqDelta": "+0.42B",
+      "color": "#1d4ed8"
+    },
+    {
+      "cusip": "84921RAB6",
+      "security": "SPOTIFY USA INC (SPOTI)",
+      "weight": 2.5632055560870883,
+      "rawMktValue": 221228461,
+      "mktValue": "0.22B",
+      "qOqDelta": "-0.03B",
+      "color": "#2dd4bf"
+    },
+    {
+      "cusip": "02079K305",
+      "security": "ALPHABET INC (GOOGL)",
+      "weight": 2.3175716375843116,
+      "rawMktValue": 200027971,
+      "mktValue": "0.20B",
+      "qOqDelta": "+0.04B",
+      "color": "#a855f7"
+    },
+    {
+      "cusip": "78462F103",
+      "security": "SPDR S&P 500 ETF TR (SPDR)",
+      "weight": 2.3043174797554746,
+      "rawMktValue": 198884014,
+      "mktValue": "0.20B",
+      "qOqDelta": "+0.01B",
+      "color": "#22c55e"
+    },
+    {
+      "cusip": "76954AAB9",
+      "security": "RIVIAN AUTOMOTIVE INC (RIVIA)",
+      "weight": 2.0893451839863766,
+      "rawMktValue": 180329907,
+      "mktValue": "0.18B",
+      "qOqDelta": "+0.03B",
+      "color": "#ec4899"
+    },
+    {
+      "cusip": "37940XAU6",
+      "security": "GLOBAL PMTS INC (GLOBA)",
+      "weight": 2.035545149202544,
+      "rawMktValue": 175686464,
+      "mktValue": "0.18B",
+      "qOqDelta": "-0.04B",
+      "color": "#10b981"
+    },
+    {
+      "cusip": "472145AF8",
+      "security": "JAZZ INVESTMENTS I LTD (JAZZ)",
+      "weight": 2.0064617921950125,
+      "rawMktValue": 173176300,
+      "mktValue": "0.17B",
+      "qOqDelta": "+0.17B",
+      "color": "#f97316"
+    },
+    {
+      "cusip": "81369Y506",
+      "security": "SELECT SECTOR SPDR TR (SELEC)",
+      "weight": 1.8854917140068022,
+      "rawMktValue": 162735458,
+      "mktValue": "0.16B",
+      "qOqDelta": "+0.16B",
+      "color": "#1e3a8a"
+    },
+    {
+      "cusip": "20717MAB9",
+      "security": "CONFLUENT INC (CONFL)",
+      "weight": 1.8631585570696139,
+      "rawMktValue": 160807899,
+      "mktValue": "0.16B",
+      "qOqDelta": "+0.07B",
+      "color": "#312e81"
+    },
+    {
+      "cusip": "79466L302",
+      "security": "SALESFORCE INC (SALES)",
+      "weight": 1.593727073862309,
+      "rawMktValue": 137553458,
+      "mktValue": "0.14B",
+      "qOqDelta": "+0.03B",
+      "color": "#3b82f6"
+    },
+    {
+      "cusip": "26210CAC8",
+      "security": "DROPBOX INC (DROPB)",
+      "weight": 1.5936910290765298,
+      "rawMktValue": 137550347,
+      "mktValue": "0.14B",
+      "qOqDelta": "+0.02B",
+      "color": "#1d4ed8"
+    },
+    {
+      "cusip": "69331CAL2",
+      "security": "PG&E CORP (PG&E)",
+      "weight": 1.5930466952202946,
+      "rawMktValue": 137494735,
+      "mktValue": "0.14B",
+      "qOqDelta": "-0.02B",
+      "color": "#2dd4bf"
+    },
+    {
+      "cusip": "87256C101",
+      "security": "TKO GROUP HOLDINGS INC (TKO)",
+      "weight": 1.5390792972315188,
+      "rawMktValue": 132836847,
+      "mktValue": "0.13B",
+      "qOqDelta": "+0.01B",
+      "color": "#a855f7"
+    },
+    {
+      "cusip": "594918104",
+      "security": "MICROSOFT CORP (MSFT)",
+      "weight": 1.4739071846724479,
+      "rawMktValue": 127211888,
+      "mktValue": "0.13B",
+      "qOqDelta": "+0.07B",
+      "color": "#22c55e"
+    }
+  ],
+  "topAdds": [
+    {
+      "ticker": "SPDR",
+      "security": "SPDR SERIES TRUST",
+      "deltaValue": "+0.42B",
+      "rawDelta": 415483782,
+      "shareChange": "+100.0%",
+      "newWeight": "4.81%",
+      "type": "New"
+    },
+    {
+      "ticker": "JAZZ",
+      "security": "JAZZ INVESTMENTS I L",
+      "deltaValue": "+0.17B",
+      "rawDelta": 173176300,
+      "shareChange": "+100.0%",
+      "newWeight": "2.01%",
+      "type": "New"
+    },
+    {
+      "ticker": "SELEC",
+      "security": "SELECT SECTOR SPDR T",
+      "deltaValue": "+0.16B",
+      "rawDelta": 162735458,
+      "shareChange": "+100.0%",
+      "newWeight": "1.89%",
+      "type": "New"
+    },
+    {
+      "ticker": "COREW",
+      "security": "COREWEAVE INC",
+      "deltaValue": "+0.12B",
+      "rawDelta": 123176361,
+      "shareChange": "+100.0%",
+      "newWeight": "1.43%",
+      "type": "New"
+    },
+    {
+      "ticker": "DAYFO",
+      "security": "DAYFORCE INC",
+      "deltaValue": "+0.10B",
+      "rawDelta": 102994524,
+      "shareChange": "+100.0%",
+      "newWeight": "1.19%",
+      "type": "New"
+    }
+  ],
+  "topTrims": [
+    {
+      "ticker": "SMURF",
+      "security": "SMURFIT WESTROCK PLC",
+      "deltaValue": "-0.24B",
+      "rawDelta": 236902558,
+      "shareChange": "-69.0%",
+      "newWeight": "1.08%",
+      "type": "Trim"
+    },
+    {
+      "ticker": "FORD",
+      "security": "FORD MTR CO",
+      "deltaValue": "-0.14B",
+      "rawDelta": 137714780,
+      "shareChange": "-100.0%",
+      "newWeight": "0.00%",
+      "type": "Exit"
+    },
+    {
+      "ticker": "INVES",
+      "security": "INVESCO EXCHANGE TRA",
+      "deltaValue": "-0.14B",
+      "rawDelta": 137442891,
+      "shareChange": "-87.5%",
+      "newWeight": "0.23%",
+      "type": "Trim"
+    },
+    {
+      "ticker": "ISHAR",
+      "security": "ISHARES TR",
+      "deltaValue": "-0.12B",
+      "rawDelta": 120232250,
+      "shareChange": "-89.9%",
+      "newWeight": "0.14%",
+      "type": "Trim"
+    },
+    {
+      "ticker": "CENTE",
+      "security": "CENTERPOINT ENERGY I",
+      "deltaValue": "-0.11B",
+      "rawDelta": 105596732,
+      "shareChange": "-95.0%",
+      "newWeight": "0.06%",
+      "type": "Trim"
+    }
+  ]
+}
