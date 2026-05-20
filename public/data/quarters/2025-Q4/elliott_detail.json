@@ -1,0 +1,310 @@
+{
+  "institution": {
+    "id": "elliott",
+    "name": "Elliott Investment Management, L.P.",
+    "cik": "0001791786",
+    "manager": "Paul Singer",
+    "style": "Event-Driven",
+    "imageUrl": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=200&h=200&fit=crop",
+    "aum": "22.59B",
+    "quarter": "2025 Q4",
+    "holdingsCount": 32,
+    "displayedHoldingsCount": 15,
+    "reportDate": "2025-12-31",
+    "latestFilingDate": "2026-02-18"
+  },
+  "radarData": [
+    {
+      "subject": "Financials",
+      "A": 0,
+      "B": 14,
+      "fullMark": 100
+    },
+    {
+      "subject": "Technology",
+      "A": 2.5,
+      "B": 31,
+      "fullMark": 100
+    },
+    {
+      "subject": "Consumer",
+      "A": 9,
+      "B": 16,
+      "fullMark": 100
+    },
+    {
+      "subject": "Energy & Utilities",
+      "A": 22.1,
+      "B": 7,
+      "fullMark": 100
+    },
+    {
+      "subject": "Healthcare",
+      "A": 3.6,
+      "B": 11,
+      "fullMark": 100
+    },
+    {
+      "subject": "Other",
+      "A": 62.8,
+      "B": 12,
+      "fullMark": 100
+    },
+    {
+      "subject": "Industrials",
+      "A": 0,
+      "B": 9,
+      "fullMark": 100
+    }
+  ],
+  "assetTrend": [
+    {
+      "year": "2022",
+      "value": "12.3"
+    },
+    {
+      "year": "2023",
+      "value": "18.7"
+    },
+    {
+      "year": "2024",
+      "value": "16.7"
+    },
+    {
+      "year": "2025",
+      "value": "22.6"
+    }
+  ],
+  "holdings": [
+    {
+      "cusip": "89679M104",
+      "security": "TRIPLE FLAG PRECIOUS METAL (TR",
+      "weight": 19.674748528014028,
+      "rawMktValue": 4445358451,
+      "mktValue": "4.45B",
+      "qOqDelta": "+0.53B",
+      "color": "#3b82f6"
+    },
+    {
+      "cusip": "718546104",
+      "security": "PHILLIPS 66 (PHILL)",
+      "weight": 10.994615666395326,
+      "rawMktValue": 2484149040,
+      "mktValue": "2.48B",
+      "qOqDelta": "-0.13B",
+      "color": "#1d4ed8"
+    },
+    {
+      "cusip": "867224107",
+      "security": "SUNCOR ENERGY INC NEW (SUNCO)",
+      "weight": 10.341031389184389,
+      "rawMktValue": 2336476688,
+      "mktValue": "2.34B",
+      "qOqDelta": "+0.13B",
+      "color": "#2dd4bf"
+    },
+    {
+      "cusip": "844741108",
+      "security": "SOUTHWEST AIRLS CO (SOUTH)",
+      "weight": 9.352567710435682,
+      "rawMktValue": 2113140905,
+      "mktValue": "2.11B",
+      "qOqDelta": "+0.48B",
+      "color": "#a855f7"
+    },
+    {
+      "cusip": "81369Y308",
+      "security": "SELECT SECTOR SPDR TR (SELEC)",
+      "weight": 6.876091017192663,
+      "rawMktValue": 1553600000,
+      "mktValue": "1.55B",
+      "qOqDelta": "+0.38B",
+      "color": "#22c55e"
+    },
+    {
+      "cusip": "46090E103",
+      "security": "INVESCO QQQ TR (INVES)",
+      "weight": 6.797199203095432,
+      "rawMktValue": 1535775000,
+      "mktValue": "1.54B",
+      "qOqDelta": "-0.42B",
+      "color": "#ec4899"
+    },
+    {
+      "cusip": "92189F106",
+      "security": "VANECK ETF TRUST (VANEC)",
+      "weight": 5.314542077513264,
+      "rawMktValue": 1200780000,
+      "mktValue": "1.20B",
+      "qOqDelta": "+0.32B",
+      "color": "#10b981"
+    },
+    {
+      "cusip": "81369Y704",
+      "security": "SELECT SECTOR SPDR TR (SELEC)",
+      "weight": 5.1491016280908495,
+      "rawMktValue": 1163400000,
+      "mktValue": "1.16B",
+      "qOqDelta": "+0.01B",
+      "color": "#f97316"
+    },
+    {
+      "cusip": "72352L106",
+      "security": "PINTEREST INC (PINTE)",
+      "weight": 3.2084293899223133,
+      "rawMktValue": 724920000,
+      "mktValue": "0.72B",
+      "qOqDelta": "-0.18B",
+      "color": "#1e3a8a"
+    },
+    {
+      "cusip": "81369Y506",
+      "security": "SELECT SECTOR SPDR TR (SELEC)",
+      "weight": 3.1661177072984965,
+      "rawMktValue": 715360000,
+      "mktValue": "0.72B",
+      "qOqDelta": "+0.00B",
+      "color": "#312e81"
+    },
+    {
+      "cusip": "464287598",
+      "security": "ISHARES TR (ETF)",
+      "weight": 2.606647500487676,
+      "rawMktValue": 588952000,
+      "mktValue": "0.59B",
+      "qOqDelta": "-0.43B",
+      "color": "#3b82f6"
+    },
+    {
+      "cusip": "67066G104",
+      "security": "NVIDIA CORPORATION (NVDA)",
+      "weight": 2.4762956514671055,
+      "rawMktValue": 559500000,
+      "mktValue": "0.56B",
+      "qOqDelta": "-0.25B",
+      "color": "#1d4ed8"
+    },
+    {
+      "cusip": "42824C109",
+      "security": "HEWLETT PACKARD ENTERPRISE C (",
+      "weight": 1.980665152066404,
+      "rawMktValue": 447516092,
+      "mktValue": "0.45B",
+      "qOqDelta": "-0.01B",
+      "color": "#2dd4bf"
+    },
+    {
+      "cusip": "912932100",
+      "security": "UNITI GROUP LLC (UNITI)",
+      "weight": 1.8308904836359368,
+      "rawMktValue": 413675655,
+      "mktValue": "0.41B",
+      "qOqDelta": "+0.05B",
+      "color": "#a855f7"
+    },
+    {
+      "cusip": "464288513",
+      "security": "ISHARES TR (ETF)",
+      "weight": 1.3560717244604332,
+      "rawMktValue": 306394000,
+      "mktValue": "0.31B",
+      "qOqDelta": "-0.00B",
+      "color": "#22c55e"
+    }
+  ],
+  "topAdds": [
+    {
+      "ticker": "SELEC",
+      "security": "SELECT SECTOR SPDR T",
+      "deltaValue": "+0.38B",
+      "rawDelta": 378050000,
+      "shareChange": "+33.3%",
+      "newWeight": "6.88%",
+      "type": "Add"
+    },
+    {
+      "ticker": "VANEC",
+      "security": "VANECK ETF TRUST",
+      "deltaValue": "+0.32B",
+      "rawDelta": 322180000,
+      "shareChange": "+21.7%",
+      "newWeight": "5.31%",
+      "type": "Add"
+    },
+    {
+      "ticker": "SEADR",
+      "security": "SEADRILL LTD",
+      "deltaValue": "+0.05B",
+      "rawDelta": 45842860,
+      "shareChange": "+23.1%",
+      "newWeight": "0.70%",
+      "type": "Add"
+    },
+    {
+      "ticker": "OR",
+      "security": "OR ROYALTIES INC.",
+      "deltaValue": "+0.02B",
+      "rawDelta": 22717838,
+      "shareChange": "+42.7%",
+      "newWeight": "0.49%",
+      "type": "Add"
+    },
+    {
+      "ticker": "HDFC",
+      "security": "HDFC BANK LTD",
+      "deltaValue": "+0.01B",
+      "rawDelta": 7920264,
+      "shareChange": "+100.0%",
+      "newWeight": "0.04%",
+      "type": "New"
+    }
+  ],
+  "topTrims": [
+    {
+      "ticker": "ETF",
+      "security": "ISHARES TR",
+      "deltaValue": "-0.43B",
+      "rawDelta": 428998000,
+      "shareChange": "-44.0%",
+      "newWeight": "2.61%",
+      "type": "Trim"
+    },
+    {
+      "ticker": "INVES",
+      "security": "INVESCO QQQ TR",
+      "deltaValue": "-0.42B",
+      "rawDelta": 415427500,
+      "shareChange": "-23.1%",
+      "newWeight": "6.80%",
+      "type": "Trim"
+    },
+    {
+      "ticker": "SELEC",
+      "security": "SELECT SECTOR SPDR T",
+      "deltaValue": "-0.28B",
+      "rawDelta": 278340000,
+      "shareChange": "-100.0%",
+      "newWeight": "0.00%",
+      "type": "Exit"
+    },
+    {
+      "ticker": "NVDA",
+      "security": "NVIDIA CORPORATION",
+      "deltaValue": "-0.25B",
+      "rawDelta": 248391400,
+      "shareChange": "-30.7%",
+      "newWeight": "2.48%",
+      "type": "Trim"
+    },
+    {
+      "ticker": "ETF",
+      "security": "ISHARES TR",
+      "deltaValue": "-0.21B",
+      "rawDelta": 207633000,
+      "shareChange": "-56.7%",
+      "newWeight": "0.61%",
+      "type": "Trim"
+    }
+  ],
+  "snapshotNote": "Bundled static snapshot for 2025 Q4. Full position count is 32; holdings table stores the top 15."
+}

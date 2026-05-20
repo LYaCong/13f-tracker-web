@@ -1,9 +1,15 @@
 import { Info, Search } from 'lucide-react'
 import { Link, Outlet, useSearchParams } from 'react-router-dom'
+import { useQuarterArchive } from '@/lib/useQuarterArchive'
 import { useLanguage } from '../context/useLanguage'
 
 export default function Layout() {
   const { language, toggleLanguage, lang } = useLanguage()
+  const {
+    quarters,
+    selectedQuarterId,
+    setSelectedQuarter,
+  } = useQuarterArchive()
   const [searchParams, setSearchParams] = useSearchParams()
   const searchQuery = searchParams.get('q') ?? ''
 
@@ -47,6 +53,24 @@ export default function Layout() {
             </div>
 
             <div className="flex items-center gap-4">
+              {quarters.length > 0 && (
+                <label className="hidden lg:flex items-center gap-2 text-xs font-semibold text-text-secondary">
+                  <span>{lang.dataQuarter}</span>
+                  <select
+                    value={selectedQuarterId ?? ''}
+                    onChange={(event) => setSelectedQuarter(event.target.value)}
+                    className="appearance-none rounded-full border border-border bg-white px-3 py-1.5 text-sm font-bold text-text-primary shadow-sm outline-none transition-colors hover:border-accent-blue focus:ring-2 focus:ring-accent-blue/30"
+                    aria-label={lang.dataQuarter}
+                  >
+                    {quarters.map((quarter) => (
+                      <option key={quarter.id} value={quarter.id}>
+                        {quarter.label}{quarter.isLatest ? ` (${lang.latestSnapshot})` : ''}
+                      </option>
+                    ))}
+                  </select>
+                </label>
+              )}
+
               <button
                 onClick={toggleLanguage}
                 className="flex items-center bg-background/50 border border-border rounded-full p-1 cursor-pointer transition-colors hover:bg-white w-[72px] relative shadow-sm"

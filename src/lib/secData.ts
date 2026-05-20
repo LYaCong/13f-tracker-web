@@ -1,5 +1,16 @@
 export type FilingQuarter = 'Q1' | 'Q2' | 'Q3' | 'Q4'
 
+export interface QuarterArchive {
+  id: string
+  label: string
+  path: string
+  isLatest?: boolean
+  status: 'complete' | 'mixed'
+  summary: string
+  quarterCounts: Record<string, number>
+  createdAt: string
+}
+
 export interface InstitutionMeta {
   id: string
   name: string
@@ -87,6 +98,7 @@ export interface FilingPeriod {
 }
 
 const QUARTER_PATTERN = /^(?<year>\d{4})\s(?<quarter>Q[1-4])$/
+export const DEFAULT_DATA_PATH = '/data'
 
 export function parseFilingPeriod(label: string): FilingPeriod | null {
   const match = QUARTER_PATTERN.exec(label.trim())
@@ -100,4 +112,12 @@ export function parseFilingPeriod(label: string): FilingPeriod | null {
     quarter: match.groups.quarter as FilingQuarter,
     label: `${match.groups.year} ${match.groups.quarter}`,
   }
+}
+
+export function getLatestQuarter(quarters: QuarterArchive[]) {
+  return quarters.find((quarter) => quarter.isLatest) ?? quarters[0] ?? null
+}
+
+export function normalizeDataPath(path: string) {
+  return path.replace(/\/$/, '')
 }

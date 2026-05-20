@@ -1,0 +1,15 @@
+[
+  {
+    "id": "2025-Q4",
+    "label": "2025 Q4",
+    "path": "/data/quarters/2025-Q4",
+    "isLatest": true,
+    "status": "mixed",
+    "summary": "Archived baseline snapshot: 11 institutions are on 2025 Q4; TCI remains on 2025 Q3.",
+    "quarterCounts": {
+      "2025 Q4": 11,
+      "2025 Q3": 1
+    },
+    "createdAt": "2026-05-20"
+  }
+]

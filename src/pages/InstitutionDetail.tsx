@@ -30,6 +30,7 @@ import type {
   HoldingEntry,
 } from '@/lib/secData'
 import { parseFilingPeriod } from '@/lib/secData'
+import { useQuarterArchive } from '@/lib/useQuarterArchive'
 import { useLanguage } from '../context/useLanguage'
 
 const EMPTY_RADAR_DATA: RadarDatum[] = []
@@ -101,6 +102,11 @@ export default function InstitutionDetail() {
   const [detailData, setDetailData] = useState<InstitutionDetailData | null>(null)
   const [isLoading, setIsLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
+  const {
+    dataPath,
+    isLoadingQuarters,
+    selectedQuarter,
+  } = useQuarterArchive()
   const { lang } = useLanguage()
 
   const loadDetailData = useCallback(async () => {
@@ -111,7 +117,7 @@ export default function InstitutionDetail() {
     setIsLoading(true)
     setError(null)
     try {
-      const response = await fetch(`/data/${id}_detail.json`)
+      const response = await fetch(`${dataPath}/${id}_detail.json`)
       if (!response.ok) {
         throw new Error(`Unable to load ${id} filing snapshot`)
       }
@@ -124,7 +130,7 @@ export default function InstitutionDetail() {
     } finally {
       setIsLoading(false)
     }
-  }, [id, lang.dataLoadFailed])
+  }, [dataPath, id, lang.dataLoadFailed])
 
   useEffect(() => {
     void loadDetailData()
@@ -138,7 +144,7 @@ export default function InstitutionDetail() {
     return parseFilingPeriod(detailData.institution.quarter)
   }, [detailData])
 
-  if (isLoading) {
+  if (isLoading || isLoadingQuarters) {
     return (
       <div className="flex flex-col items-center justify-center min-h-[50vh] text-text-secondary animate-pulse">
         <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent-blue to-accent-purple flex items-center justify-center text-white font-bold shadow-soft mb-4">
@@ -184,7 +190,7 @@ export default function InstitutionDetail() {
     <div className="space-y-4 animate-in fade-in slide-in-from-bottom-4 duration-500 pb-8">
       <div className="flex justify-between items-start gap-4">
         <div>
-          <Link to="/" className="inline-flex items-center text-xs font-medium text-text-secondary hover:text-accent-blue transition-colors mb-2">
+          <Link to={selectedQuarter ? `/?quarter=${selectedQuarter.id}` : '/'} className="inline-flex items-center text-xs font-medium text-text-secondary hover:text-accent-blue transition-colors mb-2">
             <ArrowLeft className="w-3.5 h-3.5 mr-1" /> {lang.backToDashboard}
           </Link>
           <div className="flex items-center gap-3">
@@ -202,13 +208,14 @@ export default function InstitutionDetail() {
           <CalendarDays className="w-4 h-4 text-accent-blue" />
           <span>{lang.snapshotLabel}</span>
           <span className="text-text-secondary">
-            {filingPeriod?.label ?? institution.quarter}
+            {selectedQuarter?.label ?? filingPeriod?.label ?? institution.quarter}
           </span>
         </div>
       </div>
 
       <div className="glass-card border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-900">
-        {lang.snapshotOnly}
+        <span className="font-bold">{selectedQuarter?.label ?? lang.snapshotLabel}:</span>{' '}
+        {selectedQuarter?.summary ?? lang.snapshotOnly}
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-4 gap-3">

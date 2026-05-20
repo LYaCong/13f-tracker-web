@@ -229,6 +229,92 @@ function normalizeBillion(value) {
   return (value / 1e9).toFixed(2) + 'B';
 }
 
+function writeJson(filePath, data) {
+  fs.writeFileSync(filePath, JSON.stringify(data, null, 2) + '\n');
+}
+
+function quarterToId(quarter) {
+  return quarter.replace(/\s+/g, '-');
+}
+
+function getQuarterCounts(metaResults) {
+  return metaResults.reduce((counts, inst) => {
+    counts[inst.quarter] = (counts[inst.quarter] || 0) + 1;
+    return counts;
+  }, {});
+}
+
+function getDominantQuarter(metaResults) {
+  const quarterCounts = getQuarterCounts(metaResults);
+  const [quarter] = Object.entries(quarterCounts).sort((a, b) => b[1] - a[1])[0] || [];
+  return quarter || 'unknown';
+}
+
+function buildSnapshotSummary(quarter, quarterCounts) {
+  const entries = Object.entries(quarterCounts).sort((a, b) => b[1] - a[1]);
+  if (entries.length === 1) {
+    return `Archived ${quarter} snapshot for all tracked institutions.`;
+  }
+
+  return `Archived ${quarter} snapshot with mixed filing coverage: ${entries.map(([label, count]) => `${count} institutions on ${label}`).join('; ')}.`;
+}
+
+function updateQuarterManifest({ quarter, quarterId, quarterCounts, summary }) {
+  const manifestPath = path.join(OUTPUT_DIR, 'quarters.json');
+  const existingManifest = fs.existsSync(manifestPath)
+    ? JSON.parse(fs.readFileSync(manifestPath, 'utf8'))
+    : [];
+  const existingEntry = existingManifest.find((entry) => entry.id === quarterId);
+  const nextEntry = {
+    id: quarterId,
+    label: quarter,
+    path: `/data/quarters/${quarterId}`,
+    isLatest: true,
+    status: Object.keys(quarterCounts).length === 1 ? 'complete' : 'mixed',
+    summary,
+    quarterCounts,
+    createdAt: existingEntry?.createdAt || new Date().toISOString().slice(0, 10),
+  };
+
+  const nextManifest = [
+    nextEntry,
+    ...existingManifest
+      .filter((entry) => entry.id !== quarterId)
+      .map((entry) => ({ ...entry, isLatest: false })),
+  ].sort((a, b) => b.id.localeCompare(a.id));
+
+  writeJson(manifestPath, nextManifest);
+}
+
+function archiveCurrentSnapshot(metaResults) {
+  const quarter = getDominantQuarter(metaResults);
+  const quarterId = quarterToId(quarter);
+  const quarterCounts = getQuarterCounts(metaResults);
+  const summary = buildSnapshotSummary(quarter, quarterCounts);
+  const archiveDir = path.join(OUTPUT_DIR, 'quarters', quarterId);
+
+  if (!fs.existsSync(archiveDir)) {
+    fs.mkdirSync(archiveDir, { recursive: true });
+  }
+
+  const snapshotFiles = [
+    'institutions_meta.json',
+    'dashboard_treemap.json',
+    ...metaResults.map((inst) => `${inst.id}_detail.json`),
+  ];
+
+  snapshotFiles.forEach((fileName) => {
+    const sourcePath = path.join(OUTPUT_DIR, fileName);
+    const targetPath = path.join(archiveDir, fileName);
+    if (fs.existsSync(sourcePath)) {
+      fs.copyFileSync(sourcePath, targetPath);
+    }
+  });
+
+  updateQuarterManifest({ quarter, quarterId, quarterCounts, summary });
+  console.log(`Archived snapshot to /public/data/quarters/${quarterId}`);
+}
+
 async function processInstitution(inst) {
   console.log(`\nProcessing ${inst.name}...`);
   const url = `https://data.sec.gov/submissions/CIK${inst.cik}.json`;
@@ -439,7 +525,7 @@ async function processInstitution(inst) {
     topTrims: trims.slice(0, 5)
   };
   
-  fs.writeFileSync(path.join(OUTPUT_DIR, `${inst.id}_detail.json`), JSON.stringify(detailJson, null, 2));
+  writeJson(path.join(OUTPUT_DIR, `${inst.id}_detail.json`), detailJson);
   
   return {
     ...inst,
@@ -488,7 +574,7 @@ async function main() {
     }
   }
   
-  fs.writeFileSync(path.join(OUTPUT_DIR, 'institutions_meta.json'), JSON.stringify(metaResults, null, 2));
+  writeJson(path.join(OUTPUT_DIR, 'institutions_meta.json'), metaResults);
   
   // Finalize Treemap JSON
   const treemapNodes = Array.from(treemapAggregator.values())
@@ -511,7 +597,8 @@ async function main() {
       };
     });
     
-  fs.writeFileSync(path.join(OUTPUT_DIR, 'dashboard_treemap.json'), JSON.stringify(treemapNodes, null, 2));
+  writeJson(path.join(OUTPUT_DIR, 'dashboard_treemap.json'), treemapNodes);
+  archiveCurrentSnapshot(metaResults);
   
   console.log("Pipeline processing completed successfully. Data exported to /public/data");
 }

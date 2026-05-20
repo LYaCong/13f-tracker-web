@@ -113,7 +113,13 @@ function CustomizedContent(props: TreemapNodeProps) {
   )
 }
 
-export default function PopularTreemap({ onNodeFocus }: { onNodeFocus?: (instIds: string[] | null) => void }) {
+export default function PopularTreemap({
+  dataPath,
+  onNodeFocus,
+}: {
+  dataPath: string
+  onNodeFocus?: (instIds: string[] | null) => void
+}) {
   const [data, setData] = useState<TreemapLeafDatum[]>([])
   const [focusedNode, setFocusedNode] = useState<TreemapLeafDatum | null>(null)
   const [isLoading, setIsLoading] = useState(true)
@@ -129,7 +135,7 @@ export default function PopularTreemap({ onNodeFocus }: { onNodeFocus?: (instIds
     setIsLoading(true)
     setError(null)
     try {
-      const response = await fetch('/data/dashboard_treemap.json')
+      const response = await fetch(`${dataPath}/dashboard_treemap.json`)
       if (!response.ok) {
         throw new Error('Unable to load bundled treemap data')
       }
@@ -150,7 +156,7 @@ export default function PopularTreemap({ onNodeFocus }: { onNodeFocus?: (instIds
     } finally {
       setIsLoading(false)
     }
-  }, [lang.dataLoadFailed])
+  }, [dataPath, lang.dataLoadFailed])
 
   useEffect(() => {
     void loadTreemapData()

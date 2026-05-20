@@ -1,0 +1,310 @@
+{
+  "institution": {
+    "id": "ark",
+    "name": "ARK Investment Management LLC",
+    "cik": "0001697748",
+    "manager": "Cathie Wood",
+    "style": "Disruptive",
+    "imageUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&h=200&fit=crop",
+    "aum": "15.07B",
+    "quarter": "2025 Q4",
+    "holdingsCount": 196,
+    "displayedHoldingsCount": 15,
+    "reportDate": "2025-12-31",
+    "latestFilingDate": "2026-02-11"
+  },
+  "radarData": [
+    {
+      "subject": "Financials",
+      "A": 0,
+      "B": 14,
+      "fullMark": 100
+    },
+    {
+      "subject": "Technology",
+      "A": 9.6,
+      "B": 31,
+      "fullMark": 100
+    },
+    {
+      "subject": "Consumer",
+      "A": 0.1,
+      "B": 16,
+      "fullMark": 100
+    },
+    {
+      "subject": "Energy & Utilities",
+      "A": 0,
+      "B": 7,
+      "fullMark": 100
+    },
+    {
+      "subject": "Healthcare",
+      "A": 3.1,
+      "B": 11,
+      "fullMark": 100
+    },
+    {
+      "subject": "Other",
+      "A": 85.6,
+      "B": 12,
+      "fullMark": 100
+    },
+    {
+      "subject": "Industrials",
+      "A": 1.5,
+      "B": 9,
+      "fullMark": 100
+    }
+  ],
+  "assetTrend": [
+    {
+      "year": "2022",
+      "value": "11.5"
+    },
+    {
+      "year": "2023",
+      "value": "16.9"
+    },
+    {
+      "year": "2024",
+      "value": "12.0"
+    },
+    {
+      "year": "2025",
+      "value": "15.1"
+    }
+  ],
+  "holdings": [
+    {
+      "cusip": "88160R101",
+      "security": "Tesla Inc (TSLA)",
+      "weight": 8.698931966936387,
+      "rawMktValue": 1310705149,
+      "mktValue": "1.31B",
+      "qOqDelta": "-0.29B",
+      "color": "#3b82f6"
+    },
+    {
+      "cusip": "82509L107",
+      "security": "Shopify Inc (SHOPI)",
+      "weight": 4.2507799812085745,
+      "rawMktValue": 640483134,
+      "mktValue": "0.64B",
+      "qOqDelta": "-0.08B",
+      "color": "#1d4ed8"
+    },
+    {
+      "cusip": "77543R102",
+      "security": "Roku Inc (ROKU)",
+      "weight": 4.2350283924627234,
+      "rawMktValue": 638109775,
+      "mktValue": "0.64B",
+      "qOqDelta": "-0.10B",
+      "color": "#2dd4bf"
+    },
+    {
+      "cusip": "19260Q107",
+      "security": "Coinbase Global Inc (COINB)",
+      "weight": 3.8150622587896796,
+      "rawMktValue": 574831688,
+      "mktValue": "0.57B",
+      "qOqDelta": "-0.23B",
+      "color": "#a855f7"
+    },
+    {
+      "cusip": "69608A108",
+      "security": "Palantir Technologies Inc (PAL",
+      "weight": 3.8126639991488727,
+      "rawMktValue": 574470332,
+      "mktValue": "0.57B",
+      "qOqDelta": "-0.16B",
+      "color": "#22c55e"
+    },
+    {
+      "cusip": "H17182108",
+      "security": "CRISPR Therapeutics AG (CRISP)",
+      "weight": 3.6620499872357133,
+      "rawMktValue": 551776677,
+      "mktValue": "0.55B",
+      "qOqDelta": "-0.08B",
+      "color": "#ec4899"
+    },
+    {
+      "cusip": "007903107",
+      "security": "Advanced Micro Devices Inc (AD",
+      "weight": 3.659647367195234,
+      "rawMktValue": 551414664,
+      "mktValue": "0.55B",
+      "qOqDelta": "+0.06B",
+      "color": "#10b981"
+    },
+    {
+      "cusip": "770700102",
+      "security": "Robinhood Markets Inc (ROBIN)",
+      "weight": 3.6076662927386796,
+      "rawMktValue": 543582454,
+      "mktValue": "0.54B",
+      "qOqDelta": "-0.17B",
+      "color": "#f97316"
+    },
+    {
+      "cusip": "880770102",
+      "security": "Teradyne Inc (TERAD)",
+      "weight": 3.0269071823720854,
+      "rawMktValue": 456077004,
+      "mktValue": "0.46B",
+      "qOqDelta": "+0.08B",
+      "color": "#1e3a8a"
+    },
+    {
+      "cusip": "88023B103",
+      "security": "Tempus AI Inc (TEMPU)",
+      "weight": 2.961854565491293,
+      "rawMktValue": 446275249,
+      "mktValue": "0.45B",
+      "qOqDelta": "-0.13B",
+      "color": "#312e81"
+    },
+    {
+      "cusip": "771049103",
+      "security": "ROBLOX Corp (ROBLO)",
+      "weight": 2.5998223544369616,
+      "rawMktValue": 391726313,
+      "mktValue": "0.39B",
+      "qOqDelta": "-0.34B",
+      "color": "#3b82f6"
+    },
+    {
+      "cusip": "07373V105",
+      "security": "Beam Therapeutics Inc (BEAM)",
+      "weight": 2.293626561111759,
+      "rawMktValue": 345590488,
+      "mktValue": "0.35B",
+      "qOqDelta": "+0.08B",
+      "color": "#1d4ed8"
+    },
+    {
+      "cusip": "172573107",
+      "security": "Circle Internet Group Inc (CIR",
+      "weight": 2.1797427707304324,
+      "rawMktValue": 328431132,
+      "mktValue": "0.33B",
+      "qOqDelta": "-0.06B",
+      "color": "#2dd4bf"
+    },
+    {
+      "cusip": "023135106",
+      "security": "Amazon.com Inc (AMZN)",
+      "weight": 1.8571411296035159,
+      "rawMktValue": 279823368,
+      "mktValue": "0.28B",
+      "qOqDelta": "+0.01B",
+      "color": "#a855f7"
+    },
+    {
+      "cusip": "03945R102",
+      "security": "Archer Aviation Inc (ARCHE)",
+      "weight": 1.7553341264797688,
+      "rawMktValue": 264483673,
+      "mktValue": "0.26B",
+      "qOqDelta": "-0.04B",
+      "color": "#22c55e"
+    }
+  ],
+  "topAdds": [
+    {
+      "ticker": "COINB",
+      "security": "Coinbase Global Inc",
+      "deltaValue": "+0.23B",
+      "rawDelta": 233638988,
+      "shareChange": "+6.1%",
+      "newWeight": "3.82%",
+      "type": "Add"
+    },
+    {
+      "ticker": "BRERA",
+      "security": "Brera Holdings PLC",
+      "deltaValue": "+0.20B",
+      "rawDelta": 201390958,
+      "shareChange": "+24.9%",
+      "newWeight": "0.11%",
+      "type": "Add"
+    },
+    {
+      "ticker": "TEMPU",
+      "security": "Tempus AI Inc",
+      "deltaValue": "+0.13B",
+      "rawDelta": 132880906,
+      "shareChange": "+5.3%",
+      "newWeight": "2.96%",
+      "type": "Add"
+    },
+    {
+      "ticker": "BITMI",
+      "security": "BitMine Immersion Te",
+      "deltaValue": "+0.13B",
+      "rawDelta": 131140879,
+      "shareChange": "+26.6%",
+      "newWeight": "1.70%",
+      "type": "Add"
+    },
+    {
+      "ticker": "GOOG",
+      "security": "Alphabet Inc",
+      "deltaValue": "+0.09B",
+      "rawDelta": 88748044,
+      "shareChange": "+61.1%",
+      "newWeight": "1.14%",
+      "type": "Add"
+    }
+  ],
+  "topTrims": [
+    {
+      "ticker": "ROBLO",
+      "security": "ROBLOX Corp",
+      "deltaValue": "-0.34B",
+      "rawDelta": 344205709,
+      "shareChange": "-9.0%",
+      "newWeight": "2.60%",
+      "type": "Trim"
+    },
+    {
+      "ticker": "TSLA",
+      "security": "Tesla Inc",
+      "deltaValue": "-0.29B",
+      "rawDelta": 285671405,
+      "shareChange": "-18.8%",
+      "newWeight": "8.70%",
+      "type": "Trim"
+    },
+    {
+      "ticker": "ROBIN",
+      "security": "Robinhood Markets In",
+      "deltaValue": "-0.17B",
+      "rawDelta": 174757932,
+      "shareChange": "-4.2%",
+      "newWeight": "3.61%",
+      "type": "Trim"
+    },
+    {
+      "ticker": "PALAN",
+      "security": "Palantir Technologie",
+      "deltaValue": "-0.16B",
+      "rawDelta": 161611417,
+      "shareChange": "-19.9%",
+      "newWeight": "3.81%",
+      "type": "Trim"
+    },
+    {
+      "ticker": "GITLA",
+      "security": "Gitlab Inc",
+      "deltaValue": "-0.12B",
+      "rawDelta": 122557793,
+      "shareChange": "-74.9%",
+      "newWeight": "0.22%",
+      "type": "Trim"
+    }
+  ],
+  "snapshotNote": "Bundled static snapshot for 2025 Q4. Full position count is 196; holdings table stores the top 15."
+}

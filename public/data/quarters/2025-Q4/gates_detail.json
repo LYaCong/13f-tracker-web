@@ -1,0 +1,237 @@
+{
+  "institution": {
+    "id": "gates",
+    "name": "Gates Foundation Trust",
+    "cik": "0001166559",
+    "manager": "Bill Gates",
+    "style": "Quality",
+    "imageUrl": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=200&h=200&fit=crop",
+    "aum": "35.36B",
+    "quarter": "2025 Q4",
+    "holdingsCount": 23,
+    "displayedHoldingsCount": 15,
+    "reportDate": "2025-12-31",
+    "latestFilingDate": "2026-02-17"
+  },
+  "radarData": [
+    {
+      "subject": "Financials",
+      "A": 27.6,
+      "B": 14,
+      "fullMark": 100
+    },
+    {
+      "subject": "Technology",
+      "A": 10.5,
+      "B": 31,
+      "fullMark": 100
+    },
+    {
+      "subject": "Consumer",
+      "A": 4.8,
+      "B": 16,
+      "fullMark": 100
+    },
+    {
+      "subject": "Energy & Utilities",
+      "A": 0,
+      "B": 7,
+      "fullMark": 100
+    },
+    {
+      "subject": "Healthcare",
+      "A": 0.3,
+      "B": 11,
+      "fullMark": 100
+    },
+    {
+      "subject": "Other",
+      "A": 41.8,
+      "B": 12,
+      "fullMark": 100
+    },
+    {
+      "subject": "Industrials",
+      "A": 15,
+      "B": 9,
+      "fullMark": 100
+    }
+  ],
+  "assetTrend": [
+    {
+      "year": "2022",
+      "value": "35.7"
+    },
+    {
+      "year": "2023",
+      "value": "42.3"
+    },
+    {
+      "year": "2024",
+      "value": "42.0"
+    },
+    {
+      "year": "2025",
+      "value": "35.4"
+    }
+  ],
+  "holdings": [
+    {
+      "cusip": "084670702",
+      "security": "BERKSHIRE HATHAWAY INC DEL (BR",
+      "weight": 27.587059166980225,
+      "rawMktValue": 9754809925,
+      "mktValue": "9.75B",
+      "qOqDelta": "-1.19B",
+      "color": "#3b82f6"
+    },
+    {
+      "cusip": "94106L109",
+      "security": "WASTE MGMT INC DEL (WM)",
+      "weight": 17.978359456848082,
+      "rawMktValue": 6357164720,
+      "mktValue": "6.36B",
+      "qOqDelta": "-0.03B",
+      "color": "#1d4ed8"
+    },
+    {
+      "cusip": "136375102",
+      "security": "CANADIAN NATL RY CO (CNI)",
+      "weight": 14.488303858498263,
+      "rawMktValue": 5123077796,
+      "mktValue": "5.12B",
+      "qOqDelta": "+0.24B",
+      "color": "#2dd4bf"
+    },
+    {
+      "cusip": "594918104",
+      "security": "MICROSOFT CORP (MSFT)",
+      "weight": 10.519263828638511,
+      "rawMktValue": 3719621529,
+      "mktValue": "3.72B",
+      "qOqDelta": "-1.04B",
+      "color": "#a855f7"
+    },
+    {
+      "cusip": "149123101",
+      "security": "CATERPILLAR INC (CATER)",
+      "weight": 10.29351024877033,
+      "rawMktValue": 3639794852,
+      "mktValue": "3.64B",
+      "qOqDelta": "+0.61B",
+      "color": "#22c55e"
+    },
+    {
+      "cusip": "244199105",
+      "security": "DEERE & CO (DEERE)",
+      "weight": 4.683835107394888,
+      "rawMktValue": 1656208475,
+      "mktValue": "1.66B",
+      "qOqDelta": "+0.03B",
+      "color": "#ec4899"
+    },
+    {
+      "cusip": "278865100",
+      "security": "ECOLAB INC (ECOLA)",
+      "weight": 3.873974229293565,
+      "rawMktValue": 1369840911,
+      "mktValue": "1.37B",
+      "qOqDelta": "-0.06B",
+      "color": "#10b981"
+    },
+    {
+      "cusip": "931142103",
+      "security": "WALMART INC (WALMA)",
+      "weight": 2.6436102101221435,
+      "rawMktValue": 934783043,
+      "mktValue": "0.93B",
+      "qOqDelta": "+0.07B",
+      "color": "#f97316"
+    },
+    {
+      "cusip": "31428X106",
+      "security": "FEDEX CORP (FEDEX)",
+      "weight": 1.9478082158302754,
+      "rawMktValue": 688746807,
+      "mktValue": "0.69B",
+      "qOqDelta": "+0.13B",
+      "color": "#1e3a8a"
+    },
+    {
+      "cusip": "191241108",
+      "security": "COCA-COLA FEMSA SAB DE CV (COC",
+      "weight": 1.664577146600017,
+      "rawMktValue": 588596036,
+      "mktValue": "0.59B",
+      "qOqDelta": "+0.07B",
+      "color": "#312e81"
+    },
+    {
+      "cusip": "94106B101",
+      "security": "WASTE CONNECTIONS INC (WM)",
+      "weight": 1.0112804923608356,
+      "rawMktValue": 357589728,
+      "mktValue": "0.36B",
+      "qOqDelta": "-0.00B",
+      "color": "#3b82f6"
+    },
+    {
+      "cusip": "22266T109",
+      "security": "COUPANG INC (COUPA)",
+      "weight": 0.6169706021395568,
+      "rawMktValue": 218161382,
+      "mktValue": "0.22B",
+      "qOqDelta": "-0.08B",
+      "color": "#1d4ed8"
+    },
+    {
+      "cusip": "55825T103",
+      "security": "MADISON SQUARE GRDN SPRT COR (",
+      "weight": 0.43332977003676354,
+      "rawMktValue": 153225812,
+      "mktValue": "0.15B",
+      "qOqDelta": "+0.02B",
+      "color": "#2dd4bf"
+    },
+    {
+      "cusip": "80810D103",
+      "security": "SCHRODINGER INC (SCHRO)",
+      "weight": 0.3530311702270784,
+      "rawMktValue": 124832152,
+      "mktValue": "0.12B",
+      "qOqDelta": "-0.02B",
+      "color": "#a855f7"
+    },
+    {
+      "cusip": "955306105",
+      "security": "WEST PHARMACEUTICAL SVSC INC (",
+      "weight": 0.3458693622485634,
+      "rawMktValue": 122299730,
+      "mktValue": "0.12B",
+      "qOqDelta": "+0.01B",
+      "color": "#22c55e"
+    }
+  ],
+  "topAdds": [],
+  "topTrims": [
+    {
+      "ticker": "BRK-B",
+      "security": "BERKSHIRE HATHAWAY I",
+      "deltaValue": "-1.19B",
+      "rawDelta": 1187438789,
+      "shareChange": "-10.8%",
+      "newWeight": "27.59%",
+      "type": "Trim"
+    },
+    {
+      "ticker": "MSFT",
+      "security": "MICROSOFT CORP",
+      "deltaValue": "-1.04B",
+      "rawDelta": 1040964137,
+      "shareChange": "-16.3%",
+      "newWeight": "10.52%",
+      "type": "Trim"
+    }
+  ],
+  "snapshotNote": "Bundled static snapshot for 2025 Q4. Full position count is 23; holdings table stores the top 15."
+}

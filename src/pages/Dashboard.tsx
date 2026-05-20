@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import PopularTreemap from '@/components/PopularTreemap'
 import type { InstitutionMeta, TreemapDatum } from '@/lib/secData'
+import { useQuarterArchive } from '@/lib/useQuarterArchive'
 import { useLanguage } from '../context/useLanguage'
 
 export default function Dashboard() {
@@ -11,16 +12,22 @@ export default function Dashboard() {
   const [error, setError] = useState<string | null>(null)
   const [focusedInstitutions, setFocusedInstitutions] = useState<string[] | null>(null)
   const [searchParams] = useSearchParams()
+  const {
+    dataPath,
+    isLoadingQuarters,
+    selectedQuarter,
+  } = useQuarterArchive()
   const { lang } = useLanguage()
   const searchQuery = (searchParams.get('q') ?? '').trim().toLowerCase()
+  const detailSearch = searchParams.toString()
 
   const loadDashboardData = useCallback(async () => {
     setIsLoading(true)
     setError(null)
     try {
       const [institutionsResponse, treemapResponse] = await Promise.all([
-        fetch('/data/institutions_meta.json'),
-        fetch('/data/dashboard_treemap.json'),
+        fetch(`${dataPath}/institutions_meta.json`),
+        fetch(`${dataPath}/dashboard_treemap.json`),
       ])
 
       if (!institutionsResponse.ok || !treemapResponse.ok) {
@@ -39,11 +46,15 @@ export default function Dashboard() {
     } finally {
       setIsLoading(false)
     }
-  }, [lang.dataLoadFailed])
+  }, [dataPath, lang.dataLoadFailed])
 
   useEffect(() => {
     void loadDashboardData()
   }, [loadDashboardData])
+
+  useEffect(() => {
+    setFocusedInstitutions(null)
+  }, [dataPath])
 
   const filteredInstitutions = useMemo(() => {
     if (!searchQuery) {
@@ -81,7 +92,7 @@ export default function Dashboard() {
       .join(' / ')
   }, [institutions])
 
-  if (isLoading) {
+  if (isLoading || isLoadingQuarters) {
     return (
       <div className="glass-card p-8 text-center text-text-secondary font-semibold animate-in fade-in">
         {lang.loadingHistoricalFilings}
@@ -123,7 +134,8 @@ export default function Dashboard() {
         </div>
 
         <div className="glass-card border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-900">
-          {lang.mixedSnapshotNotice}
+          <span className="font-bold">{selectedQuarter?.label ?? lang.snapshotLabel}:</span>{' '}
+          {selectedQuarter?.summary ?? lang.mixedSnapshotNotice}
         </div>
       </div>
 
@@ -135,7 +147,10 @@ export default function Dashboard() {
           return (
             <Link
               key={inst.id}
-              to={`/institution/${inst.id}`}
+              to={{
+                pathname: `/institution/${inst.id}`,
+                search: detailSearch,
+              }}
               className={`glass-card transition-all duration-500 transform group overflow-hidden ${
                 isDimmed
                   ? 'opacity-40 scale-[0.98] grayscale contrast-75 hover:opacity-100 hover:grayscale-0'
@@ -184,7 +199,7 @@ export default function Dashboard() {
         </div>
       )}
 
-      <PopularTreemap onNodeFocus={setFocusedInstitutions} />
+      <PopularTreemap dataPath={dataPath} onNodeFocus={setFocusedInstitutions} />
     </div>
   )
 }
