@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { ResponsiveContainer, Treemap } from 'recharts'
 import type { TreemapDatum, TreemapLeafDatum } from '@/lib/secData'
 import { useLanguage } from '../context/useLanguage'
@@ -26,6 +26,8 @@ interface TreemapNodeProps {
   payload?: Partial<TreemapLeafDatum>
   root?: Partial<TreemapLeafDatum>
   onClickNode?: (node: TreemapLeafDatum) => void
+  heatLabel?: string
+  totalInstitutionsShort?: string
 }
 
 function CustomizedContent(props: TreemapNodeProps) {
@@ -92,7 +94,7 @@ function CustomizedContent(props: TreemapNodeProps) {
                 className="font-medium truncate w-full mt-1 opacity-90 leading-tight"
                 style={{ fontSize: Math.max(9, Math.min(12, Math.floor(width / 10))) }}
               >
-                Heat {heat} | {avgWeight}
+                {props.heatLabel ?? 'Heat'} {heat} | {avgWeight}
               </div>
             )}
 
@@ -101,7 +103,7 @@ function CustomizedContent(props: TreemapNodeProps) {
                 className="font-medium truncate w-full opacity-80 leading-tight mt-0.5"
                 style={{ fontSize: Math.max(9, Math.min(11, Math.floor(width / 12))) }}
               >
-                ${value} | {instCount}/12 inst
+                ${value} | {instCount}/{props.totalInstitutionsShort ?? '12 inst'}
               </div>
             )}
           </div>
@@ -114,6 +116,8 @@ function CustomizedContent(props: TreemapNodeProps) {
 export default function PopularTreemap({ onNodeFocus }: { onNodeFocus?: (instIds: string[] | null) => void }) {
   const [data, setData] = useState<TreemapLeafDatum[]>([])
   const [focusedNode, setFocusedNode] = useState<TreemapLeafDatum | null>(null)
+  const [isLoading, setIsLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
   const { lang } = useLanguage()
 
   const handleFocus = (nodeData: TreemapLeafDatum | null) => {
@@ -121,26 +125,67 @@ export default function PopularTreemap({ onNodeFocus }: { onNodeFocus?: (instIds
     onNodeFocus?.(nodeData?.holdingInstitutions ?? null)
   }
 
+  const loadTreemapData = useCallback(async () => {
+    setIsLoading(true)
+    setError(null)
+    try {
+      const response = await fetch('/data/dashboard_treemap.json')
+      if (!response.ok) {
+        throw new Error('Unable to load bundled treemap data')
+      }
+
+      const nodes = await response.json() as TreemapDatum[]
+      const children = nodes.map((node) => ({
+        name: node.ticker,
+        size: Number.parseFloat(node.value),
+        heat: node.heat,
+        avgWeight: node.avgWeight,
+        value: node.value,
+        instCount: node.instCount,
+        holdingInstitutions: node.holdingInstitutions,
+      }))
+      setData(children)
+    } catch (err) {
+      setError(err instanceof Error ? err.message : lang.dataLoadFailed)
+    } finally {
+      setIsLoading(false)
+    }
+  }, [lang.dataLoadFailed])
+
   useEffect(() => {
-    fetch(`/data/dashboard_treemap.json?t=${Date.now()}`)
-      .then((res) => res.json() as Promise<TreemapDatum[]>)
-      .then((nodes) => {
-        const children = nodes.map((node) => ({
-          name: node.ticker,
-          size: Number.parseFloat(node.value),
-          heat: node.heat,
-          avgWeight: node.avgWeight,
-          value: node.value,
-          instCount: node.instCount,
-          holdingInstitutions: node.holdingInstitutions,
-        }))
-        setData(children)
-      })
-      .catch(console.error)
-  }, [])
+    void loadTreemapData()
+  }, [loadTreemapData])
+
+  if (isLoading) {
+    return (
+      <div className="glass-card p-6 text-center text-text-secondary font-semibold">
+        {lang.loadingHistoricalFilings}
+      </div>
+    )
+  }
+
+  if (error) {
+    return (
+      <div className="glass-card p-6 text-center">
+        <p className="font-bold text-text-primary">{lang.dataLoadFailed}</p>
+        <p className="text-sm text-text-secondary mt-2">{error}</p>
+        <button
+          type="button"
+          onClick={() => void loadTreemapData()}
+          className="mt-4 px-4 py-2 rounded-md bg-accent-blue text-white text-sm font-bold hover:bg-blue-700 transition-colors"
+        >
+          {lang.retry}
+        </button>
+      </div>
+    )
+  }
 
   if (data.length === 0) {
-    return null
+    return (
+      <div className="glass-card p-6 text-center text-text-secondary font-semibold">
+        {lang.noResults}
+      </div>
+    )
   }
 
   const treemapData = [{ name: 'All Holdings', children: data }]
@@ -199,6 +244,8 @@ export default function PopularTreemap({ onNodeFocus }: { onNodeFocus?: (instIds
               <CustomizedContent
                 {...(props as unknown as TreemapNodeProps)}
                 onClickNode={handleFocus}
+                heatLabel={lang.heatLabel}
+                totalInstitutionsShort={lang.totalInstitutionsShort}
               />
             )}
           />

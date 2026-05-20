@@ -19,6 +19,7 @@ No paywalls. No ads. Just clean data visualization.
 ### ✨ Features
 
 - **Dashboard Overview** — 12 institution cards showing AUM, holdings count, investment style, and manager info
+- **Search & Filter** — Header search filters by institution, manager, style, quarter, and popular ticker overlap
 - **Popular Holdings Treemap** — Interactive heatmap showing cross-institution overlap (click a stock, see which funds hold it)
 - **Institution Detail Pages** — Deep-dive into any fund's portfolio with:
   - Net asset trend line chart (historical AUM evolution)
@@ -28,7 +29,17 @@ No paywalls. No ads. Just clean data visualization.
   - Position change leaderboard: Top Adds, Top Trims, New Positions, Full Exits
 - **Bilingual UI** — One-click Chinese/English toggle (lightweight custom i18n, no heavy libraries)
 - **Serverless Architecture** — Data is fetched at build time into static JSON; no backend server needed
+- **Vercel Ready** — `vercel.json` includes the Vite build settings and React Router fallback rewrites
 - **Auto-Update Pipeline** — Node.js scripts crawl SEC EDGAR API to refresh data each quarter
+
+### 📦 Bundled Data Snapshot
+
+The current static dataset is intentionally transparent about its coverage:
+
+- 11 institutions are bundled with `2025 Q4` filings
+- TCI Fund Management is bundled with `2025 Q3`
+- Detail pages show the full position count, but the bundled holdings table stores the top positions for a compact static payload
+- `latestFilingDate`, `reportDate`, and displayed holding counts are included in the JSON files
 
 ### 🏛️ Tracked Institutions
 
@@ -90,7 +101,22 @@ npm run dev
 
 # Build for production
 npm run build
+
+# Preview the production build locally
+npm run preview
 ```
+
+### ▲ Deploying to Vercel
+
+Import the GitHub repository into Vercel and keep the defaults:
+
+- Framework Preset: `Vite`
+- Install Command: `npm ci`
+- Build Command: `npm run build`
+- Output Directory: `dist`
+- Production Branch: `main`
+
+The committed `vercel.json` handles direct visits and refreshes on routes like `/institution/berkshire`.
 
 ### 🔧 Data Pipeline
 
@@ -99,13 +125,13 @@ The `scripts/fetch-sec-data.js` script:
 2. Parses XML information tables for holdings details
 3. Computes QoQ position changes (New/Add/Trim/Exit)
 4. Generates aggregated JSON files in `public/data/`
-5. Includes rate-limit handling (SEC enforces 10 req/sec)
+5. Keeps quarterly historical AUM labels where available
+6. Includes rate-limit handling (SEC enforces 10 req/sec)
 
 ### ⚠️ Known Limitations
 
-- **Industry classification** uses heuristic string matching (e.g., "BANK" → Financials); not always precise
-- **Dashboard summary metrics** (total AUM, turnover) are partially hardcoded
-- **Historical quarter selector** on detail pages uses seeded-random data for time-travel features beyond cached quarters
+- **Industry classification** now uses ticker overrides plus fallback string matching; long-tail holdings can still be imperfect
+- **Historical quarter selector** is intentionally read-only until multiple full quarterly snapshots are bundled
 - Full historical data would require a cloud database for production use
 
 ### 📄 License
@@ -129,6 +155,7 @@ MIT
 ### ✨ 功能特性
 
 - **大盘仪表盘** — 12 家机构卡片，展示 AUM、持仓数量、投资风格和经理人信息
+- **搜索筛选** — 顶部搜索支持按机构、经理、风格、季度和热门 ticker 过滤
 - **热门持仓矩形树图** — 交互式热力图展示机构持仓重叠（点击个股，高亮持有该股的机构）
 - **机构详情页** — 深入分析任意基金的持仓组合：
   - 净资产趋势折线图（历史 AUM 演变）
@@ -138,7 +165,17 @@ MIT
   - 调仓龙虎榜：加仓榜、减仓榜、新建仓、清仓
 - **中英文切换** — 一键切换（轻量自定义 i18n，无需重型库）
 - **无服务器架构** — 数据在构建时抓取为静态 JSON，无需后端服务器
+- **Vercel 就绪** — `vercel.json` 已包含 Vite 构建配置和 React Router 刷新兜底
 - **自动更新管道** — Node.js 脚本爬取 SEC EDGAR API，每季度自动刷新数据
+
+### 📦 当前打包数据快照
+
+当前静态数据集会明确展示覆盖范围：
+
+- 11 家机构为 `2025 Q4`
+- TCI Fund Management 为 `2025 Q3`
+- 详情页展示完整持仓数量，但静态 JSON 的持仓表只打包头部持仓，便于保持轻量
+- JSON 已包含 `latestFilingDate`、`reportDate` 和当前展示持仓数量
 
 ### 🏛️ 追踪机构
 
@@ -179,7 +216,22 @@ npm run dev
 
 # 生产构建
 npm run build
+
+# 本地预览生产构建
+npm run preview
 ```
+
+### ▲ 部署到 Vercel
+
+在 Vercel 中导入 GitHub 仓库，并保持以下设置：
+
+- Framework Preset：`Vite`
+- Install Command：`npm ci`
+- Build Command：`npm run build`
+- Output Directory：`dist`
+- Production Branch：`main`
+
+已提交的 `vercel.json` 会处理 `/institution/berkshire` 这类详情页直连和刷新。
 
 ### 🔧 数据管道
 
@@ -188,13 +240,13 @@ npm run build
 2. 解析 XML 持仓明细表
 3. 计算季度环比变动（新建仓/加仓/减仓/清仓）
 4. 生成聚合 JSON 文件到 `public/data/`
-5. 内置速率限制处理（SEC 限制每秒 10 次请求）
+5. 尽量保留季度粒度的历史 AUM 标签
+6. 内置速率限制处理（SEC 限制每秒 10 次请求）
 
 ### ⚠️ 已知限制
 
-- **行业分类**使用启发式字符串匹配（如 "BANK" → 金融），不够精确
-- **仪表盘汇总指标**（总 AUM、换手率）部分硬编码
-- **详情页历史季度选择器**在缓存季度之外使用随机种子生成模拟数据
+- **行业分类**已改为 ticker 映射优先、字符串兜底；长尾标的仍可能不够精确
+- **详情页季度选择器**目前是只读快照标签，等打包多季度完整数据后再升级为可切换
 - 完整历史数据需要接入云端数据库才能生产使用
 
 ### 📄 许可证

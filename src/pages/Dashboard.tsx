@@ -1,34 +1,134 @@
-import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { useCallback, useEffect, useMemo, useState } from 'react'
+import { Link, useSearchParams } from 'react-router-dom'
 import PopularTreemap from '@/components/PopularTreemap'
-import type { InstitutionMeta } from '@/lib/secData'
+import type { InstitutionMeta, TreemapDatum } from '@/lib/secData'
 import { useLanguage } from '../context/useLanguage'
 
 export default function Dashboard() {
   const [institutions, setInstitutions] = useState<InstitutionMeta[]>([])
+  const [treemapNodes, setTreemapNodes] = useState<TreemapDatum[]>([])
+  const [isLoading, setIsLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
   const [focusedInstitutions, setFocusedInstitutions] = useState<string[] | null>(null)
+  const [searchParams] = useSearchParams()
   const { lang } = useLanguage()
+  const searchQuery = (searchParams.get('q') ?? '').trim().toLowerCase()
+
+  const loadDashboardData = useCallback(async () => {
+    setIsLoading(true)
+    setError(null)
+    try {
+      const [institutionsResponse, treemapResponse] = await Promise.all([
+        fetch('/data/institutions_meta.json'),
+        fetch('/data/dashboard_treemap.json'),
+      ])
+
+      if (!institutionsResponse.ok || !treemapResponse.ok) {
+        throw new Error('Unable to load bundled dashboard data')
+      }
+
+      const [institutionData, treemapData] = await Promise.all([
+        institutionsResponse.json() as Promise<InstitutionMeta[]>,
+        treemapResponse.json() as Promise<TreemapDatum[]>,
+      ])
+
+      setInstitutions(institutionData)
+      setTreemapNodes(treemapData)
+    } catch (err) {
+      setError(err instanceof Error ? err.message : lang.dataLoadFailed)
+    } finally {
+      setIsLoading(false)
+    }
+  }, [lang.dataLoadFailed])
 
   useEffect(() => {
-    fetch(`/data/institutions_meta.json?t=${Date.now()}`)
-      .then((res) => res.json() as Promise<InstitutionMeta[]>)
-      .then((data) => setInstitutions(data))
-      .catch(console.error)
-  }, [])
+    void loadDashboardData()
+  }, [loadDashboardData])
+
+  const filteredInstitutions = useMemo(() => {
+    if (!searchQuery) {
+      return institutions
+    }
+
+    const tickerMatchedInstitutionIds = new Set(
+      treemapNodes
+        .filter((node) => node.ticker.toLowerCase().includes(searchQuery))
+        .flatMap((node) => node.holdingInstitutions),
+    )
+
+    return institutions.filter((inst) => {
+      const directMatch = [
+        inst.name,
+        inst.manager,
+        inst.style,
+        inst.quarter,
+        inst.id,
+      ].some((value) => value.toLowerCase().includes(searchQuery))
+
+      return directMatch || tickerMatchedInstitutionIds.has(inst.id)
+    })
+  }, [institutions, searchQuery, treemapNodes])
+
+  const quarterSummary = useMemo(() => {
+    const counts = institutions.reduce<Record<string, number>>((acc, inst) => {
+      acc[inst.quarter] = (acc[inst.quarter] ?? 0) + 1
+      return acc
+    }, {})
+
+    return Object.entries(counts)
+      .sort((a, b) => b[1] - a[1])
+      .map(([quarter, count]) => `${quarter} (${count})`)
+      .join(' / ')
+  }, [institutions])
+
+  if (isLoading) {
+    return (
+      <div className="glass-card p-8 text-center text-text-secondary font-semibold animate-in fade-in">
+        {lang.loadingHistoricalFilings}
+      </div>
+    )
+  }
+
+  if (error) {
+    return (
+      <div className="glass-card p-8 text-center animate-in fade-in">
+        <p className="font-bold text-text-primary">{lang.dataLoadFailed}</p>
+        <p className="text-sm text-text-secondary mt-2">{error}</p>
+        <button
+          type="button"
+          onClick={() => void loadDashboardData()}
+          className="mt-4 px-4 py-2 rounded-md bg-accent-blue text-white text-sm font-bold hover:bg-blue-700 transition-colors"
+        >
+          {lang.retry}
+        </button>
+      </div>
+    )
+  }
 
   return (
     <div className="space-y-5 animate-in fade-in duration-500">
-      <div className="flex justify-between items-center px-2 mb-2">
-        <h2 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-text-primary to-text-secondary">
-          {lang.trackedInstitutions}{' '}
-          <span className="text-sm font-medium text-text-secondary ml-2 border border-border px-2 py-0.5 rounded-full">
-            {institutions.length} {lang.fundsMapped}
-          </span>
-        </h2>
+      <div className="flex flex-col gap-3 px-2 mb-2">
+        <div className="flex justify-between items-center">
+          <h2 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-text-primary to-text-secondary">
+            {lang.trackedInstitutions}{' '}
+            <span className="text-sm font-medium text-text-secondary ml-2 border border-border px-2 py-0.5 rounded-full">
+              {filteredInstitutions.length}/{institutions.length} {lang.fundsMapped}
+            </span>
+          </h2>
+          {quarterSummary && (
+            <span className="text-xs font-semibold text-text-secondary border border-border rounded-full px-3 py-1 bg-white">
+              {quarterSummary}
+            </span>
+          )}
+        </div>
+
+        <div className="glass-card border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-900">
+          {lang.mixedSnapshotNotice}
+        </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 transition-all duration-500">
-        {institutions.map((inst) => {
+        {filteredInstitutions.map((inst) => {
           const isDimmed = focusedInstitutions !== null && !focusedInstitutions.includes(inst.id)
           const isHighlighted = focusedInstitutions !== null && focusedInstitutions.includes(inst.id)
 
@@ -77,6 +177,12 @@ export default function Dashboard() {
           )
         })}
       </div>
+
+      {filteredInstitutions.length === 0 && (
+        <div className="glass-card p-8 text-center text-text-secondary font-semibold">
+          {lang.noResults}
+        </div>
+      )}
 
       <PopularTreemap onNodeFocus={setFocusedInstitutions} />
     </div>

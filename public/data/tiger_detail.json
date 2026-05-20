@@ -8,7 +8,10 @@
     "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&h=200&fit=crop",
     "aum": "29.71B",
     "quarter": "2025 Q4",
-    "holdingsCount": 54
+    "holdingsCount": 54,
+    "displayedHoldingsCount": 15,
+    "reportDate": "2025-12-31",
+    "latestFilingDate": "2026-02-17"
   },
   "radarData": [
     {
@@ -302,5 +305,6 @@
       "newWeight": "2.97%",
       "type": "Trim"
     }
-  ]
+  ],
+  "snapshotNote": "Bundled static snapshot for 2025 Q4. Full position count is 54; holdings table stores the top 15."
 }

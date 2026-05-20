@@ -8,7 +8,10 @@
     "imageUrl": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=200&h=200&fit=crop",
     "aum": "22.59B",
     "quarter": "2025 Q4",
-    "holdingsCount": 32
+    "holdingsCount": 32,
+    "displayedHoldingsCount": 15,
+    "reportDate": "2025-12-31",
+    "latestFilingDate": "2026-02-18"
   },
   "radarData": [
     {
@@ -165,7 +168,7 @@
     },
     {
       "cusip": "464287598",
-      "security": "ISHARES TR (ISHAR)",
+      "security": "ISHARES TR (ETF)",
       "weight": 2.606647500487676,
       "rawMktValue": 588952000,
       "mktValue": "0.59B",
@@ -201,7 +204,7 @@
     },
     {
       "cusip": "464288513",
-      "security": "ISHARES TR (ISHAR)",
+      "security": "ISHARES TR (ETF)",
       "weight": 1.3560717244604332,
       "rawMktValue": 306394000,
       "mktValue": "0.31B",
@@ -258,7 +261,7 @@
   ],
   "topTrims": [
     {
-      "ticker": "ISHAR",
+      "ticker": "ETF",
       "security": "ISHARES TR",
       "deltaValue": "-0.43B",
       "rawDelta": 428998000,
@@ -294,7 +297,7 @@
       "type": "Trim"
     },
     {
-      "ticker": "ISHAR",
+      "ticker": "ETF",
       "security": "ISHARES TR",
       "deltaValue": "-0.21B",
       "rawDelta": 207633000,
@@ -302,5 +305,6 @@
       "newWeight": "0.61%",
       "type": "Trim"
     }
-  ]
+  ],
+  "snapshotNote": "Bundled static snapshot for 2025 Q4. Full position count is 32; holdings table stores the top 15."
 }

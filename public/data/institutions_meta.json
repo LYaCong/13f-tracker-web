@@ -8,7 +8,10 @@
     "imageUrl": "https://images.unsplash.com/photo-1549496464-325ff326ba9b?q=80&w=200&h=200&fit=crop",
     "aum": "274.16B",
     "quarter": "2025 Q4",
-    "holdingsCount": 42
+    "holdingsCount": 42,
+    "reportDate": "2025-12-31",
+    "latestFilingDate": "2026-02-17",
+    "displayedHoldingsCount": 15
   },
   {
     "id": "tci",
@@ -19,7 +22,10 @@
     "imageUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=200&h=200&fit=crop",
     "aum": "1.38B",
     "quarter": "2025 Q3",
-    "holdingsCount": 8
+    "holdingsCount": 8,
+    "reportDate": "2025-09-30",
+    "latestFilingDate": "2025-11-03",
+    "displayedHoldingsCount": 8
   },
   {
     "id": "gates",
@@ -30,7 +36,10 @@
     "imageUrl": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=200&h=200&fit=crop",
     "aum": "35.36B",
     "quarter": "2025 Q4",
-    "holdingsCount": 23
+    "holdingsCount": 23,
+    "reportDate": "2025-12-31",
+    "latestFilingDate": "2026-02-17",
+    "displayedHoldingsCount": 15
   },
   {
     "id": "tiger",
@@ -41,7 +50,10 @@
     "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&h=200&fit=crop",
     "aum": "29.71B",
     "quarter": "2025 Q4",
-    "holdingsCount": 54
+    "holdingsCount": 54,
+    "reportDate": "2025-12-31",
+    "latestFilingDate": "2026-02-17",
+    "displayedHoldingsCount": 15
   },
   {
     "id": "bridgewater",
@@ -52,7 +64,10 @@
     "imageUrl": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&h=200&fit=crop",
     "aum": "27.42B",
     "quarter": "2025 Q4",
-    "holdingsCount": 1040
+    "holdingsCount": 1040,
+    "reportDate": "2025-12-31",
+    "latestFilingDate": "2026-02-13",
+    "displayedHoldingsCount": 15
   },
   {
     "id": "elliott",
@@ -63,7 +78,10 @@
     "imageUrl": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=200&h=200&fit=crop",
     "aum": "22.59B",
     "quarter": "2025 Q4",
-    "holdingsCount": 32
+    "holdingsCount": 32,
+    "reportDate": "2025-12-31",
+    "latestFilingDate": "2026-02-18",
+    "displayedHoldingsCount": 15
   },
   {
     "id": "hh",
@@ -74,7 +92,10 @@
     "imageUrl": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=200&h=200&fit=crop",
     "aum": "17.49B",
     "quarter": "2025 Q4",
-    "holdingsCount": 14
+    "holdingsCount": 14,
+    "reportDate": "2025-12-31",
+    "latestFilingDate": "2026-02-17",
+    "displayedHoldingsCount": 14
   },
   {
     "id": "pershing",
@@ -85,7 +106,10 @@
     "imageUrl": "https://images.unsplash.com/photo-1566492031523-87d28ebd9cb0?q=80&w=200&h=200&fit=crop",
     "aum": "15.53B",
     "quarter": "2025 Q4",
-    "holdingsCount": 11
+    "holdingsCount": 11,
+    "reportDate": "2025-12-31",
+    "latestFilingDate": "2026-02-17",
+    "displayedHoldingsCount": 11
   },
   {
     "id": "softbank",
@@ -96,7 +120,10 @@
     "imageUrl": "https://images.unsplash.com/photo-1552058544-f2b08422138a?q=80&w=200&h=200&fit=crop",
     "aum": "15.47B",
     "quarter": "2025 Q4",
-    "holdingsCount": 32
+    "holdingsCount": 32,
+    "reportDate": "2025-12-31",
+    "latestFilingDate": "2026-02-17",
+    "displayedHoldingsCount": 15
   },
   {
     "id": "ark",
@@ -107,7 +134,10 @@
     "imageUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&h=200&fit=crop",
     "aum": "15.07B",
     "quarter": "2025 Q4",
-    "holdingsCount": 196
+    "holdingsCount": 196,
+    "reportDate": "2025-12-31",
+    "latestFilingDate": "2026-02-11",
+    "displayedHoldingsCount": 15
   },
   {
     "id": "soros",
@@ -118,7 +148,10 @@
     "imageUrl": "https://images.unsplash.com/photo-1558222218-b7b54eede3f3?q=80&w=200&h=200&fit=crop",
     "aum": "8.63B",
     "quarter": "2025 Q4",
-    "holdingsCount": 237
+    "holdingsCount": 237,
+    "reportDate": "2025-12-31",
+    "latestFilingDate": "2026-02-13",
+    "displayedHoldingsCount": 15
   },
   {
     "id": "himalaya",
@@ -129,6 +162,9 @@
     "imageUrl": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=200&h=200&fit=crop",
     "aum": "3.57B",
     "quarter": "2025 Q4",
-    "holdingsCount": 9
+    "holdingsCount": 9,
+    "reportDate": "2025-12-31",
+    "latestFilingDate": "2026-02-17",
+    "displayedHoldingsCount": 9
   }
 ]

@@ -8,7 +8,10 @@
     "imageUrl": "https://images.unsplash.com/photo-1558222218-b7b54eede3f3?q=80&w=200&h=200&fit=crop",
     "aum": "8.63B",
     "quarter": "2025 Q4",
-    "holdingsCount": 237
+    "holdingsCount": 237,
+    "displayedHoldingsCount": 15,
+    "reportDate": "2025-12-31",
+    "latestFilingDate": "2026-02-13"
   },
   "radarData": [
     {
@@ -285,7 +288,7 @@
       "type": "Trim"
     },
     {
-      "ticker": "ISHAR",
+      "ticker": "ETF",
       "security": "ISHARES TR",
       "deltaValue": "-0.12B",
       "rawDelta": 120232250,
@@ -302,5 +305,6 @@
       "newWeight": "0.06%",
       "type": "Trim"
     }
-  ]
+  ],
+  "snapshotNote": "Bundled static snapshot for 2025 Q4. Full position count is 237; holdings table stores the top 15."
 }

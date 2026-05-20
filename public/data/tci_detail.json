@@ -8,7 +8,10 @@
     "imageUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=200&h=200&fit=crop",
     "aum": "1.38B",
     "quarter": "2025 Q3",
-    "holdingsCount": 8
+    "holdingsCount": 8,
+    "displayedHoldingsCount": 8,
+    "reportDate": "2025-09-30",
+    "latestFilingDate": "2025-11-03"
   },
   "radarData": [
     {
@@ -239,5 +242,6 @@
       "newWeight": "0.00%",
       "type": "Exit"
     }
-  ]
+  ],
+  "snapshotNote": "Bundled static snapshot for 2025 Q3. Full position count is 8; holdings table stores the top 8."
 }

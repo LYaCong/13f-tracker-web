@@ -8,7 +8,10 @@
     "imageUrl": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=200&h=200&fit=crop",
     "aum": "17.49B",
     "quarter": "2025 Q4",
-    "holdingsCount": 14
+    "holdingsCount": 14,
+    "displayedHoldingsCount": 14,
+    "reportDate": "2025-12-31",
+    "latestFilingDate": "2026-02-17"
   },
   "radarData": [
     {
@@ -120,7 +123,7 @@
     },
     {
       "cusip": "674599105",
-      "security": "OCCIDENTAL PETE CORP (OCCID)",
+      "security": "OCCIDENTAL PETE CORP (OXY)",
       "weight": 3.097207572985064,
       "rawMktValue": 541657312,
       "mktValue": "0.54B",
@@ -258,7 +261,7 @@
       "type": "Trim"
     },
     {
-      "ticker": "OCCID",
+      "ticker": "OXY",
       "security": "OCCIDENTAL PETE CORP",
       "deltaValue": "-0.10B",
       "rawDelta": 98868413,
@@ -293,5 +296,6 @@
       "newWeight": "0.46%",
       "type": "Trim"
     }
-  ]
+  ],
+  "snapshotNote": "Bundled static snapshot for 2025 Q4. Full position count is 14; holdings table stores the top 14."
 }

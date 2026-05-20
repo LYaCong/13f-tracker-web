@@ -1,9 +1,21 @@
 import { Info, Search } from 'lucide-react'
-import { Link, Outlet } from 'react-router-dom'
+import { Link, Outlet, useSearchParams } from 'react-router-dom'
 import { useLanguage } from '../context/useLanguage'
 
 export default function Layout() {
   const { language, toggleLanguage, lang } = useLanguage()
+  const [searchParams, setSearchParams] = useSearchParams()
+  const searchQuery = searchParams.get('q') ?? ''
+
+  const updateSearchQuery = (query: string) => {
+    const nextParams = new URLSearchParams(searchParams)
+    if (query.trim()) {
+      nextParams.set('q', query)
+    } else {
+      nextParams.delete('q')
+    }
+    setSearchParams(nextParams, { replace: true })
+  }
 
   return (
     <div className="min-h-screen bg-background text-text-primary flex flex-col font-sans">
@@ -26,6 +38,8 @@ export default function Layout() {
                 </div>
                 <input
                   type="text"
+                  value={searchQuery}
+                  onChange={(event) => updateSearchQuery(event.target.value)}
                   className="block w-full pl-10 pr-3 py-2 border border-border rounded-full bg-background/50 text-sm focus:outline-none focus:ring-2 focus:ring-accent-blue/50 focus:border-accent-blue transition-all"
                   placeholder={lang.searchPlaceholder}
                 />

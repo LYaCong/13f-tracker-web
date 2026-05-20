@@ -8,7 +8,10 @@
     "imageUrl": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=200&h=200&fit=crop",
     "aum": "35.36B",
     "quarter": "2025 Q4",
-    "holdingsCount": 23
+    "holdingsCount": 23,
+    "displayedHoldingsCount": 15,
+    "reportDate": "2025-12-31",
+    "latestFilingDate": "2026-02-17"
   },
   "radarData": [
     {
@@ -84,7 +87,7 @@
     },
     {
       "cusip": "94106L109",
-      "security": "WASTE MGMT INC DEL (WASTE)",
+      "security": "WASTE MGMT INC DEL (WM)",
       "weight": 17.978359456848082,
       "rawMktValue": 6357164720,
       "mktValue": "6.36B",
@@ -93,7 +96,7 @@
     },
     {
       "cusip": "136375102",
-      "security": "CANADIAN NATL RY CO (CANAD)",
+      "security": "CANADIAN NATL RY CO (CNI)",
       "weight": 14.488303858498263,
       "rawMktValue": 5123077796,
       "mktValue": "5.12B",
@@ -165,7 +168,7 @@
     },
     {
       "cusip": "94106B101",
-      "security": "WASTE CONNECTIONS INC (WASTE)",
+      "security": "WASTE CONNECTIONS INC (WM)",
       "weight": 1.0112804923608356,
       "rawMktValue": 357589728,
       "mktValue": "0.36B",
@@ -229,5 +232,6 @@
       "newWeight": "10.52%",
       "type": "Trim"
     }
-  ]
+  ],
+  "snapshotNote": "Bundled static snapshot for 2025 Q4. Full position count is 23; holdings table stores the top 15."
 }

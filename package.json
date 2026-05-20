@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build --configLoader runner",
+    "build": "tsc -b && vite build",
     "lint": "eslint .",
+    "data:fetch": "node scripts/fetch-sec-data.js",
     "preview": "vite preview"
   },
   "dependencies": {

@@ -1,20 +1,33 @@
+import { Suspense, lazy } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout'
-import Dashboard from './pages/Dashboard'
-import InstitutionDetail from './pages/InstitutionDetail'
 import LanguageProvider from './context/LanguageProvider'
+import { useLanguage } from './context/useLanguage'
 
-function App() {
+const Dashboard = lazy(() => import('./pages/Dashboard'))
+const InstitutionDetail = lazy(() => import('./pages/InstitutionDetail'))
+
+function AppRoutes() {
+  const { lang } = useLanguage()
+
   return (
-    <LanguageProvider>
-      <BrowserRouter>
+    <BrowserRouter>
+      <Suspense fallback={<div className="p-8 text-center text-text-secondary font-semibold">{lang.loadingHistoricalFilings}</div>}>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Dashboard />} />
             <Route path="institution/:id" element={<InstitutionDetail />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </Suspense>
+    </BrowserRouter>
+  )
+}
+
+function App() {
+  return (
+    <LanguageProvider>
+      <AppRoutes />
     </LanguageProvider>
   )
 }

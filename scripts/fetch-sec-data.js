@@ -29,7 +29,11 @@ const OUTPUT_DIR = path.resolve(__dirname, '../public/data');
 const BIG_TECH_CUSIPS = {
   '037833100': 'AAPL', '594918104': 'MSFT', '67066G104': 'NVDA', 
   '02079K305': 'GOOGL', '02079K107': 'GOOG', '023135106': 'AMZN', 
-  '30303M102': 'META', '88160R101': 'TSLA', '084670702': 'BRK-B'
+  '30303M102': 'META', '88160R101': 'TSLA', '084670702': 'BRK-B',
+  '025816109': 'AXP', '060505104': 'BAC', '191216100': 'KO',
+  '166764100': 'CVX', '615369105': 'MCO', '674599105': 'OXY',
+  '171232101': 'CB', '500754106': 'KHC', '94106L109': 'WM',
+  '872590104': 'TMUS', '136375102': 'CNI'
 };
 
 const ISSUER_TICKER_OVERRIDES = new Map([
@@ -38,6 +42,7 @@ const ISSUER_TICKER_OVERRIDES = new Map([
   ['ALPHABET INC', 'GOOGL'],
   ['AMAZON COM INC', 'AMZN'],
   ['BANK AMERICA CORP', 'BAC'],
+  ['BANK OF AMERICA CORP', 'BAC'],
   ['BERKSHIRE HATHAWAY INC DEL', 'BRK-B'],
   ['BRUKER CORP', 'BRKR'],
   ['CANADIAN NATL RY CO', 'CNI'],
@@ -64,6 +69,23 @@ const ISSUER_TICKER_OVERRIDES = new Map([
   ['VISA INC', 'V'],
   ['WASTE MGMT INC DEL', 'WM'],
 ])
+
+const SECTOR_BY_TICKER = {
+  AAPL: 'Technology', MSFT: 'Technology', NVDA: 'Technology', GOOGL: 'Technology',
+  GOOG: 'Technology', AMZN: 'Technology', META: 'Technology', TSLA: 'Technology',
+  PLTR: 'Technology', AVGO: 'Technology', CRM: 'Technology',
+  AXP: 'Financials', BAC: 'Financials', BRK: 'Financials', 'BRK-B': 'Financials',
+  CB: 'Financials', MCO: 'Financials', JPM: 'Financials', C: 'Financials',
+  V: 'Financials', MA: 'Financials',
+  CVX: 'Energy & Utilities', OXY: 'Energy & Utilities', XOM: 'Energy & Utilities',
+  COP: 'Energy & Utilities', HAL: 'Energy & Utilities',
+  KO: 'Consumer', KHC: 'Consumer', WMT: 'Consumer', COST: 'Consumer',
+  MCD: 'Consumer', PEP: 'Consumer', LULU: 'Consumer',
+  UNH: 'Healthcare', MOH: 'Healthcare', PFE: 'Healthcare', REGN: 'Healthcare',
+  LLY: 'Healthcare', ABBV: 'Healthcare', MRK: 'Healthcare', TMO: 'Healthcare',
+  CNI: 'Industrials', WM: 'Industrials', UNP: 'Industrials', CAT: 'Industrials',
+  DE: 'Industrials', BA: 'Industrials', HON: 'Industrials'
+}
 
 async function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
 
@@ -111,6 +133,27 @@ function inferTicker(cusip, name) {
 
   const fallback = words[0] || normalizedName.slice(0, 5);
   return fallback.slice(0, 5);
+}
+
+function formatQuarter(dateString) {
+  const date = new Date(dateString);
+  return `${date.getFullYear()} Q${Math.ceil((date.getMonth() + 1) / 3)}`;
+}
+
+function inferSector(holding) {
+  const ticker = holding.ticker?.toUpperCase();
+  if (ticker && SECTOR_BY_TICKER[ticker]) {
+    return SECTOR_BY_TICKER[ticker];
+  }
+
+  const name = (holding.name || holding.security || '').toUpperCase();
+  if (name.includes('APPLE') || name.includes('MICROSOFT') || name.includes('ALPHABET') || name.includes('NVIDIA') || name.includes('META ') || name.includes('AMAZON') || name.includes('ADVANCED MICRO') || name.includes('BROADCOM') || name.includes('SALESFORCE')) return 'Technology';
+  if (name.includes('BANK') || name.includes('FINANCIAL') || name.includes('EXPRESS') || name.includes('CHUBB') || name.includes('MOODY') || name.includes('BERKSHIRE') || name.includes('CITIGROUP') || name.includes('JPMORGAN') || name.includes('VISA') || name.includes('MASTERCARD')) return 'Financials';
+  if (name.includes('CHEVRON') || name.includes('OCCIDENTAL') || name.includes('ENERGY') || name.includes('EXXON') || name.includes('CONOCO')) return 'Energy & Utilities';
+  if (name.includes('COCA') || name.includes('KRAFT') || name.includes('JOHNSON') || name.includes('PROCTER') || name.includes('WALMART') || name.includes('PEPSI') || name.includes('COSTCO') || name.includes('MCDONALD')) return 'Consumer';
+  if (name.includes('HEALTH') || name.includes('PHARMA') || name.includes('LILLY') || name.includes('UNITEDHEALTH') || name.includes('ABBVIE') || name.includes('MERCK') || name.includes('THERMO') || name.includes('PFIZER')) return 'Healthcare';
+  if (name.includes('INDUSTRIAL') || name.includes('UNION PACIFIC') || name.includes('CATERPILLAR') || name.includes('DEERE') || name.includes('BOEING') || name.includes('HONEYWELL') || name.includes('WASTE MGMT')) return 'Industrials';
+  return 'Other';
 }
 
 async function getInformationTableUrl(cik, accessionNumber) {
@@ -306,8 +349,7 @@ async function processInstitution(inst) {
   adds.sort((a, b) => b.rawDelta - a.rawDelta);
   trims.sort((a, b) => b.rawDelta - a.rawDelta);
   
-  const d = new Date(reportDate);
-  const quarter = `${d.getFullYear()} Q${Math.ceil((d.getMonth() + 1) / 3)}`;
+  const quarter = formatQuarter(reportDate);
 
   // Fetch true historical AUM
   console.log(`Fetching historical AUM for ${inst.name}...`);
@@ -320,8 +362,7 @@ async function processInstitution(inst) {
   for (let idx of historicalIndices) {
     const acc = data.filings.recent.accessionNumber[idx];
     const rawReportDate = data.filings.recent.reportDate[idx];
-    const rd = new Date(rawReportDate);
-    const qtrStr = `${rd.getFullYear()}`;
+    const qtrStr = formatQuarter(rawReportDate);
     const url = `https://www.sec.gov/Archives/edgar/data/${parseInt(inst.cik, 10)}/${acc.replace(/-/g, '')}/primary_doc.xml`;
     try {
       const res = await fetchWithRetry(url);
@@ -345,18 +386,7 @@ async function processInstitution(inst) {
     } catch(e) { }
     await sleep(400);
   }
-  historicAums.reverse(); // oldest to newest
-  
-  // Condense same years (often 4 filings per year) into yearly aggregates for chart, 
-  // or just use latest filing per year for simplicity
-  const assetTrend = [];
-  const yearSeen = new Set();
-  for (let i = historicAums.length - 1; i >= 0; i--) {
-     if (!yearSeen.has(historicAums[i].year)) {
-         assetTrend.unshift(historicAums[i]);
-         yearSeen.add(historicAums[i].year);
-     }
-  }
+  const assetTrend = historicAums.reverse(); // oldest to newest, keep quarterly 13F cadence
 
   // Generate Institutional Style Radar Data
   const generateRadarData = (holds) => {
@@ -371,16 +401,7 @@ async function processInstitution(inst) {
     
     // Naive keyword-based sector mapping
     holds.forEach(h => {
-      const name = h.security.toUpperCase();
-      let sector = 'Other';
-      if (name.includes('APPLE') || name.includes('MICROSOFT') || name.includes('ALPHABET') || name.includes('NVIDIA') || name.includes('META ') || name.includes('AMAZON') || name.includes('ADVANCED MICRO') || name.includes('BROADCOM') || name.includes('SALESFORCE')) sector = 'Technology';
-      else if (name.includes('BANK') || name.includes('FINANCIAL') || name.includes('EXPRESS') || name.includes('CHUBB') || name.includes('MOODY') || name.includes('BERKSHIRE') || name.includes('CITIGROUP') || name.includes('JPMORGAN') || name.includes('VISA') || name.includes('MASTERCARD')) sector = 'Financials';
-      else if (name.includes('CHEVRON') || name.includes('OCCIDENTAL') || name.includes('ENERGY') || name.includes('EXXON') || name.includes('CONOCO')) sector = 'Energy & Utilities';
-      else if (name.includes('COCA') || name.includes('KRAFT') || name.includes('JOHNSON') || name.includes('PROCTER') || name.includes('WALMART') || name.includes('PEPSI') || name.includes('COSTCO') || name.includes('MCDONALD')) sector = 'Consumer';
-      else if (name.includes('HEALTH') || name.includes('PHARMA') || name.includes('LILLY') || name.includes('UNITEDHEALTH') || name.includes('ABBVIE') || name.includes('MERCK') || name.includes('THERMO') || name.includes('PFIZER')) sector = 'Healthcare';
-      else if (name.includes('INDUSTRIAL') || name.includes('UNION PACIFIC') || name.includes('CATERPILLAR') || name.includes('DEERE') || name.includes('BOEING') || name.includes('HONEYWELL')) sector = 'Industrials';
-      else if (name.includes('SPDR') || name.includes('ISHARES') || name.includes('VANGUARD') || name.includes('INVESCO') || name.includes('ETF')) sector = 'Other';
-      
+      const sector = inferSector(h);
       sectors[sector] += h.weight;
     });
 
@@ -396,7 +417,8 @@ async function processInstitution(inst) {
     return radar;
   };
 
-  const radarData = generateRadarData(formattedHoldings);
+  const radarData = generateRadarData(currentData.holdings);
+  const displayedHoldingsCount = Math.min(formattedHoldings.length, 15);
 
   // Export Detail JSON
   const detailJson = {
@@ -405,8 +427,11 @@ async function processInstitution(inst) {
       aum: normalizeBillion(currentData.totalValue),
       quarter,
       holdingsCount: currentData.holdings.length,
+      displayedHoldingsCount,
+      reportDate,
       latestFilingDate
     },
+    snapshotNote: `Bundled static snapshot for ${quarter}. Full position count is ${currentData.holdings.length}; holdings table stores the top ${displayedHoldingsCount}.`,
     radarData,
     assetTrend,
     holdings: formattedHoldings.slice(0, 15), // Top 15 for pie chart
@@ -421,6 +446,8 @@ async function processInstitution(inst) {
     aum: normalizeBillion(currentData.totalValue),
     quarter,
     holdingsCount: currentData.holdings.length,
+    displayedHoldingsCount,
+    reportDate,
     latestFilingDate,
     rawTotalValue: currentData.totalValue,
     allHoldings: currentData.holdings

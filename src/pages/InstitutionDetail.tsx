@@ -1,8 +1,8 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import {
   ArrowLeft,
-  ChevronDown,
+  CalendarDays,
   TrendingDown,
   TrendingUp,
 } from 'lucide-react'
@@ -45,21 +45,90 @@ function normalizeTooltipValue(value: TooltipValue) {
   return Number(value ?? 0)
 }
 
+function formatPercent(value: number | null) {
+  if (value === null || !Number.isFinite(value)) {
+    return '--'
+  }
+
+  return `${value >= 0 ? '+' : ''}${value.toFixed(1)}%`
+}
+
+function getTrendMetrics(assetTrend: { value: string }[], lang: ReturnType<typeof useLanguage>['lang']) {
+  const values = assetTrend.map((point) => Number(point.value)).filter(Number.isFinite)
+  if (values.length < 2) {
+    return {
+      oneYChange: '--',
+      maxDrawdown: '--',
+      volatility: '--',
+      sinceTrough: '--',
+    }
+  }
+
+  const latest = values[values.length - 1]
+  const previous = values[values.length - 2]
+  const oneYChange = previous > 0 ? ((latest - previous) / previous) * 100 : null
+
+  let peak = values[0]
+  let maxDrawdown = 0
+  values.forEach((value) => {
+    peak = Math.max(peak, value)
+    if (peak > 0) {
+      maxDrawdown = Math.min(maxDrawdown, ((value - peak) / peak) * 100)
+    }
+  })
+
+  const trough = Math.min(...values)
+  const sinceTrough = trough > 0 ? ((latest - trough) / trough) * 100 : null
+  const returns = values.slice(1).map((value, index) => {
+    const previousValue = values[index]
+    return previousValue > 0 ? ((value - previousValue) / previousValue) * 100 : 0
+  })
+  const averageReturn = returns.reduce((sum, value) => sum + value, 0) / returns.length
+  const variance = returns.reduce((sum, value) => sum + (value - averageReturn) ** 2, 0) / returns.length
+  const volatilityValue = Math.sqrt(variance)
+  const volatility = volatilityValue < 8 ? lang.low : volatilityValue < 18 ? lang.med : lang.high
+
+  return {
+    oneYChange: formatPercent(oneYChange),
+    maxDrawdown: formatPercent(maxDrawdown),
+    volatility,
+    sinceTrough: formatPercent(sinceTrough),
+  }
+}
+
 export default function InstitutionDetail() {
   const { id } = useParams()
   const [detailData, setDetailData] = useState<InstitutionDetailData | null>(null)
+  const [isLoading, setIsLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
   const { lang } = useLanguage()
 
-  useEffect(() => {
+  const loadDetailData = useCallback(async () => {
     if (!id) {
       return
     }
 
-    fetch(`/data/${id}_detail.json?t=${Date.now()}`)
-      .then((res) => res.json() as Promise<InstitutionDetailData>)
-      .then((data) => setDetailData(data))
-      .catch(console.error)
-  }, [id])
+    setIsLoading(true)
+    setError(null)
+    try {
+      const response = await fetch(`/data/${id}_detail.json`)
+      if (!response.ok) {
+        throw new Error(`Unable to load ${id} filing snapshot`)
+      }
+
+      const data = await response.json() as InstitutionDetailData
+      setDetailData(data)
+    } catch (err) {
+      setDetailData(null)
+      setError(err instanceof Error ? err.message : lang.dataLoadFailed)
+    } finally {
+      setIsLoading(false)
+    }
+  }, [id, lang.dataLoadFailed])
+
+  useEffect(() => {
+    void loadDetailData()
+  }, [loadDetailData])
 
   const filingPeriod = useMemo(() => {
     if (!detailData) {
@@ -69,7 +138,7 @@ export default function InstitutionDetail() {
     return parseFilingPeriod(detailData.institution.quarter)
   }, [detailData])
 
-  if (!detailData) {
+  if (isLoading) {
     return (
       <div className="flex flex-col items-center justify-center min-h-[50vh] text-text-secondary animate-pulse">
         <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent-blue to-accent-purple flex items-center justify-center text-white font-bold shadow-soft mb-4">
@@ -80,12 +149,30 @@ export default function InstitutionDetail() {
     )
   }
 
+  if (error || !detailData) {
+    return (
+      <div className="glass-card p-8 text-center animate-in fade-in">
+        <p className="font-bold text-text-primary">{lang.dataLoadFailed}</p>
+        <p className="text-sm text-text-secondary mt-2">{error}</p>
+        <button
+          type="button"
+          onClick={() => void loadDetailData()}
+          className="mt-4 px-4 py-2 rounded-md bg-accent-blue text-white text-sm font-bold hover:bg-blue-700 transition-colors"
+        >
+          {lang.retry}
+        </button>
+      </div>
+    )
+  }
+
   const { institution } = detailData
   const holdings = detailData.holdings ?? EMPTY_HOLDINGS
   const topAdds = detailData.topAdds ?? EMPTY_POSITION_CHANGES
   const topTrims = detailData.topTrims ?? EMPTY_POSITION_CHANGES
   const radarData = detailData.radarData ?? EMPTY_RADAR_DATA
   const assetTrend = detailData.assetTrend ?? []
+  const trendMetrics = getTrendMetrics(assetTrend, lang)
+  const displayedHoldingsCount = institution.displayedHoldingsCount ?? holdings.length
 
   const sortedRadar = [...radarData].sort((a, b) => b.A - a.A)
   const dominantStyle = sortedRadar[0]
@@ -111,28 +198,12 @@ export default function InstitutionDetail() {
           </p>
         </div>
 
-        <div className="glass-card p-1.5 flex gap-2">
-          <div className="relative">
-            <select
-              value={filingPeriod?.year ?? ''}
-              disabled
-              className="appearance-none pl-3 pr-8 py-1.5 text-sm bg-text-primary text-white rounded-md font-medium shadow-sm opacity-100 cursor-not-allowed outline-none"
-            >
-              <option value={filingPeriod?.year ?? ''}>{filingPeriod?.year ?? '----'}</option>
-            </select>
-            <ChevronDown className="w-3.5 h-3.5 text-white absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none" />
-          </div>
-
-          <div className="relative">
-            <select
-              value={filingPeriod?.quarter ?? ''}
-              disabled
-              className="appearance-none pl-3 pr-8 py-1.5 text-sm bg-text-primary text-white rounded-md font-medium shadow-sm opacity-100 cursor-not-allowed outline-none"
-            >
-              <option value={filingPeriod?.quarter ?? ''}>{filingPeriod?.quarter ?? '--'}</option>
-            </select>
-            <ChevronDown className="w-3.5 h-3.5 text-white absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none" />
-          </div>
+        <div className="glass-card px-3 py-2 flex items-center gap-2 text-sm font-bold text-text-primary">
+          <CalendarDays className="w-4 h-4 text-accent-blue" />
+          <span>{lang.snapshotLabel}</span>
+          <span className="text-text-secondary">
+            {filingPeriod?.label ?? institution.quarter}
+          </span>
         </div>
       </div>
 
@@ -156,7 +227,7 @@ export default function InstitutionDetail() {
         <div className="glass-card p-4">
           <p className="text-xs font-semibold text-text-secondary">{lang.latestFilingDate}</p>
           <p className="text-xl font-black mt-1 text-text-primary">
-            {institution.latestFilingDate ?? lang.latestFilingUnavailable}
+            {institution.latestFilingDate ?? institution.reportDate ?? lang.latestFilingUnavailable}
           </p>
         </div>
       </div>
@@ -180,10 +251,10 @@ export default function InstitutionDetail() {
             </ResponsiveContainer>
           </div>
           <div className="grid grid-cols-4 gap-2 mt-4 pt-4 border-t border-border/50 text-center">
-            <div><p className="text-xs text-text-secondary font-medium">{lang.oneYChange}</p><p className="text-sm font-bold text-accent-green">+12.4%</p></div>
-            <div><p className="text-xs text-text-secondary font-medium">{lang.maxDrawdown}</p><p className="text-sm font-bold text-accent-red">-24.1%</p></div>
-            <div><p className="text-xs text-text-secondary font-medium">{lang.volatility}</p><p className="text-sm font-bold text-text-primary">{lang.low}</p></div>
-            <div><p className="text-xs text-text-secondary font-medium">{lang.sinceTrough}</p><p className="text-sm font-bold text-accent-green">+45.2%</p></div>
+            <div><p className="text-xs text-text-secondary font-medium">{lang.oneYChange}</p><p className="text-sm font-bold text-accent-green">{trendMetrics.oneYChange}</p></div>
+            <div><p className="text-xs text-text-secondary font-medium">{lang.maxDrawdown}</p><p className="text-sm font-bold text-accent-red">{trendMetrics.maxDrawdown}</p></div>
+            <div><p className="text-xs text-text-secondary font-medium">{lang.volatility}</p><p className="text-sm font-bold text-text-primary">{trendMetrics.volatility}</p></div>
+            <div><p className="text-xs text-text-secondary font-medium">{lang.sinceTrough}</p><p className="text-sm font-bold text-accent-green">{trendMetrics.sinceTrough}</p></div>
           </div>
         </div>
 
@@ -267,7 +338,9 @@ export default function InstitutionDetail() {
       <div className="glass-card overflow-hidden">
         <div className="p-5 border-b border-border bg-gradient-to-r from-background to-white">
           <h2 className="text-lg font-bold text-text-primary mb-0.5">{lang.quarterlyHoldingsOverview}</h2>
-          <p className="text-xs text-text-secondary">{institution.quarter} | {institution.holdingsCount} {lang.totalPositions}</p>
+              <p className="text-xs text-text-secondary">
+                {institution.quarter} | {displayedHoldingsCount}/{institution.holdingsCount} {lang.totalPositions}
+              </p>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-5 divide-y lg:divide-y-0 lg:divide-x divide-border">
           <div className="lg:col-span-3 overflow-x-auto">
@@ -297,9 +370,9 @@ export default function InstitutionDetail() {
               </tbody>
             </table>
             <div className="p-4 border-t border-border text-center">
-              <button className="text-sm font-semibold text-accent-blue hover:text-accent-purple transition-colors">
-                {lang.expandAll} {institution.holdingsCount} {lang.holdings}
-              </button>
+              <p className="text-sm font-semibold text-text-secondary">
+                {lang.showingTopHoldings}: {displayedHoldingsCount}/{institution.holdingsCount}. {lang.topHoldingsOnly}
+              </p>
             </div>
           </div>
           <div className="lg:col-span-2 p-5 flex flex-col items-center justify-center bg-background/30">

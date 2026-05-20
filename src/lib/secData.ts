@@ -10,6 +10,8 @@ export interface InstitutionMeta {
   aum: string
   quarter: string
   holdingsCount: number
+  displayedHoldingsCount?: number
+  reportDate?: string
   latestFilingDate?: string
 }
 
@@ -49,6 +51,7 @@ export interface PositionChange {
 
 export interface InstitutionDetailData {
   institution: InstitutionMeta
+  snapshotNote?: string
   radarData: RadarDatum[]
   assetTrend: AssetTrendPoint[]
   holdings: HoldingEntry[]

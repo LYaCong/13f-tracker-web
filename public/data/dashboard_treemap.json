@@ -14,7 +14,7 @@
     ]
   },
   {
-    "ticker": "AMERI",
+    "ticker": "AXP",
     "heat": 100,
     "avgWeight": "7.07%",
     "value": "56.23B",
@@ -26,7 +26,7 @@
     ]
   },
   {
-    "ticker": "BANK",
+    "ticker": "BAC",
     "heat": 53,
     "avgWeight": "5.39%",
     "value": "28.56B",
@@ -37,7 +37,7 @@
     ]
   },
   {
-    "ticker": "COCA",
+    "ticker": "KO",
     "heat": 51,
     "avgWeight": "5.14%",
     "value": "27.99B",
@@ -48,7 +48,7 @@
     ]
   },
   {
-    "ticker": "CHEVR",
+    "ticker": "CVX",
     "heat": 34,
     "avgWeight": "7.24%",
     "value": "19.84B",
@@ -70,7 +70,7 @@
     ]
   },
   {
-    "ticker": "MOODY",
+    "ticker": "MCO",
     "heat": 23,
     "avgWeight": "4.60%",
     "value": "12.60B",
@@ -80,7 +80,7 @@
     ]
   },
   {
-    "ticker": "OCCID",
+    "ticker": "OXY",
     "heat": 49,
     "avgWeight": "2.92%",
     "value": "11.50B",
@@ -92,7 +92,7 @@
     ]
   },
   {
-    "ticker": "CHUBB",
+    "ticker": "CB",
     "heat": 24,
     "avgWeight": "1.98%",
     "value": "10.71B",
@@ -118,7 +118,7 @@
     ]
   },
   {
-    "ticker": "KRAFT",
+    "ticker": "KHC",
     "heat": 25,
     "avgWeight": "1.02%",
     "value": "7.96B",
@@ -145,7 +145,7 @@
     ]
   },
   {
-    "ticker": "WASTE",
+    "ticker": "WM",
     "heat": 87,
     "avgWeight": "9.50%",
     "value": "6.72B",
@@ -171,7 +171,7 @@
     ]
   },
   {
-    "ticker": "T-MOB",
+    "ticker": "TMUS",
     "heat": 100,
     "avgWeight": "18.79%",
     "value": "5.83B",
@@ -198,7 +198,7 @@
     ]
   },
   {
-    "ticker": "CANAD",
+    "ticker": "CNI",
     "heat": 69,
     "avgWeight": "7.32%",
     "value": "5.16B",
@@ -209,7 +209,7 @@
     ]
   },
   {
-    "ticker": "ISHAR",
+    "ticker": "ETF",
     "heat": 91,
     "avgWeight": "4.48%",
     "value": "4.54B",
