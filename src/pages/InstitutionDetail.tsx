@@ -43,6 +43,10 @@ const EMPTY_RADAR_DATA: RadarDatum[] = []
 const EMPTY_HOLDINGS: HoldingEntry[] = []
 const EMPTY_POSITION_CHANGES: PositionChange[] = []
 type TooltipValue = string | number | ReadonlyArray<string | number> | undefined
+type TooltipName = string | number | undefined
+type TooltipPayload = {
+  payload?: HoldingEntry
+}
 
 function normalizeTooltipValue(value: TooltipValue) {
   if (Array.isArray(value)) {
@@ -50,6 +54,10 @@ function normalizeTooltipValue(value: TooltipValue) {
   }
 
   return Number(value ?? 0)
+}
+
+function normalizeTooltipName(name: TooltipName) {
+  return Number.isFinite(Number(name)) ? Number(name) : null
 }
 
 function formatPercent(value: number | null) {
@@ -200,6 +208,19 @@ export default function InstitutionDetail() {
   const top2Concentration =
     sortedRadar.length >= 2 ? sortedRadar[0].A + sortedRadar[1].A : dominantStyle?.A ?? 0
   const styleBreadth = sortedRadar.filter((segment) => segment.A >= 10).length
+  const formatHoldingTooltip = (
+    value: TooltipValue,
+    name: TooltipName,
+    item: TooltipPayload,
+    index: number,
+  ) => {
+    const holding = item.payload ?? holdings[normalizeTooltipName(name) ?? index]
+    const displayName = holding
+      ? translateSecurityName(holding.security, language, [holding.cusip, holding.security])
+      : String(name ?? lang.security)
+
+    return [`${normalizeTooltipValue(value).toFixed(2)}%`, displayName]
+  }
 
   return (
     <div className="space-y-4 animate-in fade-in slide-in-from-bottom-4 duration-500 pb-8">
@@ -432,7 +453,7 @@ export default function InstitutionDetail() {
                       <Cell key={entry.cusip} fill={entry.color} />
                     ))}
                   </Pie>
-                  <RechartsTooltip formatter={(value: TooltipValue) => `${normalizeTooltipValue(value).toFixed(2)}%`} />
+                  <RechartsTooltip formatter={formatHoldingTooltip} />
                 </PieChart>
               </ResponsiveContainer>
               <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
