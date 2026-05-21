@@ -453,7 +453,22 @@ export default function InstitutionDetail() {
                       <Cell key={entry.cusip} fill={entry.color} />
                     ))}
                   </Pie>
-                  <RechartsTooltip formatter={formatHoldingTooltip} />
+                  <RechartsTooltip
+                    formatter={formatHoldingTooltip}
+                    position={{ x: 8, y: 8 }}
+                    contentStyle={{
+                      maxWidth: 220,
+                      borderRadius: 8,
+                      border: '1px solid #E5E7EB',
+                      boxShadow: '0 8px 20px rgba(15, 23, 42, 0.12)',
+                      fontSize: 12,
+                      lineHeight: 1.35,
+                      padding: '8px 10px',
+                    }}
+                    itemStyle={{ color: '#1D4ED8', padding: 0, whiteSpace: 'normal' }}
+                    labelStyle={{ display: 'none' }}
+                    wrapperStyle={{ pointerEvents: 'none', zIndex: 20 }}
+                  />
                 </PieChart>
               </ResponsiveContainer>
               <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
