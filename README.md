@@ -38,10 +38,12 @@ No paywalls. No ads. Just clean data visualization.
 The app keeps the latest dataset at `public/data/*.json` for backwards compatibility, and also archives every saved quarter under `public/data/quarters/<quarter-id>/`.
 
 - Archive index: `public/data/quarters.json`
+- Latest archive: `public/data/quarters/2026-Q1/`
 - Baseline archive: `public/data/quarters/2025-Q4/`
 - Header selector: switches the app with `?quarter=2025-Q4`
 - Future runs of `npm run data:fetch` update the latest files and archive the dominant quarter without deleting older quarters
-- The baseline `2025 Q4` archive is transparent about mixed coverage: 11 institutions are on `2025 Q4`, while TCI remains on `2025 Q3`
+- To rebuild a specific quarter archive, run `SEC_REPORT_DATE=YYYY-MM-DD npm run data:fetch` before refreshing the latest dataset
+- The `2025 Q4` and `2026 Q1` archives currently include complete coverage for all 12 tracked institutions
 - Detail pages show the full position count, but the bundled holdings table stores the top positions for a compact static payload
 - `latestFilingDate`, `reportDate`, and displayed holding counts are included in the JSON files
 
@@ -182,10 +184,12 @@ MIT
 应用会继续把最新数据放在 `public/data/*.json`，同时把每个已保存季度归档到 `public/data/quarters/<quarter-id>/`。
 
 - 归档索引：`public/data/quarters.json`
+- 最新归档：`public/data/quarters/2026-Q1/`
 - 起始归档：`public/data/quarters/2025-Q4/`
 - 顶部选择器：通过 `?quarter=2025-Q4` 切换数据集
 - 以后运行 `npm run data:fetch` 会更新最新版文件，并把主季度归档起来，不删除旧季度
-- 起始的 `2025 Q4` 归档会明确提示混合覆盖：11 家机构是 `2025 Q4`，TCI 仍是 `2025 Q3`
+- 如需重建某个指定季度，可先运行 `SEC_REPORT_DATE=YYYY-MM-DD npm run data:fetch`，再刷新最新数据集
+- 当前 `2025 Q4` 和 `2026 Q1` 归档都已经覆盖全部 12 家追踪机构
 - 详情页展示完整持仓数量，但静态 JSON 的持仓表只打包头部持仓，便于保持轻量
 - JSON 已包含 `latestFilingDate`、`reportDate` 和当前展示持仓数量
 

@@ -2,27 +2,28 @@
   "institution": {
     "id": "tci",
     "name": "TCI Fund Management Ltd",
-    "cik": "0001649339",
+    "cik": "0001647251",
     "manager": "Chris Hohn",
     "style": "Focused",
     "imageUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=200&h=200&fit=crop",
-    "aum": "1.38B",
-    "quarter": "2025 Q3",
-    "holdingsCount": 8,
-    "displayedHoldingsCount": 8,
-    "reportDate": "2025-09-30",
-    "latestFilingDate": "2025-11-03"
+    "aum": "53.65B",
+    "quarter": "2025 Q4",
+    "holdingsCount": 9,
+    "displayedHoldingsCount": 9,
+    "reportDate": "2025-12-31",
+    "latestFilingDate": "2026-02-17"
   },
+  "snapshotNote": "Bundled static snapshot for 2025 Q4. Full position count is 9; holdings table stores the top 9.",
   "radarData": [
     {
       "subject": "Financials",
-      "A": 0,
+      "A": 30.8,
       "B": 14,
       "fullMark": 100
     },
     {
       "subject": "Technology",
-      "A": 13.5,
+      "A": 19.6,
       "B": 31,
       "fullMark": 100
     },
@@ -40,208 +41,224 @@
     },
     {
       "subject": "Healthcare",
-      "A": 12.8,
+      "A": 0,
       "B": 11,
       "fullMark": 100
     },
     {
       "subject": "Other",
-      "A": 73.7,
+      "A": 47.8,
       "B": 12,
       "fullMark": 100
     },
     {
       "subject": "Industrials",
-      "A": 0,
+      "A": 1.8,
       "B": 9,
       "fullMark": 100
     }
   ],
   "assetTrend": [
     {
-      "year": "2022",
-      "value": "46.5"
+      "year": "2022 Q2",
+      "value": "31.6"
     },
     {
-      "year": "2023",
-      "value": "94.6"
+      "year": "2022 Q3",
+      "value": "28.6"
     },
     {
-      "year": "2024",
-      "value": "77.4"
+      "year": "2022 Q4",
+      "value": "29.9"
     },
     {
-      "year": "2025",
-      "value": "1.4"
+      "year": "2023 Q1",
+      "value": "29.2"
+    },
+    {
+      "year": "2023 Q2",
+      "value": "33.7"
+    },
+    {
+      "year": "2023 Q3",
+      "value": "27.6"
+    },
+    {
+      "year": "2023 Q4",
+      "value": "36.0"
+    },
+    {
+      "year": "2024 Q1",
+      "value": "39.7"
+    },
+    {
+      "year": "2024 Q2",
+      "value": "40.9"
+    },
+    {
+      "year": "2024 Q3",
+      "value": "44.0"
+    },
+    {
+      "year": "2024 Q4",
+      "value": "42.4"
+    },
+    {
+      "year": "2025 Q1",
+      "value": "43.4"
+    },
+    {
+      "year": "2025 Q2",
+      "value": "50.7"
+    },
+    {
+      "year": "2025 Q3",
+      "value": "52.7"
+    },
+    {
+      "year": "2025 Q4",
+      "value": "53.6"
     }
   ],
   "holdings": [
     {
-      "cusip": "69608A108",
-      "security": "PALANTIR TECHNOLOGIES INC (PAL",
-      "weight": 66.03687160073919,
-      "rawMktValue": 912100000,
-      "mktValue": "0.91B",
-      "qOqDelta": "+0.91B",
+      "cusip": "369604301",
+      "security": "GE AEROSPACE (GE)",
+      "weight": 27.278585219312934,
+      "rawMktValue": 14634638061,
+      "mktValue": "14.63B",
+      "qOqDelta": "+0.34B",
       "color": "#3b82f6"
     },
     {
-      "cusip": "67066G104",
-      "security": "NVIDIA CORPORATION (NVDA)",
-      "weight": 13.508562112998485,
-      "rawMktValue": 186580000,
-      "mktValue": "0.19B",
-      "qOqDelta": "+0.19B",
+      "cusip": "92826C839",
+      "security": "VISA INC (V)",
+      "weight": 18.123728413625624,
+      "rawMktValue": 9723165755,
+      "mktValue": "9.72B",
+      "qOqDelta": "+0.14B",
       "color": "#1d4ed8"
     },
     {
-      "cusip": "717081103",
-      "security": "PFIZER INC (PFIZE)",
-      "weight": 11.068651387261271,
-      "rawMktValue": 152880000,
-      "mktValue": "0.15B",
-      "qOqDelta": "+0.15B",
+      "cusip": "594918104",
+      "security": "MICROSOFT CORP (MSFT)",
+      "weight": 15.128177426272426,
+      "rawMktValue": 8116088110,
+      "mktValue": "8.12B",
+      "qOqDelta": "-0.48B",
       "color": "#2dd4bf"
     },
     {
-      "cusip": "406216101",
-      "security": "HALLIBURTON CO (HALLI)",
-      "weight": 4.452656072191053,
-      "rawMktValue": 61500000,
-      "mktValue": "0.06B",
-      "qOqDelta": "+0.06B",
+      "cusip": "615369105",
+      "security": "MOODYS CORP (MCO)",
+      "weight": 12.672481839695951,
+      "rawMktValue": 6798636497,
+      "mktValue": "6.80B",
+      "qOqDelta": "+0.46B",
       "color": "#a855f7"
     },
     {
-      "cusip": "60855R100",
-      "security": "MOLINA HEALTHCARE INC (MOLIN)",
-      "weight": 1.7318298088912192,
-      "rawMktValue": 23920000,
-      "mktValue": "0.02B",
-      "qOqDelta": "+0.02B",
+      "cusip": "78409V104",
+      "security": "S&P GLOBAL INC (S)",
+      "weight": 11.484872422586967,
+      "rawMktValue": 6161498103,
+      "mktValue": "6.16B",
+      "qOqDelta": "+0.72B",
       "color": "#22c55e"
     },
     {
-      "cusip": "550021109",
-      "security": "LULULEMON ATHLETICA INC (LULUL",
-      "weight": 1.288229422642202,
-      "rawMktValue": 17793000,
-      "mktValue": "0.02B",
-      "qOqDelta": "-0.09B",
+      "cusip": "13646K108",
+      "security": "CANADIAN PACIFIC KANSAS CITY (",
+      "weight": 6.539995798580925,
+      "rawMktValue": 3508630329,
+      "mktValue": "3.51B",
+      "qOqDelta": "-0.20B",
       "color": "#ec4899"
     },
     {
-      "cusip": "78442P106",
-      "security": "SLM CORP (SLM)",
-      "weight": 0.9620557131445063,
-      "rawMktValue": 13287895,
-      "mktValue": "0.01B",
-      "qOqDelta": "+0.01B",
+      "cusip": "02079K107",
+      "security": "ALPHABET INC (GOOG)",
+      "weight": 4.443493758955511,
+      "rawMktValue": 2383881802,
+      "mktValue": "2.38B",
+      "qOqDelta": "+0.53B",
       "color": "#10b981"
     },
     {
-      "cusip": "116794207",
-      "security": "BRUKER CORP (BRUKE)",
-      "weight": 0.9511438821320802,
-      "rawMktValue": 13137181,
-      "mktValue": "0.01B",
-      "qOqDelta": "+0.01B",
+      "cusip": "N3168P101",
+      "security": "FERROVIAL SE (FERRO)",
+      "weight": 2.512940702395241,
+      "rawMktValue": 1348162940,
+      "mktValue": "1.35B",
+      "qOqDelta": "+0.23B",
       "color": "#f97316"
+    },
+    {
+      "cusip": "136375102",
+      "security": "CANADIAN NATL RY CO (CNI)",
+      "weight": 1.815724418574419,
+      "rawMktValue": 974114657,
+      "mktValue": "0.97B",
+      "qOqDelta": "-0.80B",
+      "color": "#1e3a8a"
     }
   ],
   "topAdds": [
     {
-      "ticker": "PALAN",
-      "security": "PALANTIR TECHNOLOGIE",
-      "deltaValue": "+0.91B",
-      "rawDelta": 912100000,
-      "shareChange": "+100.0%",
-      "newWeight": "66.04%",
-      "type": "New"
+      "ticker": "S",
+      "security": "S&P GLOBAL INC",
+      "deltaValue": "+0.72B",
+      "rawDelta": 715276475,
+      "shareChange": "+5.4%",
+      "newWeight": "11.48%",
+      "type": "Add"
     },
     {
-      "ticker": "NVDA",
-      "security": "NVIDIA CORPORATION",
-      "deltaValue": "+0.19B",
-      "rawDelta": 186580000,
-      "shareChange": "+100.0%",
-      "newWeight": "13.51%",
-      "type": "New"
+      "ticker": "MSFT",
+      "security": "MICROSOFT CORP",
+      "deltaValue": "+0.48B",
+      "rawDelta": 477843952,
+      "shareChange": "+1.1%",
+      "newWeight": "15.13%",
+      "type": "Add"
     },
     {
-      "ticker": "PFIZE",
-      "security": "PFIZER INC",
-      "deltaValue": "+0.15B",
-      "rawDelta": 152880000,
-      "shareChange": "+100.0%",
-      "newWeight": "11.07%",
-      "type": "New"
-    },
-    {
-      "ticker": "HALLI",
-      "security": "HALLIBURTON CO",
-      "deltaValue": "+0.06B",
-      "rawDelta": 61500000,
-      "shareChange": "+100.0%",
-      "newWeight": "4.45%",
-      "type": "New"
-    },
-    {
-      "ticker": "MOLIN",
-      "security": "MOLINA HEALTHCARE IN",
-      "deltaValue": "+0.02B",
-      "rawDelta": 23920000,
-      "shareChange": "+100.0%",
-      "newWeight": "1.73%",
-      "type": "New"
+      "ticker": "FERRO",
+      "security": "FERROVIAL SE",
+      "deltaValue": "+0.23B",
+      "rawDelta": 233692159,
+      "shareChange": "+6.5%",
+      "newWeight": "2.51%",
+      "type": "Add"
     }
   ],
   "topTrims": [
     {
-      "ticker": "UNITE",
-      "security": "UNITEDHEALTH GROUP I",
-      "deltaValue": "-0.12B",
-      "rawDelta": 115428900,
-      "shareChange": "-100.0%",
-      "newWeight": "0.00%",
-      "type": "Exit"
-    },
-    {
-      "ticker": "REGEN",
-      "security": "REGENERON PHARMACEUT",
-      "deltaValue": "-0.11B",
-      "rawDelta": 112875000,
-      "shareChange": "-100.0%",
-      "newWeight": "0.00%",
-      "type": "Exit"
-    },
-    {
-      "ticker": "LULUL",
-      "security": "LULULEMON ATHLETICA ",
-      "deltaValue": "-0.09B",
-      "rawDelta": 89118000,
-      "shareChange": "-77.8%",
-      "newWeight": "1.29%",
+      "ticker": "CNI",
+      "security": "CANADIAN NATL RY CO",
+      "deltaValue": "-0.80B",
+      "rawDelta": 795558593,
+      "shareChange": "-47.5%",
+      "newWeight": "1.82%",
       "type": "Trim"
     },
     {
-      "ticker": "META",
-      "security": "META PLATFORMS INC",
-      "deltaValue": "-0.07B",
-      "rawDelta": 73809000,
-      "shareChange": "-100.0%",
-      "newWeight": "0.00%",
-      "type": "Exit"
+      "ticker": "CANAD",
+      "security": "CANADIAN PACIFIC KAN",
+      "deltaValue": "-0.20B",
+      "rawDelta": 204884498,
+      "shareChange": "-4.4%",
+      "newWeight": "6.54%",
+      "type": "Trim"
     },
     {
-      "ticker": "LAUDE",
-      "security": "LAUDER ESTEE COS INC",
-      "deltaValue": "-0.05B",
-      "rawDelta": 52520000,
-      "shareChange": "-100.0%",
-      "newWeight": "0.00%",
-      "type": "Exit"
+      "ticker": "V",
+      "security": "VISA INC",
+      "deltaValue": "-0.14B",
+      "rawDelta": 144947271,
+      "shareChange": "-1.2%",
+      "newWeight": "18.12%",
+      "type": "Trim"
     }
-  ],
-  "snapshotNote": "Bundled static snapshot for 2025 Q3. Full position count is 8; holdings table stores the top 8."
+  ]
 }

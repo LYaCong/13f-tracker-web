@@ -13,6 +13,7 @@
     "reportDate": "2025-12-31",
     "latestFilingDate": "2026-02-11"
   },
+  "snapshotNote": "Bundled static snapshot for 2025 Q4. Full position count is 196; holdings table stores the top 15.",
   "radarData": [
     {
       "subject": "Financials",
@@ -22,13 +23,13 @@
     },
     {
       "subject": "Technology",
-      "A": 9.6,
+      "A": 22.1,
       "B": 31,
       "fullMark": 100
     },
     {
       "subject": "Consumer",
-      "A": 0.1,
+      "A": 0,
       "B": 16,
       "fullMark": 100
     },
@@ -40,13 +41,13 @@
     },
     {
       "subject": "Healthcare",
-      "A": 3.1,
+      "A": 1.8,
       "B": 11,
       "fullMark": 100
     },
     {
       "subject": "Other",
-      "A": 85.6,
+      "A": 74.6,
       "B": 12,
       "fullMark": 100
     },
@@ -59,19 +60,63 @@
   ],
   "assetTrend": [
     {
-      "year": "2022",
-      "value": "11.5"
-    },
-    {
-      "year": "2023",
+      "year": "2022 Q2",
       "value": "16.9"
     },
     {
-      "year": "2024",
+      "year": "2022 Q3",
+      "value": "14.3"
+    },
+    {
+      "year": "2022 Q4",
+      "value": "11.5"
+    },
+    {
+      "year": "2023 Q1",
+      "value": "14.6"
+    },
+    {
+      "year": "2023 Q2",
+      "value": "15.1"
+    },
+    {
+      "year": "2023 Q3",
+      "value": "13.1"
+    },
+    {
+      "year": "2023 Q4",
+      "value": "16.9"
+    },
+    {
+      "year": "2024 Q1",
+      "value": "14.4"
+    },
+    {
+      "year": "2024 Q2",
+      "value": "11.3"
+    },
+    {
+      "year": "2024 Q3",
+      "value": "10.9"
+    },
+    {
+      "year": "2024 Q4",
       "value": "12.0"
     },
     {
-      "year": "2025",
+      "year": "2025 Q1",
+      "value": "10.0"
+    },
+    {
+      "year": "2025 Q2",
+      "value": "13.6"
+    },
+    {
+      "year": "2025 Q3",
+      "value": "16.8"
+    },
+    {
+      "year": "2025 Q4",
       "value": "15.1"
     }
   ],
@@ -114,7 +159,7 @@
     },
     {
       "cusip": "69608A108",
-      "security": "Palantir Technologies Inc (PAL",
+      "security": "Palantir Technologies Inc (PLT",
       "weight": 3.8126639991488727,
       "rawMktValue": 574470332,
       "mktValue": "0.57B",
@@ -288,7 +333,7 @@
       "type": "Trim"
     },
     {
-      "ticker": "PALAN",
+      "ticker": "PLTR",
       "security": "Palantir Technologie",
       "deltaValue": "-0.16B",
       "rawDelta": 161611417,
@@ -305,6 +350,5 @@
       "newWeight": "0.22%",
       "type": "Trim"
     }
-  ],
-  "snapshotNote": "Bundled static snapshot for 2025 Q4. Full position count is 196; holdings table stores the top 15."
+  ]
 }

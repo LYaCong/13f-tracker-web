@@ -13,6 +13,7 @@
     "reportDate": "2025-12-31",
     "latestFilingDate": "2026-02-17"
   },
+  "snapshotNote": "Bundled static snapshot for 2025 Q4. Full position count is 42; holdings table stores the top 15.",
   "radarData": [
     {
       "subject": "Financials",
@@ -59,19 +60,63 @@
   ],
   "assetTrend": [
     {
-      "year": "2022",
+      "year": "2022 Q2",
+      "value": "300.1"
+    },
+    {
+      "year": "2022 Q3",
+      "value": "296.1"
+    },
+    {
+      "year": "2022 Q4",
       "value": "299.0"
     },
     {
-      "year": "2023",
+      "year": "2023 Q1",
+      "value": "325.1"
+    },
+    {
+      "year": "2023 Q2",
+      "value": "348.2"
+    },
+    {
+      "year": "2023 Q3",
+      "value": "313.3"
+    },
+    {
+      "year": "2023 Q4",
       "value": "347.4"
     },
     {
-      "year": "2024",
+      "year": "2024 Q1",
+      "value": "331.7"
+    },
+    {
+      "year": "2024 Q2",
+      "value": "280.0"
+    },
+    {
+      "year": "2024 Q3",
+      "value": "266.4"
+    },
+    {
+      "year": "2024 Q4",
       "value": "267.2"
     },
     {
-      "year": "2025",
+      "year": "2025 Q1",
+      "value": "258.7"
+    },
+    {
+      "year": "2025 Q2",
+      "value": "257.5"
+    },
+    {
+      "year": "2025 Q3",
+      "value": "267.3"
+    },
+    {
+      "year": "2025 Q4",
       "value": "274.2"
     }
   ],
@@ -168,7 +213,7 @@
     },
     {
       "cusip": "23918K108",
-      "security": "DAVITA INC (DAVIT)",
+      "security": "DAVITA INC (DVA)",
       "weight": 1.3160731813362236,
       "rawMktValue": 3608147375,
       "mktValue": "3.61B",
@@ -186,7 +231,7 @@
     },
     {
       "cusip": "92826C839",
-      "security": "VISA INC (VISA)",
+      "security": "VISA INC (V)",
       "weight": 1.0614244516830997,
       "rawMktValue": 2910002197,
       "mktValue": "2.91B",
@@ -195,7 +240,7 @@
     },
     {
       "cusip": "829933100",
-      "security": "SIRIUS XM HOLDINGS INC (SIRIU)",
+      "security": "SIRIUS XM HOLDINGS INC (SIRI)",
       "weight": 0.9102412882301214,
       "rawMktValue": 2495518305,
       "mktValue": "2.50B",
@@ -204,7 +249,7 @@
     },
     {
       "cusip": "57636Q104",
-      "security": "MASTERCARD INCORPORATED (MASTE",
+      "security": "MASTERCARD INCORPORATED (MA)",
       "weight": 0.8301345529125479,
       "rawMktValue": 2275897610,
       "mktValue": "2.28B",
@@ -250,7 +295,7 @@
       "type": "New"
     },
     {
-      "ticker": "NEW",
+      "ticker": "YORK",
       "security": "NEW YORK TIMES CO",
       "deltaValue": "+0.35B",
       "rawDelta": 351663948,
@@ -297,7 +342,7 @@
       "type": "Trim"
     },
     {
-      "ticker": "DAVIT",
+      "ticker": "DVA",
       "security": "DAVITA INC",
       "deltaValue": "-0.67B",
       "rawDelta": 665028757,
@@ -305,6 +350,5 @@
       "newWeight": "1.32%",
       "type": "Trim"
     }
-  ],
-  "snapshotNote": "Bundled static snapshot for 2025 Q4. Full position count is 42; holdings table stores the top 15."
+  ]
 }

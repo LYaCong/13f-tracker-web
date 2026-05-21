@@ -13,6 +13,7 @@
     "reportDate": "2025-12-31",
     "latestFilingDate": "2026-02-13"
   },
+  "snapshotNote": "Bundled static snapshot for 2025 Q4. Full position count is 237; holdings table stores the top 15.",
   "radarData": [
     {
       "subject": "Financials",
@@ -22,31 +23,31 @@
     },
     {
       "subject": "Technology",
-      "A": 15.9,
+      "A": 16,
       "B": 31,
       "fullMark": 100
     },
     {
       "subject": "Consumer",
-      "A": 5.4,
+      "A": 0,
       "B": 16,
       "fullMark": 100
     },
     {
       "subject": "Energy & Utilities",
-      "A": 5.9,
+      "A": 2.4,
       "B": 7,
       "fullMark": 100
     },
     {
       "subject": "Healthcare",
-      "A": 0.8,
+      "A": 0.5,
       "B": 11,
       "fullMark": 100
     },
     {
       "subject": "Other",
-      "A": 71.4,
+      "A": 80.4,
       "B": 12,
       "fullMark": 100
     },
@@ -59,19 +60,63 @@
   ],
   "assetTrend": [
     {
-      "year": "2022",
+      "year": "2022 Q2",
+      "value": "5.6"
+    },
+    {
+      "year": "2022 Q3",
+      "value": "5.9"
+    },
+    {
+      "year": "2022 Q4",
       "value": "7.3"
     },
     {
-      "year": "2023",
+      "year": "2023 Q1",
+      "value": "6.5"
+    },
+    {
+      "year": "2023 Q2",
+      "value": "6.4"
+    },
+    {
+      "year": "2023 Q3",
+      "value": "7.0"
+    },
+    {
+      "year": "2023 Q4",
       "value": "7.6"
     },
     {
-      "year": "2024",
+      "year": "2024 Q1",
+      "value": "6.0"
+    },
+    {
+      "year": "2024 Q2",
+      "value": "5.6"
+    },
+    {
+      "year": "2024 Q3",
+      "value": "6.9"
+    },
+    {
+      "year": "2024 Q4",
       "value": "6.6"
     },
     {
-      "year": "2025",
+      "year": "2025 Q1",
+      "value": "6.7"
+    },
+    {
+      "year": "2025 Q2",
+      "value": "8.0"
+    },
+    {
+      "year": "2025 Q3",
+      "value": "7.0"
+    },
+    {
+      "year": "2025 Q4",
       "value": "8.6"
     }
   ],
@@ -186,7 +231,7 @@
     },
     {
       "cusip": "69331CAL2",
-      "security": "PG&E CORP (PG&E)",
+      "security": "PG&E CORP (PG)",
       "weight": 1.5930466952202946,
       "rawMktValue": 137494735,
       "mktValue": "0.14B",
@@ -288,7 +333,7 @@
       "type": "Trim"
     },
     {
-      "ticker": "ETF",
+      "ticker": "ISHAR",
       "security": "ISHARES TR",
       "deltaValue": "-0.12B",
       "rawDelta": 120232250,
@@ -305,6 +350,5 @@
       "newWeight": "0.06%",
       "type": "Trim"
     }
-  ],
-  "snapshotNote": "Bundled static snapshot for 2025 Q4. Full position count is 237; holdings table stores the top 15."
+  ]
 }

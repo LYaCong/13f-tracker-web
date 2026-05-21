@@ -15,21 +15,9 @@
   },
   {
     "ticker": "AXP",
-    "heat": 100,
-    "avgWeight": "7.07%",
-    "value": "56.23B",
-    "instCount": 3,
-    "holdingInstitutions": [
-      "berkshire",
-      "bridgewater",
-      "soros"
-    ]
-  },
-  {
-    "ticker": "BAC",
-    "heat": 53,
-    "avgWeight": "5.39%",
-    "value": "28.56B",
+    "heat": 93,
+    "avgWeight": "10.25%",
+    "value": "56.10B",
     "instCount": 2,
     "holdingInstitutions": [
       "berkshire",
@@ -37,10 +25,22 @@
     ]
   },
   {
+    "ticker": "BAC",
+    "heat": 100,
+    "avgWeight": "8.89%",
+    "value": "29.08B",
+    "instCount": 3,
+    "holdingInstitutions": [
+      "berkshire",
+      "bridgewater",
+      "himalaya"
+    ]
+  },
+  {
     "ticker": "KO",
     "heat": 51,
     "avgWeight": "5.14%",
-    "value": "27.99B",
+    "value": "27.98B",
     "instCount": 2,
     "holdingInstitutions": [
       "berkshire",
@@ -58,6 +58,47 @@
     ]
   },
   {
+    "ticker": "MCO",
+    "heat": 80,
+    "avgWeight": "8.63%",
+    "value": "19.40B",
+    "instCount": 2,
+    "holdingInstitutions": [
+      "berkshire",
+      "tci"
+    ]
+  },
+  {
+    "ticker": "GE",
+    "heat": 100,
+    "avgWeight": "6.25%",
+    "value": "15.76B",
+    "instCount": 5,
+    "holdingInstitutions": [
+      "tci",
+      "tiger",
+      "bridgewater",
+      "ark",
+      "soros"
+    ]
+  },
+  {
+    "ticker": "MSFT",
+    "heat": 100,
+    "avgWeight": "5.74%",
+    "value": "15.51B",
+    "instCount": 7,
+    "holdingInstitutions": [
+      "tci",
+      "gates",
+      "tiger",
+      "bridgewater",
+      "hh",
+      "ark",
+      "soros"
+    ]
+  },
+  {
     "ticker": "BRK-B",
     "heat": 100,
     "avgWeight": "20.29%",
@@ -70,13 +111,15 @@
     ]
   },
   {
-    "ticker": "MCO",
-    "heat": 23,
-    "avgWeight": "4.60%",
-    "value": "12.60B",
-    "instCount": 1,
+    "ticker": "V",
+    "heat": 95,
+    "avgWeight": "6.64%",
+    "value": "12.83B",
+    "instCount": 3,
     "holdingInstitutions": [
-      "berkshire"
+      "berkshire",
+      "tci",
+      "bridgewater"
     ]
   },
   {
@@ -130,32 +173,6 @@
     ]
   },
   {
-    "ticker": "MSFT",
-    "heat": 100,
-    "avgWeight": "4.17%",
-    "value": "7.39B",
-    "instCount": 6,
-    "holdingInstitutions": [
-      "gates",
-      "tiger",
-      "bridgewater",
-      "hh",
-      "ark",
-      "soros"
-    ]
-  },
-  {
-    "ticker": "WM",
-    "heat": 87,
-    "avgWeight": "9.50%",
-    "value": "6.72B",
-    "instCount": 2,
-    "holdingInstitutions": [
-      "gates",
-      "bridgewater"
-    ]
-  },
-  {
     "ticker": "AMZN",
     "heat": 100,
     "avgWeight": "5.48%",
@@ -171,6 +188,53 @@
     ]
   },
   {
+    "ticker": "WM",
+    "heat": 79,
+    "avgWeight": "17.98%",
+    "value": "6.36B",
+    "instCount": 1,
+    "holdingInstitutions": [
+      "gates"
+    ]
+  },
+  {
+    "ticker": "S",
+    "heat": 56,
+    "avgWeight": "5.82%",
+    "value": "6.20B",
+    "instCount": 2,
+    "holdingInstitutions": [
+      "tci",
+      "bridgewater"
+    ]
+  },
+  {
+    "ticker": "CNI",
+    "heat": 80,
+    "avgWeight": "5.46%",
+    "value": "6.12B",
+    "instCount": 3,
+    "holdingInstitutions": [
+      "tci",
+      "gates",
+      "bridgewater"
+    ]
+  },
+  {
+    "ticker": "GOOG",
+    "heat": 100,
+    "avgWeight": "8.73%",
+    "value": "5.87B",
+    "instCount": 5,
+    "holdingInstitutions": [
+      "tci",
+      "hh",
+      "pershing",
+      "ark",
+      "himalaya"
+    ]
+  },
+  {
     "ticker": "TMUS",
     "heat": 100,
     "avgWeight": "18.79%",
@@ -179,69 +243,6 @@
     "holdingInstitutions": [
       "bridgewater",
       "softbank"
-    ]
-  },
-  {
-    "ticker": "NVDA",
-    "heat": 100,
-    "avgWeight": "5.18%",
-    "value": "5.23B",
-    "instCount": 7,
-    "holdingInstitutions": [
-      "tci",
-      "tiger",
-      "bridgewater",
-      "elliott",
-      "hh",
-      "ark",
-      "soros"
-    ]
-  },
-  {
-    "ticker": "CNI",
-    "heat": 69,
-    "avgWeight": "7.32%",
-    "value": "5.16B",
-    "instCount": 2,
-    "holdingInstitutions": [
-      "gates",
-      "bridgewater"
-    ]
-  },
-  {
-    "ticker": "ETF",
-    "heat": 91,
-    "avgWeight": "4.48%",
-    "value": "4.54B",
-    "instCount": 4,
-    "holdingInstitutions": [
-      "bridgewater",
-      "elliott",
-      "ark",
-      "soros"
-    ]
-  },
-  {
-    "ticker": "TRIPL",
-    "heat": 86,
-    "avgWeight": "19.67%",
-    "value": "4.45B",
-    "instCount": 1,
-    "holdingInstitutions": [
-      "elliott"
-    ]
-  },
-  {
-    "ticker": "SPDR",
-    "heat": 100,
-    "avgWeight": "5.05%",
-    "value": "4.07B",
-    "instCount": 4,
-    "holdingInstitutions": [
-      "bridgewater",
-      "elliott",
-      "ark",
-      "soros"
     ]
   }
 ]

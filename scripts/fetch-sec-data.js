@@ -8,7 +8,7 @@ const stripPrefix = xml2js.processors.stripPrefix;
 // Known CIKs from the requirement
 const INSTITUTIONS = [
   { id: 'berkshire', name: 'Berkshire Hathaway', cik: '0001067983', manager: 'Warren Buffett', style: 'Value', imageUrl: 'https://images.unsplash.com/photo-1549496464-325ff326ba9b?q=80&w=200&h=200&fit=crop' },
-  { id: 'tci', name: 'TCI Fund Management Ltd', cik: '0001649339', manager: 'Chris Hohn', style: 'Focused', imageUrl: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=200&h=200&fit=crop' },
+  { id: 'tci', name: 'TCI Fund Management Ltd', cik: '0001647251', manager: 'Chris Hohn', style: 'Focused', imageUrl: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=200&h=200&fit=crop' },
   { id: 'gates', name: 'Gates Foundation Trust', cik: '0001166559', manager: 'Bill Gates', style: 'Quality', imageUrl: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=200&h=200&fit=crop' },
   { id: 'tiger', name: 'Tiger Global Management LLC', cik: '0001167483', manager: 'Chase Coleman', style: 'Growth', imageUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&h=200&fit=crop' },
   { id: 'bridgewater', name: 'Bridgewater Associates, LP', cik: '0001350694', manager: 'Ray Dalio', style: 'Systematic', imageUrl: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&h=200&fit=crop' },
@@ -25,6 +25,7 @@ const USER_AGENT = "13FTrackerApp/1.0 (contact@example.com)";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const OUTPUT_DIR = path.resolve(__dirname, '../public/data');
+const TARGET_REPORT_DATE = process.env.SEC_REPORT_DATE?.trim() || null;
 
 const BIG_TECH_CUSIPS = {
   '037833100': 'AAPL', '594918104': 'MSFT', '67066G104': 'NVDA', 
@@ -321,11 +322,23 @@ async function processInstitution(inst) {
   const res = await fetchWithRetry(url);
   const data = await res.json();
   
-  // Find top 2 13F-HR filings
-  const formIndices = data.filings.recent.form
+  const all13FIndices = data.filings.recent.form
     .map((form, index) => form === '13F-HR' ? index : -1)
-    .filter(index => index !== -1)
-    .slice(0, 2);
+    .filter(index => index !== -1);
+
+  let formIndices = all13FIndices.slice(0, 2);
+
+  if (TARGET_REPORT_DATE) {
+    const currentPosition = all13FIndices.findIndex(index => data.filings.recent.reportDate[index] === TARGET_REPORT_DATE);
+    if (currentPosition === -1) {
+      throw new Error(`No 13F-HR found for report date ${TARGET_REPORT_DATE}`);
+    }
+
+    const previousIndex = all13FIndices[currentPosition + 1];
+    formIndices = previousIndex === undefined
+      ? [all13FIndices[currentPosition]]
+      : [all13FIndices[currentPosition], previousIndex];
+  }
     
   if (formIndices.length === 0) {
     console.log(`No 13F-HR found for ${inst.name}`);
@@ -443,6 +456,7 @@ async function processInstitution(inst) {
   const historicalIndices = data.filings.recent.form
     .map((form, index) => form === '13F-HR' ? index : -1)
     .filter(index => index !== -1)
+    .filter(index => !TARGET_REPORT_DATE || data.filings.recent.reportDate[index] <= TARGET_REPORT_DATE)
     .slice(0, 15); // latest 15 actual quarters
     
   for (let idx of historicalIndices) {
@@ -545,7 +559,7 @@ async function main() {
     fs.mkdirSync(OUTPUT_DIR, { recursive: true });
   }
   
-  console.log("Starting full SEC 13F Data Extraction Pipeline...");
+  console.log(`Starting full SEC 13F Data Extraction Pipeline${TARGET_REPORT_DATE ? ` for report date ${TARGET_REPORT_DATE}` : ''}...`);
   const metaResults = [];
   const treemapAggregator = new Map();
   

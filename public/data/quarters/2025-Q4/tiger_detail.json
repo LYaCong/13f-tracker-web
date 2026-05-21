@@ -13,6 +13,7 @@
     "reportDate": "2025-12-31",
     "latestFilingDate": "2026-02-17"
   },
+  "snapshotNote": "Bundled static snapshot for 2025 Q4. Full position count is 54; holdings table stores the top 15.",
   "radarData": [
     {
       "subject": "Financials",
@@ -28,7 +29,7 @@
     },
     {
       "subject": "Consumer",
-      "A": 0.8,
+      "A": 0,
       "B": 16,
       "fullMark": 100
     },
@@ -46,7 +47,7 @@
     },
     {
       "subject": "Other",
-      "A": 54.2,
+      "A": 55,
       "B": 12,
       "fullMark": 100
     },
@@ -59,19 +60,63 @@
   ],
   "assetTrend": [
     {
-      "year": "2022",
+      "year": "2022 Q2",
+      "value": "11.9"
+    },
+    {
+      "year": "2022 Q3",
+      "value": "10.9"
+    },
+    {
+      "year": "2022 Q4",
       "value": "8.2"
     },
     {
-      "year": "2023",
+      "year": "2023 Q1",
+      "value": "11.0"
+    },
+    {
+      "year": "2023 Q2",
+      "value": "12.0"
+    },
+    {
+      "year": "2023 Q3",
+      "value": "13.6"
+    },
+    {
+      "year": "2023 Q4",
       "value": "14.1"
     },
     {
-      "year": "2024",
+      "year": "2024 Q1",
+      "value": "18.3"
+    },
+    {
+      "year": "2024 Q2",
+      "value": "21.6"
+    },
+    {
+      "year": "2024 Q3",
+      "value": "23.4"
+    },
+    {
+      "year": "2024 Q4",
       "value": "26.5"
     },
     {
-      "year": "2025",
+      "year": "2025 Q1",
+      "value": "26.6"
+    },
+    {
+      "year": "2025 Q2",
+      "value": "34.1"
+    },
+    {
+      "year": "2025 Q3",
+      "value": "32.4"
+    },
+    {
+      "year": "2025 Q4",
       "value": "29.7"
     }
   ],
@@ -305,6 +350,5 @@
       "newWeight": "2.97%",
       "type": "Trim"
     }
-  ],
-  "snapshotNote": "Bundled static snapshot for 2025 Q4. Full position count is 54; holdings table stores the top 15."
+  ]
 }

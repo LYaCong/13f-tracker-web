@@ -13,10 +13,11 @@
     "reportDate": "2025-12-31",
     "latestFilingDate": "2026-02-17"
   },
+  "snapshotNote": "Bundled static snapshot for 2025 Q4. Full position count is 9; holdings table stores the top 9.",
   "radarData": [
     {
       "subject": "Financials",
-      "A": 12.6,
+      "A": 28.7,
       "B": 14,
       "fullMark": 100
     },
@@ -46,7 +47,7 @@
     },
     {
       "subject": "Other",
-      "A": 41,
+      "A": 24.9,
       "B": 12,
       "fullMark": 100
     },
@@ -59,19 +60,63 @@
   ],
   "assetTrend": [
     {
-      "year": "2022",
+      "year": "2022 Q2",
       "value": "1.9"
     },
     {
-      "year": "2023",
+      "year": "2022 Q3",
+      "value": "1.7"
+    },
+    {
+      "year": "2022 Q4",
+      "value": "1.9"
+    },
+    {
+      "year": "2023 Q1",
+      "value": "2.0"
+    },
+    {
+      "year": "2023 Q2",
+      "value": "1.8"
+    },
+    {
+      "year": "2023 Q3",
+      "value": "1.8"
+    },
+    {
+      "year": "2023 Q4",
       "value": "2.1"
     },
     {
-      "year": "2024",
+      "year": "2024 Q1",
+      "value": "2.3"
+    },
+    {
+      "year": "2024 Q2",
+      "value": "2.6"
+    },
+    {
+      "year": "2024 Q3",
+      "value": "2.5"
+    },
+    {
+      "year": "2024 Q4",
       "value": "2.7"
     },
     {
-      "year": "2025",
+      "year": "2025 Q1",
+      "value": "2.2"
+    },
+    {
+      "year": "2025 Q2",
+      "value": "2.7"
+    },
+    {
+      "year": "2025 Q3",
+      "value": "3.2"
+    },
+    {
+      "year": "2025 Q4",
       "value": "3.6"
     }
   ],
@@ -96,7 +141,7 @@
     },
     {
       "cusip": "060505104",
-      "security": "BK OF AMERICA CORP (BK)",
+      "security": "BK OF AMERICA CORP (BAC)",
       "weight": 16.075824689647693,
       "rawMktValue": 573726285,
       "mktValue": "0.57B",
@@ -197,6 +242,5 @@
       "newWeight": "0.00%",
       "type": "Exit"
     }
-  ],
-  "snapshotNote": "Bundled static snapshot for 2025 Q4. Full position count is 9; holdings table stores the top 9."
+  ]
 }

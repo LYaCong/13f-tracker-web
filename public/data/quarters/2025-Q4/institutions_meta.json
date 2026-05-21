@@ -9,23 +9,23 @@
     "aum": "274.16B",
     "quarter": "2025 Q4",
     "holdingsCount": 42,
+    "displayedHoldingsCount": 15,
     "reportDate": "2025-12-31",
-    "latestFilingDate": "2026-02-17",
-    "displayedHoldingsCount": 15
+    "latestFilingDate": "2026-02-17"
   },
   {
     "id": "tci",
     "name": "TCI Fund Management Ltd",
-    "cik": "0001649339",
+    "cik": "0001647251",
     "manager": "Chris Hohn",
     "style": "Focused",
     "imageUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=200&h=200&fit=crop",
-    "aum": "1.38B",
-    "quarter": "2025 Q3",
-    "holdingsCount": 8,
-    "reportDate": "2025-09-30",
-    "latestFilingDate": "2025-11-03",
-    "displayedHoldingsCount": 8
+    "aum": "53.65B",
+    "quarter": "2025 Q4",
+    "holdingsCount": 9,
+    "displayedHoldingsCount": 9,
+    "reportDate": "2025-12-31",
+    "latestFilingDate": "2026-02-17"
   },
   {
     "id": "gates",
@@ -37,9 +37,9 @@
     "aum": "35.36B",
     "quarter": "2025 Q4",
     "holdingsCount": 23,
+    "displayedHoldingsCount": 15,
     "reportDate": "2025-12-31",
-    "latestFilingDate": "2026-02-17",
-    "displayedHoldingsCount": 15
+    "latestFilingDate": "2026-02-17"
   },
   {
     "id": "tiger",
@@ -51,9 +51,9 @@
     "aum": "29.71B",
     "quarter": "2025 Q4",
     "holdingsCount": 54,
+    "displayedHoldingsCount": 15,
     "reportDate": "2025-12-31",
-    "latestFilingDate": "2026-02-17",
-    "displayedHoldingsCount": 15
+    "latestFilingDate": "2026-02-17"
   },
   {
     "id": "bridgewater",
@@ -65,9 +65,9 @@
     "aum": "27.42B",
     "quarter": "2025 Q4",
     "holdingsCount": 1040,
+    "displayedHoldingsCount": 15,
     "reportDate": "2025-12-31",
-    "latestFilingDate": "2026-02-13",
-    "displayedHoldingsCount": 15
+    "latestFilingDate": "2026-02-13"
   },
   {
     "id": "elliott",
@@ -79,9 +79,9 @@
     "aum": "22.59B",
     "quarter": "2025 Q4",
     "holdingsCount": 32,
+    "displayedHoldingsCount": 15,
     "reportDate": "2025-12-31",
-    "latestFilingDate": "2026-02-18",
-    "displayedHoldingsCount": 15
+    "latestFilingDate": "2026-02-18"
   },
   {
     "id": "hh",
@@ -93,9 +93,9 @@
     "aum": "17.49B",
     "quarter": "2025 Q4",
     "holdingsCount": 14,
+    "displayedHoldingsCount": 14,
     "reportDate": "2025-12-31",
-    "latestFilingDate": "2026-02-17",
-    "displayedHoldingsCount": 14
+    "latestFilingDate": "2026-02-17"
   },
   {
     "id": "pershing",
@@ -107,9 +107,9 @@
     "aum": "15.53B",
     "quarter": "2025 Q4",
     "holdingsCount": 11,
+    "displayedHoldingsCount": 11,
     "reportDate": "2025-12-31",
-    "latestFilingDate": "2026-02-17",
-    "displayedHoldingsCount": 11
+    "latestFilingDate": "2026-02-17"
   },
   {
     "id": "softbank",
@@ -121,9 +121,9 @@
     "aum": "15.47B",
     "quarter": "2025 Q4",
     "holdingsCount": 32,
+    "displayedHoldingsCount": 15,
     "reportDate": "2025-12-31",
-    "latestFilingDate": "2026-02-17",
-    "displayedHoldingsCount": 15
+    "latestFilingDate": "2026-02-17"
   },
   {
     "id": "ark",
@@ -135,9 +135,9 @@
     "aum": "15.07B",
     "quarter": "2025 Q4",
     "holdingsCount": 196,
+    "displayedHoldingsCount": 15,
     "reportDate": "2025-12-31",
-    "latestFilingDate": "2026-02-11",
-    "displayedHoldingsCount": 15
+    "latestFilingDate": "2026-02-11"
   },
   {
     "id": "soros",
@@ -149,9 +149,9 @@
     "aum": "8.63B",
     "quarter": "2025 Q4",
     "holdingsCount": 237,
+    "displayedHoldingsCount": 15,
     "reportDate": "2025-12-31",
-    "latestFilingDate": "2026-02-13",
-    "displayedHoldingsCount": 15
+    "latestFilingDate": "2026-02-13"
   },
   {
     "id": "himalaya",
@@ -163,8 +163,8 @@
     "aum": "3.57B",
     "quarter": "2025 Q4",
     "holdingsCount": 9,
+    "displayedHoldingsCount": 9,
     "reportDate": "2025-12-31",
-    "latestFilingDate": "2026-02-17",
-    "displayedHoldingsCount": 9
+    "latestFilingDate": "2026-02-17"
   }
 ]

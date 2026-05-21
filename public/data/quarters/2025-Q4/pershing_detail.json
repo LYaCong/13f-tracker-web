@@ -13,6 +13,7 @@
     "reportDate": "2025-12-31",
     "latestFilingDate": "2026-02-17"
   },
+  "snapshotNote": "Bundled static snapshot for 2025 Q4. Full position count is 11; holdings table stores the top 11.",
   "radarData": [
     {
       "subject": "Financials",
@@ -59,19 +60,63 @@
   ],
   "assetTrend": [
     {
-      "year": "2022",
+      "year": "2022 Q2",
+      "value": "7.5"
+    },
+    {
+      "year": "2022 Q3",
+      "value": "7.9"
+    },
+    {
+      "year": "2022 Q4",
       "value": "8.8"
     },
     {
-      "year": "2023",
+      "year": "2023 Q1",
+      "value": "10.2"
+    },
+    {
+      "year": "2023 Q2",
+      "value": "10.8"
+    },
+    {
+      "year": "2023 Q3",
+      "value": "10.5"
+    },
+    {
+      "year": "2023 Q4",
       "value": "10.4"
     },
     {
-      "year": "2024",
+      "year": "2024 Q1",
+      "value": "10.8"
+    },
+    {
+      "year": "2024 Q2",
+      "value": "10.4"
+    },
+    {
+      "year": "2024 Q3",
+      "value": "12.9"
+    },
+    {
+      "year": "2024 Q4",
       "value": "12.6"
     },
     {
-      "year": "2025",
+      "year": "2025 Q1",
+      "value": "11.9"
+    },
+    {
+      "year": "2025 Q2",
+      "value": "13.7"
+    },
+    {
+      "year": "2025 Q3",
+      "value": "14.6"
+    },
+    {
+      "year": "2025 Q4",
       "value": "15.5"
     }
   ],
@@ -251,6 +296,5 @@
       "newWeight": "10.05%",
       "type": "Trim"
     }
-  ],
-  "snapshotNote": "Bundled static snapshot for 2025 Q4. Full position count is 11; holdings table stores the top 11."
+  ]
 }

@@ -13,6 +13,7 @@
     "reportDate": "2025-12-31",
     "latestFilingDate": "2026-02-18"
   },
+  "snapshotNote": "Bundled static snapshot for 2025 Q4. Full position count is 32; holdings table stores the top 15.",
   "radarData": [
     {
       "subject": "Financials",
@@ -28,25 +29,25 @@
     },
     {
       "subject": "Consumer",
-      "A": 9,
+      "A": 0.8,
       "B": 16,
       "fullMark": 100
     },
     {
       "subject": "Energy & Utilities",
-      "A": 22.1,
+      "A": 10.3,
       "B": 7,
       "fullMark": 100
     },
     {
       "subject": "Healthcare",
-      "A": 3.6,
+      "A": 0,
       "B": 11,
       "fullMark": 100
     },
     {
       "subject": "Other",
-      "A": 62.8,
+      "A": 86.3,
       "B": 12,
       "fullMark": 100
     },
@@ -59,19 +60,63 @@
   ],
   "assetTrend": [
     {
-      "year": "2022",
+      "year": "2022 Q2",
+      "value": "8.7"
+    },
+    {
+      "year": "2022 Q3",
+      "value": "9.7"
+    },
+    {
+      "year": "2022 Q4",
       "value": "12.3"
     },
     {
-      "year": "2023",
+      "year": "2023 Q1",
+      "value": "13.5"
+    },
+    {
+      "year": "2023 Q2",
+      "value": "11.4"
+    },
+    {
+      "year": "2023 Q3",
+      "value": "12.9"
+    },
+    {
+      "year": "2023 Q4",
       "value": "18.7"
     },
     {
-      "year": "2024",
+      "year": "2024 Q1",
+      "value": "16.1"
+    },
+    {
+      "year": "2024 Q2",
+      "value": "17.3"
+    },
+    {
+      "year": "2024 Q3",
+      "value": "19.3"
+    },
+    {
+      "year": "2024 Q4",
       "value": "16.7"
     },
     {
-      "year": "2025",
+      "year": "2025 Q1",
+      "value": "15.2"
+    },
+    {
+      "year": "2025 Q2",
+      "value": "17.6"
+    },
+    {
+      "year": "2025 Q3",
+      "value": "22.7"
+    },
+    {
+      "year": "2025 Q4",
       "value": "22.6"
     }
   ],
@@ -168,7 +213,7 @@
     },
     {
       "cusip": "464287598",
-      "security": "ISHARES TR (ETF)",
+      "security": "ISHARES TR (ISHAR)",
       "weight": 2.606647500487676,
       "rawMktValue": 588952000,
       "mktValue": "0.59B",
@@ -204,7 +249,7 @@
     },
     {
       "cusip": "464288513",
-      "security": "ISHARES TR (ETF)",
+      "security": "ISHARES TR (ISHAR)",
       "weight": 1.3560717244604332,
       "rawMktValue": 306394000,
       "mktValue": "0.31B",
@@ -261,7 +306,7 @@
   ],
   "topTrims": [
     {
-      "ticker": "ETF",
+      "ticker": "ISHAR",
       "security": "ISHARES TR",
       "deltaValue": "-0.43B",
       "rawDelta": 428998000,
@@ -297,7 +342,7 @@
       "type": "Trim"
     },
     {
-      "ticker": "ETF",
+      "ticker": "ISHAR",
       "security": "ISHARES TR",
       "deltaValue": "-0.21B",
       "rawDelta": 207633000,
@@ -305,6 +350,5 @@
       "newWeight": "0.61%",
       "type": "Trim"
     }
-  ],
-  "snapshotNote": "Bundled static snapshot for 2025 Q4. Full position count is 32; holdings table stores the top 15."
+  ]
 }
