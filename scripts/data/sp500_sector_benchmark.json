@@ -1,0 +1,58 @@
+{
+  "name": "S&P 500 sector benchmark",
+  "methodology": "ETF holdings proxy aggregated by published SPY fund sector breakdown",
+  "asOf": "2026-05-19",
+  "generatedAt": "2026-05-21",
+  "sourceName": "State Street SPDR S&P 500 ETF Trust (SPY) Fund Sector Breakdown",
+  "sourceUrl": "https://www.ssga.com/us/en/intermediary/etfs/spdr-sp-500-etf-trust-spy",
+  "sectors": [
+    {
+      "sector": "Information Technology",
+      "weight": 37.02
+    },
+    {
+      "sector": "Financials",
+      "weight": 11.54
+    },
+    {
+      "sector": "Health Care",
+      "weight": 8.43
+    },
+    {
+      "sector": "Consumer Discretionary",
+      "weight": 9.55
+    },
+    {
+      "sector": "Communication Services",
+      "weight": 10.77
+    },
+    {
+      "sector": "Industrials",
+      "weight": 8.34
+    },
+    {
+      "sector": "Consumer Staples",
+      "weight": 4.97
+    },
+    {
+      "sector": "Energy",
+      "weight": 3.52
+    },
+    {
+      "sector": "Utilities",
+      "weight": 2.17
+    },
+    {
+      "sector": "Real Estate",
+      "weight": 1.86
+    },
+    {
+      "sector": "Materials",
+      "weight": 1.82
+    },
+    {
+      "sector": "Unclassified",
+      "weight": 0
+    }
+  ]
+}

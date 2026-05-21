@@ -26,6 +26,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const OUTPUT_DIR = path.resolve(__dirname, '../public/data');
 const TARGET_REPORT_DATE = process.env.SEC_REPORT_DATE?.trim() || null;
+const SECTOR_MAP_PATH = path.resolve(__dirname, './data/gics_sector_map.json');
+const SP500_BENCHMARK_PATH = path.resolve(__dirname, './data/sp500_sector_benchmark.json');
 
 const BIG_TECH_CUSIPS = {
   '037833100': 'AAPL', '594918104': 'MSFT', '67066G104': 'NVDA', 
@@ -71,22 +73,37 @@ const ISSUER_TICKER_OVERRIDES = new Map([
   ['WASTE MGMT INC DEL', 'WM'],
 ])
 
-const SECTOR_BY_TICKER = {
-  AAPL: 'Technology', MSFT: 'Technology', NVDA: 'Technology', GOOGL: 'Technology',
-  GOOG: 'Technology', AMZN: 'Technology', META: 'Technology', TSLA: 'Technology',
-  PLTR: 'Technology', AVGO: 'Technology', CRM: 'Technology',
-  AXP: 'Financials', BAC: 'Financials', BRK: 'Financials', 'BRK-B': 'Financials',
-  CB: 'Financials', MCO: 'Financials', JPM: 'Financials', C: 'Financials',
-  V: 'Financials', MA: 'Financials',
-  CVX: 'Energy & Utilities', OXY: 'Energy & Utilities', XOM: 'Energy & Utilities',
-  COP: 'Energy & Utilities', HAL: 'Energy & Utilities',
-  KO: 'Consumer', KHC: 'Consumer', WMT: 'Consumer', COST: 'Consumer',
-  MCD: 'Consumer', PEP: 'Consumer', LULU: 'Consumer',
-  UNH: 'Healthcare', MOH: 'Healthcare', PFE: 'Healthcare', REGN: 'Healthcare',
-  LLY: 'Healthcare', ABBV: 'Healthcare', MRK: 'Healthcare', TMO: 'Healthcare',
-  CNI: 'Industrials', WM: 'Industrials', UNP: 'Industrials', CAT: 'Industrials',
-  DE: 'Industrials', BA: 'Industrials', HON: 'Industrials'
-}
+const sectorClassification = JSON.parse(fs.readFileSync(SECTOR_MAP_PATH, 'utf8'));
+const sp500SectorBenchmark = JSON.parse(fs.readFileSync(SP500_BENCHMARK_PATH, 'utf8'));
+const UNCLASSIFIED_SECTOR = sectorClassification.unmatchedSector || 'Unclassified';
+const SECTOR_ORDER = sectorClassification.sectorOrder || [
+  'Information Technology',
+  'Financials',
+  'Health Care',
+  'Consumer Discretionary',
+  'Communication Services',
+  'Industrials',
+  'Consumer Staples',
+  'Energy',
+  'Utilities',
+  'Real Estate',
+  'Materials',
+  UNCLASSIFIED_SECTOR,
+];
+const benchmarkWeightBySector = new Map(
+  sp500SectorBenchmark.sectors.map((sector) => [sector.sector, Number(sector.weight) || 0])
+);
+const sectorByCusip = new Map();
+const sectorByTicker = new Map();
+
+sectorClassification.securities.forEach((security) => {
+  if (security.cusip) {
+    sectorByCusip.set(normalizeCusip(security.cusip), security);
+  }
+  if (security.ticker) {
+    sectorByTicker.set(normalizeTicker(security.ticker), security);
+  }
+});
 
 async function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
 
@@ -117,6 +134,14 @@ function normalizeIssuerName(name) {
     .trim();
 }
 
+function normalizeCusip(cusip) {
+  return (cusip || '').toUpperCase().replace(/[^A-Z0-9]/g, '');
+}
+
+function normalizeTicker(ticker) {
+  return (ticker || '').toUpperCase().replace(/\./g, '-').trim();
+}
+
 function inferTicker(cusip, name) {
   if (BIG_TECH_CUSIPS[cusip]) {
     return BIG_TECH_CUSIPS[cusip];
@@ -141,20 +166,18 @@ function formatQuarter(dateString) {
   return `${date.getFullYear()} Q${Math.ceil((date.getMonth() + 1) / 3)}`;
 }
 
-function inferSector(holding) {
-  const ticker = holding.ticker?.toUpperCase();
-  if (ticker && SECTOR_BY_TICKER[ticker]) {
-    return SECTOR_BY_TICKER[ticker];
+function classifyHolding(holding) {
+  const byCusip = sectorByCusip.get(normalizeCusip(holding.cusip));
+  if (byCusip) {
+    return { sector: byCusip.sector, source: byCusip.source, matchedBy: 'cusip' };
   }
 
-  const name = (holding.name || holding.security || '').toUpperCase();
-  if (name.includes('APPLE') || name.includes('MICROSOFT') || name.includes('ALPHABET') || name.includes('NVIDIA') || name.includes('META ') || name.includes('AMAZON') || name.includes('ADVANCED MICRO') || name.includes('BROADCOM') || name.includes('SALESFORCE')) return 'Technology';
-  if (name.includes('BANK') || name.includes('FINANCIAL') || name.includes('EXPRESS') || name.includes('CHUBB') || name.includes('MOODY') || name.includes('BERKSHIRE') || name.includes('CITIGROUP') || name.includes('JPMORGAN') || name.includes('VISA') || name.includes('MASTERCARD')) return 'Financials';
-  if (name.includes('CHEVRON') || name.includes('OCCIDENTAL') || name.includes('ENERGY') || name.includes('EXXON') || name.includes('CONOCO')) return 'Energy & Utilities';
-  if (name.includes('COCA') || name.includes('KRAFT') || name.includes('JOHNSON') || name.includes('PROCTER') || name.includes('WALMART') || name.includes('PEPSI') || name.includes('COSTCO') || name.includes('MCDONALD')) return 'Consumer';
-  if (name.includes('HEALTH') || name.includes('PHARMA') || name.includes('LILLY') || name.includes('UNITEDHEALTH') || name.includes('ABBVIE') || name.includes('MERCK') || name.includes('THERMO') || name.includes('PFIZER')) return 'Healthcare';
-  if (name.includes('INDUSTRIAL') || name.includes('UNION PACIFIC') || name.includes('CATERPILLAR') || name.includes('DEERE') || name.includes('BOEING') || name.includes('HONEYWELL') || name.includes('WASTE MGMT')) return 'Industrials';
-  return 'Other';
+  const byTicker = sectorByTicker.get(normalizeTicker(holding.ticker));
+  if (byTicker) {
+    return { sector: byTicker.sector, source: byTicker.source, matchedBy: 'ticker' };
+  }
+
+  return { sector: UNCLASSIFIED_SECTOR, source: 'unmatched', matchedBy: null };
 }
 
 async function getInformationTableUrl(cik, accessionNumber) {
@@ -382,6 +405,7 @@ async function processInstitution(inst) {
 
   currentData.holdings.forEach((curr, i) => {
     const prev = prevMap.get(curr.cusip);
+    const classification = classifyHolding(curr);
     let qOqDeltaVal = curr.value;
     let shareChangePct = 100;
     let type = 'New';
@@ -405,6 +429,7 @@ async function processInstitution(inst) {
       rawMktValue: curr.value,
       mktValue: normalizeBillion(curr.value),
       qOqDelta: (qOqDeltaVal >= 0 ? '+' : '') + normalizeBillion(qOqDeltaVal),
+      sector: classification.sector,
       color
     });
     
@@ -488,36 +513,67 @@ async function processInstitution(inst) {
   }
   const assetTrend = historicAums.reverse(); // oldest to newest, keep quarterly 13F cadence
 
-  // Generate Institutional Style Radar Data
-  const generateRadarData = (holds) => {
-    const sp500 = {
-      'Financials': 14.0, 'Technology': 31.0, 'Consumer': 16.0,
-      'Energy & Utilities': 7.0, 'Healthcare': 11.0, 'Other': 12.0, 'Industrials': 9.0
-    };
-    const sectors = {
-      'Financials': 0, 'Technology': 0, 'Consumer': 0,
-      'Energy & Utilities': 0, 'Healthcare': 0, 'Other': 0, 'Industrials': 0
-    };
-    
-    // Naive keyword-based sector mapping
+  const generateSectorAnalysis = (holds) => {
+    const sectorWeights = Object.fromEntries(SECTOR_ORDER.map((sector) => [sector, 0]));
+    let classifiedCount = 0;
+    let unclassifiedCount = 0;
+    let classifiedWeight = 0;
+    let unclassifiedWeight = 0;
+
     holds.forEach(h => {
-      const sector = inferSector(h);
-      sectors[sector] += h.weight;
+      const classification = classifyHolding(h);
+      const sector = sectorWeights[classification.sector] === undefined
+        ? UNCLASSIFIED_SECTOR
+        : classification.sector;
+
+      sectorWeights[sector] += h.weight;
+      if (sector === UNCLASSIFIED_SECTOR) {
+        unclassifiedCount += 1;
+        unclassifiedWeight += h.weight;
+      } else {
+        classifiedCount += 1;
+        classifiedWeight += h.weight;
+      }
     });
 
-    // Handle edge case where total weight is 0
-    const totalWeight = Object.values(sectors).reduce((a, b) => a + b, 0);
-    const radar = Object.keys(sectors).map(subject => ({
+    const totalWeight = Object.values(sectorWeights).reduce((a, b) => a + b, 0);
+    const radarData = SECTOR_ORDER.map(subject => ({
       subject,
-      A: totalWeight > 0 ? Number(((sectors[subject] / totalWeight) * 100).toFixed(1)) : sp500[subject], // Fallback to S&P500 if empty
-      B: sp500[subject],
+      A: totalWeight > 0 ? Number(((sectorWeights[subject] / totalWeight) * 100).toFixed(1)) : 0,
+      B: Number((benchmarkWeightBySector.get(subject) || 0).toFixed(1)),
       fullMark: 100
     }));
 
-    return radar;
+    return {
+      radarData,
+      classificationSummary: {
+        schema: sectorClassification.schema,
+        asOf: sectorClassification.asOf,
+        matchingPriority: sectorClassification.matchingPriority,
+        unmatchedSector: UNCLASSIFIED_SECTOR,
+        holdingsClassifiedCount: classifiedCount,
+        holdingsUnclassifiedCount: unclassifiedCount,
+        classifiedWeight: Number(classifiedWeight.toFixed(2)),
+        unclassifiedWeight: Number(unclassifiedWeight.toFixed(2)),
+        sectorWeightTotal: Number(totalWeight.toFixed(2)),
+        sources: sectorClassification.sources,
+        benchmark: {
+          name: sp500SectorBenchmark.name,
+          methodology: sp500SectorBenchmark.methodology,
+          asOf: sp500SectorBenchmark.asOf,
+          sourceName: sp500SectorBenchmark.sourceName,
+          sourceUrl: sp500SectorBenchmark.sourceUrl,
+        },
+      },
+      sectorWeights: SECTOR_ORDER.map((sector) => ({
+        sector,
+        weight: Number((totalWeight > 0 ? (sectorWeights[sector] / totalWeight) * 100 : 0).toFixed(2)),
+        benchmarkWeight: Number((benchmarkWeightBySector.get(sector) || 0).toFixed(2)),
+      })),
+    };
   };
 
-  const radarData = generateRadarData(currentData.holdings);
+  const { radarData, classificationSummary, sectorWeights } = generateSectorAnalysis(currentData.holdings);
   const displayedHoldingsCount = Math.min(formattedHoldings.length, 15);
 
   // Export Detail JSON
@@ -532,6 +588,8 @@ async function processInstitution(inst) {
       latestFilingDate
     },
     snapshotNote: `Bundled static snapshot for ${quarter}. Full position count is ${currentData.holdings.length}; holdings table stores the top ${displayedHoldingsCount}.`,
+    classificationSummary,
+    sectorWeights,
     radarData,
     assetTrend,
     holdings: formattedHoldings.slice(0, 15), // Top 15 for pie chart

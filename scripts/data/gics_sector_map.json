@@ -1,0 +1,4060 @@
+{
+  "schema": "GICS-style sector mapping",
+  "asOf": "2026-05-19",
+  "generatedAt": "2026-05-21",
+  "sectorOrder": [
+    "Information Technology",
+    "Financials",
+    "Health Care",
+    "Consumer Discretionary",
+    "Communication Services",
+    "Industrials",
+    "Consumer Staples",
+    "Energy",
+    "Utilities",
+    "Real Estate",
+    "Materials",
+    "Unclassified"
+  ],
+  "matchingPriority": [
+    "cusip",
+    "ticker"
+  ],
+  "unmatchedSector": "Unclassified",
+  "sources": [
+    {
+      "name": "Wikipedia List of S&P 500 companies - GICS Sector column",
+      "url": "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
+    },
+    {
+      "name": "State Street SPY holdings daily XLSX - ticker and CUSIP identifiers",
+      "url": "https://www.ssga.com/us/en/intermediary/etfs/library-content/products/fund-data/etfs/us/holdings-daily-us-en-spy.xlsx"
+    }
+  ],
+  "securities": [
+    {
+      "ticker": "A",
+      "cusip": "00846U101",
+      "name": "Agilent Technologies",
+      "sector": "Health Care",
+      "subIndustry": "Life Sciences Tools & Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "AAPL",
+      "cusip": "037833100",
+      "name": "Apple Inc.",
+      "sector": "Information Technology",
+      "subIndustry": "Technology Hardware, Storage & Peripherals",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "ABBV",
+      "cusip": "00287Y109",
+      "name": "AbbVie",
+      "sector": "Health Care",
+      "subIndustry": "Biotechnology",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "ABNB",
+      "cusip": "009066101",
+      "name": "Airbnb",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Hotels, Resorts & Cruise Lines",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "ABT",
+      "cusip": "002824100",
+      "name": "Abbott Laboratories",
+      "sector": "Health Care",
+      "subIndustry": "Health Care Equipment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "ACGL",
+      "cusip": "G0450A105",
+      "name": "Arch Capital Group",
+      "sector": "Financials",
+      "subIndustry": "Property & Casualty Insurance",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "ACN",
+      "cusip": "G1151C101",
+      "name": "Accenture",
+      "sector": "Information Technology",
+      "subIndustry": "IT Consulting & Other Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "ADBE",
+      "cusip": "00724F101",
+      "name": "Adobe Inc.",
+      "sector": "Information Technology",
+      "subIndustry": "Application Software",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "ADI",
+      "cusip": "032654105",
+      "name": "Analog Devices",
+      "sector": "Information Technology",
+      "subIndustry": "Semiconductors",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "ADM",
+      "cusip": "039483102",
+      "name": "Archer Daniels Midland",
+      "sector": "Consumer Staples",
+      "subIndustry": "Agricultural Products & Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "ADP",
+      "cusip": "053015103",
+      "name": "Automatic Data Processing",
+      "sector": "Industrials",
+      "subIndustry": "Human Resource & Employment Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "ADSK",
+      "cusip": "052769106",
+      "name": "Autodesk",
+      "sector": "Information Technology",
+      "subIndustry": "Application Software",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "AEE",
+      "cusip": "023608102",
+      "name": "Ameren",
+      "sector": "Utilities",
+      "subIndustry": "Multi-Utilities",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "AEP",
+      "cusip": "025537101",
+      "name": "American Electric Power",
+      "sector": "Utilities",
+      "subIndustry": "Electric Utilities",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "AES",
+      "cusip": "00130H105",
+      "name": "AES Corporation",
+      "sector": "Utilities",
+      "subIndustry": "Independent Power Producers & Energy Traders",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "AFL",
+      "cusip": "001055102",
+      "name": "Aflac",
+      "sector": "Financials",
+      "subIndustry": "Life & Health Insurance",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "AIG",
+      "cusip": "026874784",
+      "name": "American International Group",
+      "sector": "Financials",
+      "subIndustry": "Multi-line Insurance",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "AIZ",
+      "cusip": "04621X108",
+      "name": "Assurant",
+      "sector": "Financials",
+      "subIndustry": "Multi-line Insurance",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "AJG",
+      "cusip": "363576109",
+      "name": "Arthur J. Gallagher & Co.",
+      "sector": "Financials",
+      "subIndustry": "Insurance Brokers",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "AKAM",
+      "cusip": "00971T101",
+      "name": "Akamai Technologies",
+      "sector": "Information Technology",
+      "subIndustry": "Internet Services & Infrastructure",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "ALB",
+      "cusip": "012653101",
+      "name": "Albemarle Corporation",
+      "sector": "Materials",
+      "subIndustry": "Specialty Chemicals",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "ALGN",
+      "cusip": "016255101",
+      "name": "Align Technology",
+      "sector": "Health Care",
+      "subIndustry": "Health Care Supplies",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "ALL",
+      "cusip": "020002101",
+      "name": "Allstate",
+      "sector": "Financials",
+      "subIndustry": "Property & Casualty Insurance",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "ALLE",
+      "cusip": "G0176J109",
+      "name": "Allegion",
+      "sector": "Industrials",
+      "subIndustry": "Building Products",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "AMAT",
+      "cusip": "038222105",
+      "name": "Applied Materials",
+      "sector": "Information Technology",
+      "subIndustry": "Semiconductor Materials & Equipment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "AMCR",
+      "cusip": "G0250X149",
+      "name": "Amcor",
+      "sector": "Materials",
+      "subIndustry": "Paper & Plastic Packaging Products & Materials",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "AMD",
+      "cusip": "007903107",
+      "name": "Advanced Micro Devices",
+      "sector": "Information Technology",
+      "subIndustry": "Semiconductors",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "AME",
+      "cusip": "031100100",
+      "name": "Ametek",
+      "sector": "Industrials",
+      "subIndustry": "Electrical Components & Equipment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "AMGN",
+      "cusip": "031162100",
+      "name": "Amgen",
+      "sector": "Health Care",
+      "subIndustry": "Biotechnology",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "AMP",
+      "cusip": "03076C106",
+      "name": "Ameriprise Financial",
+      "sector": "Financials",
+      "subIndustry": "Asset Management & Custody Banks",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "AMT",
+      "cusip": "03027X100",
+      "name": "American Tower",
+      "sector": "Real Estate",
+      "subIndustry": "Telecom Tower REITs",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "AMZN",
+      "cusip": "023135106",
+      "name": "Amazon",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Broadline Retail",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "ANET",
+      "cusip": "040413205",
+      "name": "Arista Networks",
+      "sector": "Information Technology",
+      "subIndustry": "Communications Equipment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "AON",
+      "cusip": "G0403H108",
+      "name": "Aon plc",
+      "sector": "Financials",
+      "subIndustry": "Insurance Brokers",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "AOS",
+      "cusip": "831865209",
+      "name": "A. O. Smith",
+      "sector": "Industrials",
+      "subIndustry": "Building Products",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "APA",
+      "cusip": "03743Q108",
+      "name": "APA Corporation",
+      "sector": "Energy",
+      "subIndustry": "Oil & Gas Exploration & Production",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "APD",
+      "cusip": "009158106",
+      "name": "Air Products",
+      "sector": "Materials",
+      "subIndustry": "Industrial Gases",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "APH",
+      "cusip": "032095101",
+      "name": "Amphenol",
+      "sector": "Information Technology",
+      "subIndustry": "Electronic Components",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "APO",
+      "cusip": "03769M106",
+      "name": "Apollo Global Management",
+      "sector": "Financials",
+      "subIndustry": "Asset Management & Custody Banks",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "APP",
+      "cusip": "03831W108",
+      "name": "AppLovin",
+      "sector": "Information Technology",
+      "subIndustry": "Application Software",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "APTV",
+      "cusip": "G3265R107",
+      "name": "Aptiv",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Automotive Parts & Equipment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "ARE",
+      "cusip": "015271109",
+      "name": "Alexandria Real Estate Equities",
+      "sector": "Real Estate",
+      "subIndustry": "Office REITs",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "ARES",
+      "cusip": "03990B101",
+      "name": "Ares Management",
+      "sector": "Financials",
+      "subIndustry": "Asset Management & Custody Banks",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "ATO",
+      "cusip": "049560105",
+      "name": "Atmos Energy",
+      "sector": "Utilities",
+      "subIndustry": "Gas Utilities",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "AVB",
+      "cusip": "053484101",
+      "name": "AvalonBay Communities",
+      "sector": "Real Estate",
+      "subIndustry": "Multi-Family Residential REITs",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "AVGO",
+      "cusip": "11135F101",
+      "name": "Broadcom",
+      "sector": "Information Technology",
+      "subIndustry": "Semiconductors",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "AVY",
+      "cusip": "053611109",
+      "name": "Avery Dennison",
+      "sector": "Materials",
+      "subIndustry": "Paper & Plastic Packaging Products & Materials",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "AWK",
+      "cusip": "030420103",
+      "name": "American Water Works",
+      "sector": "Utilities",
+      "subIndustry": "Water Utilities",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "AXON",
+      "cusip": "05464C101",
+      "name": "Axon Enterprise",
+      "sector": "Industrials",
+      "subIndustry": "Aerospace & Defense",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "AXP",
+      "cusip": "025816109",
+      "name": "American Express",
+      "sector": "Financials",
+      "subIndustry": "Consumer Finance",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "AZO",
+      "cusip": "053332102",
+      "name": "AutoZone",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Automotive Retail",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "BA",
+      "cusip": "097023105",
+      "name": "Boeing",
+      "sector": "Industrials",
+      "subIndustry": "Aerospace & Defense",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "BAC",
+      "cusip": "060505104",
+      "name": "Bank of America",
+      "sector": "Financials",
+      "subIndustry": "Diversified Banks",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "BALL",
+      "cusip": "058498106",
+      "name": "Ball Corporation",
+      "sector": "Materials",
+      "subIndustry": "Metal, Glass & Plastic Containers",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "BAX",
+      "cusip": "071813109",
+      "name": "Baxter International",
+      "sector": "Health Care",
+      "subIndustry": "Health Care Equipment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "BBY",
+      "cusip": "086516101",
+      "name": "Best Buy",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Computer & Electronics Retail",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "BDX",
+      "cusip": "075887109",
+      "name": "Becton Dickinson",
+      "sector": "Health Care",
+      "subIndustry": "Health Care Equipment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "BEN",
+      "cusip": "354613101",
+      "name": "Franklin Resources",
+      "sector": "Financials",
+      "subIndustry": "Asset Management & Custody Banks",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "BF-B",
+      "cusip": "115637209",
+      "name": "Brown–Forman",
+      "sector": "Consumer Staples",
+      "subIndustry": "Distillers & Vintners",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "BG",
+      "cusip": "H11356104",
+      "name": "Bunge Global",
+      "sector": "Consumer Staples",
+      "subIndustry": "Agricultural Products & Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "BIIB",
+      "cusip": "09062X103",
+      "name": "Biogen",
+      "sector": "Health Care",
+      "subIndustry": "Biotechnology",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "BK",
+      "cusip": "064058100",
+      "name": "BNY Mellon",
+      "sector": "Financials",
+      "subIndustry": "Asset Management & Custody Banks",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "BKNG",
+      "cusip": "09857L108",
+      "name": "Booking Holdings",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Hotels, Resorts & Cruise Lines",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "BKR",
+      "cusip": "05722G100",
+      "name": "Baker Hughes",
+      "sector": "Energy",
+      "subIndustry": "Oil & Gas Equipment & Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "BLDR",
+      "cusip": "12008R107",
+      "name": "Builders FirstSource",
+      "sector": "Industrials",
+      "subIndustry": "Building Products",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "BLK",
+      "cusip": "09290D101",
+      "name": "BlackRock",
+      "sector": "Financials",
+      "subIndustry": "Asset Management & Custody Banks",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "BMY",
+      "cusip": "110122108",
+      "name": "Bristol Myers Squibb",
+      "sector": "Health Care",
+      "subIndustry": "Pharmaceuticals",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "BR",
+      "cusip": "11133T103",
+      "name": "Broadridge Financial Solutions",
+      "sector": "Industrials",
+      "subIndustry": "Data Processing & Outsourced Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "BRK-B",
+      "cusip": "084670702",
+      "name": "Berkshire Hathaway",
+      "sector": "Financials",
+      "subIndustry": "Multi-Sector Holdings",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "BRO",
+      "cusip": "115236101",
+      "name": "Brown & Brown",
+      "sector": "Financials",
+      "subIndustry": "Insurance Brokers",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "BSX",
+      "cusip": "101137107",
+      "name": "Boston Scientific",
+      "sector": "Health Care",
+      "subIndustry": "Health Care Equipment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "BX",
+      "cusip": "09260D107",
+      "name": "Blackstone Inc.",
+      "sector": "Financials",
+      "subIndustry": "Asset Management & Custody Banks",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "BXP",
+      "cusip": "101121101",
+      "name": "BXP, Inc.",
+      "sector": "Real Estate",
+      "subIndustry": "Office REITs",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "C",
+      "cusip": "172967424",
+      "name": "Citigroup",
+      "sector": "Financials",
+      "subIndustry": "Diversified Banks",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CAG",
+      "cusip": "205887102",
+      "name": "Conagra Brands",
+      "sector": "Consumer Staples",
+      "subIndustry": "Packaged Foods & Meats",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CAH",
+      "cusip": "14149Y108",
+      "name": "Cardinal Health",
+      "sector": "Health Care",
+      "subIndustry": "Health Care Distributors",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CARR",
+      "cusip": "14448C104",
+      "name": "Carrier Global",
+      "sector": "Industrials",
+      "subIndustry": "Building Products",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CASY",
+      "cusip": "147528103",
+      "name": "Casey's",
+      "sector": "Consumer Staples",
+      "subIndustry": "Food Retail",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CAT",
+      "cusip": "149123101",
+      "name": "Caterpillar Inc.",
+      "sector": "Industrials",
+      "subIndustry": "Construction Machinery & Heavy Transportation Equipment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CB",
+      "cusip": "H1467J104",
+      "name": "Chubb Limited",
+      "sector": "Financials",
+      "subIndustry": "Property & Casualty Insurance",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CBOE",
+      "cusip": "12503M108",
+      "name": "Cboe Global Markets",
+      "sector": "Financials",
+      "subIndustry": "Financial Exchanges & Data",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CBRE",
+      "cusip": "12504L109",
+      "name": "CBRE Group",
+      "sector": "Real Estate",
+      "subIndustry": "Real Estate Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CCI",
+      "cusip": "22822V101",
+      "name": "Crown Castle",
+      "sector": "Real Estate",
+      "subIndustry": "Telecom Tower REITs",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CCL",
+      "cusip": "G2004J103",
+      "name": "Carnival Corporation",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Hotels, Resorts & Cruise Lines",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CDNS",
+      "cusip": "127387108",
+      "name": "Cadence Design Systems",
+      "sector": "Information Technology",
+      "subIndustry": "Application Software",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CDW",
+      "cusip": "12514G108",
+      "name": "CDW Corporation",
+      "sector": "Information Technology",
+      "subIndustry": "Technology Distributors",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CEG",
+      "cusip": "21037T109",
+      "name": "Constellation Energy",
+      "sector": "Utilities",
+      "subIndustry": "Electric Utilities",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CF",
+      "cusip": "125269100",
+      "name": "CF Industries",
+      "sector": "Materials",
+      "subIndustry": "Fertilizers & Agricultural Chemicals",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CFG",
+      "cusip": "174610105",
+      "name": "Citizens Financial Group",
+      "sector": "Financials",
+      "subIndustry": "Regional Banks",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CHD",
+      "cusip": "171340102",
+      "name": "Church & Dwight",
+      "sector": "Consumer Staples",
+      "subIndustry": "Household Products",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CHRW",
+      "cusip": "12541W209",
+      "name": "C.H. Robinson",
+      "sector": "Industrials",
+      "subIndustry": "Air Freight & Logistics",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CHTR",
+      "cusip": "16119P108",
+      "name": "Charter Communications",
+      "sector": "Communication Services",
+      "subIndustry": "Cable & Satellite",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CI",
+      "cusip": "125523100",
+      "name": "Cigna",
+      "sector": "Health Care",
+      "subIndustry": "Health Care Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CIEN",
+      "cusip": "171779309",
+      "name": "Ciena",
+      "sector": "Information Technology",
+      "subIndustry": "Communications Equipment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CINF",
+      "cusip": "172062101",
+      "name": "Cincinnati Financial",
+      "sector": "Financials",
+      "subIndustry": "Property & Casualty Insurance",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CL",
+      "cusip": "194162103",
+      "name": "Colgate-Palmolive",
+      "sector": "Consumer Staples",
+      "subIndustry": "Household Products",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CLX",
+      "cusip": "189054109",
+      "name": "Clorox",
+      "sector": "Consumer Staples",
+      "subIndustry": "Household Products",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CMCSA",
+      "cusip": "20030N101",
+      "name": "Comcast",
+      "sector": "Communication Services",
+      "subIndustry": "Cable & Satellite",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CME",
+      "cusip": "12572Q105",
+      "name": "CME Group",
+      "sector": "Financials",
+      "subIndustry": "Financial Exchanges & Data",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CMG",
+      "cusip": "169656105",
+      "name": "Chipotle Mexican Grill",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Restaurants",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CMI",
+      "cusip": "231021106",
+      "name": "Cummins",
+      "sector": "Industrials",
+      "subIndustry": "Construction Machinery & Heavy Transportation Equipment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CMS",
+      "cusip": "125896100",
+      "name": "CMS Energy",
+      "sector": "Utilities",
+      "subIndustry": "Multi-Utilities",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CNC",
+      "cusip": "15135B101",
+      "name": "Centene Corporation",
+      "sector": "Health Care",
+      "subIndustry": "Managed Health Care",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CNP",
+      "cusip": "15189T107",
+      "name": "CenterPoint Energy",
+      "sector": "Utilities",
+      "subIndustry": "Multi-Utilities",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "COF",
+      "cusip": "14040H105",
+      "name": "Capital One",
+      "sector": "Financials",
+      "subIndustry": "Consumer Finance",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "COHR",
+      "cusip": "19247G107",
+      "name": "Coherent Corp.",
+      "sector": "Information Technology",
+      "subIndustry": "Electronic Components",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "COIN",
+      "cusip": "19260Q107",
+      "name": "Coinbase",
+      "sector": "Financials",
+      "subIndustry": "Financial Exchanges & Data",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "COO",
+      "cusip": "216648501",
+      "name": "Cooper Companies (The)",
+      "sector": "Health Care",
+      "subIndustry": "Health Care Supplies",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "COP",
+      "cusip": "20825C104",
+      "name": "ConocoPhillips",
+      "sector": "Energy",
+      "subIndustry": "Oil & Gas Exploration & Production",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "COR",
+      "cusip": "03073E105",
+      "name": "Cencora",
+      "sector": "Health Care",
+      "subIndustry": "Health Care Distributors",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "COST",
+      "cusip": "22160K105",
+      "name": "Costco",
+      "sector": "Consumer Staples",
+      "subIndustry": "Consumer Staples Merchandise Retail",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CPAY",
+      "cusip": "219948106",
+      "name": "Corpay",
+      "sector": "Financials",
+      "subIndustry": "Transaction & Payment Processing Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CPB",
+      "cusip": "134429109",
+      "name": "Campbell's Company (The)",
+      "sector": "Consumer Staples",
+      "subIndustry": "Packaged Foods & Meats",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CPRT",
+      "cusip": "217204106",
+      "name": "Copart",
+      "sector": "Industrials",
+      "subIndustry": "Diversified Support Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CPT",
+      "cusip": "133131102",
+      "name": "Camden Property Trust",
+      "sector": "Real Estate",
+      "subIndustry": "Multi-Family Residential REITs",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CRH",
+      "cusip": "G25508105",
+      "name": "CRH plc",
+      "sector": "Materials",
+      "subIndustry": "Construction Materials",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CRL",
+      "cusip": "159864107",
+      "name": "Charles River Laboratories",
+      "sector": "Health Care",
+      "subIndustry": "Life Sciences Tools & Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CRM",
+      "cusip": "79466L302",
+      "name": "Salesforce",
+      "sector": "Information Technology",
+      "subIndustry": "Application Software",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CRWD",
+      "cusip": "22788C105",
+      "name": "CrowdStrike",
+      "sector": "Information Technology",
+      "subIndustry": "Systems Software",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CSCO",
+      "cusip": "17275R102",
+      "name": "Cisco",
+      "sector": "Information Technology",
+      "subIndustry": "Communications Equipment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CSGP",
+      "cusip": "22160N109",
+      "name": "CoStar Group",
+      "sector": "Real Estate",
+      "subIndustry": "Real Estate Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CSX",
+      "cusip": "126408103",
+      "name": "CSX Corporation",
+      "sector": "Industrials",
+      "subIndustry": "Rail Transportation",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CTAS",
+      "cusip": "172908105",
+      "name": "Cintas",
+      "sector": "Industrials",
+      "subIndustry": "Diversified Support Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CTSH",
+      "cusip": "192446102",
+      "name": "Cognizant",
+      "sector": "Information Technology",
+      "subIndustry": "IT Consulting & Other Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CTVA",
+      "cusip": "22052L104",
+      "name": "Corteva",
+      "sector": "Materials",
+      "subIndustry": "Fertilizers & Agricultural Chemicals",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CVNA",
+      "cusip": "146869102",
+      "name": "Carvana",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Automotive Retail",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CVS",
+      "cusip": "126650100",
+      "name": "CVS Health",
+      "sector": "Health Care",
+      "subIndustry": "Health Care Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "CVX",
+      "cusip": "166764100",
+      "name": "Chevron Corporation",
+      "sector": "Energy",
+      "subIndustry": "Integrated Oil & Gas",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "D",
+      "cusip": "25746U109",
+      "name": "Dominion Energy",
+      "sector": "Utilities",
+      "subIndustry": "Multi-Utilities",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "DAL",
+      "cusip": "247361702",
+      "name": "Delta Air Lines",
+      "sector": "Industrials",
+      "subIndustry": "Passenger Airlines",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "DASH",
+      "cusip": "25809K105",
+      "name": "DoorDash",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Specialized Consumer Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "DD",
+      "cusip": "26614N102",
+      "name": "DuPont",
+      "sector": "Materials",
+      "subIndustry": "Specialty Chemicals",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "DDOG",
+      "cusip": "23804L103",
+      "name": "Datadog",
+      "sector": "Information Technology",
+      "subIndustry": "Application Software",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "DE",
+      "cusip": "244199105",
+      "name": "Deere & Company",
+      "sector": "Industrials",
+      "subIndustry": "Agricultural & Farm Machinery",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "DECK",
+      "cusip": "243537107",
+      "name": "Deckers Brands",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Footwear",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "DELL",
+      "cusip": "24703L202",
+      "name": "Dell Technologies",
+      "sector": "Information Technology",
+      "subIndustry": "Technology Hardware, Storage & Peripherals",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "DG",
+      "cusip": "256677105",
+      "name": "Dollar General",
+      "sector": "Consumer Staples",
+      "subIndustry": "Consumer Staples Merchandise Retail",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "DGX",
+      "cusip": "74834L100",
+      "name": "Quest Diagnostics",
+      "sector": "Health Care",
+      "subIndustry": "Health Care Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "DHI",
+      "cusip": "23331A109",
+      "name": "D. R. Horton",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Homebuilding",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "DHR",
+      "cusip": "235851102",
+      "name": "Danaher Corporation",
+      "sector": "Health Care",
+      "subIndustry": "Life Sciences Tools & Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "DIS",
+      "cusip": "254687106",
+      "name": "Walt Disney Company (The)",
+      "sector": "Communication Services",
+      "subIndustry": "Movies & Entertainment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "DLR",
+      "cusip": "253868103",
+      "name": "Digital Realty",
+      "sector": "Real Estate",
+      "subIndustry": "Data Center REITs",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "DLTR",
+      "cusip": "256746108",
+      "name": "Dollar Tree",
+      "sector": "Consumer Staples",
+      "subIndustry": "Consumer Staples Merchandise Retail",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "DOC",
+      "cusip": "42250P103",
+      "name": "Healthpeak Properties",
+      "sector": "Real Estate",
+      "subIndustry": "Health Care REITs",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "DOV",
+      "cusip": "260003108",
+      "name": "Dover Corporation",
+      "sector": "Industrials",
+      "subIndustry": "Industrial Machinery & Supplies & Components",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "DOW",
+      "cusip": "260557103",
+      "name": "Dow Inc.",
+      "sector": "Materials",
+      "subIndustry": "Commodity Chemicals",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "DPZ",
+      "cusip": "25754A201",
+      "name": "Domino's",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Restaurants",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "DRI",
+      "cusip": "237194105",
+      "name": "Darden Restaurants",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Restaurants",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "DTE",
+      "cusip": "233331107",
+      "name": "DTE Energy",
+      "sector": "Utilities",
+      "subIndustry": "Multi-Utilities",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "DUK",
+      "cusip": "26441C204",
+      "name": "Duke Energy",
+      "sector": "Utilities",
+      "subIndustry": "Electric Utilities",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "DVA",
+      "cusip": "23918K108",
+      "name": "DaVita",
+      "sector": "Health Care",
+      "subIndustry": "Health Care Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "DVN",
+      "cusip": "25179M103",
+      "name": "Devon Energy",
+      "sector": "Energy",
+      "subIndustry": "Oil & Gas Exploration & Production",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "DXCM",
+      "cusip": "252131107",
+      "name": "Dexcom",
+      "sector": "Health Care",
+      "subIndustry": "Health Care Equipment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "EA",
+      "cusip": "285512109",
+      "name": "Electronic Arts",
+      "sector": "Communication Services",
+      "subIndustry": "Interactive Home Entertainment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "EBAY",
+      "cusip": "278642103",
+      "name": "eBay Inc.",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Broadline Retail",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "ECL",
+      "cusip": "278865100",
+      "name": "Ecolab",
+      "sector": "Materials",
+      "subIndustry": "Specialty Chemicals",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "ED",
+      "cusip": "209115104",
+      "name": "Consolidated Edison",
+      "sector": "Utilities",
+      "subIndustry": "Multi-Utilities",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "EFX",
+      "cusip": "294429105",
+      "name": "Equifax",
+      "sector": "Industrials",
+      "subIndustry": "Research & Consulting Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "EG",
+      "cusip": "G3223R108",
+      "name": "Everest Group",
+      "sector": "Financials",
+      "subIndustry": "Reinsurance",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "EIX",
+      "cusip": "281020107",
+      "name": "Edison International",
+      "sector": "Utilities",
+      "subIndustry": "Electric Utilities",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "EL",
+      "cusip": "518439104",
+      "name": "Estée Lauder Companies (The)",
+      "sector": "Consumer Staples",
+      "subIndustry": "Personal Care Products",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "ELV",
+      "cusip": "036752103",
+      "name": "Elevance Health",
+      "sector": "Health Care",
+      "subIndustry": "Managed Health Care",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "EME",
+      "cusip": "29084Q100",
+      "name": "Emcor",
+      "sector": "Industrials",
+      "subIndustry": "Construction & Engineering",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "EMR",
+      "cusip": "291011104",
+      "name": "Emerson Electric",
+      "sector": "Industrials",
+      "subIndustry": "Electrical Components & Equipment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "EOG",
+      "cusip": "26875P101",
+      "name": "EOG Resources",
+      "sector": "Energy",
+      "subIndustry": "Oil & Gas Exploration & Production",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "EPAM",
+      "cusip": "29414B104",
+      "name": "EPAM Systems",
+      "sector": "Information Technology",
+      "subIndustry": "IT Consulting & Other Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "EQIX",
+      "cusip": "29444U700",
+      "name": "Equinix",
+      "sector": "Real Estate",
+      "subIndustry": "Data Center REITs",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "EQR",
+      "cusip": "29476L107",
+      "name": "Equity Residential",
+      "sector": "Real Estate",
+      "subIndustry": "Multi-Family Residential REITs",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "EQT",
+      "cusip": "26884L109",
+      "name": "EQT Corporation",
+      "sector": "Energy",
+      "subIndustry": "Oil & Gas Exploration & Production",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "ERIE",
+      "cusip": "29530P102",
+      "name": "Erie Indemnity",
+      "sector": "Financials",
+      "subIndustry": "Insurance Brokers",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "ES",
+      "cusip": "30040W108",
+      "name": "Eversource Energy",
+      "sector": "Utilities",
+      "subIndustry": "Electric Utilities",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "ESS",
+      "cusip": "297178105",
+      "name": "Essex Property Trust",
+      "sector": "Real Estate",
+      "subIndustry": "Multi-Family Residential REITs",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "ETN",
+      "cusip": "G29183103",
+      "name": "Eaton Corporation",
+      "sector": "Industrials",
+      "subIndustry": "Electrical Components & Equipment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "ETR",
+      "cusip": "29364G103",
+      "name": "Entergy",
+      "sector": "Utilities",
+      "subIndustry": "Electric Utilities",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "EVRG",
+      "cusip": "30034W106",
+      "name": "Evergy",
+      "sector": "Utilities",
+      "subIndustry": "Electric Utilities",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "EW",
+      "cusip": "28176E108",
+      "name": "Edwards Lifesciences",
+      "sector": "Health Care",
+      "subIndustry": "Health Care Equipment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "EXC",
+      "cusip": "30161N101",
+      "name": "Exelon",
+      "sector": "Utilities",
+      "subIndustry": "Electric Utilities",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "EXE",
+      "cusip": "165167735",
+      "name": "Expand Energy",
+      "sector": "Energy",
+      "subIndustry": "Oil & Gas Exploration & Production",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "EXPD",
+      "cusip": "302130109",
+      "name": "Expeditors International",
+      "sector": "Industrials",
+      "subIndustry": "Air Freight & Logistics",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "EXPE",
+      "cusip": "30212P303",
+      "name": "Expedia Group",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Hotels, Resorts & Cruise Lines",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "EXR",
+      "cusip": "30225T102",
+      "name": "Extra Space Storage",
+      "sector": "Real Estate",
+      "subIndustry": "Self-Storage REITs",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "F",
+      "cusip": "345370860",
+      "name": "Ford Motor Company",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Automobile Manufacturers",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "FANG",
+      "cusip": "25278X109",
+      "name": "Diamondback Energy",
+      "sector": "Energy",
+      "subIndustry": "Oil & Gas Exploration & Production",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "FAST",
+      "cusip": "311900104",
+      "name": "Fastenal",
+      "sector": "Industrials",
+      "subIndustry": "Trading Companies & Distributors",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "FCX",
+      "cusip": "35671D857",
+      "name": "Freeport-McMoRan",
+      "sector": "Materials",
+      "subIndustry": "Copper",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "FDS",
+      "cusip": "303075105",
+      "name": "FactSet",
+      "sector": "Financials",
+      "subIndustry": "Financial Exchanges & Data",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "FDX",
+      "cusip": "31428X106",
+      "name": "FedEx",
+      "sector": "Industrials",
+      "subIndustry": "Air Freight & Logistics",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "FE",
+      "cusip": "337932107",
+      "name": "FirstEnergy",
+      "sector": "Utilities",
+      "subIndustry": "Electric Utilities",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "FFIV",
+      "cusip": "315616102",
+      "name": "F5, Inc.",
+      "sector": "Information Technology",
+      "subIndustry": "Communications Equipment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "FICO",
+      "cusip": "303250104",
+      "name": "Fair Isaac",
+      "sector": "Information Technology",
+      "subIndustry": "Application Software",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "FIS",
+      "cusip": "31620M106",
+      "name": "Fidelity National Information Services",
+      "sector": "Financials",
+      "subIndustry": "Transaction & Payment Processing Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "FISV",
+      "cusip": "337738108",
+      "name": "Fiserv",
+      "sector": "Financials",
+      "subIndustry": "Transaction & Payment Processing Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "FITB",
+      "cusip": "316773100",
+      "name": "Fifth Third Bancorp",
+      "sector": "Financials",
+      "subIndustry": "Regional Banks",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "FIX",
+      "cusip": "199908104",
+      "name": "Comfort Systems USA",
+      "sector": "Industrials",
+      "subIndustry": "Construction & Engineering",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "FOX",
+      "cusip": "35137L204",
+      "name": "Fox Corporation (Class B)",
+      "sector": "Communication Services",
+      "subIndustry": "Broadcasting",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "FOXA",
+      "cusip": "35137L105",
+      "name": "Fox Corporation (Class A)",
+      "sector": "Communication Services",
+      "subIndustry": "Broadcasting",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "FRT",
+      "cusip": "313745101",
+      "name": "Federal Realty Investment Trust",
+      "sector": "Real Estate",
+      "subIndustry": "Retail REITs",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "FSLR",
+      "cusip": "336433107",
+      "name": "First Solar",
+      "sector": "Information Technology",
+      "subIndustry": "Semiconductors",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "FTNT",
+      "cusip": "34959E109",
+      "name": "Fortinet",
+      "sector": "Information Technology",
+      "subIndustry": "Systems Software",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "FTV",
+      "cusip": "34959J108",
+      "name": "Fortive",
+      "sector": "Industrials",
+      "subIndustry": "Industrial Machinery & Supplies & Components",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "GD",
+      "cusip": "369550108",
+      "name": "General Dynamics",
+      "sector": "Industrials",
+      "subIndustry": "Aerospace & Defense",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "GDDY",
+      "cusip": "380237107",
+      "name": "GoDaddy",
+      "sector": "Information Technology",
+      "subIndustry": "Internet Services & Infrastructure",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "GE",
+      "cusip": "369604301",
+      "name": "GE Aerospace",
+      "sector": "Industrials",
+      "subIndustry": "Aerospace & Defense",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "GEHC",
+      "cusip": "36266G107",
+      "name": "GE HealthCare",
+      "sector": "Health Care",
+      "subIndustry": "Health Care Equipment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "GEN",
+      "cusip": "668771108",
+      "name": "Gen Digital",
+      "sector": "Information Technology",
+      "subIndustry": "Systems Software",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "GEV",
+      "cusip": "36828A101",
+      "name": "GE Vernova",
+      "sector": "Industrials",
+      "subIndustry": "Heavy Electrical Equipment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "GILD",
+      "cusip": "375558103",
+      "name": "Gilead Sciences",
+      "sector": "Health Care",
+      "subIndustry": "Biotechnology",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "GIS",
+      "cusip": "370334104",
+      "name": "General Mills",
+      "sector": "Consumer Staples",
+      "subIndustry": "Packaged Foods & Meats",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "GL",
+      "cusip": "37959E102",
+      "name": "Globe Life",
+      "sector": "Financials",
+      "subIndustry": "Life & Health Insurance",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "GLW",
+      "cusip": "219350105",
+      "name": "Corning Inc.",
+      "sector": "Information Technology",
+      "subIndustry": "Electronic Components",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "GM",
+      "cusip": "37045V100",
+      "name": "General Motors",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Automobile Manufacturers",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "GNRC",
+      "cusip": "368736104",
+      "name": "Generac",
+      "sector": "Industrials",
+      "subIndustry": "Electrical Components & Equipment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "GOOG",
+      "cusip": "02079K107",
+      "name": "Alphabet Inc. (Class C)",
+      "sector": "Communication Services",
+      "subIndustry": "Interactive Media & Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "GOOGL",
+      "cusip": "02079K305",
+      "name": "Alphabet Inc. (Class A)",
+      "sector": "Communication Services",
+      "subIndustry": "Interactive Media & Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "GPC",
+      "cusip": "372460105",
+      "name": "Genuine Parts Company",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Distributors",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "GPN",
+      "cusip": "37940X102",
+      "name": "Global Payments",
+      "sector": "Financials",
+      "subIndustry": "Transaction & Payment Processing Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "GRMN",
+      "cusip": "H2906T109",
+      "name": "Garmin",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Consumer Electronics",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "GS",
+      "cusip": "38141G104",
+      "name": "Goldman Sachs",
+      "sector": "Financials",
+      "subIndustry": "Investment Banking & Brokerage",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "GWW",
+      "cusip": "384802104",
+      "name": "W. W. Grainger",
+      "sector": "Industrials",
+      "subIndustry": "Industrial Machinery & Supplies & Components",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "HAL",
+      "cusip": "406216101",
+      "name": "Halliburton",
+      "sector": "Energy",
+      "subIndustry": "Oil & Gas Equipment & Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "HAS",
+      "cusip": "418056107",
+      "name": "Hasbro",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Leisure Products",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "HBAN",
+      "cusip": "446150104",
+      "name": "Huntington Bancshares",
+      "sector": "Financials",
+      "subIndustry": "Regional Banks",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "HCA",
+      "cusip": "40412C101",
+      "name": "HCA Healthcare",
+      "sector": "Health Care",
+      "subIndustry": "Health Care Facilities",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "HD",
+      "cusip": "437076102",
+      "name": "Home Depot (The)",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Home Improvement Retail",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "HIG",
+      "cusip": "416515104",
+      "name": "Hartford (The)",
+      "sector": "Financials",
+      "subIndustry": "Property & Casualty Insurance",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "HII",
+      "cusip": "446413106",
+      "name": "Huntington Ingalls Industries",
+      "sector": "Industrials",
+      "subIndustry": "Aerospace & Defense",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "HLT",
+      "cusip": "43300A203",
+      "name": "Hilton Worldwide",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Hotels, Resorts & Cruise Lines",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "HON",
+      "cusip": "438516106",
+      "name": "Honeywell",
+      "sector": "Industrials",
+      "subIndustry": "Industrial Conglomerates",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "HOOD",
+      "cusip": "770700102",
+      "name": "Robinhood Markets",
+      "sector": "Financials",
+      "subIndustry": "Investment Banking & Brokerage",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "HPE",
+      "cusip": "42824C109",
+      "name": "Hewlett Packard Enterprise",
+      "sector": "Information Technology",
+      "subIndustry": "Technology Hardware, Storage & Peripherals",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "HPQ",
+      "cusip": "40434L105",
+      "name": "HP Inc.",
+      "sector": "Information Technology",
+      "subIndustry": "Technology Hardware, Storage & Peripherals",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "HRL",
+      "cusip": "440452100",
+      "name": "Hormel Foods",
+      "sector": "Consumer Staples",
+      "subIndustry": "Packaged Foods & Meats",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "HSIC",
+      "cusip": "806407102",
+      "name": "Henry Schein",
+      "sector": "Health Care",
+      "subIndustry": "Health Care Distributors",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "HST",
+      "cusip": "44107P104",
+      "name": "Host Hotels & Resorts",
+      "sector": "Real Estate",
+      "subIndustry": "Hotel & Resort REITs",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "HSY",
+      "cusip": "427866108",
+      "name": "Hershey Company (The)",
+      "sector": "Consumer Staples",
+      "subIndustry": "Packaged Foods & Meats",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "HUBB",
+      "cusip": "443510607",
+      "name": "Hubbell Incorporated",
+      "sector": "Industrials",
+      "subIndustry": "Industrial Machinery & Supplies & Components",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "HUM",
+      "cusip": "444859102",
+      "name": "Humana",
+      "sector": "Health Care",
+      "subIndustry": "Managed Health Care",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "HWM",
+      "cusip": "443201108",
+      "name": "Howmet Aerospace",
+      "sector": "Industrials",
+      "subIndustry": "Aerospace & Defense",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "IBKR",
+      "cusip": "45841N107",
+      "name": "Interactive Brokers",
+      "sector": "Financials",
+      "subIndustry": "Investment Banking & Brokerage",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "IBM",
+      "cusip": "459200101",
+      "name": "IBM",
+      "sector": "Information Technology",
+      "subIndustry": "IT Consulting & Other Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "ICE",
+      "cusip": "45866F104",
+      "name": "Intercontinental Exchange",
+      "sector": "Financials",
+      "subIndustry": "Financial Exchanges & Data",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "IDXX",
+      "cusip": "45168D104",
+      "name": "Idexx Laboratories",
+      "sector": "Health Care",
+      "subIndustry": "Health Care Equipment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "IEX",
+      "cusip": "45167R104",
+      "name": "IDEX Corporation",
+      "sector": "Industrials",
+      "subIndustry": "Industrial Machinery & Supplies & Components",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "IFF",
+      "cusip": "459506101",
+      "name": "International Flavors & Fragrances",
+      "sector": "Materials",
+      "subIndustry": "Specialty Chemicals",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "INCY",
+      "cusip": "45337C102",
+      "name": "Incyte",
+      "sector": "Health Care",
+      "subIndustry": "Biotechnology",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "INTC",
+      "cusip": "458140100",
+      "name": "Intel",
+      "sector": "Information Technology",
+      "subIndustry": "Semiconductors",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "INTU",
+      "cusip": "461202103",
+      "name": "Intuit",
+      "sector": "Information Technology",
+      "subIndustry": "Application Software",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "INVH",
+      "cusip": "46187W107",
+      "name": "Invitation Homes",
+      "sector": "Real Estate",
+      "subIndustry": "Single-Family Residential REITs",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "IP",
+      "cusip": "460146103",
+      "name": "International Paper",
+      "sector": "Materials",
+      "subIndustry": "Paper & Plastic Packaging Products & Materials",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "IQV",
+      "cusip": "46266C105",
+      "name": "IQVIA",
+      "sector": "Health Care",
+      "subIndustry": "Life Sciences Tools & Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "IR",
+      "cusip": "45687V106",
+      "name": "Ingersoll Rand",
+      "sector": "Industrials",
+      "subIndustry": "Industrial Machinery & Supplies & Components",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "IRM",
+      "cusip": "46284V101",
+      "name": "Iron Mountain",
+      "sector": "Real Estate",
+      "subIndustry": "Other Specialized REITs",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "ISRG",
+      "cusip": "46120E602",
+      "name": "Intuitive Surgical",
+      "sector": "Health Care",
+      "subIndustry": "Health Care Equipment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "IT",
+      "cusip": "366651107",
+      "name": "Gartner",
+      "sector": "Information Technology",
+      "subIndustry": "IT Consulting & Other Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "ITW",
+      "cusip": "452308109",
+      "name": "Illinois Tool Works",
+      "sector": "Industrials",
+      "subIndustry": "Industrial Machinery & Supplies & Components",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "IVZ",
+      "cusip": "G491BT108",
+      "name": "Invesco",
+      "sector": "Financials",
+      "subIndustry": "Asset Management & Custody Banks",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "J",
+      "cusip": "46982L108",
+      "name": "Jacobs Solutions",
+      "sector": "Industrials",
+      "subIndustry": "Construction & Engineering",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "JBHT",
+      "cusip": "445658107",
+      "name": "J.B. Hunt",
+      "sector": "Industrials",
+      "subIndustry": "Cargo Ground Transportation",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "JBL",
+      "cusip": "466313103",
+      "name": "Jabil",
+      "sector": "Information Technology",
+      "subIndustry": "Electronic Manufacturing Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "JCI",
+      "cusip": "G51502105",
+      "name": "Johnson Controls",
+      "sector": "Industrials",
+      "subIndustry": "Building Products",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "JKHY",
+      "cusip": "426281101",
+      "name": "Jack Henry & Associates",
+      "sector": "Financials",
+      "subIndustry": "Transaction & Payment Processing Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "JNJ",
+      "cusip": "478160104",
+      "name": "Johnson & Johnson",
+      "sector": "Health Care",
+      "subIndustry": "Pharmaceuticals",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "JPM",
+      "cusip": "46625H100",
+      "name": "JPMorgan Chase",
+      "sector": "Financials",
+      "subIndustry": "Diversified Banks",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "KDP",
+      "cusip": "49271V100",
+      "name": "Keurig Dr Pepper",
+      "sector": "Consumer Staples",
+      "subIndustry": "Soft Drinks & Non-alcoholic Beverages",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "KEY",
+      "cusip": "493267108",
+      "name": "KeyCorp",
+      "sector": "Financials",
+      "subIndustry": "Regional Banks",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "KEYS",
+      "cusip": "49338L103",
+      "name": "Keysight Technologies",
+      "sector": "Information Technology",
+      "subIndustry": "Electronic Equipment & Instruments",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "KHC",
+      "cusip": "500754106",
+      "name": "Kraft Heinz",
+      "sector": "Consumer Staples",
+      "subIndustry": "Packaged Foods & Meats",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "KIM",
+      "cusip": "49446R109",
+      "name": "Kimco Realty",
+      "sector": "Real Estate",
+      "subIndustry": "Retail REITs",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "KKR",
+      "cusip": "48251W104",
+      "name": "KKR & Co.",
+      "sector": "Financials",
+      "subIndustry": "Asset Management & Custody Banks",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "KLAC",
+      "cusip": "482480100",
+      "name": "KLA Corporation",
+      "sector": "Information Technology",
+      "subIndustry": "Semiconductor Materials & Equipment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "KMB",
+      "cusip": "494368103",
+      "name": "Kimberly-Clark",
+      "sector": "Consumer Staples",
+      "subIndustry": "Household Products",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "KMI",
+      "cusip": "49456B101",
+      "name": "Kinder Morgan",
+      "sector": "Energy",
+      "subIndustry": "Oil & Gas Storage & Transportation",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "KO",
+      "cusip": "191216100",
+      "name": "Coca-Cola Company (The)",
+      "sector": "Consumer Staples",
+      "subIndustry": "Soft Drinks & Non-alcoholic Beverages",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "KR",
+      "cusip": "501044101",
+      "name": "Kroger",
+      "sector": "Consumer Staples",
+      "subIndustry": "Food Retail",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "KVUE",
+      "cusip": "49177J102",
+      "name": "Kenvue",
+      "sector": "Consumer Staples",
+      "subIndustry": "Personal Care Products",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "L",
+      "cusip": "540424108",
+      "name": "Loews Corporation",
+      "sector": "Financials",
+      "subIndustry": "Multi-line Insurance",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "LDOS",
+      "cusip": "525327102",
+      "name": "Leidos",
+      "sector": "Industrials",
+      "subIndustry": "Diversified Support Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "LEN",
+      "cusip": "526057104",
+      "name": "Lennar",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Homebuilding",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "LH",
+      "cusip": "504922105",
+      "name": "Labcorp",
+      "sector": "Health Care",
+      "subIndustry": "Health Care Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "LHX",
+      "cusip": "502431109",
+      "name": "L3Harris",
+      "sector": "Industrials",
+      "subIndustry": "Aerospace & Defense",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "LII",
+      "cusip": "526107107",
+      "name": "Lennox International",
+      "sector": "Industrials",
+      "subIndustry": "Building Products",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "LIN",
+      "cusip": "G54950103",
+      "name": "Linde plc",
+      "sector": "Materials",
+      "subIndustry": "Industrial Gases",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "LITE",
+      "cusip": "55024U109",
+      "name": "Lumentum",
+      "sector": "Information Technology",
+      "subIndustry": "Communications Equipment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "LLY",
+      "cusip": "532457108",
+      "name": "Lilly (Eli)",
+      "sector": "Health Care",
+      "subIndustry": "Pharmaceuticals",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "LMT",
+      "cusip": "539830109",
+      "name": "Lockheed Martin",
+      "sector": "Industrials",
+      "subIndustry": "Aerospace & Defense",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "LNT",
+      "cusip": "018802108",
+      "name": "Alliant Energy",
+      "sector": "Utilities",
+      "subIndustry": "Electric Utilities",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "LOW",
+      "cusip": "548661107",
+      "name": "Lowe's",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Home Improvement Retail",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "LRCX",
+      "cusip": "512807306",
+      "name": "Lam Research",
+      "sector": "Information Technology",
+      "subIndustry": "Semiconductor Materials & Equipment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "LULU",
+      "cusip": "550021109",
+      "name": "Lululemon Athletica",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Apparel, Accessories & Luxury Goods",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "LUV",
+      "cusip": "844741108",
+      "name": "Southwest Airlines",
+      "sector": "Industrials",
+      "subIndustry": "Passenger Airlines",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "LVS",
+      "cusip": "517834107",
+      "name": "Las Vegas Sands",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Casinos & Gaming",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "LYB",
+      "cusip": "N53745100",
+      "name": "LyondellBasell",
+      "sector": "Materials",
+      "subIndustry": "Specialty Chemicals",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "LYV",
+      "cusip": "538034109",
+      "name": "Live Nation Entertainment",
+      "sector": "Communication Services",
+      "subIndustry": "Movies & Entertainment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "MA",
+      "cusip": "57636Q104",
+      "name": "Mastercard",
+      "sector": "Financials",
+      "subIndustry": "Transaction & Payment Processing Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "MAA",
+      "cusip": "59522J103",
+      "name": "Mid-America Apartment Communities",
+      "sector": "Real Estate",
+      "subIndustry": "Multi-Family Residential REITs",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "MAR",
+      "cusip": "571903202",
+      "name": "Marriott International",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Hotels, Resorts & Cruise Lines",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "MAS",
+      "cusip": "574599106",
+      "name": "Masco",
+      "sector": "Industrials",
+      "subIndustry": "Building Products",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "MCD",
+      "cusip": "580135101",
+      "name": "McDonald's",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Restaurants",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "MCHP",
+      "cusip": "595017104",
+      "name": "Microchip Technology",
+      "sector": "Information Technology",
+      "subIndustry": "Semiconductors",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "MCK",
+      "cusip": "58155Q103",
+      "name": "McKesson Corporation",
+      "sector": "Health Care",
+      "subIndustry": "Health Care Distributors",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "MCO",
+      "cusip": "615369105",
+      "name": "Moody's Corporation",
+      "sector": "Financials",
+      "subIndustry": "Financial Exchanges & Data",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "MDLZ",
+      "cusip": "609207105",
+      "name": "Mondelez International",
+      "sector": "Consumer Staples",
+      "subIndustry": "Packaged Foods & Meats",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "MDT",
+      "cusip": "G5960L103",
+      "name": "Medtronic",
+      "sector": "Health Care",
+      "subIndustry": "Health Care Equipment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "MET",
+      "cusip": "59156R108",
+      "name": "MetLife",
+      "sector": "Financials",
+      "subIndustry": "Life & Health Insurance",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "META",
+      "cusip": "30303M102",
+      "name": "Meta Platforms",
+      "sector": "Communication Services",
+      "subIndustry": "Interactive Media & Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "MGM",
+      "cusip": "552953101",
+      "name": "MGM Resorts",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Casinos & Gaming",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "MKC",
+      "cusip": "579780206",
+      "name": "McCormick & Company",
+      "sector": "Consumer Staples",
+      "subIndustry": "Packaged Foods & Meats",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "MLM",
+      "cusip": "573284106",
+      "name": "Martin Marietta Materials",
+      "sector": "Materials",
+      "subIndustry": "Construction Materials",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "MMM",
+      "cusip": "88579Y101",
+      "name": "3M",
+      "sector": "Industrials",
+      "subIndustry": "Industrial Conglomerates",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "MNST",
+      "cusip": "61174X109",
+      "name": "Monster Beverage",
+      "sector": "Consumer Staples",
+      "subIndustry": "Soft Drinks & Non-alcoholic Beverages",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "MO",
+      "cusip": "02209S103",
+      "name": "Altria",
+      "sector": "Consumer Staples",
+      "subIndustry": "Tobacco",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "MOS",
+      "cusip": "61945C103",
+      "name": "Mosaic Company (The)",
+      "sector": "Materials",
+      "subIndustry": "Fertilizers & Agricultural Chemicals",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "MPC",
+      "cusip": "56585A102",
+      "name": "Marathon Petroleum",
+      "sector": "Energy",
+      "subIndustry": "Oil & Gas Refining & Marketing",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "MPWR",
+      "cusip": "609839105",
+      "name": "Monolithic Power Systems",
+      "sector": "Information Technology",
+      "subIndustry": "Semiconductors",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "MRK",
+      "cusip": "58933Y105",
+      "name": "Merck & Co.",
+      "sector": "Health Care",
+      "subIndustry": "Pharmaceuticals",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "MRNA",
+      "cusip": "60770K107",
+      "name": "Moderna",
+      "sector": "Health Care",
+      "subIndustry": "Biotechnology",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "MRSH",
+      "cusip": "571748102",
+      "name": "Marsh McLennan",
+      "sector": "Financials",
+      "subIndustry": "Insurance Brokers",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "MS",
+      "cusip": "617446448",
+      "name": "Morgan Stanley",
+      "sector": "Financials",
+      "subIndustry": "Investment Banking & Brokerage",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "MSCI",
+      "cusip": "55354G100",
+      "name": "MSCI Inc.",
+      "sector": "Financials",
+      "subIndustry": "Financial Exchanges & Data",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "MSFT",
+      "cusip": "594918104",
+      "name": "Microsoft",
+      "sector": "Information Technology",
+      "subIndustry": "Systems Software",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "MSI",
+      "cusip": "620076307",
+      "name": "Motorola Solutions",
+      "sector": "Information Technology",
+      "subIndustry": "Communications Equipment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "MTB",
+      "cusip": "55261F104",
+      "name": "M&T Bank",
+      "sector": "Financials",
+      "subIndustry": "Regional Banks",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "MTD",
+      "cusip": "592688105",
+      "name": "Mettler Toledo",
+      "sector": "Health Care",
+      "subIndustry": "Life Sciences Tools & Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "MU",
+      "cusip": "595112103",
+      "name": "Micron Technology",
+      "sector": "Information Technology",
+      "subIndustry": "Semiconductors",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "NCLH",
+      "cusip": "G66721104",
+      "name": "Norwegian Cruise Line Holdings",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Hotels, Resorts & Cruise Lines",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "NDAQ",
+      "cusip": "631103108",
+      "name": "Nasdaq, Inc.",
+      "sector": "Financials",
+      "subIndustry": "Financial Exchanges & Data",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "NDSN",
+      "cusip": "655663102",
+      "name": "Nordson Corporation",
+      "sector": "Industrials",
+      "subIndustry": "Industrial Machinery & Supplies & Components",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "NEE",
+      "cusip": "65339F101",
+      "name": "NextEra Energy",
+      "sector": "Utilities",
+      "subIndustry": "Multi-Utilities",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "NEM",
+      "cusip": "651639106",
+      "name": "Newmont",
+      "sector": "Materials",
+      "subIndustry": "Gold",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "NFLX",
+      "cusip": "64110L106",
+      "name": "Netflix",
+      "sector": "Communication Services",
+      "subIndustry": "Movies & Entertainment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "NI",
+      "cusip": "65473P105",
+      "name": "NiSource",
+      "sector": "Utilities",
+      "subIndustry": "Multi-Utilities",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "NKE",
+      "cusip": "654106103",
+      "name": "Nike, Inc.",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Apparel, Accessories & Luxury Goods",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "NOC",
+      "cusip": "666807102",
+      "name": "Northrop Grumman",
+      "sector": "Industrials",
+      "subIndustry": "Aerospace & Defense",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "NOW",
+      "cusip": "81762P102",
+      "name": "ServiceNow",
+      "sector": "Information Technology",
+      "subIndustry": "Systems Software",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "NRG",
+      "cusip": "629377508",
+      "name": "NRG Energy",
+      "sector": "Utilities",
+      "subIndustry": "Independent Power Producers & Energy Traders",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "NSC",
+      "cusip": "655844108",
+      "name": "Norfolk Southern",
+      "sector": "Industrials",
+      "subIndustry": "Rail Transportation",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "NTAP",
+      "cusip": "64110D104",
+      "name": "NetApp",
+      "sector": "Information Technology",
+      "subIndustry": "Technology Hardware, Storage & Peripherals",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "NTRS",
+      "cusip": "665859104",
+      "name": "Northern Trust",
+      "sector": "Financials",
+      "subIndustry": "Asset Management & Custody Banks",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "NUE",
+      "cusip": "670346105",
+      "name": "Nucor",
+      "sector": "Materials",
+      "subIndustry": "Steel",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "NVDA",
+      "cusip": "67066G104",
+      "name": "Nvidia",
+      "sector": "Information Technology",
+      "subIndustry": "Semiconductors",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "NVR",
+      "cusip": "62944T105",
+      "name": "NVR, Inc.",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Homebuilding",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "NWS",
+      "cusip": "65249B208",
+      "name": "News Corp (Class B)",
+      "sector": "Communication Services",
+      "subIndustry": "Publishing",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "NWSA",
+      "cusip": "65249B109",
+      "name": "News Corp (Class A)",
+      "sector": "Communication Services",
+      "subIndustry": "Publishing",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "NXPI",
+      "cusip": "N6596X109",
+      "name": "NXP Semiconductors",
+      "sector": "Information Technology",
+      "subIndustry": "Semiconductors",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "O",
+      "cusip": "756109104",
+      "name": "Realty Income",
+      "sector": "Real Estate",
+      "subIndustry": "Retail REITs",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "ODFL",
+      "cusip": "679580100",
+      "name": "Old Dominion",
+      "sector": "Industrials",
+      "subIndustry": "Cargo Ground Transportation",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "OKE",
+      "cusip": "682680103",
+      "name": "Oneok",
+      "sector": "Energy",
+      "subIndustry": "Oil & Gas Storage & Transportation",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "OMC",
+      "cusip": "681919106",
+      "name": "Omnicom Group",
+      "sector": "Communication Services",
+      "subIndustry": "Advertising",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "ON",
+      "cusip": "682189105",
+      "name": "ON Semiconductor",
+      "sector": "Information Technology",
+      "subIndustry": "Semiconductors",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "ORCL",
+      "cusip": "68389X105",
+      "name": "Oracle Corporation",
+      "sector": "Information Technology",
+      "subIndustry": "Application Software",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "ORLY",
+      "cusip": "67103H107",
+      "name": "O’Reilly Automotive",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Automotive Retail",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "OTIS",
+      "cusip": "68902V107",
+      "name": "Otis Worldwide",
+      "sector": "Industrials",
+      "subIndustry": "Industrial Machinery & Supplies & Components",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "OXY",
+      "cusip": "674599105",
+      "name": "Occidental Petroleum",
+      "sector": "Energy",
+      "subIndustry": "Oil & Gas Exploration & Production",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "PANW",
+      "cusip": "697435105",
+      "name": "Palo Alto Networks",
+      "sector": "Information Technology",
+      "subIndustry": "Systems Software",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "PAYX",
+      "cusip": "704326107",
+      "name": "Paychex",
+      "sector": "Industrials",
+      "subIndustry": "Human Resource & Employment Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "PCAR",
+      "cusip": "693718108",
+      "name": "Paccar",
+      "sector": "Industrials",
+      "subIndustry": "Construction Machinery & Heavy Transportation Equipment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "PCG",
+      "cusip": "69331C108",
+      "name": "PG&E Corporation",
+      "sector": "Utilities",
+      "subIndustry": "Multi-Utilities",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "PEG",
+      "cusip": "744573106",
+      "name": "Public Service Enterprise Group",
+      "sector": "Utilities",
+      "subIndustry": "Electric Utilities",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "PEP",
+      "cusip": "713448108",
+      "name": "PepsiCo",
+      "sector": "Consumer Staples",
+      "subIndustry": "Soft Drinks & Non-alcoholic Beverages",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "PFE",
+      "cusip": "717081103",
+      "name": "Pfizer",
+      "sector": "Health Care",
+      "subIndustry": "Pharmaceuticals",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "PFG",
+      "cusip": "74251V102",
+      "name": "Principal Financial Group",
+      "sector": "Financials",
+      "subIndustry": "Life & Health Insurance",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "PG",
+      "cusip": "742718109",
+      "name": "Procter & Gamble",
+      "sector": "Consumer Staples",
+      "subIndustry": "Personal Care Products",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "PGR",
+      "cusip": "743315103",
+      "name": "Progressive Corporation",
+      "sector": "Financials",
+      "subIndustry": "Property & Casualty Insurance",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "PH",
+      "cusip": "701094104",
+      "name": "Parker Hannifin",
+      "sector": "Industrials",
+      "subIndustry": "Industrial Machinery & Supplies & Components",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "PHM",
+      "cusip": "745867101",
+      "name": "PulteGroup",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Homebuilding",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "PKG",
+      "cusip": "695156109",
+      "name": "Packaging Corporation of America",
+      "sector": "Materials",
+      "subIndustry": "Paper & Plastic Packaging Products & Materials",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "PLD",
+      "cusip": "74340W103",
+      "name": "Prologis",
+      "sector": "Real Estate",
+      "subIndustry": "Industrial REITs",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "PLTR",
+      "cusip": "69608A108",
+      "name": "Palantir Technologies",
+      "sector": "Information Technology",
+      "subIndustry": "Application Software",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "PM",
+      "cusip": "718172109",
+      "name": "Philip Morris International",
+      "sector": "Consumer Staples",
+      "subIndustry": "Tobacco",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "PNC",
+      "cusip": "693475105",
+      "name": "PNC Financial Services",
+      "sector": "Financials",
+      "subIndustry": "Diversified Banks",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "PNR",
+      "cusip": "G7S00T104",
+      "name": "Pentair",
+      "sector": "Industrials",
+      "subIndustry": "Industrial Machinery & Supplies & Components",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "PNW",
+      "cusip": "723484101",
+      "name": "Pinnacle West Capital",
+      "sector": "Utilities",
+      "subIndustry": "Multi-Utilities",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "PODD",
+      "cusip": "45784P101",
+      "name": "Insulet Corporation",
+      "sector": "Health Care",
+      "subIndustry": "Health Care Equipment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "POOL",
+      "cusip": "73278L105",
+      "name": "Pool Corporation",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Distributors",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "PPG",
+      "cusip": "693506107",
+      "name": "PPG Industries",
+      "sector": "Materials",
+      "subIndustry": "Specialty Chemicals",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "PPL",
+      "cusip": "69351T106",
+      "name": "PPL Corporation",
+      "sector": "Utilities",
+      "subIndustry": "Electric Utilities",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "PRU",
+      "cusip": "744320102",
+      "name": "Prudential Financial",
+      "sector": "Financials",
+      "subIndustry": "Life & Health Insurance",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "PSA",
+      "cusip": "74460D109",
+      "name": "Public Storage",
+      "sector": "Real Estate",
+      "subIndustry": "Self-Storage REITs",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "PSKY",
+      "cusip": "69932A204",
+      "name": "Paramount Skydance Corporation",
+      "sector": "Communication Services",
+      "subIndustry": "Movies & Entertainment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "PSX",
+      "cusip": "718546104",
+      "name": "Phillips 66",
+      "sector": "Energy",
+      "subIndustry": "Oil & Gas Refining & Marketing",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "PTC",
+      "cusip": "69370C100",
+      "name": "PTC Inc.",
+      "sector": "Information Technology",
+      "subIndustry": "Application Software",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "PWR",
+      "cusip": "74762E102",
+      "name": "Quanta Services",
+      "sector": "Industrials",
+      "subIndustry": "Construction & Engineering",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "PYPL",
+      "cusip": "70450Y103",
+      "name": "PayPal",
+      "sector": "Financials",
+      "subIndustry": "Transaction & Payment Processing Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "Q",
+      "cusip": "74743L100",
+      "name": "Qnity Electronics",
+      "sector": "Information Technology",
+      "subIndustry": "Semiconductor Materials & Equipment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "QCOM",
+      "cusip": "747525103",
+      "name": "Qualcomm",
+      "sector": "Information Technology",
+      "subIndustry": "Semiconductors",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "RCL",
+      "cusip": "V7780T103",
+      "name": "Royal Caribbean Group",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Hotels, Resorts & Cruise Lines",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "REG",
+      "cusip": "758849103",
+      "name": "Regency Centers",
+      "sector": "Real Estate",
+      "subIndustry": "Retail REITs",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "REGN",
+      "cusip": "75886F107",
+      "name": "Regeneron Pharmaceuticals",
+      "sector": "Health Care",
+      "subIndustry": "Biotechnology",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "RF",
+      "cusip": "7591EP100",
+      "name": "Regions Financial Corporation",
+      "sector": "Financials",
+      "subIndustry": "Regional Banks",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "RJF",
+      "cusip": "754730109",
+      "name": "Raymond James Financial",
+      "sector": "Financials",
+      "subIndustry": "Investment Banking & Brokerage",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "RL",
+      "cusip": "751212101",
+      "name": "Ralph Lauren Corporation",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Apparel, Accessories & Luxury Goods",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "RMD",
+      "cusip": "761152107",
+      "name": "ResMed",
+      "sector": "Health Care",
+      "subIndustry": "Health Care Equipment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "ROK",
+      "cusip": "773903109",
+      "name": "Rockwell Automation",
+      "sector": "Industrials",
+      "subIndustry": "Electrical Components & Equipment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "ROL",
+      "cusip": "775711104",
+      "name": "Rollins, Inc.",
+      "sector": "Industrials",
+      "subIndustry": "Environmental & Facilities Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "ROP",
+      "cusip": "776696106",
+      "name": "Roper Technologies",
+      "sector": "Information Technology",
+      "subIndustry": "Electronic Equipment & Instruments",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "ROST",
+      "cusip": "778296103",
+      "name": "Ross Stores",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Apparel Retail",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "RSG",
+      "cusip": "760759100",
+      "name": "Republic Services",
+      "sector": "Industrials",
+      "subIndustry": "Environmental & Facilities Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "RTX",
+      "cusip": "75513E101",
+      "name": "RTX Corporation",
+      "sector": "Industrials",
+      "subIndustry": "Aerospace & Defense",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "RVTY",
+      "cusip": "714046109",
+      "name": "Revvity",
+      "sector": "Health Care",
+      "subIndustry": "Health Care Equipment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "SATS",
+      "cusip": "278768106",
+      "name": "EchoStar",
+      "sector": "Communication Services",
+      "subIndustry": "Wireless Telecommunication Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "SBAC",
+      "cusip": "78410G104",
+      "name": "SBA Communications",
+      "sector": "Real Estate",
+      "subIndustry": "Telecom Tower REITs",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "SBUX",
+      "cusip": "855244109",
+      "name": "Starbucks",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Restaurants",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "SCHW",
+      "cusip": "808513105",
+      "name": "Charles Schwab Corporation",
+      "sector": "Financials",
+      "subIndustry": "Investment Banking & Brokerage",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "SHW",
+      "cusip": "824348106",
+      "name": "Sherwin-Williams",
+      "sector": "Materials",
+      "subIndustry": "Specialty Chemicals",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "SJM",
+      "cusip": "832696405",
+      "name": "J.M. Smucker Company (The)",
+      "sector": "Consumer Staples",
+      "subIndustry": "Packaged Foods & Meats",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "SLB",
+      "cusip": "806857108",
+      "name": "Schlumberger",
+      "sector": "Energy",
+      "subIndustry": "Oil & Gas Equipment & Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "SMCI",
+      "cusip": "86800U302",
+      "name": "Supermicro",
+      "sector": "Information Technology",
+      "subIndustry": "Technology Hardware, Storage & Peripherals",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "SNA",
+      "cusip": "833034101",
+      "name": "Snap-on",
+      "sector": "Industrials",
+      "subIndustry": "Industrial Machinery & Supplies & Components",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "SNDK",
+      "cusip": "80004C200",
+      "name": "Sandisk",
+      "sector": "Information Technology",
+      "subIndustry": "Technology Hardware, Storage & Peripherals",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "SNPS",
+      "cusip": "871607107",
+      "name": "Synopsys",
+      "sector": "Information Technology",
+      "subIndustry": "Application Software",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "SO",
+      "cusip": "842587107",
+      "name": "Southern Company",
+      "sector": "Utilities",
+      "subIndustry": "Electric Utilities",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "SOLV",
+      "cusip": "83444M101",
+      "name": "Solventum",
+      "sector": "Health Care",
+      "subIndustry": "Health Care Technology",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "SPG",
+      "cusip": "828806109",
+      "name": "Simon Property Group",
+      "sector": "Real Estate",
+      "subIndustry": "Retail REITs",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "SPGI",
+      "cusip": "78409V104",
+      "name": "S&P Global",
+      "sector": "Financials",
+      "subIndustry": "Financial Exchanges & Data",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "SRE",
+      "cusip": "816851109",
+      "name": "Sempra",
+      "sector": "Utilities",
+      "subIndustry": "Multi-Utilities",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "STE",
+      "cusip": "G8473T100",
+      "name": "Steris",
+      "sector": "Health Care",
+      "subIndustry": "Health Care Equipment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "STLD",
+      "cusip": "858119100",
+      "name": "Steel Dynamics",
+      "sector": "Materials",
+      "subIndustry": "Steel",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "STT",
+      "cusip": "857477103",
+      "name": "State Street Corporation",
+      "sector": "Financials",
+      "subIndustry": "Asset Management & Custody Banks",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "STX",
+      "cusip": "G7997R103",
+      "name": "Seagate Technology",
+      "sector": "Information Technology",
+      "subIndustry": "Technology Hardware, Storage & Peripherals",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "STZ",
+      "cusip": "21036P108",
+      "name": "Constellation Brands",
+      "sector": "Consumer Staples",
+      "subIndustry": "Distillers & Vintners",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "SW",
+      "cusip": "G8267P108",
+      "name": "Smurfit Westrock",
+      "sector": "Materials",
+      "subIndustry": "Paper & Plastic Packaging Products & Materials",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "SWK",
+      "cusip": "854502101",
+      "name": "Stanley Black & Decker",
+      "sector": "Industrials",
+      "subIndustry": "Industrial Machinery & Supplies & Components",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "SWKS",
+      "cusip": "83088M102",
+      "name": "Skyworks Solutions",
+      "sector": "Information Technology",
+      "subIndustry": "Semiconductors",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "SYF",
+      "cusip": "87165B103",
+      "name": "Synchrony Financial",
+      "sector": "Financials",
+      "subIndustry": "Consumer Finance",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "SYK",
+      "cusip": "863667101",
+      "name": "Stryker Corporation",
+      "sector": "Health Care",
+      "subIndustry": "Health Care Equipment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "SYY",
+      "cusip": "871829107",
+      "name": "Sysco",
+      "sector": "Consumer Staples",
+      "subIndustry": "Food Distributors",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "T",
+      "cusip": "00206R102",
+      "name": "AT&T",
+      "sector": "Communication Services",
+      "subIndustry": "Integrated Telecommunication Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "TAP",
+      "cusip": "60871R209",
+      "name": "Molson Coors Beverage Company",
+      "sector": "Consumer Staples",
+      "subIndustry": "Brewers",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "TDG",
+      "cusip": "893641100",
+      "name": "TransDigm Group",
+      "sector": "Industrials",
+      "subIndustry": "Aerospace & Defense",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "TDY",
+      "cusip": "879360105",
+      "name": "Teledyne Technologies",
+      "sector": "Information Technology",
+      "subIndustry": "Electronic Equipment & Instruments",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "TECH",
+      "cusip": "09073M104",
+      "name": "Bio-Techne",
+      "sector": "Health Care",
+      "subIndustry": "Life Sciences Tools & Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "TEL",
+      "cusip": "G87052109",
+      "name": "TE Connectivity",
+      "sector": "Information Technology",
+      "subIndustry": "Electronic Manufacturing Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "TER",
+      "cusip": "880770102",
+      "name": "Teradyne",
+      "sector": "Information Technology",
+      "subIndustry": "Semiconductor Materials & Equipment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "TFC",
+      "cusip": "89832Q109",
+      "name": "Truist Financial",
+      "sector": "Financials",
+      "subIndustry": "Diversified Banks",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "TGT",
+      "cusip": "87612E106",
+      "name": "Target Corporation",
+      "sector": "Consumer Staples",
+      "subIndustry": "Consumer Staples Merchandise Retail",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "TJX",
+      "cusip": "872540109",
+      "name": "TJX Companies",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Apparel Retail",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "TKO",
+      "cusip": "87256C101",
+      "name": "TKO Group Holdings",
+      "sector": "Communication Services",
+      "subIndustry": "Movies & Entertainment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "TMO",
+      "cusip": "883556102",
+      "name": "Thermo Fisher Scientific",
+      "sector": "Health Care",
+      "subIndustry": "Life Sciences Tools & Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "TMUS",
+      "cusip": "872590104",
+      "name": "T-Mobile US",
+      "sector": "Communication Services",
+      "subIndustry": "Wireless Telecommunication Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "TPL",
+      "cusip": "88262P102",
+      "name": "Texas Pacific Land Corporation",
+      "sector": "Energy",
+      "subIndustry": "Oil & Gas Exploration & Production",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "TPR",
+      "cusip": "876030107",
+      "name": "Tapestry, Inc.",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Apparel, Accessories & Luxury Goods",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "TRGP",
+      "cusip": "87612G101",
+      "name": "Targa Resources",
+      "sector": "Energy",
+      "subIndustry": "Oil & Gas Storage & Transportation",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "TRMB",
+      "cusip": "896239100",
+      "name": "Trimble Inc.",
+      "sector": "Information Technology",
+      "subIndustry": "Application Software",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "TROW",
+      "cusip": "74144T108",
+      "name": "T. Rowe Price",
+      "sector": "Financials",
+      "subIndustry": "Asset Management & Custody Banks",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "TRV",
+      "cusip": "89417E109",
+      "name": "Travelers Companies (The)",
+      "sector": "Financials",
+      "subIndustry": "Property & Casualty Insurance",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "TSCO",
+      "cusip": "892356106",
+      "name": "Tractor Supply",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Other Specialty Retail",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "TSLA",
+      "cusip": "88160R101",
+      "name": "Tesla, Inc.",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Automobile Manufacturers",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "TSN",
+      "cusip": "902494103",
+      "name": "Tyson Foods",
+      "sector": "Consumer Staples",
+      "subIndustry": "Packaged Foods & Meats",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "TT",
+      "cusip": "G8994E103",
+      "name": "Trane Technologies",
+      "sector": "Industrials",
+      "subIndustry": "Building Products",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "TTD",
+      "cusip": "88339J105",
+      "name": "Trade Desk (The)",
+      "sector": "Communication Services",
+      "subIndustry": "Advertising",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "TTWO",
+      "cusip": "874054109",
+      "name": "Take-Two Interactive",
+      "sector": "Communication Services",
+      "subIndustry": "Interactive Home Entertainment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "TXN",
+      "cusip": "882508104",
+      "name": "Texas Instruments",
+      "sector": "Information Technology",
+      "subIndustry": "Semiconductors",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "TXT",
+      "cusip": "883203101",
+      "name": "Textron",
+      "sector": "Industrials",
+      "subIndustry": "Aerospace & Defense",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "TYL",
+      "cusip": "902252105",
+      "name": "Tyler Technologies",
+      "sector": "Information Technology",
+      "subIndustry": "Application Software",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "UAL",
+      "cusip": "910047109",
+      "name": "United Airlines Holdings",
+      "sector": "Industrials",
+      "subIndustry": "Passenger Airlines",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "UBER",
+      "cusip": "90353T100",
+      "name": "Uber",
+      "sector": "Industrials",
+      "subIndustry": "Passenger Ground Transportation",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "UDR",
+      "cusip": "902653104",
+      "name": "UDR, Inc.",
+      "sector": "Real Estate",
+      "subIndustry": "Multi-Family Residential REITs",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "UHS",
+      "cusip": "913903100",
+      "name": "Universal Health Services",
+      "sector": "Health Care",
+      "subIndustry": "Health Care Facilities",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "ULTA",
+      "cusip": "90384S303",
+      "name": "Ulta Beauty",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Other Specialty Retail",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "UNH",
+      "cusip": "91324P102",
+      "name": "UnitedHealth Group",
+      "sector": "Health Care",
+      "subIndustry": "Managed Health Care",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "UNP",
+      "cusip": "907818108",
+      "name": "Union Pacific Corporation",
+      "sector": "Industrials",
+      "subIndustry": "Rail Transportation",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "UPS",
+      "cusip": "911312106",
+      "name": "United Parcel Service",
+      "sector": "Industrials",
+      "subIndustry": "Air Freight & Logistics",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "URI",
+      "cusip": "911363109",
+      "name": "United Rentals",
+      "sector": "Industrials",
+      "subIndustry": "Trading Companies & Distributors",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "USB",
+      "cusip": "902973304",
+      "name": "U.S. Bancorp",
+      "sector": "Financials",
+      "subIndustry": "Diversified Banks",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "V",
+      "cusip": "92826C839",
+      "name": "Visa Inc.",
+      "sector": "Financials",
+      "subIndustry": "Transaction & Payment Processing Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "VEEV",
+      "cusip": "922475108",
+      "name": "Veeva Systems",
+      "sector": "Health Care",
+      "subIndustry": "Health Care Technology",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "VICI",
+      "cusip": "925652109",
+      "name": "Vici Properties",
+      "sector": "Real Estate",
+      "subIndustry": "Hotel & Resort REITs",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "VLO",
+      "cusip": "91913Y100",
+      "name": "Valero Energy",
+      "sector": "Energy",
+      "subIndustry": "Oil & Gas Refining & Marketing",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "VLTO",
+      "cusip": "92338C103",
+      "name": "Veralto",
+      "sector": "Industrials",
+      "subIndustry": "Environmental & Facilities Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "VMC",
+      "cusip": "929160109",
+      "name": "Vulcan Materials Company",
+      "sector": "Materials",
+      "subIndustry": "Construction Materials",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "VRSK",
+      "cusip": "92345Y106",
+      "name": "Verisk Analytics",
+      "sector": "Industrials",
+      "subIndustry": "Research & Consulting Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "VRSN",
+      "cusip": "92343E102",
+      "name": "Verisign",
+      "sector": "Information Technology",
+      "subIndustry": "Internet Services & Infrastructure",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "VRT",
+      "cusip": "92537N108",
+      "name": "Vertiv",
+      "sector": "Industrials",
+      "subIndustry": "Electrical Components & Equipment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "VRTX",
+      "cusip": "92532F100",
+      "name": "Vertex Pharmaceuticals",
+      "sector": "Health Care",
+      "subIndustry": "Biotechnology",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "VST",
+      "cusip": "92840M102",
+      "name": "Vistra Corp.",
+      "sector": "Utilities",
+      "subIndustry": "Electric Utilities",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "VTR",
+      "cusip": "92276F100",
+      "name": "Ventas",
+      "sector": "Real Estate",
+      "subIndustry": "Health Care REITs",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "VTRS",
+      "cusip": "92556V106",
+      "name": "Viatris",
+      "sector": "Health Care",
+      "subIndustry": "Pharmaceuticals",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "VZ",
+      "cusip": "92343V104",
+      "name": "Verizon",
+      "sector": "Communication Services",
+      "subIndustry": "Integrated Telecommunication Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "WAB",
+      "cusip": "929740108",
+      "name": "Wabtec",
+      "sector": "Industrials",
+      "subIndustry": "Construction Machinery & Heavy Transportation Equipment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "WAT",
+      "cusip": "941848103",
+      "name": "Waters Corporation",
+      "sector": "Health Care",
+      "subIndustry": "Life Sciences Tools & Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "WBD",
+      "cusip": "934423104",
+      "name": "Warner Bros. Discovery",
+      "sector": "Communication Services",
+      "subIndustry": "Broadcasting",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "WDAY",
+      "cusip": "98138H101",
+      "name": "Workday, Inc.",
+      "sector": "Information Technology",
+      "subIndustry": "Application Software",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "WDC",
+      "cusip": "958102105",
+      "name": "Western Digital",
+      "sector": "Information Technology",
+      "subIndustry": "Technology Hardware, Storage & Peripherals",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "WEC",
+      "cusip": "92939U106",
+      "name": "WEC Energy Group",
+      "sector": "Utilities",
+      "subIndustry": "Electric Utilities",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "WELL",
+      "cusip": "95040Q104",
+      "name": "Welltower",
+      "sector": "Real Estate",
+      "subIndustry": "Health Care REITs",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "WFC",
+      "cusip": "949746101",
+      "name": "Wells Fargo",
+      "sector": "Financials",
+      "subIndustry": "Diversified Banks",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "WM",
+      "cusip": "94106L109",
+      "name": "Waste Management",
+      "sector": "Industrials",
+      "subIndustry": "Environmental & Facilities Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "WMB",
+      "cusip": "969457100",
+      "name": "Williams Companies",
+      "sector": "Energy",
+      "subIndustry": "Oil & Gas Storage & Transportation",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "WMT",
+      "cusip": "931142103",
+      "name": "Walmart",
+      "sector": "Consumer Staples",
+      "subIndustry": "Consumer Staples Merchandise Retail",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "WRB",
+      "cusip": "084423102",
+      "name": "W. R. Berkley Corporation",
+      "sector": "Financials",
+      "subIndustry": "Property & Casualty Insurance",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "WSM",
+      "cusip": "969904101",
+      "name": "Williams-Sonoma, Inc.",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Homefurnishing Retail",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "WST",
+      "cusip": "955306105",
+      "name": "West Pharmaceutical Services",
+      "sector": "Health Care",
+      "subIndustry": "Health Care Supplies",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "WTW",
+      "cusip": "G96629103",
+      "name": "Willis Towers Watson",
+      "sector": "Financials",
+      "subIndustry": "Insurance Brokers",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "WY",
+      "cusip": "962166104",
+      "name": "Weyerhaeuser",
+      "sector": "Real Estate",
+      "subIndustry": "Timber REITs",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "WYNN",
+      "cusip": "983134107",
+      "name": "Wynn Resorts",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Casinos & Gaming",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "XEL",
+      "cusip": "98389B100",
+      "name": "Xcel Energy",
+      "sector": "Utilities",
+      "subIndustry": "Multi-Utilities",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "XOM",
+      "cusip": "30231G102",
+      "name": "ExxonMobil",
+      "sector": "Energy",
+      "subIndustry": "Integrated Oil & Gas",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "XYL",
+      "cusip": "98419M100",
+      "name": "Xylem Inc.",
+      "sector": "Industrials",
+      "subIndustry": "Industrial Machinery & Supplies & Components",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "XYZ",
+      "cusip": "852234103",
+      "name": "Block, Inc.",
+      "sector": "Financials",
+      "subIndustry": "Transaction & Payment Processing Services",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "YUM",
+      "cusip": "988498101",
+      "name": "Yum! Brands",
+      "sector": "Consumer Discretionary",
+      "subIndustry": "Restaurants",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "ZBH",
+      "cusip": "98956P102",
+      "name": "Zimmer Biomet",
+      "sector": "Health Care",
+      "subIndustry": "Health Care Equipment",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "ZBRA",
+      "cusip": "989207105",
+      "name": "Zebra Technologies",
+      "sector": "Information Technology",
+      "subIndustry": "Electronic Equipment & Instruments",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    },
+    {
+      "ticker": "ZTS",
+      "cusip": "98978V103",
+      "name": "Zoetis",
+      "sector": "Health Care",
+      "subIndustry": "Pharmaceuticals",
+      "source": "sp500_wikipedia_gics_joined_to_spy_identifier"
+    }
+  ]
+}

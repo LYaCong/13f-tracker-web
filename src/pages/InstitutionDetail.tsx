@@ -177,6 +177,7 @@ export default function InstitutionDetail() {
   const topTrims = detailData.topTrims ?? EMPTY_POSITION_CHANGES
   const radarData = detailData.radarData ?? EMPTY_RADAR_DATA
   const assetTrend = detailData.assetTrend ?? []
+  const classificationSummary = detailData.classificationSummary
   const trendMetrics = getTrendMetrics(assetTrend, lang)
   const displayedHoldingsCount = institution.displayedHoldingsCount ?? holdings.length
 
@@ -270,6 +271,10 @@ export default function InstitutionDetail() {
             <div>
               <h2 className="text-base font-bold text-text-primary mb-1">{lang.institutionStyleVsSp500}</h2>
               <p className="text-xs text-text-secondary">{lang.sectorAllocation}</p>
+              <p className="text-[11px] text-text-secondary mt-1 max-w-lg leading-snug">
+                {lang.sectorMethodology}
+                {classificationSummary?.benchmark.asOf ? ` ${lang.benchmarkAsOf}: ${classificationSummary.benchmark.asOf}.` : ''}
+              </p>
             </div>
             <div className="flex items-center gap-3 text-xs font-medium">
               <span className="flex items-center gap-1.5"><div className="w-3 h-3 rounded-full bg-accent-blue"></div> {institution.name}</span>
@@ -308,6 +313,13 @@ export default function InstitutionDetail() {
               <p className="text-xs text-text-secondary mt-0.5">{lang.segmentsAbove10}</p>
             </div>
           </div>
+
+          {classificationSummary && (
+            <div className="mt-3 px-3 py-2 rounded-lg border border-border bg-background/50 text-xs text-text-secondary flex flex-wrap gap-x-4 gap-y-1">
+              <span>{lang.unclassifiedWeight}: <strong className="text-text-primary">{classificationSummary.unclassifiedWeight.toFixed(2)}%</strong></span>
+              <span>{classificationSummary.holdingsClassifiedCount}/{classificationSummary.holdingsClassifiedCount + classificationSummary.holdingsUnclassifiedCount} {lang.holdings}</span>
+            </div>
+          )}
 
           <div className="mt-4 border border-border rounded-xl overflow-hidden">
             <table className="w-full text-left text-sm">
@@ -353,21 +365,23 @@ export default function InstitutionDetail() {
           <div className="lg:col-span-3 overflow-x-auto">
             <table className="w-full text-left text-sm">
               <thead className="bg-background text-text-secondary text-xs uppercase tracking-wider font-semibold border-b border-border">
-                <tr>
-                  <th className="px-6 py-4">{lang.security}</th>
-                  <th className="px-6 py-4 text-right">{lang.weight}</th>
-                  <th className="px-6 py-4 text-right">{lang.mktValueB}</th>
+	                <tr>
+	                  <th className="px-6 py-4">{lang.security}</th>
+	                  <th className="px-6 py-4">{lang.segment}</th>
+	                  <th className="px-6 py-4 text-right">{lang.weight}</th>
+	                  <th className="px-6 py-4 text-right">{lang.mktValueB}</th>
                   <th className="px-6 py-4 text-right">{lang.qoqDelta}</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-border">
                 {holdings.map((holding) => (
                   <tr key={holding.cusip} className="hover:bg-background/50 transition-colors">
-                    <td className="px-6 py-3.5 font-medium text-text-primary flex items-center gap-2">
-                      <div className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: holding.color }}></div>
-                      <span className="truncate max-w-[200px]">{holding.security}</span>
-                    </td>
-                    <td className="px-6 py-3.5 text-right font-medium">{holding.weight.toFixed(2)}%</td>
+	                    <td className="px-6 py-3.5 font-medium text-text-primary flex items-center gap-2">
+	                      <div className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: holding.color }}></div>
+	                      <span className="truncate max-w-[200px]">{holding.security}</span>
+	                    </td>
+	                    <td className="px-6 py-3.5 text-text-secondary whitespace-nowrap">{holding.sector ?? classificationSummary?.unmatchedSector ?? 'Unclassified'}</td>
+	                    <td className="px-6 py-3.5 text-right font-medium">{holding.weight.toFixed(2)}%</td>
                     <td className="px-6 py-3.5 text-right text-text-secondary">${holding.mktValue}</td>
                     <td className={`px-6 py-3.5 text-right font-bold ${holding.qOqDelta.startsWith('+') ? 'text-accent-green' : 'text-accent-red'}`}>
                       {holding.qOqDelta}

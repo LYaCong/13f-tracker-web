@@ -132,15 +132,18 @@ The `scripts/fetch-sec-data.js` script:
 1. Queries SEC EDGAR API for each institution's 13F-HR filings
 2. Parses XML information tables for holdings details
 3. Computes QoQ position changes (New/Add/Trim/Exit)
-4. Generates aggregated JSON files in `public/data/`
-5. Archives the dominant filing quarter into `public/data/quarters/<quarter-id>/`
-6. Updates `public/data/quarters.json` so the UI can switch between saved quarters
-7. Keeps quarterly historical AUM labels where available
-8. Includes rate-limit handling (SEC enforces 10 req/sec)
+4. Classifies holdings with a local GICS-style map in `scripts/data/gics_sector_map.json`
+5. Compares sector allocation against the static SPY ETF proxy benchmark in `scripts/data/sp500_sector_benchmark.json`
+6. Generates aggregated JSON files in `public/data/`
+7. Archives the dominant filing quarter into `public/data/quarters/<quarter-id>/`
+8. Updates `public/data/quarters.json` so the UI can switch between saved quarters
+9. Keeps quarterly historical AUM labels where available
+10. Includes rate-limit handling (SEC enforces 10 req/sec)
 
 ### ⚠️ Known Limitations
 
-- **Industry classification** now uses ticker overrides plus fallback string matching; long-tail holdings can still be imperfect
+- **Sector classification** uses a local GICS-style map, matching by CUSIP first and ticker second; unmatched securities are shown as `Unclassified` instead of guessed
+- **S&P 500 benchmark** uses a static SPY ETF sector breakdown proxy dated `2026-05-19`; it is not a licensed real-time S&P Dow Jones feed
 - **Quarter switching** only works for snapshots that have been archived in `public/data/quarters/`
 - Full historical data would require a cloud database for production use
 
@@ -255,15 +258,18 @@ npm run preview
 1. 查询 SEC EDGAR API 获取每家机构的 13F-HR 文件索引
 2. 解析 XML 持仓明细表
 3. 计算季度环比变动（新建仓/加仓/减仓/清仓）
-4. 生成聚合 JSON 文件到 `public/data/`
-5. 将主披露季度归档到 `public/data/quarters/<quarter-id>/`
-6. 更新 `public/data/quarters.json`，让前端可以切换已保存季度
-7. 尽量保留季度粒度的历史 AUM 标签
-8. 内置速率限制处理（SEC 限制每秒 10 次请求）
+4. 使用 `scripts/data/gics_sector_map.json` 本地 GICS 风格映射表做板块分类
+5. 使用 `scripts/data/sp500_sector_benchmark.json` 里的静态 SPY ETF 代理权重作为 S&P 500 板块基准
+6. 生成 `public/data/` 下的聚合 JSON 文件
+7. 将主季度归档到 `public/data/quarters/<quarter-id>/`
+8. 更新 `public/data/quarters.json`，让前端可以切换已保存季度
+9. 尽量保留季度粒度的历史 AUM 标签
+10. 内置速率限制处理（SEC 限制每秒 10 次请求）
 
 ### ⚠️ 已知限制
 
-- **行业分类**已改为 ticker 映射优先、字符串兜底；长尾标的仍可能不够精确
+- **板块分类**使用本地 GICS 风格映射表，优先按 CUSIP 匹配，其次按 ticker 匹配；未匹配标的显示为 `Unclassified`，不再强行猜测
+- **S&P 500 基准**使用日期为 `2026-05-19` 的静态 SPY ETF 板块权重代理，不是授权实时 S&P Dow Jones 数据源
 - **季度切换**只支持已经归档在 `public/data/quarters/` 里的快照
 - 完整历史数据需要接入云端数据库才能生产使用
 

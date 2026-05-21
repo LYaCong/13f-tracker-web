@@ -33,6 +33,35 @@ export interface RadarDatum {
   fullMark: number
 }
 
+export interface SectorWeightDatum {
+  sector: string
+  weight: number
+  benchmarkWeight: number
+}
+
+export interface SectorClassificationSummary {
+  schema: string
+  asOf: string
+  matchingPriority: string[]
+  unmatchedSector: string
+  holdingsClassifiedCount: number
+  holdingsUnclassifiedCount: number
+  classifiedWeight: number
+  unclassifiedWeight: number
+  sectorWeightTotal: number
+  sources: Array<{
+    name: string
+    url: string
+  }>
+  benchmark: {
+    name: string
+    methodology: string
+    asOf: string
+    sourceName: string
+    sourceUrl: string
+  }
+}
+
 export interface AssetTrendPoint {
   year: string
   value: string
@@ -41,6 +70,7 @@ export interface AssetTrendPoint {
 export interface HoldingEntry {
   cusip: string
   security: string
+  sector?: string
   weight: number
   rawMktValue: number
   mktValue: string
@@ -63,6 +93,8 @@ export interface PositionChange {
 export interface InstitutionDetailData {
   institution: InstitutionMeta
   snapshotNote?: string
+  classificationSummary?: SectorClassificationSummary
+  sectorWeights?: SectorWeightDatum[]
   radarData: RadarDatum[]
   assetTrend: AssetTrendPoint[]
   holdings: HoldingEntry[]

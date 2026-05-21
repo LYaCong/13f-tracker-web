@@ -14,47 +14,170 @@
     "latestFilingDate": "2026-05-15"
   },
   "snapshotNote": "Bundled static snapshot for 2026 Q1. Full position count is 993; holdings table stores the top 15.",
+  "classificationSummary": {
+    "schema": "GICS-style sector mapping",
+    "asOf": "2026-05-19",
+    "matchingPriority": [
+      "cusip",
+      "ticker"
+    ],
+    "unmatchedSector": "Unclassified",
+    "holdingsClassifiedCount": 356,
+    "holdingsUnclassifiedCount": 637,
+    "classifiedWeight": 50,
+    "unclassifiedWeight": 50,
+    "sectorWeightTotal": 100,
+    "sources": [
+      {
+        "name": "Wikipedia List of S&P 500 companies - GICS Sector column",
+        "url": "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
+      },
+      {
+        "name": "State Street SPY holdings daily XLSX - ticker and CUSIP identifiers",
+        "url": "https://www.ssga.com/us/en/intermediary/etfs/library-content/products/fund-data/etfs/us/holdings-daily-us-en-spy.xlsx"
+      }
+    ],
+    "benchmark": {
+      "name": "S&P 500 sector benchmark",
+      "methodology": "ETF holdings proxy aggregated by published SPY fund sector breakdown",
+      "asOf": "2026-05-19",
+      "sourceName": "State Street SPDR S&P 500 ETF Trust (SPY) Fund Sector Breakdown",
+      "sourceUrl": "https://www.ssga.com/us/en/intermediary/etfs/spdr-sp-500-etf-trust-spy"
+    }
+  },
+  "sectorWeights": [
+    {
+      "sector": "Information Technology",
+      "weight": 21.47,
+      "benchmarkWeight": 37.02
+    },
+    {
+      "sector": "Financials",
+      "weight": 3.24,
+      "benchmarkWeight": 11.54
+    },
+    {
+      "sector": "Health Care",
+      "weight": 3.66,
+      "benchmarkWeight": 8.43
+    },
+    {
+      "sector": "Consumer Discretionary",
+      "weight": 5.11,
+      "benchmarkWeight": 9.55
+    },
+    {
+      "sector": "Communication Services",
+      "weight": 4.31,
+      "benchmarkWeight": 10.77
+    },
+    {
+      "sector": "Industrials",
+      "weight": 5.97,
+      "benchmarkWeight": 8.34
+    },
+    {
+      "sector": "Consumer Staples",
+      "weight": 1.72,
+      "benchmarkWeight": 4.97
+    },
+    {
+      "sector": "Energy",
+      "weight": 0.98,
+      "benchmarkWeight": 3.52
+    },
+    {
+      "sector": "Utilities",
+      "weight": 1.26,
+      "benchmarkWeight": 2.17
+    },
+    {
+      "sector": "Real Estate",
+      "weight": 0.26,
+      "benchmarkWeight": 1.86
+    },
+    {
+      "sector": "Materials",
+      "weight": 2.02,
+      "benchmarkWeight": 1.82
+    },
+    {
+      "sector": "Unclassified",
+      "weight": 50,
+      "benchmarkWeight": 0
+    }
+  ],
   "radarData": [
     {
+      "subject": "Information Technology",
+      "A": 21.5,
+      "B": 37,
+      "fullMark": 100
+    },
+    {
       "subject": "Financials",
-      "A": 1.6,
-      "B": 14,
+      "A": 3.2,
+      "B": 11.5,
       "fullMark": 100
     },
     {
-      "subject": "Technology",
-      "A": 17.8,
-      "B": 31,
+      "subject": "Health Care",
+      "A": 3.7,
+      "B": 8.4,
       "fullMark": 100
     },
     {
-      "subject": "Consumer",
-      "A": 1.4,
-      "B": 16,
+      "subject": "Consumer Discretionary",
+      "A": 5.1,
+      "B": 9.6,
       "fullMark": 100
     },
     {
-      "subject": "Energy & Utilities",
-      "A": 2,
-      "B": 7,
-      "fullMark": 100
-    },
-    {
-      "subject": "Healthcare",
-      "A": 1.9,
-      "B": 11,
-      "fullMark": 100
-    },
-    {
-      "subject": "Other",
-      "A": 75.2,
-      "B": 12,
+      "subject": "Communication Services",
+      "A": 4.3,
+      "B": 10.8,
       "fullMark": 100
     },
     {
       "subject": "Industrials",
+      "A": 6,
+      "B": 8.3,
+      "fullMark": 100
+    },
+    {
+      "subject": "Consumer Staples",
+      "A": 1.7,
+      "B": 5,
+      "fullMark": 100
+    },
+    {
+      "subject": "Energy",
+      "A": 1,
+      "B": 3.5,
+      "fullMark": 100
+    },
+    {
+      "subject": "Utilities",
+      "A": 1.3,
+      "B": 2.2,
+      "fullMark": 100
+    },
+    {
+      "subject": "Real Estate",
       "A": 0.3,
-      "B": 9,
+      "B": 1.9,
+      "fullMark": 100
+    },
+    {
+      "subject": "Materials",
+      "A": 2,
+      "B": 1.8,
+      "fullMark": 100
+    },
+    {
+      "subject": "Unclassified",
+      "A": 50,
+      "B": 0,
       "fullMark": 100
     }
   ],
@@ -128,6 +251,7 @@
       "rawMktValue": 2838644353,
       "mktValue": "2.84B",
       "qOqDelta": "-0.20B",
+      "sector": "Unclassified",
       "color": "#3b82f6"
     },
     {
@@ -137,6 +261,7 @@
       "rawMktValue": 1750004460,
       "mktValue": "1.75B",
       "qOqDelta": "-1.12B",
+      "sector": "Unclassified",
       "color": "#1d4ed8"
     },
     {
@@ -146,6 +271,7 @@
       "rawMktValue": 914036840,
       "mktValue": "0.91B",
       "qOqDelta": "+0.46B",
+      "sector": "Consumer Discretionary",
       "color": "#2dd4bf"
     },
     {
@@ -155,6 +281,7 @@
       "rawMktValue": 818459723,
       "mktValue": "0.82B",
       "qOqDelta": "+0.10B",
+      "sector": "Information Technology",
       "color": "#a855f7"
     },
     {
@@ -164,6 +291,7 @@
       "rawMktValue": 574451135,
       "mktValue": "0.57B",
       "qOqDelta": "+0.08B",
+      "sector": "Communication Services",
       "color": "#22c55e"
     },
     {
@@ -173,6 +301,7 @@
       "rawMktValue": 568068464,
       "mktValue": "0.57B",
       "qOqDelta": "+0.16B",
+      "sector": "Information Technology",
       "color": "#ec4899"
     },
     {
@@ -182,6 +311,7 @@
       "rawMktValue": 498551839,
       "mktValue": "0.50B",
       "qOqDelta": "+0.24B",
+      "sector": "Information Technology",
       "color": "#10b981"
     },
     {
@@ -191,6 +321,7 @@
       "rawMktValue": 401626676,
       "mktValue": "0.40B",
       "qOqDelta": "-0.07B",
+      "sector": "Information Technology",
       "color": "#f97316"
     },
     {
@@ -200,6 +331,7 @@
       "rawMktValue": 379621591,
       "mktValue": "0.38B",
       "qOqDelta": "-0.06B",
+      "sector": "Industrials",
       "color": "#1e3a8a"
     },
     {
@@ -209,6 +341,7 @@
       "rawMktValue": 363998848,
       "mktValue": "0.36B",
       "qOqDelta": "+0.36B",
+      "sector": "Unclassified",
       "color": "#312e81"
     },
     {
@@ -218,6 +351,7 @@
       "rawMktValue": 335708788,
       "mktValue": "0.34B",
       "qOqDelta": "-0.18B",
+      "sector": "Information Technology",
       "color": "#3b82f6"
     },
     {
@@ -227,6 +361,7 @@
       "rawMktValue": 262987591,
       "mktValue": "0.26B",
       "qOqDelta": "-0.09B",
+      "sector": "Information Technology",
       "color": "#1d4ed8"
     },
     {
@@ -236,6 +371,7 @@
       "rawMktValue": 250776388,
       "mktValue": "0.25B",
       "qOqDelta": "+0.02B",
+      "sector": "Materials",
       "color": "#2dd4bf"
     },
     {
@@ -245,6 +381,7 @@
       "rawMktValue": 234209271,
       "mktValue": "0.23B",
       "qOqDelta": "-0.13B",
+      "sector": "Information Technology",
       "color": "#a855f7"
     },
     {
@@ -254,6 +391,7 @@
       "rawMktValue": 217268135,
       "mktValue": "0.22B",
       "qOqDelta": "+0.02B",
+      "sector": "Unclassified",
       "color": "#22c55e"
     }
   ],
