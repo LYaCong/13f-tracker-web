@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import PopularTreemap from '@/components/PopularTreemap'
-import { translateStyleName } from '@/lib/displayNames'
+import { getSecuritySearchTerms, translateInstitutionName, translateStyleName } from '@/lib/displayNames'
 import type { InstitutionMeta, TreemapDatum } from '@/lib/secData'
 import { useQuarterArchive } from '@/lib/useQuarterArchive'
 import { useLanguage } from '../context/useLanguage'
@@ -64,13 +64,14 @@ export default function Dashboard() {
 
     const tickerMatchedInstitutionIds = new Set(
       treemapNodes
-        .filter((node) => node.ticker.toLowerCase().includes(searchQuery))
+        .filter((node) => getSecuritySearchTerms(node.ticker, node.ticker).some((term) => term.includes(searchQuery)))
         .flatMap((node) => node.holdingInstitutions),
     )
 
     return institutions.filter((inst) => {
       const directMatch = [
         inst.name,
+        translateInstitutionName(inst, language),
         inst.manager,
         inst.style,
         translateStyleName(inst.style, language),
@@ -165,7 +166,7 @@ export default function Dashboard() {
                 <div className="flex justify-between items-start mb-2">
                   <div>
                     <h3 className="font-bold text-text-primary text-base leading-tight group-hover:text-accent-blue transition-colors">
-                      {inst.name}
+                      {translateInstitutionName(inst, language)}
                     </h3>
                     <p className="text-text-secondary text-xs font-medium mt-1">{inst.manager}</p>
                   </div>

@@ -27,7 +27,7 @@ No paywalls. No ads. Just clean data visualization.
   - Full holdings table with weight, market value, and QoQ delta
   - Donut chart for portfolio allocation breakdown
   - Position change leaderboard: Top Adds, Top Trims, New Positions, Full Exits
-- **Bilingual UI** — One-click Chinese/English toggle, including localized institution style labels and sector names (lightweight custom i18n, no heavy libraries)
+- **Bilingual UI** — One-click Chinese/English toggle, including localized institution names, security names, style labels, and sector names (lightweight custom i18n, no heavy libraries)
 - **Serverless Architecture** — Data is fetched at build time into static JSON; no backend server needed
 - **Vercel Ready** — `vercel.json` includes the Vite build settings and React Router fallback rewrites
 - **Quarter Archive** — Saved datasets can be switched in the header; accumulation starts from `2025 Q4`
@@ -144,6 +144,7 @@ The `scripts/fetch-sec-data.js` script:
 
 - **Sector classification** uses a local GICS-style map, matching by CUSIP first and ticker second; unmatched securities are shown as `Unclassified` instead of guessed
 - **S&P 500 benchmark** uses a static SPY ETF sector breakdown proxy dated `2026-05-19`; it is not a licensed real-time S&P Dow Jones feed
+- **Chinese display names** are maintained in a local display mapping; unmapped securities fall back to the original SEC English names
 - **Quarter switching** only works for snapshots that have been archived in `public/data/quarters/`
 - Full historical data would require a cloud database for production use
 
@@ -176,7 +177,7 @@ MIT
   - 完整持仓表格（权重、市值、季度变动）
   - 环形图展示持仓分配结构
   - 调仓龙虎榜：加仓榜、减仓榜、新建仓、清仓
-- **中英文切换** — 一键切换，机构风格标签和板块名称也会随中文界面本地化（轻量自定义 i18n，无需重型库）
+- **中英文切换** — 一键切换，机构名称、持仓公司名称、风格标签和板块名称也会随中文界面本地化（轻量自定义 i18n，无需重型库）
 - **无服务器架构** — 数据在构建时抓取为静态 JSON，无需后端服务器
 - **Vercel 就绪** — `vercel.json` 已包含 Vite 构建配置和 React Router 刷新兜底
 - **季度归档** — 已保存的数据集可以在顶部切换，并从 `2025 Q4` 开始积累
@@ -270,6 +271,7 @@ npm run preview
 
 - **板块分类**使用本地 GICS 风格映射表，优先按 CUSIP 匹配，其次按 ticker 匹配；未匹配标的显示为 `Unclassified`，不再强行猜测
 - **S&P 500 基准**使用日期为 `2026-05-19` 的静态 SPY ETF 板块权重代理，不是授权实时 S&P Dow Jones 数据源
+- **中文显示名称**由本地展示映射维护；未映射的证券会回退显示 SEC 原始英文名称
 - **季度切换**只支持已经归档在 `public/data/quarters/` 里的快照
 - 完整历史数据需要接入云端数据库才能生产使用
 

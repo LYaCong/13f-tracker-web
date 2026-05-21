@@ -23,7 +23,12 @@ import {
   XAxis,
   YAxis,
 } from 'recharts'
-import { translateSectorName, translateStyleName } from '@/lib/displayNames'
+import {
+  translateInstitutionName,
+  translateSectorName,
+  translateSecurityName,
+  translateStyleName,
+} from '@/lib/displayNames'
 import type {
   InstitutionDetailData,
   PositionChange,
@@ -181,6 +186,7 @@ export default function InstitutionDetail() {
   const classificationSummary = detailData.classificationSummary
   const trendMetrics = getTrendMetrics(assetTrend, lang)
   const displayedHoldingsCount = institution.displayedHoldingsCount ?? holdings.length
+  const displayInstitutionName = translateInstitutionName(institution, language)
 
   const sortedRadar = [...radarData].sort((a, b) => b.A - a.A)
   const dominantStyle = sortedRadar[0]
@@ -203,7 +209,7 @@ export default function InstitutionDetail() {
             <ArrowLeft className="w-3.5 h-3.5 mr-1" /> {lang.backToDashboard}
           </Link>
           <div className="flex items-center gap-3">
-            <h1 className="text-2xl font-black text-text-primary tracking-tight">{institution.name}</h1>
+            <h1 className="text-2xl font-black text-text-primary tracking-tight">{displayInstitutionName}</h1>
             <span className="px-2.5 py-0.5 bg-accent-blue/10 text-accent-blue rounded-md text-xs font-bold border border-accent-blue/20">
               {translateStyleName(institution.style, language)}
             </span>
@@ -289,7 +295,7 @@ export default function InstitutionDetail() {
               </div>
             </div>
             <div className="flex flex-nowrap items-center justify-start xl:justify-end xl:justify-self-end gap-6 text-xs font-medium whitespace-nowrap">
-              <span className="inline-flex items-center gap-2 shrink-0"><span className="w-3 h-3 rounded-full bg-accent-blue shrink-0"></span> {institution.name}</span>
+              <span className="inline-flex items-center gap-2 shrink-0"><span className="w-3 h-3 rounded-full bg-accent-blue shrink-0"></span> {displayInstitutionName}</span>
               <span className="inline-flex items-center gap-2 shrink-0"><span className="w-4 h-0 border-t-[3px] border-dashed border-teal-400 shrink-0"></span> S&amp;P 500</span>
             </div>
           </div>
@@ -300,7 +306,7 @@ export default function InstitutionDetail() {
                 <PolarAngleAxis dataKey="subject" tick={{ fill: '#4B5563', fontSize: 11, fontWeight: 600 }} />
                 <PolarRadiusAxis angle={30} domain={[0, 80]} tick={false} axisLine={false} />
                 <Radar name="S&P 500" dataKey="B" stroke="#2dd4bf" strokeWidth={3} strokeDasharray="6 4" fill="none" />
-                <Radar name={institution.name} dataKey="A" stroke="#2563EB" strokeWidth={2} fill="#3B82F6" fillOpacity={0.3} />
+                <Radar name={displayInstitutionName} dataKey="A" stroke="#2563EB" strokeWidth={2} fill="#3B82F6" fillOpacity={0.3} />
                 <RechartsTooltip
                   contentStyle={{ borderRadius: '12px', border: 'none', boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)' }}
                 />
@@ -390,7 +396,7 @@ export default function InstitutionDetail() {
                   <tr key={holding.cusip} className="hover:bg-background/50 transition-colors">
 	                    <td className="px-6 py-3.5 font-medium text-text-primary flex items-center gap-2">
 	                      <div className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: holding.color }}></div>
-	                      <span className="truncate max-w-[200px]">{holding.security}</span>
+	                      <span className="truncate max-w-[200px]">{translateSecurityName(holding.security, language, [holding.cusip, holding.security])}</span>
 	                    </td>
 	                    <td className="px-6 py-3.5 text-text-secondary whitespace-nowrap">{translateSectorName(holding.sector ?? classificationSummary?.unmatchedSector ?? 'Unclassified', language)}</td>
 	                    <td className="px-6 py-3.5 text-right font-medium">{holding.weight.toFixed(2)}%</td>
@@ -466,7 +472,7 @@ export default function InstitutionDetail() {
                         {add.type === 'New' && <span className="bg-accent-blue/10 text-accent-blue text-[10px] px-1.5 py-0.5 rounded uppercase font-bold tracking-wide">{lang.new}</span>}
                         {add.type === 'Add' && <span className="bg-accent-green/10 text-accent-green text-[10px] px-1.5 py-0.5 rounded uppercase font-bold tracking-wide">{lang.add}</span>}
                       </div>
-                      <div className="text-xs text-text-secondary truncate max-w-[120px]">{add.security}</div>
+                      <div className="text-xs text-text-secondary truncate max-w-[120px]">{translateSecurityName(add.security, language, [add.ticker, add.security])}</div>
                     </td>
                     <td className="px-4 py-3 text-right font-bold text-accent-green">{add.deltaValue}</td>
                     <td className="px-4 py-3 text-right text-text-primary font-medium">{add.shareChange}</td>
@@ -504,7 +510,7 @@ export default function InstitutionDetail() {
                         {trim.type === 'Exit' && <span className="bg-text-secondary/10 text-text-secondary text-[10px] px-1.5 py-0.5 rounded uppercase font-bold tracking-wide">{lang.exit}</span>}
                         {trim.type === 'Trim' && <span className="bg-accent-red/10 text-accent-red text-[10px] px-1.5 py-0.5 rounded uppercase font-bold tracking-wide">{lang.trim}</span>}
                       </div>
-                      <div className="text-xs text-text-secondary truncate max-w-[120px]">{trim.security}</div>
+                      <div className="text-xs text-text-secondary truncate max-w-[120px]">{translateSecurityName(trim.security, language, [trim.ticker, trim.security])}</div>
                     </td>
                     <td className="px-4 py-3 text-right font-bold text-accent-red">{trim.deltaValue}</td>
                     <td className="px-4 py-3 text-right text-text-primary font-medium">{trim.shareChange}</td>
