@@ -275,120 +275,125 @@ export default function InstitutionDetail() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-        <div className="glass-card p-5 flex flex-col">
-          <h2 className="text-base font-bold text-text-primary mb-1">{lang.portfolioEvolution}</h2>
-          <p className="text-xs text-text-secondary mb-4">{lang.portfolioEvolutionSub}</p>
-          <div className="flex-1 w-full min-h-[250px]">
-            <ResponsiveContainer width="100%" height="100%">
-              <LineChart data={assetTrend} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
-                <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#E5E7EB" />
-                <XAxis dataKey="year" axisLine={false} tickLine={false} tick={{ fill: '#6B7280', fontSize: 11 }} dy={10} />
-                <YAxis axisLine={false} tickLine={false} tick={{ fill: '#6B7280', fontSize: 11 }} tickFormatter={(value: string | number) => `$${value}B`} />
-                <RechartsTooltip
-                  contentStyle={{ borderRadius: '12px', border: 'none', boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)' }}
-                  formatter={(value: TooltipValue) => [`$${normalizeTooltipValue(value).toFixed(1)}B`, lang.netAssets]}
-                />
-                <Line type="monotone" dataKey="value" stroke="#2563EB" strokeWidth={3} dot={false} activeDot={{ r: 6, fill: '#2563EB', stroke: '#fff', strokeWidth: 2 }} />
-              </LineChart>
-            </ResponsiveContainer>
+      <div className="glass-card p-5 flex flex-col">
+        <h2 className="text-base font-bold text-text-primary mb-1">{lang.portfolioEvolution}</h2>
+        <p className="text-xs text-text-secondary mb-4">{lang.portfolioEvolutionSub}</p>
+        <div className="w-full h-[360px] lg:h-[420px]">
+          <ResponsiveContainer width="100%" height="100%">
+            <LineChart data={assetTrend} margin={{ top: 5, right: 24, bottom: 5, left: 0 }}>
+              <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#E5E7EB" />
+              <XAxis dataKey="year" axisLine={false} tickLine={false} tick={{ fill: '#6B7280', fontSize: 11 }} dy={10} />
+              <YAxis axisLine={false} tickLine={false} tick={{ fill: '#6B7280', fontSize: 11 }} tickFormatter={(value: string | number) => `$${value}B`} />
+              <RechartsTooltip
+                contentStyle={{ borderRadius: '12px', border: 'none', boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)' }}
+                formatter={(value: TooltipValue) => [`$${normalizeTooltipValue(value).toFixed(1)}B`, lang.netAssets]}
+              />
+              <Line type="monotone" dataKey="value" stroke="#2563EB" strokeWidth={3} dot={false} activeDot={{ r: 6, fill: '#2563EB', stroke: '#fff', strokeWidth: 2 }} />
+            </LineChart>
+          </ResponsiveContainer>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mt-4 pt-4 border-t border-border/50 text-center">
+          <div><p className="text-xs text-text-secondary font-medium">{lang.oneYChange}</p><p className="text-sm font-bold text-accent-green">{trendMetrics.oneYChange}</p></div>
+          <div><p className="text-xs text-text-secondary font-medium">{lang.maxDrawdown}</p><p className="text-sm font-bold text-accent-red">{trendMetrics.maxDrawdown}</p></div>
+          <div><p className="text-xs text-text-secondary font-medium">{lang.volatility}</p><p className="text-sm font-bold text-text-primary">{trendMetrics.volatility}</p></div>
+          <div><p className="text-xs text-text-secondary font-medium">{lang.sinceTrough}</p><p className="text-sm font-bold text-accent-green">{trendMetrics.sinceTrough}</p></div>
+        </div>
+      </div>
+
+      <div className="glass-card p-5">
+        <div className="grid grid-cols-1 xl:grid-cols-[minmax(0,1fr)_auto] items-start gap-3 mb-4">
+          <div className="min-w-0">
+            <h2 className="text-base font-bold text-text-primary mb-1">{lang.institutionStyleVsSp500}</h2>
+            <p className="text-xs text-text-secondary">{lang.sectorAllocation}</p>
+            <div className="text-[11px] text-text-secondary mt-1 max-w-3xl leading-snug">
+              <p>{lang.sectorMethodology}</p>
+              {classificationSummary?.benchmark.asOf && (
+                <p className="mt-0.5">
+                  {lang.benchmarkAsOf}: {classificationSummary.benchmark.asOf}.
+                </p>
+              )}
+            </div>
           </div>
-          <div className="grid grid-cols-4 gap-2 mt-4 pt-4 border-t border-border/50 text-center">
-            <div><p className="text-xs text-text-secondary font-medium">{lang.oneYChange}</p><p className="text-sm font-bold text-accent-green">{trendMetrics.oneYChange}</p></div>
-            <div><p className="text-xs text-text-secondary font-medium">{lang.maxDrawdown}</p><p className="text-sm font-bold text-accent-red">{trendMetrics.maxDrawdown}</p></div>
-            <div><p className="text-xs text-text-secondary font-medium">{lang.volatility}</p><p className="text-sm font-bold text-text-primary">{trendMetrics.volatility}</p></div>
-            <div><p className="text-xs text-text-secondary font-medium">{lang.sinceTrough}</p><p className="text-sm font-bold text-accent-green">{trendMetrics.sinceTrough}</p></div>
+          <div className="flex flex-nowrap items-center justify-start xl:justify-end xl:justify-self-end gap-6 text-xs font-medium whitespace-nowrap">
+            <span className="inline-flex items-center gap-2 shrink-0"><span className="w-3 h-3 rounded-full bg-accent-blue shrink-0"></span> {displayInstitutionName}</span>
+            <span className="inline-flex items-center gap-2 shrink-0"><span className="w-4 h-0 border-t-[3px] border-dashed border-teal-400 shrink-0"></span> S&amp;P 500</span>
           </div>
         </div>
 
-        <div className="glass-card p-5 flex flex-col">
-          <div className="grid grid-cols-1 xl:grid-cols-[minmax(0,1fr)_auto] items-start gap-3 mb-2">
-            <div className="min-w-0 xl:max-w-[420px]">
-              <h2 className="text-base font-bold text-text-primary mb-1">{lang.institutionStyleVsSp500}</h2>
-              <p className="text-xs text-text-secondary">{lang.sectorAllocation}</p>
-              <div className="text-[11px] text-text-secondary mt-1 max-w-lg leading-snug">
-                <p>{lang.sectorMethodology}</p>
-                {classificationSummary?.benchmark.asOf && (
-                  <p className="mt-0.5">
-                    {lang.benchmarkAsOf}: {classificationSummary.benchmark.asOf}.
-                  </p>
-                )}
+        <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1.05fr)_minmax(420px,0.95fr)] gap-5 items-start">
+          <div className="min-w-0">
+            <div className="w-full h-[320px] lg:h-[380px]">
+              <ResponsiveContainer width="100%" height="100%">
+                <RadarChart cx="50%" cy="50%" outerRadius="72%" data={displayRadarData}>
+                  <PolarGrid stroke="#E5E7EB" />
+                  <PolarAngleAxis dataKey="subject" tick={{ fill: '#4B5563', fontSize: 11, fontWeight: 600 }} />
+                  <PolarRadiusAxis angle={30} domain={[0, 80]} tick={false} axisLine={false} />
+                  <Radar name="S&P 500" dataKey="B" stroke="#2dd4bf" strokeWidth={3} strokeDasharray="6 4" fill="none" />
+                  <Radar name={displayInstitutionName} dataKey="A" stroke="#2563EB" strokeWidth={2} fill="#3B82F6" fillOpacity={0.3} />
+                  <RechartsTooltip
+                    contentStyle={{ borderRadius: '12px', border: 'none', boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)' }}
+                  />
+                </RadarChart>
+              </ResponsiveContainer>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-4">
+              <div className="p-3 border border-border rounded-xl bg-background/50 text-center flex flex-col justify-center">
+                <p className="text-xs text-text-secondary font-medium mb-1">{lang.dominantStyle}</p>
+                <p className="text-base font-bold text-text-primary leading-tight">{displayDominantStyle}</p>
+                <p className="text-xs text-text-secondary mt-0.5">{dominantStyle ? `${dominantStyle.A.toFixed(1)}%` : '--'}</p>
+              </div>
+              <div className="p-3 border border-border rounded-xl bg-background/50 text-center flex flex-col justify-center">
+                <p className="text-xs text-text-secondary font-medium mb-1">{lang.top2Concentration}</p>
+                <p className="text-base font-bold text-text-primary leading-tight">{top2Concentration.toFixed(1)}%</p>
+                <p className="text-xs text-text-secondary mt-0.5">{lang.combinedStyleWeight}</p>
+              </div>
+              <div className="p-3 border border-border rounded-xl bg-background/50 text-center flex flex-col justify-center">
+                <p className="text-xs text-text-secondary font-medium mb-1">{lang.styleBreadth}</p>
+                <p className="text-base font-bold text-text-primary leading-tight">{styleBreadth}</p>
+                <p className="text-xs text-text-secondary mt-0.5">{lang.segmentsAbove10}</p>
               </div>
             </div>
-            <div className="flex flex-nowrap items-center justify-start xl:justify-end xl:justify-self-end gap-6 text-xs font-medium whitespace-nowrap">
-              <span className="inline-flex items-center gap-2 shrink-0"><span className="w-3 h-3 rounded-full bg-accent-blue shrink-0"></span> {displayInstitutionName}</span>
-              <span className="inline-flex items-center gap-2 shrink-0"><span className="w-4 h-0 border-t-[3px] border-dashed border-teal-400 shrink-0"></span> S&amp;P 500</span>
-            </div>
-          </div>
-          <div className="flex-1 w-full min-h-[250px]">
-            <ResponsiveContainer width="100%" height="100%">
-              <RadarChart cx="50%" cy="50%" outerRadius="70%" data={displayRadarData}>
-                <PolarGrid stroke="#E5E7EB" />
-                <PolarAngleAxis dataKey="subject" tick={{ fill: '#4B5563', fontSize: 11, fontWeight: 600 }} />
-                <PolarRadiusAxis angle={30} domain={[0, 80]} tick={false} axisLine={false} />
-                <Radar name="S&P 500" dataKey="B" stroke="#2dd4bf" strokeWidth={3} strokeDasharray="6 4" fill="none" />
-                <Radar name={displayInstitutionName} dataKey="A" stroke="#2563EB" strokeWidth={2} fill="#3B82F6" fillOpacity={0.3} />
-                <RechartsTooltip
-                  contentStyle={{ borderRadius: '12px', border: 'none', boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)' }}
-                />
-              </RadarChart>
-            </ResponsiveContainer>
           </div>
 
-          <div className="grid grid-cols-3 gap-3 mt-4">
-            <div className="p-3 border border-border rounded-xl bg-background/50 text-center flex flex-col justify-center">
-              <p className="text-xs text-text-secondary font-medium mb-1">{lang.dominantStyle}</p>
-              <p className="text-base font-bold text-text-primary leading-tight">{displayDominantStyle}</p>
-              <p className="text-xs text-text-secondary mt-0.5">{dominantStyle ? `${dominantStyle.A.toFixed(1)}%` : '--'}</p>
-            </div>
-            <div className="p-3 border border-border rounded-xl bg-background/50 text-center flex flex-col justify-center">
-              <p className="text-xs text-text-secondary font-medium mb-1">{lang.top2Concentration}</p>
-              <p className="text-base font-bold text-text-primary leading-tight">{top2Concentration.toFixed(1)}%</p>
-              <p className="text-xs text-text-secondary mt-0.5">{lang.combinedStyleWeight}</p>
-            </div>
-            <div className="p-3 border border-border rounded-xl bg-background/50 text-center flex flex-col justify-center">
-              <p className="text-xs text-text-secondary font-medium mb-1">{lang.styleBreadth}</p>
-              <p className="text-base font-bold text-text-primary leading-tight">{styleBreadth}</p>
-              <p className="text-xs text-text-secondary mt-0.5">{lang.segmentsAbove10}</p>
-            </div>
-          </div>
+          <div className="min-w-0">
+            {classificationSummary && (
+              <div className="mb-3 px-3 py-2 rounded-lg border border-border bg-background/50 text-xs text-text-secondary flex flex-wrap gap-x-4 gap-y-1">
+                <span>{lang.unclassifiedWeight}: <strong className="text-text-primary">{classificationSummary.unclassifiedWeight.toFixed(2)}%</strong></span>
+                <span>{classificationSummary.holdingsClassifiedCount}/{classificationSummary.holdingsClassifiedCount + classificationSummary.holdingsUnclassifiedCount} {lang.holdings}</span>
+              </div>
+            )}
 
-          {classificationSummary && (
-            <div className="mt-3 px-3 py-2 rounded-lg border border-border bg-background/50 text-xs text-text-secondary flex flex-wrap gap-x-4 gap-y-1">
-              <span>{lang.unclassifiedWeight}: <strong className="text-text-primary">{classificationSummary.unclassifiedWeight.toFixed(2)}%</strong></span>
-              <span>{classificationSummary.holdingsClassifiedCount}/{classificationSummary.holdingsClassifiedCount + classificationSummary.holdingsUnclassifiedCount} {lang.holdings}</span>
+            <div className="border border-border rounded-xl overflow-hidden">
+              <table className="w-full text-left text-sm">
+                <thead className="bg-background text-text-secondary text-[11px] uppercase tracking-wider font-semibold border-b border-border">
+                  <tr>
+                    <th className="px-4 py-2.5">{lang.segment}</th>
+                    <th className="px-4 py-2.5 text-right">{lang.weight}</th>
+                    <th className="px-4 py-2.5 text-right">{lang.vsSp500}</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-border bg-white text-sm">
+                  {displayRadarData.map((item, index) => {
+                    const diff = item.A - item.B
+                    const diffText = diff > 0 ? `+${diff.toFixed(1)}%` : `${diff.toFixed(1)}%`
+                    const diffColor = diff > 0 ? 'text-accent-green bg-accent-green/10' : 'text-accent-red bg-accent-red/10'
+
+                    return (
+                      <tr key={`${item.subject}-${index}`} className="hover:bg-slate-50 transition-colors">
+                        <td className="px-4 py-2.5 font-bold text-text-primary">{item.subject}</td>
+                        <td className="px-4 py-2.5 text-right font-semibold">{item.A.toFixed(1)}%</td>
+                        <td className="px-4 py-2.5 text-right">
+                          <span className={`inline-block px-2 py-0.5 rounded-md font-bold text-xs ${diffColor}`}>
+                            {diffText}
+                          </span>
+                        </td>
+                      </tr>
+                    )
+                  })}
+                </tbody>
+              </table>
             </div>
-          )}
-
-          <div className="mt-4 border border-border rounded-xl overflow-hidden">
-            <table className="w-full text-left text-sm">
-              <thead className="bg-background text-text-secondary text-[11px] uppercase tracking-wider font-semibold border-b border-border">
-                <tr>
-                  <th className="px-4 py-2.5">{lang.segment}</th>
-                  <th className="px-4 py-2.5 text-right">{lang.weight}</th>
-                  <th className="px-4 py-2.5 text-right">{lang.vsSp500}</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-border bg-white text-sm">
-                {displayRadarData.map((item, index) => {
-                  const diff = item.A - item.B
-                  const diffText = diff > 0 ? `+${diff.toFixed(1)}%` : `${diff.toFixed(1)}%`
-                  const diffColor = diff > 0 ? 'text-accent-green bg-accent-green/10' : 'text-accent-red bg-accent-red/10'
-
-                  return (
-                    <tr key={`${item.subject}-${index}`} className="hover:bg-slate-50 transition-colors">
-                      <td className="px-4 py-2.5 font-bold text-text-primary">{item.subject}</td>
-                      <td className="px-4 py-2.5 text-right font-semibold">{item.A.toFixed(1)}%</td>
-                      <td className="px-4 py-2.5 text-right">
-                        <span className={`inline-block px-2 py-0.5 rounded-md font-bold text-xs ${diffColor}`}>
-                          {diffText}
-                        </span>
-                      </td>
-                    </tr>
-                  )
-                })}
-              </tbody>
-            </table>
           </div>
         </div>
       </div>
