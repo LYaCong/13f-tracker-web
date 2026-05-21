@@ -23,6 +23,7 @@ import {
   XAxis,
   YAxis,
 } from 'recharts'
+import { translateSectorName, translateStyleName } from '@/lib/displayNames'
 import type {
   InstitutionDetailData,
   PositionChange,
@@ -107,7 +108,7 @@ export default function InstitutionDetail() {
     isLoadingQuarters,
     selectedQuarter,
   } = useQuarterArchive()
-  const { lang } = useLanguage()
+  const { lang, language } = useLanguage()
 
   const loadDetailData = useCallback(async () => {
     if (!id) {
@@ -183,6 +184,13 @@ export default function InstitutionDetail() {
 
   const sortedRadar = [...radarData].sort((a, b) => b.A - a.A)
   const dominantStyle = sortedRadar[0]
+  const displayRadarData = radarData.map((segment) => ({
+    ...segment,
+    subject: translateSectorName(segment.subject, language),
+  }))
+  const displayDominantStyle = dominantStyle
+    ? translateSectorName(dominantStyle.subject, language)
+    : 'N/A'
   const top2Concentration =
     sortedRadar.length >= 2 ? sortedRadar[0].A + sortedRadar[1].A : dominantStyle?.A ?? 0
   const styleBreadth = sortedRadar.filter((segment) => segment.A >= 10).length
@@ -197,7 +205,7 @@ export default function InstitutionDetail() {
           <div className="flex items-center gap-3">
             <h1 className="text-2xl font-black text-text-primary tracking-tight">{institution.name}</h1>
             <span className="px-2.5 py-0.5 bg-accent-blue/10 text-accent-blue rounded-md text-xs font-bold border border-accent-blue/20">
-              {institution.style}
+              {translateStyleName(institution.style, language)}
             </span>
           </div>
           <p className="text-text-secondary text-sm mt-1.5 flex items-center gap-2">
@@ -267,23 +275,27 @@ export default function InstitutionDetail() {
         </div>
 
         <div className="glass-card p-5 flex flex-col">
-          <div className="flex justify-between items-start mb-2">
-            <div>
+          <div className="grid grid-cols-1 xl:grid-cols-[minmax(0,1fr)_auto] items-start gap-3 mb-2">
+            <div className="min-w-0 xl:max-w-[420px]">
               <h2 className="text-base font-bold text-text-primary mb-1">{lang.institutionStyleVsSp500}</h2>
               <p className="text-xs text-text-secondary">{lang.sectorAllocation}</p>
-              <p className="text-[11px] text-text-secondary mt-1 max-w-lg leading-snug">
-                {lang.sectorMethodology}
-                {classificationSummary?.benchmark.asOf ? ` ${lang.benchmarkAsOf}: ${classificationSummary.benchmark.asOf}.` : ''}
-              </p>
+              <div className="text-[11px] text-text-secondary mt-1 max-w-lg leading-snug">
+                <p>{lang.sectorMethodology}</p>
+                {classificationSummary?.benchmark.asOf && (
+                  <p className="mt-0.5">
+                    {lang.benchmarkAsOf}: {classificationSummary.benchmark.asOf}.
+                  </p>
+                )}
+              </div>
             </div>
-            <div className="flex items-center gap-3 text-xs font-medium">
-              <span className="flex items-center gap-1.5"><div className="w-3 h-3 rounded-full bg-accent-blue"></div> {institution.name}</span>
-              <span className="flex items-center gap-1.5"><div className="w-4 h-0 border-t-[3px] border-dashed border-teal-400"></div> S&amp;P 500</span>
+            <div className="flex flex-nowrap items-center justify-start xl:justify-end xl:justify-self-end gap-6 text-xs font-medium whitespace-nowrap">
+              <span className="inline-flex items-center gap-2 shrink-0"><span className="w-3 h-3 rounded-full bg-accent-blue shrink-0"></span> {institution.name}</span>
+              <span className="inline-flex items-center gap-2 shrink-0"><span className="w-4 h-0 border-t-[3px] border-dashed border-teal-400 shrink-0"></span> S&amp;P 500</span>
             </div>
           </div>
           <div className="flex-1 w-full min-h-[250px]">
             <ResponsiveContainer width="100%" height="100%">
-              <RadarChart cx="50%" cy="50%" outerRadius="70%" data={radarData}>
+              <RadarChart cx="50%" cy="50%" outerRadius="70%" data={displayRadarData}>
                 <PolarGrid stroke="#E5E7EB" />
                 <PolarAngleAxis dataKey="subject" tick={{ fill: '#4B5563', fontSize: 11, fontWeight: 600 }} />
                 <PolarRadiusAxis angle={30} domain={[0, 80]} tick={false} axisLine={false} />
@@ -299,7 +311,7 @@ export default function InstitutionDetail() {
           <div className="grid grid-cols-3 gap-3 mt-4">
             <div className="p-3 border border-border rounded-xl bg-background/50 text-center flex flex-col justify-center">
               <p className="text-xs text-text-secondary font-medium mb-1">{lang.dominantStyle}</p>
-              <p className="text-base font-bold text-text-primary leading-tight">{dominantStyle?.subject ?? 'N/A'}</p>
+              <p className="text-base font-bold text-text-primary leading-tight">{displayDominantStyle}</p>
               <p className="text-xs text-text-secondary mt-0.5">{dominantStyle ? `${dominantStyle.A.toFixed(1)}%` : '--'}</p>
             </div>
             <div className="p-3 border border-border rounded-xl bg-background/50 text-center flex flex-col justify-center">
@@ -331,7 +343,7 @@ export default function InstitutionDetail() {
                 </tr>
               </thead>
               <tbody className="divide-y divide-border bg-white text-sm">
-                {radarData.map((item, index) => {
+                {displayRadarData.map((item, index) => {
                   const diff = item.A - item.B
                   const diffText = diff > 0 ? `+${diff.toFixed(1)}%` : `${diff.toFixed(1)}%`
                   const diffColor = diff > 0 ? 'text-accent-green bg-accent-green/10' : 'text-accent-red bg-accent-red/10'
@@ -380,7 +392,7 @@ export default function InstitutionDetail() {
 	                      <div className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: holding.color }}></div>
 	                      <span className="truncate max-w-[200px]">{holding.security}</span>
 	                    </td>
-	                    <td className="px-6 py-3.5 text-text-secondary whitespace-nowrap">{holding.sector ?? classificationSummary?.unmatchedSector ?? 'Unclassified'}</td>
+	                    <td className="px-6 py-3.5 text-text-secondary whitespace-nowrap">{translateSectorName(holding.sector ?? classificationSummary?.unmatchedSector ?? 'Unclassified', language)}</td>
 	                    <td className="px-6 py-3.5 text-right font-medium">{holding.weight.toFixed(2)}%</td>
                     <td className="px-6 py-3.5 text-right text-text-secondary">${holding.mktValue}</td>
                     <td className={`px-6 py-3.5 text-right font-bold ${holding.qOqDelta.startsWith('+') ? 'text-accent-green' : 'text-accent-red'}`}>

@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import PopularTreemap from '@/components/PopularTreemap'
+import { translateStyleName } from '@/lib/displayNames'
 import type { InstitutionMeta, TreemapDatum } from '@/lib/secData'
 import { useQuarterArchive } from '@/lib/useQuarterArchive'
 import { useLanguage } from '../context/useLanguage'
@@ -17,7 +18,7 @@ export default function Dashboard() {
     isLoadingQuarters,
     selectedQuarter,
   } = useQuarterArchive()
-  const { lang } = useLanguage()
+  const { lang, language } = useLanguage()
   const searchQuery = (searchParams.get('q') ?? '').trim().toLowerCase()
   const detailSearch = searchParams.toString()
 
@@ -72,13 +73,14 @@ export default function Dashboard() {
         inst.name,
         inst.manager,
         inst.style,
+        translateStyleName(inst.style, language),
         inst.quarter,
         inst.id,
       ].some((value) => value.toLowerCase().includes(searchQuery))
 
       return directMatch || tickerMatchedInstitutionIds.has(inst.id)
     })
-  }, [institutions, searchQuery, treemapNodes])
+  }, [institutions, language, searchQuery, treemapNodes])
 
   const quarterSummary = useMemo(() => {
     const counts = institutions.reduce<Record<string, number>>((acc, inst) => {
@@ -177,7 +179,7 @@ export default function Dashboard() {
                   </div>
                   <div className="mt-2">
                     <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-semibold bg-gray-100 text-gray-800 border border-gray-200">
-                      {inst.style}
+                      {translateStyleName(inst.style, language)}
                     </span>
                   </div>
                 </div>

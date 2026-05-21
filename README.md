@@ -27,7 +27,7 @@ No paywalls. No ads. Just clean data visualization.
   - Full holdings table with weight, market value, and QoQ delta
   - Donut chart for portfolio allocation breakdown
   - Position change leaderboard: Top Adds, Top Trims, New Positions, Full Exits
-- **Bilingual UI** — One-click Chinese/English toggle (lightweight custom i18n, no heavy libraries)
+- **Bilingual UI** — One-click Chinese/English toggle, including localized institution style labels and sector names (lightweight custom i18n, no heavy libraries)
 - **Serverless Architecture** — Data is fetched at build time into static JSON; no backend server needed
 - **Vercel Ready** — `vercel.json` includes the Vite build settings and React Router fallback rewrites
 - **Quarter Archive** — Saved datasets can be switched in the header; accumulation starts from `2025 Q4`
@@ -176,7 +176,7 @@ MIT
   - 完整持仓表格（权重、市值、季度变动）
   - 环形图展示持仓分配结构
   - 调仓龙虎榜：加仓榜、减仓榜、新建仓、清仓
-- **中英文切换** — 一键切换（轻量自定义 i18n，无需重型库）
+- **中英文切换** — 一键切换，机构风格标签和板块名称也会随中文界面本地化（轻量自定义 i18n，无需重型库）
 - **无服务器架构** — 数据在构建时抓取为静态 JSON，无需后端服务器
 - **Vercel 就绪** — `vercel.json` 已包含 Vite 构建配置和 React Router 刷新兜底
 - **季度归档** — 已保存的数据集可以在顶部切换，并从 `2025 Q4` 开始积累
