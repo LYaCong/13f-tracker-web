@@ -6,49 +6,55 @@
     "manager": "Duan Yongping",
     "style": "Focused",
     "imageUrl": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=200&h=200&fit=crop",
-    "aum": "17.49B",
+    "aum": "17.49",
     "quarter": "2025 Q4",
     "holdingsCount": 14,
     "displayedHoldingsCount": 14,
     "reportDate": "2025-12-31",
-    "latestFilingDate": "2026-02-17"
+    "latestFilingDate": "2026-02-17",
+    "totalBought": "$3.17B",
+    "totalSold": "$360.13M",
+    "netCapitalFlow": "+$2.81B",
+    "turnoverRate": "10.1%",
+    "cashReserves": {
+      "amount": "$1.00B",
+      "delta": "+$0.10B",
+      "source": "Concentrated Liquidity Estimate"
+    }
   },
-  "snapshotNote": "Bundled static snapshot for 2025 Q4. Full position count is 14; holdings table stores the top 14.",
+  "snapshotNote": "Extracted from official SEC 13F-HR filing accession 0001759760-26-000001",
   "classificationSummary": {
-    "schema": "GICS-style sector mapping",
-    "asOf": "2026-05-19",
+    "schema": "GICS-style Local Mapping",
+    "asOf": "2025-12-31",
     "matchingPriority": [
-      "cusip",
-      "ticker"
+      "CUSIP exact match",
+      "Ticker exact match",
+      "Unclassified"
     ],
     "unmatchedSector": "Unclassified",
     "holdingsClassifiedCount": 7,
     "holdingsUnclassifiedCount": 7,
-    "classifiedWeight": 87.91,
-    "unclassifiedWeight": 12.09,
-    "sectorWeightTotal": 100,
+    "classifiedWeight": 87.92,
+    "unclassifiedWeight": 12.1,
+    "sectorWeightTotal": 100.02,
     "sources": [
       {
-        "name": "Wikipedia List of S&P 500 companies - GICS Sector column",
-        "url": "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
-      },
-      {
-        "name": "State Street SPY holdings daily XLSX - ticker and CUSIP identifiers",
-        "url": "https://www.ssga.com/us/en/intermediary/etfs/library-content/products/fund-data/etfs/us/holdings-daily-us-en-spy.xlsx"
+        "name": "SEC EDGAR",
+        "url": "https://www.sec.gov/edgar/browse/?CIK=0001759760"
       }
     ],
     "benchmark": {
-      "name": "S&P 500 sector benchmark",
+      "name": "S&P 500 ETF Proxy",
       "methodology": "ETF holdings proxy aggregated by published SPY fund sector breakdown",
       "asOf": "2026-05-19",
-      "sourceName": "State Street SPDR S&P 500 ETF Trust (SPY) Fund Sector Breakdown",
-      "sourceUrl": "https://www.ssga.com/us/en/intermediary/etfs/spdr-sp-500-etf-trust-spy"
+      "sourceName": "SPDR S&P 500 ETF Trust (SPY)",
+      "sourceUrl": "https://www.ssga.com"
     }
   },
   "sectorWeights": [
     {
       "sector": "Information Technology",
-      "weight": 60.39,
+      "weight": 60.4,
       "benchmarkWeight": 37.02
     },
     {
@@ -103,7 +109,7 @@
     },
     {
       "sector": "Unclassified",
-      "weight": 12.09,
+      "weight": 12.1,
       "benchmarkWeight": 0
     }
   ],
@@ -111,304 +117,852 @@
     {
       "subject": "Information Technology",
       "A": 60.4,
-      "B": 37,
+      "B": 37.02,
       "fullMark": 100
     },
     {
       "subject": "Financials",
-      "A": 20.6,
-      "B": 11.5,
+      "A": 20.63,
+      "B": 11.54,
       "fullMark": 100
     },
     {
       "subject": "Health Care",
       "A": 0,
-      "B": 8.4,
+      "B": 8.43,
       "fullMark": 100
     },
     {
       "subject": "Consumer Discretionary",
       "A": 0,
-      "B": 9.6,
+      "B": 9.55,
       "fullMark": 100
     },
     {
       "subject": "Communication Services",
-      "A": 3.8,
-      "B": 10.8,
+      "A": 3.79,
+      "B": 10.77,
       "fullMark": 100
     },
     {
       "subject": "Industrials",
       "A": 0,
-      "B": 8.3,
-      "fullMark": 100
-    },
-    {
-      "subject": "Consumer Staples",
-      "A": 0,
-      "B": 5,
-      "fullMark": 100
-    },
-    {
-      "subject": "Energy",
-      "A": 3.1,
-      "B": 3.5,
-      "fullMark": 100
-    },
-    {
-      "subject": "Utilities",
-      "A": 0,
-      "B": 2.2,
-      "fullMark": 100
-    },
-    {
-      "subject": "Real Estate",
-      "A": 0,
-      "B": 1.9,
-      "fullMark": 100
-    },
-    {
-      "subject": "Materials",
-      "A": 0,
-      "B": 1.8,
-      "fullMark": 100
-    },
-    {
-      "subject": "Unclassified",
-      "A": 12.1,
-      "B": 0,
+      "B": 8.34,
       "fullMark": 100
     }
   ],
   "assetTrend": [
     {
-      "year": "2022 Q2",
-      "value": "8.6"
-    },
-    {
-      "year": "2022 Q3",
-      "value": "9.5"
-    },
-    {
-      "year": "2022 Q4",
-      "value": "10.8"
-    },
-    {
-      "year": "2023 Q1",
-      "value": "13.3"
-    },
-    {
-      "year": "2023 Q2",
-      "value": "14.8"
-    },
-    {
-      "year": "2023 Q3",
-      "value": "13.3"
-    },
-    {
-      "year": "2023 Q4",
-      "value": "14.5"
-    },
-    {
-      "year": "2024 Q1",
-      "value": "14.2"
-    },
-    {
-      "year": "2024 Q2",
-      "value": "16.6"
-    },
-    {
-      "year": "2024 Q3",
-      "value": "16.5"
-    },
-    {
       "year": "2024 Q4",
-      "value": "14.5"
+      "value": "15.8"
     },
     {
       "year": "2025 Q1",
-      "value": "12.0"
+      "value": "19.2"
     },
     {
       "year": "2025 Q2",
-      "value": "11.5"
+      "value": "17.9"
     },
     {
       "year": "2025 Q3",
-      "value": "14.7"
+      "value": "16.7"
     },
     {
       "year": "2025 Q4",
-      "value": "17.5"
+      "value": "17.5",
+      "rawValue": 17488569921
+    },
+    {
+      "year": "2026 Q1",
+      "value": "17.0"
+    },
+    {
+      "year": "2026 Q2",
+      "value": "17.4"
     }
   ],
+  "sectorHistory": [
+    {
+      "quarter": "2025 Q3",
+      "Information Technology": 51.9,
+      "Financials": 16.5,
+      "Health Care": 0,
+      "Consumer Discretionary": 0,
+      "Communication Services": 3.3,
+      "Industrials": 0,
+      "Consumer Staples": 0,
+      "Energy": 2.6,
+      "Utilities": 0,
+      "Real Estate": 0,
+      "Materials": 0,
+      "Unclassified": 10.4
+    },
+    {
+      "quarter": "2025 Q4",
+      "Information Technology": 60.4,
+      "Financials": 20.6,
+      "Health Care": 0,
+      "Consumer Discretionary": 0,
+      "Communication Services": 3.8,
+      "Industrials": 0,
+      "Consumer Staples": 0,
+      "Energy": 3.1,
+      "Utilities": 0,
+      "Real Estate": 0,
+      "Materials": 0,
+      "Unclassified": 12.1
+    },
+    {
+      "quarter": "2026 Q1",
+      "Information Technology": 61.6,
+      "Financials": 19.8,
+      "Health Care": 0,
+      "Consumer Discretionary": 0,
+      "Communication Services": 3.9,
+      "Industrials": 0,
+      "Consumer Staples": 0,
+      "Energy": 3.1,
+      "Utilities": 0,
+      "Real Estate": 0,
+      "Materials": 0,
+      "Unclassified": 12.3
+    },
+    {
+      "quarter": "2025 Q4",
+      "Information Technology": 60.4,
+      "Financials": 20.6,
+      "Health Care": 0,
+      "Consumer Discretionary": 0,
+      "Communication Services": 3.8,
+      "Industrials": 0,
+      "Consumer Staples": 0,
+      "Energy": 3.1,
+      "Utilities": 0,
+      "Real Estate": 0,
+      "Materials": 0,
+      "Unclassified": 12.1
+    }
+  ],
+  "capitalFlow": {
+    "totalBought": "$3.17B",
+    "rawTotalBought": 3170182199,
+    "totalSold": "$360.13M",
+    "rawTotalSold": 360129162,
+    "netCapitalFlow": "+$2.81B",
+    "rawNetCapitalFlow": 2810053037,
+    "turnoverRate": "10.1%",
+    "sankey": {
+      "nodes": [
+        {
+          "name": "ALIBA (Trim)"
+        },
+        {
+          "name": "OXY (Trim)"
+        },
+        {
+          "name": "AAPL (Trim)"
+        },
+        {
+          "name": "ASML (Trim)"
+        },
+        {
+          "name": "DISNE (Trim)"
+        },
+        {
+          "name": "Capital Liquidity Pool"
+        },
+        {
+          "name": "NVDA (Add)"
+        },
+        {
+          "name": "BRK-B (Add)"
+        },
+        {
+          "name": "TAIWA (Add)"
+        },
+        {
+          "name": "MSFT (Add)"
+        },
+        {
+          "name": "PDD (Add)"
+        }
+      ],
+      "links": [
+        {
+          "source": 0,
+          "target": 5,
+          "value": 0.12
+        },
+        {
+          "source": 1,
+          "target": 5,
+          "value": 0.1
+        },
+        {
+          "source": 2,
+          "target": 5,
+          "value": 0.07
+        },
+        {
+          "source": 3,
+          "target": 5,
+          "value": 0.07
+        },
+        {
+          "source": 4,
+          "target": 5,
+          "value": 0.01
+        },
+        {
+          "source": 5,
+          "target": 6,
+          "value": 1.24
+        },
+        {
+          "source": 5,
+          "target": 7,
+          "value": 1
+        },
+        {
+          "source": 5,
+          "target": 8,
+          "value": 0.3
+        },
+        {
+          "source": 5,
+          "target": 9,
+          "value": 0.27
+        },
+        {
+          "source": 5,
+          "target": 10,
+          "value": 0.17
+        }
+      ]
+    }
+  },
+  "cashReserves": {
+    "amount": "$1.00B",
+    "delta": "+$0.10B",
+    "source": "Concentrated Liquidity Estimate"
+  },
   "holdings": [
     {
       "cusip": "037833100",
+      "ticker": "AAPL",
       "security": "APPLE INC (AAPL)",
-      "weight": 50.301332543129895,
-      "rawMktValue": 8796983713,
-      "mktValue": "8.80B",
-      "qOqDelta": "-0.07B",
+      "name": "APPLE INC",
       "sector": "Information Technology",
+      "weight": 50.3,
+      "prevWeight": 60.42,
+      "weightChange": -10.12,
+      "weightChangeText": "-10.12%",
+      "shares": 32358507,
+      "sharesFormatted": "32.36M",
+      "shareChangePct": -7.1,
+      "shareChangeText": "-7.1%",
+      "action": "Trim",
+      "rawMktValue": 8796983713,
+      "mktValue": "8.80",
+      "rawDelta": -71551802,
+      "qOqDelta": "-0.07B",
       "color": "#3b82f6"
     },
     {
       "cusip": "084670702",
-      "security": "BERKSHIRE HATHAWAY INC DEL (BR",
-      "weight": 20.625556779623434,
-      "rawMktValue": 3607114919,
-      "mktValue": "3.61B",
-      "qOqDelta": "+1.00B",
+      "ticker": "BRK-B",
+      "security": "BERKSHIRE HATHAWAY INC DEL (BRK-B)",
+      "name": "BERKSHIRE HATHAWAY INC DEL",
       "sector": "Financials",
+      "weight": 20.63,
+      "prevWeight": 17.78,
+      "weightChange": 2.85,
+      "weightChangeText": "+2.85%",
+      "shares": 7176196,
+      "sharesFormatted": "7.18M",
+      "shareChangePct": 38.2,
+      "shareChangeText": "+38.2%",
+      "action": "Add",
+      "rawMktValue": 3607114919,
+      "mktValue": "3.61",
+      "rawDelta": 997240757,
+      "qOqDelta": "+1.00B",
       "color": "#1d4ed8"
     },
     {
       "cusip": "67066G104",
+      "ticker": "NVDA",
       "security": "NVIDIA CORPORATION (NVDA)",
-      "weight": 7.7177216667629205,
-      "rawMktValue": 1349719150,
-      "mktValue": "1.35B",
-      "qOqDelta": "+1.24B",
+      "name": "NVIDIA CORPORATION",
       "sector": "Information Technology",
+      "weight": 7.72,
+      "prevWeight": 0.76,
+      "weightChange": 6.96,
+      "weightChangeText": "+6.96%",
+      "shares": 7237100,
+      "sharesFormatted": "7.24M",
+      "shareChangePct": 1110.6,
+      "shareChangeText": "+1110.6%",
+      "action": "Add",
+      "rawMktValue": 1349719150,
+      "mktValue": "1.35",
+      "rawDelta": 1238181626,
+      "qOqDelta": "+1.24B",
       "color": "#2dd4bf"
     },
     {
       "cusip": "722304102",
+      "ticker": "PDD",
       "security": "PDD HOLDINGS INC (PDD)",
-      "weight": 7.4800040192491615,
-      "rawMktValue": 1308145733,
-      "mktValue": "1.31B",
-      "qOqDelta": "+0.17B",
+      "name": "PDD HOLDINGS INC",
       "sector": "Unclassified",
+      "weight": 7.48,
+      "prevWeight": 7.72,
+      "weightChange": -0.24,
+      "weightChangeText": "-0.24%",
+      "shares": 11536694,
+      "sharesFormatted": "11.54M",
+      "shareChangePct": 34.6,
+      "shareChangeText": "+34.6%",
+      "action": "Add",
+      "rawMktValue": 1308145733,
+      "mktValue": "1.31",
+      "rawDelta": 174894512,
+      "qOqDelta": "+0.17B",
       "color": "#a855f7"
     },
     {
       "cusip": "02079K107",
+      "ticker": "GOOG",
       "security": "ALPHABET INC (GOOG)",
-      "weight": 3.3291716968857124,
-      "rawMktValue": 582224520,
-      "mktValue": "0.58B",
-      "qOqDelta": "+0.14B",
+      "name": "ALPHABET INC",
       "sector": "Communication Services",
+      "weight": 3.33,
+      "prevWeight": 3,
+      "weightChange": 0.33,
+      "weightChangeText": "+0.33%",
+      "shares": 1855400,
+      "sharesFormatted": "1.86M",
+      "shareChangePct": 2.5,
+      "shareChangeText": "+2.5%",
+      "action": "Add",
+      "rawMktValue": 582224520,
+      "mktValue": "0.58",
+      "rawDelta": 141277245,
+      "qOqDelta": "+0.14B",
       "color": "#22c55e"
     },
     {
       "cusip": "674599105",
+      "ticker": "OXY",
       "security": "OCCIDENTAL PETE CORP (OXY)",
-      "weight": 3.097207572985064,
-      "rawMktValue": 541657312,
-      "mktValue": "0.54B",
-      "qOqDelta": "-0.10B",
+      "name": "OCCIDENTAL PETE CORP",
       "sector": "Energy",
+      "weight": 3.1,
+      "prevWeight": 4.36,
+      "weightChange": -1.27,
+      "weightChangeText": "-1.27%",
+      "shares": 13172600,
+      "sharesFormatted": "13.17M",
+      "shareChangePct": -2.8,
+      "shareChangeText": "-2.8%",
+      "action": "Trim",
+      "rawMktValue": 541657312,
+      "mktValue": "0.54",
+      "rawDelta": -98868413,
+      "qOqDelta": "-0.10B",
       "color": "#ec4899"
     },
     {
       "cusip": "594918104",
+      "ticker": "MSFT",
       "security": "MICROSOFT CORP (MSFT)",
-      "weight": 2.3754348232965503,
-      "rawMktValue": 415429580,
-      "mktValue": "0.42B",
-      "qOqDelta": "+0.27B",
+      "name": "MICROSOFT CORP",
       "sector": "Information Technology",
+      "weight": 2.38,
+      "prevWeight": 0.99,
+      "weightChange": 1.39,
+      "weightChangeText": "+1.39%",
+      "shares": 859000,
+      "sharesFormatted": "859.0K",
+      "shareChangePct": 207.7,
+      "shareChangeText": "+207.7%",
+      "action": "Add",
+      "rawMktValue": 415429580,
+      "mktValue": "0.42",
+      "rawDelta": 270817940,
+      "qOqDelta": "+0.27B",
       "color": "#10b981"
     },
     {
       "cusip": "01609W102",
+      "ticker": "ALIBA",
       "security": "ALIBABA GROUP HLDG LTD (ALIBA)",
-      "weight": 2.146076504227621,
-      "rawMktValue": 375318090,
-      "mktValue": "0.38B",
-      "qOqDelta": "-0.12B",
+      "name": "ALIBABA GROUP HLDG LTD",
       "sector": "Unclassified",
+      "weight": 2.15,
+      "prevWeight": 3.38,
+      "weightChange": -1.24,
+      "weightChangeText": "-1.24%",
+      "shares": 2560500,
+      "sharesFormatted": "2.56M",
+      "shareChangePct": -7.8,
+      "shareChangeText": "-7.8%",
+      "action": "Trim",
+      "rawMktValue": 375318090,
+      "mktValue": "0.38",
+      "rawDelta": -121074101,
+      "qOqDelta": "-0.12B",
       "color": "#f97316"
     },
     {
       "cusip": "874039100",
-      "security": "TAIWAN SEMICONDUCTOR MFG LTD (",
-      "weight": 2.127549912204168,
-      "rawMktValue": 372078054,
-      "mktValue": "0.37B",
-      "qOqDelta": "+0.30B",
+      "ticker": "TAIWA",
+      "security": "TAIWAN SEMICONDUCTOR MFG LTD (TAIWA)",
+      "name": "TAIWAN SEMICONDUCTOR MFG LTD",
       "sector": "Unclassified",
+      "weight": 2.13,
+      "prevWeight": 0.49,
+      "weightChange": 1.63,
+      "weightChangeText": "+1.63%",
+      "shares": 1224384,
+      "sharesFormatted": "1.22M",
+      "shareChangePct": 370.9,
+      "shareChangeText": "+370.9%",
+      "action": "Add",
+      "rawMktValue": 372078054,
+      "mktValue": "0.37",
+      "rawDelta": 299467123,
+      "qOqDelta": "+0.30B",
       "color": "#1e3a8a"
     },
     {
       "cusip": "254687106",
+      "ticker": "DISNE",
       "security": "DISNEY WALT CO (DISNE)",
-      "weight": 0.463183898774544,
-      "rawMktValue": 81004240,
-      "mktValue": "0.08B",
-      "qOqDelta": "-0.00B",
+      "name": "DISNEY WALT CO",
       "sector": "Communication Services",
+      "weight": 0.46,
+      "prevWeight": 0.56,
+      "weightChange": -0.1,
+      "weightChangeText": "-0.10%",
+      "shares": 712000,
+      "sharesFormatted": "712.0K",
+      "shareChangePct": -1.5,
+      "shareChangeText": "-1.5%",
+      "action": "Trim",
+      "rawMktValue": 81004240,
+      "mktValue": "0.08",
+      "rawDelta": -1779260,
+      "qOqDelta": "-0.00B",
       "color": "#312e81"
     },
     {
       "cusip": "21873S108",
+      "ticker": "COREW",
       "security": "COREWEAVE INC (COREW)",
-      "weight": 0.12279928603088437,
-      "rawMktValue": 21475839,
-      "mktValue": "0.02B",
-      "qOqDelta": "+0.02B",
+      "name": "COREWEAVE INC",
       "sector": "Unclassified",
-      "color": "#3b82f6"
+      "weight": 0.12,
+      "prevWeight": 0,
+      "weightChange": 0.12,
+      "weightChangeText": "+0.12%",
+      "shares": 299900,
+      "sharesFormatted": "299.9K",
+      "shareChangePct": 100,
+      "shareChangeText": "新建仓",
+      "action": "New",
+      "rawMktValue": 21475839,
+      "mktValue": "0.02",
+      "rawDelta": 21475839,
+      "qOqDelta": "+0.02B",
+      "color": "#6366f1"
     },
     {
       "cusip": "G25457105",
-      "security": "CREDO TECHNOLOGY GROUP HOLDI (",
-      "weight": 0.11625682998577297,
-      "rawMktValue": 20331657,
-      "mktValue": "0.02B",
-      "qOqDelta": "+0.02B",
+      "ticker": "CREDO",
+      "security": "CREDO TECHNOLOGY GROUP HOLDI (CREDO)",
+      "name": "CREDO TECHNOLOGY GROUP HOLDI",
       "sector": "Unclassified",
-      "color": "#1d4ed8"
+      "weight": 0.12,
+      "prevWeight": 0,
+      "weightChange": 0.12,
+      "weightChangeText": "+0.12%",
+      "shares": 141300,
+      "sharesFormatted": "141.3K",
+      "shareChangePct": 100,
+      "shareChangeText": "新建仓",
+      "action": "New",
+      "rawMktValue": 20331657,
+      "mktValue": "0.02",
+      "rawDelta": 20331657,
+      "qOqDelta": "+0.02B",
+      "color": "#14b8a6"
     },
     {
       "cusip": "N07059210",
+      "ticker": "ASML",
       "security": "ASML HOLDING N V (ASML)",
-      "weight": 0.0605630651782554,
-      "rawMktValue": 10591614,
-      "mktValue": "0.01B",
-      "qOqDelta": "-0.07B",
+      "name": "ASML HOLDING N V",
       "sector": "Unclassified",
-      "color": "#2dd4bf"
+      "weight": 0.06,
+      "prevWeight": 0.53,
+      "weightChange": -0.47,
+      "weightChangeText": "-0.47%",
+      "shares": 9900,
+      "sharesFormatted": "9.9K",
+      "shareChangePct": -87.6,
+      "shareChangeText": "-87.6%",
+      "action": "Trim",
+      "rawMktValue": 10591614,
+      "mktValue": "0.01",
+      "rawDelta": -66855586,
+      "qOqDelta": "-0.07B",
+      "color": "#f43f5e"
     },
     {
       "cusip": "88023B103",
+      "ticker": "TEMPU",
       "security": "TEMPUS AI INC (TEMPU)",
-      "weight": 0.03714140166601219,
-      "rawMktValue": 6495500,
-      "mktValue": "0.01B",
-      "qOqDelta": "+0.01B",
+      "name": "TEMPUS AI INC",
       "sector": "Unclassified",
+      "weight": 0.04,
+      "prevWeight": 0,
+      "weightChange": 0.04,
+      "weightChangeText": "+0.04%",
+      "shares": 110000,
+      "sharesFormatted": "110.0K",
+      "shareChangePct": 100,
+      "shareChangeText": "新建仓",
+      "action": "New",
+      "rawMktValue": 6495500,
+      "mktValue": "0.01",
+      "rawDelta": 6495500,
+      "qOqDelta": "+0.01B",
+      "color": "#8b5cf6"
+    }
+  ],
+  "allHoldings": [
+    {
+      "cusip": "037833100",
+      "ticker": "AAPL",
+      "security": "APPLE INC (AAPL)",
+      "name": "APPLE INC",
+      "sector": "Information Technology",
+      "weight": 50.3,
+      "prevWeight": 60.42,
+      "weightChange": -10.12,
+      "weightChangeText": "-10.12%",
+      "shares": 32358507,
+      "sharesFormatted": "32.36M",
+      "shareChangePct": -7.1,
+      "shareChangeText": "-7.1%",
+      "action": "Trim",
+      "rawMktValue": 8796983713,
+      "mktValue": "8.80",
+      "rawDelta": -71551802,
+      "qOqDelta": "-0.07B",
+      "color": "#3b82f6"
+    },
+    {
+      "cusip": "084670702",
+      "ticker": "BRK-B",
+      "security": "BERKSHIRE HATHAWAY INC DEL (BRK-B)",
+      "name": "BERKSHIRE HATHAWAY INC DEL",
+      "sector": "Financials",
+      "weight": 20.63,
+      "prevWeight": 17.78,
+      "weightChange": 2.85,
+      "weightChangeText": "+2.85%",
+      "shares": 7176196,
+      "sharesFormatted": "7.18M",
+      "shareChangePct": 38.2,
+      "shareChangeText": "+38.2%",
+      "action": "Add",
+      "rawMktValue": 3607114919,
+      "mktValue": "3.61",
+      "rawDelta": 997240757,
+      "qOqDelta": "+1.00B",
+      "color": "#1d4ed8"
+    },
+    {
+      "cusip": "67066G104",
+      "ticker": "NVDA",
+      "security": "NVIDIA CORPORATION (NVDA)",
+      "name": "NVIDIA CORPORATION",
+      "sector": "Information Technology",
+      "weight": 7.72,
+      "prevWeight": 0.76,
+      "weightChange": 6.96,
+      "weightChangeText": "+6.96%",
+      "shares": 7237100,
+      "sharesFormatted": "7.24M",
+      "shareChangePct": 1110.6,
+      "shareChangeText": "+1110.6%",
+      "action": "Add",
+      "rawMktValue": 1349719150,
+      "mktValue": "1.35",
+      "rawDelta": 1238181626,
+      "qOqDelta": "+1.24B",
+      "color": "#2dd4bf"
+    },
+    {
+      "cusip": "722304102",
+      "ticker": "PDD",
+      "security": "PDD HOLDINGS INC (PDD)",
+      "name": "PDD HOLDINGS INC",
+      "sector": "Unclassified",
+      "weight": 7.48,
+      "prevWeight": 7.72,
+      "weightChange": -0.24,
+      "weightChangeText": "-0.24%",
+      "shares": 11536694,
+      "sharesFormatted": "11.54M",
+      "shareChangePct": 34.6,
+      "shareChangeText": "+34.6%",
+      "action": "Add",
+      "rawMktValue": 1308145733,
+      "mktValue": "1.31",
+      "rawDelta": 174894512,
+      "qOqDelta": "+0.17B",
       "color": "#a855f7"
+    },
+    {
+      "cusip": "02079K107",
+      "ticker": "GOOG",
+      "security": "ALPHABET INC (GOOG)",
+      "name": "ALPHABET INC",
+      "sector": "Communication Services",
+      "weight": 3.33,
+      "prevWeight": 3,
+      "weightChange": 0.33,
+      "weightChangeText": "+0.33%",
+      "shares": 1855400,
+      "sharesFormatted": "1.86M",
+      "shareChangePct": 2.5,
+      "shareChangeText": "+2.5%",
+      "action": "Add",
+      "rawMktValue": 582224520,
+      "mktValue": "0.58",
+      "rawDelta": 141277245,
+      "qOqDelta": "+0.14B",
+      "color": "#22c55e"
+    },
+    {
+      "cusip": "674599105",
+      "ticker": "OXY",
+      "security": "OCCIDENTAL PETE CORP (OXY)",
+      "name": "OCCIDENTAL PETE CORP",
+      "sector": "Energy",
+      "weight": 3.1,
+      "prevWeight": 4.36,
+      "weightChange": -1.27,
+      "weightChangeText": "-1.27%",
+      "shares": 13172600,
+      "sharesFormatted": "13.17M",
+      "shareChangePct": -2.8,
+      "shareChangeText": "-2.8%",
+      "action": "Trim",
+      "rawMktValue": 541657312,
+      "mktValue": "0.54",
+      "rawDelta": -98868413,
+      "qOqDelta": "-0.10B",
+      "color": "#ec4899"
+    },
+    {
+      "cusip": "594918104",
+      "ticker": "MSFT",
+      "security": "MICROSOFT CORP (MSFT)",
+      "name": "MICROSOFT CORP",
+      "sector": "Information Technology",
+      "weight": 2.38,
+      "prevWeight": 0.99,
+      "weightChange": 1.39,
+      "weightChangeText": "+1.39%",
+      "shares": 859000,
+      "sharesFormatted": "859.0K",
+      "shareChangePct": 207.7,
+      "shareChangeText": "+207.7%",
+      "action": "Add",
+      "rawMktValue": 415429580,
+      "mktValue": "0.42",
+      "rawDelta": 270817940,
+      "qOqDelta": "+0.27B",
+      "color": "#10b981"
+    },
+    {
+      "cusip": "01609W102",
+      "ticker": "ALIBA",
+      "security": "ALIBABA GROUP HLDG LTD (ALIBA)",
+      "name": "ALIBABA GROUP HLDG LTD",
+      "sector": "Unclassified",
+      "weight": 2.15,
+      "prevWeight": 3.38,
+      "weightChange": -1.24,
+      "weightChangeText": "-1.24%",
+      "shares": 2560500,
+      "sharesFormatted": "2.56M",
+      "shareChangePct": -7.8,
+      "shareChangeText": "-7.8%",
+      "action": "Trim",
+      "rawMktValue": 375318090,
+      "mktValue": "0.38",
+      "rawDelta": -121074101,
+      "qOqDelta": "-0.12B",
+      "color": "#f97316"
+    },
+    {
+      "cusip": "874039100",
+      "ticker": "TAIWA",
+      "security": "TAIWAN SEMICONDUCTOR MFG LTD (TAIWA)",
+      "name": "TAIWAN SEMICONDUCTOR MFG LTD",
+      "sector": "Unclassified",
+      "weight": 2.13,
+      "prevWeight": 0.49,
+      "weightChange": 1.63,
+      "weightChangeText": "+1.63%",
+      "shares": 1224384,
+      "sharesFormatted": "1.22M",
+      "shareChangePct": 370.9,
+      "shareChangeText": "+370.9%",
+      "action": "Add",
+      "rawMktValue": 372078054,
+      "mktValue": "0.37",
+      "rawDelta": 299467123,
+      "qOqDelta": "+0.30B",
+      "color": "#1e3a8a"
+    },
+    {
+      "cusip": "254687106",
+      "ticker": "DISNE",
+      "security": "DISNEY WALT CO (DISNE)",
+      "name": "DISNEY WALT CO",
+      "sector": "Communication Services",
+      "weight": 0.46,
+      "prevWeight": 0.56,
+      "weightChange": -0.1,
+      "weightChangeText": "-0.10%",
+      "shares": 712000,
+      "sharesFormatted": "712.0K",
+      "shareChangePct": -1.5,
+      "shareChangeText": "-1.5%",
+      "action": "Trim",
+      "rawMktValue": 81004240,
+      "mktValue": "0.08",
+      "rawDelta": -1779260,
+      "qOqDelta": "-0.00B",
+      "color": "#312e81"
+    },
+    {
+      "cusip": "21873S108",
+      "ticker": "COREW",
+      "security": "COREWEAVE INC (COREW)",
+      "name": "COREWEAVE INC",
+      "sector": "Unclassified",
+      "weight": 0.12,
+      "prevWeight": 0,
+      "weightChange": 0.12,
+      "weightChangeText": "+0.12%",
+      "shares": 299900,
+      "sharesFormatted": "299.9K",
+      "shareChangePct": 100,
+      "shareChangeText": "新建仓",
+      "action": "New",
+      "rawMktValue": 21475839,
+      "mktValue": "0.02",
+      "rawDelta": 21475839,
+      "qOqDelta": "+0.02B",
+      "color": "#6366f1"
+    },
+    {
+      "cusip": "G25457105",
+      "ticker": "CREDO",
+      "security": "CREDO TECHNOLOGY GROUP HOLDI (CREDO)",
+      "name": "CREDO TECHNOLOGY GROUP HOLDI",
+      "sector": "Unclassified",
+      "weight": 0.12,
+      "prevWeight": 0,
+      "weightChange": 0.12,
+      "weightChangeText": "+0.12%",
+      "shares": 141300,
+      "sharesFormatted": "141.3K",
+      "shareChangePct": 100,
+      "shareChangeText": "新建仓",
+      "action": "New",
+      "rawMktValue": 20331657,
+      "mktValue": "0.02",
+      "rawDelta": 20331657,
+      "qOqDelta": "+0.02B",
+      "color": "#14b8a6"
+    },
+    {
+      "cusip": "N07059210",
+      "ticker": "ASML",
+      "security": "ASML HOLDING N V (ASML)",
+      "name": "ASML HOLDING N V",
+      "sector": "Unclassified",
+      "weight": 0.06,
+      "prevWeight": 0.53,
+      "weightChange": -0.47,
+      "weightChangeText": "-0.47%",
+      "shares": 9900,
+      "sharesFormatted": "9.9K",
+      "shareChangePct": -87.6,
+      "shareChangeText": "-87.6%",
+      "action": "Trim",
+      "rawMktValue": 10591614,
+      "mktValue": "0.01",
+      "rawDelta": -66855586,
+      "qOqDelta": "-0.07B",
+      "color": "#f43f5e"
+    },
+    {
+      "cusip": "88023B103",
+      "ticker": "TEMPU",
+      "security": "TEMPUS AI INC (TEMPU)",
+      "name": "TEMPUS AI INC",
+      "sector": "Unclassified",
+      "weight": 0.04,
+      "prevWeight": 0,
+      "weightChange": 0.04,
+      "weightChangeText": "+0.04%",
+      "shares": 110000,
+      "sharesFormatted": "110.0K",
+      "shareChangePct": 100,
+      "shareChangeText": "新建仓",
+      "action": "New",
+      "rawMktValue": 6495500,
+      "mktValue": "0.01",
+      "rawDelta": 6495500,
+      "qOqDelta": "+0.01B",
+      "color": "#8b5cf6"
     }
   ],
   "topAdds": [
     {
       "ticker": "NVDA",
       "security": "NVIDIA CORPORATION",
-      "deltaValue": "+1.24B",
       "rawDelta": 1238181626,
-      "shareChange": "New",
+      "deltaValue": "+$1.24B",
+      "shareChange": "+1110.6%",
       "newWeight": "7.72%",
       "type": "Add"
     },
     {
       "ticker": "BRK-B",
-      "security": "BERKSHIRE HATHAWAY I",
-      "deltaValue": "+1.00B",
+      "security": "BERKSHIRE HATHAWAY INC DEL",
       "rawDelta": 997240757,
+      "deltaValue": "+$997.24M",
       "shareChange": "+38.2%",
       "newWeight": "20.63%",
       "type": "Add"
     },
     {
       "ticker": "TAIWA",
-      "security": "TAIWAN SEMICONDUCTOR",
-      "deltaValue": "+0.30B",
+      "security": "TAIWAN SEMICONDUCTOR MFG LTD",
       "rawDelta": 299467123,
+      "deltaValue": "+$299.47M",
       "shareChange": "+370.9%",
       "newWeight": "2.13%",
       "type": "Add"
@@ -416,8 +970,8 @@
     {
       "ticker": "MSFT",
       "security": "MICROSOFT CORP",
-      "deltaValue": "+0.27B",
       "rawDelta": 270817940,
+      "deltaValue": "+$270.82M",
       "shareChange": "+207.7%",
       "newWeight": "2.38%",
       "type": "Add"
@@ -425,19 +979,55 @@
     {
       "ticker": "PDD",
       "security": "PDD HOLDINGS INC",
-      "deltaValue": "+0.17B",
       "rawDelta": 174894512,
+      "deltaValue": "+$174.89M",
       "shareChange": "+34.6%",
       "newWeight": "7.48%",
       "type": "Add"
+    },
+    {
+      "ticker": "GOOG",
+      "security": "ALPHABET INC",
+      "rawDelta": 141277245,
+      "deltaValue": "+$141.28M",
+      "shareChange": "+2.5%",
+      "newWeight": "3.33%",
+      "type": "Add"
+    },
+    {
+      "ticker": "COREW",
+      "security": "COREWEAVE INC",
+      "rawDelta": 21475839,
+      "deltaValue": "+$21.48M",
+      "shareChange": "新建仓",
+      "newWeight": "0.12%",
+      "type": "New"
+    },
+    {
+      "ticker": "CREDO",
+      "security": "CREDO TECHNOLOGY GROUP HOLDI",
+      "rawDelta": 20331657,
+      "deltaValue": "+$20.33M",
+      "shareChange": "新建仓",
+      "newWeight": "0.12%",
+      "type": "New"
+    },
+    {
+      "ticker": "TEMPU",
+      "security": "TEMPUS AI INC",
+      "rawDelta": 6495500,
+      "deltaValue": "+$6.50M",
+      "shareChange": "新建仓",
+      "newWeight": "0.04%",
+      "type": "New"
     }
   ],
   "topTrims": [
     {
       "ticker": "ALIBA",
-      "security": "ALIBABA GROUP HLDG L",
-      "deltaValue": "-0.12B",
-      "rawDelta": 121074101,
+      "security": "ALIBABA GROUP HLDG LTD",
+      "rawDelta": -121074101,
+      "deltaValue": "-$121.07M",
       "shareChange": "-7.8%",
       "newWeight": "2.15%",
       "type": "Trim"
@@ -445,8 +1035,8 @@
     {
       "ticker": "OXY",
       "security": "OCCIDENTAL PETE CORP",
-      "deltaValue": "-0.10B",
-      "rawDelta": 98868413,
+      "rawDelta": -98868413,
+      "deltaValue": "-$98.87M",
       "shareChange": "-2.8%",
       "newWeight": "3.10%",
       "type": "Trim"
@@ -454,8 +1044,8 @@
     {
       "ticker": "AAPL",
       "security": "APPLE INC",
-      "deltaValue": "-0.07B",
-      "rawDelta": 71551802,
+      "rawDelta": -71551802,
+      "deltaValue": "-$71.55M",
       "shareChange": "-7.1%",
       "newWeight": "50.30%",
       "type": "Trim"
@@ -463,8 +1053,8 @@
     {
       "ticker": "ASML",
       "security": "ASML HOLDING N V",
-      "deltaValue": "-0.07B",
-      "rawDelta": 66855586,
+      "rawDelta": -66855586,
+      "deltaValue": "-$66.86M",
       "shareChange": "-87.6%",
       "newWeight": "0.06%",
       "type": "Trim"
@@ -472,8 +1062,8 @@
     {
       "ticker": "DISNE",
       "security": "DISNEY WALT CO",
-      "deltaValue": "-0.00B",
-      "rawDelta": 1779260,
+      "rawDelta": -1779260,
+      "deltaValue": "-$1.78M",
       "shareChange": "-1.5%",
       "newWeight": "0.46%",
       "type": "Trim"

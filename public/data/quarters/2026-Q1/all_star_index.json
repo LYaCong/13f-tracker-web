@@ -1,0 +1,388 @@
+{
+  "name": "Wall Street 13F Superinvestor Index",
+  "chineseName": "华尔街 13F 全明星精选指数",
+  "description": "Multi-factor clone portfolio constructed from high-conviction consensus holdings of 12 elite global investment institutions.",
+  "asOfQuarter": "2026 Q1",
+  "constituentsCount": 20,
+  "totalTrackedCapital": "162.71B",
+  "sectorBreakdown": [
+    {
+      "sector": "Information Technology",
+      "weight": 48.52
+    },
+    {
+      "sector": "Communication Services",
+      "weight": 17.52
+    },
+    {
+      "sector": "Financials",
+      "weight": 11.73
+    },
+    {
+      "sector": "Unclassified",
+      "weight": 9.45
+    },
+    {
+      "sector": "Industrials",
+      "weight": 9.07
+    },
+    {
+      "sector": "Consumer Discretionary",
+      "weight": 3.7
+    }
+  ],
+  "constituents": [
+    {
+      "ticker": "ISHAR",
+      "name": "ISHARES TR",
+      "sector": "Unclassified",
+      "equalWeight": "5.00%",
+      "convictionWeight": "1.98%",
+      "rawConvictionWeight": 1.98,
+      "totalValue": "3.22B",
+      "holderCount": 18,
+      "backingFunds": [
+        "Bridgewater Associates, LP",
+        "Elliott Investment Management, L.P.",
+        "Bridgewater Associates, LP",
+        "Elliott Investment Management, L.P.",
+        "Bridgewater Associates, LP"
+      ],
+      "mainAction": "Net Sell"
+    },
+    {
+      "ticker": "LIBER",
+      "name": "LIBERTY LIVE HOLDINGS INC",
+      "sector": "Unclassified",
+      "equalWeight": "5.00%",
+      "convictionWeight": "1.06%",
+      "rawConvictionWeight": 1.06,
+      "totalValue": "1.72B",
+      "holderCount": 8,
+      "backingFunds": [
+        "Berkshire Hathaway",
+        "Berkshire Hathaway",
+        "Tiger Global Management LLC",
+        "Soros Fund Management",
+        "Soros Fund Management"
+      ],
+      "mainAction": "Net Buy"
+    },
+    {
+      "ticker": "SELEC",
+      "name": "SELECTIVE INS GROUP INC",
+      "sector": "Unclassified",
+      "equalWeight": "5.00%",
+      "convictionWeight": "1.70%",
+      "rawConvictionWeight": 1.7,
+      "totalValue": "2.77B",
+      "holderCount": 7,
+      "backingFunds": [
+        "Elliott Investment Management, L.P.",
+        "Elliott Investment Management, L.P.",
+        "Elliott Investment Management, L.P.",
+        "Soros Fund Management",
+        "Soros Fund Management"
+      ],
+      "mainAction": "Net Buy"
+    },
+    {
+      "ticker": "GOOGL",
+      "name": "ALPHABET INC",
+      "sector": "Communication Services",
+      "equalWeight": "5.00%",
+      "convictionWeight": "12.80%",
+      "rawConvictionWeight": 12.8,
+      "totalValue": "20.83B",
+      "holderCount": 6,
+      "backingFunds": [
+        "Berkshire Hathaway",
+        "Tiger Global Management LLC",
+        "Himalaya Capital Management LLC",
+        "TCI Fund Management Ltd",
+        "Bridgewater Associates, LP"
+      ],
+      "mainAction": "Net Buy"
+    },
+    {
+      "ticker": "GE",
+      "name": "GE AEROSPACE",
+      "sector": "Industrials",
+      "equalWeight": "5.00%",
+      "convictionWeight": "9.07%",
+      "rawConvictionWeight": 9.07,
+      "totalValue": "14.75B",
+      "holderCount": 6,
+      "backingFunds": [
+        "TCI Fund Management Ltd",
+        "Tiger Global Management LLC",
+        "Bridgewater Associates, LP",
+        "Bridgewater Associates, LP",
+        "Bridgewater Associates, LP"
+      ],
+      "mainAction": "Net Sell"
+    },
+    {
+      "ticker": "GOOG",
+      "name": "ALPHABET INC",
+      "sector": "Communication Services",
+      "equalWeight": "5.00%",
+      "convictionWeight": "3.47%",
+      "rawConvictionWeight": 3.47,
+      "totalValue": "5.65B",
+      "holderCount": 6,
+      "backingFunds": [
+        "TCI Fund Management Ltd",
+        "H&H International Investment, LLC",
+        "Berkshire Hathaway",
+        "Himalaya Capital Management LLC",
+        "ARK Investment Management LLC"
+      ],
+      "mainAction": "Net Buy"
+    },
+    {
+      "ticker": "TAIWA",
+      "name": "TAIWAN SEMICONDUCTOR MANUFAC",
+      "sector": "Unclassified",
+      "equalWeight": "5.00%",
+      "convictionWeight": "2.14%",
+      "rawConvictionWeight": 2.14,
+      "totalValue": "3.48B",
+      "holderCount": 6,
+      "backingFunds": [
+        "Tiger Global Management LLC",
+        "SoftBank Group Corp",
+        "Bridgewater Associates, LP",
+        "Soros Fund Management",
+        "ARK Investment Management LLC"
+      ],
+      "mainAction": "Net Buy"
+    },
+    {
+      "ticker": "MSFT",
+      "name": "MICROSOFT CORP",
+      "sector": "Information Technology",
+      "equalWeight": "5.00%",
+      "convictionWeight": "1.72%",
+      "rawConvictionWeight": 1.72,
+      "totalValue": "2.79B",
+      "holderCount": 6,
+      "backingFunds": [
+        "TCI Fund Management Ltd",
+        "Tiger Global Management LLC",
+        "Bridgewater Associates, LP",
+        "H&H International Investment, LLC",
+        "Soros Fund Management"
+      ],
+      "mainAction": "Net Sell"
+    },
+    {
+      "ticker": "ADVAN",
+      "name": "ADVANCED MICRO DEVICES INC",
+      "sector": "Information Technology",
+      "equalWeight": "5.00%",
+      "convictionWeight": "0.51%",
+      "rawConvictionWeight": 0.51,
+      "totalValue": "834.27M",
+      "holderCount": 6,
+      "backingFunds": [
+        "ARK Investment Management LLC",
+        "Bridgewater Associates, LP",
+        "Bridgewater Associates, LP",
+        "Soros Fund Management",
+        "Bridgewater Associates, LP"
+      ],
+      "mainAction": "Hold"
+    },
+    {
+      "ticker": "INTER",
+      "name": "INTERNATIONAL BANCSHARES COR",
+      "sector": "Unclassified",
+      "equalWeight": "5.00%",
+      "convictionWeight": "0.33%",
+      "rawConvictionWeight": 0.33,
+      "totalValue": "544.84M",
+      "holderCount": 6,
+      "backingFunds": [
+        "SoftBank Group Corp",
+        "Soros Fund Management",
+        "Bridgewater Associates, LP",
+        "Bridgewater Associates, LP",
+        "ARK Investment Management LLC"
+      ],
+      "mainAction": "Net Sell"
+    },
+    {
+      "ticker": "AAPL",
+      "name": "APPLE INC",
+      "sector": "Information Technology",
+      "equalWeight": "5.00%",
+      "convictionWeight": "40.25%",
+      "rawConvictionWeight": 40.25,
+      "totalValue": "65.49B",
+      "holderCount": 5,
+      "backingFunds": [
+        "Berkshire Hathaway",
+        "H&H International Investment, LLC",
+        "Bridgewater Associates, LP",
+        "Soros Fund Management",
+        "Himalaya Capital Management LLC"
+      ],
+      "mainAction": "Net Buy"
+    },
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA CORPORATION",
+      "sector": "Information Technology",
+      "equalWeight": "5.00%",
+      "convictionWeight": "3.50%",
+      "rawConvictionWeight": 3.5,
+      "totalValue": "5.70B",
+      "holderCount": 5,
+      "backingFunds": [
+        "H&H International Investment, LLC",
+        "Tiger Global Management LLC",
+        "Bridgewater Associates, LP",
+        "Soros Fund Management",
+        "ARK Investment Management LLC"
+      ],
+      "mainAction": "Net Buy"
+    },
+    {
+      "ticker": "BRK-B",
+      "name": "BERKSHIRE HATHAWAY INC DEL",
+      "sector": "Financials",
+      "equalWeight": "5.00%",
+      "convictionWeight": "8.02%",
+      "rawConvictionWeight": 8.02,
+      "totalValue": "13.05B",
+      "holderCount": 4,
+      "backingFunds": [
+        "Gates Foundation Trust",
+        "H&H International Investment, LLC",
+        "Himalaya Capital Management LLC",
+        "Soros Fund Management"
+      ],
+      "mainAction": "Net Buy"
+    },
+    {
+      "ticker": "S",
+      "name": "S&P GLOBAL INC",
+      "sector": "Financials",
+      "equalWeight": "5.00%",
+      "convictionWeight": "3.71%",
+      "rawConvictionWeight": 3.71,
+      "totalValue": "6.04B",
+      "holderCount": 4,
+      "backingFunds": [
+        "TCI Fund Management Ltd",
+        "Himalaya Capital Management LLC",
+        "Bridgewater Associates, LP",
+        "Soros Fund Management"
+      ],
+      "mainAction": "Net Buy"
+    },
+    {
+      "ticker": "AMZN",
+      "name": "AMAZON COM INC",
+      "sector": "Consumer Discretionary",
+      "equalWeight": "5.00%",
+      "convictionWeight": "2.26%",
+      "rawConvictionWeight": 2.26,
+      "totalValue": "3.68B",
+      "holderCount": 4,
+      "backingFunds": [
+        "Tiger Global Management LLC",
+        "Bridgewater Associates, LP",
+        "Soros Fund Management",
+        "ARK Investment Management LLC"
+      ],
+      "mainAction": "Hold"
+    },
+    {
+      "ticker": "STATE",
+      "name": "STATE STR SPDR S&P 500 ETF T",
+      "sector": "Unclassified",
+      "equalWeight": "5.00%",
+      "convictionWeight": "2.24%",
+      "rawConvictionWeight": 2.24,
+      "totalValue": "3.65B",
+      "holderCount": 4,
+      "backingFunds": [
+        "Bridgewater Associates, LP",
+        "Soros Fund Management",
+        "Bridgewater Associates, LP",
+        "ARK Investment Management LLC"
+      ],
+      "mainAction": "Net Sell"
+    },
+    {
+      "ticker": "TSLA",
+      "name": "TESLA INC",
+      "sector": "Consumer Discretionary",
+      "equalWeight": "5.00%",
+      "convictionWeight": "1.44%",
+      "rawConvictionWeight": 1.44,
+      "totalValue": "2.34B",
+      "holderCount": 4,
+      "backingFunds": [
+        "H&H International Investment, LLC",
+        "ARK Investment Management LLC",
+        "Soros Fund Management",
+        "Bridgewater Associates, LP"
+      ],
+      "mainAction": "Hold"
+    },
+    {
+      "ticker": "VERIS",
+      "name": "VERISIGN INC",
+      "sector": "Information Technology",
+      "equalWeight": "5.00%",
+      "convictionWeight": "1.40%",
+      "rawConvictionWeight": 1.4,
+      "totalValue": "2.27B",
+      "holderCount": 4,
+      "backingFunds": [
+        "Berkshire Hathaway",
+        "Soros Fund Management",
+        "Soros Fund Management",
+        "Bridgewater Associates, LP"
+      ],
+      "mainAction": "Net Buy"
+    },
+    {
+      "ticker": "META",
+      "name": "META PLATFORMS INC",
+      "sector": "Communication Services",
+      "equalWeight": "5.00%",
+      "convictionWeight": "1.25%",
+      "rawConvictionWeight": 1.25,
+      "totalValue": "2.04B",
+      "holderCount": 4,
+      "backingFunds": [
+        "Tiger Global Management LLC",
+        "Bridgewater Associates, LP",
+        "ARK Investment Management LLC",
+        "Soros Fund Management"
+      ],
+      "mainAction": "Net Buy"
+    },
+    {
+      "ticker": "BROAD",
+      "name": "BROADCOM INC",
+      "sector": "Information Technology",
+      "equalWeight": "5.00%",
+      "convictionWeight": "1.14%",
+      "rawConvictionWeight": 1.14,
+      "totalValue": "1.85B",
+      "holderCount": 4,
+      "backingFunds": [
+        "Tiger Global Management LLC",
+        "Bridgewater Associates, LP",
+        "ARK Investment Management LLC",
+        "Soros Fund Management"
+      ],
+      "mainAction": "Net Buy"
+    }
+  ]
+}

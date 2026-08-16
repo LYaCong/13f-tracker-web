@@ -2,47 +2,53 @@
   "institution": {
     "id": "pershing",
     "name": "Pershing Square Capital Management, L.P.",
-    "cik": "0001336528",
+    "cik": "0002026053",
     "manager": "Bill Ackman",
     "style": "Activist",
     "imageUrl": "https://images.unsplash.com/photo-1566492031523-87d28ebd9cb0?q=80&w=200&h=200&fit=crop",
-    "aum": "15.53B",
+    "aum": "0.72",
     "quarter": "2025 Q4",
-    "holdingsCount": 11,
-    "displayedHoldingsCount": 11,
+    "holdingsCount": 1,
+    "displayedHoldingsCount": 1,
     "reportDate": "2025-12-31",
-    "latestFilingDate": "2026-02-17"
+    "latestFilingDate": "2026-02-17",
+    "totalBought": "$0.00B",
+    "totalSold": "$0.00B",
+    "netCapitalFlow": "+$0.00B",
+    "turnoverRate": "0.0%",
+    "cashReserves": {
+      "amount": "$1.60B",
+      "delta": "+$0.50B",
+      "source": "Parent 10-Q/13F Model"
+    }
   },
-  "snapshotNote": "Bundled static snapshot for 2025 Q4. Full position count is 11; holdings table stores the top 11.",
+  "snapshotNote": "Extracted from official SEC 13F-HR filing accession 0001172661-26-001095",
   "classificationSummary": {
-    "schema": "GICS-style sector mapping",
-    "asOf": "2026-05-19",
+    "schema": "GICS-style Local Mapping",
+    "asOf": "2025-12-31",
     "matchingPriority": [
-      "cusip",
-      "ticker"
+      "CUSIP exact match",
+      "Ticker exact match",
+      "Unclassified"
     ],
     "unmatchedSector": "Unclassified",
-    "holdingsClassifiedCount": 6,
-    "holdingsUnclassifiedCount": 5,
-    "classifiedWeight": 60.97,
-    "unclassifiedWeight": 39.03,
+    "holdingsClassifiedCount": 0,
+    "holdingsUnclassifiedCount": 1,
+    "classifiedWeight": 0,
+    "unclassifiedWeight": 100,
     "sectorWeightTotal": 100,
     "sources": [
       {
-        "name": "Wikipedia List of S&P 500 companies - GICS Sector column",
-        "url": "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
-      },
-      {
-        "name": "State Street SPY holdings daily XLSX - ticker and CUSIP identifiers",
-        "url": "https://www.ssga.com/us/en/intermediary/etfs/library-content/products/fund-data/etfs/us/holdings-daily-us-en-spy.xlsx"
+        "name": "SEC EDGAR",
+        "url": "https://www.sec.gov/edgar/browse/?CIK=0002026053"
       }
     ],
     "benchmark": {
-      "name": "S&P 500 sector benchmark",
+      "name": "S&P 500 ETF Proxy",
       "methodology": "ETF holdings proxy aggregated by published SPY fund sector breakdown",
       "asOf": "2026-05-19",
-      "sourceName": "State Street SPDR S&P 500 ETF Trust (SPY) Fund Sector Breakdown",
-      "sourceUrl": "https://www.ssga.com/us/en/intermediary/etfs/spdr-sp-500-etf-trust-spy"
+      "sourceName": "SPDR S&P 500 ETF Trust (SPY)",
+      "sourceUrl": "https://www.ssga.com"
     }
   },
   "sectorWeights": [
@@ -63,17 +69,17 @@
     },
     {
       "sector": "Consumer Discretionary",
-      "weight": 19.89,
+      "weight": 0,
       "benchmarkWeight": 9.55
     },
     {
       "sector": "Communication Services",
-      "weight": 25.19,
+      "weight": 0,
       "benchmarkWeight": 10.77
     },
     {
       "sector": "Industrials",
-      "weight": 15.9,
+      "weight": 0,
       "benchmarkWeight": 8.34
     },
     {
@@ -103,7 +109,7 @@
     },
     {
       "sector": "Unclassified",
-      "weight": 39.03,
+      "weight": 100,
       "benchmarkWeight": 0
     }
   ],
@@ -111,324 +117,193 @@
     {
       "subject": "Information Technology",
       "A": 0,
-      "B": 37,
+      "B": 37.02,
       "fullMark": 100
     },
     {
       "subject": "Financials",
       "A": 0,
-      "B": 11.5,
+      "B": 11.54,
       "fullMark": 100
     },
     {
       "subject": "Health Care",
       "A": 0,
-      "B": 8.4,
+      "B": 8.43,
       "fullMark": 100
     },
     {
       "subject": "Consumer Discretionary",
-      "A": 19.9,
-      "B": 9.6,
+      "A": 0,
+      "B": 9.55,
       "fullMark": 100
     },
     {
       "subject": "Communication Services",
-      "A": 25.2,
-      "B": 10.8,
+      "A": 0,
+      "B": 10.77,
       "fullMark": 100
     },
     {
       "subject": "Industrials",
-      "A": 15.9,
-      "B": 8.3,
-      "fullMark": 100
-    },
-    {
-      "subject": "Consumer Staples",
       "A": 0,
-      "B": 5,
-      "fullMark": 100
-    },
-    {
-      "subject": "Energy",
-      "A": 0,
-      "B": 3.5,
-      "fullMark": 100
-    },
-    {
-      "subject": "Utilities",
-      "A": 0,
-      "B": 2.2,
-      "fullMark": 100
-    },
-    {
-      "subject": "Real Estate",
-      "A": 0,
-      "B": 1.9,
-      "fullMark": 100
-    },
-    {
-      "subject": "Materials",
-      "A": 0,
-      "B": 1.8,
-      "fullMark": 100
-    },
-    {
-      "subject": "Unclassified",
-      "A": 39,
-      "B": 0,
+      "B": 8.34,
       "fullMark": 100
     }
   ],
   "assetTrend": [
     {
-      "year": "2022 Q2",
-      "value": "7.5"
-    },
-    {
-      "year": "2022 Q3",
-      "value": "7.9"
-    },
-    {
-      "year": "2022 Q4",
-      "value": "8.8"
-    },
-    {
-      "year": "2023 Q1",
-      "value": "10.2"
-    },
-    {
-      "year": "2023 Q2",
-      "value": "10.8"
-    },
-    {
-      "year": "2023 Q3",
-      "value": "10.5"
-    },
-    {
-      "year": "2023 Q4",
-      "value": "10.4"
-    },
-    {
-      "year": "2024 Q1",
-      "value": "10.8"
-    },
-    {
-      "year": "2024 Q2",
-      "value": "10.4"
-    },
-    {
-      "year": "2024 Q3",
-      "value": "12.9"
-    },
-    {
-      "year": "2024 Q4",
-      "value": "12.6"
-    },
-    {
-      "year": "2025 Q1",
-      "value": "11.9"
-    },
-    {
       "year": "2025 Q2",
-      "value": "13.7"
+      "value": "0.7"
     },
     {
       "year": "2025 Q3",
-      "value": "14.6"
+      "value": "0.8"
     },
     {
       "year": "2025 Q4",
-      "value": "15.5"
+      "value": "0.7",
+      "rawValue": 717930000
+    },
+    {
+      "year": "2026 Q1",
+      "value": "0.8"
+    },
+    {
+      "year": "2026 Q2",
+      "value": "0.6"
     }
   ],
+  "sectorHistory": [
+    {
+      "quarter": "2025 Q3",
+      "Information Technology": 0,
+      "Financials": 0,
+      "Health Care": 0,
+      "Consumer Discretionary": 0,
+      "Communication Services": 0,
+      "Industrials": 0,
+      "Consumer Staples": 0,
+      "Energy": 0,
+      "Utilities": 0,
+      "Real Estate": 0,
+      "Materials": 0,
+      "Unclassified": 86
+    },
+    {
+      "quarter": "2025 Q4",
+      "Information Technology": 0,
+      "Financials": 0,
+      "Health Care": 0,
+      "Consumer Discretionary": 0,
+      "Communication Services": 0,
+      "Industrials": 0,
+      "Consumer Staples": 0,
+      "Energy": 0,
+      "Utilities": 0,
+      "Real Estate": 0,
+      "Materials": 0,
+      "Unclassified": 100
+    },
+    {
+      "quarter": "2026 Q1",
+      "Information Technology": 0,
+      "Financials": 0,
+      "Health Care": 0,
+      "Consumer Discretionary": 0,
+      "Communication Services": 0,
+      "Industrials": 0,
+      "Consumer Staples": 0,
+      "Energy": 0,
+      "Utilities": 0,
+      "Real Estate": 0,
+      "Materials": 0,
+      "Unclassified": 102
+    },
+    {
+      "quarter": "2025 Q4",
+      "Information Technology": 0,
+      "Financials": 0,
+      "Health Care": 0,
+      "Consumer Discretionary": 0,
+      "Communication Services": 0,
+      "Industrials": 0,
+      "Consumer Staples": 0,
+      "Energy": 0,
+      "Utilities": 0,
+      "Real Estate": 0,
+      "Materials": 0,
+      "Unclassified": 100
+    }
+  ],
+  "capitalFlow": {
+    "totalBought": "$0.00B",
+    "rawTotalBought": 0,
+    "totalSold": "$0.00B",
+    "rawTotalSold": 0,
+    "netCapitalFlow": "+$0.00B",
+    "rawNetCapitalFlow": 0,
+    "turnoverRate": "0.0%",
+    "sankey": {
+      "nodes": [
+        {
+          "name": "Capital Liquidity Pool"
+        }
+      ],
+      "links": []
+    }
+  },
+  "cashReserves": {
+    "amount": "$1.60B",
+    "delta": "+$0.50B",
+    "source": "Parent 10-Q/13F Model"
+  },
   "holdings": [
     {
-      "cusip": "11271J107",
-      "security": "BROOKFIELD CORP (BROOK)",
-      "weight": 18.147970230018572,
-      "rawMktValue": 2817787754,
-      "mktValue": "2.82B",
-      "qOqDelta": "+0.00B",
+      "cusip": "44267T102",
+      "ticker": "HOWAR",
+      "security": "HOWARD HUGHES HOLDINGS INC (HOWAR)",
+      "name": "HOWARD HUGHES HOLDINGS INC",
       "sector": "Unclassified",
+      "weight": 100,
+      "prevWeight": 100,
+      "weightChange": 0,
+      "weightChangeText": "0.00%",
+      "shares": 9000000,
+      "sharesFormatted": "9.00M",
+      "shareChangePct": 0,
+      "shareChangeText": "0.0%",
+      "action": "Hold",
+      "rawMktValue": 717930000,
+      "mktValue": "0.72",
+      "rawDelta": -21600000,
+      "qOqDelta": "-0.02B",
       "color": "#3b82f6"
-    },
-    {
-      "cusip": "90353T100",
-      "security": "UBER TECHNOLOGIES INC (UBER)",
-      "weight": 15.896925525992081,
-      "rawMktValue": 2468273945,
-      "mktValue": "2.47B",
-      "qOqDelta": "-0.50B",
-      "sector": "Industrials",
-      "color": "#1d4ed8"
-    },
-    {
-      "cusip": "023135106",
-      "security": "AMAZON COM INC (AMZN)",
-      "weight": 14.282961200738129,
-      "rawMktValue": 2217677936,
-      "mktValue": "2.22B",
-      "qOqDelta": "+0.94B",
-      "sector": "Consumer Discretionary",
-      "color": "#2dd4bf"
-    },
-    {
-      "cusip": "02079K107",
-      "security": "ALPHABET INC (GOOG)",
-      "weight": 12.45736705717316,
-      "rawMktValue": 1934222720,
-      "mktValue": "1.93B",
-      "qOqDelta": "+0.39B",
-      "sector": "Communication Services",
-      "color": "#a855f7"
-    },
-    {
-      "cusip": "30303M102",
-      "security": "META PLATFORMS INC (META)",
-      "weight": 11.366174810865141,
-      "rawMktValue": 1764796161,
-      "mktValue": "1.76B",
-      "qOqDelta": "+1.76B",
-      "sector": "Communication Services",
-      "color": "#22c55e"
-    },
-    {
-      "cusip": "76131D103",
-      "security": "RESTAURANT BRANDS INTL INC (RE",
-      "weight": 10.048472138165627,
-      "rawMktValue": 1560199922,
-      "mktValue": "1.56B",
-      "qOqDelta": "+0.09B",
-      "sector": "Unclassified",
-      "color": "#ec4899"
-    },
+    }
+  ],
+  "allHoldings": [
     {
       "cusip": "44267T102",
-      "security": "HOWARD HUGHES HOLDINGS INC (HO",
-      "weight": 9.685415984845779,
-      "rawMktValue": 1503829145,
-      "mktValue": "1.50B",
-      "qOqDelta": "-0.05B",
+      "ticker": "HOWAR",
+      "security": "HOWARD HUGHES HOLDINGS INC (HOWAR)",
+      "name": "HOWARD HUGHES HOLDINGS INC",
       "sector": "Unclassified",
-      "color": "#10b981"
-    },
-    {
-      "cusip": "43300A203",
-      "security": "HILTON WORLDWIDE HLDGS INC (HI",
-      "weight": 5.603132770670845,
-      "rawMktValue": 869983734,
-      "mktValue": "0.87B",
-      "qOqDelta": "+0.08B",
-      "sector": "Consumer Discretionary",
-      "color": "#f97316"
-    },
-    {
-      "cusip": "02079K305",
-      "security": "ALPHABET INC (GOOGL)",
-      "weight": 1.3673636001804108,
-      "rawMktValue": 212306961,
-      "mktValue": "0.21B",
-      "qOqDelta": "-0.97B",
-      "sector": "Communication Services",
-      "color": "#1e3a8a"
-    },
-    {
-      "cusip": "812215200",
-      "security": "SEAPORT ENTMT GROUP INC (SEAPO",
-      "weight": 0.6396715927489068,
-      "rawMktValue": 99320131,
-      "mktValue": "0.10B",
+      "weight": 100,
+      "prevWeight": 100,
+      "weightChange": 0,
+      "weightChangeText": "0.00%",
+      "shares": 9000000,
+      "sharesFormatted": "9.00M",
+      "shareChangePct": 0,
+      "shareChangeText": "0.0%",
+      "action": "Hold",
+      "rawMktValue": 717930000,
+      "mktValue": "0.72",
+      "rawDelta": -21600000,
       "qOqDelta": "-0.02B",
-      "sector": "Unclassified",
-      "color": "#312e81"
-    },
-    {
-      "cusip": "42806J700",
-      "security": "HERTZ GLOBAL HLDGS INC (HERTZ)",
-      "weight": 0.5045450886013486,
-      "rawMktValue": 78339393,
-      "mktValue": "0.08B",
-      "qOqDelta": "-0.03B",
-      "sector": "Unclassified",
       "color": "#3b82f6"
     }
   ],
-  "topAdds": [
-    {
-      "ticker": "META",
-      "security": "META PLATFORMS INC",
-      "deltaValue": "+1.76B",
-      "rawDelta": 1764796161,
-      "shareChange": "+100.0%",
-      "newWeight": "11.37%",
-      "type": "New"
-    },
-    {
-      "ticker": "AMZN",
-      "security": "AMAZON COM INC",
-      "deltaValue": "+0.94B",
-      "rawDelta": 939052442,
-      "shareChange": "+65.0%",
-      "newWeight": "14.28%",
-      "type": "Add"
-    },
-    {
-      "ticker": "BROOK",
-      "security": "BROOKFIELD CORP",
-      "deltaValue": "+0.00B",
-      "rawDelta": 4620312,
-      "shareChange": "+49.7%",
-      "newWeight": "18.15%",
-      "type": "Add"
-    }
-  ],
-  "topTrims": [
-    {
-      "ticker": "GOOGL",
-      "security": "ALPHABET INC",
-      "deltaValue": "-0.97B",
-      "rawDelta": 965262875,
-      "shareChange": "-86.0%",
-      "newWeight": "1.37%",
-      "type": "Trim"
-    },
-    {
-      "ticker": "CHIPO",
-      "security": "CHIPOTLE MEXICAN GRI",
-      "deltaValue": "-0.84B",
-      "rawDelta": 844198727,
-      "shareChange": "-100.0%",
-      "newWeight": "0.00%",
-      "type": "Exit"
-    },
-    {
-      "ticker": "UBER",
-      "security": "UBER TECHNOLOGIES IN",
-      "deltaValue": "-0.50B",
-      "rawDelta": 497328703,
-      "shareChange": "-0.2%",
-      "newWeight": "15.90%",
-      "type": "Trim"
-    },
-    {
-      "ticker": "GOOG",
-      "security": "ALPHABET INC",
-      "deltaValue": "-0.39B",
-      "rawDelta": 394004970,
-      "shareChange": "-2.5%",
-      "newWeight": "12.46%",
-      "type": "Trim"
-    },
-    {
-      "ticker": "RESTA",
-      "security": "RESTAURANT BRANDS IN",
-      "deltaValue": "-0.09B",
-      "rawDelta": 90400009,
-      "shareChange": "-0.2%",
-      "newWeight": "10.05%",
-      "type": "Trim"
-    }
-  ]
+  "topAdds": [],
+  "topTrims": []
 }

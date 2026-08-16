@@ -39,7 +39,7 @@
   {
     "ticker": "KO",
     "heat": 51,
-    "avgWeight": "5.14%",
+    "avgWeight": "5.13%",
     "value": "27.98B",
     "instCount": 2,
     "holdingInstitutions": [
@@ -113,7 +113,7 @@
   {
     "ticker": "V",
     "heat": 95,
-    "avgWeight": "6.64%",
+    "avgWeight": "6.63%",
     "value": "12.83B",
     "instCount": 3,
     "holdingInstitutions": [
@@ -148,14 +148,13 @@
   {
     "ticker": "GOOGL",
     "heat": 100,
-    "avgWeight": "6.72%",
-    "value": "10.59B",
-    "instCount": 6,
+    "avgWeight": "7.94%",
+    "value": "10.41B",
+    "instCount": 5,
     "holdingInstitutions": [
       "berkshire",
       "tiger",
       "bridgewater",
-      "pershing",
       "soros",
       "himalaya"
     ]
@@ -170,21 +169,6 @@
       "berkshire",
       "gates",
       "bridgewater"
-    ]
-  },
-  {
-    "ticker": "AMZN",
-    "heat": 100,
-    "avgWeight": "5.48%",
-    "value": "6.40B",
-    "instCount": 6,
-    "holdingInstitutions": [
-      "berkshire",
-      "tiger",
-      "bridgewater",
-      "pershing",
-      "ark",
-      "soros"
     ]
   },
   {
@@ -221,28 +205,42 @@
     ]
   },
   {
-    "ticker": "GOOG",
-    "heat": 100,
-    "avgWeight": "8.73%",
-    "value": "5.87B",
-    "instCount": 5,
-    "holdingInstitutions": [
-      "tci",
-      "hh",
-      "pershing",
-      "ark",
-      "himalaya"
-    ]
-  },
-  {
     "ticker": "TMUS",
     "heat": 100,
-    "avgWeight": "18.79%",
+    "avgWeight": "18.80%",
     "value": "5.83B",
     "instCount": 2,
     "holdingInstitutions": [
       "bridgewater",
       "softbank"
+    ]
+  },
+  {
+    "ticker": "NVDA",
+    "heat": 100,
+    "avgWeight": "3.79%",
+    "value": "5.04B",
+    "instCount": 6,
+    "holdingInstitutions": [
+      "tiger",
+      "bridgewater",
+      "elliott",
+      "hh",
+      "ark",
+      "soros"
+    ]
+  },
+  {
+    "ticker": "ISHAR",
+    "heat": 91,
+    "avgWeight": "4.48%",
+    "value": "4.54B",
+    "instCount": 4,
+    "holdingInstitutions": [
+      "bridgewater",
+      "elliott",
+      "ark",
+      "soros"
     ]
   }
 ]

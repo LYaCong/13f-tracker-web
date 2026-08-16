@@ -51,15 +51,14 @@
   {
     "ticker": "GOOGL",
     "heat": 100,
-    "avgWeight": "6.88%",
-    "value": "20.84B",
-    "instCount": 7,
+    "avgWeight": "8.02%",
+    "value": "20.83B",
+    "instCount": 6,
     "holdingInstitutions": [
       "berkshire",
       "tci",
       "tiger",
       "bridgewater",
-      "pershing",
       "soros",
       "himalaya"
     ]
@@ -78,7 +77,7 @@
   },
   {
     "ticker": "CVX",
-    "heat": 35,
+    "heat": 36,
     "avgWeight": "3.32%",
     "value": "17.46B",
     "instCount": 2,
@@ -182,20 +181,6 @@
     ]
   },
   {
-    "ticker": "AMZN",
-    "heat": 100,
-    "avgWeight": "7.45%",
-    "value": "6.07B",
-    "instCount": 5,
-    "holdingInstitutions": [
-      "tiger",
-      "bridgewater",
-      "pershing",
-      "ark",
-      "soros"
-    ]
-  },
-  {
     "ticker": "S",
     "heat": 79,
     "avgWeight": "3.74%",
@@ -205,22 +190,6 @@
       "tci",
       "bridgewater",
       "soros",
-      "himalaya"
-    ]
-  },
-  {
-    "ticker": "GOOG",
-    "heat": 100,
-    "avgWeight": "5.15%",
-    "value": "5.74B",
-    "instCount": 7,
-    "holdingInstitutions": [
-      "berkshire",
-      "tci",
-      "bridgewater",
-      "hh",
-      "pershing",
-      "ark",
       "himalaya"
     ]
   },
@@ -239,19 +208,40 @@
     ]
   },
   {
-    "ticker": "MSFT",
+    "ticker": "GOOG",
     "heat": 100,
-    "avgWeight": "3.73%",
-    "value": "4.89B",
-    "instCount": 7,
+    "avgWeight": "5.90%",
+    "value": "5.65B",
+    "instCount": 6,
     "holdingInstitutions": [
+      "berkshire",
       "tci",
-      "tiger",
       "bridgewater",
       "hh",
-      "pershing",
       "ark",
-      "soros"
+      "himalaya"
+    ]
+  },
+  {
+    "ticker": "DVA",
+    "heat": 15,
+    "avgWeight": "0.89%",
+    "value": "4.63B",
+    "instCount": 2,
+    "holdingInstitutions": [
+      "berkshire",
+      "bridgewater"
+    ]
+  },
+  {
+    "ticker": "TRIPL",
+    "heat": 100,
+    "avgWeight": "11.49%",
+    "value": "4.63B",
+    "instCount": 2,
+    "holdingInstitutions": [
+      "bridgewater",
+      "elliott"
     ]
   }
 ]

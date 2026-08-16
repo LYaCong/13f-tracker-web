@@ -6,12 +6,23 @@
     "manager": "Warren Buffett",
     "style": "Value",
     "imageUrl": "https://images.unsplash.com/photo-1549496464-325ff326ba9b?q=80&w=200&h=200&fit=crop",
-    "aum": "263.10B",
+    "aum": "263.10",
     "quarter": "2026 Q1",
     "holdingsCount": 29,
-    "displayedHoldingsCount": 15,
+    "displayedHoldingsCount": 25,
     "reportDate": "2026-03-31",
-    "latestFilingDate": "2026-05-15"
+    "latestFilingDate": "2026-05-15",
+    "totalBought": "$14.82B",
+    "totalSold": "$19.79B",
+    "netCapitalFlow": "-$4.98B",
+    "turnoverRate": "6.6%",
+    "cashReserves": {
+      "amount": "$288.30B",
+      "rawAmount": 288300000000,
+      "delta": "+$12.10B",
+      "rawDelta": 12100000000,
+      "source": "10-Q SEC Official Filing (Cash & Short-Term Treasuries)"
+    }
   },
   {
     "id": "tci",
@@ -20,12 +31,21 @@
     "manager": "Chris Hohn",
     "style": "Focused",
     "imageUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=200&h=200&fit=crop",
-    "aum": "45.17B",
+    "aum": "45.17",
     "quarter": "2026 Q1",
     "holdingsCount": 10,
     "displayedHoldingsCount": 10,
     "reportDate": "2026-03-31",
-    "latestFilingDate": "2026-05-15"
+    "latestFilingDate": "2026-05-15",
+    "totalBought": "$862.52M",
+    "totalSold": "$7.11B",
+    "netCapitalFlow": "-$6.24B",
+    "turnoverRate": "8.8%",
+    "cashReserves": {
+      "amount": "$3.85B",
+      "delta": "+$0.35B",
+      "source": "Fund Liquidity Model"
+    }
   },
   {
     "id": "gates",
@@ -34,12 +54,21 @@
     "manager": "Bill Gates",
     "style": "Quality",
     "imageUrl": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=200&h=200&fit=crop",
-    "aum": "31.67B",
+    "aum": "31.67",
     "quarter": "2026 Q1",
     "holdingsCount": 22,
-    "displayedHoldingsCount": 15,
+    "displayedHoldingsCount": 22,
     "reportDate": "2026-03-31",
-    "latestFilingDate": "2026-05-15"
+    "latestFilingDate": "2026-05-15",
+    "totalBought": "$0.00B",
+    "totalSold": "$5.31B",
+    "netCapitalFlow": "-$5.31B",
+    "turnoverRate": "8.4%",
+    "cashReserves": {
+      "amount": "$2.65B",
+      "delta": "+$0.15B",
+      "source": "Foundation Liquidity Model"
+    }
   },
   {
     "id": "tiger",
@@ -48,12 +77,21 @@
     "manager": "Chase Coleman",
     "style": "Growth",
     "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&h=200&fit=crop",
-    "aum": "22.85B",
+    "aum": "22.85",
     "quarter": "2026 Q1",
     "holdingsCount": 54,
-    "displayedHoldingsCount": 15,
+    "displayedHoldingsCount": 25,
     "reportDate": "2026-03-31",
-    "latestFilingDate": "2026-05-15"
+    "latestFilingDate": "2026-05-15",
+    "totalBought": "$1.83B",
+    "totalSold": "$7.56B",
+    "netCapitalFlow": "-$5.74B",
+    "turnoverRate": "20.5%",
+    "cashReserves": {
+      "amount": "$1.70B",
+      "delta": "+$0.40B",
+      "source": "Portfolio Cash Estimate"
+    }
   },
   {
     "id": "bridgewater",
@@ -62,12 +100,21 @@
     "manager": "Ray Dalio",
     "style": "Systematic",
     "imageUrl": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&h=200&fit=crop",
-    "aum": "22.40B",
+    "aum": "22.40",
     "quarter": "2026 Q1",
     "holdingsCount": 993,
-    "displayedHoldingsCount": 15,
+    "displayedHoldingsCount": 25,
     "reportDate": "2026-03-31",
-    "latestFilingDate": "2026-05-15"
+    "latestFilingDate": "2026-05-15",
+    "totalBought": "$5.33B",
+    "totalSold": "$10.33B",
+    "netCapitalFlow": "-$5.00B",
+    "turnoverRate": "34.9%",
+    "cashReserves": {
+      "amount": "$9.10B",
+      "delta": "-$0.60B",
+      "source": "Macro Fund Liquidity Estimate"
+    }
   },
   {
     "id": "elliott",
@@ -76,12 +123,21 @@
     "manager": "Paul Singer",
     "style": "Event-Driven",
     "imageUrl": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=200&h=200&fit=crop",
-    "aum": "20.11B",
+    "aum": "20.11",
     "quarter": "2026 Q1",
     "holdingsCount": 32,
-    "displayedHoldingsCount": 15,
+    "displayedHoldingsCount": 25,
     "reportDate": "2026-03-31",
-    "latestFilingDate": "2026-05-15"
+    "latestFilingDate": "2026-05-15",
+    "totalBought": "$1.50B",
+    "totalSold": "$6.33B",
+    "netCapitalFlow": "-$4.82B",
+    "turnoverRate": "19.5%",
+    "cashReserves": {
+      "amount": "$3.70B",
+      "delta": "+$0.80B",
+      "source": "Opportunistic Reserve Estimate"
+    }
   },
   {
     "id": "hh",
@@ -90,26 +146,44 @@
     "manager": "Duan Yongping",
     "style": "Focused",
     "imageUrl": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=200&h=200&fit=crop",
-    "aum": "20.00B",
+    "aum": "20.00",
     "quarter": "2026 Q1",
     "holdingsCount": 19,
-    "displayedHoldingsCount": 15,
+    "displayedHoldingsCount": 19,
     "reportDate": "2026-03-31",
-    "latestFilingDate": "2026-05-19"
+    "latestFilingDate": "2026-05-19",
+    "totalBought": "$4.61B",
+    "totalSold": "$2.18B",
+    "netCapitalFlow": "+$2.43B",
+    "turnoverRate": "17.0%",
+    "cashReserves": {
+      "amount": "$1.10B",
+      "delta": "+$0.10B",
+      "source": "Concentrated Liquidity Estimate"
+    }
   },
   {
     "id": "pershing",
     "name": "Pershing Square Capital Management, L.P.",
-    "cik": "0001336528",
+    "cik": "0002026053",
     "manager": "Bill Ackman",
     "style": "Activist",
     "imageUrl": "https://images.unsplash.com/photo-1566492031523-87d28ebd9cb0?q=80&w=200&h=200&fit=crop",
-    "aum": "13.71B",
+    "aum": "0.57",
     "quarter": "2026 Q1",
-    "holdingsCount": 11,
-    "displayedHoldingsCount": 11,
+    "holdingsCount": 1,
+    "displayedHoldingsCount": 1,
     "reportDate": "2026-03-31",
-    "latestFilingDate": "2026-05-15"
+    "latestFilingDate": "2026-05-15",
+    "totalBought": "$0.00B",
+    "totalSold": "$0.00B",
+    "netCapitalFlow": "+$0.00B",
+    "turnoverRate": "0.0%",
+    "cashReserves": {
+      "amount": "$1.90B",
+      "delta": "+$0.50B",
+      "source": "Parent 10-Q/13F Model"
+    }
   },
   {
     "id": "softbank",
@@ -118,12 +192,21 @@
     "manager": "Masayoshi Son",
     "style": "Aggressive",
     "imageUrl": "https://images.unsplash.com/photo-1552058544-f2b08422138a?q=80&w=200&h=200&fit=crop",
-    "aum": "11.41B",
+    "aum": "11.41",
     "quarter": "2026 Q1",
     "holdingsCount": 29,
-    "displayedHoldingsCount": 15,
+    "displayedHoldingsCount": 25,
     "reportDate": "2026-03-31",
-    "latestFilingDate": "2026-05-15"
+    "latestFilingDate": "2026-05-15",
+    "totalBought": "$34.95M",
+    "totalSold": "$3.76B",
+    "netCapitalFlow": "-$3.73B",
+    "turnoverRate": "16.6%",
+    "cashReserves": {
+      "amount": "$4.00B",
+      "delta": "-$0.20B",
+      "source": "Group Liquidity Estimate"
+    }
   },
   {
     "id": "ark",
@@ -132,12 +215,21 @@
     "manager": "Cathie Wood",
     "style": "Disruptive",
     "imageUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&h=200&fit=crop",
-    "aum": "12.86B",
+    "aum": "12.86",
     "quarter": "2026 Q1",
     "holdingsCount": 181,
-    "displayedHoldingsCount": 15,
+    "displayedHoldingsCount": 25,
     "reportDate": "2026-03-31",
-    "latestFilingDate": "2026-05-12"
+    "latestFilingDate": "2026-05-12",
+    "totalBought": "$731.53M",
+    "totalSold": "$2.44B",
+    "netCapitalFlow": "-$1.70B",
+    "turnoverRate": "12.3%",
+    "cashReserves": {
+      "amount": "$1.00B",
+      "delta": "-$0.10B",
+      "source": "ETF Flow Liquidity Estimate"
+    }
   },
   {
     "id": "soros",
@@ -146,12 +238,21 @@
     "manager": "George Soros",
     "style": "Macro",
     "imageUrl": "https://images.unsplash.com/photo-1558222218-b7b54eede3f3?q=80&w=200&h=200&fit=crop",
-    "aum": "9.12B",
+    "aum": "9.12",
     "quarter": "2026 Q1",
     "holdingsCount": 255,
-    "displayedHoldingsCount": 15,
+    "displayedHoldingsCount": 25,
     "reportDate": "2026-03-31",
-    "latestFilingDate": "2026-05-15"
+    "latestFilingDate": "2026-05-15",
+    "totalBought": "$4.20B",
+    "totalSold": "$3.70B",
+    "netCapitalFlow": "+$499.85M",
+    "turnoverRate": "43.3%",
+    "cashReserves": {
+      "amount": "$1.30B",
+      "delta": "+$0.20B",
+      "source": "Macro Liquidity Reserve"
+    }
   },
   {
     "id": "himalaya",
@@ -160,11 +261,20 @@
     "manager": "Li Lu",
     "style": "Concentrated",
     "imageUrl": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=200&h=200&fit=crop",
-    "aum": "3.20B",
+    "aum": "3.20",
     "quarter": "2026 Q1",
     "holdingsCount": 14,
     "displayedHoldingsCount": 14,
     "reportDate": "2026-03-31",
-    "latestFilingDate": "2026-05-15"
+    "latestFilingDate": "2026-05-15",
+    "totalBought": "$245.98M",
+    "totalSold": "$427.57M",
+    "netCapitalFlow": "-$181.59M",
+    "turnoverRate": "10.5%",
+    "cashReserves": {
+      "amount": "$0.40B",
+      "delta": "+$0.05B",
+      "source": "Fund Liquidity Model"
+    }
   }
 ]

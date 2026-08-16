@@ -27,8 +27,8 @@
       "sector": "Financials",
       "buyerCount": 7,
       "totalBoughtVal": 159880342,
-      "totalBoughtFormatted": "0.16B",
-      "totalValueFormatted": "0.22B",
+      "totalBoughtFormatted": "159.88M",
+      "totalValueFormatted": "220.20M",
       "buyers": [
         "Bridgewater Associates, LP",
         "Bridgewater Associates, LP",
@@ -61,8 +61,8 @@
       "sector": "Unclassified",
       "buyerCount": 5,
       "totalBoughtVal": 53843258,
-      "totalBoughtFormatted": "0.05B",
-      "totalValueFormatted": "0.12B",
+      "totalBoughtFormatted": "53.84M",
+      "totalValueFormatted": "115.38M",
       "buyers": [
         "Bridgewater Associates, LP",
         "Bridgewater Associates, LP",
@@ -107,7 +107,7 @@
       "sector": "Financials",
       "buyerCount": 4,
       "totalBoughtVal": 880147686,
-      "totalBoughtFormatted": "0.88B",
+      "totalBoughtFormatted": "880.15M",
       "totalValueFormatted": "6.87B",
       "buyers": [
         "TCI Fund Management Ltd",
@@ -122,7 +122,7 @@
       "sector": "Information Technology",
       "buyerCount": 4,
       "totalBoughtVal": 639498267,
-      "totalBoughtFormatted": "0.64B",
+      "totalBoughtFormatted": "639.50M",
       "totalValueFormatted": "13.04B",
       "buyers": [
         "Tiger Global Management LLC",
@@ -137,7 +137,7 @@
       "sector": "Industrials",
       "buyerCount": 4,
       "totalBoughtVal": 93433009,
-      "totalBoughtFormatted": "0.09B",
+      "totalBoughtFormatted": "93.43M",
       "totalValueFormatted": "1.37B",
       "buyers": [
         "Bridgewater Associates, LP",
@@ -152,8 +152,8 @@
       "sector": "Unclassified",
       "buyerCount": 4,
       "totalBoughtVal": 85338098,
-      "totalBoughtFormatted": "0.09B",
-      "totalValueFormatted": "0.09B",
+      "totalBoughtFormatted": "85.34M",
+      "totalValueFormatted": "85.34M",
       "buyers": [
         "ARK Investment Management LLC",
         "ARK Investment Management LLC",
@@ -202,7 +202,7 @@
       "sector": "Information Technology",
       "sellerCount": 5,
       "totalSoldVal": 318359726,
-      "totalSoldFormatted": "0.32B",
+      "totalSoldFormatted": "318.36M",
       "totalValueFormatted": "3.78B",
       "sellers": [
         "Tiger Global Management LLC",
@@ -218,7 +218,7 @@
       "sector": "Information Technology",
       "sellerCount": 4,
       "totalSoldVal": 327255619,
-      "totalSoldFormatted": "0.33B",
+      "totalSoldFormatted": "327.26M",
       "totalValueFormatted": "1.61B",
       "sellers": [
         "Bridgewater Associates, LP",
@@ -233,7 +233,7 @@
       "sector": "Unclassified",
       "sellerCount": 4,
       "totalSoldVal": 133300114,
-      "totalSoldFormatted": "0.13B",
+      "totalSoldFormatted": "133.30M",
       "totalValueFormatted": "5.25B",
       "sellers": [
         "Bridgewater Associates, LP",
@@ -248,8 +248,8 @@
       "sector": "Unclassified",
       "sellerCount": 4,
       "totalSoldVal": 32419440,
-      "totalSoldFormatted": "0.03B",
-      "totalValueFormatted": "0.36B",
+      "totalSoldFormatted": "32.42M",
+      "totalValueFormatted": "364.18M",
       "sellers": [
         "Bridgewater Associates, LP",
         "Bridgewater Associates, LP",
@@ -263,8 +263,8 @@
       "sector": "Unclassified",
       "sellerCount": 4,
       "totalSoldVal": 10047129,
-      "totalSoldFormatted": "0.01B",
-      "totalValueFormatted": "0.12B",
+      "totalSoldFormatted": "10.05M",
+      "totalValueFormatted": "115.38M",
       "sellers": [
         "Bridgewater Associates, LP",
         "Bridgewater Associates, LP",
@@ -278,8 +278,8 @@
       "sector": "Unclassified",
       "sellerCount": 4,
       "totalSoldVal": 4033398,
-      "totalSoldFormatted": "0.00B",
-      "totalValueFormatted": "0.00B",
+      "totalSoldFormatted": "4.03M",
+      "totalValueFormatted": "4.64M",
       "sellers": [
         "Bridgewater Associates, LP",
         "ARK Investment Management LLC",
@@ -307,7 +307,7 @@
       "sector": "Consumer Discretionary",
       "sellerCount": 3,
       "totalSoldVal": 779968425,
-      "totalSoldFormatted": "0.78B",
+      "totalSoldFormatted": "779.97M",
       "totalValueFormatted": "5.49B",
       "sellers": [
         "Tiger Global Management LLC",
@@ -350,7 +350,7 @@
       "name": "AMERICAN INTL GROUP INC",
       "sector": "Financials",
       "holdingCount": 10,
-      "totalValueFormatted": "0.22B",
+      "totalValueFormatted": "220.20M",
       "totalValue": 220198640,
       "avgWeight": "0.20%",
       "holders": [
@@ -371,7 +371,7 @@
       "name": "FIRST HORIZON CORPORATION",
       "sector": "Unclassified",
       "holdingCount": 10,
-      "totalValueFormatted": "0.12B",
+      "totalValueFormatted": "115.38M",
       "totalValue": 115382580,
       "avgWeight": "0.07%",
       "holders": [
@@ -392,7 +392,7 @@
       "name": "INTERNATIONAL BANCSHARES COR",
       "sector": "Unclassified",
       "holdingCount": 9,
-      "totalValueFormatted": "0.36B",
+      "totalValueFormatted": "364.18M",
       "totalValue": 364183465,
       "avgWeight": "0.23%",
       "holders": [
@@ -468,7 +468,7 @@
       "name": "GLOBAL X FDS",
       "sector": "Unclassified",
       "holdingCount": 7,
-      "totalValueFormatted": "0.32B",
+      "totalValueFormatted": "317.16M",
       "totalValue": 317156772,
       "avgWeight": "0.49%",
       "holders": [
@@ -525,7 +525,7 @@
       "manager": "Masayoshi Son",
       "weight": "66.81%",
       "rawWeight": 66.81,
-      "mktValue": "12.14B",
+      "mktValue": "12.14",
       "action": "Hold"
     },
     {
@@ -536,7 +536,7 @@
       "manager": "Duan Yongping",
       "weight": "41.05%",
       "rawWeight": 41.05,
-      "mktValue": "7.84B",
+      "mktValue": "7.84",
       "action": "Trim"
     },
     {
@@ -547,7 +547,7 @@
       "manager": "Chris Hohn",
       "weight": "33.59%",
       "rawWeight": 33.59,
-      "mktValue": "17.73B",
+      "mktValue": "17.73",
       "action": "Trim"
     },
     {
@@ -558,7 +558,7 @@
       "manager": "Li Lu",
       "weight": "24.55%",
       "rawWeight": 24.55,
-      "mktValue": "0.91B",
+      "mktValue": "0.91",
       "action": "Hold"
     },
     {
@@ -569,7 +569,7 @@
       "manager": "Duan Yongping",
       "weight": "24.18%",
       "rawWeight": 24.18,
-      "mktValue": "4.62B",
+      "mktValue": "4.62",
       "action": "Add"
     },
     {
@@ -580,7 +580,7 @@
       "manager": "Li Lu",
       "weight": "23.39%",
       "rawWeight": 23.39,
-      "mktValue": "0.87B",
+      "mktValue": "0.87",
       "action": "Hold"
     },
     {
@@ -591,7 +591,7 @@
       "manager": "Li Lu",
       "weight": "22.17%",
       "rawWeight": 22.17,
-      "mktValue": "0.82B",
+      "mktValue": "0.82",
       "action": "Add"
     },
     {
@@ -602,7 +602,7 @@
       "manager": "Warren Buffett",
       "weight": "22.04%",
       "rawWeight": 22.04,
-      "mktValue": "65.95B",
+      "mktValue": "65.95",
       "action": "Hold"
     },
     {
@@ -613,7 +613,7 @@
       "manager": "Bill Gates",
       "weight": "21.35%",
       "rawWeight": 21.35,
-      "mktValue": "7.35B",
+      "mktValue": "7.35",
       "action": "Trim"
     },
     {
@@ -624,7 +624,7 @@
       "manager": "Chris Hohn",
       "weight": "19.83%",
       "rawWeight": 19.83,
-      "mktValue": "10.46B",
+      "mktValue": "10.46",
       "action": "Add"
     },
     {
@@ -635,7 +635,7 @@
       "manager": "Bill Gates",
       "weight": "19.65%",
       "rawWeight": 19.65,
-      "mktValue": "6.77B",
+      "mktValue": "6.77",
       "action": "Hold"
     },
     {
@@ -646,7 +646,7 @@
       "manager": "Bill Gates",
       "weight": "17.95%",
       "rawWeight": 17.95,
-      "mktValue": "6.18B",
+      "mktValue": "6.18",
       "action": "Hold"
     }
   ]
