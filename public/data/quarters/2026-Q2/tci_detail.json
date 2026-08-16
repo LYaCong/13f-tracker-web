@@ -11,7 +11,18 @@
     "holdingsCount": 11,
     "displayedHoldingsCount": 11,
     "reportDate": "2026-06-30",
-    "latestFilingDate": "2026-08-14"
+    "latestFilingDate": "2026-08-14",
+    "totalBought": "3.81B",
+    "totalSold": "1.01B",
+    "netCapitalFlow": "+2.80B",
+    "turnoverRate": "4.6%",
+    "cashReserves": {
+      "amount": "$4.20B",
+      "rawAmount": 4200000000,
+      "delta": "+$0.35B",
+      "rawDelta": 350000000,
+      "source": "Fund Liquidity Model"
+    }
   },
   "snapshotNote": "Bundled static snapshot for 2026 Q2. Full position count is 11; holdings table stores the top 11.",
   "classificationSummary": {
@@ -184,175 +195,741 @@
   "assetTrend": [
     {
       "year": "2022 Q4",
-      "value": "29.9"
+      "value": "29.9",
+      "rawValue": 29929529746
     },
     {
       "year": "2023 Q1",
-      "value": "29.2"
+      "value": "29.2",
+      "rawValue": 29203849357
     },
     {
       "year": "2023 Q2",
-      "value": "33.7"
+      "value": "33.7",
+      "rawValue": 33668089780
     },
     {
       "year": "2023 Q3",
-      "value": "27.6"
+      "value": "27.6",
+      "rawValue": 27564603517
     },
     {
       "year": "2023 Q4",
-      "value": "36.0"
+      "value": "36.0",
+      "rawValue": 35967437232
     },
     {
       "year": "2024 Q1",
-      "value": "39.7"
+      "value": "39.7",
+      "rawValue": 39659032698
     },
     {
       "year": "2024 Q2",
-      "value": "40.9"
+      "value": "40.9",
+      "rawValue": 40924384465
     },
     {
       "year": "2024 Q3",
-      "value": "44.0"
+      "value": "44.0",
+      "rawValue": 44020529632
     },
     {
       "year": "2024 Q4",
-      "value": "42.4"
+      "value": "42.4",
+      "rawValue": 42413899286
     },
     {
       "year": "2025 Q1",
-      "value": "43.4"
+      "value": "43.4",
+      "rawValue": 43372530344
     },
     {
       "year": "2025 Q2",
-      "value": "50.7"
+      "value": "50.7",
+      "rawValue": 50706910931
     },
     {
       "year": "2025 Q3",
-      "value": "52.7"
+      "value": "52.7",
+      "rawValue": 52699548227
     },
     {
       "year": "2025 Q4",
-      "value": "53.6"
+      "value": "53.6",
+      "rawValue": 53648816254
     },
     {
       "year": "2026 Q1",
-      "value": "45.2"
+      "value": "45.2",
+      "rawValue": 45170870798
     },
     {
       "year": "2026 Q2",
-      "value": "52.8"
+      "value": "52.8",
+      "rawValue": 52769884406
+    }
+  ],
+  "capitalFlow": {
+    "totalBought": "3.81B",
+    "rawTotalBought": 3812360550,
+    "totalSold": "1.01B",
+    "rawTotalSold": 1009976270,
+    "netCapitalFlow": "+2.80B",
+    "rawNetCapitalFlow": 2802384280,
+    "turnoverRate": "4.6%",
+    "sankey": {
+      "nodes": [
+        {
+          "name": "GE (Trim)"
+        },
+        {
+          "name": "MSFT (Exit)"
+        },
+        {
+          "name": "CANAD (Trim)"
+        },
+        {
+          "name": "CNI (Trim)"
+        },
+        {
+          "name": "Capital Liquidity Pool"
+        },
+        {
+          "name": "V (Add)"
+        },
+        {
+          "name": "GOOG (Add)"
+        },
+        {
+          "name": "MARTI (New)"
+        },
+        {
+          "name": "VULCA (New)"
+        },
+        {
+          "name": "S (Add)"
+        },
+        {
+          "name": "FERRO (Add)"
+        }
+      ],
+      "links": [
+        {
+          "source": 0,
+          "target": 4,
+          "value": 4.24
+        },
+        {
+          "source": 1,
+          "target": 4,
+          "value": 1.01
+        },
+        {
+          "source": 2,
+          "target": 4,
+          "value": 0.27
+        },
+        {
+          "source": 3,
+          "target": 4,
+          "value": 0.11
+        },
+        {
+          "source": 4,
+          "target": 5,
+          "value": 1.25
+        },
+        {
+          "source": 4,
+          "target": 6,
+          "value": 0.97
+        },
+        {
+          "source": 4,
+          "target": 7,
+          "value": 0.76
+        },
+        {
+          "source": 4,
+          "target": 8,
+          "value": 0.72
+        },
+        {
+          "source": 4,
+          "target": 9,
+          "value": 0.23
+        },
+        {
+          "source": 4,
+          "target": 10,
+          "value": 0.11
+        }
+      ]
+    }
+  },
+  "cashReserves": {
+    "amount": "$4.20B",
+    "rawAmount": 4200000000,
+    "delta": "+$0.35B",
+    "rawDelta": 350000000,
+    "source": "Fund Liquidity Model"
+  },
+  "sectorHistory": [
+    {
+      "quarter": "2025 Q1",
+      "Information Technology": 0,
+      "Financials": 44.2,
+      "Health Care": 0,
+      "Consumer Discretionary": 0,
+      "Communication Services": 8.1,
+      "Industrials": 32.9,
+      "Consumer Staples": 0,
+      "Energy": 0,
+      "Utilities": 0,
+      "Real Estate": 0,
+      "Materials": 2.7,
+      "Unclassified": 12
+    },
+    {
+      "quarter": "2025 Q2",
+      "Information Technology": 0,
+      "Financials": 44,
+      "Health Care": 0,
+      "Consumer Discretionary": 0,
+      "Communication Services": 8.2,
+      "Industrials": 33,
+      "Consumer Staples": 0,
+      "Energy": 0,
+      "Utilities": 0,
+      "Real Estate": 0,
+      "Materials": 2.8,
+      "Unclassified": 12.1
+    },
+    {
+      "quarter": "2025 Q3",
+      "Information Technology": 0,
+      "Financials": 43.7,
+      "Health Care": 0,
+      "Consumer Discretionary": 0,
+      "Communication Services": 8.2,
+      "Industrials": 33.2,
+      "Consumer Staples": 0,
+      "Energy": 0,
+      "Utilities": 0,
+      "Real Estate": 0,
+      "Materials": 2.8,
+      "Unclassified": 12.1
+    },
+    {
+      "quarter": "2025 Q4",
+      "Information Technology": 0,
+      "Financials": 43.5,
+      "Health Care": 0,
+      "Consumer Discretionary": 0,
+      "Communication Services": 8.2,
+      "Industrials": 33.3,
+      "Consumer Staples": 0,
+      "Energy": 0,
+      "Utilities": 0,
+      "Real Estate": 0,
+      "Materials": 2.8,
+      "Unclassified": 12.2
+    },
+    {
+      "quarter": "2026 Q1",
+      "Information Technology": 0,
+      "Financials": 43.2,
+      "Health Care": 0,
+      "Consumer Discretionary": 0,
+      "Communication Services": 8.3,
+      "Industrials": 33.5,
+      "Consumer Staples": 0,
+      "Energy": 0,
+      "Utilities": 0,
+      "Real Estate": 0,
+      "Materials": 2.8,
+      "Unclassified": 12.3
+    },
+    {
+      "quarter": "2026 Q2",
+      "Information Technology": 0,
+      "Financials": 43,
+      "Health Care": 0,
+      "Consumer Discretionary": 0,
+      "Communication Services": 8.3,
+      "Industrials": 33.6,
+      "Consumer Staples": 0,
+      "Energy": 0,
+      "Utilities": 0,
+      "Real Estate": 0,
+      "Materials": 2.8,
+      "Unclassified": 12.3
     }
   ],
   "holdings": [
     {
       "cusip": "369604301",
+      "ticker": "GE",
+      "name": "GE AEROSPACE",
       "security": "GE AEROSPACE (GE)",
-      "weight": 33.58990401158545,
+      "weight": 33.59,
+      "prevWeight": 29.85,
+      "weightChange": 3.74,
+      "weightChangeText": "+3.74%",
+      "shares": 47428233,
+      "sharesFormatted": "47.43M",
+      "shareChangePct": -0.2,
+      "shareChangeText": "-0.2%",
+      "action": "Trim",
       "rawMktValue": 17725353519,
       "mktValue": "17.73B",
+      "rawDelta": 4243318514,
       "qOqDelta": "+4.24B",
       "sector": "Industrials",
       "color": "#3b82f6"
     },
     {
       "cusip": "92826C839",
+      "ticker": "V",
+      "name": "VISA INC",
       "security": "VISA INC (V)",
-      "weight": 19.82614176393843,
+      "weight": 19.83,
+      "prevWeight": 20.39,
+      "weightChange": -0.56,
+      "weightChangeText": "-0.56%",
+      "shares": 30494133,
+      "sharesFormatted": "30.49M",
+      "shareChangePct": 0.1,
+      "shareChangeText": "+0.1%",
+      "action": "Add",
       "rawMktValue": 10462232091,
       "mktValue": "10.46B",
+      "rawDelta": 1253543573,
       "qOqDelta": "+1.25B",
       "sector": "Financials",
       "color": "#1d4ed8"
     },
     {
       "cusip": "615369105",
+      "ticker": "MCO",
+      "name": "MOODYS CORP",
       "security": "MOODYS CORP (MCO)",
-      "weight": 12.302788952597805,
+      "weight": 12.3,
+      "prevWeight": 13.84,
+      "weightChange": -1.54,
+      "weightChangeText": "-1.54%",
+      "shares": 14334027,
+      "sharesFormatted": "14.33M",
+      "shareChangePct": 0,
+      "shareChangeText": "+0.0%",
+      "action": "Hold",
       "rawMktValue": 6492167509,
       "mktValue": "6.49B",
+      "rawDelta": 238948230,
       "qOqDelta": "+0.24B",
       "sector": "Financials",
       "color": "#2dd4bf"
     },
     {
       "cusip": "78409V104",
+      "ticker": "S",
+      "name": "S&P GLOBAL INC",
       "security": "S&P GLOBAL INC (S)",
-      "weight": 10.86797493031446,
+      "weight": 10.87,
+      "prevWeight": 13.22,
+      "weightChange": -2.35,
+      "weightChangeText": "-2.35%",
+      "shares": 14081957,
+      "sharesFormatted": "14.08M",
+      "shareChangePct": 0.3,
+      "shareChangeText": "+0.3%",
+      "action": "Add",
       "rawMktValue": 5735017808,
       "mktValue": "5.74B",
+      "rawDelta": -234760947,
       "qOqDelta": "-0.23B",
       "sector": "Financials",
       "color": "#a855f7"
     },
     {
       "cusip": "13646K108",
+      "ticker": "CANAD",
+      "name": "CANADIAN PACIFIC KANSAS CITY",
       "security": "CANADIAN PACIFIC KANSAS CITY (",
-      "weight": 7.439682031127624,
+      "weight": 7.44,
+      "prevWeight": 8.1,
+      "weightChange": -0.66,
+      "weightChangeText": "-0.66%",
+      "shares": 45325726,
+      "sharesFormatted": "45.33M",
+      "shareChangePct": -2.6,
+      "shareChangeText": "-2.6%",
+      "action": "Trim",
       "rawMktValue": 3925911608,
       "mktValue": "3.93B",
+      "rawDelta": 266273701,
       "qOqDelta": "+0.27B",
       "sector": "Unclassified",
       "color": "#22c55e"
     },
     {
       "cusip": "02079K107",
+      "ticker": "GOOG",
+      "name": "ALPHABET INC",
       "security": "ALPHABET INC (GOOG)",
-      "weight": 6.654710269937065,
+      "weight": 6.65,
+      "prevWeight": 5.62,
+      "weightChange": 1.03,
+      "weightChangeText": "+1.03%",
+      "shares": 9938819,
+      "sharesFormatted": "9.94M",
+      "shareChangePct": 12.3,
+      "shareChangeText": "+12.3%",
+      "action": "Add",
       "rawMktValue": 3511682917,
       "mktValue": "3.51B",
+      "rawDelta": 971819027,
       "qOqDelta": "+0.97B",
       "sector": "Communication Services",
       "color": "#ec4899"
     },
     {
       "cusip": "N3168P101",
+      "ticker": "FERRO",
+      "name": "FERROVIAL NV",
       "security": "FERROVIAL NV (FERRO)",
-      "weight": 2.7186186878152094,
+      "weight": 2.72,
+      "prevWeight": 2.94,
+      "weightChange": -0.22,
+      "weightChangeText": "-0.22%",
+      "shares": 20940441,
+      "sharesFormatted": "20.94M",
+      "shareChangePct": 1,
+      "shareChangeText": "+1.0%",
+      "action": "Add",
       "rawMktValue": 1434611939,
       "mktValue": "1.43B",
+      "rawDelta": 106683940,
       "qOqDelta": "+0.11B",
       "sector": "Unclassified",
       "color": "#10b981"
     },
     {
       "cusip": "136375102",
+      "ticker": "CNI",
+      "name": "CANADIAN NATL RY CO",
       "security": "CANADIAN NATL RY CO (CNI)",
-      "weight": 2.131016445569737,
+      "weight": 2.13,
+      "prevWeight": 2.24,
+      "weightChange": -0.11,
+      "weightChangeText": "-0.11%",
+      "shares": 9433422,
+      "sharesFormatted": "9.43M",
+      "shareChangePct": -4.2,
+      "shareChangeText": "-4.2%",
+      "action": "Trim",
       "rawMktValue": 1124534915,
       "mktValue": "1.12B",
+      "rawDelta": 111326660,
       "qOqDelta": "+0.11B",
       "sector": "Unclassified",
       "color": "#f97316"
     },
     {
       "cusip": "02079K305",
+      "ticker": "GOOGL",
+      "name": "ALPHABET INC",
       "security": "ALPHABET INC (GOOGL)",
-      "weight": 1.66393786888827,
+      "weight": 1.66,
+      "prevWeight": 1.56,
+      "weightChange": 0.1,
+      "weightChangeText": "+0.10%",
+      "shares": 2457000,
+      "sharesFormatted": "2.46M",
+      "shareChangePct": 0,
+      "shareChangeText": "+0.0%",
+      "action": "Hold",
       "rawMktValue": 878058090,
       "mktValue": "0.88B",
+      "rawDelta": 171523170,
       "qOqDelta": "+0.17B",
       "sector": "Communication Services",
       "color": "#1e3a8a"
     },
     {
       "cusip": "573284106",
+      "ticker": "MARTI",
+      "name": "MARTIN MARIETTA MATLS INC",
       "security": "MARTIN MARIETTA MATLS INC (MAR",
-      "weight": 1.4372276318910533,
+      "weight": 1.44,
+      "prevWeight": 0,
+      "weightChange": 1.44,
+      "weightChangeText": "+1.44%",
+      "shares": 1315109,
+      "sharesFormatted": "1.32M",
+      "shareChangePct": 100,
+      "shareChangeText": "New",
+      "action": "New",
       "rawMktValue": 758423360,
       "mktValue": "0.76B",
+      "rawDelta": 758423360,
       "qOqDelta": "+0.76B",
       "sector": "Materials",
       "color": "#312e81"
     },
     {
       "cusip": "929160109",
+      "ticker": "VULCA",
+      "name": "VULCAN MATLS CO",
       "security": "VULCAN MATLS CO (VULCA)",
-      "weight": 1.367997406334891,
+      "weight": 1.37,
+      "prevWeight": 0,
+      "weightChange": 1.37,
+      "weightChangeText": "+1.37%",
+      "shares": 2447004,
+      "sharesFormatted": "2.45M",
+      "shareChangePct": 100,
+      "shareChangeText": "New",
+      "action": "New",
       "rawMktValue": 721890650,
       "mktValue": "0.72B",
+      "rawDelta": 721890650,
       "qOqDelta": "+0.72B",
       "sector": "Materials",
+      "color": "#6366f1"
+    }
+  ],
+  "allHoldings": [
+    {
+      "cusip": "369604301",
+      "ticker": "GE",
+      "name": "GE AEROSPACE",
+      "security": "GE AEROSPACE (GE)",
+      "weight": 33.59,
+      "prevWeight": 29.85,
+      "weightChange": 3.74,
+      "weightChangeText": "+3.74%",
+      "shares": 47428233,
+      "sharesFormatted": "47.43M",
+      "shareChangePct": -0.2,
+      "shareChangeText": "-0.2%",
+      "action": "Trim",
+      "rawMktValue": 17725353519,
+      "mktValue": "17.73B",
+      "rawDelta": 4243318514,
+      "qOqDelta": "+4.24B",
+      "sector": "Industrials",
       "color": "#3b82f6"
+    },
+    {
+      "cusip": "92826C839",
+      "ticker": "V",
+      "name": "VISA INC",
+      "security": "VISA INC (V)",
+      "weight": 19.83,
+      "prevWeight": 20.39,
+      "weightChange": -0.56,
+      "weightChangeText": "-0.56%",
+      "shares": 30494133,
+      "sharesFormatted": "30.49M",
+      "shareChangePct": 0.1,
+      "shareChangeText": "+0.1%",
+      "action": "Add",
+      "rawMktValue": 10462232091,
+      "mktValue": "10.46B",
+      "rawDelta": 1253543573,
+      "qOqDelta": "+1.25B",
+      "sector": "Financials",
+      "color": "#1d4ed8"
+    },
+    {
+      "cusip": "615369105",
+      "ticker": "MCO",
+      "name": "MOODYS CORP",
+      "security": "MOODYS CORP (MCO)",
+      "weight": 12.3,
+      "prevWeight": 13.84,
+      "weightChange": -1.54,
+      "weightChangeText": "-1.54%",
+      "shares": 14334027,
+      "sharesFormatted": "14.33M",
+      "shareChangePct": 0,
+      "shareChangeText": "+0.0%",
+      "action": "Hold",
+      "rawMktValue": 6492167509,
+      "mktValue": "6.49B",
+      "rawDelta": 238948230,
+      "qOqDelta": "+0.24B",
+      "sector": "Financials",
+      "color": "#2dd4bf"
+    },
+    {
+      "cusip": "78409V104",
+      "ticker": "S",
+      "name": "S&P GLOBAL INC",
+      "security": "S&P GLOBAL INC (S)",
+      "weight": 10.87,
+      "prevWeight": 13.22,
+      "weightChange": -2.35,
+      "weightChangeText": "-2.35%",
+      "shares": 14081957,
+      "sharesFormatted": "14.08M",
+      "shareChangePct": 0.3,
+      "shareChangeText": "+0.3%",
+      "action": "Add",
+      "rawMktValue": 5735017808,
+      "mktValue": "5.74B",
+      "rawDelta": -234760947,
+      "qOqDelta": "-0.23B",
+      "sector": "Financials",
+      "color": "#a855f7"
+    },
+    {
+      "cusip": "13646K108",
+      "ticker": "CANAD",
+      "name": "CANADIAN PACIFIC KANSAS CITY",
+      "security": "CANADIAN PACIFIC KANSAS CITY (",
+      "weight": 7.44,
+      "prevWeight": 8.1,
+      "weightChange": -0.66,
+      "weightChangeText": "-0.66%",
+      "shares": 45325726,
+      "sharesFormatted": "45.33M",
+      "shareChangePct": -2.6,
+      "shareChangeText": "-2.6%",
+      "action": "Trim",
+      "rawMktValue": 3925911608,
+      "mktValue": "3.93B",
+      "rawDelta": 266273701,
+      "qOqDelta": "+0.27B",
+      "sector": "Unclassified",
+      "color": "#22c55e"
+    },
+    {
+      "cusip": "02079K107",
+      "ticker": "GOOG",
+      "name": "ALPHABET INC",
+      "security": "ALPHABET INC (GOOG)",
+      "weight": 6.65,
+      "prevWeight": 5.62,
+      "weightChange": 1.03,
+      "weightChangeText": "+1.03%",
+      "shares": 9938819,
+      "sharesFormatted": "9.94M",
+      "shareChangePct": 12.3,
+      "shareChangeText": "+12.3%",
+      "action": "Add",
+      "rawMktValue": 3511682917,
+      "mktValue": "3.51B",
+      "rawDelta": 971819027,
+      "qOqDelta": "+0.97B",
+      "sector": "Communication Services",
+      "color": "#ec4899"
+    },
+    {
+      "cusip": "N3168P101",
+      "ticker": "FERRO",
+      "name": "FERROVIAL NV",
+      "security": "FERROVIAL NV (FERRO)",
+      "weight": 2.72,
+      "prevWeight": 2.94,
+      "weightChange": -0.22,
+      "weightChangeText": "-0.22%",
+      "shares": 20940441,
+      "sharesFormatted": "20.94M",
+      "shareChangePct": 1,
+      "shareChangeText": "+1.0%",
+      "action": "Add",
+      "rawMktValue": 1434611939,
+      "mktValue": "1.43B",
+      "rawDelta": 106683940,
+      "qOqDelta": "+0.11B",
+      "sector": "Unclassified",
+      "color": "#10b981"
+    },
+    {
+      "cusip": "136375102",
+      "ticker": "CNI",
+      "name": "CANADIAN NATL RY CO",
+      "security": "CANADIAN NATL RY CO (CNI)",
+      "weight": 2.13,
+      "prevWeight": 2.24,
+      "weightChange": -0.11,
+      "weightChangeText": "-0.11%",
+      "shares": 9433422,
+      "sharesFormatted": "9.43M",
+      "shareChangePct": -4.2,
+      "shareChangeText": "-4.2%",
+      "action": "Trim",
+      "rawMktValue": 1124534915,
+      "mktValue": "1.12B",
+      "rawDelta": 111326660,
+      "qOqDelta": "+0.11B",
+      "sector": "Unclassified",
+      "color": "#f97316"
+    },
+    {
+      "cusip": "02079K305",
+      "ticker": "GOOGL",
+      "name": "ALPHABET INC",
+      "security": "ALPHABET INC (GOOGL)",
+      "weight": 1.66,
+      "prevWeight": 1.56,
+      "weightChange": 0.1,
+      "weightChangeText": "+0.10%",
+      "shares": 2457000,
+      "sharesFormatted": "2.46M",
+      "shareChangePct": 0,
+      "shareChangeText": "+0.0%",
+      "action": "Hold",
+      "rawMktValue": 878058090,
+      "mktValue": "0.88B",
+      "rawDelta": 171523170,
+      "qOqDelta": "+0.17B",
+      "sector": "Communication Services",
+      "color": "#1e3a8a"
+    },
+    {
+      "cusip": "573284106",
+      "ticker": "MARTI",
+      "name": "MARTIN MARIETTA MATLS INC",
+      "security": "MARTIN MARIETTA MATLS INC (MAR",
+      "weight": 1.44,
+      "prevWeight": 0,
+      "weightChange": 1.44,
+      "weightChangeText": "+1.44%",
+      "shares": 1315109,
+      "sharesFormatted": "1.32M",
+      "shareChangePct": 100,
+      "shareChangeText": "New",
+      "action": "New",
+      "rawMktValue": 758423360,
+      "mktValue": "0.76B",
+      "rawDelta": 758423360,
+      "qOqDelta": "+0.76B",
+      "sector": "Materials",
+      "color": "#312e81"
+    },
+    {
+      "cusip": "929160109",
+      "ticker": "VULCA",
+      "name": "VULCAN MATLS CO",
+      "security": "VULCAN MATLS CO (VULCA)",
+      "weight": 1.37,
+      "prevWeight": 0,
+      "weightChange": 1.37,
+      "weightChangeText": "+1.37%",
+      "shares": 2447004,
+      "sharesFormatted": "2.45M",
+      "shareChangePct": 100,
+      "shareChangeText": "New",
+      "action": "New",
+      "rawMktValue": 721890650,
+      "mktValue": "0.72B",
+      "rawDelta": 721890650,
+      "qOqDelta": "+0.72B",
+      "sector": "Materials",
+      "color": "#6366f1"
     }
   ],
   "topAdds": [
@@ -379,7 +956,7 @@
       "security": "MARTIN MARIETTA MATL",
       "deltaValue": "+0.76B",
       "rawDelta": 758423360,
-      "shareChange": "+100.0%",
+      "shareChange": "New",
       "newWeight": "1.44%",
       "type": "New"
     },
@@ -388,7 +965,7 @@
       "security": "VULCAN MATLS CO",
       "deltaValue": "+0.72B",
       "rawDelta": 721890650,
-      "shareChange": "+100.0%",
+      "shareChange": "New",
       "newWeight": "1.37%",
       "type": "New"
     },

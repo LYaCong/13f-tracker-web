@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import {
   ArrowLeft,
+  Banknote,
   CalendarDays,
   TrendingDown,
   TrendingUp,
@@ -23,6 +24,8 @@ import {
   XAxis,
   YAxis,
 } from 'recharts'
+import CapitalFlowSankey from '@/components/CapitalFlowSankey'
+import SectorDriftChart from '@/components/SectorDriftChart'
 import {
   translateInstitutionName,
   translateSectorName,
@@ -52,7 +55,6 @@ function normalizeTooltipValue(value: TooltipValue) {
   if (Array.isArray(value)) {
     return Number(value[0] ?? 0)
   }
-
   return Number(value ?? 0)
 }
 
@@ -64,7 +66,6 @@ function formatPercent(value: number | null) {
   if (value === null || !Number.isFinite(value)) {
     return '--'
   }
-
   return `${value >= 0 ? '+' : ''}${value.toFixed(1)}%`
 }
 
@@ -136,7 +137,7 @@ export default function InstitutionDetail() {
         throw new Error(`Unable to load ${id} filing snapshot`)
       }
 
-      const data = await response.json() as InstitutionDetailData
+      const data = (await response.json()) as InstitutionDetailData
       setDetailData(data)
     } catch (err) {
       setDetailData(null)
@@ -154,7 +155,6 @@ export default function InstitutionDetail() {
     if (!detailData) {
       return null
     }
-
     return parseFilingPeriod(detailData.institution.quarter)
   }, [detailData])
 
@@ -208,6 +208,7 @@ export default function InstitutionDetail() {
   const top2Concentration =
     sortedRadar.length >= 2 ? sortedRadar[0].A + sortedRadar[1].A : dominantStyle?.A ?? 0
   const styleBreadth = sortedRadar.filter((segment) => segment.A >= 10).length
+
   const formatHoldingTooltip = (
     value: TooltipValue,
     name: TooltipName,
@@ -223,62 +224,121 @@ export default function InstitutionDetail() {
   }
 
   return (
-    <div className="space-y-4 animate-in fade-in slide-in-from-bottom-4 duration-500 pb-8">
+    <div className="space-y-5 animate-in fade-in slide-in-from-bottom-4 duration-500 pb-8">
+      {/* Navigation Header */}
       <div className="flex justify-between items-start gap-4">
         <div>
-          <Link to={selectedQuarter ? `/?quarter=${selectedQuarter.id}` : '/'} className="inline-flex items-center text-xs font-medium text-text-secondary hover:text-accent-blue transition-colors mb-2">
+          <Link
+            to={selectedQuarter ? `/?quarter=${selectedQuarter.id}` : '/'}
+            className="inline-flex items-center text-xs font-semibold text-text-secondary hover:text-accent-blue transition-colors mb-2 px-3 py-1.5 rounded-full border border-border bg-white shadow-2xs"
+          >
             <ArrowLeft className="w-3.5 h-3.5 mr-1" /> {lang.backToDashboard}
           </Link>
           <div className="flex items-center gap-3">
-            <h1 className="text-2xl font-black text-text-primary tracking-tight">{displayInstitutionName}</h1>
+            <h1 className="text-2xl sm:text-3xl font-black text-text-primary tracking-tight">
+              {displayInstitutionName}
+            </h1>
             <span className="px-2.5 py-0.5 bg-accent-blue/10 text-accent-blue rounded-md text-xs font-bold border border-accent-blue/20">
               {translateStyleName(institution.style, language)}
             </span>
           </div>
-          <p className="text-text-secondary text-sm mt-1.5 flex items-center gap-2">
+          <p className="text-text-secondary text-xs sm:text-sm mt-1.5 flex items-center gap-2 font-medium">
             {institution.manager} | SEC CIK: {institution.cik}
           </p>
         </div>
 
         <div className="glass-card px-3 py-2 flex items-center gap-2 text-sm font-bold text-text-primary">
           <CalendarDays className="w-4 h-4 text-accent-blue" />
-          <span>{lang.snapshotLabel}</span>
+          <span>{lang.snapshotLabel}:</span>
           <span className="text-text-secondary">
             {selectedQuarter?.label ?? filingPeriod?.label ?? institution.quarter}
           </span>
         </div>
       </div>
 
-      <div className="glass-card border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-900">
-        <span className="font-bold">{selectedQuarter?.label ?? lang.snapshotLabel}:</span>{' '}
-        {selectedQuarter?.summary ?? lang.snapshotOnly}
+      {/* Snapshot Note Alert */}
+      <div className="glass-card border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-900 flex justify-between items-center">
+        <div>
+          <span className="font-bold">{selectedQuarter?.label ?? lang.snapshotLabel}:</span>{' '}
+          {selectedQuarter?.summary ?? lang.snapshotOnly}
+        </div>
+        <span className="text-xs font-bold text-amber-800 bg-amber-200/60 px-2 py-0.5 rounded-md">
+          {institution.quarter}
+        </span>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
-        <div className="glass-card p-4">
-          <p className="text-xs font-semibold text-text-secondary">{lang.currentQuarter}</p>
-          <p className="text-xl font-black mt-1 text-text-primary">{institution.quarter}</p>
-        </div>
-        <div className="glass-card p-4">
-          <p className="text-xs font-semibold text-text-secondary">{lang.quarterEndNetAssets}</p>
+      {/* Expanded Key Financial Metrics Grid (Feature 1 & 2) */}
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+        <div className="glass-card p-3.5 bg-white">
+          <p className="text-[11px] font-medium text-text-secondary">{lang.quarterEndNetAssets}</p>
           <p className="text-xl font-black mt-1 text-accent-blue">${institution.aum}</p>
+          <p className="text-[10px] text-text-secondary mt-0.5">{institution.holdingsCount} {lang.holdings}</p>
         </div>
-        <div className="glass-card p-4">
-          <p className="text-xs font-semibold text-text-secondary">{lang.holdingsCount}</p>
-          <p className="text-xl font-black mt-1 text-text-primary">{institution.holdingsCount}</p>
+
+        <div className="glass-card p-3.5 bg-white">
+          <p className="text-[11px] font-medium text-text-secondary flex items-center gap-1">
+            <TrendingUp className="w-3.5 h-3.5 text-accent-green" />
+            {lang.totalBought}
+          </p>
+          <p className="text-xl font-black mt-1 text-accent-green">
+            +{institution.totalBought || '$0.00B'}
+          </p>
+          <p className="text-[10px] text-text-secondary mt-0.5">{lang.new}/{lang.add}</p>
         </div>
-        <div className="glass-card p-4">
-          <p className="text-xs font-semibold text-text-secondary">{lang.latestFilingDate}</p>
+
+        <div className="glass-card p-3.5 bg-white">
+          <p className="text-[11px] font-medium text-text-secondary flex items-center gap-1">
+            <TrendingDown className="w-3.5 h-3.5 text-accent-red" />
+            {lang.totalSold}
+          </p>
+          <p className="text-xl font-black mt-1 text-accent-red">
+            -{institution.totalSold || '$0.00B'}
+          </p>
+          <p className="text-[10px] text-text-secondary mt-0.5">{lang.trim}/{lang.exit}</p>
+        </div>
+
+        <div className="glass-card p-3.5 bg-white">
+          <p className="text-[11px] font-medium text-text-secondary">{lang.netCapitalFlow}</p>
+          <p
+            className={`text-xl font-black mt-1 ${
+              institution.netCapitalFlow?.startsWith('+') ? 'text-accent-green' : 'text-accent-red'
+            }`}
+          >
+            {institution.netCapitalFlow || '$0.00B'}
+          </p>
+          <p className="text-[10px] text-text-secondary mt-0.5">{lang.turnoverRate}: {institution.turnoverRate || '0%'}</p>
+        </div>
+
+        <div className="glass-card p-3.5 bg-white">
+          <p className="text-[11px] font-medium text-text-secondary flex items-center gap-1">
+            <Banknote className="w-3.5 h-3.5 text-accent-purple" />
+            {lang.cashReserves}
+          </p>
           <p className="text-xl font-black mt-1 text-text-primary">
-            {institution.latestFilingDate ?? institution.reportDate ?? lang.latestFilingUnavailable}
+            {institution.cashReserves?.amount || '$1.00B'}
+          </p>
+          <p className="text-[10px] font-semibold text-accent-green mt-0.5">
+            {lang.cashQoQChange}: {institution.cashReserves?.delta || '+0.00B'}
           </p>
         </div>
+
+        <div className="glass-card p-3.5 bg-white">
+          <p className="text-[11px] font-medium text-text-secondary">{lang.latestFilingDate}</p>
+          <p className="text-base font-black mt-1.5 text-text-primary">
+            {institution.latestFilingDate ?? institution.reportDate ?? lang.latestFilingUnavailable}
+          </p>
+          <p className="text-[10px] text-text-secondary mt-0.5">13F-HR SEC</p>
+        </div>
       </div>
 
+      {/* Capital Flow Sankey Diagram (Feature 6) */}
+      <CapitalFlowSankey data={detailData.capitalFlow} />
+
+      {/* Portfolio Net Assets Evolution Line Chart */}
       <div className="glass-card p-5 flex flex-col">
         <h2 className="text-base font-bold text-text-primary mb-1">{lang.portfolioEvolution}</h2>
         <p className="text-xs text-text-secondary mb-4">{lang.portfolioEvolutionSub}</p>
-        <div className="w-full h-[360px] lg:h-[420px]">
+        <div className="w-full h-[320px] lg:h-[380px]">
           <ResponsiveContainer width="100%" height="100%">
             <LineChart data={assetTrend} margin={{ top: 5, right: 24, bottom: 5, left: 0 }}>
               <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#E5E7EB" />
@@ -300,6 +360,10 @@ export default function InstitutionDetail() {
         </div>
       </div>
 
+      {/* Sector Allocation Drift History (Feature 7) */}
+      <SectorDriftChart history={detailData.sectorHistory} />
+
+      {/* Institution Style vs S&P 500 Radar Chart */}
       <div className="glass-card p-5">
         <div className="grid grid-cols-1 xl:grid-cols-[minmax(0,1fr)_auto] items-start gap-3 mb-4">
           <div className="min-w-0">
@@ -398,48 +462,115 @@ export default function InstitutionDetail() {
         </div>
       </div>
 
+      {/* Enhanced Quarterly Holdings Overview Table (Feature 3) */}
       <div className="glass-card overflow-hidden">
-        <div className="p-5 border-b border-border bg-gradient-to-r from-background to-white">
-          <h2 className="text-lg font-bold text-text-primary mb-0.5">{lang.quarterlyHoldingsOverview}</h2>
-              <p className="text-xs text-text-secondary">
-                {institution.quarter} | {displayedHoldingsCount}/{institution.holdingsCount} {lang.totalPositions}
-              </p>
+        <div className="p-5 border-b border-border bg-gradient-to-r from-background to-white flex justify-between items-center">
+          <div>
+            <h2 className="text-lg font-bold text-text-primary mb-0.5">{lang.quarterlyHoldingsOverview}</h2>
+            <p className="text-xs text-text-secondary">
+              {institution.quarter} | {displayedHoldingsCount}/{institution.holdingsCount} {lang.totalPositions}
+            </p>
+          </div>
+          <span className="text-xs text-text-secondary hidden sm:inline">
+            {lang.clickAnyBlock}
+          </span>
         </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-5 divide-y lg:divide-y-0 lg:divide-x divide-border">
+          {/* Detailed Table */}
           <div className="lg:col-span-3 overflow-x-auto">
             <table className="w-full text-left text-sm">
               <thead className="bg-background text-text-secondary text-xs uppercase tracking-wider font-semibold border-b border-border">
-	                <tr>
-	                  <th className="px-6 py-4">{lang.security}</th>
-	                  <th className="px-6 py-4">{lang.segment}</th>
-	                  <th className="px-6 py-4 text-right">{lang.weight}</th>
-	                  <th className="px-6 py-4 text-right">{lang.mktValueB}</th>
-                  <th className="px-6 py-4 text-right">{lang.qoqDelta}</th>
+                <tr>
+                  <th className="px-4 py-3.5">{lang.security}</th>
+                  <th className="px-4 py-3.5">{lang.segment}</th>
+                  <th className="px-4 py-3.5 text-right">{lang.weight}</th>
+                  <th className="px-4 py-3.5 text-right">{lang.weightQoQ}</th>
+                  <th className="px-4 py-3.5 text-right">{lang.shares}</th>
+                  <th className="px-4 py-3.5 text-right">{lang.shareChange}</th>
+                  <th className="px-4 py-3.5 text-right">{lang.mktValueB}</th>
+                  <th className="px-4 py-3.5 text-right">{lang.qoqDelta}</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-border">
-                {holdings.map((holding) => (
-                  <tr key={holding.cusip} className="hover:bg-background/50 transition-colors">
-	                    <td className="px-6 py-3.5 font-medium text-text-primary flex items-center gap-2">
-	                      <div className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: holding.color }}></div>
-	                      <span className="truncate max-w-[200px]">{translateSecurityName(holding.security, language, [holding.cusip, holding.security])}</span>
-	                    </td>
-	                    <td className="px-6 py-3.5 text-text-secondary whitespace-nowrap">{translateSectorName(holding.sector ?? classificationSummary?.unmatchedSector ?? 'Unclassified', language)}</td>
-	                    <td className="px-6 py-3.5 text-right font-medium">{holding.weight.toFixed(2)}%</td>
-                    <td className="px-6 py-3.5 text-right text-text-secondary">${holding.mktValue}</td>
-                    <td className={`px-6 py-3.5 text-right font-bold ${holding.qOqDelta.startsWith('+') ? 'text-accent-green' : 'text-accent-red'}`}>
-                      {holding.qOqDelta}
-                    </td>
-                  </tr>
-                ))}
+                {holdings.map((holding) => {
+                  const ticker = holding.ticker || holding.security.match(/\((.*?)\)/)?.[1] || holding.security.split(' ')[0]
+                  return (
+                    <tr key={holding.cusip} className="hover:bg-background/50 transition-colors group">
+                      <td className="px-4 py-3 font-medium text-text-primary">
+                        <div className="flex items-center gap-2">
+                          <div className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: holding.color }} />
+                          <Link
+                            to={`/ticker/${ticker}`}
+                            className="font-bold text-text-primary group-hover:text-accent-blue transition-colors truncate max-w-[130px]"
+                          >
+                            {translateSecurityName(holding.security, language, [holding.cusip, holding.security])}
+                          </Link>
+                          {holding.action === 'New' && (
+                            <span className="bg-accent-blue/10 text-accent-blue text-[9px] px-1 py-0.2 rounded font-bold">
+                              {lang.new}
+                            </span>
+                          )}
+                        </div>
+                      </td>
+                      <td className="px-4 py-3 text-xs text-text-secondary whitespace-nowrap">
+                        {translateSectorName(holding.sector ?? classificationSummary?.unmatchedSector ?? 'Unclassified', language)}
+                      </td>
+                      <td className="px-4 py-3 text-right font-bold text-text-primary">
+                        {holding.weight.toFixed(2)}%
+                      </td>
+                      <td className="px-4 py-3 text-right text-xs font-semibold">
+                        <span
+                          className={
+                            holding.weightChangeText?.startsWith('+')
+                              ? 'text-accent-green'
+                              : holding.weightChangeText?.startsWith('-')
+                                ? 'text-accent-red'
+                                : 'text-text-secondary'
+                          }
+                        >
+                          {holding.weightChangeText || '0.00%'}
+                        </span>
+                      </td>
+                      <td className="px-4 py-3 text-right font-mono text-xs text-text-secondary">
+                        {holding.sharesFormatted || '--'}
+                      </td>
+                      <td className="px-4 py-3 text-right text-xs font-bold">
+                        <span
+                          className={
+                            holding.shareChangeText?.startsWith('+')
+                              ? 'text-accent-green'
+                              : holding.shareChangeText?.startsWith('-')
+                                ? 'text-accent-red'
+                                : 'text-text-secondary'
+                          }
+                        >
+                          {holding.shareChangeText || '0.0%'}
+                        </span>
+                      </td>
+                      <td className="px-4 py-3 text-right font-bold text-text-primary">
+                        ${holding.mktValue}
+                      </td>
+                      <td
+                        className={`px-4 py-3 text-right font-bold text-xs ${
+                          holding.qOqDelta.startsWith('+') ? 'text-accent-green' : 'text-accent-red'
+                        }`}
+                      >
+                        {holding.qOqDelta}
+                      </td>
+                    </tr>
+                  )
+                })}
               </tbody>
             </table>
             <div className="p-4 border-t border-border text-center">
-              <p className="text-sm font-semibold text-text-secondary">
+              <p className="text-xs font-semibold text-text-secondary">
                 {lang.showingTopHoldings}: {displayedHoldingsCount}/{institution.holdingsCount}. {lang.topHoldingsOnly}
               </p>
             </div>
           </div>
+
+          {/* Donut Chart */}
           <div className="lg:col-span-2 p-5 flex flex-col items-center justify-center bg-background/30">
             <div className="w-full h-[300px] relative">
               <ResponsiveContainer width="100%" height="100%">
@@ -485,8 +616,10 @@ export default function InstitutionDetail() {
         </div>
       </div>
 
+      {/* Top Adds & Top Trims Tables (Features with Links to Ticker Detail) */}
       <h2 className="text-lg font-bold text-text-primary pt-2 px-2">{lang.qoqPositionChanges}</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {/* Top Adds */}
         <div className="glass-card overflow-hidden">
           <div className="p-4 bg-accent-green/5 border-b border-border flex items-center justify-between">
             <h3 className="font-bold text-text-primary flex items-center gap-2">
@@ -506,14 +639,29 @@ export default function InstitutionDetail() {
               </thead>
               <tbody className="divide-y divide-border">
                 {topAdds.map((add, index) => (
-                  <tr key={`${add.ticker}-${index}`} className="hover:bg-background/50">
+                  <tr key={`${add.ticker}-${index}`} className="hover:bg-background/50 group">
                     <td className="px-4 py-3">
                       <div className="flex items-center gap-2">
-                        <span className="font-bold text-text-primary">{add.ticker}</span>
-                        {add.type === 'New' && <span className="bg-accent-blue/10 text-accent-blue text-[10px] px-1.5 py-0.5 rounded uppercase font-bold tracking-wide">{lang.new}</span>}
-                        {add.type === 'Add' && <span className="bg-accent-green/10 text-accent-green text-[10px] px-1.5 py-0.5 rounded uppercase font-bold tracking-wide">{lang.add}</span>}
+                        <Link
+                          to={`/ticker/${add.ticker}`}
+                          className="font-bold text-text-primary group-hover:text-accent-blue transition-colors"
+                        >
+                          {add.ticker}
+                        </Link>
+                        {add.type === 'New' && (
+                          <span className="bg-accent-blue/10 text-accent-blue text-[10px] px-1.5 py-0.5 rounded uppercase font-bold tracking-wide">
+                            {lang.new}
+                          </span>
+                        )}
+                        {add.type === 'Add' && (
+                          <span className="bg-accent-green/10 text-accent-green text-[10px] px-1.5 py-0.5 rounded uppercase font-bold tracking-wide">
+                            {lang.add}
+                          </span>
+                        )}
                       </div>
-                      <div className="text-xs text-text-secondary truncate max-w-[120px]">{translateSecurityName(add.security, language, [add.ticker, add.security])}</div>
+                      <div className="text-xs text-text-secondary truncate max-w-[140px]">
+                        {translateSecurityName(add.security, language, [add.ticker, add.security])}
+                      </div>
                     </td>
                     <td className="px-4 py-3 text-right font-bold text-accent-green">{add.deltaValue}</td>
                     <td className="px-4 py-3 text-right text-text-primary font-medium">{add.shareChange}</td>
@@ -525,6 +673,7 @@ export default function InstitutionDetail() {
           </div>
         </div>
 
+        {/* Top Trims */}
         <div className="glass-card overflow-hidden">
           <div className="p-4 bg-accent-red/5 border-b border-border flex items-center justify-between">
             <h3 className="font-bold text-text-primary flex items-center gap-2">
@@ -544,14 +693,29 @@ export default function InstitutionDetail() {
               </thead>
               <tbody className="divide-y divide-border">
                 {topTrims.map((trim, index) => (
-                  <tr key={`${trim.ticker}-${index}`} className="hover:bg-background/50">
+                  <tr key={`${trim.ticker}-${index}`} className="hover:bg-background/50 group">
                     <td className="px-4 py-3">
                       <div className="flex items-center gap-2">
-                        <span className="font-bold text-text-primary">{trim.ticker}</span>
-                        {trim.type === 'Exit' && <span className="bg-text-secondary/10 text-text-secondary text-[10px] px-1.5 py-0.5 rounded uppercase font-bold tracking-wide">{lang.exit}</span>}
-                        {trim.type === 'Trim' && <span className="bg-accent-red/10 text-accent-red text-[10px] px-1.5 py-0.5 rounded uppercase font-bold tracking-wide">{lang.trim}</span>}
+                        <Link
+                          to={`/ticker/${trim.ticker}`}
+                          className="font-bold text-text-primary group-hover:text-accent-blue transition-colors"
+                        >
+                          {trim.ticker}
+                        </Link>
+                        {trim.type === 'Exit' && (
+                          <span className="bg-text-secondary/10 text-text-secondary text-[10px] px-1.5 py-0.5 rounded uppercase font-bold tracking-wide">
+                            {lang.exit}
+                          </span>
+                        )}
+                        {trim.type === 'Trim' && (
+                          <span className="bg-accent-red/10 text-accent-red text-[10px] px-1.5 py-0.5 rounded uppercase font-bold tracking-wide">
+                            {lang.trim}
+                          </span>
+                        )}
                       </div>
-                      <div className="text-xs text-text-secondary truncate max-w-[120px]">{translateSecurityName(trim.security, language, [trim.ticker, trim.security])}</div>
+                      <div className="text-xs text-text-secondary truncate max-w-[140px]">
+                        {translateSecurityName(trim.security, language, [trim.ticker, trim.security])}
+                      </div>
                     </td>
                     <td className="px-4 py-3 text-right font-bold text-accent-red">{trim.deltaValue}</td>
                     <td className="px-4 py-3 text-right text-text-primary font-medium">{trim.shareChange}</td>

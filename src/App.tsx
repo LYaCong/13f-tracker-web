@@ -6,6 +6,8 @@ import { useLanguage } from './context/useLanguage'
 
 const Dashboard = lazy(() => import('./pages/Dashboard'))
 const InstitutionDetail = lazy(() => import('./pages/InstitutionDetail'))
+const TickerDetail = lazy(() => import('./pages/TickerDetail'))
+const AllStarIndex = lazy(() => import('./pages/AllStarIndex'))
 
 function AppRoutes() {
   const { lang } = useLanguage()
@@ -17,6 +19,8 @@ function AppRoutes() {
           <Route path="/" element={<Layout />}>
             <Route index element={<Dashboard />} />
             <Route path="institution/:id" element={<InstitutionDetail />} />
+            <Route path="ticker/:symbol" element={<TickerDetail />} />
+            <Route path="all-star" element={<AllStarIndex />} />
           </Route>
         </Routes>
       </Suspense>

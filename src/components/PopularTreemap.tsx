@@ -1,4 +1,6 @@
 import { useCallback, useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
+import { ExternalLink } from 'lucide-react'
 import { ResponsiveContainer, Treemap } from 'recharts'
 import type { TreemapDatum, TreemapLeafDatum } from '@/lib/secData'
 import { useLanguage } from '../context/useLanguage'
@@ -98,12 +100,12 @@ function CustomizedContent(props: TreemapNodeProps) {
               </div>
             )}
 
-            {height > 80 && width > 80 && (
+            {height > 85 && width > 90 && (
               <div
-                className="font-medium truncate w-full opacity-80 leading-tight mt-0.5"
-                style={{ fontSize: Math.max(9, Math.min(11, Math.floor(width / 12))) }}
+                className="font-semibold text-white/90 truncate w-full mt-0.5 leading-tight"
+                style={{ fontSize: Math.max(8, Math.min(11, Math.floor(width / 12))) }}
               >
-                ${value} | {instCount}/{props.totalInstitutionsShort ?? '12 inst'}
+                ${value} | {instCount} {props.totalInstitutionsShort ?? 'inst'}
               </div>
             )}
           </div>
@@ -113,88 +115,67 @@ function CustomizedContent(props: TreemapNodeProps) {
   )
 }
 
-export default function PopularTreemap({
-  dataPath,
-  onNodeFocus,
-}: {
+interface PopularTreemapProps {
+  onSelectTicker?: (ticker: string | null) => void
   dataPath: string
-  onNodeFocus?: (instIds: string[] | null) => void
-}) {
-  const [data, setData] = useState<TreemapLeafDatum[]>([])
+}
+
+export default function PopularTreemap({ onSelectTicker, dataPath }: PopularTreemapProps) {
+  const [data, setData] = useState<TreemapDatum[]>([])
   const [focusedNode, setFocusedNode] = useState<TreemapLeafDatum | null>(null)
-  const [isLoading, setIsLoading] = useState(true)
-  const [error, setError] = useState<string | null>(null)
   const { lang } = useLanguage()
 
-  const handleFocus = (nodeData: TreemapLeafDatum | null) => {
-    setFocusedNode(nodeData)
-    onNodeFocus?.(nodeData?.holdingInstitutions ?? null)
-  }
-
-  const loadTreemapData = useCallback(async () => {
-    setIsLoading(true)
-    setError(null)
-    try {
-      const response = await fetch(`${dataPath}/dashboard_treemap.json`)
-      if (!response.ok) {
-        throw new Error('Unable to load bundled treemap data')
-      }
-
-      const nodes = await response.json() as TreemapDatum[]
-      const children = nodes.map((node) => ({
-        name: node.ticker,
-        size: Number.parseFloat(node.value),
-        heat: node.heat,
-        avgWeight: node.avgWeight,
-        value: node.value,
-        instCount: node.instCount,
-        holdingInstitutions: node.holdingInstitutions,
-      }))
-      setData(children)
-    } catch (err) {
-      setError(err instanceof Error ? err.message : lang.dataLoadFailed)
-    } finally {
-      setIsLoading(false)
-    }
-  }, [dataPath, lang.dataLoadFailed])
-
   useEffect(() => {
-    void loadTreemapData()
-  }, [loadTreemapData])
+    let isMounted = true
 
-  if (isLoading) {
-    return (
-      <div className="glass-card p-6 text-center text-text-secondary font-semibold">
-        {lang.loadingHistoricalFilings}
-      </div>
-    )
-  }
+    async function loadTreemap() {
+      try {
+        const response = await fetch(`${dataPath}/dashboard_treemap.json`)
+        if (!response.ok) {
+          throw new Error('Unable to load treemap dataset')
+        }
 
-  if (error) {
-    return (
-      <div className="glass-card p-6 text-center">
-        <p className="font-bold text-text-primary">{lang.dataLoadFailed}</p>
-        <p className="text-sm text-text-secondary mt-2">{error}</p>
-        <button
-          type="button"
-          onClick={() => void loadTreemapData()}
-          className="mt-4 px-4 py-2 rounded-md bg-accent-blue text-white text-sm font-bold hover:bg-blue-700 transition-colors"
-        >
-          {lang.retry}
-        </button>
-      </div>
-    )
-  }
+        const jsonData = (await response.json()) as TreemapDatum[]
+        if (isMounted) {
+          setData(jsonData)
+          setFocusedNode(null)
+          onSelectTicker?.(null)
+        }
+      } catch {
+        if (isMounted) {
+          setData([])
+          setFocusedNode(null)
+          onSelectTicker?.(null)
+        }
+      }
+    }
 
-  if (data.length === 0) {
-    return (
-      <div className="glass-card p-6 text-center text-text-secondary font-semibold">
-        {lang.noResults}
-      </div>
-    )
-  }
+    void loadTreemap()
 
-  const treemapData = [{ name: 'All Holdings', children: data }]
+    return () => {
+      isMounted = false
+    }
+  }, [dataPath, onSelectTicker])
+
+  const handleFocus = useCallback((node: TreemapLeafDatum | null) => {
+    setFocusedNode(node)
+    onSelectTicker?.(node ? node.name : null)
+  }, [onSelectTicker])
+
+  const treemapData = [
+    {
+      name: 'root',
+      children: data.map((item) => ({
+        name: item.ticker,
+        size: item.heat,
+        heat: item.heat,
+        avgWeight: item.avgWeight,
+        value: item.value,
+        instCount: item.instCount,
+        holdingInstitutions: item.holdingInstitutions,
+      })),
+    },
+  ]
 
   return (
     <div className="glass-card p-6 flex flex-col pt-4">
@@ -205,13 +186,13 @@ export default function PopularTreemap({
         </div>
       </div>
 
-      <div className="flex flex-wrap gap-2 mb-4 text-xs min-h-[32px]">
+      <div className="flex flex-wrap gap-2 mb-4 text-xs min-h-[32px] items-center">
         {focusedNode ? (
           <>
             <span className="font-semibold text-text-secondary uppercase tracking-wider mr-2 self-center">{lang.focused}</span>
-            <button className="px-3 py-1 rounded-full bg-accent-blue text-white shadow-sm flex items-center gap-2 font-bold select-none cursor-default">
+            <div className="px-3 py-1 rounded-full bg-accent-blue text-white shadow-sm flex items-center gap-2 font-bold select-none">
               <span>{focusedNode.name}</span>
-            </button>
+            </div>
             <div className="px-3 py-1 rounded-full bg-white border border-border text-text-primary font-medium shadow-sm">
               {lang.heatLabel} {focusedNode.heat}%
             </div>
@@ -224,9 +205,16 @@ export default function PopularTreemap({
             <div className="px-3 py-1 rounded-full bg-white border border-border text-text-primary font-medium shadow-sm">
               {focusedNode.instCount} {lang.institutions}
             </div>
+            <Link
+              to={`/ticker/${focusedNode.name}`}
+              className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-blue-50 text-accent-blue border border-blue-200 hover:bg-blue-100 transition-colors font-bold shadow-sm cursor-pointer ml-1"
+            >
+              <span>{lang.viewTickerDetail}</span>
+              <ExternalLink className="w-3 h-3" />
+            </Link>
             <button
               onClick={() => handleFocus(null)}
-              className="px-3 py-1 rounded-full bg-red-50 text-red-600 border border-red-200 hover:bg-red-100 hover:text-red-700 transition-colors cursor-pointer shadow-sm ml-2"
+              className="px-3 py-1 rounded-full bg-red-50 text-red-600 border border-red-200 hover:bg-red-100 hover:text-red-700 transition-colors cursor-pointer shadow-sm ml-1"
             >
               {lang.clear}
             </button>

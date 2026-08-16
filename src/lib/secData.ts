@@ -11,6 +11,38 @@ export interface QuarterArchive {
   createdAt: string
 }
 
+export interface CashReserves {
+  amount: string
+  rawAmount?: number
+  delta: string
+  rawDelta?: number
+  source?: string
+}
+
+export interface SankeyNode {
+  name: string
+}
+
+export interface SankeyLink {
+  source: number
+  target: number
+  value: number
+}
+
+export interface CapitalFlowData {
+  totalBought: string
+  rawTotalBought?: number
+  totalSold: string
+  rawTotalSold?: number
+  netCapitalFlow: string
+  rawNetCapitalFlow?: number
+  turnoverRate: string
+  sankey: {
+    nodes: SankeyNode[]
+    links: SankeyLink[]
+  }
+}
+
 export interface InstitutionMeta {
   id: string
   name: string
@@ -24,6 +56,11 @@ export interface InstitutionMeta {
   displayedHoldingsCount?: number
   reportDate?: string
   latestFilingDate?: string
+  totalBought?: string
+  totalSold?: string
+  netCapitalFlow?: string
+  turnoverRate?: string
+  cashReserves?: CashReserves
 }
 
 export interface RadarDatum {
@@ -65,15 +102,27 @@ export interface SectorClassificationSummary {
 export interface AssetTrendPoint {
   year: string
   value: string
+  rawValue?: number
 }
 
 export interface HoldingEntry {
   cusip: string
+  ticker?: string
+  name?: string
   security: string
   sector?: string
   weight: number
+  prevWeight?: number
+  weightChange?: number
+  weightChangeText?: string
+  shares?: number
+  sharesFormatted?: string
+  shareChangePct?: number
+  shareChangeText?: string
+  action?: 'Add' | 'Trim' | 'Hold' | 'New'
   rawMktValue: number
   mktValue: string
+  rawDelta?: number
   qOqDelta: string
   color: string
 }
@@ -97,7 +146,11 @@ export interface InstitutionDetailData {
   sectorWeights?: SectorWeightDatum[]
   radarData: RadarDatum[]
   assetTrend: AssetTrendPoint[]
+  capitalFlow?: CapitalFlowData
+  cashReserves?: CashReserves
+  sectorHistory?: Array<Record<string, string | number>>
   holdings: HoldingEntry[]
+  allHoldings?: HoldingEntry[]
   topAdds: PositionChange[]
   topTrims: PositionChange[]
 }
@@ -121,6 +174,117 @@ export interface TreemapLeafDatum {
   value: string
   instCount: number
   holdingInstitutions: string[]
+}
+
+export interface TickerHolder {
+  instId: string
+  instName: string
+  manager: string
+  style: string
+  shares: number
+  sharesFormatted: string
+  value: number
+  mktValue: string
+  weight: number
+  weightChange?: number
+  weightChangeText?: string
+  action?: 'Add' | 'Trim' | 'Hold' | 'New'
+  shareChangePct?: number
+  shareChangeText?: string
+  qOqDelta?: string
+}
+
+export interface TickerDetailData {
+  ticker: string
+  name: string
+  cusip: string
+  sector: string
+  totalValue: number
+  mktValue: string
+  totalShares: number
+  sharesFormatted: string
+  holdingCount: number
+  avgWeight: string
+  buyers: Array<{ instId: string; instName: string; delta: number; action: string }>
+  sellers: Array<{ instId: string; instName: string; delta: number; action: string }>
+  holders: TickerHolder[]
+}
+
+export interface ConsensusBuyItem {
+  ticker: string
+  name: string
+  sector: string
+  buyerCount: number
+  totalBoughtVal: number
+  totalBoughtFormatted: string
+  totalValueFormatted: string
+  buyers: string[]
+}
+
+export interface ConsensusTrimItem {
+  ticker: string
+  name: string
+  sector: string
+  sellerCount: number
+  totalSoldVal: number
+  totalSoldFormatted: string
+  totalValueFormatted: string
+  sellers: string[]
+}
+
+export interface ConsensusHoldingItem {
+  ticker: string
+  name: string
+  sector: string
+  holdingCount: number
+  totalValueFormatted: string
+  totalValue: number
+  avgWeight: string
+  holders: string[]
+}
+
+export interface ConvictionBetItem {
+  ticker: string
+  name: string
+  sector: string
+  institution: string
+  manager: string
+  weight: string
+  rawWeight: number
+  mktValue: string
+  action: string
+}
+
+export interface ConsensusData {
+  quarter: string
+  topConsensusBuys: ConsensusBuyItem[]
+  topConsensusTrims: ConsensusTrimItem[]
+  topConsensusHoldings: ConsensusHoldingItem[]
+  highestConvictionBets: ConvictionBetItem[]
+}
+
+export interface AllStarConstituent {
+  ticker: string
+  name: string
+  sector: string
+  equalWeight: string
+  convictionWeight: string
+  rawConvictionWeight: number
+  totalValue: string
+  holderCount: number
+  backingFunds: string[]
+  mainAction: string
+}
+
+export interface AllStarIndexData {
+  name: string
+  chineseName: string
+  description: string
+  asOfQuarter: string
+  constituentsCount: number
+  totalTrackedCapital: string
+  sectorBreakdown: Array<{ sector: string; weight: number }>
+  constituents: AllStarConstituent[]
 }
 
 export interface FilingPeriod {

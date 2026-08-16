@@ -11,7 +11,18 @@
     "holdingsCount": 29,
     "displayedHoldingsCount": 15,
     "reportDate": "2026-06-30",
-    "latestFilingDate": "2026-08-14"
+    "latestFilingDate": "2026-08-14",
+    "totalBought": "24.29B",
+    "totalSold": "2.50B",
+    "netCapitalFlow": "+21.80B",
+    "turnoverRate": "4.5%",
+    "cashReserves": {
+      "amount": "$318.50B",
+      "rawAmount": 318500000000,
+      "delta": "+$30.20B",
+      "rawDelta": 30200000000,
+      "source": "10-Q SEC Official Filing (Cash & Short-Term Treasuries)"
+    }
   },
   {
     "id": "tci",
@@ -25,7 +36,18 @@
     "holdingsCount": 11,
     "displayedHoldingsCount": 11,
     "reportDate": "2026-06-30",
-    "latestFilingDate": "2026-08-14"
+    "latestFilingDate": "2026-08-14",
+    "totalBought": "3.81B",
+    "totalSold": "1.01B",
+    "netCapitalFlow": "+2.80B",
+    "turnoverRate": "4.6%",
+    "cashReserves": {
+      "amount": "$4.20B",
+      "rawAmount": 4200000000,
+      "delta": "+$0.35B",
+      "rawDelta": 350000000,
+      "source": "Fund Liquidity Model"
+    }
   },
   {
     "id": "gates",
@@ -39,7 +61,18 @@
     "holdingsCount": 24,
     "displayedHoldingsCount": 15,
     "reportDate": "2026-06-30",
-    "latestFilingDate": "2026-08-14"
+    "latestFilingDate": "2026-08-14",
+    "totalBought": "0.53B",
+    "totalSold": "1.22B",
+    "netCapitalFlow": "-0.68B",
+    "turnoverRate": "2.5%",
+    "cashReserves": {
+      "amount": "$2.80B",
+      "rawAmount": 2800000000,
+      "delta": "+$0.15B",
+      "rawDelta": 150000000,
+      "source": "Foundation Liquidity Model"
+    }
   },
   {
     "id": "tiger",
@@ -53,7 +86,18 @@
     "holdingsCount": 46,
     "displayedHoldingsCount": 15,
     "reportDate": "2026-06-30",
-    "latestFilingDate": "2026-08-14"
+    "latestFilingDate": "2026-08-14",
+    "totalBought": "2.80B",
+    "totalSold": "3.78B",
+    "netCapitalFlow": "-0.98B",
+    "turnoverRate": "13.7%",
+    "cashReserves": {
+      "amount": "$2.10B",
+      "rawAmount": 2100000000,
+      "delta": "+$0.40B",
+      "rawDelta": 400000000,
+      "source": "Portfolio Cash Estimate"
+    }
   },
   {
     "id": "bridgewater",
@@ -67,7 +111,18 @@
     "holdingsCount": 997,
     "displayedHoldingsCount": 15,
     "reportDate": "2026-06-30",
-    "latestFilingDate": "2026-08-14"
+    "latestFilingDate": "2026-08-14",
+    "totalBought": "6.71B",
+    "totalSold": "5.10B",
+    "netCapitalFlow": "+1.61B",
+    "turnoverRate": "24.2%",
+    "cashReserves": {
+      "amount": "$8.50B",
+      "rawAmount": 8500000000,
+      "delta": "-$0.60B",
+      "rawDelta": -600000000,
+      "source": "Macro Fund Liquidity Estimate"
+    }
   },
   {
     "id": "elliott",
@@ -81,7 +136,18 @@
     "holdingsCount": 28,
     "displayedHoldingsCount": 15,
     "reportDate": "2026-06-30",
-    "latestFilingDate": "2026-08-14"
+    "latestFilingDate": "2026-08-14",
+    "totalBought": "6.44B",
+    "totalSold": "3.38B",
+    "netCapitalFlow": "+3.07B",
+    "turnoverRate": "21.7%",
+    "cashReserves": {
+      "amount": "$4.50B",
+      "rawAmount": 4500000000,
+      "delta": "+$0.80B",
+      "rawDelta": 800000000,
+      "source": "Opportunistic Reserve Estimate"
+    }
   },
   {
     "id": "hh",
@@ -95,7 +161,18 @@
     "holdingsCount": 18,
     "displayedHoldingsCount": 15,
     "reportDate": "2026-06-30",
-    "latestFilingDate": "2026-08-14"
+    "latestFilingDate": "2026-08-14",
+    "totalBought": "0.28B",
+    "totalSold": "1.67B",
+    "netCapitalFlow": "-1.39B",
+    "turnoverRate": "5.1%",
+    "cashReserves": {
+      "amount": "$1.20B",
+      "rawAmount": 1200000000,
+      "delta": "+$0.10B",
+      "rawDelta": 100000000,
+      "source": "Concentrated Liquidity Estimate"
+    }
   },
   {
     "id": "pershing",
@@ -109,7 +186,18 @@
     "holdingsCount": 14,
     "displayedHoldingsCount": 14,
     "reportDate": "2026-06-30",
-    "latestFilingDate": "2026-08-14"
+    "latestFilingDate": "2026-08-14",
+    "totalBought": "18.90B",
+    "totalSold": "0.00B",
+    "netCapitalFlow": "+18.90B",
+    "turnoverRate": "48.5%",
+    "cashReserves": {
+      "amount": "$2.40B",
+      "rawAmount": 2400000000,
+      "delta": "+$0.50B",
+      "rawDelta": 500000000,
+      "source": "Parent 10-Q/13F Model"
+    }
   },
   {
     "id": "softbank",
@@ -123,7 +211,18 @@
     "holdingsCount": 30,
     "displayedHoldingsCount": 15,
     "reportDate": "2026-06-30",
-    "latestFilingDate": "2026-08-14"
+    "latestFilingDate": "2026-08-14",
+    "totalBought": "0.06B",
+    "totalSold": "0.97B",
+    "netCapitalFlow": "-0.92B",
+    "turnoverRate": "2.8%",
+    "cashReserves": {
+      "amount": "$3.80B",
+      "rawAmount": 3800000000,
+      "delta": "-$0.20B",
+      "rawDelta": -200000000,
+      "source": "Group Liquidity Estimate"
+    }
   },
   {
     "id": "ark",
@@ -137,7 +236,18 @@
     "holdingsCount": 190,
     "displayedHoldingsCount": 15,
     "reportDate": "2026-06-30",
-    "latestFilingDate": "2026-08-14"
+    "latestFilingDate": "2026-08-14",
+    "totalBought": "2.44B",
+    "totalSold": "0.82B",
+    "netCapitalFlow": "+1.62B",
+    "turnoverRate": "10.6%",
+    "cashReserves": {
+      "amount": "$0.90B",
+      "rawAmount": 900000000,
+      "delta": "-$0.10B",
+      "rawDelta": -100000000,
+      "source": "ETF Flow Liquidity Estimate"
+    }
   },
   {
     "id": "soros",
@@ -151,7 +261,18 @@
     "holdingsCount": 258,
     "displayedHoldingsCount": 15,
     "reportDate": "2026-06-30",
-    "latestFilingDate": "2026-08-14"
+    "latestFilingDate": "2026-08-14",
+    "totalBought": "2.60B",
+    "totalSold": "3.64B",
+    "netCapitalFlow": "-1.03B",
+    "turnoverRate": "38.3%",
+    "cashReserves": {
+      "amount": "$1.50B",
+      "rawAmount": 1500000000,
+      "delta": "+$0.20B",
+      "rawDelta": 200000000,
+      "source": "Macro Liquidity Reserve"
+    }
   },
   {
     "id": "himalaya",
@@ -165,6 +286,17 @@
     "holdingsCount": 8,
     "displayedHoldingsCount": 8,
     "reportDate": "2026-06-30",
-    "latestFilingDate": "2026-08-14"
+    "latestFilingDate": "2026-08-14",
+    "totalBought": "0.47B",
+    "totalSold": "0.41B",
+    "netCapitalFlow": "+0.07B",
+    "turnoverRate": "11.9%",
+    "cashReserves": {
+      "amount": "$0.45B",
+      "rawAmount": 450000000,
+      "delta": "+$0.05B",
+      "rawDelta": 50000000,
+      "source": "Fund Liquidity Model"
+    }
   }
 ]

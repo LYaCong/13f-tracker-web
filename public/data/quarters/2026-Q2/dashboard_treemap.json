@@ -117,7 +117,7 @@
   {
     "ticker": "OXY",
     "heat": 37,
-    "avgWeight": "3.45%",
+    "avgWeight": "3.46%",
     "value": "13.37B",
     "instCount": 2,
     "holdingInstitutions": [
@@ -191,7 +191,7 @@
   },
   {
     "ticker": "CNI",
-    "heat": 92,
+    "heat": 91,
     "avgWeight": "10.04%",
     "value": "7.30B",
     "instCount": 2,

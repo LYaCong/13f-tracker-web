@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
+import ConsensusBoards from '@/components/ConsensusBoards'
 import PopularTreemap from '@/components/PopularTreemap'
 import { getSecuritySearchTerms, translateInstitutionName, translateStyleName } from '@/lib/displayNames'
 import type { InstitutionMeta, TreemapDatum } from '@/lib/secData'
@@ -120,8 +121,9 @@ export default function Dashboard() {
   }
 
   return (
-    <div className="space-y-5 animate-in fade-in duration-500">
-      <div className="flex flex-col gap-3 px-2 mb-2">
+    <div className="space-y-6 animate-in fade-in duration-500">
+      {/* Header & Status Notice */}
+      <div className="flex flex-col gap-3 px-2 mb-1">
         <div className="flex justify-between items-center">
           <h2 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-text-primary to-text-secondary">
             {lang.trackedInstitutions}{' '}
@@ -142,6 +144,7 @@ export default function Dashboard() {
         </div>
       </div>
 
+      {/* Tracked 12 Institutions Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 transition-all duration-500">
         {filteredInstitutions.map((inst) => {
           const isDimmed = focusedInstitutions !== null && !focusedInstitutions.includes(inst.id)
@@ -202,7 +205,18 @@ export default function Dashboard() {
         </div>
       )}
 
-      <PopularTreemap dataPath={dataPath} onNodeFocus={setFocusedInstitutions} />
+      {/* Smart Money Consensus Boards (Feature 5) */}
+      <ConsensusBoards dataPath={dataPath} />
+
+      {/* Popular Holdings Treemap */}
+      <PopularTreemap dataPath={dataPath} onSelectTicker={(ticker) => {
+        if (!ticker) {
+          setFocusedInstitutions(null)
+        } else {
+          const matched = treemapNodes.find((n) => n.ticker === ticker)
+          setFocusedInstitutions(matched ? (matched.holdingInstitutions as string[]) : null)
+        }
+      }} />
     </div>
   )
 }
