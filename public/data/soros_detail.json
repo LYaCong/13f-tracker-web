@@ -440,6 +440,51 @@
       "shareChange": "+839.8%",
       "newWeight": "1.19%",
       "type": "Add"
+    },
+    {
+      "ticker": "NEBIU",
+      "security": "NEBIUS GROUP N.V.",
+      "deltaValue": "+0.09B",
+      "rawDelta": 85612700,
+      "shareChange": "+100.0%",
+      "newWeight": "1.05%",
+      "type": "New"
+    },
+    {
+      "ticker": "APOGE",
+      "security": "APOGEE THERAPEUTICS ",
+      "deltaValue": "+0.07B",
+      "rawDelta": 74926085,
+      "shareChange": "+100.0%",
+      "newWeight": "0.92%",
+      "type": "New"
+    },
+    {
+      "ticker": "SOUTH",
+      "security": "SOUTHERN CO",
+      "deltaValue": "+0.07B",
+      "rawDelta": 65774926,
+      "shareChange": "+100.0%",
+      "newWeight": "0.81%",
+      "type": "New"
+    },
+    {
+      "ticker": "DIGIT",
+      "security": "DIGITALBRIDGE GROUP ",
+      "deltaValue": "+0.06B",
+      "rawDelta": 64994554,
+      "shareChange": "+100.0%",
+      "newWeight": "0.80%",
+      "type": "New"
+    },
+    {
+      "ticker": "GOOGL",
+      "security": "ALPHABET INC",
+      "deltaValue": "+0.06B",
+      "rawDelta": 60171083,
+      "shareChange": "+100.0%",
+      "newWeight": "0.74%",
+      "type": "New"
     }
   ],
   "topTrims": [
@@ -484,6 +529,51 @@
       "security": "JAZZ INVESTMENTS I L",
       "deltaValue": "-0.16B",
       "rawDelta": 158441825,
+      "shareChange": "-100.0%",
+      "newWeight": "0.00%",
+      "type": "Exit"
+    },
+    {
+      "ticker": "AMZN",
+      "security": "AMAZON COM INC",
+      "deltaValue": "-0.12B",
+      "rawDelta": 123405513,
+      "shareChange": "-39.2%",
+      "newWeight": "3.46%",
+      "type": "Trim"
+    },
+    {
+      "ticker": "SEALE",
+      "security": "SEALED AIR CORP NEW",
+      "deltaValue": "-0.12B",
+      "rawDelta": 115713148,
+      "shareChange": "-100.0%",
+      "newWeight": "0.00%",
+      "type": "Exit"
+    },
+    {
+      "ticker": "AMICU",
+      "security": "AMICUS THERAPEUTIC",
+      "deltaValue": "-0.08B",
+      "rawDelta": 83191070,
+      "shareChange": "-100.0%",
+      "newWeight": "0.00%",
+      "type": "Exit"
+    },
+    {
+      "ticker": "HONEY",
+      "security": "HONEYWELL INTL INC",
+      "deltaValue": "-0.08B",
+      "rawDelta": 80930494,
+      "shareChange": "-100.0%",
+      "newWeight": "0.00%",
+      "type": "Exit"
+    },
+    {
+      "ticker": "HOLOG",
+      "security": "HOLOGIC INC",
+      "deltaValue": "-0.08B",
+      "rawDelta": 76614396,
       "shareChange": "-100.0%",
       "newWeight": "0.00%",
       "type": "Exit"

@@ -390,6 +390,51 @@
       "shareChange": "+100.0%",
       "newWeight": "9.62%",
       "type": "New"
+    },
+    {
+      "ticker": "META",
+      "security": "META PLATFORMS INC",
+      "deltaValue": "+1.80B",
+      "rawDelta": 1800309764,
+      "shareChange": "+100.0%",
+      "newWeight": "9.25%",
+      "type": "New"
+    },
+    {
+      "ticker": "HOWAR",
+      "security": "HOWARD HUGHES HOLDIN",
+      "deltaValue": "+1.42B",
+      "rawDelta": 1421804055,
+      "shareChange": "+209.5%",
+      "newWeight": "10.23%",
+      "type": "Add"
+    },
+    {
+      "ticker": "V",
+      "security": "VISA INC",
+      "deltaValue": "+1.12B",
+      "rawDelta": 1122065552,
+      "shareChange": "+100.0%",
+      "newWeight": "5.76%",
+      "type": "New"
+    },
+    {
+      "ticker": "MA",
+      "security": "MASTERCARD INCORPORA",
+      "deltaValue": "+1.09B",
+      "rawDelta": 1091218186,
+      "shareChange": "+100.0%",
+      "newWeight": "5.61%",
+      "type": "New"
+    },
+    {
+      "ticker": "S",
+      "security": "S&P GLOBAL INC",
+      "deltaValue": "+1.06B",
+      "rawDelta": 1056088305,
+      "shareChange": "+100.0%",
+      "newWeight": "5.43%",
+      "type": "New"
     }
   ],
   "topTrims": []

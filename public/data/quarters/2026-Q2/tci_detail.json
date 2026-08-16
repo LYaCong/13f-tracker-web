@@ -400,6 +400,15 @@
       "shareChange": "+0.3%",
       "newWeight": "10.87%",
       "type": "Add"
+    },
+    {
+      "ticker": "FERRO",
+      "security": "FERROVIAL NV",
+      "deltaValue": "+0.11B",
+      "rawDelta": 106683940,
+      "shareChange": "+1.0%",
+      "newWeight": "2.72%",
+      "type": "Add"
     }
   ],
   "topTrims": [

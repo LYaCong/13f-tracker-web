@@ -440,6 +440,51 @@
       "shareChange": "+1.1%",
       "newWeight": "1.85%",
       "type": "Add"
+    },
+    {
+      "ticker": "INTEL",
+      "security": "Intellia Therapeutic",
+      "deltaValue": "+0.10B",
+      "rawDelta": 99528030,
+      "shareChange": "+16.3%",
+      "newWeight": "1.85%",
+      "type": "Add"
+    },
+    {
+      "ticker": "X",
+      "security": "X-Energy Inc",
+      "deltaValue": "+0.10B",
+      "rawDelta": 99361493,
+      "shareChange": "+100.0%",
+      "newWeight": "0.65%",
+      "type": "New"
+    },
+    {
+      "ticker": "AMZN",
+      "security": "Amazon.com Inc",
+      "deltaValue": "+0.10B",
+      "rawDelta": 96976245,
+      "shareChange": "+17.4%",
+      "newWeight": "2.46%",
+      "type": "Add"
+    },
+    {
+      "ticker": "NVDA",
+      "security": "NVIDIA Corp",
+      "deltaValue": "+0.10B",
+      "rawDelta": 95795513,
+      "shareChange": "+33.4%",
+      "newWeight": "1.79%",
+      "type": "Add"
+    },
+    {
+      "ticker": "ELI",
+      "security": "Eli Lilly & Co",
+      "deltaValue": "+0.08B",
+      "rawDelta": 81002260,
+      "shareChange": "+509.5%",
+      "newWeight": "0.60%",
+      "type": "Add"
     }
   ],
   "topTrims": [
@@ -486,6 +531,51 @@
       "rawDelta": 109057055,
       "shareChange": "-12.8%",
       "newWeight": "3.41%",
+      "type": "Trim"
+    },
+    {
+      "ticker": "ABSCI",
+      "security": "Absci Corp",
+      "deltaValue": "-0.11B",
+      "rawDelta": 108625389,
+      "shareChange": "-5.8%",
+      "newWeight": "0.97%",
+      "type": "Trim"
+    },
+    {
+      "ticker": "TSLA",
+      "security": "Tesla Inc",
+      "deltaValue": "-0.11B",
+      "rawDelta": 108225383,
+      "shareChange": "-2.5%",
+      "newWeight": "7.54%",
+      "type": "Trim"
+    },
+    {
+      "ticker": "BAIDU",
+      "security": "Baidu Inc",
+      "deltaValue": "-0.09B",
+      "rawDelta": 90319221,
+      "shareChange": "-73.0%",
+      "newWeight": "0.22%",
+      "type": "Trim"
+    },
+    {
+      "ticker": "ALIBA",
+      "security": "Alibaba Group Holdin",
+      "deltaValue": "-0.09B",
+      "rawDelta": 86781694,
+      "shareChange": "-84.7%",
+      "newWeight": "0.07%",
+      "type": "Trim"
+    },
+    {
+      "ticker": "BITMI",
+      "security": "BitMine Immersion Te",
+      "deltaValue": "-0.07B",
+      "rawDelta": 74567248,
+      "shareChange": "-9.2%",
+      "newWeight": "0.76%",
       "type": "Trim"
     }
   ]

@@ -440,6 +440,51 @@
       "shareChange": "+100.0%",
       "newWeight": "1.14%",
       "type": "New"
+    },
+    {
+      "ticker": "CORPA",
+      "security": "CORPAY INC",
+      "deltaValue": "+0.21B",
+      "rawDelta": 206632543,
+      "shareChange": "+22.7%",
+      "newWeight": "2.99%",
+      "type": "Add"
+    },
+    {
+      "ticker": "BLOCK",
+      "security": "BLOCK INC",
+      "deltaValue": "+0.11B",
+      "rawDelta": 107056532,
+      "shareChange": "+14.4%",
+      "newWeight": "1.45%",
+      "type": "Add"
+    },
+    {
+      "ticker": "REDDI",
+      "security": "REDDIT INC",
+      "deltaValue": "+0.10B",
+      "rawDelta": 102327402,
+      "shareChange": "+1.2%",
+      "newWeight": "1.83%",
+      "type": "Add"
+    },
+    {
+      "ticker": "DANAH",
+      "security": "DANAHER CORP DEL",
+      "deltaValue": "+0.09B",
+      "rawDelta": 86858880,
+      "shareChange": "+100.0%",
+      "newWeight": "0.36%",
+      "type": "New"
+    },
+    {
+      "ticker": "SPACE",
+      "security": "SPACE EXPLORATION TE",
+      "deltaValue": "+0.06B",
+      "rawDelta": 64072500,
+      "shareChange": "+100.0%",
+      "newWeight": "0.27%",
+      "type": "New"
     }
   ],
   "topTrims": [
@@ -486,6 +531,51 @@
       "rawDelta": 446938860,
       "shareChange": "-51.1%",
       "newWeight": "2.76%",
+      "type": "Trim"
+    },
+    {
+      "ticker": "APPLO",
+      "security": "APPLOVIN CORP",
+      "deltaValue": "-0.40B",
+      "rawDelta": 398000000,
+      "shareChange": "-100.0%",
+      "newWeight": "0.00%",
+      "type": "Exit"
+    },
+    {
+      "ticker": "ZILLO",
+      "security": "ZILLOW GROUP INC",
+      "deltaValue": "-0.30B",
+      "rawDelta": 304927441,
+      "shareChange": "-100.0%",
+      "newWeight": "0.00%",
+      "type": "Exit"
+    },
+    {
+      "ticker": "NETFL",
+      "security": "NETFLIX INC.",
+      "deltaValue": "-0.23B",
+      "rawDelta": 234509850,
+      "shareChange": "-100.0%",
+      "newWeight": "0.00%",
+      "type": "Exit"
+    },
+    {
+      "ticker": "SPOTI",
+      "security": "SPOTIFY TECHNOLOGY S",
+      "deltaValue": "-0.23B",
+      "rawDelta": 228689538,
+      "shareChange": "-25.9%",
+      "newWeight": "2.24%",
+      "type": "Trim"
+    },
+    {
+      "ticker": "AMZN",
+      "security": "AMAZON COM INC",
+      "deltaValue": "-0.23B",
+      "rawDelta": 225279214,
+      "shareChange": "-3.2%",
+      "newWeight": "9.62%",
       "type": "Trim"
     }
   ]

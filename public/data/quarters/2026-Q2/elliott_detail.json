@@ -440,6 +440,51 @@
       "shareChange": "+65.1%",
       "newWeight": "3.67%",
       "type": "Add"
+    },
+    {
+      "ticker": "VANEC",
+      "security": "VANECK ETF TRUST",
+      "deltaValue": "+0.36B",
+      "rawDelta": 355407000,
+      "shareChange": "+150.7%",
+      "newWeight": "3.05%",
+      "type": "Add"
+    },
+    {
+      "ticker": "VANEC",
+      "security": "VANECK ETF TRUST",
+      "deltaValue": "+0.16B",
+      "rawDelta": 163972500,
+      "shareChange": "+100.0%",
+      "newWeight": "0.72%",
+      "type": "New"
+    },
+    {
+      "ticker": "SYNOP",
+      "security": "SYNOPSYS INC",
+      "deltaValue": "+0.10B",
+      "rawDelta": 101480925,
+      "shareChange": "+100.0%",
+      "newWeight": "0.45%",
+      "type": "New"
+    },
+    {
+      "ticker": "INVES",
+      "security": "INVESCO EXCHANGE TRA",
+      "deltaValue": "+0.08B",
+      "rawDelta": 84044150,
+      "shareChange": "+100.0%",
+      "newWeight": "0.37%",
+      "type": "New"
+    },
+    {
+      "ticker": "NORWE",
+      "security": "NORWEGIAN CRUISE LIN",
+      "deltaValue": "+0.06B",
+      "rawDelta": 63443260,
+      "shareChange": "+11.4%",
+      "newWeight": "1.37%",
+      "type": "Add"
     }
   ],
   "topTrims": [
@@ -486,6 +531,51 @@
       "rawDelta": 254409750,
       "shareChange": "-31.0%",
       "newWeight": "4.23%",
+      "type": "Trim"
+    },
+    {
+      "ticker": "ISHAR",
+      "security": "ISHARES TR",
+      "deltaValue": "-0.21B",
+      "rawDelta": 213670000,
+      "shareChange": "-100.0%",
+      "newWeight": "0.00%",
+      "type": "Exit"
+    },
+    {
+      "ticker": "SOUTH",
+      "security": "SOUTHWEST AIRLS CO",
+      "deltaValue": "-0.11B",
+      "rawDelta": 109818140,
+      "shareChange": "-19.9%",
+      "newWeight": "5.51%",
+      "type": "Trim"
+    },
+    {
+      "ticker": "CROWN",
+      "security": "CROWN CASTLE INC",
+      "deltaValue": "-0.10B",
+      "rawDelta": 99604750,
+      "shareChange": "-100.0%",
+      "newWeight": "0.00%",
+      "type": "Exit"
+    },
+    {
+      "ticker": "ISHAR",
+      "security": "ISHARES TR",
+      "deltaValue": "-0.05B",
+      "rawDelta": 48887500,
+      "shareChange": "-50.0%",
+      "newWeight": "0.33%",
+      "type": "Trim"
+    },
+    {
+      "ticker": "SEADR",
+      "security": "SEADRILL LTD",
+      "deltaValue": "-0.05B",
+      "rawDelta": 46809633,
+      "shareChange": "-5.9%",
+      "newWeight": "0.74%",
       "type": "Trim"
     }
   ]

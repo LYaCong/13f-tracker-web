@@ -440,6 +440,33 @@
       "shareChange": "+3.7%",
       "newWeight": "0.37%",
       "type": "Add"
+    },
+    {
+      "ticker": "MACYS",
+      "security": "MACYS INC",
+      "deltaValue": "+0.12B",
+      "rawDelta": 118068040,
+      "shareChange": "+141.8%",
+      "newWeight": "0.06%",
+      "type": "Add"
+    },
+    {
+      "ticker": "LENNA",
+      "security": "LENNAR CORP",
+      "deltaValue": "+0.01B",
+      "rawDelta": 6450383,
+      "shareChange": "+25.4%",
+      "newWeight": "0.01%",
+      "type": "Add"
+    },
+    {
+      "ticker": "D",
+      "security": "D R HORTON INC",
+      "deltaValue": "+0.00B",
+      "rawDelta": 580504,
+      "shareChange": "+100.0%",
+      "newWeight": "0.00%",
+      "type": "New"
     }
   ],
   "topTrims": [
@@ -487,6 +514,24 @@
       "shareChange": "-52.5%",
       "newWeight": "0.14%",
       "type": "Trim"
+    },
+    {
+      "ticker": "ALLY",
+      "security": "ALLY FINL INC",
+      "deltaValue": "-0.10B",
+      "rawDelta": 102980000,
+      "shareChange": "-6.9%",
+      "newWeight": "0.41%",
+      "type": "Trim"
+    },
+    {
+      "ticker": "CONST",
+      "security": "CONSTELLATION BRANDS",
+      "deltaValue": "-0.09B",
+      "rawDelta": 94933500,
+      "shareChange": "-100.0%",
+      "newWeight": "0.00%",
+      "type": "Exit"
     }
   ]
 }

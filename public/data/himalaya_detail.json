@@ -390,6 +390,15 @@
       "shareChange": "-100.0%",
       "newWeight": "0.00%",
       "type": "Exit"
+    },
+    {
+      "ticker": "MSCI",
+      "security": "MSCI INC",
+      "deltaValue": "-0.01B",
+      "rawDelta": 10208310,
+      "shareChange": "-100.0%",
+      "newWeight": "0.00%",
+      "type": "Exit"
     }
   ]
 }

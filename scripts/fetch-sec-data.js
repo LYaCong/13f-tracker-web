@@ -593,8 +593,8 @@ async function processInstitution(inst) {
     radarData,
     assetTrend,
     holdings: formattedHoldings.slice(0, 15), // Top 15 for pie chart
-    topAdds: adds.slice(0, 5),
-    topTrims: trims.slice(0, 5)
+    topAdds: adds.slice(0, 10),
+    topTrims: trims.slice(0, 10)
   };
   
   writeJson(path.join(OUTPUT_DIR, `${inst.id}_detail.json`), detailJson);

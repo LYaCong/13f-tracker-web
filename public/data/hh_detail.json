@@ -478,6 +478,42 @@
       "shareChange": "-6.7%",
       "newWeight": "1.00%",
       "type": "Trim"
+    },
+    {
+      "ticker": "MSFT",
+      "security": "MICROSOFT CORP",
+      "deltaValue": "-0.09B",
+      "rawDelta": 94798338,
+      "shareChange": "-25.8%",
+      "newWeight": "1.47%",
+      "type": "Trim"
+    },
+    {
+      "ticker": "TAIWA",
+      "security": "TAIWAN SEMICONDUCTOR",
+      "deltaValue": "-0.05B",
+      "rawDelta": 51098040,
+      "shareChange": "-100.0%",
+      "newWeight": "0.00%",
+      "type": "Exit"
+    },
+    {
+      "ticker": "CROWD",
+      "security": "CROWDSTRIKE HLDGS IN",
+      "deltaValue": "-0.00B",
+      "rawDelta": 3904100,
+      "shareChange": "-100.0%",
+      "newWeight": "0.00%",
+      "type": "Exit"
+    },
+    {
+      "ticker": "UNH",
+      "security": "UNITEDHEALTH GROUP I",
+      "deltaValue": "-0.00B",
+      "rawDelta": 3352922,
+      "shareChange": "-33.6%",
+      "newWeight": "0.87%",
+      "type": "Trim"
     }
   ]
 }

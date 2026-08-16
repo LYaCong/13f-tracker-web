@@ -440,6 +440,51 @@
       "shareChange": "+388.9%",
       "newWeight": "0.49%",
       "type": "Add"
+    },
+    {
+      "ticker": "EVERS",
+      "security": "EVERSOURCE ENERGY",
+      "deltaValue": "+0.09B",
+      "rawDelta": 86372768,
+      "shareChange": "+100.0%",
+      "newWeight": "0.35%",
+      "type": "New"
+    },
+    {
+      "ticker": "EDISO",
+      "security": "EDISON INTL",
+      "deltaValue": "+0.08B",
+      "rawDelta": 81616122,
+      "shareChange": "+777.1%",
+      "newWeight": "0.38%",
+      "type": "Add"
+    },
+    {
+      "ticker": "PETRO",
+      "security": "PETROLEO BRASILEIRO ",
+      "deltaValue": "+0.08B",
+      "rawDelta": 81553858,
+      "shareChange": "+466.9%",
+      "newWeight": "0.43%",
+      "type": "Add"
+    },
+    {
+      "ticker": "APPLO",
+      "security": "APPLOVIN CORP",
+      "deltaValue": "+0.08B",
+      "rawDelta": 75533748,
+      "shareChange": "+100.0%",
+      "newWeight": "0.31%",
+      "type": "New"
+    },
+    {
+      "ticker": "MARAT",
+      "security": "MARATHON PETE CORP",
+      "deltaValue": "+0.07B",
+      "rawDelta": 70415137,
+      "shareChange": "+351.9%",
+      "newWeight": "0.37%",
+      "type": "Add"
     }
   ],
   "topTrims": [
@@ -486,6 +531,51 @@
       "rawDelta": 139072681,
       "shareChange": "-90.7%",
       "newWeight": "0.22%",
+      "type": "Trim"
+    },
+    {
+      "ticker": "MSFT",
+      "security": "MICROSOFT CORP",
+      "deltaValue": "-0.14B",
+      "rawDelta": 136075230,
+      "shareChange": "-34.4%",
+      "newWeight": "1.09%",
+      "type": "Trim"
+    },
+    {
+      "ticker": "ARIST",
+      "security": "ARISTA NETWORKS INC",
+      "deltaValue": "-0.12B",
+      "rawDelta": 120112336,
+      "shareChange": "-80.9%",
+      "newWeight": "0.18%",
+      "type": "Trim"
+    },
+    {
+      "ticker": "META",
+      "security": "META PLATFORMS INC",
+      "deltaValue": "-0.10B",
+      "rawDelta": 104861643,
+      "shareChange": "-62.3%",
+      "newWeight": "0.25%",
+      "type": "Trim"
+    },
+    {
+      "ticker": "GOOGL",
+      "security": "ALPHABET INC",
+      "deltaValue": "-0.10B",
+      "rawDelta": 101945098,
+      "shareChange": "-33.8%",
+      "newWeight": "1.94%",
+      "type": "Trim"
+    },
+    {
+      "ticker": "ARM",
+      "security": "ARM HOLDINGS PLC",
+      "deltaValue": "-0.09B",
+      "rawDelta": 88017749,
+      "shareChange": "-99.2%",
+      "newWeight": "0.01%",
       "type": "Trim"
     }
   ]
