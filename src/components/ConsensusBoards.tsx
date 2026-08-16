@@ -116,13 +116,13 @@ export default function ConsensusBoards({ dataPath }: ConsensusBoardsProps) {
           <table className="w-full text-left text-sm">
             <thead className="text-text-secondary text-xs border-b border-border bg-background/50">
               <tr>
-                <th className="px-4 py-3 font-semibold">#</th>
-                <th className="px-4 py-3 font-semibold">{lang.security}</th>
-                <th className="px-4 py-3 font-semibold">{lang.segment}</th>
-                <th className="px-4 py-3 font-semibold text-center">{lang.buyerCount}</th>
-                <th className="px-4 py-3 font-semibold text-right">{lang.totalBought}</th>
-                <th className="px-4 py-3 font-semibold text-right">{lang.quarterEndNetAssets}</th>
-                <th className="px-4 py-3 font-semibold">{lang.buyersList}</th>
+                <th className="px-4 py-3 font-semibold whitespace-nowrap">#</th>
+                <th className="px-4 py-3 font-semibold whitespace-nowrap">{lang.security}</th>
+                <th className="px-4 py-3 font-semibold whitespace-nowrap min-w-[100px]">{lang.segment}</th>
+                <th className="px-4 py-3 font-semibold text-center whitespace-nowrap">{lang.buyerCount}</th>
+                <th className="px-4 py-3 font-semibold text-right whitespace-nowrap">{lang.totalBought}</th>
+                <th className="px-4 py-3 font-semibold text-right whitespace-nowrap">{lang.quarterEndNetAssets}</th>
+                <th className="px-4 py-3 font-semibold whitespace-nowrap">{lang.buyersList}</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-border">
@@ -134,26 +134,26 @@ export default function ConsensusBoards({ dataPath }: ConsensusBoardsProps) {
                       to={`/ticker/${item.ticker}`}
                       className="font-bold text-text-primary group-hover:text-accent-blue transition-colors flex items-center gap-1.5"
                     >
-                      <span>{item.ticker}</span>
+                      <span className="shrink-0">{item.ticker}</span>
                       <span className="text-xs font-normal text-text-secondary truncate max-w-[140px]">
                         {translateSecurityName(item.name, language, [item.ticker, item.name])}
                       </span>
                     </Link>
                   </td>
-                  <td className="px-4 py-3 text-xs text-text-secondary">
-                    <span className="px-2 py-0.5 rounded-full bg-gray-100 border border-gray-200">
+                  <td className="px-4 py-3 text-xs text-text-secondary whitespace-nowrap">
+                    <span className="px-2.5 py-1 rounded-full bg-gray-100 border border-gray-200 whitespace-nowrap inline-flex items-center">
                       {translateSectorName(item.sector, language)}
                     </span>
                   </td>
-                  <td className="px-4 py-3 text-center">
+                  <td className="px-4 py-3 text-center whitespace-nowrap">
                     <span className="inline-flex items-center justify-center px-2 py-0.5 rounded-full text-xs font-black bg-accent-green/10 text-accent-green">
                       {item.buyerCount}
                     </span>
                   </td>
-                  <td className="px-4 py-3 text-right font-black text-accent-green">
+                  <td className="px-4 py-3 text-right font-black text-accent-green whitespace-nowrap">
                     +{item.totalBoughtFormatted}
                   </td>
-                  <td className="px-4 py-3 text-right font-semibold text-text-primary">
+                  <td className="px-4 py-3 text-right font-semibold text-text-primary whitespace-nowrap">
                     {item.totalValueFormatted}
                   </td>
                   <td className="px-4 py-3 text-xs text-text-secondary">
@@ -161,7 +161,7 @@ export default function ConsensusBoards({ dataPath }: ConsensusBoardsProps) {
                       {Array.from(new Set(item.buyers)).map((buyer, bIdx) => (
                         <span
                           key={bIdx}
-                          className="px-1.5 py-0.5 rounded bg-background border border-border/80 text-[10px]"
+                          className="px-1.5 py-0.5 rounded bg-background border border-border/80 text-[10px] whitespace-nowrap"
                         >
                           {buyer.split(' ')[0]}
                         </span>
@@ -181,13 +181,13 @@ export default function ConsensusBoards({ dataPath }: ConsensusBoardsProps) {
           <table className="w-full text-left text-sm">
             <thead className="text-text-secondary text-xs border-b border-border bg-background/50">
               <tr>
-                <th className="px-4 py-3 font-semibold">#</th>
-                <th className="px-4 py-3 font-semibold">{lang.security}</th>
-                <th className="px-4 py-3 font-semibold">{lang.segment}</th>
-                <th className="px-4 py-3 font-semibold text-center">{lang.sellerCount}</th>
-                <th className="px-4 py-3 font-semibold text-right">{lang.totalSold}</th>
-                <th className="px-4 py-3 font-semibold text-right">{lang.quarterEndNetAssets}</th>
-                <th className="px-4 py-3 font-semibold">{lang.sellersList}</th>
+                <th className="px-4 py-3 font-semibold whitespace-nowrap">#</th>
+                <th className="px-4 py-3 font-semibold whitespace-nowrap">{lang.security}</th>
+                <th className="px-4 py-3 font-semibold whitespace-nowrap min-w-[100px]">{lang.segment}</th>
+                <th className="px-4 py-3 font-semibold text-center whitespace-nowrap">{lang.sellerCount}</th>
+                <th className="px-4 py-3 font-semibold text-right whitespace-nowrap">{lang.totalSold}</th>
+                <th className="px-4 py-3 font-semibold text-right whitespace-nowrap">{lang.quarterEndNetAssets}</th>
+                <th className="px-4 py-3 font-semibold whitespace-nowrap">{lang.sellersList}</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-border">
@@ -199,26 +199,26 @@ export default function ConsensusBoards({ dataPath }: ConsensusBoardsProps) {
                       to={`/ticker/${item.ticker}`}
                       className="font-bold text-text-primary group-hover:text-accent-blue transition-colors flex items-center gap-1.5"
                     >
-                      <span>{item.ticker}</span>
+                      <span className="shrink-0">{item.ticker}</span>
                       <span className="text-xs font-normal text-text-secondary truncate max-w-[140px]">
                         {translateSecurityName(item.name, language, [item.ticker, item.name])}
                       </span>
                     </Link>
                   </td>
-                  <td className="px-4 py-3 text-xs text-text-secondary">
-                    <span className="px-2 py-0.5 rounded-full bg-gray-100 border border-gray-200">
+                  <td className="px-4 py-3 text-xs text-text-secondary whitespace-nowrap">
+                    <span className="px-2.5 py-1 rounded-full bg-gray-100 border border-gray-200 whitespace-nowrap inline-flex items-center">
                       {translateSectorName(item.sector, language)}
                     </span>
                   </td>
-                  <td className="px-4 py-3 text-center">
+                  <td className="px-4 py-3 text-center whitespace-nowrap">
                     <span className="inline-flex items-center justify-center px-2 py-0.5 rounded-full text-xs font-black bg-accent-red/10 text-accent-red">
                       {item.sellerCount}
                     </span>
                   </td>
-                  <td className="px-4 py-3 text-right font-black text-accent-red">
+                  <td className="px-4 py-3 text-right font-black text-accent-red whitespace-nowrap">
                     -{item.totalSoldFormatted}
                   </td>
-                  <td className="px-4 py-3 text-right font-semibold text-text-primary">
+                  <td className="px-4 py-3 text-right font-semibold text-text-primary whitespace-nowrap">
                     {item.totalValueFormatted}
                   </td>
                   <td className="px-4 py-3 text-xs text-text-secondary">
@@ -226,7 +226,7 @@ export default function ConsensusBoards({ dataPath }: ConsensusBoardsProps) {
                       {Array.from(new Set(item.sellers)).map((seller, sIdx) => (
                         <span
                           key={sIdx}
-                          className="px-1.5 py-0.5 rounded bg-background border border-border/80 text-[10px]"
+                          className="px-1.5 py-0.5 rounded bg-background border border-border/80 text-[10px] whitespace-nowrap"
                         >
                           {seller.split(' ')[0]}
                         </span>
@@ -246,13 +246,13 @@ export default function ConsensusBoards({ dataPath }: ConsensusBoardsProps) {
           <table className="w-full text-left text-sm">
             <thead className="text-text-secondary text-xs border-b border-border bg-background/50">
               <tr>
-                <th className="px-4 py-3 font-semibold">#</th>
-                <th className="px-4 py-3 font-semibold">{lang.security}</th>
-                <th className="px-4 py-3 font-semibold">{lang.segment}</th>
-                <th className="px-4 py-3 font-semibold text-center">{lang.holderCount}</th>
-                <th className="px-4 py-3 font-semibold text-right">{lang.quarterEndNetAssets}</th>
-                <th className="px-4 py-3 font-semibold text-right">{lang.avg} {lang.weight}</th>
-                <th className="px-4 py-3 font-semibold">{lang.topHolders}</th>
+                <th className="px-4 py-3 font-semibold whitespace-nowrap">#</th>
+                <th className="px-4 py-3 font-semibold whitespace-nowrap">{lang.security}</th>
+                <th className="px-4 py-3 font-semibold whitespace-nowrap min-w-[100px]">{lang.segment}</th>
+                <th className="px-4 py-3 font-semibold text-center whitespace-nowrap">{lang.holderCount}</th>
+                <th className="px-4 py-3 font-semibold text-right whitespace-nowrap">{lang.quarterEndNetAssets}</th>
+                <th className="px-4 py-3 font-semibold text-right whitespace-nowrap">{lang.avg} {lang.weight}</th>
+                <th className="px-4 py-3 font-semibold whitespace-nowrap">{lang.topHolders}</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-border">
@@ -264,26 +264,26 @@ export default function ConsensusBoards({ dataPath }: ConsensusBoardsProps) {
                       to={`/ticker/${item.ticker}`}
                       className="font-bold text-text-primary group-hover:text-accent-blue transition-colors flex items-center gap-1.5"
                     >
-                      <span>{item.ticker}</span>
+                      <span className="shrink-0">{item.ticker}</span>
                       <span className="text-xs font-normal text-text-secondary truncate max-w-[140px]">
                         {translateSecurityName(item.name, language, [item.ticker, item.name])}
                       </span>
                     </Link>
                   </td>
-                  <td className="px-4 py-3 text-xs text-text-secondary">
-                    <span className="px-2 py-0.5 rounded-full bg-gray-100 border border-gray-200">
+                  <td className="px-4 py-3 text-xs text-text-secondary whitespace-nowrap">
+                    <span className="px-2.5 py-1 rounded-full bg-gray-100 border border-gray-200 whitespace-nowrap inline-flex items-center">
                       {translateSectorName(item.sector, language)}
                     </span>
                   </td>
-                  <td className="px-4 py-3 text-center">
+                  <td className="px-4 py-3 text-center whitespace-nowrap">
                     <span className="inline-flex items-center justify-center px-2.5 py-0.5 rounded-full text-xs font-black bg-accent-blue/10 text-accent-blue">
                       {item.holdingCount}
                     </span>
                   </td>
-                  <td className="px-4 py-3 text-right font-black text-text-primary">
+                  <td className="px-4 py-3 text-right font-black text-text-primary whitespace-nowrap">
                     {item.totalValueFormatted}
                   </td>
-                  <td className="px-4 py-3 text-right font-semibold text-text-secondary">
+                  <td className="px-4 py-3 text-right font-semibold text-text-secondary whitespace-nowrap">
                     {item.avgWeight}
                   </td>
                   <td className="px-4 py-3 text-xs text-text-secondary">
@@ -291,7 +291,7 @@ export default function ConsensusBoards({ dataPath }: ConsensusBoardsProps) {
                       {Array.from(new Set(item.holders)).map((holder, hIdx) => (
                         <span
                           key={hIdx}
-                          className="px-1.5 py-0.5 rounded bg-background border border-border/80 text-[10px]"
+                          className="px-1.5 py-0.5 rounded bg-background border border-border/80 text-[10px] whitespace-nowrap"
                         >
                           {holder.split(' ')[0]}
                         </span>
@@ -311,13 +311,13 @@ export default function ConsensusBoards({ dataPath }: ConsensusBoardsProps) {
           <table className="w-full text-left text-sm">
             <thead className="text-text-secondary text-xs border-b border-border bg-background/50">
               <tr>
-                <th className="px-4 py-3 font-semibold">#</th>
-                <th className="px-4 py-3 font-semibold">{lang.security}</th>
-                <th className="px-4 py-3 font-semibold">{lang.trackedInstitutions}</th>
-                <th className="px-4 py-3 font-semibold">{lang.segment}</th>
-                <th className="px-4 py-3 font-semibold text-right">{lang.weight}</th>
-                <th className="px-4 py-3 font-semibold text-right">{lang.mktValueB}</th>
-                <th className="px-4 py-3 font-semibold text-center">{lang.action}</th>
+                <th className="px-4 py-3 font-semibold whitespace-nowrap">#</th>
+                <th className="px-4 py-3 font-semibold whitespace-nowrap">{lang.security}</th>
+                <th className="px-4 py-3 font-semibold whitespace-nowrap">{lang.trackedInstitutions}</th>
+                <th className="px-4 py-3 font-semibold whitespace-nowrap min-w-[100px]">{lang.segment}</th>
+                <th className="px-4 py-3 font-semibold text-right whitespace-nowrap">{lang.weight}</th>
+                <th className="px-4 py-3 font-semibold text-right whitespace-nowrap">{lang.mktValueB}</th>
+                <th className="px-4 py-3 font-semibold text-center whitespace-nowrap">{lang.action}</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-border">
@@ -329,30 +329,30 @@ export default function ConsensusBoards({ dataPath }: ConsensusBoardsProps) {
                       to={`/ticker/${item.ticker}`}
                       className="font-bold text-text-primary group-hover:text-accent-blue transition-colors flex items-center gap-1.5"
                     >
-                      <span>{item.ticker}</span>
+                      <span className="shrink-0">{item.ticker}</span>
                       <span className="text-xs font-normal text-text-secondary truncate max-w-[140px]">
                         {translateSecurityName(item.name, language, [item.ticker, item.name])}
                       </span>
                     </Link>
                   </td>
-                  <td className="px-4 py-3">
+                  <td className="px-4 py-3 whitespace-nowrap">
                     <div className="font-bold text-text-primary text-xs">{item.institution}</div>
                     <div className="text-[11px] text-text-secondary">{item.manager}</div>
                   </td>
-                  <td className="px-4 py-3 text-xs text-text-secondary">
-                    <span className="px-2 py-0.5 rounded-full bg-gray-100 border border-gray-200">
+                  <td className="px-4 py-3 text-xs text-text-secondary whitespace-nowrap">
+                    <span className="px-2.5 py-1 rounded-full bg-gray-100 border border-gray-200 whitespace-nowrap inline-flex items-center">
                       {translateSectorName(item.sector, language)}
                     </span>
                   </td>
-                  <td className="px-4 py-3 text-right font-black text-accent-purple text-base">
+                  <td className="px-4 py-3 text-right font-black text-accent-purple text-base whitespace-nowrap">
                     {item.weight}
                   </td>
-                  <td className="px-4 py-3 text-right font-bold text-text-primary">
+                  <td className="px-4 py-3 text-right font-bold text-text-primary whitespace-nowrap">
                     {item.mktValue}
                   </td>
-                  <td className="px-4 py-3 text-center">
+                  <td className="px-4 py-3 text-center whitespace-nowrap">
                     <span
-                      className={`text-[10px] px-2 py-0.5 rounded font-bold uppercase ${
+                      className={`text-[10px] px-2 py-0.5 rounded font-bold uppercase whitespace-nowrap inline-flex items-center justify-center ${
                         item.action === 'Add'
                           ? 'bg-accent-green/10 text-accent-green'
                           : item.action === 'Trim'

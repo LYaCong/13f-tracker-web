@@ -165,18 +165,18 @@ export default function TickerDetail() {
         </div>
 
         <div className="overflow-x-auto">
-          <table className="w-full text-left text-sm">
+            <table className="w-full text-left text-sm">
             <thead className="text-text-secondary text-xs border-b border-border bg-background">
               <tr>
-                <th className="px-4 py-3 font-semibold">{lang.trackedInstitutions}</th>
-                <th className="px-4 py-3 font-semibold">{lang.dominantStyle}</th>
-                <th className="px-4 py-3 font-semibold text-center">{lang.action}</th>
-                <th className="px-4 py-3 font-semibold text-right">{lang.shares}</th>
-                <th className="px-4 py-3 font-semibold text-right">{lang.shareChange}</th>
-                <th className="px-4 py-3 font-semibold text-right">{lang.mktValueB}</th>
-                <th className="px-4 py-3 font-semibold text-right">{lang.weight}</th>
-                <th className="px-4 py-3 font-semibold text-right">{lang.weightQoQ}</th>
-                <th className="px-4 py-3 font-semibold text-right">{lang.qoqDelta}</th>
+                <th className="px-4 py-3 font-semibold whitespace-nowrap">{lang.trackedInstitutions}</th>
+                <th className="px-4 py-3 font-semibold whitespace-nowrap min-w-[90px]">{lang.dominantStyle}</th>
+                <th className="px-4 py-3 font-semibold text-center whitespace-nowrap">{lang.action}</th>
+                <th className="px-4 py-3 font-semibold text-right whitespace-nowrap">{lang.shares}</th>
+                <th className="px-4 py-3 font-semibold text-right whitespace-nowrap">{lang.shareChange}</th>
+                <th className="px-4 py-3 font-semibold text-right whitespace-nowrap">{lang.mktValueB}</th>
+                <th className="px-4 py-3 font-semibold text-right whitespace-nowrap">{lang.weight}</th>
+                <th className="px-4 py-3 font-semibold text-right whitespace-nowrap">{lang.weightQoQ}</th>
+                <th className="px-4 py-3 font-semibold text-right whitespace-nowrap">{lang.qoqDelta}</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-border">
@@ -185,20 +185,20 @@ export default function TickerDetail() {
                   <td className="px-4 py-3.5">
                     <Link
                       to={`/institution/${holder.instId}`}
-                      className="font-bold text-text-primary group-hover:text-accent-blue transition-colors block"
+                      className="font-bold text-text-primary group-hover:text-accent-blue transition-colors block whitespace-nowrap"
                     >
                       {translateInstitutionName({ name: holder.instName, id: holder.instId }, language)}
                     </Link>
-                    <div className="text-xs text-text-secondary">{holder.manager}</div>
+                    <div className="text-xs text-text-secondary whitespace-nowrap">{holder.manager}</div>
                   </td>
-                  <td className="px-4 py-3.5 text-xs">
-                    <span className="px-2 py-0.5 rounded-full bg-gray-100 border border-gray-200 font-medium">
+                  <td className="px-4 py-3.5 text-xs whitespace-nowrap">
+                    <span className="px-2.5 py-1 rounded-full bg-gray-100 border border-gray-200 font-medium whitespace-nowrap inline-flex items-center">
                       {translateStyleName(holder.style, language)}
                     </span>
                   </td>
-                  <td className="px-4 py-3.5 text-center">
+                  <td className="px-4 py-3.5 text-center whitespace-nowrap">
                     <span
-                      className={`text-[10px] px-2 py-0.5 rounded font-bold uppercase ${
+                      className={`text-[10px] px-2 py-0.5 rounded font-bold uppercase whitespace-nowrap inline-flex items-center justify-center ${
                         holder.action === 'Add'
                           ? 'bg-accent-green/10 text-accent-green'
                           : holder.action === 'Trim'
@@ -217,10 +217,10 @@ export default function TickerDetail() {
                             : lang.hold}
                     </span>
                   </td>
-                  <td className="px-4 py-3.5 text-right font-mono text-xs font-semibold text-text-primary">
+                  <td className="px-4 py-3.5 text-right font-mono text-xs font-semibold text-text-primary whitespace-nowrap">
                     {holder.sharesFormatted}
                   </td>
-                  <td className="px-4 py-3.5 text-right text-xs font-bold">
+                  <td className="px-4 py-3.5 text-right text-xs font-bold whitespace-nowrap">
                     <span
                       className={
                         holder.shareChangeText?.startsWith('+')
@@ -233,13 +233,13 @@ export default function TickerDetail() {
                       {holder.shareChangeText || '0.0%'}
                     </span>
                   </td>
-                  <td className="px-4 py-3.5 text-right font-black text-text-primary">
+                  <td className="px-4 py-3.5 text-right font-black text-text-primary whitespace-nowrap">
                     {holder.mktValue}
                   </td>
-                  <td className="px-4 py-3.5 text-right font-bold text-accent-blue">
+                  <td className="px-4 py-3.5 text-right font-bold text-accent-blue whitespace-nowrap">
                     {holder.weight.toFixed(2)}%
                   </td>
-                  <td className="px-4 py-3.5 text-right text-xs font-semibold">
+                  <td className="px-4 py-3.5 text-right text-xs font-semibold whitespace-nowrap">
                     <span
                       className={
                         holder.weightChangeText?.startsWith('+')
@@ -252,7 +252,7 @@ export default function TickerDetail() {
                       {holder.weightChangeText || '0.00%'}
                     </span>
                   </td>
-                  <td className="px-4 py-3.5 text-right font-mono text-xs font-bold">
+                  <td className="px-4 py-3.5 text-right font-mono text-xs font-bold whitespace-nowrap">
                     <span
                       className={
                         holder.qOqDelta?.startsWith('+')

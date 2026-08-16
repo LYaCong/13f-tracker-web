@@ -482,14 +482,14 @@ export default function InstitutionDetail() {
             <table className="w-full text-left text-sm">
               <thead className="bg-background text-text-secondary text-xs uppercase tracking-wider font-semibold border-b border-border">
                 <tr>
-                  <th className="px-4 py-3.5">{lang.security}</th>
-                  <th className="px-4 py-3.5">{lang.segment}</th>
-                  <th className="px-4 py-3.5 text-right">{lang.weight}</th>
-                  <th className="px-4 py-3.5 text-right">{lang.weightQoQ}</th>
-                  <th className="px-4 py-3.5 text-right">{lang.shares}</th>
-                  <th className="px-4 py-3.5 text-right">{lang.shareChange}</th>
-                  <th className="px-4 py-3.5 text-right">{lang.mktValueB}</th>
-                  <th className="px-4 py-3.5 text-right">{lang.qoqDelta}</th>
+                  <th className="px-4 py-3.5 whitespace-nowrap">{lang.security}</th>
+                  <th className="px-4 py-3.5 whitespace-nowrap min-w-[90px]">{lang.segment}</th>
+                  <th className="px-4 py-3.5 text-right whitespace-nowrap">{lang.weight}</th>
+                  <th className="px-4 py-3.5 text-right whitespace-nowrap">{lang.weightQoQ}</th>
+                  <th className="px-4 py-3.5 text-right whitespace-nowrap">{lang.shares}</th>
+                  <th className="px-4 py-3.5 text-right whitespace-nowrap">{lang.shareChange}</th>
+                  <th className="px-4 py-3.5 text-right whitespace-nowrap">{lang.mktValueB}</th>
+                  <th className="px-4 py-3.5 text-right whitespace-nowrap">{lang.qoqDelta}</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-border">
@@ -507,19 +507,21 @@ export default function InstitutionDetail() {
                             {translateSecurityName(holding.security, language, [holding.cusip, holding.security])}
                           </Link>
                           {holding.action === 'New' && (
-                            <span className="bg-accent-blue/10 text-accent-blue text-[9px] px-1 py-0.2 rounded font-bold">
+                            <span className="bg-accent-blue/10 text-accent-blue text-[9px] px-1.5 py-0.5 rounded font-bold whitespace-nowrap inline-flex items-center">
                               {lang.new}
                             </span>
                           )}
                         </div>
                       </td>
                       <td className="px-4 py-3 text-xs text-text-secondary whitespace-nowrap">
-                        {translateSectorName(holding.sector ?? classificationSummary?.unmatchedSector ?? 'Unclassified', language)}
+                        <span className="px-2.5 py-1 rounded-full bg-gray-100 border border-gray-200 whitespace-nowrap inline-flex items-center">
+                          {translateSectorName(holding.sector ?? classificationSummary?.unmatchedSector ?? 'Unclassified', language)}
+                        </span>
                       </td>
-                      <td className="px-4 py-3 text-right font-bold text-text-primary">
+                      <td className="px-4 py-3 text-right font-bold text-text-primary whitespace-nowrap">
                         {holding.weight.toFixed(2)}%
                       </td>
-                      <td className="px-4 py-3 text-right text-xs font-semibold">
+                      <td className="px-4 py-3 text-right text-xs font-semibold whitespace-nowrap">
                         <span
                           className={
                             holding.weightChangeText?.startsWith('+')
@@ -532,10 +534,10 @@ export default function InstitutionDetail() {
                           {holding.weightChangeText || '0.00%'}
                         </span>
                       </td>
-                      <td className="px-4 py-3 text-right font-mono text-xs text-text-secondary">
+                      <td className="px-4 py-3 text-right font-mono text-xs text-text-secondary whitespace-nowrap">
                         {holding.sharesFormatted || '--'}
                       </td>
-                      <td className="px-4 py-3 text-right text-xs font-bold">
+                      <td className="px-4 py-3 text-right text-xs font-bold whitespace-nowrap">
                         <span
                           className={
                             holding.shareChangeText?.startsWith('+')
@@ -548,11 +550,11 @@ export default function InstitutionDetail() {
                           {holding.shareChangeText || '0.0%'}
                         </span>
                       </td>
-                      <td className="px-4 py-3 text-right font-bold text-text-primary">
+                      <td className="px-4 py-3 text-right font-bold text-text-primary whitespace-nowrap">
                         ${holding.mktValue}
                       </td>
                       <td
-                        className={`px-4 py-3 text-right font-bold text-xs ${
+                        className={`px-4 py-3 text-right font-bold text-xs whitespace-nowrap ${
                           holding.qOqDelta.startsWith('+') ? 'text-accent-green' : 'text-accent-red'
                         }`}
                       >

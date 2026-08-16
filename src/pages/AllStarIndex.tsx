@@ -13,7 +13,7 @@ export default function AllStarIndex() {
   const { lang, language } = useLanguage()
   const { dataPath, selectedQuarter } = useQuarterArchive()
   const [indexData, setIndexData] = useState<AllStarIndexData | null>(null)
-  const [weightMode, setWeightMode] = useState<'equal' | 'conviction'>('conviction')
+  const [weightMode, setWeightMode] = useState<'conviction' | 'equal'>('conviction')
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
@@ -211,15 +211,15 @@ export default function AllStarIndex() {
             <table className="w-full text-left text-sm">
               <thead className="text-text-secondary text-xs border-b border-border bg-background sticky top-0 z-10">
                 <tr>
-                  <th className="px-4 py-3 font-semibold">#</th>
-                  <th className="px-4 py-3 font-semibold">{lang.security}</th>
-                  <th className="px-4 py-3 font-semibold">{lang.segment}</th>
-                  <th className="px-4 py-3 font-semibold text-right">
+                  <th className="px-4 py-3 font-semibold whitespace-nowrap">#</th>
+                  <th className="px-4 py-3 font-semibold whitespace-nowrap">{lang.security}</th>
+                  <th className="px-4 py-3 font-semibold whitespace-nowrap min-w-[100px]">{lang.segment}</th>
+                  <th className="px-4 py-3 font-semibold text-right whitespace-nowrap">
                     {weightMode === 'conviction' ? lang.convictionWeight : lang.equalWeight}
                   </th>
-                  <th className="px-4 py-3 font-semibold text-center">{lang.mainAction}</th>
-                  <th className="px-4 py-3 font-semibold text-center">{lang.holderCount}</th>
-                  <th className="px-4 py-3 font-semibold">{lang.topHolders}</th>
+                  <th className="px-4 py-3 font-semibold text-center whitespace-nowrap">{lang.mainAction}</th>
+                  <th className="px-4 py-3 font-semibold text-center whitespace-nowrap">{lang.holderCount}</th>
+                  <th className="px-4 py-3 font-semibold whitespace-nowrap">{lang.topHolders}</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-border">
@@ -231,23 +231,23 @@ export default function AllStarIndex() {
                         to={`/ticker/${item.ticker}`}
                         className="font-bold text-text-primary group-hover:text-accent-blue transition-colors flex items-center gap-1.5"
                       >
-                        <span>{item.ticker}</span>
-                        <span className="text-xs font-normal text-text-secondary truncate max-w-[120px]">
+                        <span className="shrink-0">{item.ticker}</span>
+                        <span className="text-xs font-normal text-text-secondary truncate max-w-[130px]">
                           {translateSecurityName(item.name, language, [item.ticker, item.name])}
                         </span>
                       </Link>
                     </td>
-                    <td className="px-4 py-3 text-xs text-text-secondary">
-                      <span className="px-2 py-0.5 rounded-full bg-gray-100 border border-gray-200">
+                    <td className="px-4 py-3 text-xs text-text-secondary whitespace-nowrap">
+                      <span className="px-2.5 py-1 rounded-full bg-gray-100 border border-gray-200 whitespace-nowrap inline-flex items-center">
                         {translateSectorName(item.sector, language)}
                       </span>
                     </td>
-                    <td className="px-4 py-3 text-right font-black text-accent-purple">
+                    <td className="px-4 py-3 text-right font-black text-accent-purple whitespace-nowrap">
                       {weightMode === 'conviction' ? item.convictionWeight : item.equalWeight}
                     </td>
-                    <td className="px-4 py-3 text-center">
+                    <td className="px-4 py-3 text-center whitespace-nowrap">
                       <span
-                        className={`text-[10px] px-2 py-0.5 rounded font-bold ${
+                        className={`text-[10px] px-2 py-0.5 rounded font-bold whitespace-nowrap inline-flex items-center justify-center ${
                           item.mainAction === 'Net Buy'
                             ? 'bg-accent-green/10 text-accent-green'
                             : item.mainAction === 'Net Sell'
@@ -258,15 +258,15 @@ export default function AllStarIndex() {
                         {item.mainAction === 'Net Buy' ? lang.add : item.mainAction === 'Net Sell' ? lang.trim : lang.hold}
                       </span>
                     </td>
-                    <td className="px-4 py-3 text-center font-bold text-accent-blue text-xs">
+                    <td className="px-4 py-3 text-center font-bold text-accent-blue text-xs whitespace-nowrap">
                       {item.holderCount}
                     </td>
                     <td className="px-4 py-3 text-xs text-text-secondary">
                       <div className="flex flex-wrap gap-1 max-w-xs">
-                        {item.backingFunds.map((fund, fIdx) => (
+                        {Array.from(new Set(item.backingFunds)).map((fund, fIdx) => (
                           <span
                             key={fIdx}
-                            className="px-1.5 py-0.5 rounded bg-background border border-border/80 text-[10px]"
+                            className="px-1.5 py-0.5 rounded bg-background border border-border/80 text-[10px] whitespace-nowrap"
                           >
                             {fund.split(' ')[0]}
                           </span>
