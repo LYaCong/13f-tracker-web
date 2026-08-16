@@ -1,5 +1,5 @@
 import { useMemo } from 'react'
-import { Info, LayoutGrid, Search, Sparkles } from 'lucide-react'
+import { Flame, Info, LayoutGrid, Search, Sparkles } from 'lucide-react'
 import { Link, NavLink, Outlet, useLocation, useSearchParams } from 'react-router-dom'
 import { useQuarterArchive } from '@/lib/useQuarterArchive'
 import { useLanguage } from '../context/useLanguage'
@@ -98,6 +98,20 @@ export default function Layout() {
                 >
                   <LayoutGrid className="w-3.5 h-3.5" />
                   {lang.dashboardNav}
+                </NavLink>
+
+                <NavLink
+                  to="/consensus"
+                  className={({ isActive }) =>
+                    `flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-all ${
+                      isActive
+                        ? 'bg-gradient-to-r from-accent-orange to-accent-red text-white shadow-2xs font-black'
+                        : 'text-text-secondary hover:text-text-primary'
+                    }`
+                  }
+                >
+                  <Flame className="w-3.5 h-3.5" />
+                  {lang.consensusNav}
                 </NavLink>
 
                 <NavLink

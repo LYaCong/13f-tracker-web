@@ -8,6 +8,7 @@ const Dashboard = lazy(() => import('./pages/Dashboard'))
 const InstitutionDetail = lazy(() => import('./pages/InstitutionDetail'))
 const TickerDetail = lazy(() => import('./pages/TickerDetail'))
 const AllStarIndex = lazy(() => import('./pages/AllStarIndex'))
+const ConsensusPage = lazy(() => import('./pages/ConsensusPage'))
 
 function AppRoutes() {
   const { lang } = useLanguage()
@@ -18,9 +19,10 @@ function AppRoutes() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Dashboard />} />
+            <Route path="consensus" element={<ConsensusPage />} />
+            <Route path="all-star" element={<AllStarIndex />} />
             <Route path="institution/:id" element={<InstitutionDetail />} />
             <Route path="ticker/:symbol" element={<TickerDetail />} />
-            <Route path="all-star" element={<AllStarIndex />} />
           </Route>
         </Routes>
       </Suspense>

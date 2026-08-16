@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
+import { ArrowRight, Flame } from 'lucide-react'
 import { Link, useSearchParams } from 'react-router-dom'
-import ConsensusBoards from '@/components/ConsensusBoards'
 import PopularTreemap from '@/components/PopularTreemap'
 import { getSecuritySearchTerms, translateInstitutionName, translateStyleName } from '@/lib/displayNames'
 import type { InstitutionMeta, TreemapDatum } from '@/lib/secData'
@@ -78,27 +78,15 @@ export default function Dashboard() {
         translateStyleName(inst.style, language),
         inst.quarter,
         inst.id,
-      ].some((value) => value.toLowerCase().includes(searchQuery))
+      ].some((val) => val?.toLowerCase().includes(searchQuery))
 
       return directMatch || tickerMatchedInstitutionIds.has(inst.id)
     })
   }, [institutions, language, searchQuery, treemapNodes])
 
-  const quarterSummary = useMemo(() => {
-    const counts = institutions.reduce<Record<string, number>>((acc, inst) => {
-      acc[inst.quarter] = (acc[inst.quarter] ?? 0) + 1
-      return acc
-    }, {})
-
-    return Object.entries(counts)
-      .sort((a, b) => b[1] - a[1])
-      .map(([quarter, count]) => `${quarter} (${count})`)
-      .join(' / ')
-  }, [institutions])
-
   if (isLoading || isLoadingQuarters) {
     return (
-      <div className="glass-card p-8 text-center text-text-secondary font-semibold animate-in fade-in">
+      <div className="glass-card p-12 text-center text-text-secondary font-semibold animate-in fade-in">
         {lang.loadingHistoricalFilings}
       </div>
     )
@@ -106,46 +94,66 @@ export default function Dashboard() {
 
   if (error) {
     return (
-      <div className="glass-card p-8 text-center animate-in fade-in">
-        <p className="font-bold text-text-primary">{lang.dataLoadFailed}</p>
-        <p className="text-sm text-text-secondary mt-2">{error}</p>
-        <button
-          type="button"
-          onClick={() => void loadDashboardData()}
-          className="mt-4 px-4 py-2 rounded-md bg-accent-blue text-white text-sm font-bold hover:bg-blue-700 transition-colors"
-        >
-          {lang.retry}
-        </button>
+      <div className="glass-card p-8 border-accent-red/20 bg-accent-red/5 text-center text-accent-red">
+        {error}
       </div>
     )
   }
 
   return (
-    <div className="space-y-6 animate-in fade-in duration-500">
-      {/* Header & Status Notice */}
-      <div className="flex flex-col gap-3 px-2 mb-1">
-        <div className="flex justify-between items-center">
-          <h2 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-text-primary to-text-secondary">
-            {lang.trackedInstitutions}{' '}
-            <span className="text-sm font-medium text-text-secondary ml-2 border border-border px-2 py-0.5 rounded-full">
-              {filteredInstitutions.length}/{institutions.length} {lang.fundsMapped}
-            </span>
-          </h2>
-          {quarterSummary && (
-            <span className="text-xs font-semibold text-text-secondary border border-border rounded-full px-3 py-1 bg-white">
-              {quarterSummary}
-            </span>
-          )}
+    <div className="space-y-8 animate-in fade-in duration-500">
+      {/* Header Section */}
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+        <div>
+          <h1 className="text-2xl sm:text-3xl font-black text-text-primary tracking-tight">
+            {lang.dashboardNav}
+          </h1>
+          <p className="text-xs sm:text-sm text-text-secondary mt-1">
+            {language === 'zh'
+              ? '追踪 12 家全球顶流对冲基金与超级投资家的当季 13F 持仓变动与资金流向'
+              : 'Tracking quarterly 13F portfolio changes and capital flows across 12 elite global superinvestors'}
+          </p>
         </div>
 
-        <div className="glass-card border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-900">
-          <span className="font-bold">{selectedQuarter?.label ?? lang.snapshotLabel}:</span>{' '}
-          {selectedQuarter?.summary ?? lang.mixedSnapshotNotice}
-        </div>
+        {selectedQuarter && (
+          <div className="flex items-center gap-2">
+            <span className="text-xs font-semibold text-text-secondary border border-border rounded-full px-3 py-1 bg-white">
+              {selectedQuarter.label}
+            </span>
+          </div>
+        )}
       </div>
 
-      {/* Tracked 12 Institutions Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 transition-all duration-500">
+      {/* Quick Entry Banner for Smart Money Consensus */}
+      <div className="glass-card p-5 bg-gradient-to-r from-orange-50/70 via-red-50/40 to-white border border-orange-200/70 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 shadow-xs">
+        <div className="flex items-center gap-3">
+          <div className="p-2.5 rounded-xl bg-gradient-to-tr from-accent-orange to-accent-red text-white shadow-xs shrink-0">
+            <Flame className="w-5 h-5" />
+          </div>
+          <div>
+            <h3 className="text-sm font-bold text-text-primary flex items-center gap-2">
+              {lang.consensusTitle}
+              <span className="text-[10px] px-2 py-0.5 rounded-full bg-accent-orange/10 text-accent-orange font-bold uppercase">
+                Consensus
+              </span>
+            </h3>
+            <p className="text-xs text-text-secondary mt-0.5">
+              {lang.consensusSub}
+            </p>
+          </div>
+        </div>
+
+        <Link
+          to="/consensus"
+          className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-gradient-to-r from-accent-orange to-accent-red text-white text-xs font-bold shadow-xs hover:opacity-95 transition-all shrink-0 cursor-pointer"
+        >
+          <span>{lang.consensusNav}</span>
+          <ArrowRight className="w-3.5 h-3.5" />
+        </Link>
+      </div>
+
+      {/* Institution Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
         {filteredInstitutions.map((inst) => {
           const isDimmed = focusedInstitutions !== null && !focusedInstitutions.includes(inst.id)
           const isHighlighted = focusedInstitutions !== null && focusedInstitutions.includes(inst.id)
@@ -204,9 +212,6 @@ export default function Dashboard() {
           {lang.noResults}
         </div>
       )}
-
-      {/* Smart Money Consensus Boards (Feature 5) */}
-      <ConsensusBoards dataPath={dataPath} />
 
       {/* Popular Holdings Treemap */}
       <PopularTreemap dataPath={dataPath} onSelectTicker={(ticker) => {
