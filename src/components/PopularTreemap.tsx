@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { ExternalLink } from 'lucide-react'
 import { ResponsiveContainer, Treemap } from 'recharts'
 import type { TreemapDatum, TreemapLeafDatum } from '@/lib/secData'
@@ -63,7 +63,7 @@ function CustomizedContent(props: TreemapNodeProps) {
   return (
     <g
       onClick={() => onClickNode?.(nodeData)}
-      className="cursor-pointer transition-all duration-300 hover:opacity-80 drop-shadow-sm"
+      className="cursor-pointer transition-all duration-300 hover:opacity-85 hover:brightness-105 select-none"
     >
       <rect
         x={x}
@@ -74,36 +74,43 @@ function CustomizedContent(props: TreemapNodeProps) {
           fill: bgColor,
           stroke: '#ffffff',
           strokeWidth: 3,
-          strokeOpacity: 0.8,
-          rx: 6,
+          strokeOpacity: 0.9,
+          rx: 8,
+          cursor: 'pointer',
         }}
       />
       {width > 40 && height > 30 && (
-        <foreignObject x={x + 2} y={y + 2} width={width - 4} height={height - 4}>
+        <foreignObject
+          x={x + 2}
+          y={y + 2}
+          width={width - 4}
+          height={height - 4}
+          style={{ pointerEvents: 'none' }}
+        >
           <div
-            className="w-full h-full flex flex-col items-center justify-center text-white text-center p-1 overflow-hidden"
-            style={{ textShadow: '0px 1px 3px rgba(0,0,0,0.4)' }}
+            className="w-full h-full flex flex-col items-center justify-center text-white text-center p-1 overflow-hidden pointer-events-none"
+            style={{ textShadow: '0px 1px 4px rgba(0,0,0,0.5)' }}
           >
             <div
-              className="font-bold truncate w-full leading-tight drop-shadow-md"
-              style={{ fontSize: Math.max(12, Math.min(22, Math.floor(width / 5))) }}
+              className="font-black tracking-tight truncate w-full leading-tight drop-shadow-md"
+              style={{ fontSize: Math.max(13, Math.min(24, Math.floor(width / 4.8))) }}
             >
               {name}
             </div>
 
-            {height > 55 && width > 60 && (
+            {height > 52 && width > 55 && (
               <div
-                className="font-medium truncate w-full mt-1 opacity-90 leading-tight"
-                style={{ fontSize: Math.max(9, Math.min(12, Math.floor(width / 10))) }}
+                className="font-bold truncate w-full mt-0.5 opacity-95 leading-tight text-white/90"
+                style={{ fontSize: Math.max(9, Math.min(12, Math.floor(width / 9.5))) }}
               >
                 {props.heatLabel ?? 'Heat'} {heat} | {avgWeight}
               </div>
             )}
 
-            {height > 85 && width > 90 && (
+            {height > 80 && width > 80 && (
               <div
                 className="font-semibold text-white/90 truncate w-full mt-0.5 leading-tight"
-                style={{ fontSize: Math.max(8, Math.min(11, Math.floor(width / 12))) }}
+                style={{ fontSize: Math.max(8, Math.min(11, Math.floor(width / 11))) }}
               >
                 ${value} | {instCount} {props.totalInstitutionsShort ?? 'inst'}
               </div>
@@ -124,6 +131,7 @@ export default function PopularTreemap({ onSelectTicker, dataPath }: PopularTree
   const [data, setData] = useState<TreemapDatum[]>([])
   const [focusedNode, setFocusedNode] = useState<TreemapLeafDatum | null>(null)
   const { lang } = useLanguage()
+  const navigate = useNavigate()
 
   useEffect(() => {
     let isMounted = true
@@ -157,10 +165,16 @@ export default function PopularTreemap({ onSelectTicker, dataPath }: PopularTree
     }
   }, [dataPath, onSelectTicker])
 
-  const handleFocus = useCallback((node: TreemapLeafDatum | null) => {
+  const handleClickNode = useCallback((node: TreemapLeafDatum | null) => {
+    if (!node) {
+      setFocusedNode(null)
+      onSelectTicker?.(null)
+      return
+    }
     setFocusedNode(node)
-    onSelectTicker?.(node ? node.name : null)
-  }, [onSelectTicker])
+    onSelectTicker?.(node.name)
+    navigate(`/ticker/${node.name}`)
+  }, [navigate, onSelectTicker])
 
   const treemapData = [
     {
@@ -213,7 +227,7 @@ export default function PopularTreemap({ onSelectTicker, dataPath }: PopularTree
               <ExternalLink className="w-3 h-3" />
             </Link>
             <button
-              onClick={() => handleFocus(null)}
+              onClick={() => handleClickNode(null)}
               className="px-3 py-1 rounded-full bg-red-50 text-red-600 border border-red-200 hover:bg-red-100 hover:text-red-700 transition-colors cursor-pointer shadow-sm ml-1"
             >
               {lang.clear}
@@ -237,7 +251,7 @@ export default function PopularTreemap({ onSelectTicker, dataPath }: PopularTree
             content={(props) => (
               <CustomizedContent
                 {...(props as unknown as TreemapNodeProps)}
-                onClickNode={handleFocus}
+                onClickNode={handleClickNode}
                 heatLabel={lang.heatLabel}
                 totalInstitutionsShort={lang.totalInstitutionsShort}
               />
