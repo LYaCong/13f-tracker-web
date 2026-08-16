@@ -1,3 +1,4 @@
+import { useMemo } from 'react'
 import { Info, Search } from 'lucide-react'
 import { Link, Outlet, useSearchParams } from 'react-router-dom'
 import { useQuarterArchive } from '@/lib/useQuarterArchive'
@@ -12,6 +13,49 @@ export default function Layout() {
   } = useQuarterArchive()
   const [searchParams, setSearchParams] = useSearchParams()
   const searchQuery = searchParams.get('q') ?? ''
+
+  const availableYears = useMemo(() => {
+    const years = Array.from(new Set(quarters.map((q) => q.id.split('-')[0]))).filter(Boolean)
+    return years.sort((a, b) => b.localeCompare(a))
+  }, [quarters])
+
+  const currentParsed = useMemo(() => {
+    const activeQuarter = quarters.find((q) => q.id === selectedQuarterId) || quarters[0]
+    if (activeQuarter) {
+      const [year, quarter] = activeQuarter.id.split('-')
+      return { year: year || '', quarter: quarter || '' }
+    }
+    return { year: '', quarter: '' }
+  }, [quarters, selectedQuarterId])
+
+  const availableQuartersForYear = useMemo(() => {
+    if (!currentParsed.year) return []
+    return quarters
+      .filter((q) => q.id.startsWith(`${currentParsed.year}-`))
+      .map((q) => {
+        const quarterPart = q.id.split('-')[1] || q.id
+        return {
+          ...q,
+          quarterPart,
+        }
+      })
+  }, [quarters, currentParsed.year])
+
+  const handleYearChange = (newYear: string) => {
+    const yearQuarters = quarters.filter((q) => q.id.startsWith(`${newYear}-`))
+    if (yearQuarters.length === 0) return
+
+    const sameQuarterMatch = yearQuarters.find((q) => q.id.split('-')[1] === currentParsed.quarter)
+    const targetQuarter = sameQuarterMatch || yearQuarters[0]
+    setSelectedQuarter(targetQuarter.id)
+  }
+
+  const handleQuarterChange = (newQuarterPart: string) => {
+    const targetQuarter = quarters.find((q) => q.id === `${currentParsed.year}-${newQuarterPart}`)
+    if (targetQuarter) {
+      setSelectedQuarter(targetQuarter.id)
+    }
+  }
 
   const updateSearchQuery = (query: string) => {
     const nextParams = new URLSearchParams(searchParams)
@@ -54,21 +98,41 @@ export default function Layout() {
 
             <div className="flex items-center gap-4">
               {quarters.length > 0 && (
-                <label className="hidden lg:flex items-center gap-2 text-xs font-semibold text-text-secondary">
-                  <span>{lang.dataQuarter}</span>
-                  <select
-                    value={selectedQuarterId ?? ''}
-                    onChange={(event) => setSelectedQuarter(event.target.value)}
-                    className="appearance-none rounded-full border border-border bg-white px-3 py-1.5 text-sm font-bold text-text-primary shadow-sm outline-none transition-colors hover:border-accent-blue focus:ring-2 focus:ring-accent-blue/30"
-                    aria-label={lang.dataQuarter}
-                  >
-                    {quarters.map((quarter) => (
-                      <option key={quarter.id} value={quarter.id}>
-                        {quarter.label}{quarter.isLatest ? ` (${lang.latestSnapshot})` : ''}
-                      </option>
-                    ))}
-                  </select>
-                </label>
+                <div className="hidden lg:flex items-center gap-1.5 bg-background/60 p-1 border border-border rounded-full shadow-xs text-xs font-semibold text-text-secondary">
+                  <div className="flex items-center gap-1.5 pl-2.5">
+                    <span className="text-[11px] font-medium text-text-secondary">{lang.selectYear}</span>
+                    <select
+                      value={currentParsed.year}
+                      onChange={(event) => handleYearChange(event.target.value)}
+                      className="appearance-none rounded-full border border-border bg-white px-2.5 py-1 text-xs font-bold text-text-primary shadow-xs outline-none transition-colors hover:border-accent-blue focus:ring-2 focus:ring-accent-blue/30 cursor-pointer"
+                      aria-label={lang.selectYear}
+                    >
+                      {availableYears.map((year) => (
+                        <option key={year} value={year}>
+                          {year}{language === 'zh' ? '年' : ''}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+
+                  <div className="h-4 w-px bg-border/80" />
+
+                  <div className="flex items-center gap-1.5 pr-1">
+                    <span className="text-[11px] font-medium text-text-secondary">{lang.selectQuarter}</span>
+                    <select
+                      value={currentParsed.quarter}
+                      onChange={(event) => handleQuarterChange(event.target.value)}
+                      className="appearance-none rounded-full border border-border bg-white px-2.5 py-1 text-xs font-bold text-text-primary shadow-xs outline-none transition-colors hover:border-accent-blue focus:ring-2 focus:ring-accent-blue/30 cursor-pointer"
+                      aria-label={lang.selectQuarter}
+                    >
+                      {availableQuartersForYear.map((q) => (
+                        <option key={q.id} value={q.quarterPart}>
+                          {q.quarterPart}{q.isLatest ? ` (${lang.latestSnapshot})` : ''}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                </div>
               )}
 
               <button
