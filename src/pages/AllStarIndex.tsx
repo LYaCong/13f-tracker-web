@@ -161,6 +161,7 @@ export default function AllStarIndex() {
                   outerRadius={80}
                   paddingAngle={2}
                   dataKey="weight"
+                  nameKey="sector"
                 >
                   {indexData.sectorBreakdown.map((_, index) => (
                     <Cell key={`cell-${index}`} fill={SECTOR_COLORS[index % SECTOR_COLORS.length]} />
@@ -170,10 +171,20 @@ export default function AllStarIndex() {
                   content={({ active, payload }) => {
                     if (!active || !payload || payload.length === 0) return null
                     const item = payload[0]
+                    const rawSector = (item.payload as { sector?: string })?.sector || String(item.name || '')
+                    const cellColor = (item.payload as { fill?: string })?.fill || item.color || '#3b82f6'
                     return (
-                      <div className="rounded-lg border border-border bg-white p-2 text-xs shadow-md">
-                        <span className="font-bold">{translateSectorName(String(item.name || ''), language)}: </span>
-                        <span className="font-semibold text-accent-blue">{Number(item.value || 0).toFixed(2)}%</span>
+                      <div className="rounded-lg border border-border bg-white/95 backdrop-blur-md p-2.5 text-xs shadow-lg flex items-center gap-2">
+                        <span
+                          className="w-2.5 h-2.5 rounded-full shrink-0"
+                          style={{ backgroundColor: cellColor }}
+                        />
+                        <span className="font-bold text-text-primary">
+                          {translateSectorName(rawSector, language)}:
+                        </span>
+                        <span className="font-black text-accent-purple">
+                          {Number(item.value || 0).toFixed(2)}%
+                        </span>
                       </div>
                     )
                   }}
