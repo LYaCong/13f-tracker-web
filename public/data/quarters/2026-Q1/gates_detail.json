@@ -154,27 +154,27 @@
   "assetTrend": [
     {
       "year": "2024 Q3",
-      "value": "28.1"
+      "value": "29.0"
     },
     {
       "year": "2024 Q4",
-      "value": "33.1"
+      "value": "30.0"
     },
     {
       "year": "2025 Q1",
-      "value": "30.8"
+      "value": "34.8"
     },
     {
       "year": "2025 Q2",
-      "value": "33.5"
+      "value": "29.0"
     },
     {
       "year": "2025 Q3",
-      "value": "31.6"
+      "value": "29.5"
     },
     {
       "year": "2025 Q4",
-      "value": "30.3"
+      "value": "35.7"
     },
     {
       "year": "2026 Q1",
@@ -183,7 +183,7 @@
     },
     {
       "year": "2026 Q2",
-      "value": "35.0"
+      "value": "34.4"
     }
   ],
   "sectorHistory": [
@@ -361,8 +361,8 @@
     },
     {
       "cusip": "149123101",
-      "ticker": "CATER",
-      "security": "CATERPILLAR INC (CATER)",
+      "ticker": "CAT",
+      "security": "CATERPILLAR INC (CAT)",
       "name": "CATERPILLAR INC",
       "sector": "Industrials",
       "weight": 14.22,
@@ -382,8 +382,8 @@
     },
     {
       "cusip": "244199105",
-      "ticker": "DEERE",
-      "security": "DEERE & CO (DEERE)",
+      "ticker": "DE",
+      "security": "DEERE & CO (DE)",
       "name": "DEERE & CO",
       "sector": "Industrials",
       "weight": 6.33,
@@ -403,8 +403,8 @@
     },
     {
       "cusip": "278865100",
-      "ticker": "ECOLA",
-      "security": "ECOLAB INC (ECOLA)",
+      "ticker": "ECL",
+      "security": "ECOLAB INC (ECL)",
       "name": "ECOLAB INC",
       "sector": "Materials",
       "weight": 4.38,
@@ -424,8 +424,8 @@
     },
     {
       "cusip": "931142103",
-      "ticker": "WALMA",
-      "security": "WALMART INC (WALMA)",
+      "ticker": "WMT",
+      "security": "WALMART INC (WMT)",
       "name": "WALMART INC",
       "sector": "Consumer Staples",
       "weight": 3.29,
@@ -445,8 +445,8 @@
     },
     {
       "cusip": "31428X106",
-      "ticker": "FEDEX",
-      "security": "FEDEX CORP (FEDEX)",
+      "ticker": "FDX",
+      "security": "FEDEX CORP (FDX)",
       "name": "FEDEX CORP",
       "sector": "Industrials",
       "weight": 2.68,
@@ -571,8 +571,8 @@
     },
     {
       "cusip": "693718108",
-      "ticker": "PACCA",
-      "security": "PACCAR INC (PACCA)",
+      "ticker": "PCAR",
+      "security": "PACCAR INC (PCAR)",
       "name": "PACCAR INC",
       "sector": "Industrials",
       "weight": 0.36,
@@ -592,8 +592,8 @@
     },
     {
       "cusip": "955306105",
-      "ticker": "WEST",
-      "security": "WEST PHARMACEUTICAL SVSC INC (WEST)",
+      "ticker": "WST",
+      "security": "WEST PHARMACEUTICAL SVSC INC (WST)",
       "name": "WEST PHARMACEUTICAL SVSC INC",
       "sector": "Health Care",
       "weight": 0.35,
@@ -613,8 +613,8 @@
     },
     {
       "cusip": "580135101",
-      "ticker": "MCDON",
-      "security": "MCDONALDS CORP (MCDON)",
+      "ticker": "MCD",
+      "security": "MCDONALDS CORP (MCD)",
       "name": "MCDONALDS CORP",
       "sector": "Consumer Discretionary",
       "weight": 0.33,
@@ -655,8 +655,8 @@
     },
     {
       "cusip": "235851102",
-      "ticker": "DANAH",
-      "security": "DANAHER CORP DEL (DANAH)",
+      "ticker": "DHR",
+      "security": "DANAHER CORP DEL (DHR)",
       "name": "DANAHER CORP DEL",
       "sector": "Health Care",
       "weight": 0.22,
@@ -697,8 +697,8 @@
     },
     {
       "cusip": "440452100",
-      "ticker": "HORME",
-      "security": "HORMEL FOODS CORP (HORME)",
+      "ticker": "HRL",
+      "security": "HORMEL FOODS CORP (HRL)",
       "name": "HORMEL FOODS CORP",
       "sector": "Consumer Staples",
       "weight": 0.15,
@@ -739,8 +739,8 @@
     },
     {
       "cusip": "92338C103",
-      "ticker": "VERAL",
-      "security": "VERALTO CORP (VERAL)",
+      "ticker": "VLTO",
+      "security": "VERALTO CORP (VLTO)",
       "name": "VERALTO CORP",
       "sector": "Industrials",
       "weight": 0.03,
@@ -825,8 +825,8 @@
     },
     {
       "cusip": "149123101",
-      "ticker": "CATER",
-      "security": "CATERPILLAR INC (CATER)",
+      "ticker": "CAT",
+      "security": "CATERPILLAR INC (CAT)",
       "name": "CATERPILLAR INC",
       "sector": "Industrials",
       "weight": 14.22,
@@ -846,8 +846,8 @@
     },
     {
       "cusip": "244199105",
-      "ticker": "DEERE",
-      "security": "DEERE & CO (DEERE)",
+      "ticker": "DE",
+      "security": "DEERE & CO (DE)",
       "name": "DEERE & CO",
       "sector": "Industrials",
       "weight": 6.33,
@@ -867,8 +867,8 @@
     },
     {
       "cusip": "278865100",
-      "ticker": "ECOLA",
-      "security": "ECOLAB INC (ECOLA)",
+      "ticker": "ECL",
+      "security": "ECOLAB INC (ECL)",
       "name": "ECOLAB INC",
       "sector": "Materials",
       "weight": 4.38,
@@ -888,8 +888,8 @@
     },
     {
       "cusip": "931142103",
-      "ticker": "WALMA",
-      "security": "WALMART INC (WALMA)",
+      "ticker": "WMT",
+      "security": "WALMART INC (WMT)",
       "name": "WALMART INC",
       "sector": "Consumer Staples",
       "weight": 3.29,
@@ -909,8 +909,8 @@
     },
     {
       "cusip": "31428X106",
-      "ticker": "FEDEX",
-      "security": "FEDEX CORP (FEDEX)",
+      "ticker": "FDX",
+      "security": "FEDEX CORP (FDX)",
       "name": "FEDEX CORP",
       "sector": "Industrials",
       "weight": 2.68,
@@ -1035,8 +1035,8 @@
     },
     {
       "cusip": "693718108",
-      "ticker": "PACCA",
-      "security": "PACCAR INC (PACCA)",
+      "ticker": "PCAR",
+      "security": "PACCAR INC (PCAR)",
       "name": "PACCAR INC",
       "sector": "Industrials",
       "weight": 0.36,
@@ -1056,8 +1056,8 @@
     },
     {
       "cusip": "955306105",
-      "ticker": "WEST",
-      "security": "WEST PHARMACEUTICAL SVSC INC (WEST)",
+      "ticker": "WST",
+      "security": "WEST PHARMACEUTICAL SVSC INC (WST)",
       "name": "WEST PHARMACEUTICAL SVSC INC",
       "sector": "Health Care",
       "weight": 0.35,
@@ -1077,8 +1077,8 @@
     },
     {
       "cusip": "580135101",
-      "ticker": "MCDON",
-      "security": "MCDONALDS CORP (MCDON)",
+      "ticker": "MCD",
+      "security": "MCDONALDS CORP (MCD)",
       "name": "MCDONALDS CORP",
       "sector": "Consumer Discretionary",
       "weight": 0.33,
@@ -1119,8 +1119,8 @@
     },
     {
       "cusip": "235851102",
-      "ticker": "DANAH",
-      "security": "DANAHER CORP DEL (DANAH)",
+      "ticker": "DHR",
+      "security": "DANAHER CORP DEL (DHR)",
       "name": "DANAHER CORP DEL",
       "sector": "Health Care",
       "weight": 0.22,
@@ -1161,8 +1161,8 @@
     },
     {
       "cusip": "440452100",
-      "ticker": "HORME",
-      "security": "HORMEL FOODS CORP (HORME)",
+      "ticker": "HRL",
+      "security": "HORMEL FOODS CORP (HRL)",
       "name": "HORMEL FOODS CORP",
       "sector": "Consumer Staples",
       "weight": 0.15,
@@ -1203,8 +1203,8 @@
     },
     {
       "cusip": "92338C103",
-      "ticker": "VERAL",
-      "security": "VERALTO CORP (VERAL)",
+      "ticker": "VLTO",
+      "security": "VERALTO CORP (VLTO)",
       "name": "VERALTO CORP",
       "sector": "Industrials",
       "weight": 0.03,

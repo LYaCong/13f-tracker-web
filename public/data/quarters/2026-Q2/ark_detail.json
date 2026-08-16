@@ -154,31 +154,31 @@
   "assetTrend": [
     {
       "year": "2024 Q3",
-      "value": "17.6"
+      "value": "16.2"
     },
     {
       "year": "2024 Q4",
-      "value": "13.7"
+      "value": "14.6"
     },
     {
       "year": "2025 Q1",
-      "value": "17.3"
+      "value": "17.1"
     },
     {
       "year": "2025 Q2",
-      "value": "17.4"
+      "value": "16.6"
     },
     {
       "year": "2025 Q3",
-      "value": "14.8"
+      "value": "15.6"
     },
     {
       "year": "2025 Q4",
-      "value": "17.6"
+      "value": "16.5"
     },
     {
       "year": "2026 Q1",
-      "value": "13.5"
+      "value": "14.8"
     },
     {
       "year": "2026 Q2",
@@ -271,7 +271,7 @@
           "name": "BITMI (Trim)"
         },
         {
-          "name": "TERAD (Trim)"
+          "name": "TER (Trim)"
         },
         {
           "name": "Capital Liquidity Pool"
@@ -375,8 +375,8 @@
     },
     {
       "cusip": "007903107",
-      "ticker": "ADVAN",
-      "security": "Advanced Micro Devices Inc (ADVAN)",
+      "ticker": "AMD",
+      "security": "Advanced Micro Devices Inc (AMD)",
       "name": "Advanced Micro Devices Inc",
       "sector": "Information Technology",
       "weight": 5.34,
@@ -438,8 +438,8 @@
     },
     {
       "cusip": "770700102",
-      "ticker": "ROBIN",
-      "security": "Robinhood Markets Inc (ROBIN)",
+      "ticker": "HOOD",
+      "security": "Robinhood Markets Inc (HOOD)",
       "name": "Robinhood Markets Inc",
       "sector": "Financials",
       "weight": 3.41,
@@ -606,8 +606,8 @@
     },
     {
       "cusip": "19260Q107",
-      "ticker": "COINB",
-      "security": "Coinbase Global Inc (COINB)",
+      "ticker": "COIN",
+      "security": "Coinbase Global Inc (COIN)",
       "name": "Coinbase Global Inc",
       "sector": "Financials",
       "weight": 2.38,
@@ -669,8 +669,8 @@
     },
     {
       "cusip": "880770102",
-      "ticker": "TERAD",
-      "security": "Teradyne Inc (TERAD)",
+      "ticker": "TER",
+      "security": "Teradyne Inc (TER)",
       "name": "Teradyne Inc",
       "sector": "Information Technology",
       "weight": 2.03,
@@ -774,8 +774,8 @@
     },
     {
       "cusip": "244199105",
-      "ticker": "DEERE",
-      "security": "Deere & Co (DEERE)",
+      "ticker": "DE",
+      "security": "Deere & Co (DE)",
       "name": "Deere & Co",
       "sector": "Industrials",
       "weight": 1.62,
@@ -795,8 +795,8 @@
     },
     {
       "cusip": "852234103",
-      "ticker": "BLOCK",
-      "security": "Block Inc (BLOCK)",
+      "ticker": "XYZ",
+      "security": "Block Inc (XYZ)",
       "name": "Block Inc",
       "sector": "Financials",
       "weight": 1.53,
@@ -902,8 +902,8 @@
     },
     {
       "cusip": "007903107",
-      "ticker": "ADVAN",
-      "security": "Advanced Micro Devices Inc (ADVAN)",
+      "ticker": "AMD",
+      "security": "Advanced Micro Devices Inc (AMD)",
       "name": "Advanced Micro Devices Inc",
       "sector": "Information Technology",
       "weight": 5.34,
@@ -965,8 +965,8 @@
     },
     {
       "cusip": "770700102",
-      "ticker": "ROBIN",
-      "security": "Robinhood Markets Inc (ROBIN)",
+      "ticker": "HOOD",
+      "security": "Robinhood Markets Inc (HOOD)",
       "name": "Robinhood Markets Inc",
       "sector": "Financials",
       "weight": 3.41,
@@ -1133,8 +1133,8 @@
     },
     {
       "cusip": "19260Q107",
-      "ticker": "COINB",
-      "security": "Coinbase Global Inc (COINB)",
+      "ticker": "COIN",
+      "security": "Coinbase Global Inc (COIN)",
       "name": "Coinbase Global Inc",
       "sector": "Financials",
       "weight": 2.38,
@@ -1196,8 +1196,8 @@
     },
     {
       "cusip": "880770102",
-      "ticker": "TERAD",
-      "security": "Teradyne Inc (TERAD)",
+      "ticker": "TER",
+      "security": "Teradyne Inc (TER)",
       "name": "Teradyne Inc",
       "sector": "Information Technology",
       "weight": 2.03,
@@ -1301,8 +1301,8 @@
     },
     {
       "cusip": "244199105",
-      "ticker": "DEERE",
-      "security": "Deere & Co (DEERE)",
+      "ticker": "DE",
+      "security": "Deere & Co (DE)",
       "name": "Deere & Co",
       "sector": "Industrials",
       "weight": 1.62,
@@ -1322,8 +1322,8 @@
     },
     {
       "cusip": "852234103",
-      "ticker": "BLOCK",
-      "security": "Block Inc (BLOCK)",
+      "ticker": "XYZ",
+      "security": "Block Inc (XYZ)",
       "name": "Block Inc",
       "sector": "Financials",
       "weight": 1.53,
@@ -1490,8 +1490,8 @@
     },
     {
       "cusip": "11135F101",
-      "ticker": "BROAD",
-      "security": "Broadcom Inc (BROAD)",
+      "ticker": "AVGO",
+      "security": "Broadcom Inc (AVGO)",
       "name": "Broadcom Inc",
       "sector": "Information Technology",
       "weight": 1,
@@ -1637,8 +1637,8 @@
     },
     {
       "cusip": "502431109",
-      "ticker": "L3HAR",
-      "security": "L3Harris Technologies Inc (L3HAR)",
+      "ticker": "LHX",
+      "security": "L3Harris Technologies Inc (LHX)",
       "name": "L3Harris Technologies Inc",
       "sector": "Industrials",
       "weight": 0.81,
@@ -1784,8 +1784,8 @@
     },
     {
       "cusip": "532457108",
-      "ticker": "ELI",
-      "security": "Eli Lilly & Co (ELI)",
+      "ticker": "LLY",
+      "security": "Eli Lilly & Co (LLY)",
       "name": "Eli Lilly & Co",
       "sector": "Health Care",
       "weight": 0.6,
@@ -1847,8 +1847,8 @@
     },
     {
       "cusip": "25809K105",
-      "ticker": "DOORD",
-      "security": "DoorDash Inc (DOORD)",
+      "ticker": "DASH",
+      "security": "DoorDash Inc (DASH)",
       "name": "DoorDash Inc",
       "sector": "Consumer Discretionary",
       "weight": 0.46,
@@ -1889,8 +1889,8 @@
     },
     {
       "cusip": "896239100",
-      "ticker": "TRIMB",
-      "security": "Trimble Inc (TRIMB)",
+      "ticker": "TRMB",
+      "security": "Trimble Inc (TRMB)",
       "name": "Trimble Inc",
       "sector": "Information Technology",
       "weight": 0.44,
@@ -1973,8 +1973,8 @@
     },
     {
       "cusip": "149123101",
-      "ticker": "CATER",
-      "security": "Caterpillar Inc (CATER)",
+      "ticker": "CAT",
+      "security": "Caterpillar Inc (CAT)",
       "name": "Caterpillar Inc",
       "sector": "Industrials",
       "weight": 0.39,
@@ -2057,8 +2057,8 @@
     },
     {
       "cusip": "23804L103",
-      "ticker": "DATAD",
-      "security": "Datadog Inc (DATAD)",
+      "ticker": "DDOG",
+      "security": "Datadog Inc (DDOG)",
       "name": "Datadog Inc",
       "sector": "Information Technology",
       "weight": 0.36,
@@ -2372,8 +2372,8 @@
     },
     {
       "cusip": "879360105",
-      "ticker": "TELED",
-      "security": "Teledyne Technologies Inc (TELED)",
+      "ticker": "TDY",
+      "security": "Teledyne Technologies Inc (TDY)",
       "name": "Teledyne Technologies Inc",
       "sector": "Information Technology",
       "weight": 0.24,
@@ -2393,8 +2393,8 @@
     },
     {
       "cusip": "871607107",
-      "ticker": "SYNOP",
-      "security": "Synopsys Inc (SYNOP)",
+      "ticker": "SNPS",
+      "security": "Synopsys Inc (SNPS)",
       "name": "Synopsys Inc",
       "sector": "Information Technology",
       "weight": 0.24,
@@ -2582,8 +2582,8 @@
     },
     {
       "cusip": "46120E602",
-      "ticker": "INTUI",
-      "security": "Intuitive Surgical Inc (INTUI)",
+      "ticker": "ISRG",
+      "security": "Intuitive Surgical Inc (ISRG)",
       "name": "Intuitive Surgical Inc",
       "sector": "Health Care",
       "weight": 0.18,
@@ -2708,8 +2708,8 @@
     },
     {
       "cusip": "009066101",
-      "ticker": "AIRBN",
-      "security": "Airbnb Inc (AIRBN)",
+      "ticker": "ABNB",
+      "security": "Airbnb Inc (ABNB)",
       "name": "Airbnb Inc",
       "sector": "Consumer Discretionary",
       "weight": 0.14,
@@ -2792,8 +2792,8 @@
     },
     {
       "cusip": "22788C105",
-      "ticker": "CROWD",
-      "security": "Crowdstrike Holdings Inc (CROWD)",
+      "ticker": "CRWD",
+      "security": "Crowdstrike Holdings Inc (CRWD)",
       "name": "Crowdstrike Holdings Inc",
       "sector": "Information Technology",
       "weight": 0.12,
@@ -2855,8 +2855,8 @@
     },
     {
       "cusip": "64110L106",
-      "ticker": "NETFL",
-      "security": "Netflix Inc (NETFL)",
+      "ticker": "NFLX",
+      "security": "Netflix Inc (NFLX)",
       "name": "Netflix Inc",
       "sector": "Communication Services",
       "weight": 0.1,
@@ -2918,8 +2918,8 @@
     },
     {
       "cusip": "H2906T109",
-      "ticker": "GARMI",
-      "security": "Garmin Ltd (GARMI)",
+      "ticker": "GRMN",
+      "security": "Garmin Ltd (GRMN)",
       "name": "Garmin Ltd",
       "sector": "Consumer Discretionary",
       "weight": 0.1,
@@ -3107,8 +3107,8 @@
     },
     {
       "cusip": "539830109",
-      "ticker": "LOCKH",
-      "security": "Lockheed Martin Corp (LOCKH)",
+      "ticker": "LMT",
+      "security": "Lockheed Martin Corp (LMT)",
       "name": "Lockheed Martin Corp",
       "sector": "Industrials",
       "weight": 0.05,
@@ -3653,8 +3653,8 @@
     },
     {
       "cusip": "40434L105",
-      "ticker": "HP",
-      "security": "HP Inc (HP)",
+      "ticker": "HPQ",
+      "security": "HP Inc (HPQ)",
       "name": "HP Inc",
       "sector": "Information Technology",
       "weight": 0.02,
@@ -3821,8 +3821,8 @@
     },
     {
       "cusip": "052769106",
-      "ticker": "AUTOD",
-      "security": "Autodesk Inc (AUTOD)",
+      "ticker": "ADSK",
+      "security": "Autodesk Inc (ADSK)",
       "name": "Autodesk Inc",
       "sector": "Information Technology",
       "weight": 0.02,
@@ -4367,8 +4367,8 @@
     },
     {
       "cusip": "031100100",
-      "ticker": "AMETE",
-      "security": "AMETEK Inc (AMETE)",
+      "ticker": "AME",
+      "security": "AMETEK Inc (AME)",
       "name": "AMETEK Inc",
       "sector": "Industrials",
       "weight": 0.01,
@@ -4409,8 +4409,8 @@
     },
     {
       "cusip": "016255101",
-      "ticker": "ALIGN",
-      "security": "Align Technology Inc (ALIGN)",
+      "ticker": "ALGN",
+      "security": "Align Technology Inc (ALGN)",
       "name": "Align Technology Inc",
       "sector": "Health Care",
       "weight": 0.01,
@@ -4514,8 +4514,8 @@
     },
     {
       "cusip": "466313103",
-      "ticker": "JABIL",
-      "security": "Jabil Inc (JABIL)",
+      "ticker": "JBL",
+      "security": "Jabil Inc (JBL)",
       "name": "Jabil Inc",
       "sector": "Information Technology",
       "weight": 0,
@@ -4535,8 +4535,8 @@
     },
     {
       "cusip": "88579Y101",
-      "ticker": "3M",
-      "security": "3M Co (3M)",
+      "ticker": "MMM",
+      "security": "3M Co (MMM)",
       "name": "3M Co",
       "sector": "Industrials",
       "weight": 0,
@@ -4577,8 +4577,8 @@
     },
     {
       "cusip": "464287614",
-      "ticker": "ISHAR",
-      "security": "iShares Russell 1000 Growth ETF (ISHAR)",
+      "ticker": "IJH",
+      "security": "iShares Russell 1000 Growth ETF (IJH)",
       "name": "iShares Russell 1000 Growth ETF",
       "sector": "Unclassified",
       "weight": 0,
@@ -4640,8 +4640,8 @@
     },
     {
       "cusip": "922908736",
-      "ticker": "VANGU",
-      "security": "Vanguard Growth ETF (VANGU)",
+      "ticker": "ETF-922908",
+      "security": "Vanguard Growth ETF (ETF-922908)",
       "name": "Vanguard Growth ETF",
       "sector": "Unclassified",
       "weight": 0,
@@ -4703,8 +4703,8 @@
     },
     {
       "cusip": "78464A870",
-      "ticker": "STATE",
-      "security": "State Street SPDR S&P Biotech ETF (STATE)",
+      "ticker": "XLK",
+      "security": "State Street SPDR S&P Biotech ETF (XLK)",
       "name": "State Street SPDR S&P Biotech ETF",
       "sector": "Unclassified",
       "weight": 0,
@@ -4724,8 +4724,8 @@
     },
     {
       "cusip": "464287515",
-      "ticker": "ISHAR",
-      "security": "iShares Expanded Tech-Software Sector ETF (ISHAR)",
+      "ticker": "XLK",
+      "security": "iShares Expanded Tech-Software Sector ETF (XLK)",
       "name": "iShares Expanded Tech-Software Sector ETF",
       "sector": "Unclassified",
       "weight": 0,
@@ -4745,8 +4745,8 @@
     },
     {
       "cusip": "78464A771",
-      "ticker": "STATE",
-      "security": "State Street SPDR S&P Capital Markets ETF (STATE)",
+      "ticker": "ETF-78464A",
+      "security": "State Street SPDR S&P Capital Markets ETF (ETF-78464A)",
       "name": "State Street SPDR S&P Capital Markets ETF",
       "sector": "Unclassified",
       "weight": 0,
@@ -4766,8 +4766,8 @@
     },
     {
       "cusip": "78464A581",
-      "ticker": "STATE",
-      "security": "State Street SPDR S&P Health Care Equipment ETF (STATE)",
+      "ticker": "XLV",
+      "security": "State Street SPDR S&P Health Care Equipment ETF (XLV)",
       "name": "State Street SPDR S&P Health Care Equipment ETF",
       "sector": "Unclassified",
       "weight": 0,
@@ -4787,8 +4787,8 @@
     },
     {
       "cusip": "78464A631",
-      "ticker": "STATE",
-      "security": "State Street SPDR S&P Aerospace & Defense ETF (STATE)",
+      "ticker": "ETF-78464A",
+      "security": "State Street SPDR S&P Aerospace & Defense ETF (ETF-78464A)",
       "name": "State Street SPDR S&P Aerospace & Defense ETF",
       "sector": "Unclassified",
       "weight": 0,
@@ -4829,8 +4829,8 @@
     },
     {
       "cusip": "464288794",
-      "ticker": "ISHAR",
-      "security": "iShares U.S. Broker-Dealers & Securities Exchanges ETF (ISHAR)",
+      "ticker": "ETF-464288",
+      "security": "iShares U.S. Broker-Dealers & Securities Exchanges ETF (ETF-464288)",
       "name": "iShares U.S. Broker-Dealers & Securities Exchanges ETF",
       "sector": "Unclassified",
       "weight": 0,
@@ -4850,8 +4850,8 @@
     },
     {
       "cusip": "78462F103",
-      "ticker": "STATE",
-      "security": "State Street SPDR S&P 500 ETF Trust (STATE)",
+      "ticker": "SPY",
+      "security": "State Street SPDR S&P 500 ETF Trust (SPY)",
       "name": "State Street SPDR S&P 500 ETF Trust",
       "sector": "Unclassified",
       "weight": 0,
@@ -4944,7 +4944,7 @@
       "type": "Add"
     },
     {
-      "ticker": "ELI",
+      "ticker": "LLY",
       "security": "Eli Lilly & Co",
       "rawDelta": 81002260,
       "deltaValue": "+$81.00M",
@@ -5000,7 +5000,7 @@
       "type": "Trim"
     },
     {
-      "ticker": "TERAD",
+      "ticker": "TER",
       "security": "Teradyne Inc",
       "rawDelta": -57157558,
       "deltaValue": "-$57.16M",
@@ -5027,7 +5027,7 @@
       "type": "Trim"
     },
     {
-      "ticker": "CROWD",
+      "ticker": "CRWD",
       "security": "Crowdstrike Holdings Inc",
       "rawDelta": -23301962,
       "deltaValue": "-$23.30M",

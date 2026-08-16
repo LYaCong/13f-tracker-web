@@ -28,14 +28,68 @@ const OUTPUT_DIR = path.resolve(__dirname, '../public/data');
 const SECTOR_MAP_PATH = path.resolve(__dirname, './data/gics_sector_map.json');
 const SP500_BENCHMARK_PATH = path.resolve(__dirname, './data/sp500_sector_benchmark.json');
 
-const BIG_TECH_CUSIPS = {
+const KNOWN_CUSIPS = {
+  // Mega Caps
   '037833100': 'AAPL', '594918104': 'MSFT', '67066G104': 'NVDA', 
   '02079K305': 'GOOGL', '02079K107': 'GOOG', '023135106': 'AMZN', 
   '30303M102': 'META', '88160R101': 'TSLA', '084670702': 'BRK-B',
   '025816109': 'AXP', '060505104': 'BAC', '191216100': 'KO',
   '166764100': 'CVX', '615369105': 'MCO', '674599105': 'OXY',
   '171232101': 'CB', '500754106': 'KHC', '94106L109': 'WM',
-  '872590104': 'TMUS', '136375102': 'CNI'
+  '872590104': 'TMUS', '136375102': 'CNI', '00507V109': 'ATVI',
+  '00724F101': 'ADBE', '007903107': 'AMD', '00846U101': 'A',
+  '00287Y109': 'ABBV', '002824100': 'ABT', '009066101': 'ABNB',
+  'G1151C101': 'ACN', '001055102': 'AFL', '020002101': 'ALL',
+  '00130H105': 'GOOGL', '038222105': 'AMAT', '03073E105': 'AMGN',
+  '097023105': 'BA', '086516101': 'BTI', '09247X101': 'BLK',
+  '11135F101': 'AVGO', '149123101': 'CAT', '12504L109': 'C',
+  '12572Q105': 'CMG', '22160K105': 'COST', '20825C104': 'COP',
+  '254687106': 'DIS', '278058102': 'EBAY', '30231G102': 'XOM',
+  '38141G104': 'GS', '437076102': 'HD', '459200101': 'IBM',
+  '458140100': 'INTC', '478160104': 'JNJ', '46625H100': 'JPM',
+  '532457108': 'LLY', '57636Q104': 'MA', '580135101': 'MCD',
+  '55354G100': 'MRK', '64110D104': 'NFLX', '654106103': 'NKE',
+  '70450Y103': 'PYPL', '693475105': 'PEP', '717081103': 'PFE',
+  '742718109': 'PG', '74340W103': 'PLTR', '747525103': 'QCOM',
+  '81762P102': 'NOW', '79466L302': 'CRM', '828806109': 'SBUX',
+  '866810203': 'SNOW', '88579Y101': 'MMM', '91324P102': 'UNH',
+  '92826C839': 'V', '931142103': 'WMT', '989207105': 'ZTS',
+  '00766T100': 'AMD',
+
+  // Major ETFs
+  '464287200': 'IVV',
+  '464287234': 'EEM',
+  '464287655': 'IWM',
+  '464288513': 'HYG',
+  '464287226': 'AGG',
+  '464287465': 'EFA',
+  '464287432': 'TLT',
+  '464287184': 'FXI',
+  '46429B598': 'INDA',
+  '464288273': 'ACWI',
+  '464287614': 'IJH',
+  '464287804': 'IJR',
+  '464287796': 'ITOT',
+  '464287382': 'EWY',
+  '464287473': 'EWT',
+  '78462F103': 'SPY',
+  '78463V107': 'GLD',
+  '81369Y803': 'XLK',
+  '81369Y605': 'XLF',
+  '81369Y506': 'XLE',
+  '81369Y209': 'XLV',
+  '81369Y407': 'XLY',
+  '81369Y308': 'XLP',
+  '81369Y704': 'XLI',
+  '81369Y886': 'XLC',
+  '81369Y100': 'XLB',
+  '81369Y860': 'XLU',
+  '46090E103': 'QQQ',
+  '922908363': 'VOO',
+  '922908769': 'VTI',
+  '922042858': 'VWO',
+  '921943858': 'VEA',
+  '922908710': 'BND'
 };
 
 const ISSUER_TICKER_OVERRIDES = new Map([
@@ -43,6 +97,7 @@ const ISSUER_TICKER_OVERRIDES = new Map([
   ['APPLE INC', 'AAPL'],
   ['ALPHABET INC', 'GOOGL'],
   ['AMAZON COM INC', 'AMZN'],
+  ['ADVANCED MICRO DEVICES INC', 'AMD'],
   ['BANK AMERICA CORP', 'BAC'],
   ['BANK OF AMERICA CORP', 'BAC'],
   ['BERKSHIRE HATHAWAY INC DEL', 'BRK-B'],
@@ -70,6 +125,7 @@ const ISSUER_TICKER_OVERRIDES = new Map([
   ['UNITEDHEALTH GROUP INC', 'UNH'],
   ['VISA INC', 'V'],
   ['WASTE MGMT INC DEL', 'WM'],
+  ['STATE STREET CORP', 'STT'],
 ]);
 
 function getCashReserves(instId, quarterLabel) {
@@ -171,8 +227,14 @@ function normalizeTicker(ticker) {
 }
 
 function inferTicker(cusip, name) {
-  if (BIG_TECH_CUSIPS[cusip]) {
-    return BIG_TECH_CUSIPS[cusip];
+  const normCusip = normalizeCusip(cusip);
+  if (KNOWN_CUSIPS[normCusip]) {
+    return KNOWN_CUSIPS[normCusip];
+  }
+
+  const byCusip = sectorByCusip.get(normCusip);
+  if (byCusip && byCusip.ticker) {
+    return byCusip.ticker;
   }
 
   const normalizedName = normalizeIssuerName(name);
@@ -180,10 +242,37 @@ function inferTicker(cusip, name) {
     return ISSUER_TICKER_OVERRIDES.get(normalizedName);
   }
 
+  // Common ETF Name Matchers
+  if (normalizedName.includes('ISHARES') || normalizedName.includes('SPDR') || normalizedName.includes('VANGUARD')) {
+    if (normalizedName.includes('S P 500') || normalizedName.includes('CORE S P 500')) {
+      return normalizedName.includes('SPDR') ? 'SPY' : normalizedName.includes('VANGUARD') ? 'VOO' : 'IVV';
+    }
+    if (normalizedName.includes('RUSSELL 2000')) return 'IWM';
+    if (normalizedName.includes('EMERGING') || normalizedName.includes('MSCI EM')) return 'EEM';
+    if (normalizedName.includes('HIGH YIELD') || normalizedName.includes('IBOXX')) return 'HYG';
+    if (normalizedName.includes('20 YEAR') || normalizedName.includes('TREASURY')) return 'TLT';
+    if (normalizedName.includes('GOLD')) return 'GLD';
+    if (normalizedName.includes('TECH')) return 'XLK';
+    if (normalizedName.includes('FINANCIAL')) return 'XLF';
+    if (normalizedName.includes('ENERGY')) return 'XLE';
+    if (normalizedName.includes('HEALTH')) return 'XLV';
+    if (normalizedName.includes('CONSUMER DISCRETIONARY')) return 'XLY';
+    if (normalizedName.includes('CONSUMER STAPLES')) return 'XLP';
+    if (normalizedName.includes('INDUSTRIAL')) return 'XLI';
+    if (normalizedName.includes('COMMUNICATION')) return 'XLC';
+    if (normalizedName.includes('CHINA')) return 'FXI';
+    if (normalizedName.includes('INDIA')) return 'INDA';
+    if (normalizedName.includes('EAFE')) return 'EFA';
+    if (normalizedName.includes('ACWI')) return 'ACWI';
+
+    // Unique CUSIP ETF fallback instead of colliding to same 'ISHAR'
+    return `ETF-${normCusip.slice(0, 6)}`;
+  }
+
   const words = normalizedName
     .split(' ')
     .filter(Boolean)
-    .filter(word => !['INC', 'CORP', 'CO', 'LTD', 'PLC', 'HOLDINGS', 'GROUP', 'CLASS', 'DEL', 'NEW'].includes(word));
+    .filter(word => !['INC', 'CORP', 'CO', 'LTD', 'PLC', 'HOLDINGS', 'GROUP', 'CLASS', 'DEL', 'NEW', 'TRUST', 'TR'].includes(word));
 
   const fallback = words[0] || normalizedName.slice(0, 5);
   return fallback.slice(0, 5);
@@ -341,7 +430,6 @@ async function processInstitutionForDate(inst, targetReportDate) {
     .map((form, index) => (form === '13F-HR' || form === '13F-HR/A') ? index : -1)
     .filter(index => index !== -1);
 
-  // If pershing and not found on primary CIK, try altCik
   if (all13FIndices.length === 0 && inst.altCik) {
     targetCik = inst.altCik;
     url = `https://data.sec.gov/submissions/CIK${targetCik}.json`;
@@ -357,7 +445,6 @@ async function processInstitutionForDate(inst, targetReportDate) {
   if (targetReportDate) {
     let currentPosition = all13FIndices.findIndex(index => data.filings.recent.reportDate[index] === targetReportDate);
     if (currentPosition === -1 && inst.altCik && targetCik !== inst.altCik) {
-      // Try fallback CIK
       targetCik = inst.altCik;
       url = `https://data.sec.gov/submissions/CIK${targetCik}.json`;
       res = await fetchWithRetry(url);
@@ -720,6 +807,7 @@ async function processQuarter(targetReportDate, targetDir, isLatest = false) {
         }
         
         allHoldings.forEach(h => {
+          // 1. Treemap Aggregation
           if (!treemapAggregator.has(h.ticker)) {
             treemapAggregator.set(h.ticker, { ticker: h.ticker, totalValue: 0, sumWeight: 0, holdingInstitutions: new Set() });
           }
@@ -728,6 +816,7 @@ async function processQuarter(targetReportDate, targetDir, isLatest = false) {
           agg.sumWeight += h.weight;
           agg.holdingInstitutions.add(inst.id);
 
+          // 2. Ticker Master Map Aggregation
           if (!tickerMasterMap.has(h.ticker)) {
             tickerMasterMap.set(h.ticker, {
               ticker: h.ticker,
@@ -740,37 +829,43 @@ async function processQuarter(targetReportDate, targetDir, isLatest = false) {
               avgWeight: 0,
               buyers: [],
               sellers: [],
-              holders: []
+              holdersMap: new Map() // instId -> Consolidated Holder Record
             });
           }
 
           const tickerRecord = tickerMasterMap.get(h.ticker);
           tickerRecord.totalValue += h.rawMktValue;
           tickerRecord.totalShares += h.shares;
-          tickerRecord.holdingCount += 1;
-          tickerRecord.holders.push({
-            instId: inst.id,
-            instName: inst.name,
-            manager: inst.manager,
-            style: inst.style,
-            shares: h.shares,
-            sharesFormatted: h.sharesFormatted,
-            value: h.rawMktValue,
-            mktValue: h.mktValue,
-            weight: h.weight,
-            weightChange: h.weightChange,
-            weightChangeText: h.weightChangeText,
-            action: h.action,
-            shareChangePct: h.shareChangePct,
-            shareChangeText: h.shareChangeText,
-            qOqDelta: h.qOqDelta
-          });
 
-          if (h.action === 'Add' || h.action === 'New') {
-            tickerRecord.buyers.push({ instId: inst.id, instName: inst.name, delta: h.rawDelta, action: h.action });
-          } else if (h.action === 'Trim') {
-            tickerRecord.sellers.push({ instId: inst.id, instName: inst.name, delta: Math.abs(h.rawDelta), action: h.action });
+          // Consolidated per institution (Guaranteeing at most 1 entry per institution!)
+          let holderRecord = tickerRecord.holdersMap.get(inst.id);
+          if (!holderRecord) {
+            holderRecord = {
+              instId: inst.id,
+              instName: inst.name,
+              manager: inst.manager,
+              style: inst.style,
+              shares: 0,
+              sharesFormatted: '',
+              value: 0,
+              mktValue: '',
+              weight: 0,
+              rawDelta: 0,
+              action: h.action,
+              shareChangePct: h.shareChangePct,
+              shareChangeText: h.shareChangeText,
+              weightChange: 0,
+              weightChangeText: '',
+              qOqDelta: ''
+            };
+            tickerRecord.holdersMap.set(inst.id, holderRecord);
           }
+
+          holderRecord.shares += h.shares;
+          holderRecord.value += h.rawMktValue;
+          holderRecord.weight += h.weight;
+          holderRecord.rawDelta += h.rawDelta;
+          if (h.action === 'New') holderRecord.action = 'New';
         });
       }
     } catch (e) {
@@ -810,19 +905,51 @@ async function processQuarter(targetReportDate, targetDir, isLatest = false) {
   // Finalize Tickers Master Map JSON
   const allTickersObj = {};
   tickerMasterMap.forEach((val, key) => {
-    val.avgWeight = (val.holders.reduce((sum, h) => sum + h.weight, 0) / val.holders.length).toFixed(2) + '%';
+    // Transform holdersMap to array of deduplicated holders
+    const deduplicatedHolders = Array.from(val.holdersMap.values()).map(h => {
+      const deltaSign = h.rawDelta >= 0 ? '+' : '';
+      return {
+        ...h,
+        sharesFormatted: formatShares(h.shares),
+        mktValue: (h.value / 1e9).toFixed(2),
+        weight: Number(h.weight.toFixed(2)),
+        weightChange: Number(((h.rawDelta / (val.totalValue || 1)) * 100).toFixed(2)),
+        weightChangeText: `${deltaSign}${((h.rawDelta / (val.totalValue || 1)) * 100).toFixed(2)}%`,
+        action: h.action === 'New' ? 'New' : h.rawDelta > 0 ? 'Add' : h.rawDelta < 0 ? 'Trim' : 'Hold',
+        qOqDelta: `${deltaSign}${(h.rawDelta / 1e9).toFixed(2)}B`
+      };
+    });
+
+    deduplicatedHolders.sort((a, b) => b.value - a.value);
+
+    val.holders = deduplicatedHolders;
+    val.holdingCount = deduplicatedHolders.length; // Max 12!
+    val.avgWeight = deduplicatedHolders.length > 0 
+      ? (deduplicatedHolders.reduce((sum, h) => sum + h.weight, 0) / deduplicatedHolders.length).toFixed(2) + '%'
+      : '0.00%';
     val.mktValue = normalizeBillion(val.totalValue);
     val.sharesFormatted = formatShares(val.totalShares);
-    val.holders.sort((a, b) => b.value - a.value);
+    
+    // Distinct buyers and sellers
+    val.buyers = deduplicatedHolders
+      .filter(h => h.rawDelta > 0)
+      .map(h => ({ instId: h.instId, instName: h.instName, delta: h.rawDelta, action: h.action }));
+
+    val.sellers = deduplicatedHolders
+      .filter(h => h.rawDelta < 0)
+      .map(h => ({ instId: h.instId, instName: h.instName, delta: Math.abs(h.rawDelta), action: 'Trim' }));
+
+    delete val.holdersMap;
     allTickersObj[key] = val;
   });
+
   writeJson(path.join(targetDir, 'all_tickers.json'), allTickersObj);
   if (isLatest) {
     writeJson(path.join(OUTPUT_DIR, 'all_tickers.json'), allTickersObj);
   }
 
   // Generate Consensus Data (Smart Money Consensus Top 10)
-  const tickerList = Array.from(tickerMasterMap.values());
+  const tickerList = Array.from(Object.values(allTickersObj));
   const topConsensusBuys = tickerList
     .filter(t => t.buyers.length > 0)
     .map(t => ({
@@ -879,7 +1006,7 @@ async function processQuarter(targetReportDate, targetDir, isLatest = false) {
           manager: h.manager,
           weight: h.weight + '%',
           rawWeight: h.weight,
-          mktValue: h.mktValue,
+          mktValue: `${h.mktValue}B`,
           action: h.action
         });
       }
@@ -959,7 +1086,6 @@ async function processQuarter(targetReportDate, targetDir, isLatest = false) {
 async function main() {
   const args = process.argv.slice(2);
   const targetArg = args.find(a => a.startsWith('--quarter='))?.split('=')[1] || process.env.SEC_REPORT_DATE;
-  const isAll = args.includes('--all') || (!targetArg && process.env.FETCH_ALL !== 'false');
 
   const QUARTERS_CONFIG = [
     { reportDate: '2026-06-30', quarterId: '2026-Q2', isLatest: true },
@@ -975,7 +1101,6 @@ async function main() {
   const processedManifest = [];
 
   if (targetArg) {
-    // Single specific quarter run
     const targetDir = path.join(OUTPUT_DIR, 'quarters', quarterToId(targetArg));
     const res = await processQuarter(targetArg, targetDir, true);
     processedManifest.push({
@@ -989,7 +1114,6 @@ async function main() {
       createdAt: new Date().toISOString().slice(0, 10)
     });
   } else {
-    // Multi-quarter backfill run (all historical and latest quarters)
     for (const q of QUARTERS_CONFIG) {
       const targetDir = path.join(OUTPUT_DIR, 'quarters', q.quarterId);
       const res = await processQuarter(q.reportDate, targetDir, q.isLatest);
@@ -1006,7 +1130,6 @@ async function main() {
     }
   }
 
-  // Merge manifest
   const mergedManifest = [
     ...processedManifest,
     ...existingManifest.filter(e => !processedManifest.some(p => p.id === e.id))

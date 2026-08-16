@@ -66,12 +66,11 @@
   {
     "ticker": "GE",
     "heat": 100,
-    "avgWeight": "9.56%",
-    "value": "18.85B",
-    "instCount": 4,
+    "avgWeight": "11.25%",
+    "value": "17.76B",
+    "instCount": 3,
     "holdingInstitutions": [
       "tci",
-      "tiger",
       "bridgewater",
       "ark"
     ]
@@ -126,16 +125,15 @@
     ]
   },
   {
-    "ticker": "INTEL",
+    "ticker": "INTC",
     "heat": 100,
-    "avgWeight": "14.27%",
-    "value": "13.04B",
-    "instCount": 5,
+    "avgWeight": "17.37%",
+    "value": "12.75B",
+    "instCount": 4,
     "holdingInstitutions": [
       "tiger",
       "bridgewater",
       "softbank",
-      "ark",
       "soros"
     ]
   },
@@ -201,7 +199,7 @@
     ]
   },
   {
-    "ticker": "S",
+    "ticker": "SPGI",
     "heat": 87,
     "avgWeight": "4.24%",
     "value": "6.87B",
@@ -214,7 +212,7 @@
     ]
   },
   {
-    "ticker": "CATER",
+    "ticker": "CAT",
     "heat": 96,
     "avgWeight": "6.69%",
     "value": "6.83B",

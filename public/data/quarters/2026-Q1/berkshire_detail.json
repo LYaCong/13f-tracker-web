@@ -156,23 +156,23 @@
   "assetTrend": [
     {
       "year": "2024 Q4",
-      "value": "298.7"
+      "value": "250.7"
     },
     {
       "year": "2025 Q1",
-      "value": "288.2"
+      "value": "297.7"
     },
     {
       "year": "2025 Q2",
-      "value": "276.6"
+      "value": "258.6"
     },
     {
       "year": "2025 Q3",
-      "value": "271.0"
+      "value": "239.7"
     },
     {
       "year": "2025 Q4",
-      "value": "227.1"
+      "value": "296.3"
     },
     {
       "year": "2026 Q1",
@@ -181,7 +181,7 @@
     },
     {
       "year": "2026 Q2",
-      "value": "259.0"
+      "value": "290.5"
     }
   ],
   "sectorHistory": [
@@ -269,7 +269,7 @@
           "name": "MA (Exit)"
         },
         {
-          "name": "CONST (Trim)"
+          "name": "STZ (Trim)"
         },
         {
           "name": "Capital Liquidity Pool"
@@ -278,7 +278,7 @@
           "name": "GOOGL (Add)"
         },
         {
-          "name": "DELTA (New)"
+          "name": "DAL (New)"
         },
         {
           "name": "GOOG (New)"
@@ -287,7 +287,7 @@
           "name": "YORK (Add)"
         },
         {
-          "name": "LENNA (Add)"
+          "name": "LEN (Add)"
         }
       ],
       "links": [
@@ -501,8 +501,8 @@
     },
     {
       "cusip": "H1467J104",
-      "ticker": "CHUBB",
-      "security": "CHUBB LTD SWITZ (CHUBB)",
+      "ticker": "CB",
+      "security": "CHUBB LTD SWITZ (CB)",
       "name": "CHUBB LTD SWITZ",
       "sector": "Financials",
       "weight": 4.24,
@@ -585,8 +585,8 @@
     },
     {
       "cusip": "501044101",
-      "ticker": "KROGE",
-      "security": "KROGER CO (KROGE)",
+      "ticker": "KR",
+      "security": "KROGER CO (KR)",
       "name": "KROGER CO",
       "sector": "Consumer Staples",
       "weight": 1.38,
@@ -627,8 +627,8 @@
     },
     {
       "cusip": "247361702",
-      "ticker": "DELTA",
-      "security": "DELTA AIR LINES INC (DELTA)",
+      "ticker": "DAL",
+      "security": "DELTA AIR LINES INC (DAL)",
       "name": "DELTA AIR LINES INC",
       "sector": "Industrials",
       "weight": 1.01,
@@ -648,8 +648,8 @@
     },
     {
       "cusip": "92343E102",
-      "ticker": "VERIS",
-      "security": "VERISIGN INC (VERIS)",
+      "ticker": "VRSN",
+      "security": "VERISIGN INC (VRSN)",
       "name": "VERISIGN INC",
       "sector": "Information Technology",
       "weight": 0.85,
@@ -669,8 +669,8 @@
     },
     {
       "cusip": "14040H105",
-      "ticker": "CAPIT",
-      "security": "CAPITAL ONE FINL CORP (CAPIT)",
+      "ticker": "COF",
+      "security": "CAPITAL ONE FINL CORP (COF)",
       "name": "CAPITAL ONE FINL CORP",
       "sector": "Financials",
       "weight": 0.5,
@@ -774,8 +774,8 @@
     },
     {
       "cusip": "526057104",
-      "ticker": "LENNA",
-      "security": "LENNAR CORP (LENNA)",
+      "ticker": "LEN",
+      "security": "LENNAR CORP (LEN)",
       "name": "LENNAR CORP",
       "sector": "Consumer Discretionary",
       "weight": 0.33,
@@ -795,8 +795,8 @@
     },
     {
       "cusip": "670346105",
-      "ticker": "NUCOR",
-      "security": "NUCOR CORP (NUCOR)",
+      "ticker": "NUE",
+      "security": "NUCOR CORP (NUE)",
       "name": "NUCOR CORP",
       "sector": "Materials",
       "weight": 0.25,
@@ -858,8 +858,8 @@
     },
     {
       "cusip": "21036P108",
-      "ticker": "CONST",
-      "security": "CONSTELLATION BRANDS INC (CONST)",
+      "ticker": "STZ",
+      "security": "CONSTELLATION BRANDS INC (STZ)",
       "name": "CONSTELLATION BRANDS INC",
       "sector": "Consumer Staples",
       "weight": 0.04,
@@ -1028,8 +1028,8 @@
     },
     {
       "cusip": "H1467J104",
-      "ticker": "CHUBB",
-      "security": "CHUBB LTD SWITZ (CHUBB)",
+      "ticker": "CB",
+      "security": "CHUBB LTD SWITZ (CB)",
       "name": "CHUBB LTD SWITZ",
       "sector": "Financials",
       "weight": 4.24,
@@ -1112,8 +1112,8 @@
     },
     {
       "cusip": "501044101",
-      "ticker": "KROGE",
-      "security": "KROGER CO (KROGE)",
+      "ticker": "KR",
+      "security": "KROGER CO (KR)",
       "name": "KROGER CO",
       "sector": "Consumer Staples",
       "weight": 1.38,
@@ -1154,8 +1154,8 @@
     },
     {
       "cusip": "247361702",
-      "ticker": "DELTA",
-      "security": "DELTA AIR LINES INC (DELTA)",
+      "ticker": "DAL",
+      "security": "DELTA AIR LINES INC (DAL)",
       "name": "DELTA AIR LINES INC",
       "sector": "Industrials",
       "weight": 1.01,
@@ -1175,8 +1175,8 @@
     },
     {
       "cusip": "92343E102",
-      "ticker": "VERIS",
-      "security": "VERISIGN INC (VERIS)",
+      "ticker": "VRSN",
+      "security": "VERISIGN INC (VRSN)",
       "name": "VERISIGN INC",
       "sector": "Information Technology",
       "weight": 0.85,
@@ -1196,8 +1196,8 @@
     },
     {
       "cusip": "14040H105",
-      "ticker": "CAPIT",
-      "security": "CAPITAL ONE FINL CORP (CAPIT)",
+      "ticker": "COF",
+      "security": "CAPITAL ONE FINL CORP (COF)",
       "name": "CAPITAL ONE FINL CORP",
       "sector": "Financials",
       "weight": 0.5,
@@ -1301,8 +1301,8 @@
     },
     {
       "cusip": "526057104",
-      "ticker": "LENNA",
-      "security": "LENNAR CORP (LENNA)",
+      "ticker": "LEN",
+      "security": "LENNAR CORP (LEN)",
       "name": "LENNAR CORP",
       "sector": "Consumer Discretionary",
       "weight": 0.33,
@@ -1322,8 +1322,8 @@
     },
     {
       "cusip": "670346105",
-      "ticker": "NUCOR",
-      "security": "NUCOR CORP (NUCOR)",
+      "ticker": "NUE",
+      "security": "NUCOR CORP (NUE)",
       "name": "NUCOR CORP",
       "sector": "Materials",
       "weight": 0.25,
@@ -1385,8 +1385,8 @@
     },
     {
       "cusip": "21036P108",
-      "ticker": "CONST",
-      "security": "CONSTELLATION BRANDS INC (CONST)",
+      "ticker": "STZ",
+      "security": "CONSTELLATION BRANDS INC (STZ)",
       "name": "CONSTELLATION BRANDS INC",
       "sector": "Consumer Staples",
       "weight": 0.04,
@@ -1500,7 +1500,7 @@
       "type": "Add"
     },
     {
-      "ticker": "DELTA",
+      "ticker": "DAL",
       "security": "DELTA AIR LINES INC",
       "rawDelta": 2646532635,
       "deltaValue": "+$2.65B",
@@ -1527,7 +1527,7 @@
       "type": "Add"
     },
     {
-      "ticker": "LENNA",
+      "ticker": "LEN",
       "security": "LENNAR CORP",
       "rawDelta": 152215251,
       "deltaValue": "+$152.22M",
@@ -1592,7 +1592,7 @@
       "type": "Exit"
     },
     {
-      "ticker": "CONST",
+      "ticker": "STZ",
       "security": "CONSTELLATION BRANDS INC",
       "rawDelta": -1698546500,
       "deltaValue": "-$1.70B",
@@ -1610,7 +1610,7 @@
       "type": "Exit"
     },
     {
-      "ticker": "DOMIN",
+      "ticker": "DPZ",
       "security": "DOMINOS PIZZA INC",
       "rawDelta": -1396347000,
       "deltaValue": "-$1.40B",

@@ -154,19 +154,19 @@
   "assetTrend": [
     {
       "year": "2025 Q2",
-      "value": "19.6"
+      "value": "22.3"
     },
     {
       "year": "2025 Q3",
-      "value": "20.4"
+      "value": "18.2"
     },
     {
       "year": "2025 Q4",
-      "value": "21.7"
+      "value": "21.6"
     },
     {
       "year": "2026 Q1",
-      "value": "21.9"
+      "value": "17.4"
     },
     {
       "year": "2026 Q2",
@@ -491,8 +491,8 @@
     },
     {
       "cusip": "78409V104",
-      "ticker": "S",
-      "security": "S&P GLOBAL INC (S)",
+      "ticker": "SPGI",
+      "security": "S&P GLOBAL INC (SPGI)",
       "name": "S&P GLOBAL INC",
       "sector": "Financials",
       "weight": 5.43,
@@ -512,8 +512,8 @@
     },
     {
       "cusip": "64110L106",
-      "ticker": "NETFL",
-      "security": "NETFLIX INC. (NETFL)",
+      "ticker": "NFLX",
+      "security": "NETFLIX INC. (NFLX)",
       "name": "NETFLIX INC.",
       "sector": "Communication Services",
       "weight": 4.8,
@@ -787,8 +787,8 @@
     },
     {
       "cusip": "78409V104",
-      "ticker": "S",
-      "security": "S&P GLOBAL INC (S)",
+      "ticker": "SPGI",
+      "security": "S&P GLOBAL INC (SPGI)",
       "name": "S&P GLOBAL INC",
       "sector": "Financials",
       "weight": 5.43,
@@ -808,8 +808,8 @@
     },
     {
       "cusip": "64110L106",
-      "ticker": "NETFL",
-      "security": "NETFLIX INC. (NETFL)",
+      "ticker": "NFLX",
+      "security": "NETFLIX INC. (NFLX)",
       "name": "NETFLIX INC.",
       "sector": "Communication Services",
       "weight": 4.8,
@@ -974,7 +974,7 @@
       "type": "New"
     },
     {
-      "ticker": "S",
+      "ticker": "SPGI",
       "security": "S&P GLOBAL INC",
       "rawDelta": 1056088305,
       "deltaValue": "+$1.06B",

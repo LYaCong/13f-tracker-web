@@ -154,23 +154,23 @@
   "assetTrend": [
     {
       "year": "2024 Q3",
-      "value": "52.7"
+      "value": "49.5"
     },
     {
       "year": "2024 Q4",
-      "value": "53.0"
+      "value": "48.3"
     },
     {
       "year": "2025 Q1",
-      "value": "59.3"
+      "value": "46.3"
     },
     {
       "year": "2025 Q2",
-      "value": "60.8"
+      "value": "47.0"
     },
     {
       "year": "2025 Q3",
-      "value": "51.5"
+      "value": "55.5"
     },
     {
       "year": "2025 Q4",
@@ -179,11 +179,11 @@
     },
     {
       "year": "2026 Q1",
-      "value": "54.3"
+      "value": "47.6"
     },
     {
       "year": "2026 Q2",
-      "value": "54.2"
+      "value": "59.4"
     }
   ],
   "sectorHistory": [
@@ -271,7 +271,7 @@
           "name": "Capital Liquidity Pool"
         },
         {
-          "name": "S (Add)"
+          "name": "SPGI (Add)"
         },
         {
           "name": "FERRO (Add)"
@@ -406,8 +406,8 @@
     },
     {
       "cusip": "78409V104",
-      "ticker": "S",
-      "security": "S&P GLOBAL INC (S)",
+      "ticker": "SPGI",
+      "security": "S&P GLOBAL INC (SPGI)",
       "name": "S&P GLOBAL INC",
       "sector": "Financials",
       "weight": 11.48,
@@ -597,8 +597,8 @@
     },
     {
       "cusip": "78409V104",
-      "ticker": "S",
-      "security": "S&P GLOBAL INC (S)",
+      "ticker": "SPGI",
+      "security": "S&P GLOBAL INC (SPGI)",
       "name": "S&P GLOBAL INC",
       "sector": "Financials",
       "weight": 11.48,
@@ -703,7 +703,7 @@
   ],
   "topAdds": [
     {
-      "ticker": "S",
+      "ticker": "SPGI",
       "security": "S&P GLOBAL INC",
       "rawDelta": 715276475,
       "deltaValue": "+$715.28M",

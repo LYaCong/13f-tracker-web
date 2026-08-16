@@ -154,23 +154,23 @@
   "assetTrend": [
     {
       "year": "2024 Q3",
-      "value": "15.0"
+      "value": "13.5"
     },
     {
       "year": "2024 Q4",
-      "value": "13.8"
+      "value": "16.1"
     },
     {
       "year": "2025 Q1",
-      "value": "13.1"
-    },
-    {
-      "year": "2025 Q2",
       "value": "17.2"
     },
     {
+      "year": "2025 Q2",
+      "value": "15.5"
+    },
+    {
       "year": "2025 Q3",
-      "value": "16.3"
+      "value": "13.0"
     },
     {
       "year": "2025 Q4",
@@ -179,11 +179,11 @@
     },
     {
       "year": "2026 Q1",
-      "value": "14.5"
+      "value": "16.1"
     },
     {
       "year": "2026 Q2",
-      "value": "14.4"
+      "value": "16.9"
     }
   ],
   "sectorHistory": [
@@ -265,7 +265,7 @@
           "name": "TSLA (Trim)"
         },
         {
-          "name": "ROBIN (Trim)"
+          "name": "HOOD (Trim)"
         },
         {
           "name": "PLTR (Trim)"
@@ -417,8 +417,8 @@
     },
     {
       "cusip": "19260Q107",
-      "ticker": "COINB",
-      "security": "Coinbase Global Inc (COINB)",
+      "ticker": "COIN",
+      "security": "Coinbase Global Inc (COIN)",
       "name": "Coinbase Global Inc",
       "sector": "Financials",
       "weight": 3.82,
@@ -480,8 +480,8 @@
     },
     {
       "cusip": "007903107",
-      "ticker": "ADVAN",
-      "security": "Advanced Micro Devices Inc (ADVAN)",
+      "ticker": "AMD",
+      "security": "Advanced Micro Devices Inc (AMD)",
       "name": "Advanced Micro Devices Inc",
       "sector": "Information Technology",
       "weight": 3.66,
@@ -501,8 +501,8 @@
     },
     {
       "cusip": "770700102",
-      "ticker": "ROBIN",
-      "security": "Robinhood Markets Inc (ROBIN)",
+      "ticker": "HOOD",
+      "security": "Robinhood Markets Inc (HOOD)",
       "name": "Robinhood Markets Inc",
       "sector": "Financials",
       "weight": 3.61,
@@ -522,8 +522,8 @@
     },
     {
       "cusip": "880770102",
-      "ticker": "TERAD",
-      "security": "Teradyne Inc (TERAD)",
+      "ticker": "TER",
+      "security": "Teradyne Inc (TER)",
       "name": "Teradyne Inc",
       "sector": "Information Technology",
       "weight": 3.03,
@@ -774,8 +774,8 @@
     },
     {
       "cusip": "852234103",
-      "ticker": "BLOCK",
-      "security": "Block Inc (BLOCK)",
+      "ticker": "XYZ",
+      "security": "Block Inc (XYZ)",
       "name": "Block Inc",
       "sector": "Financials",
       "weight": 1.46,
@@ -944,8 +944,8 @@
     },
     {
       "cusip": "19260Q107",
-      "ticker": "COINB",
-      "security": "Coinbase Global Inc (COINB)",
+      "ticker": "COIN",
+      "security": "Coinbase Global Inc (COIN)",
       "name": "Coinbase Global Inc",
       "sector": "Financials",
       "weight": 3.82,
@@ -1007,8 +1007,8 @@
     },
     {
       "cusip": "007903107",
-      "ticker": "ADVAN",
-      "security": "Advanced Micro Devices Inc (ADVAN)",
+      "ticker": "AMD",
+      "security": "Advanced Micro Devices Inc (AMD)",
       "name": "Advanced Micro Devices Inc",
       "sector": "Information Technology",
       "weight": 3.66,
@@ -1028,8 +1028,8 @@
     },
     {
       "cusip": "770700102",
-      "ticker": "ROBIN",
-      "security": "Robinhood Markets Inc (ROBIN)",
+      "ticker": "HOOD",
+      "security": "Robinhood Markets Inc (HOOD)",
       "name": "Robinhood Markets Inc",
       "sector": "Financials",
       "weight": 3.61,
@@ -1049,8 +1049,8 @@
     },
     {
       "cusip": "880770102",
-      "ticker": "TERAD",
-      "security": "Teradyne Inc (TERAD)",
+      "ticker": "TER",
+      "security": "Teradyne Inc (TER)",
       "name": "Teradyne Inc",
       "sector": "Information Technology",
       "weight": 3.03,
@@ -1301,8 +1301,8 @@
     },
     {
       "cusip": "852234103",
-      "ticker": "BLOCK",
-      "security": "Block Inc (BLOCK)",
+      "ticker": "XYZ",
+      "security": "Block Inc (XYZ)",
       "name": "Block Inc",
       "sector": "Financials",
       "weight": 1.46,
@@ -1406,8 +1406,8 @@
     },
     {
       "cusip": "244199105",
-      "ticker": "DEERE",
-      "security": "Deere & Co (DEERE)",
+      "ticker": "DE",
+      "security": "Deere & Co (DE)",
       "name": "Deere & Co",
       "sector": "Industrials",
       "weight": 1.3,
@@ -1616,8 +1616,8 @@
     },
     {
       "cusip": "009066101",
-      "ticker": "AIRBN",
-      "security": "Airbnb Inc (AIRBN)",
+      "ticker": "ABNB",
+      "security": "Airbnb Inc (ABNB)",
       "name": "Airbnb Inc",
       "sector": "Consumer Discretionary",
       "weight": 0.88,
@@ -1679,8 +1679,8 @@
     },
     {
       "cusip": "88339J105",
-      "ticker": "THE",
-      "security": "The Trade Desk Inc (THE)",
+      "ticker": "TTD",
+      "security": "The Trade Desk Inc (TTD)",
       "name": "The Trade Desk Inc",
       "sector": "Communication Services",
       "weight": 0.74,
@@ -1784,8 +1784,8 @@
     },
     {
       "cusip": "502431109",
-      "ticker": "L3HAR",
-      "security": "L3Harris Technologies Inc (L3HAR)",
+      "ticker": "LHX",
+      "security": "L3Harris Technologies Inc (LHX)",
       "name": "L3Harris Technologies Inc",
       "sector": "Industrials",
       "weight": 0.6,
@@ -1805,8 +1805,8 @@
     },
     {
       "cusip": "896239100",
-      "ticker": "TRIMB",
-      "security": "Trimble Inc (TRIMB)",
+      "ticker": "TRMB",
+      "security": "Trimble Inc (TRMB)",
       "name": "Trimble Inc",
       "sector": "Information Technology",
       "weight": 0.53,
@@ -1910,8 +1910,8 @@
     },
     {
       "cusip": "25809K105",
-      "ticker": "DOORD",
-      "security": "DoorDash Inc (DOORD)",
+      "ticker": "DASH",
+      "security": "DoorDash Inc (DASH)",
       "name": "DoorDash Inc",
       "sector": "Consumer Discretionary",
       "weight": 0.46,
@@ -1952,8 +1952,8 @@
     },
     {
       "cusip": "22788C105",
-      "ticker": "CROWD",
-      "security": "Crowdstrike Holdings Inc (CROWD)",
+      "ticker": "CRWD",
+      "security": "Crowdstrike Holdings Inc (CRWD)",
       "name": "Crowdstrike Holdings Inc",
       "sector": "Information Technology",
       "weight": 0.38,
@@ -2120,8 +2120,8 @@
     },
     {
       "cusip": "747525103",
-      "ticker": "QUALC",
-      "security": "Qualcomm Inc (QUALC)",
+      "ticker": "QCOM",
+      "security": "Qualcomm Inc (QCOM)",
       "name": "Qualcomm Inc",
       "sector": "Information Technology",
       "weight": 0.28,
@@ -2435,8 +2435,8 @@
     },
     {
       "cusip": "23804L103",
-      "ticker": "DATAD",
-      "security": "Datadog Inc (DATAD)",
+      "ticker": "DDOG",
+      "security": "Datadog Inc (DDOG)",
       "name": "Datadog Inc",
       "sector": "Information Technology",
       "weight": 0.2,
@@ -2456,8 +2456,8 @@
     },
     {
       "cusip": "871607107",
-      "ticker": "SYNOP",
-      "security": "Synopsys Inc (SYNOP)",
+      "ticker": "SNPS",
+      "security": "Synopsys Inc (SNPS)",
       "name": "Synopsys Inc",
       "sector": "Information Technology",
       "weight": 0.19,
@@ -2498,8 +2498,8 @@
     },
     {
       "cusip": "46120E602",
-      "ticker": "INTUI",
-      "security": "Intuitive Surgical Inc (INTUI)",
+      "ticker": "ISRG",
+      "security": "Intuitive Surgical Inc (ISRG)",
       "name": "Intuitive Surgical Inc",
       "sector": "Health Care",
       "weight": 0.18,
@@ -2603,8 +2603,8 @@
     },
     {
       "cusip": "879360105",
-      "ticker": "TELED",
-      "security": "Teledyne Technologies Inc (TELED)",
+      "ticker": "TDY",
+      "security": "Teledyne Technologies Inc (TDY)",
       "name": "Teledyne Technologies Inc",
       "sector": "Information Technology",
       "weight": 0.15,
@@ -2708,8 +2708,8 @@
     },
     {
       "cusip": "149123101",
-      "ticker": "CATER",
-      "security": "Caterpillar Inc (CATER)",
+      "ticker": "CAT",
+      "security": "Caterpillar Inc (CAT)",
       "name": "Caterpillar Inc",
       "sector": "Industrials",
       "weight": 0.13,
@@ -2918,8 +2918,8 @@
     },
     {
       "cusip": "64110L106",
-      "ticker": "NETFL",
-      "security": "Netflix Inc (NETFL)",
+      "ticker": "NFLX",
+      "security": "Netflix Inc (NFLX)",
       "name": "Netflix Inc",
       "sector": "Communication Services",
       "weight": 0.1,
@@ -2960,8 +2960,8 @@
     },
     {
       "cusip": "031162100",
-      "ticker": "AMGEN",
-      "security": "Amgen Inc (AMGEN)",
+      "ticker": "AMGN",
+      "security": "Amgen Inc (AMGN)",
       "name": "Amgen Inc",
       "sector": "Health Care",
       "weight": 0.1,
@@ -3023,8 +3023,8 @@
     },
     {
       "cusip": "45337C102",
-      "ticker": "INCYT",
-      "security": "Incyte Corp (INCYT)",
+      "ticker": "INCY",
+      "security": "Incyte Corp (INCY)",
       "name": "Incyte Corp",
       "sector": "Health Care",
       "weight": 0.09,
@@ -3065,8 +3065,8 @@
     },
     {
       "cusip": "79466L302",
-      "ticker": "SALES",
-      "security": "Salesforce Inc (SALES)",
+      "ticker": "CRM",
+      "security": "Salesforce Inc (CRM)",
       "name": "Salesforce Inc",
       "sector": "Information Technology",
       "weight": 0.09,
@@ -3086,8 +3086,8 @@
     },
     {
       "cusip": "92532F100",
-      "ticker": "VERTE",
-      "security": "Vertex Pharmaceuticals Inc (VERTE)",
+      "ticker": "VRTX",
+      "security": "Vertex Pharmaceuticals Inc (VRTX)",
       "name": "Vertex Pharmaceuticals Inc",
       "sector": "Health Care",
       "weight": 0.08,
@@ -3191,8 +3191,8 @@
     },
     {
       "cusip": "461202103",
-      "ticker": "INTUI",
-      "security": "Intuit Inc (INTUI)",
+      "ticker": "INTU",
+      "security": "Intuit Inc (INTU)",
       "name": "Intuit Inc",
       "sector": "Information Technology",
       "weight": 0.06,
@@ -3212,8 +3212,8 @@
     },
     {
       "cusip": "922475108",
-      "ticker": "VEEVA",
-      "security": "Veeva Systems Inc (VEEVA)",
+      "ticker": "VEEV",
+      "security": "Veeva Systems Inc (VEEV)",
       "name": "Veeva Systems Inc",
       "sector": "Health Care",
       "weight": 0.06,
@@ -3233,8 +3233,8 @@
     },
     {
       "cusip": "70450Y103",
-      "ticker": "PAYPA",
-      "security": "PayPal Holdings Inc (PAYPA)",
+      "ticker": "PYPL",
+      "security": "PayPal Holdings Inc (PYPL)",
       "name": "PayPal Holdings Inc",
       "sector": "Financials",
       "weight": 0.06,
@@ -3254,8 +3254,8 @@
     },
     {
       "cusip": "45866F104",
-      "ticker": "INTER",
-      "security": "Intercontinental Exchange Inc (INTER)",
+      "ticker": "ICE",
+      "security": "Intercontinental Exchange Inc (ICE)",
       "name": "Intercontinental Exchange Inc",
       "sector": "Financials",
       "weight": 0.06,
@@ -3275,8 +3275,8 @@
     },
     {
       "cusip": "H2906T109",
-      "ticker": "GARMI",
-      "security": "Garmin Ltd (GARMI)",
+      "ticker": "GRMN",
+      "security": "Garmin Ltd (GRMN)",
       "name": "Garmin Ltd",
       "sector": "Consumer Discretionary",
       "weight": 0.05,
@@ -3359,8 +3359,8 @@
     },
     {
       "cusip": "438516106",
-      "ticker": "HONEY",
-      "security": "Honeywell International Inc (HONEY)",
+      "ticker": "HON",
+      "security": "Honeywell International Inc (HON)",
       "name": "Honeywell International Inc",
       "sector": "Industrials",
       "weight": 0.04,
@@ -3380,8 +3380,8 @@
     },
     {
       "cusip": "052769106",
-      "ticker": "AUTOD",
-      "security": "Autodesk Inc (AUTOD)",
+      "ticker": "ADSK",
+      "security": "Autodesk Inc (ADSK)",
       "name": "Autodesk Inc",
       "sector": "Information Technology",
       "weight": 0.03,
@@ -3611,8 +3611,8 @@
     },
     {
       "cusip": "539830109",
-      "ticker": "LOCKH",
-      "security": "Lockheed Martin Corp (LOCKH)",
+      "ticker": "LMT",
+      "security": "Lockheed Martin Corp (LMT)",
       "name": "Lockheed Martin Corp",
       "sector": "Industrials",
       "weight": 0.02,
@@ -3800,8 +3800,8 @@
     },
     {
       "cusip": "40434L105",
-      "ticker": "HP",
-      "security": "HP Inc (HP)",
+      "ticker": "HPQ",
+      "security": "HP Inc (HPQ)",
       "name": "HP Inc",
       "sector": "Information Technology",
       "weight": 0.02,
@@ -4430,8 +4430,8 @@
     },
     {
       "cusip": "016255101",
-      "ticker": "ALIGN",
-      "security": "Align Technology Inc (ALIGN)",
+      "ticker": "ALGN",
+      "security": "Align Technology Inc (ALGN)",
       "name": "Align Technology Inc",
       "sector": "Health Care",
       "weight": 0.01,
@@ -4493,8 +4493,8 @@
     },
     {
       "cusip": "911312106",
-      "ticker": "UNITE",
-      "security": "United Parcel Service Inc (UNITE)",
+      "ticker": "UPS",
+      "security": "United Parcel Service Inc (UPS)",
       "name": "United Parcel Service Inc",
       "sector": "Industrials",
       "weight": 0.01,
@@ -4514,8 +4514,8 @@
     },
     {
       "cusip": "031100100",
-      "ticker": "AMETE",
-      "security": "AMETEK Inc (AMETE)",
+      "ticker": "AME",
+      "security": "AMETEK Inc (AME)",
       "name": "AMETEK Inc",
       "sector": "Industrials",
       "weight": 0.01,
@@ -4577,8 +4577,8 @@
     },
     {
       "cusip": "464287614",
-      "ticker": "ISHAR",
-      "security": "iShares Russell 1000 Growth ETF (ISHAR)",
+      "ticker": "IJH",
+      "security": "iShares Russell 1000 Growth ETF (IJH)",
       "name": "iShares Russell 1000 Growth ETF",
       "sector": "Unclassified",
       "weight": 0,
@@ -4640,8 +4640,8 @@
     },
     {
       "cusip": "46438R105",
-      "ticker": "ISHAR",
-      "security": "iShares Ethereum Trust ETF (ISHAR)",
+      "ticker": "ETF-46438R",
+      "security": "iShares Ethereum Trust ETF (ETF-46438R)",
       "name": "iShares Ethereum Trust ETF",
       "sector": "Unclassified",
       "weight": 0,
@@ -4745,8 +4745,8 @@
     },
     {
       "cusip": "75886F107",
-      "ticker": "REGEN",
-      "security": "Regeneron Pharmaceuticals Inc (REGEN)",
+      "ticker": "REGN",
+      "security": "Regeneron Pharmaceuticals Inc (REGN)",
       "name": "Regeneron Pharmaceuticals Inc",
       "sector": "Health Care",
       "weight": 0,
@@ -4766,8 +4766,8 @@
     },
     {
       "cusip": "466313103",
-      "ticker": "JABIL",
-      "security": "Jabil Inc (JABIL)",
+      "ticker": "JBL",
+      "security": "Jabil Inc (JBL)",
       "name": "Jabil Inc",
       "sector": "Information Technology",
       "weight": 0,
@@ -4787,8 +4787,8 @@
     },
     {
       "cusip": "88579Y101",
-      "ticker": "3M",
-      "security": "3M Co (3M)",
+      "ticker": "MMM",
+      "security": "3M Co (MMM)",
       "name": "3M Co",
       "sector": "Industrials",
       "weight": 0,
@@ -4871,8 +4871,8 @@
     },
     {
       "cusip": "922908736",
-      "ticker": "VANGU",
-      "security": "Vanguard Growth ETF (VANGU)",
+      "ticker": "ETF-922908",
+      "security": "Vanguard Growth ETF (ETF-922908)",
       "name": "Vanguard Growth ETF",
       "sector": "Unclassified",
       "weight": 0,
@@ -4892,8 +4892,8 @@
     },
     {
       "cusip": "78462F103",
-      "ticker": "SPDR",
-      "security": "SPDR S&P 500 ETF Trust (SPDR)",
+      "ticker": "SPY",
+      "security": "SPDR S&P 500 ETF Trust (SPY)",
       "name": "SPDR S&P 500 ETF Trust",
       "sector": "Unclassified",
       "weight": 0,
@@ -4913,8 +4913,8 @@
     },
     {
       "cusip": "74743L100",
-      "ticker": "QNITY",
-      "security": "Qnity Electronics Inc (QNITY)",
+      "ticker": "Q",
+      "security": "Qnity Electronics Inc (Q)",
       "name": "Qnity Electronics Inc",
       "sector": "Information Technology",
       "weight": 0,
@@ -4934,8 +4934,8 @@
     },
     {
       "cusip": "26614N102",
-      "ticker": "DUPON",
-      "security": "DuPont de Nemours Inc (DUPON)",
+      "ticker": "DD",
+      "security": "DuPont de Nemours Inc (DD)",
       "name": "DuPont de Nemours Inc",
       "sector": "Materials",
       "weight": 0,
@@ -4955,8 +4955,8 @@
     },
     {
       "cusip": "464287622",
-      "ticker": "ISHAR",
-      "security": "iShares Russell 1000 ETF (ISHAR)",
+      "ticker": "ETF-464287",
+      "security": "iShares Russell 1000 ETF (ETF-464287)",
       "name": "iShares Russell 1000 ETF",
       "sector": "Unclassified",
       "weight": 0,
@@ -5070,7 +5070,7 @@
       "type": "Add"
     },
     {
-      "ticker": "DEERE",
+      "ticker": "DE",
       "security": "Deere & Co",
       "rawDelta": 45897207,
       "deltaValue": "+$45.90M",
@@ -5108,7 +5108,7 @@
       "type": "Trim"
     },
     {
-      "ticker": "ROBIN",
+      "ticker": "HOOD",
       "security": "Robinhood Markets Inc",
       "rawDelta": -174757932,
       "deltaValue": "-$174.76M",

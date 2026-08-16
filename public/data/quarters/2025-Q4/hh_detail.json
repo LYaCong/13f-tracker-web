@@ -154,19 +154,19 @@
   "assetTrend": [
     {
       "year": "2024 Q4",
-      "value": "15.8"
+      "value": "18.2"
     },
     {
       "year": "2025 Q1",
-      "value": "19.2"
+      "value": "16.7"
     },
     {
       "year": "2025 Q2",
-      "value": "17.9"
+      "value": "18.8"
     },
     {
       "year": "2025 Q3",
-      "value": "16.7"
+      "value": "17.5"
     },
     {
       "year": "2025 Q4",
@@ -175,11 +175,11 @@
     },
     {
       "year": "2026 Q1",
-      "value": "17.0"
+      "value": "16.9"
     },
     {
       "year": "2026 Q2",
-      "value": "17.4"
+      "value": "16.5"
     }
   ],
   "sectorHistory": [
@@ -267,7 +267,7 @@
           "name": "ASML (Trim)"
         },
         {
-          "name": "DISNE (Trim)"
+          "name": "DIS (Trim)"
         },
         {
           "name": "Capital Liquidity Pool"
@@ -539,8 +539,8 @@
     },
     {
       "cusip": "254687106",
-      "ticker": "DISNE",
-      "security": "DISNEY WALT CO (DISNE)",
+      "ticker": "DIS",
+      "security": "DISNEY WALT CO (DIS)",
       "name": "DISNEY WALT CO",
       "sector": "Communication Services",
       "weight": 0.46,
@@ -835,8 +835,8 @@
     },
     {
       "cusip": "254687106",
-      "ticker": "DISNE",
-      "security": "DISNEY WALT CO (DISNE)",
+      "ticker": "DIS",
+      "security": "DISNEY WALT CO (DIS)",
       "name": "DISNEY WALT CO",
       "sector": "Communication Services",
       "weight": 0.46,
@@ -1060,7 +1060,7 @@
       "type": "Trim"
     },
     {
-      "ticker": "DISNE",
+      "ticker": "DIS",
       "security": "DISNEY WALT CO",
       "rawDelta": -1779260,
       "deltaValue": "-$1.78M",

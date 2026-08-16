@@ -154,23 +154,23 @@
   "assetTrend": [
     {
       "year": "2024 Q3",
-      "value": "32.1"
+      "value": "33.1"
     },
     {
       "year": "2024 Q4",
-      "value": "30.9"
+      "value": "26.0"
     },
     {
       "year": "2025 Q1",
-      "value": "28.5"
+      "value": "31.3"
     },
     {
       "year": "2025 Q2",
-      "value": "31.5"
+      "value": "31.2"
     },
     {
       "year": "2025 Q3",
-      "value": "31.9"
+      "value": "25.4"
     },
     {
       "year": "2025 Q4",
@@ -179,11 +179,11 @@
     },
     {
       "year": "2026 Q1",
-      "value": "30.0"
+      "value": "26.1"
     },
     {
       "year": "2026 Q2",
-      "value": "28.1"
+      "value": "33.3"
     }
   ],
   "sectorHistory": [
@@ -265,7 +265,7 @@
           "name": "MSFT (Trim)"
         },
         {
-          "name": "APPLO (Trim)"
+          "name": "APP (Trim)"
         },
         {
           "name": "META (Trim)"
@@ -286,7 +286,7 @@
           "name": "CHIME (Add)"
         },
         {
-          "name": "BLOCK (Add)"
+          "name": "XYZ (Add)"
         },
         {
           "name": "HINGE (Add)"
@@ -480,8 +480,8 @@
     },
     {
       "cusip": "874054109",
-      "ticker": "TAKE",
-      "security": "TAKE-TWO INTERACTIVE SOFTWAR (TAKE)",
+      "ticker": "TTWO",
+      "security": "TAKE-TWO INTERACTIVE SOFTWAR (TTWO)",
       "name": "TAKE-TWO INTERACTIVE SOFTWAR",
       "sector": "Communication Services",
       "weight": 5.03,
@@ -522,8 +522,8 @@
     },
     {
       "cusip": "11135F101",
-      "ticker": "BROAD",
-      "security": "BROADCOM INC (BROAD)",
+      "ticker": "AVGO",
+      "security": "BROADCOM INC (AVGO)",
       "name": "BROADCOM INC",
       "sector": "Information Technology",
       "weight": 3.35,
@@ -543,8 +543,8 @@
     },
     {
       "cusip": "03769M106",
-      "ticker": "APOLL",
-      "security": "APOLLO GLOBAL MGMT INC (APOLL)",
+      "ticker": "APO",
+      "security": "APOLLO GLOBAL MGMT INC (APO)",
       "name": "APOLLO GLOBAL MGMT INC",
       "sector": "Financials",
       "weight": 3.03,
@@ -585,8 +585,8 @@
     },
     {
       "cusip": "03831W108",
-      "ticker": "APPLO",
-      "security": "APPLOVIN CORP (APPLO)",
+      "ticker": "APP",
+      "security": "APPLOVIN CORP (APP)",
       "name": "APPLOVIN CORP",
       "sector": "Information Technology",
       "weight": 2.93,
@@ -648,8 +648,8 @@
     },
     {
       "cusip": "512807306",
-      "ticker": "LAM",
-      "security": "LAM RESEARCH CORP (LAM)",
+      "ticker": "LRCX",
+      "security": "LAM RESEARCH CORP (LRCX)",
       "name": "LAM RESEARCH CORP",
       "sector": "Information Technology",
       "weight": 2.25,
@@ -669,8 +669,8 @@
     },
     {
       "cusip": "36828A101",
-      "ticker": "GE",
-      "security": "GE VERNOVA INC (GE)",
+      "ticker": "GEV",
+      "security": "GE VERNOVA INC (GEV)",
       "name": "GE VERNOVA INC",
       "sector": "Industrials",
       "weight": 2.14,
@@ -711,8 +711,8 @@
     },
     {
       "cusip": "922475108",
-      "ticker": "VEEVA",
-      "security": "VEEVA SYS INC (VEEVA)",
+      "ticker": "VEEV",
+      "security": "VEEVA SYS INC (VEEV)",
       "name": "VEEVA SYS INC",
       "sector": "Health Care",
       "weight": 1.82,
@@ -732,8 +732,8 @@
     },
     {
       "cusip": "219948106",
-      "ticker": "CORPA",
-      "security": "CORPAY INC (CORPA)",
+      "ticker": "CPAY",
+      "security": "CORPAY INC (CPAY)",
       "name": "CORPAY INC",
       "sector": "Financials",
       "weight": 1.77,
@@ -774,8 +774,8 @@
     },
     {
       "cusip": "852234103",
-      "ticker": "BLOCK",
-      "security": "BLOCK INC (BLOCK)",
+      "ticker": "XYZ",
+      "security": "BLOCK INC (XYZ)",
       "name": "BLOCK INC",
       "sector": "Financials",
       "weight": 1.39,
@@ -858,8 +858,8 @@
     },
     {
       "cusip": "81762P102",
-      "ticker": "SERVI",
-      "security": "SERVICENOW INC (SERVI)",
+      "ticker": "NOW",
+      "security": "SERVICENOW INC (NOW)",
       "name": "SERVICENOW INC",
       "sector": "Information Technology",
       "weight": 1.1,
@@ -1007,8 +1007,8 @@
     },
     {
       "cusip": "874054109",
-      "ticker": "TAKE",
-      "security": "TAKE-TWO INTERACTIVE SOFTWAR (TAKE)",
+      "ticker": "TTWO",
+      "security": "TAKE-TWO INTERACTIVE SOFTWAR (TTWO)",
       "name": "TAKE-TWO INTERACTIVE SOFTWAR",
       "sector": "Communication Services",
       "weight": 5.03,
@@ -1049,8 +1049,8 @@
     },
     {
       "cusip": "11135F101",
-      "ticker": "BROAD",
-      "security": "BROADCOM INC (BROAD)",
+      "ticker": "AVGO",
+      "security": "BROADCOM INC (AVGO)",
       "name": "BROADCOM INC",
       "sector": "Information Technology",
       "weight": 3.35,
@@ -1070,8 +1070,8 @@
     },
     {
       "cusip": "03769M106",
-      "ticker": "APOLL",
-      "security": "APOLLO GLOBAL MGMT INC (APOLL)",
+      "ticker": "APO",
+      "security": "APOLLO GLOBAL MGMT INC (APO)",
       "name": "APOLLO GLOBAL MGMT INC",
       "sector": "Financials",
       "weight": 3.03,
@@ -1112,8 +1112,8 @@
     },
     {
       "cusip": "03831W108",
-      "ticker": "APPLO",
-      "security": "APPLOVIN CORP (APPLO)",
+      "ticker": "APP",
+      "security": "APPLOVIN CORP (APP)",
       "name": "APPLOVIN CORP",
       "sector": "Information Technology",
       "weight": 2.93,
@@ -1175,8 +1175,8 @@
     },
     {
       "cusip": "512807306",
-      "ticker": "LAM",
-      "security": "LAM RESEARCH CORP (LAM)",
+      "ticker": "LRCX",
+      "security": "LAM RESEARCH CORP (LRCX)",
       "name": "LAM RESEARCH CORP",
       "sector": "Information Technology",
       "weight": 2.25,
@@ -1196,8 +1196,8 @@
     },
     {
       "cusip": "36828A101",
-      "ticker": "GE",
-      "security": "GE VERNOVA INC (GE)",
+      "ticker": "GEV",
+      "security": "GE VERNOVA INC (GEV)",
       "name": "GE VERNOVA INC",
       "sector": "Industrials",
       "weight": 2.14,
@@ -1238,8 +1238,8 @@
     },
     {
       "cusip": "922475108",
-      "ticker": "VEEVA",
-      "security": "VEEVA SYS INC (VEEVA)",
+      "ticker": "VEEV",
+      "security": "VEEVA SYS INC (VEEV)",
       "name": "VEEVA SYS INC",
       "sector": "Health Care",
       "weight": 1.82,
@@ -1259,8 +1259,8 @@
     },
     {
       "cusip": "219948106",
-      "ticker": "CORPA",
-      "security": "CORPAY INC (CORPA)",
+      "ticker": "CPAY",
+      "security": "CORPAY INC (CPAY)",
       "name": "CORPAY INC",
       "sector": "Financials",
       "weight": 1.77,
@@ -1301,8 +1301,8 @@
     },
     {
       "cusip": "852234103",
-      "ticker": "BLOCK",
-      "security": "BLOCK INC (BLOCK)",
+      "ticker": "XYZ",
+      "security": "BLOCK INC (XYZ)",
       "name": "BLOCK INC",
       "sector": "Financials",
       "weight": 1.39,
@@ -1385,8 +1385,8 @@
     },
     {
       "cusip": "81762P102",
-      "ticker": "SERVI",
-      "security": "SERVICENOW INC (SERVI)",
+      "ticker": "NOW",
+      "security": "SERVICENOW INC (NOW)",
       "name": "SERVICENOW INC",
       "sector": "Information Technology",
       "weight": 1.1,
@@ -1427,8 +1427,8 @@
     },
     {
       "cusip": "038222105",
-      "ticker": "APPLI",
-      "security": "APPLIED MATLS INC (APPLI)",
+      "ticker": "AMAT",
+      "security": "APPLIED MATLS INC (AMAT)",
       "name": "APPLIED MATLS INC",
       "sector": "Information Technology",
       "weight": 0.77,
@@ -1448,8 +1448,8 @@
     },
     {
       "cusip": "64110L106",
-      "ticker": "NETFL",
-      "security": "NETFLIX INC (NETFL)",
+      "ticker": "NFLX",
+      "security": "NETFLIX INC (NFLX)",
       "name": "NETFLIX INC",
       "sector": "Communication Services",
       "weight": 0.77,
@@ -1469,8 +1469,8 @@
     },
     {
       "cusip": "98138H101",
-      "ticker": "WORKD",
-      "security": "WORKDAY INC (WORKD)",
+      "ticker": "WDAY",
+      "security": "WORKDAY INC (WDAY)",
       "name": "WORKDAY INC",
       "sector": "Information Technology",
       "weight": 0.72,
@@ -1553,8 +1553,8 @@
     },
     {
       "cusip": "22160N109",
-      "ticker": "COSTA",
-      "security": "COSTAR GROUP INC (COSTA)",
+      "ticker": "CSGP",
+      "security": "COSTAR GROUP INC (CSGP)",
       "name": "COSTAR GROUP INC",
       "sector": "Real Estate",
       "weight": 0.51,
@@ -1637,8 +1637,8 @@
     },
     {
       "cusip": "824348106",
-      "ticker": "SHERW",
-      "security": "SHERWIN WILLIAMS CO (SHERW)",
+      "ticker": "SHW",
+      "security": "SHERWIN WILLIAMS CO (SHW)",
       "name": "SHERWIN WILLIAMS CO",
       "sector": "Materials",
       "weight": 0.28,
@@ -1847,8 +1847,8 @@
     },
     {
       "cusip": "25809K105",
-      "ticker": "DOORD",
-      "security": "DOORDASH INC (DOORD)",
+      "ticker": "DASH",
+      "security": "DOORDASH INC (DASH)",
       "name": "DOORDASH INC",
       "sector": "Consumer Discretionary",
       "weight": 0.02,
@@ -2043,7 +2043,7 @@
       "type": "Add"
     },
     {
-      "ticker": "BLOCK",
+      "ticker": "XYZ",
       "security": "BLOCK INC",
       "rawDelta": 94614678,
       "deltaValue": "+$94.61M",
@@ -2061,7 +2061,7 @@
       "type": "Add"
     },
     {
-      "ticker": "SERVI",
+      "ticker": "NOW",
       "security": "SERVICENOW INC",
       "rawDelta": 49734279,
       "deltaValue": "+$49.73M",
@@ -2126,7 +2126,7 @@
       "type": "Trim"
     },
     {
-      "ticker": "APPLO",
+      "ticker": "APP",
       "security": "APPLOVIN CORP",
       "rawDelta": -567989237,
       "deltaValue": "-$567.99M",
@@ -2180,7 +2180,7 @@
       "type": "Trim"
     },
     {
-      "ticker": "COSTA",
+      "ticker": "CSGP",
       "security": "COSTAR GROUP INC",
       "rawDelta": -121887357,
       "deltaValue": "-$121.89M",

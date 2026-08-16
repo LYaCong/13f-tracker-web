@@ -156,27 +156,27 @@
   "assetTrend": [
     {
       "year": "2024 Q4",
-      "value": "314.7"
+      "value": "290.7"
     },
     {
       "year": "2025 Q1",
-      "value": "297.0"
+      "value": "266.3"
     },
     {
       "year": "2025 Q2",
-      "value": "290.9"
+      "value": "326.8"
     },
     {
       "year": "2025 Q3",
-      "value": "337.4"
+      "value": "305.9"
     },
     {
       "year": "2025 Q4",
-      "value": "296.7"
+      "value": "311.0"
     },
     {
       "year": "2026 Q1",
-      "value": "291.3"
+      "value": "297.1"
     },
     {
       "year": "2026 Q2",
@@ -257,16 +257,16 @@
     "sankey": {
       "nodes": [
         {
-          "name": "KROGE (Trim)"
+          "name": "KR (Trim)"
         },
         {
-          "name": "CAPIT (Trim)"
+          "name": "COF (Trim)"
         },
         {
-          "name": "NUCOR (Trim)"
+          "name": "NUE (Trim)"
         },
         {
-          "name": "CONST (Exit)"
+          "name": "STZ (Exit)"
         },
         {
           "name": "ALLY (Trim)"
@@ -281,10 +281,10 @@
           "name": "GOOG (Add)"
         },
         {
-          "name": "DELTA (Add)"
+          "name": "DAL (Add)"
         },
         {
-          "name": "LENNA (Add)"
+          "name": "LEN (Add)"
         },
         {
           "name": "MACYS (Add)"
@@ -606,8 +606,8 @@
     },
     {
       "cusip": "247361702",
-      "ticker": "DELTA",
-      "security": "DELTA AIR LINES INC (DELTA)",
+      "ticker": "DAL",
+      "security": "DELTA AIR LINES INC (DAL)",
       "name": "DELTA AIR LINES INC",
       "sector": "Industrials",
       "weight": 1.79,
@@ -648,8 +648,8 @@
     },
     {
       "cusip": "92343E102",
-      "ticker": "VERIS",
-      "security": "VERISIGN INC (VERIS)",
+      "ticker": "VRSN",
+      "security": "VERISIGN INC (VRSN)",
       "name": "VERISIGN INC",
       "sector": "Information Technology",
       "weight": 0.76,
@@ -669,8 +669,8 @@
     },
     {
       "cusip": "501044101",
-      "ticker": "KROGE",
-      "security": "KROGER CO (KROGE)",
+      "ticker": "KR",
+      "security": "KROGER CO (KR)",
       "name": "KROGER CO",
       "sector": "Consumer Staples",
       "weight": 0.72,
@@ -711,8 +711,8 @@
     },
     {
       "cusip": "526057104",
-      "ticker": "LENNA",
-      "security": "LENNAR CORP (LENNA)",
+      "ticker": "LEN",
+      "security": "LENNAR CORP (LEN)",
       "name": "LENNAR CORP",
       "sector": "Consumer Discretionary",
       "weight": 0.4,
@@ -774,8 +774,8 @@
     },
     {
       "cusip": "14040H105",
-      "ticker": "CAPIT",
-      "security": "CAPITAL ONE FINL CORP (CAPIT)",
+      "ticker": "COF",
+      "security": "CAPITAL ONE FINL CORP (COF)",
       "name": "CAPITAL ONE FINL CORP",
       "sector": "Financials",
       "weight": 0.2,
@@ -837,8 +837,8 @@
     },
     {
       "cusip": "670346105",
-      "ticker": "NUCOR",
-      "security": "NUCOR CORP (NUCOR)",
+      "ticker": "NUE",
+      "security": "NUCOR CORP (NUE)",
       "name": "NUCOR CORP",
       "sector": "Materials",
       "weight": 0.14,
@@ -1133,8 +1133,8 @@
     },
     {
       "cusip": "247361702",
-      "ticker": "DELTA",
-      "security": "DELTA AIR LINES INC (DELTA)",
+      "ticker": "DAL",
+      "security": "DELTA AIR LINES INC (DAL)",
       "name": "DELTA AIR LINES INC",
       "sector": "Industrials",
       "weight": 1.79,
@@ -1175,8 +1175,8 @@
     },
     {
       "cusip": "92343E102",
-      "ticker": "VERIS",
-      "security": "VERISIGN INC (VERIS)",
+      "ticker": "VRSN",
+      "security": "VERISIGN INC (VRSN)",
       "name": "VERISIGN INC",
       "sector": "Information Technology",
       "weight": 0.76,
@@ -1196,8 +1196,8 @@
     },
     {
       "cusip": "501044101",
-      "ticker": "KROGE",
-      "security": "KROGER CO (KROGE)",
+      "ticker": "KR",
+      "security": "KROGER CO (KR)",
       "name": "KROGER CO",
       "sector": "Consumer Staples",
       "weight": 0.72,
@@ -1238,8 +1238,8 @@
     },
     {
       "cusip": "526057104",
-      "ticker": "LENNA",
-      "security": "LENNAR CORP (LENNA)",
+      "ticker": "LEN",
+      "security": "LENNAR CORP (LEN)",
       "name": "LENNAR CORP",
       "sector": "Consumer Discretionary",
       "weight": 0.4,
@@ -1301,8 +1301,8 @@
     },
     {
       "cusip": "14040H105",
-      "ticker": "CAPIT",
-      "security": "CAPITAL ONE FINL CORP (CAPIT)",
+      "ticker": "COF",
+      "security": "CAPITAL ONE FINL CORP (COF)",
       "name": "CAPITAL ONE FINL CORP",
       "sector": "Financials",
       "weight": 0.2,
@@ -1364,8 +1364,8 @@
     },
     {
       "cusip": "670346105",
-      "ticker": "NUCOR",
-      "security": "NUCOR CORP (NUCOR)",
+      "ticker": "NUE",
+      "security": "NUCOR CORP (NUE)",
       "name": "NUCOR CORP",
       "sector": "Materials",
       "weight": 0.14,
@@ -1469,8 +1469,8 @@
     },
     {
       "cusip": "23331A109",
-      "ticker": "D",
-      "security": "D R HORTON INC (D)",
+      "ticker": "DHI",
+      "security": "D R HORTON INC (DHI)",
       "name": "D R HORTON INC",
       "sector": "Consumer Discretionary",
       "weight": 0,
@@ -1509,7 +1509,7 @@
       "type": "Add"
     },
     {
-      "ticker": "DELTA",
+      "ticker": "DAL",
       "security": "DELTA AIR LINES INC",
       "rawDelta": 2722058565,
       "deltaValue": "+$2.72B",
@@ -1518,7 +1518,7 @@
       "type": "Add"
     },
     {
-      "ticker": "LENNA",
+      "ticker": "LEN",
       "security": "LENNAR CORP",
       "rawDelta": 309428532,
       "deltaValue": "+$309.43M",
@@ -1545,7 +1545,7 @@
       "type": "Add"
     },
     {
-      "ticker": "D",
+      "ticker": "DHI",
       "security": "D R HORTON INC",
       "rawDelta": 580504,
       "deltaValue": "+$0.00B",
@@ -1565,7 +1565,7 @@
   ],
   "topTrims": [
     {
-      "ticker": "KROGE",
+      "ticker": "KR",
       "security": "KROGER CO",
       "rawDelta": -1452330000,
       "deltaValue": "-$1.45B",
@@ -1574,7 +1574,7 @@
       "type": "Trim"
     },
     {
-      "ticker": "CAPIT",
+      "ticker": "COF",
       "security": "CAPITAL ONE FINL CORP",
       "rawDelta": -702514500,
       "deltaValue": "-$702.51M",
@@ -1583,7 +1583,7 @@
       "type": "Trim"
     },
     {
-      "ticker": "NUCOR",
+      "ticker": "NUE",
       "security": "NUCOR CORP",
       "rawDelta": -246872125,
       "deltaValue": "-$246.87M",
@@ -1592,7 +1592,7 @@
       "type": "Trim"
     },
     {
-      "ticker": "CONST",
+      "ticker": "STZ",
       "security": "CONSTELLATION BRANDS INC",
       "rawDelta": -94933500,
       "deltaValue": "-$94.93M",

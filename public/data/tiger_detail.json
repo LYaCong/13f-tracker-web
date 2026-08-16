@@ -154,23 +154,23 @@
   "assetTrend": [
     {
       "year": "2024 Q3",
-      "value": "24.4"
+      "value": "24.5"
     },
     {
       "year": "2024 Q4",
-      "value": "22.6"
+      "value": "23.7"
     },
     {
       "year": "2025 Q1",
-      "value": "20.6"
+      "value": "20.8"
     },
     {
       "year": "2025 Q2",
-      "value": "22.8"
+      "value": "26.4"
     },
     {
       "year": "2025 Q3",
-      "value": "22.2"
+      "value": "24.0"
     },
     {
       "year": "2025 Q4",
@@ -178,7 +178,7 @@
     },
     {
       "year": "2026 Q1",
-      "value": "25.3"
+      "value": "23.2"
     },
     {
       "year": "2026 Q2",
@@ -262,16 +262,16 @@
           "name": "GOOGL (Trim)"
         },
         {
-          "name": "BROAD (Trim)"
+          "name": "AVGO (Trim)"
         },
         {
-          "name": "APPLO (Exit)"
+          "name": "APP (Exit)"
         },
         {
           "name": "ZILLO (Exit)"
         },
         {
-          "name": "NETFL (Exit)"
+          "name": "NFLX (Exit)"
         },
         {
           "name": "Capital Liquidity Pool"
@@ -280,13 +280,13 @@
           "name": "CEREB (New)"
         },
         {
-          "name": "INTEL (Add)"
+          "name": "INTC (Add)"
         },
         {
-          "name": "ADVAN (New)"
+          "name": "AMD (New)"
         },
         {
-          "name": "SEAGA (New)"
+          "name": "STX (New)"
         },
         {
           "name": "V (New)"
@@ -459,8 +459,8 @@
     },
     {
       "cusip": "512807306",
-      "ticker": "LAM",
-      "security": "LAM RESEARCH CORP (LAM)",
+      "ticker": "LRCX",
+      "security": "LAM RESEARCH CORP (LRCX)",
       "name": "LAM RESEARCH CORP",
       "sector": "Information Technology",
       "weight": 5.72,
@@ -501,8 +501,8 @@
     },
     {
       "cusip": "038222105",
-      "ticker": "APPLI",
-      "security": "APPLIED MATLS INC (APPLI)",
+      "ticker": "AMAT",
+      "security": "APPLIED MATLS INC (AMAT)",
       "name": "APPLIED MATLS INC",
       "sector": "Information Technology",
       "weight": 4.92,
@@ -522,8 +522,8 @@
     },
     {
       "cusip": "36828A101",
-      "ticker": "GE",
-      "security": "GE VERNOVA INC (GE)",
+      "ticker": "GEV",
+      "security": "GE VERNOVA INC (GEV)",
       "name": "GE VERNOVA INC",
       "sector": "Industrials",
       "weight": 3.91,
@@ -564,8 +564,8 @@
     },
     {
       "cusip": "219948106",
-      "ticker": "CORPA",
-      "security": "CORPAY INC (CORPA)",
+      "ticker": "CPAY",
+      "security": "CORPAY INC (CPAY)",
       "name": "CORPAY INC",
       "sector": "Financials",
       "weight": 2.99,
@@ -606,8 +606,8 @@
     },
     {
       "cusip": "11135F101",
-      "ticker": "BROAD",
-      "security": "BROADCOM INC (BROAD)",
+      "ticker": "AVGO",
+      "security": "BROADCOM INC (AVGO)",
       "name": "BROADCOM INC",
       "sector": "Information Technology",
       "weight": 2.76,
@@ -648,8 +648,8 @@
     },
     {
       "cusip": "458140100",
-      "ticker": "INTEL",
-      "security": "INTEL CORP (INTEL)",
+      "ticker": "INTC",
+      "security": "INTEL CORP (INTC)",
       "name": "INTEL CORP",
       "sector": "Information Technology",
       "weight": 2.48,
@@ -690,8 +690,8 @@
     },
     {
       "cusip": "874054109",
-      "ticker": "TAKE",
-      "security": "TAKE-TWO INTERACTIVE SOFTWAR (TAKE)",
+      "ticker": "TTWO",
+      "security": "TAKE-TWO INTERACTIVE SOFTWAR (TTWO)",
       "name": "TAKE-TWO INTERACTIVE SOFTWAR",
       "sector": "Communication Services",
       "weight": 1.89,
@@ -732,8 +732,8 @@
     },
     {
       "cusip": "007903107",
-      "ticker": "ADVAN",
-      "security": "ADVANCED MICRO DEVICES INC (ADVAN)",
+      "ticker": "AMD",
+      "security": "ADVANCED MICRO DEVICES INC (AMD)",
       "name": "ADVANCED MICRO DEVICES INC",
       "sector": "Information Technology",
       "weight": 1.63,
@@ -753,8 +753,8 @@
     },
     {
       "cusip": "852234103",
-      "ticker": "BLOCK",
-      "security": "BLOCK INC (BLOCK)",
+      "ticker": "XYZ",
+      "security": "BLOCK INC (XYZ)",
       "name": "BLOCK INC",
       "sector": "Financials",
       "weight": 1.45,
@@ -774,8 +774,8 @@
     },
     {
       "cusip": "03769M106",
-      "ticker": "APOLL",
-      "security": "APOLLO GLOBAL MGMT INC (APOLL)",
+      "ticker": "APO",
+      "security": "APOLLO GLOBAL MGMT INC (APO)",
       "name": "APOLLO GLOBAL MGMT INC",
       "sector": "Financials",
       "weight": 1.34,
@@ -795,8 +795,8 @@
     },
     {
       "cusip": "G7997R103",
-      "ticker": "SEAGA",
-      "security": "SEAGATE TECHNOLOGY HLDNGS PL (SEAGA)",
+      "ticker": "STX",
+      "security": "SEAGATE TECHNOLOGY HLDNGS PL (STX)",
       "name": "SEAGATE TECHNOLOGY HLDNGS PL",
       "sector": "Information Technology",
       "weight": 1.15,
@@ -986,8 +986,8 @@
     },
     {
       "cusip": "512807306",
-      "ticker": "LAM",
-      "security": "LAM RESEARCH CORP (LAM)",
+      "ticker": "LRCX",
+      "security": "LAM RESEARCH CORP (LRCX)",
       "name": "LAM RESEARCH CORP",
       "sector": "Information Technology",
       "weight": 5.72,
@@ -1028,8 +1028,8 @@
     },
     {
       "cusip": "038222105",
-      "ticker": "APPLI",
-      "security": "APPLIED MATLS INC (APPLI)",
+      "ticker": "AMAT",
+      "security": "APPLIED MATLS INC (AMAT)",
       "name": "APPLIED MATLS INC",
       "sector": "Information Technology",
       "weight": 4.92,
@@ -1049,8 +1049,8 @@
     },
     {
       "cusip": "36828A101",
-      "ticker": "GE",
-      "security": "GE VERNOVA INC (GE)",
+      "ticker": "GEV",
+      "security": "GE VERNOVA INC (GEV)",
       "name": "GE VERNOVA INC",
       "sector": "Industrials",
       "weight": 3.91,
@@ -1091,8 +1091,8 @@
     },
     {
       "cusip": "219948106",
-      "ticker": "CORPA",
-      "security": "CORPAY INC (CORPA)",
+      "ticker": "CPAY",
+      "security": "CORPAY INC (CPAY)",
       "name": "CORPAY INC",
       "sector": "Financials",
       "weight": 2.99,
@@ -1133,8 +1133,8 @@
     },
     {
       "cusip": "11135F101",
-      "ticker": "BROAD",
-      "security": "BROADCOM INC (BROAD)",
+      "ticker": "AVGO",
+      "security": "BROADCOM INC (AVGO)",
       "name": "BROADCOM INC",
       "sector": "Information Technology",
       "weight": 2.76,
@@ -1175,8 +1175,8 @@
     },
     {
       "cusip": "458140100",
-      "ticker": "INTEL",
-      "security": "INTEL CORP (INTEL)",
+      "ticker": "INTC",
+      "security": "INTEL CORP (INTC)",
       "name": "INTEL CORP",
       "sector": "Information Technology",
       "weight": 2.48,
@@ -1217,8 +1217,8 @@
     },
     {
       "cusip": "874054109",
-      "ticker": "TAKE",
-      "security": "TAKE-TWO INTERACTIVE SOFTWAR (TAKE)",
+      "ticker": "TTWO",
+      "security": "TAKE-TWO INTERACTIVE SOFTWAR (TTWO)",
       "name": "TAKE-TWO INTERACTIVE SOFTWAR",
       "sector": "Communication Services",
       "weight": 1.89,
@@ -1259,8 +1259,8 @@
     },
     {
       "cusip": "007903107",
-      "ticker": "ADVAN",
-      "security": "ADVANCED MICRO DEVICES INC (ADVAN)",
+      "ticker": "AMD",
+      "security": "ADVANCED MICRO DEVICES INC (AMD)",
       "name": "ADVANCED MICRO DEVICES INC",
       "sector": "Information Technology",
       "weight": 1.63,
@@ -1280,8 +1280,8 @@
     },
     {
       "cusip": "852234103",
-      "ticker": "BLOCK",
-      "security": "BLOCK INC (BLOCK)",
+      "ticker": "XYZ",
+      "security": "BLOCK INC (XYZ)",
       "name": "BLOCK INC",
       "sector": "Financials",
       "weight": 1.45,
@@ -1301,8 +1301,8 @@
     },
     {
       "cusip": "03769M106",
-      "ticker": "APOLL",
-      "security": "APOLLO GLOBAL MGMT INC (APOLL)",
+      "ticker": "APO",
+      "security": "APOLLO GLOBAL MGMT INC (APO)",
       "name": "APOLLO GLOBAL MGMT INC",
       "sector": "Financials",
       "weight": 1.34,
@@ -1322,8 +1322,8 @@
     },
     {
       "cusip": "G7997R103",
-      "ticker": "SEAGA",
-      "security": "SEAGATE TECHNOLOGY HLDNGS PL (SEAGA)",
+      "ticker": "STX",
+      "security": "SEAGATE TECHNOLOGY HLDNGS PL (STX)",
       "name": "SEAGATE TECHNOLOGY HLDNGS PL",
       "sector": "Information Technology",
       "weight": 1.15,
@@ -1511,8 +1511,8 @@
     },
     {
       "cusip": "824348106",
-      "ticker": "SHERW",
-      "security": "SHERWIN WILLIAMS CO (SHERW)",
+      "ticker": "SHW",
+      "security": "SHERWIN WILLIAMS CO (SHW)",
       "name": "SHERWIN WILLIAMS CO",
       "sector": "Materials",
       "weight": 0.37,
@@ -1532,8 +1532,8 @@
     },
     {
       "cusip": "235851102",
-      "ticker": "DANAH",
-      "security": "DANAHER CORP DEL (DANAH)",
+      "ticker": "DHR",
+      "security": "DANAHER CORP DEL (DHR)",
       "name": "DANAHER CORP DEL",
       "sector": "Health Care",
       "weight": 0.36,
@@ -1553,8 +1553,8 @@
     },
     {
       "cusip": "81762P102",
-      "ticker": "SERVI",
-      "security": "SERVICENOW INC (SERVI)",
+      "ticker": "NOW",
+      "security": "SERVICENOW INC (NOW)",
       "name": "SERVICENOW INC",
       "sector": "Information Technology",
       "weight": 0.36,
@@ -1742,8 +1742,8 @@
     },
     {
       "cusip": "25809K105",
-      "ticker": "DOORD",
-      "security": "DOORDASH INC (DOORD)",
+      "ticker": "DASH",
+      "security": "DOORDASH INC (DASH)",
       "name": "DOORDASH INC",
       "sector": "Consumer Discretionary",
       "weight": 0.02,
@@ -1857,7 +1857,7 @@
       "type": "New"
     },
     {
-      "ticker": "INTEL",
+      "ticker": "INTC",
       "security": "INTEL CORP",
       "rawDelta": 521487274,
       "deltaValue": "+$521.49M",
@@ -1866,7 +1866,7 @@
       "type": "Add"
     },
     {
-      "ticker": "ADVAN",
+      "ticker": "AMD",
       "security": "ADVANCED MICRO DEVICES INC",
       "rawDelta": 391955662,
       "deltaValue": "+$391.96M",
@@ -1875,7 +1875,7 @@
       "type": "New"
     },
     {
-      "ticker": "SEAGA",
+      "ticker": "STX",
       "security": "SEAGATE TECHNOLOGY HLDNGS PL",
       "rawDelta": 275121500,
       "deltaValue": "+$275.12M",
@@ -1893,7 +1893,7 @@
       "type": "New"
     },
     {
-      "ticker": "CORPA",
+      "ticker": "CPAY",
       "security": "CORPAY INC",
       "rawDelta": 206632543,
       "deltaValue": "+$206.63M",
@@ -1902,7 +1902,7 @@
       "type": "Add"
     },
     {
-      "ticker": "BLOCK",
+      "ticker": "XYZ",
       "security": "BLOCK INC",
       "rawDelta": 107056532,
       "deltaValue": "+$107.06M",
@@ -1920,7 +1920,7 @@
       "type": "Add"
     },
     {
-      "ticker": "DANAH",
+      "ticker": "DHR",
       "security": "DANAHER CORP DEL",
       "rawDelta": 86858880,
       "deltaValue": "+$86.86M",
@@ -1949,7 +1949,7 @@
       "type": "Trim"
     },
     {
-      "ticker": "BROAD",
+      "ticker": "AVGO",
       "security": "BROADCOM INC",
       "rawDelta": -446938860,
       "deltaValue": "-$446.94M",
@@ -1958,7 +1958,7 @@
       "type": "Trim"
     },
     {
-      "ticker": "APPLO",
+      "ticker": "APP",
       "security": "APPLOVIN CORP",
       "rawDelta": -398000000,
       "deltaValue": "-$398.00M",
@@ -1976,7 +1976,7 @@
       "type": "Exit"
     },
     {
-      "ticker": "NETFL",
+      "ticker": "NFLX",
       "security": "NETFLIX INC.",
       "rawDelta": -234509850,
       "deltaValue": "-$234.51M",

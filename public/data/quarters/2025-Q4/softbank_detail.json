@@ -154,23 +154,23 @@
   "assetTrend": [
     {
       "year": "2024 Q3",
-      "value": "15.1"
+      "value": "16.6"
     },
     {
       "year": "2024 Q4",
-      "value": "14.6"
+      "value": "16.4"
     },
     {
       "year": "2025 Q1",
-      "value": "17.2"
+      "value": "16.7"
     },
     {
       "year": "2025 Q2",
-      "value": "15.8"
+      "value": "16.6"
     },
     {
       "year": "2025 Q3",
-      "value": "14.9"
+      "value": "14.1"
     },
     {
       "year": "2025 Q4",
@@ -179,11 +179,11 @@
     },
     {
       "year": "2026 Q1",
-      "value": "17.6"
+      "value": "15.0"
     },
     {
       "year": "2026 Q2",
-      "value": "13.7"
+      "value": "14.2"
     }
   ],
   "sectorHistory": [
@@ -375,8 +375,8 @@
     },
     {
       "cusip": "458140100",
-      "ticker": "INTEL",
-      "security": "INTEL CORP (INTEL)",
+      "ticker": "INTC",
+      "security": "INTEL CORP (INTC)",
       "name": "INTEL CORP",
       "sector": "Information Technology",
       "weight": 20.74,
@@ -902,8 +902,8 @@
     },
     {
       "cusip": "458140100",
-      "ticker": "INTEL",
-      "security": "INTEL CORP (INTEL)",
+      "ticker": "INTC",
+      "security": "INTEL CORP (INTC)",
       "name": "INTEL CORP",
       "sector": "Information Technology",
       "weight": 20.74,
@@ -1532,8 +1532,8 @@
     },
     {
       "cusip": "19260Q107",
-      "ticker": "COINB",
-      "security": "Coinbase Global A (COINB)",
+      "ticker": "COIN",
+      "security": "Coinbase Global A (COIN)",
       "name": "Coinbase Global A",
       "sector": "Financials",
       "weight": 0,
@@ -1599,7 +1599,7 @@
       "type": "New"
     },
     {
-      "ticker": "COINB",
+      "ticker": "COIN",
       "security": "Coinbase Global A",
       "rawDelta": 263001,
       "deltaValue": "+$0.00B",

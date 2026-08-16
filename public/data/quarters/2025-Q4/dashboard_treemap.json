@@ -69,20 +69,6 @@
     ]
   },
   {
-    "ticker": "GE",
-    "heat": 100,
-    "avgWeight": "6.25%",
-    "value": "15.76B",
-    "instCount": 5,
-    "holdingInstitutions": [
-      "tci",
-      "tiger",
-      "bridgewater",
-      "ark",
-      "soros"
-    ]
-  },
-  {
     "ticker": "MSFT",
     "heat": 100,
     "avgWeight": "5.74%",
@@ -96,6 +82,18 @@
       "hh",
       "ark",
       "soros"
+    ]
+  },
+  {
+    "ticker": "GE",
+    "heat": 100,
+    "avgWeight": "9.16%",
+    "value": "14.69B",
+    "instCount": 3,
+    "holdingInstitutions": [
+      "tci",
+      "bridgewater",
+      "ark"
     ]
   },
   {
@@ -182,7 +180,7 @@
     ]
   },
   {
-    "ticker": "S",
+    "ticker": "SPGI",
     "heat": 56,
     "avgWeight": "5.82%",
     "value": "6.20B",
@@ -231,16 +229,13 @@
     ]
   },
   {
-    "ticker": "ISHAR",
-    "heat": 91,
-    "avgWeight": "4.48%",
-    "value": "4.54B",
-    "instCount": 4,
+    "ticker": "TRIPL",
+    "heat": 86,
+    "avgWeight": "19.67%",
+    "value": "4.45B",
+    "instCount": 1,
     "holdingInstitutions": [
-      "bridgewater",
-      "elliott",
-      "ark",
-      "soros"
+      "elliott"
     ]
   }
 ]

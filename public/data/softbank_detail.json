@@ -154,31 +154,31 @@
   "assetTrend": [
     {
       "year": "2024 Q3",
-      "value": "18.9"
+      "value": "18.8"
     },
     {
       "year": "2024 Q4",
-      "value": "19.8"
+      "value": "16.3"
     },
     {
       "year": "2025 Q1",
-      "value": "19.6"
+      "value": "16.6"
     },
     {
       "year": "2025 Q2",
-      "value": "20.6"
+      "value": "20.5"
     },
     {
       "year": "2025 Q3",
-      "value": "19.8"
+      "value": "16.1"
     },
     {
       "year": "2025 Q4",
-      "value": "15.7"
+      "value": "17.1"
     },
     {
       "year": "2026 Q1",
-      "value": "15.9"
+      "value": "19.6"
     },
     {
       "year": "2026 Q2",
@@ -271,7 +271,7 @@
           "name": "Capital Liquidity Pool"
         },
         {
-          "name": "CAPIT (New)"
+          "name": "COF (New)"
         },
         {
           "name": "LIFE3 (New)"
@@ -314,8 +314,8 @@
   "holdings": [
     {
       "cusip": "458140100",
-      "ticker": "INTEL",
-      "security": "INTEL CORP (INTEL)",
+      "ticker": "INTC",
+      "security": "INTEL CORP (INTC)",
       "name": "INTEL CORP",
       "sector": "Information Technology",
       "weight": 66.81,
@@ -587,8 +587,8 @@
     },
     {
       "cusip": "14040H105",
-      "ticker": "CAPIT",
-      "security": "CAPITAL ONE FINL CORP (CAPIT)",
+      "ticker": "COF",
+      "security": "CAPITAL ONE FINL CORP (COF)",
       "name": "CAPITAL ONE FINL CORP",
       "sector": "Financials",
       "weight": 0.31,
@@ -841,8 +841,8 @@
   "allHoldings": [
     {
       "cusip": "458140100",
-      "ticker": "INTEL",
-      "security": "INTEL CORP (INTEL)",
+      "ticker": "INTC",
+      "security": "INTEL CORP (INTC)",
       "name": "INTEL CORP",
       "sector": "Information Technology",
       "weight": 66.81,
@@ -1114,8 +1114,8 @@
     },
     {
       "cusip": "14040H105",
-      "ticker": "CAPIT",
-      "security": "CAPITAL ONE FINL CORP (CAPIT)",
+      "ticker": "COF",
+      "security": "CAPITAL ONE FINL CORP (COF)",
       "name": "CAPITAL ONE FINL CORP",
       "sector": "Financials",
       "weight": 0.31,
@@ -1472,7 +1472,7 @@
   ],
   "topAdds": [
     {
-      "ticker": "CAPIT",
+      "ticker": "COF",
       "security": "CAPITAL ONE FINL CORP",
       "rawDelta": 55533823,
       "deltaValue": "+$55.53M",

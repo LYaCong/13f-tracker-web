@@ -154,31 +154,31 @@
   "assetTrend": [
     {
       "year": "2024 Q3",
-      "value": "56.4"
+      "value": "47.7"
     },
     {
       "year": "2024 Q4",
-      "value": "56.1"
+      "value": "60.3"
     },
     {
       "year": "2025 Q1",
-      "value": "54.8"
+      "value": "52.1"
     },
     {
       "year": "2025 Q2",
-      "value": "49.1"
+      "value": "50.9"
     },
     {
       "year": "2025 Q3",
-      "value": "49.4"
+      "value": "56.8"
     },
     {
       "year": "2025 Q4",
-      "value": "54.8"
+      "value": "51.1"
     },
     {
       "year": "2026 Q1",
-      "value": "47.6"
+      "value": "45.9"
     },
     {
       "year": "2026 Q2",
@@ -280,10 +280,10 @@
           "name": "GOOG (Add)"
         },
         {
-          "name": "MARTI (New)"
+          "name": "MLM (New)"
         },
         {
-          "name": "VULCA (New)"
+          "name": "VMC (New)"
         },
         {
           "name": "FERRO (Add)"
@@ -409,8 +409,8 @@
     },
     {
       "cusip": "78409V104",
-      "ticker": "S",
-      "security": "S&P GLOBAL INC (S)",
+      "ticker": "SPGI",
+      "security": "S&P GLOBAL INC (SPGI)",
       "name": "S&P GLOBAL INC",
       "sector": "Financials",
       "weight": 10.87,
@@ -535,8 +535,8 @@
     },
     {
       "cusip": "573284106",
-      "ticker": "MARTI",
-      "security": "MARTIN MARIETTA MATLS INC (MARTI)",
+      "ticker": "MLM",
+      "security": "MARTIN MARIETTA MATLS INC (MLM)",
       "name": "MARTIN MARIETTA MATLS INC",
       "sector": "Materials",
       "weight": 1.44,
@@ -556,8 +556,8 @@
     },
     {
       "cusip": "929160109",
-      "ticker": "VULCA",
-      "security": "VULCAN MATLS CO (VULCA)",
+      "ticker": "VMC",
+      "security": "VULCAN MATLS CO (VMC)",
       "name": "VULCAN MATLS CO",
       "sector": "Materials",
       "weight": 1.37,
@@ -642,8 +642,8 @@
     },
     {
       "cusip": "78409V104",
-      "ticker": "S",
-      "security": "S&P GLOBAL INC (S)",
+      "ticker": "SPGI",
+      "security": "S&P GLOBAL INC (SPGI)",
       "name": "S&P GLOBAL INC",
       "sector": "Financials",
       "weight": 10.87,
@@ -768,8 +768,8 @@
     },
     {
       "cusip": "573284106",
-      "ticker": "MARTI",
-      "security": "MARTIN MARIETTA MATLS INC (MARTI)",
+      "ticker": "MLM",
+      "security": "MARTIN MARIETTA MATLS INC (MLM)",
       "name": "MARTIN MARIETTA MATLS INC",
       "sector": "Materials",
       "weight": 1.44,
@@ -789,8 +789,8 @@
     },
     {
       "cusip": "929160109",
-      "ticker": "VULCA",
-      "security": "VULCAN MATLS CO (VULCA)",
+      "ticker": "VMC",
+      "security": "VULCAN MATLS CO (VMC)",
       "name": "VULCAN MATLS CO",
       "sector": "Materials",
       "weight": 1.37,
@@ -829,7 +829,7 @@
       "type": "Add"
     },
     {
-      "ticker": "MARTI",
+      "ticker": "MLM",
       "security": "MARTIN MARIETTA MATLS INC",
       "rawDelta": 758423360,
       "deltaValue": "+$758.42M",
@@ -838,7 +838,7 @@
       "type": "New"
     },
     {
-      "ticker": "VULCA",
+      "ticker": "VMC",
       "security": "VULCAN MATLS CO",
       "rawDelta": 721890650,
       "deltaValue": "+$721.89M",
@@ -856,7 +856,7 @@
       "type": "Add"
     },
     {
-      "ticker": "S",
+      "ticker": "SPGI",
       "security": "S&P GLOBAL INC",
       "rawDelta": -234760947,
       "deltaValue": "+$234.76M",

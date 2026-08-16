@@ -51,8 +51,8 @@
   {
     "ticker": "GOOGL",
     "heat": 100,
-    "avgWeight": "8.02%",
-    "value": "20.83B",
+    "avgWeight": "8.06%",
+    "value": "20.86B",
     "instCount": 6,
     "holdingInstitutions": [
       "berkshire",
@@ -101,12 +101,11 @@
   {
     "ticker": "GE",
     "heat": 100,
-    "avgWeight": "8.86%",
-    "value": "14.75B",
-    "instCount": 4,
+    "avgWeight": "10.00%",
+    "value": "13.52B",
+    "instCount": 3,
     "holdingInstitutions": [
       "tci",
-      "tiger",
       "bridgewater",
       "ark"
     ]
@@ -125,7 +124,7 @@
     ]
   },
   {
-    "ticker": "CHUBB",
+    "ticker": "CB",
     "heat": 30,
     "avgWeight": "1.46%",
     "value": "11.18B",
@@ -181,7 +180,7 @@
     ]
   },
   {
-    "ticker": "S",
+    "ticker": "SPGI",
     "heat": 79,
     "avgWeight": "3.74%",
     "value": "6.04B",

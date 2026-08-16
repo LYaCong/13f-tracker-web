@@ -154,7 +154,7 @@
   "assetTrend": [
     {
       "year": "2024 Q4",
-      "value": "3.7"
+      "value": "3.6"
     },
     {
       "year": "2025 Q1",
@@ -166,15 +166,15 @@
     },
     {
       "year": "2025 Q3",
-      "value": "4.1"
+      "value": "3.2"
     },
     {
       "year": "2025 Q4",
-      "value": "4.0"
+      "value": "4.1"
     },
     {
       "year": "2026 Q1",
-      "value": "3.7"
+      "value": "3.2"
     },
     {
       "year": "2026 Q2",
@@ -261,7 +261,7 @@
           "name": "OXY (Exit)"
         },
         {
-          "name": "S (Exit)"
+          "name": "SPGI (Exit)"
         },
         {
           "name": "BLOCK (Exit)"
@@ -703,7 +703,7 @@
       "type": "Exit"
     },
     {
-      "ticker": "S",
+      "ticker": "SPGI",
       "security": "S&P GLOBAL INC",
       "rawDelta": -51663072,
       "deltaValue": "-$51.66M",
@@ -730,7 +730,7 @@
       "type": "Exit"
     },
     {
-      "ticker": "MSCI",
+      "ticker": "MRK",
       "security": "MSCI INC",
       "rawDelta": -10208310,
       "deltaValue": "-$10.21M",

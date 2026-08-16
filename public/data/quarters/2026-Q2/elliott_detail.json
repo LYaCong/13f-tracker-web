@@ -154,19 +154,19 @@
   "assetTrend": [
     {
       "year": "2024 Q4",
-      "value": "21.0"
+      "value": "20.1"
     },
     {
       "year": "2025 Q1",
-      "value": "19.8"
+      "value": "22.4"
     },
     {
       "year": "2025 Q2",
-      "value": "22.9"
+      "value": "25.4"
     },
     {
       "year": "2025 Q3",
-      "value": "23.6"
+      "value": "22.1"
     },
     {
       "year": "2025 Q4",
@@ -174,7 +174,7 @@
     },
     {
       "year": "2026 Q1",
-      "value": "19.6"
+      "value": "23.8"
     },
     {
       "year": "2026 Q2",
@@ -258,34 +258,34 @@
           "name": "SUNCO (Trim)"
         },
         {
-          "name": "ISHAR (Exit)"
+          "name": "HYG (Exit)"
         },
         {
-          "name": "DIGIT (Exit)"
+          "name": "DLR (Exit)"
         },
         {
-          "name": "SELEC (Trim)"
+          "name": "XLI (Trim)"
         },
         {
-          "name": "ISHAR (Exit)"
+          "name": "ETF-464287 (Exit)"
         },
         {
           "name": "Capital Liquidity Pool"
         },
         {
-          "name": "INVES (Add)"
+          "name": "QQQ (Add)"
         },
         {
-          "name": "ISHAR (New)"
+          "name": "ETF-464287 (New)"
         },
         {
-          "name": "HEWLE (Add)"
+          "name": "HPE (Add)"
         },
         {
-          "name": "ISHAR (New)"
+          "name": "ETF-464288 (New)"
         },
         {
-          "name": "SELEC (Add)"
+          "name": "XLY (Add)"
         }
       ],
       "links": [
@@ -371,8 +371,8 @@
     },
     {
       "cusip": "718546104",
-      "ticker": "PHILL",
-      "security": "PHILLIPS 66 (PHILL)",
+      "ticker": "PSX",
+      "security": "PHILLIPS 66 (PSX)",
       "name": "PHILLIPS 66",
       "sector": "Energy",
       "weight": 14.36,
@@ -392,8 +392,8 @@
     },
     {
       "cusip": "46090E103",
-      "ticker": "INVES",
-      "security": "INVESCO QQQ TR (INVES)",
+      "ticker": "QQQ",
+      "security": "INVESCO QQQ TR (QQQ)",
       "name": "INVESCO QQQ TR",
       "sector": "Unclassified",
       "weight": 11.3,
@@ -434,8 +434,8 @@
     },
     {
       "cusip": "42824C109",
-      "ticker": "HEWLE",
-      "security": "HEWLETT PACKARD ENTERPRISE C (HEWLE)",
+      "ticker": "HPE",
+      "security": "HEWLETT PACKARD ENTERPRISE C (HPE)",
       "name": "HEWLETT PACKARD ENTERPRISE C",
       "sector": "Information Technology",
       "weight": 6.42,
@@ -455,8 +455,8 @@
     },
     {
       "cusip": "464287515",
-      "ticker": "ISHAR",
-      "security": "ISHARES TR (ISHAR)",
+      "ticker": "ETF-464287",
+      "security": "ISHARES TR (ETF-464287)",
       "name": "ISHARES TR",
       "sector": "Unclassified",
       "weight": 6.29,
@@ -476,8 +476,8 @@
     },
     {
       "cusip": "844741108",
-      "ticker": "SOUTH",
-      "security": "SOUTHWEST AIRLS CO (SOUTH)",
+      "ticker": "LUV",
+      "security": "SOUTHWEST AIRLS CO (LUV)",
       "name": "SOUTHWEST AIRLS CO",
       "sector": "Industrials",
       "weight": 5.51,
@@ -497,8 +497,8 @@
     },
     {
       "cusip": "81369Y704",
-      "ticker": "SELEC",
-      "security": "SELECT SECTOR SPDR TR (SELEC)",
+      "ticker": "XLI",
+      "security": "SELECT SECTOR SPDR TR (XLI)",
       "name": "SELECT SECTOR SPDR TR",
       "sector": "Unclassified",
       "weight": 4.23,
@@ -518,8 +518,8 @@
     },
     {
       "cusip": "81369Y407",
-      "ticker": "SELEC",
-      "security": "SELECT SECTOR SPDR TR (SELEC)",
+      "ticker": "XLY",
+      "security": "SELECT SECTOR SPDR TR (XLY)",
       "name": "SELECT SECTOR SPDR TR",
       "sector": "Unclassified",
       "weight": 3.67,
@@ -539,8 +539,8 @@
     },
     {
       "cusip": "81369Y308",
-      "ticker": "SELEC",
-      "security": "SELECT SECTOR SPDR TR (SELEC)",
+      "ticker": "XLP",
+      "security": "SELECT SECTOR SPDR TR (XLP)",
       "name": "SELECT SECTOR SPDR TR",
       "sector": "Unclassified",
       "weight": 3.53,
@@ -581,8 +581,8 @@
     },
     {
       "cusip": "464288810",
-      "ticker": "ISHAR",
-      "security": "ISHARES TR (ISHAR)",
+      "ticker": "ETF-464288",
+      "security": "ISHARES TR (ETF-464288)",
       "name": "ISHARES TR",
       "sector": "Unclassified",
       "weight": 3.03,
@@ -665,8 +665,8 @@
     },
     {
       "cusip": "G66721104",
-      "ticker": "NORWE",
-      "security": "NORWEGIAN CRUISE LINE HLDGS (NORWE)",
+      "ticker": "NCLH",
+      "security": "NORWEGIAN CRUISE LINE HLDGS (NCLH)",
       "name": "NORWEGIAN CRUISE LINE HLDGS",
       "sector": "Consumer Discretionary",
       "weight": 1.37,
@@ -686,8 +686,8 @@
     },
     {
       "cusip": "713448108",
-      "ticker": "PEPSI",
-      "security": "PEPSICO INC (PEPSI)",
+      "ticker": "PEP",
+      "security": "PEPSICO INC (PEP)",
       "name": "PEPSICO INC",
       "sector": "Consumer Staples",
       "weight": 0.76,
@@ -749,8 +749,8 @@
     },
     {
       "cusip": "29444U700",
-      "ticker": "EQUIN",
-      "security": "EQUINIX INC (EQUIN)",
+      "ticker": "EQIX",
+      "security": "EQUINIX INC (EQIX)",
       "name": "EQUINIX INC",
       "sector": "Real Estate",
       "weight": 0.69,
@@ -770,8 +770,8 @@
     },
     {
       "cusip": "871607107",
-      "ticker": "SYNOP",
-      "security": "SYNOPSYS INC (SYNOP)",
+      "ticker": "SNPS",
+      "security": "SYNOPSYS INC (SNPS)",
       "name": "SYNOPSYS INC",
       "sector": "Information Technology",
       "weight": 0.45,
@@ -812,8 +812,8 @@
     },
     {
       "cusip": "78464A755",
-      "ticker": "SPDR",
-      "security": "SPDR SERIES TRUST (SPDR)",
+      "ticker": "ETF-78464A",
+      "security": "SPDR SERIES TRUST (ETF-78464A)",
       "name": "SPDR SERIES TRUST",
       "sector": "Unclassified",
       "weight": 0.42,
@@ -898,8 +898,8 @@
     },
     {
       "cusip": "718546104",
-      "ticker": "PHILL",
-      "security": "PHILLIPS 66 (PHILL)",
+      "ticker": "PSX",
+      "security": "PHILLIPS 66 (PSX)",
       "name": "PHILLIPS 66",
       "sector": "Energy",
       "weight": 14.36,
@@ -919,8 +919,8 @@
     },
     {
       "cusip": "46090E103",
-      "ticker": "INVES",
-      "security": "INVESCO QQQ TR (INVES)",
+      "ticker": "QQQ",
+      "security": "INVESCO QQQ TR (QQQ)",
       "name": "INVESCO QQQ TR",
       "sector": "Unclassified",
       "weight": 11.3,
@@ -961,8 +961,8 @@
     },
     {
       "cusip": "42824C109",
-      "ticker": "HEWLE",
-      "security": "HEWLETT PACKARD ENTERPRISE C (HEWLE)",
+      "ticker": "HPE",
+      "security": "HEWLETT PACKARD ENTERPRISE C (HPE)",
       "name": "HEWLETT PACKARD ENTERPRISE C",
       "sector": "Information Technology",
       "weight": 6.42,
@@ -982,8 +982,8 @@
     },
     {
       "cusip": "464287515",
-      "ticker": "ISHAR",
-      "security": "ISHARES TR (ISHAR)",
+      "ticker": "ETF-464287",
+      "security": "ISHARES TR (ETF-464287)",
       "name": "ISHARES TR",
       "sector": "Unclassified",
       "weight": 6.29,
@@ -1003,8 +1003,8 @@
     },
     {
       "cusip": "844741108",
-      "ticker": "SOUTH",
-      "security": "SOUTHWEST AIRLS CO (SOUTH)",
+      "ticker": "LUV",
+      "security": "SOUTHWEST AIRLS CO (LUV)",
       "name": "SOUTHWEST AIRLS CO",
       "sector": "Industrials",
       "weight": 5.51,
@@ -1024,8 +1024,8 @@
     },
     {
       "cusip": "81369Y704",
-      "ticker": "SELEC",
-      "security": "SELECT SECTOR SPDR TR (SELEC)",
+      "ticker": "XLI",
+      "security": "SELECT SECTOR SPDR TR (XLI)",
       "name": "SELECT SECTOR SPDR TR",
       "sector": "Unclassified",
       "weight": 4.23,
@@ -1045,8 +1045,8 @@
     },
     {
       "cusip": "81369Y407",
-      "ticker": "SELEC",
-      "security": "SELECT SECTOR SPDR TR (SELEC)",
+      "ticker": "XLY",
+      "security": "SELECT SECTOR SPDR TR (XLY)",
       "name": "SELECT SECTOR SPDR TR",
       "sector": "Unclassified",
       "weight": 3.67,
@@ -1066,8 +1066,8 @@
     },
     {
       "cusip": "81369Y308",
-      "ticker": "SELEC",
-      "security": "SELECT SECTOR SPDR TR (SELEC)",
+      "ticker": "XLP",
+      "security": "SELECT SECTOR SPDR TR (XLP)",
       "name": "SELECT SECTOR SPDR TR",
       "sector": "Unclassified",
       "weight": 3.53,
@@ -1108,8 +1108,8 @@
     },
     {
       "cusip": "464288810",
-      "ticker": "ISHAR",
-      "security": "ISHARES TR (ISHAR)",
+      "ticker": "ETF-464288",
+      "security": "ISHARES TR (ETF-464288)",
       "name": "ISHARES TR",
       "sector": "Unclassified",
       "weight": 3.03,
@@ -1192,8 +1192,8 @@
     },
     {
       "cusip": "G66721104",
-      "ticker": "NORWE",
-      "security": "NORWEGIAN CRUISE LINE HLDGS (NORWE)",
+      "ticker": "NCLH",
+      "security": "NORWEGIAN CRUISE LINE HLDGS (NCLH)",
       "name": "NORWEGIAN CRUISE LINE HLDGS",
       "sector": "Consumer Discretionary",
       "weight": 1.37,
@@ -1213,8 +1213,8 @@
     },
     {
       "cusip": "713448108",
-      "ticker": "PEPSI",
-      "security": "PEPSICO INC (PEPSI)",
+      "ticker": "PEP",
+      "security": "PEPSICO INC (PEP)",
       "name": "PEPSICO INC",
       "sector": "Consumer Staples",
       "weight": 0.76,
@@ -1276,8 +1276,8 @@
     },
     {
       "cusip": "29444U700",
-      "ticker": "EQUIN",
-      "security": "EQUINIX INC (EQUIN)",
+      "ticker": "EQIX",
+      "security": "EQUINIX INC (EQIX)",
       "name": "EQUINIX INC",
       "sector": "Real Estate",
       "weight": 0.69,
@@ -1297,8 +1297,8 @@
     },
     {
       "cusip": "871607107",
-      "ticker": "SYNOP",
-      "security": "SYNOPSYS INC (SYNOP)",
+      "ticker": "SNPS",
+      "security": "SYNOPSYS INC (SNPS)",
       "name": "SYNOPSYS INC",
       "sector": "Information Technology",
       "weight": 0.45,
@@ -1339,8 +1339,8 @@
     },
     {
       "cusip": "78464A755",
-      "ticker": "SPDR",
-      "security": "SPDR SERIES TRUST (SPDR)",
+      "ticker": "ETF-78464A",
+      "security": "SPDR SERIES TRUST (ETF-78464A)",
       "name": "SPDR SERIES TRUST",
       "sector": "Unclassified",
       "weight": 0.42,
@@ -1402,8 +1402,8 @@
     },
     {
       "cusip": "464287655",
-      "ticker": "ISHAR",
-      "security": "ISHARES TR (ISHAR)",
+      "ticker": "IWM",
+      "security": "ISHARES TR (IWM)",
       "name": "ISHARES TR",
       "sector": "Unclassified",
       "weight": 0.33,
@@ -1466,7 +1466,7 @@
   ],
   "topAdds": [
     {
-      "ticker": "INVES",
+      "ticker": "QQQ",
       "security": "INVESCO QQQ TR",
       "rawDelta": 2331800000,
       "deltaValue": "+$2.33B",
@@ -1475,7 +1475,7 @@
       "type": "Add"
     },
     {
-      "ticker": "ISHAR",
+      "ticker": "ETF-464287",
       "security": "ISHARES TR",
       "rawDelta": 1426950000,
       "deltaValue": "+$1.43B",
@@ -1484,7 +1484,7 @@
       "type": "New"
     },
     {
-      "ticker": "HEWLE",
+      "ticker": "HPE",
       "security": "HEWLETT PACKARD ENTERPRISE C",
       "rawDelta": 802877733,
       "deltaValue": "+$802.88M",
@@ -1493,7 +1493,7 @@
       "type": "Add"
     },
     {
-      "ticker": "ISHAR",
+      "ticker": "ETF-464288",
       "security": "ISHARES TR",
       "rawDelta": 686799000,
       "deltaValue": "+$686.80M",
@@ -1502,7 +1502,7 @@
       "type": "New"
     },
     {
-      "ticker": "SELEC",
+      "ticker": "XLY",
       "security": "SELECT SECTOR SPDR TR",
       "rawDelta": 364074000,
       "deltaValue": "+$364.07M",
@@ -1529,7 +1529,7 @@
       "type": "New"
     },
     {
-      "ticker": "SYNOP",
+      "ticker": "SNPS",
       "security": "SYNOPSYS INC",
       "rawDelta": 101480925,
       "deltaValue": "+$101.48M",
@@ -1547,7 +1547,7 @@
       "type": "New"
     },
     {
-      "ticker": "NORWE",
+      "ticker": "NCLH",
       "security": "NORWEGIAN CRUISE LINE HLDGS",
       "rawDelta": 63443260,
       "deltaValue": "+$63.44M",
@@ -1567,7 +1567,7 @@
       "type": "Trim"
     },
     {
-      "ticker": "ISHAR",
+      "ticker": "HYG",
       "security": "ISHARES TR",
       "rawDelta": -397800000,
       "deltaValue": "-$397.80M",
@@ -1576,7 +1576,7 @@
       "type": "Exit"
     },
     {
-      "ticker": "DIGIT",
+      "ticker": "DLR",
       "security": "DIGITAL RLTY TR INC",
       "rawDelta": -270315000,
       "deltaValue": "-$270.31M",
@@ -1585,7 +1585,7 @@
       "type": "Exit"
     },
     {
-      "ticker": "SELEC",
+      "ticker": "XLI",
       "security": "SELECT SECTOR SPDR TR",
       "rawDelta": -254409750,
       "deltaValue": "-$254.41M",
@@ -1594,7 +1594,7 @@
       "type": "Trim"
     },
     {
-      "ticker": "ISHAR",
+      "ticker": "ETF-464287",
       "security": "ISHARES TR",
       "rawDelta": -213670000,
       "deltaValue": "-$213.67M",
@@ -1603,7 +1603,7 @@
       "type": "Exit"
     },
     {
-      "ticker": "CROWN",
+      "ticker": "CCI",
       "security": "CROWN CASTLE INC",
       "rawDelta": -99604750,
       "deltaValue": "-$99.60M",
@@ -1612,7 +1612,7 @@
       "type": "Exit"
     },
     {
-      "ticker": "ISHAR",
+      "ticker": "IWM",
       "security": "ISHARES TR",
       "rawDelta": -48887500,
       "deltaValue": "-$48.89M",
@@ -1630,7 +1630,7 @@
       "type": "Trim"
     },
     {
-      "ticker": "FORTI",
+      "ticker": "FTV",
       "security": "FORTIVE CORP",
       "rawDelta": -41460000,
       "deltaValue": "-$41.46M",

@@ -2,88 +2,64 @@
   "quarter": "2026 Q2",
   "topConsensusBuys": [
     {
-      "ticker": "ISHAR",
-      "name": "ISHARES TR",
-      "sector": "Unclassified",
-      "buyerCount": 9,
-      "totalBoughtVal": 2619446116,
-      "totalBoughtFormatted": "2.62B",
-      "totalValueFormatted": "5.25B",
-      "buyers": [
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP",
-        "Elliott Investment Management, L.P.",
-        "Elliott Investment Management, L.P.",
-        "ARK Investment Management LLC",
-        "ARK Investment Management LLC",
-        "ARK Investment Management LLC"
-      ]
-    },
-    {
-      "ticker": "AMERI",
-      "name": "AMERICAN INTL GROUP INC",
-      "sector": "Financials",
-      "buyerCount": 7,
-      "totalBoughtVal": 159880342,
-      "totalBoughtFormatted": "159.88M",
-      "totalValueFormatted": "220.20M",
-      "buyers": [
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP",
-        "Soros Fund Management",
-        "Soros Fund Management"
-      ]
-    },
-    {
-      "ticker": "STATE",
-      "name": "STATE STR SPDR S&P 500 ETF T",
-      "sector": "Unclassified",
-      "buyerCount": 5,
-      "totalBoughtVal": 1134422183,
-      "totalBoughtFormatted": "1.13B",
-      "totalValueFormatted": "4.06B",
-      "buyers": [
-        "Bridgewater Associates, LP",
-        "ARK Investment Management LLC",
-        "ARK Investment Management LLC",
-        "ARK Investment Management LLC",
-        "ARK Investment Management LLC"
-      ]
-    },
-    {
-      "ticker": "FIRST",
-      "name": "FIRST HORIZON CORPORATION",
-      "sector": "Unclassified",
-      "buyerCount": 5,
-      "totalBoughtVal": 53843258,
-      "totalBoughtFormatted": "53.84M",
-      "totalValueFormatted": "115.38M",
-      "buyers": [
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP",
-        "Soros Fund Management"
-      ]
-    },
-    {
       "ticker": "GOOGL",
       "name": "ALPHABET INC",
       "sector": "Communication Services",
-      "buyerCount": 4,
-      "totalBoughtVal": 12715829625,
-      "totalBoughtFormatted": "12.72B",
+      "buyerCount": 5,
+      "totalBoughtVal": 13064900568,
+      "totalBoughtFormatted": "13.06B",
       "totalValueFormatted": "32.82B",
       "buyers": [
         "Berkshire Hathaway",
-        "ARK Investment Management LLC",
+        "Himalaya Capital Management LLC",
+        "TCI Fund Management Ltd",
         "Soros Fund Management",
-        "Soros Fund Management"
+        "ARK Investment Management LLC"
+      ]
+    },
+    {
+      "ticker": "GOOG",
+      "name": "ALPHABET INC",
+      "sector": "Communication Services",
+      "buyerCount": 4,
+      "totalBoughtVal": 9874774492,
+      "totalBoughtFormatted": "9.87B",
+      "totalValueFormatted": "15.07B",
+      "buyers": [
+        "Berkshire Hathaway",
+        "TCI Fund Management Ltd",
+        "Himalaya Capital Management LLC",
+        "ARK Investment Management LLC"
+      ]
+    },
+    {
+      "ticker": "INTC",
+      "name": "INTEL CORP",
+      "sector": "Information Technology",
+      "buyerCount": 4,
+      "totalBoughtVal": 8844318088,
+      "totalBoughtFormatted": "8.84B",
+      "totalValueFormatted": "12.75B",
+      "buyers": [
+        "SoftBank Group Corp",
+        "Tiger Global Management LLC",
+        "Soros Fund Management",
+        "Bridgewater Associates, LP"
+      ]
+    },
+    {
+      "ticker": "AAPL",
+      "name": "APPLE INC",
+      "sector": "Information Technology",
+      "buyerCount": 4,
+      "totalBoughtVal": 8632343321,
+      "totalBoughtFormatted": "8.63B",
+      "totalValueFormatted": "74.08B",
+      "buyers": [
+        "Berkshire Hathaway",
+        "H&H International Investment, LLC",
+        "Soros Fund Management",
+        "Himalaya Capital Management LLC"
       ]
     },
     {
@@ -91,111 +67,92 @@
       "name": "VISA INC",
       "sector": "Financials",
       "buyerCount": 4,
-      "totalBoughtVal": 2670000623,
+      "totalBoughtVal": 2669545768,
       "totalBoughtFormatted": "2.67B",
       "totalValueFormatted": "11.89B",
       "buyers": [
         "TCI Fund Management Ltd",
-        "Tiger Global Management LLC",
-        "Bridgewater Associates, LP",
-        "Pershing Square Capital Management, L.P."
-      ]
-    },
-    {
-      "ticker": "S",
-      "name": "S&P GLOBAL INC",
-      "sector": "Financials",
-      "buyerCount": 4,
-      "totalBoughtVal": 880147686,
-      "totalBoughtFormatted": "880.15M",
-      "totalValueFormatted": "6.87B",
-      "buyers": [
-        "TCI Fund Management Ltd",
-        "Bridgewater Associates, LP",
         "Pershing Square Capital Management, L.P.",
-        "Soros Fund Management"
+        "Tiger Global Management LLC",
+        "Bridgewater Associates, LP"
       ]
     },
     {
-      "ticker": "INTEL",
-      "name": "INTEL CORP",
+      "ticker": "AMD",
+      "name": "ADVANCED MICRO DEVICES INC",
       "sector": "Information Technology",
       "buyerCount": 4,
-      "totalBoughtVal": 639498267,
-      "totalBoughtFormatted": "639.50M",
-      "totalValueFormatted": "13.04B",
+      "totalBoughtVal": 731122315,
+      "totalBoughtFormatted": "731.12M",
+      "totalValueFormatted": "1.57B",
       "buyers": [
+        "ARK Investment Management LLC",
         "Tiger Global Management LLC",
         "Bridgewater Associates, LP",
-        "ARK Investment Management LLC",
         "Soros Fund Management"
       ]
     },
     {
-      "ticker": "SOUTH",
-      "name": "SOUTHWEST AIRLS CO",
-      "sector": "Industrials",
-      "buyerCount": 4,
-      "totalBoughtVal": 93433009,
-      "totalBoughtFormatted": "93.43M",
-      "totalValueFormatted": "1.37B",
-      "buyers": [
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP",
-        "Soros Fund Management",
-        "Soros Fund Management"
-      ]
-    },
-    {
-      "ticker": "HONEY",
-      "name": "Honeywell International Inc",
+      "ticker": "ETF-464288",
+      "name": "ISHARES TR",
       "sector": "Unclassified",
       "buyerCount": 4,
-      "totalBoughtVal": 85338098,
-      "totalBoughtFormatted": "85.34M",
-      "totalValueFormatted": "85.34M",
+      "totalBoughtVal": 689102618,
+      "totalBoughtFormatted": "689.10M",
+      "totalValueFormatted": "843.86M",
       "buyers": [
-        "ARK Investment Management LLC",
-        "ARK Investment Management LLC",
+        "Elliott Investment Management, L.P.",
+        "Bridgewater Associates, LP",
         "Soros Fund Management",
-        "Soros Fund Management"
-      ]
-    }
-  ],
-  "topConsensusTrims": [
-    {
-      "ticker": "GE",
-      "name": "GE AEROSPACE",
-      "sector": "Industrials",
-      "sellerCount": 6,
-      "totalSoldVal": 4574482897,
-      "totalSoldFormatted": "4.57B",
-      "totalValueFormatted": "18.85B",
-      "sellers": [
-        "TCI Fund Management Ltd",
-        "Tiger Global Management LLC",
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP",
         "ARK Investment Management LLC"
       ]
     },
     {
-      "ticker": "TAIWA",
-      "name": "TAIWAN SEMICONDUCTOR MANUFAC",
+      "ticker": "SNOWF",
+      "name": "SNOWFLAKE INC",
       "sector": "Unclassified",
-      "sellerCount": 5,
-      "totalSoldVal": 1244318713,
-      "totalSoldFormatted": "1.24B",
-      "totalValueFormatted": "3.18B",
-      "sellers": [
-        "Tiger Global Management LLC",
-        "Bridgewater Associates, LP",
-        "SoftBank Group Corp",
+      "buyerCount": 4,
+      "totalBoughtVal": 97906558,
+      "totalBoughtFormatted": "97.91M",
+      "totalValueFormatted": "107.69M",
+      "buyers": [
         "ARK Investment Management LLC",
-        "Soros Fund Management"
+        "Soros Fund Management",
+        "H&H International Investment, LLC",
+        "Bridgewater Associates, LP"
       ]
     },
+    {
+      "ticker": "DASH",
+      "name": "DOORDASH INC",
+      "sector": "Consumer Discretionary",
+      "buyerCount": 4,
+      "totalBoughtVal": 39889913,
+      "totalBoughtFormatted": "39.89M",
+      "totalValueFormatted": "125.29M",
+      "buyers": [
+        "ARK Investment Management LLC",
+        "Soros Fund Management",
+        "Tiger Global Management LLC",
+        "Bridgewater Associates, LP"
+      ]
+    },
+    {
+      "ticker": "GE",
+      "name": "GE AEROSPACE",
+      "sector": "Industrials",
+      "buyerCount": 3,
+      "totalBoughtVal": 4247345937,
+      "totalBoughtFormatted": "4.25B",
+      "totalValueFormatted": "17.76B",
+      "buyers": [
+        "TCI Fund Management Ltd",
+        "Bridgewater Associates, LP",
+        "ARK Investment Management LLC"
+      ]
+    }
+  ],
+  "topConsensusTrims": [
     {
       "ticker": "MSFT",
       "name": "MICROSOFT CORP",
@@ -206,215 +163,148 @@
       "totalValueFormatted": "3.78B",
       "sellers": [
         "Tiger Global Management LLC",
-        "Bridgewater Associates, LP",
         "H&H International Investment, LLC",
-        "ARK Investment Management LLC",
-        "Soros Fund Management"
-      ]
-    },
-    {
-      "ticker": "ADVAN",
-      "name": "ADVANCED MICRO DEVICES INC",
-      "sector": "Information Technology",
-      "sellerCount": 4,
-      "totalSoldVal": 327255619,
-      "totalSoldFormatted": "327.26M",
-      "totalValueFormatted": "1.61B",
-      "sellers": [
         "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP",
+        "Soros Fund Management",
         "ARK Investment Management LLC"
       ]
     },
     {
-      "ticker": "ISHAR",
-      "name": "ISHARES TR",
+      "ticker": "SYMBO",
+      "name": "SYMBOTIC INC",
       "sector": "Unclassified",
-      "sellerCount": 4,
-      "totalSoldVal": 133300114,
-      "totalSoldFormatted": "133.30M",
-      "totalValueFormatted": "5.25B",
+      "sellerCount": 3,
+      "totalSoldVal": 335505252,
+      "totalSoldFormatted": "335.51M",
+      "totalValueFormatted": "1.83B",
       "sellers": [
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP",
-        "Elliott Investment Management, L.P."
-      ]
-    },
-    {
-      "ticker": "INTER",
-      "name": "INTERNATIONAL BANCSHARES COR",
-      "sector": "Unclassified",
-      "sellerCount": 4,
-      "totalSoldVal": 32419440,
-      "totalSoldFormatted": "32.42M",
-      "totalValueFormatted": "364.18M",
-      "sellers": [
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP",
-        "Soros Fund Management"
-      ]
-    },
-    {
-      "ticker": "FIRST",
-      "name": "FIRST HORIZON CORPORATION",
-      "sector": "Unclassified",
-      "sellerCount": 4,
-      "totalSoldVal": 10047129,
-      "totalSoldFormatted": "10.05M",
-      "totalValueFormatted": "115.38M",
-      "sellers": [
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP",
+        "SoftBank Group Corp",
+        "ARK Investment Management LLC",
         "Bridgewater Associates, LP"
       ]
     },
     {
-      "ticker": "MATER",
-      "name": "MATERION CORP",
-      "sector": "Unclassified",
-      "sellerCount": 4,
-      "totalSoldVal": 4033398,
-      "totalSoldFormatted": "4.03M",
-      "totalValueFormatted": "4.64M",
+      "ticker": "META",
+      "name": "META PLATFORMS INC",
+      "sector": "Communication Services",
+      "sellerCount": 3,
+      "totalSoldVal": 288213581,
+      "totalSoldFormatted": "288.21M",
+      "totalValueFormatted": "3.60B",
       "sellers": [
+        "Tiger Global Management LLC",
         "Bridgewater Associates, LP",
-        "ARK Investment Management LLC",
-        "ARK Investment Management LLC",
         "Soros Fund Management"
       ]
     },
     {
-      "ticker": "NVDA",
-      "name": "NVIDIA CORPORATION",
-      "sector": "Information Technology",
+      "ticker": "WMT",
+      "name": "WALMART INC",
+      "sector": "Consumer Staples",
       "sellerCount": 3,
-      "totalSoldVal": 1348439805,
-      "totalSoldFormatted": "1.35B",
-      "totalValueFormatted": "4.84B",
+      "totalSoldVal": 95146187,
+      "totalSoldFormatted": "95.15M",
+      "totalValueFormatted": "986.76M",
       "sellers": [
-        "Tiger Global Management LLC",
+        "Gates Foundation Trust",
         "Bridgewater Associates, LP",
-        "H&H International Investment, LLC"
+        "Soros Fund Management"
       ]
     },
     {
-      "ticker": "AMZN",
-      "name": "AMAZON COM INC",
+      "ticker": "PONY",
+      "name": "PONY AI INC",
+      "sector": "Unclassified",
+      "sellerCount": 3,
+      "totalSoldVal": 59175763,
+      "totalSoldFormatted": "59.18M",
+      "totalValueFormatted": "19.64M",
+      "sellers": [
+        "ARK Investment Management LLC",
+        "Tiger Global Management LLC",
+        "Soros Fund Management"
+      ]
+    },
+    {
+      "ticker": "WIX",
+      "name": "WIX COM LTD",
+      "sector": "Unclassified",
+      "sellerCount": 3,
+      "totalSoldVal": 51669977,
+      "totalSoldFormatted": "51.67M",
+      "totalValueFormatted": "3.36M",
+      "sellers": [
+        "Soros Fund Management",
+        "ARK Investment Management LLC",
+        "Bridgewater Associates, LP"
+      ]
+    },
+    {
+      "ticker": "COUPA",
+      "name": "COUPANG INC",
+      "sector": "Unclassified",
+      "sellerCount": 3,
+      "totalSoldVal": 34602443,
+      "totalSoldFormatted": "34.60M",
+      "totalValueFormatted": "798.03M",
+      "sellers": [
+        "Tiger Global Management LLC",
+        "Gates Foundation Trust",
+        "Soros Fund Management"
+      ]
+    },
+    {
+      "ticker": "NU",
+      "name": "NU HLDGS LTD",
+      "sector": "Unclassified",
+      "sellerCount": 3,
+      "totalSoldVal": 31671817,
+      "totalSoldFormatted": "31.67M",
+      "totalValueFormatted": "400.08M",
+      "sellers": [
+        "SoftBank Group Corp",
+        "Tiger Global Management LLC",
+        "ARK Investment Management LLC"
+      ]
+    },
+    {
+      "ticker": "KODIA",
+      "name": "KODIAK GAS SVCS INC",
+      "sector": "Unclassified",
+      "sellerCount": 3,
+      "totalSoldVal": 21111215,
+      "totalSoldFormatted": "21.11M",
+      "totalValueFormatted": "82.03M",
+      "sellers": [
+        "Soros Fund Management",
+        "ARK Investment Management LLC",
+        "Bridgewater Associates, LP"
+      ]
+    },
+    {
+      "ticker": "MCD",
+      "name": "MCDONALDS CORP",
       "sector": "Consumer Discretionary",
       "sellerCount": 3,
-      "totalSoldVal": 779968425,
-      "totalSoldFormatted": "779.97M",
-      "totalValueFormatted": "5.49B",
+      "totalSoldVal": 19001007,
+      "totalSoldFormatted": "19.00M",
+      "totalValueFormatted": "139.24M",
       "sellers": [
-        "Tiger Global Management LLC",
-        "Bridgewater Associates, LP",
-        "Soros Fund Management"
+        "Gates Foundation Trust",
+        "Soros Fund Management",
+        "Bridgewater Associates, LP"
       ]
     }
   ],
   "topConsensusHoldings": [
     {
-      "ticker": "ISHAR",
-      "name": "ISHARES TR",
-      "sector": "Unclassified",
-      "holdingCount": 17,
-      "totalValueFormatted": "5.25B",
-      "totalValue": 5247927080,
-      "avgWeight": "1.34%",
-      "holders": [
-        "Bridgewater Associates, LP",
-        "Elliott Investment Management, L.P.",
-        "Elliott Investment Management, L.P.",
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP",
-        "Elliott Investment Management, L.P.",
-        "Soros Fund Management",
-        "Soros Fund Management",
-        "Bridgewater Associates, LP",
-        "Soros Fund Management",
-        "Bridgewater Associates, LP",
-        "ARK Investment Management LLC",
-        "ARK Investment Management LLC",
-        "ARK Investment Management LLC"
-      ]
-    },
-    {
-      "ticker": "AMERI",
-      "name": "AMERICAN INTL GROUP INC",
-      "sector": "Financials",
-      "holdingCount": 10,
-      "totalValueFormatted": "220.20M",
-      "totalValue": 220198640,
-      "avgWeight": "0.20%",
-      "holders": [
-        "Soros Fund Management",
-        "Soros Fund Management",
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP",
-        "Soros Fund Management",
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP"
-      ]
-    },
-    {
-      "ticker": "FIRST",
-      "name": "FIRST HORIZON CORPORATION",
-      "sector": "Unclassified",
-      "holdingCount": 10,
-      "totalValueFormatted": "115.38M",
-      "totalValue": 115382580,
-      "avgWeight": "0.07%",
-      "holders": [
-        "Bridgewater Associates, LP",
-        "Soros Fund Management",
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP",
-        "Soros Fund Management",
-        "Bridgewater Associates, LP"
-      ]
-    },
-    {
-      "ticker": "INTER",
-      "name": "INTERNATIONAL BANCSHARES COR",
-      "sector": "Unclassified",
-      "holdingCount": 9,
-      "totalValueFormatted": "364.18M",
-      "totalValue": 364183465,
-      "avgWeight": "0.23%",
-      "holders": [
-        "SoftBank Group Corp",
-        "Soros Fund Management",
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP"
-      ]
-    },
-    {
       "ticker": "GOOGL",
       "name": "ALPHABET INC",
       "sector": "Communication Services",
-      "holdingCount": 8,
+      "holdingCount": 7,
       "totalValueFormatted": "32.82B",
       "totalValue": 32815182172,
-      "avgWeight": "6.24%",
+      "avgWeight": "7.13%",
       "holders": [
         "Berkshire Hathaway",
         "Tiger Global Management LLC",
@@ -422,80 +312,7 @@
         "TCI Fund Management Ltd",
         "Bridgewater Associates, LP",
         "Soros Fund Management",
-        "Soros Fund Management",
         "ARK Investment Management LLC"
-      ]
-    },
-    {
-      "ticker": "STATE",
-      "name": "STATE STR SPDR S&P 500 ETF T",
-      "sector": "Unclassified",
-      "holdingCount": 8,
-      "totalValueFormatted": "4.06B",
-      "totalValue": 4064659445,
-      "avgWeight": "2.16%",
-      "holders": [
-        "Bridgewater Associates, LP",
-        "Soros Fund Management",
-        "Bridgewater Associates, LP",
-        "ARK Investment Management LLC",
-        "ARK Investment Management LLC",
-        "ARK Investment Management LLC",
-        "ARK Investment Management LLC",
-        "ARK Investment Management LLC"
-      ]
-    },
-    {
-      "ticker": "ADVAN",
-      "name": "ADVANCED MICRO DEVICES INC",
-      "sector": "Information Technology",
-      "holdingCount": 7,
-      "totalValueFormatted": "1.61B",
-      "totalValue": 1607620850,
-      "avgWeight": "1.31%",
-      "holders": [
-        "ARK Investment Management LLC",
-        "Tiger Global Management LLC",
-        "Bridgewater Associates, LP",
-        "Soros Fund Management",
-        "Soros Fund Management",
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP"
-      ]
-    },
-    {
-      "ticker": "GLOBA",
-      "name": "GLOBAL X FDS",
-      "sector": "Unclassified",
-      "holdingCount": 7,
-      "totalValueFormatted": "317.16M",
-      "totalValue": 317156772,
-      "avgWeight": "0.49%",
-      "holders": [
-        "Soros Fund Management",
-        "Soros Fund Management",
-        "SoftBank Group Corp",
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP"
-      ]
-    },
-    {
-      "ticker": "GE",
-      "name": "GE AEROSPACE",
-      "sector": "Industrials",
-      "holdingCount": 6,
-      "totalValueFormatted": "18.85B",
-      "totalValue": 18846859287,
-      "avgWeight": "6.38%",
-      "holders": [
-        "TCI Fund Management Ltd",
-        "Tiger Global Management LLC",
-        "Bridgewater Associates, LP",
-        "Bridgewater Associates, LP",
-        "ARK Investment Management LLC",
-        "Bridgewater Associates, LP"
       ]
     },
     {
@@ -514,19 +331,146 @@
         "ARK Investment Management LLC",
         "Bridgewater Associates, LP"
       ]
+    },
+    {
+      "ticker": "MSFT",
+      "name": "MICROSOFT CORP",
+      "sector": "Information Technology",
+      "holdingCount": 6,
+      "totalValueFormatted": "3.78B",
+      "totalValue": 3780851267,
+      "avgWeight": "3.14%",
+      "holders": [
+        "Pershing Square Capital Management, L.P.",
+        "Tiger Global Management LLC",
+        "H&H International Investment, LLC",
+        "Bridgewater Associates, LP",
+        "Soros Fund Management",
+        "ARK Investment Management LLC"
+      ]
+    },
+    {
+      "ticker": "AAPL",
+      "name": "APPLE INC",
+      "sector": "Information Technology",
+      "holdingCount": 5,
+      "totalValueFormatted": "74.08B",
+      "totalValue": 74082245242,
+      "avgWeight": "13.25%",
+      "holders": [
+        "Berkshire Hathaway",
+        "H&H International Investment, LLC",
+        "Soros Fund Management",
+        "Bridgewater Associates, LP",
+        "Himalaya Capital Management LLC"
+      ]
+    },
+    {
+      "ticker": "AMZN",
+      "name": "AMAZON COM INC",
+      "sector": "Consumer Discretionary",
+      "holdingCount": 5,
+      "totalValueFormatted": "5.49B",
+      "totalValue": 5492927128,
+      "avgWeight": "5.60%",
+      "holders": [
+        "Tiger Global Management LLC",
+        "Pershing Square Capital Management, L.P.",
+        "Bridgewater Associates, LP",
+        "ARK Investment Management LLC",
+        "Soros Fund Management"
+      ]
+    },
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA CORPORATION",
+      "sector": "Information Technology",
+      "holdingCount": 5,
+      "totalValueFormatted": "4.84B",
+      "totalValue": 4840482272,
+      "avgWeight": "4.90%",
+      "holders": [
+        "Tiger Global Management LLC",
+        "H&H International Investment, LLC",
+        "Bridgewater Associates, LP",
+        "Soros Fund Management",
+        "ARK Investment Management LLC"
+      ]
+    },
+    {
+      "ticker": "META",
+      "name": "META PLATFORMS INC",
+      "sector": "Communication Services",
+      "holdingCount": 5,
+      "totalValueFormatted": "3.60B",
+      "totalValue": 3599464592,
+      "avgWeight": "3.43%",
+      "holders": [
+        "Pershing Square Capital Management, L.P.",
+        "Tiger Global Management LLC",
+        "ARK Investment Management LLC",
+        "Bridgewater Associates, LP",
+        "Soros Fund Management"
+      ]
+    },
+    {
+      "ticker": "TAIWA",
+      "name": "TAIWAN SEMICONDUCTOR MANUFAC",
+      "sector": "Unclassified",
+      "holdingCount": 5,
+      "totalValueFormatted": "3.18B",
+      "totalValue": 3178217366,
+      "avgWeight": "3.37%",
+      "holders": [
+        "Tiger Global Management LLC",
+        "Soros Fund Management",
+        "SoftBank Group Corp",
+        "ARK Investment Management LLC",
+        "Bridgewater Associates, LP"
+      ]
+    },
+    {
+      "ticker": "INTC",
+      "name": "INTEL CORP",
+      "sector": "Information Technology",
+      "holdingCount": 4,
+      "totalValueFormatted": "12.75B",
+      "totalValue": 12754025235,
+      "avgWeight": "17.37%",
+      "holders": [
+        "SoftBank Group Corp",
+        "Tiger Global Management LLC",
+        "Soros Fund Management",
+        "Bridgewater Associates, LP"
+      ]
+    },
+    {
+      "ticker": "BRK-B",
+      "name": "BERKSHIRE HATHAWAY INC DEL",
+      "sector": "Financials",
+      "holdingCount": 4,
+      "totalValueFormatted": "12.59B",
+      "totalValue": 12590380342,
+      "avgWeight": "15.33%",
+      "holders": [
+        "Gates Foundation Trust",
+        "H&H International Investment, LLC",
+        "Himalaya Capital Management LLC",
+        "Soros Fund Management"
+      ]
     }
   ],
   "highestConvictionBets": [
     {
-      "ticker": "INTEL",
+      "ticker": "INTC",
       "name": "INTEL CORP",
       "sector": "Information Technology",
       "institution": "SoftBank Group Corp",
       "manager": "Masayoshi Son",
       "weight": "66.81%",
       "rawWeight": 66.81,
-      "mktValue": "12.14",
-      "action": "Hold"
+      "mktValue": "12.14B",
+      "action": "Add"
     },
     {
       "ticker": "AAPL",
@@ -536,8 +480,8 @@
       "manager": "Duan Yongping",
       "weight": "41.05%",
       "rawWeight": 41.05,
-      "mktValue": "7.84",
-      "action": "Trim"
+      "mktValue": "7.84B",
+      "action": "Add"
     },
     {
       "ticker": "GE",
@@ -547,8 +491,8 @@
       "manager": "Chris Hohn",
       "weight": "33.59%",
       "rawWeight": 33.59,
-      "mktValue": "17.73",
-      "action": "Trim"
+      "mktValue": "17.73B",
+      "action": "Add"
     },
     {
       "ticker": "GOOGL",
@@ -558,8 +502,8 @@
       "manager": "Li Lu",
       "weight": "24.55%",
       "rawWeight": 24.55,
-      "mktValue": "0.91",
-      "action": "Hold"
+      "mktValue": "0.91B",
+      "action": "Add"
     },
     {
       "ticker": "BRK-B",
@@ -569,7 +513,7 @@
       "manager": "Duan Yongping",
       "weight": "24.18%",
       "rawWeight": 24.18,
-      "mktValue": "4.62",
+      "mktValue": "4.62B",
       "action": "Add"
     },
     {
@@ -580,8 +524,8 @@
       "manager": "Li Lu",
       "weight": "23.39%",
       "rawWeight": 23.39,
-      "mktValue": "0.87",
-      "action": "Hold"
+      "mktValue": "0.87B",
+      "action": "Add"
     },
     {
       "ticker": "PDD",
@@ -591,7 +535,7 @@
       "manager": "Li Lu",
       "weight": "22.17%",
       "rawWeight": 22.17,
-      "mktValue": "0.82",
+      "mktValue": "0.82B",
       "action": "Add"
     },
     {
@@ -602,8 +546,8 @@
       "manager": "Warren Buffett",
       "weight": "22.04%",
       "rawWeight": 22.04,
-      "mktValue": "65.95",
-      "action": "Hold"
+      "mktValue": "65.95B",
+      "action": "Add"
     },
     {
       "ticker": "BRK-B",
@@ -613,7 +557,7 @@
       "manager": "Bill Gates",
       "weight": "21.35%",
       "rawWeight": 21.35,
-      "mktValue": "7.35",
+      "mktValue": "7.35B",
       "action": "Trim"
     },
     {
@@ -624,19 +568,19 @@
       "manager": "Chris Hohn",
       "weight": "19.83%",
       "rawWeight": 19.83,
-      "mktValue": "10.46",
+      "mktValue": "10.46B",
       "action": "Add"
     },
     {
-      "ticker": "CATER",
+      "ticker": "CAT",
       "name": "CATERPILLAR INC",
       "sector": "Industrials",
       "institution": "Gates Foundation Trust",
       "manager": "Bill Gates",
       "weight": "19.65%",
       "rawWeight": 19.65,
-      "mktValue": "6.77",
-      "action": "Hold"
+      "mktValue": "6.77B",
+      "action": "Add"
     },
     {
       "ticker": "CNI",
@@ -646,8 +590,8 @@
       "manager": "Bill Gates",
       "weight": "17.95%",
       "rawWeight": 17.95,
-      "mktValue": "6.18",
-      "action": "Hold"
+      "mktValue": "6.18B",
+      "action": "Add"
     }
   ]
 }

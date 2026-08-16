@@ -154,23 +154,23 @@
   "assetTrend": [
     {
       "year": "2024 Q4",
-      "value": "19.6"
+      "value": "23.0"
     },
     {
       "year": "2025 Q1",
-      "value": "21.8"
+      "value": "21.3"
     },
     {
       "year": "2025 Q2",
-      "value": "19.4"
+      "value": "19.1"
     },
     {
       "year": "2025 Q3",
-      "value": "19.5"
+      "value": "19.4"
     },
     {
       "year": "2025 Q4",
-      "value": "18.3"
+      "value": "18.2"
     },
     {
       "year": "2026 Q1",
@@ -179,7 +179,7 @@
     },
     {
       "year": "2026 Q2",
-      "value": "20.7"
+      "value": "21.4"
     }
   ],
   "sectorHistory": [
@@ -539,8 +539,8 @@
     },
     {
       "cusip": "254687106",
-      "ticker": "DISNE",
-      "security": "DISNEY WALT CO (DISNE)",
+      "ticker": "DIS",
+      "security": "DISNEY WALT CO (DIS)",
       "name": "DISNEY WALT CO",
       "sector": "Communication Services",
       "weight": 0.73,
@@ -644,8 +644,8 @@
     },
     {
       "cusip": "871607107",
-      "ticker": "SYNOP",
-      "security": "SYNOPSYS INC (SYNOP)",
+      "ticker": "SNPS",
+      "security": "SYNOPSYS INC (SNPS)",
       "name": "SYNOPSYS INC",
       "sector": "Information Technology",
       "weight": 0.02,
@@ -665,8 +665,8 @@
     },
     {
       "cusip": "22788C105",
-      "ticker": "CROWD",
-      "security": "CROWDSTRIKE HLDGS INC (CROWD)",
+      "ticker": "CRWD",
+      "security": "CROWDSTRIKE HLDGS INC (CRWD)",
       "name": "CROWDSTRIKE HLDGS INC",
       "sector": "Information Technology",
       "weight": 0.02,
@@ -940,8 +940,8 @@
     },
     {
       "cusip": "254687106",
-      "ticker": "DISNE",
-      "security": "DISNEY WALT CO (DISNE)",
+      "ticker": "DIS",
+      "security": "DISNEY WALT CO (DIS)",
       "name": "DISNEY WALT CO",
       "sector": "Communication Services",
       "weight": 0.73,
@@ -1045,8 +1045,8 @@
     },
     {
       "cusip": "871607107",
-      "ticker": "SYNOP",
-      "security": "SYNOPSYS INC (SYNOP)",
+      "ticker": "SNPS",
+      "security": "SYNOPSYS INC (SNPS)",
       "name": "SYNOPSYS INC",
       "sector": "Information Technology",
       "weight": 0.02,
@@ -1066,8 +1066,8 @@
     },
     {
       "cusip": "22788C105",
-      "ticker": "CROWD",
-      "security": "CROWDSTRIKE HLDGS INC (CROWD)",
+      "ticker": "CRWD",
+      "security": "CROWDSTRIKE HLDGS INC (CRWD)",
       "name": "CROWDSTRIKE HLDGS INC",
       "sector": "Information Technology",
       "weight": 0.02,
@@ -1205,7 +1205,7 @@
       "type": "New"
     },
     {
-      "ticker": "DISNE",
+      "ticker": "DIS",
       "security": "DISNEY WALT CO",
       "rawDelta": 64703044,
       "deltaValue": "+$64.70M",

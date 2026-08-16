@@ -154,27 +154,27 @@
   "assetTrend": [
     {
       "year": "2024 Q4",
-      "value": "17.6"
+      "value": "20.1"
     },
     {
       "year": "2025 Q1",
-      "value": "16.4"
+      "value": "20.4"
     },
     {
       "year": "2025 Q2",
-      "value": "16.3"
+      "value": "18.7"
     },
     {
       "year": "2025 Q3",
-      "value": "19.1"
+      "value": "17.7"
     },
     {
       "year": "2025 Q4",
-      "value": "19.5"
+      "value": "21.2"
     },
     {
       "year": "2026 Q1",
-      "value": "21.1"
+      "value": "16.2"
     },
     {
       "year": "2026 Q2",
@@ -267,7 +267,7 @@
           "name": "TAIWA (Exit)"
         },
         {
-          "name": "CROWD (Exit)"
+          "name": "CRWD (Exit)"
         },
         {
           "name": "Capital Liquidity Pool"
@@ -279,7 +279,7 @@
           "name": "ALIBA (New)"
         },
         {
-          "name": "DISNE (Add)"
+          "name": "DIS (Add)"
         },
         {
           "name": "PDD (Add)"
@@ -552,8 +552,8 @@
     },
     {
       "cusip": "254687106",
-      "ticker": "DISNE",
-      "security": "DISNEY WALT CO (DISNE)",
+      "ticker": "DIS",
+      "security": "DISNEY WALT CO (DIS)",
       "name": "DISNEY WALT CO",
       "sector": "Communication Services",
       "weight": 0.86,
@@ -636,8 +636,8 @@
     },
     {
       "cusip": "871607107",
-      "ticker": "SYNOP",
-      "security": "SYNOPSYS INC (SYNOP)",
+      "ticker": "SNPS",
+      "security": "SYNOPSYS INC (SNPS)",
       "name": "SYNOPSYS INC",
       "sector": "Information Technology",
       "weight": 0.02,
@@ -932,8 +932,8 @@
     },
     {
       "cusip": "254687106",
-      "ticker": "DISNE",
-      "security": "DISNEY WALT CO (DISNE)",
+      "ticker": "DIS",
+      "security": "DISNEY WALT CO (DIS)",
       "name": "DISNEY WALT CO",
       "sector": "Communication Services",
       "weight": 0.86,
@@ -1016,8 +1016,8 @@
     },
     {
       "cusip": "871607107",
-      "ticker": "SYNOP",
-      "security": "SYNOPSYS INC (SYNOP)",
+      "ticker": "SNPS",
+      "security": "SYNOPSYS INC (SNPS)",
       "name": "SYNOPSYS INC",
       "sector": "Information Technology",
       "weight": 0.02,
@@ -1119,7 +1119,7 @@
       "type": "New"
     },
     {
-      "ticker": "DISNE",
+      "ticker": "DIS",
       "security": "DISNEY WALT CO",
       "rawDelta": 18552966,
       "deltaValue": "+$18.55M",
@@ -1175,7 +1175,7 @@
       "type": "Exit"
     },
     {
-      "ticker": "CROWD",
+      "ticker": "CRWD",
       "security": "CROWDSTRIKE HLDGS INC",
       "rawDelta": -3904100,
       "deltaValue": "-$3.90M",

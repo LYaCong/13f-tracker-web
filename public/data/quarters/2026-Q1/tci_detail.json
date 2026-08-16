@@ -154,27 +154,27 @@
   "assetTrend": [
     {
       "year": "2024 Q3",
-      "value": "49.3"
+      "value": "45.1"
     },
     {
       "year": "2024 Q4",
-      "value": "43.1"
+      "value": "43.2"
     },
     {
       "year": "2025 Q1",
-      "value": "42.6"
+      "value": "40.5"
     },
     {
       "year": "2025 Q2",
-      "value": "51.7"
+      "value": "48.2"
     },
     {
       "year": "2025 Q3",
-      "value": "49.9"
+      "value": "45.1"
     },
     {
       "year": "2025 Q4",
-      "value": "46.2"
+      "value": "41.1"
     },
     {
       "year": "2026 Q1",
@@ -183,7 +183,7 @@
     },
     {
       "year": "2026 Q2",
-      "value": "43.8"
+      "value": "50.6"
     }
   ],
   "sectorHistory": [
@@ -274,7 +274,7 @@
           "name": "GOOG (Add)"
         },
         {
-          "name": "S (Add)"
+          "name": "SPGI (Add)"
         },
         {
           "name": "V (Add)"
@@ -393,8 +393,8 @@
     },
     {
       "cusip": "78409V104",
-      "ticker": "S",
-      "security": "S&P GLOBAL INC (S)",
+      "ticker": "SPGI",
+      "security": "S&P GLOBAL INC (SPGI)",
       "name": "S&P GLOBAL INC",
       "sector": "Financials",
       "weight": 13.22,
@@ -605,8 +605,8 @@
     },
     {
       "cusip": "78409V104",
-      "ticker": "S",
-      "security": "S&P GLOBAL INC (S)",
+      "ticker": "SPGI",
+      "security": "S&P GLOBAL INC (SPGI)",
       "name": "S&P GLOBAL INC",
       "sector": "Financials",
       "weight": 13.22,
@@ -771,7 +771,7 @@
       "type": "Add"
     },
     {
-      "ticker": "S",
+      "ticker": "SPGI",
       "security": "S&P GLOBAL INC",
       "rawDelta": -191719348,
       "deltaValue": "+$191.72M",

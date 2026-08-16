@@ -154,23 +154,23 @@
   "assetTrend": [
     {
       "year": "2024 Q3",
-      "value": "9.8"
+      "value": "8.8"
     },
     {
       "year": "2024 Q4",
-      "value": "9.0"
+      "value": "9.9"
     },
     {
       "year": "2025 Q1",
-      "value": "8.4"
+      "value": "9.7"
     },
     {
       "year": "2025 Q2",
-      "value": "8.4"
+      "value": "8.8"
     },
     {
       "year": "2025 Q3",
-      "value": "7.7"
+      "value": "7.6"
     },
     {
       "year": "2025 Q4",
@@ -179,11 +179,11 @@
     },
     {
       "year": "2026 Q1",
-      "value": "9.6"
+      "value": "9.7"
     },
     {
       "year": "2026 Q2",
-      "value": "8.7"
+      "value": "7.7"
     }
   ],
   "sectorHistory": [
@@ -259,7 +259,7 @@
     "sankey": {
       "nodes": [
         {
-          "name": "SMURF (Trim)"
+          "name": "SW (Trim)"
         },
         {
           "name": "FORD (Exit)"
@@ -268,7 +268,7 @@
           "name": "INVES (Trim)"
         },
         {
-          "name": "ISHAR (Trim)"
+          "name": "FXI (Trim)"
         },
         {
           "name": "CENTE (Trim)"
@@ -277,13 +277,13 @@
           "name": "Capital Liquidity Pool"
         },
         {
-          "name": "SPDR (New)"
+          "name": "ETF-78468R (New)"
         },
         {
           "name": "JAZZ (New)"
         },
         {
-          "name": "SELEC (New)"
+          "name": "XLE (New)"
         },
         {
           "name": "COREW (New)"
@@ -375,8 +375,8 @@
     },
     {
       "cusip": "78468R556",
-      "ticker": "SPDR",
-      "security": "SPDR SERIES TRUST (SPDR)",
+      "ticker": "ETF-78468R",
+      "security": "SPDR SERIES TRUST (ETF-78468R)",
       "name": "SPDR SERIES TRUST",
       "sector": "Unclassified",
       "weight": 4.81,
@@ -438,8 +438,8 @@
     },
     {
       "cusip": "78462F103",
-      "ticker": "SPDR",
-      "security": "SPDR S&P 500 ETF TR (SPDR)",
+      "ticker": "SPY",
+      "security": "SPDR S&P 500 ETF TR (SPY)",
       "name": "SPDR S&P 500 ETF TR",
       "sector": "Unclassified",
       "weight": 2.3,
@@ -522,8 +522,8 @@
     },
     {
       "cusip": "81369Y506",
-      "ticker": "SELEC",
-      "security": "SELECT SECTOR SPDR TR (SELEC)",
+      "ticker": "XLE",
+      "security": "SELECT SECTOR SPDR TR (XLE)",
       "name": "SELECT SECTOR SPDR TR",
       "sector": "Unclassified",
       "weight": 1.89,
@@ -564,8 +564,8 @@
     },
     {
       "cusip": "79466L302",
-      "ticker": "SALES",
-      "security": "SALESFORCE INC (SALES)",
+      "ticker": "CRM",
+      "security": "SALESFORCE INC (CRM)",
       "name": "SALESFORCE INC",
       "sector": "Information Technology",
       "weight": 1.59,
@@ -858,8 +858,8 @@
     },
     {
       "cusip": "G8267P108",
-      "ticker": "SMURF",
-      "security": "SMURFIT WESTROCK PLC (SMURF)",
+      "ticker": "SW",
+      "security": "SMURFIT WESTROCK PLC (SW)",
       "name": "SMURFIT WESTROCK PLC",
       "sector": "Materials",
       "weight": 1.08,
@@ -902,8 +902,8 @@
     },
     {
       "cusip": "78468R556",
-      "ticker": "SPDR",
-      "security": "SPDR SERIES TRUST (SPDR)",
+      "ticker": "ETF-78468R",
+      "security": "SPDR SERIES TRUST (ETF-78468R)",
       "name": "SPDR SERIES TRUST",
       "sector": "Unclassified",
       "weight": 4.81,
@@ -965,8 +965,8 @@
     },
     {
       "cusip": "78462F103",
-      "ticker": "SPDR",
-      "security": "SPDR S&P 500 ETF TR (SPDR)",
+      "ticker": "SPY",
+      "security": "SPDR S&P 500 ETF TR (SPY)",
       "name": "SPDR S&P 500 ETF TR",
       "sector": "Unclassified",
       "weight": 2.3,
@@ -1049,8 +1049,8 @@
     },
     {
       "cusip": "81369Y506",
-      "ticker": "SELEC",
-      "security": "SELECT SECTOR SPDR TR (SELEC)",
+      "ticker": "XLE",
+      "security": "SELECT SECTOR SPDR TR (XLE)",
       "name": "SELECT SECTOR SPDR TR",
       "sector": "Unclassified",
       "weight": 1.89,
@@ -1091,8 +1091,8 @@
     },
     {
       "cusip": "79466L302",
-      "ticker": "SALES",
-      "security": "SALESFORCE INC (SALES)",
+      "ticker": "CRM",
+      "security": "SALESFORCE INC (CRM)",
       "name": "SALESFORCE INC",
       "sector": "Information Technology",
       "weight": 1.59,
@@ -1385,8 +1385,8 @@
     },
     {
       "cusip": "G8267P108",
-      "ticker": "SMURF",
-      "security": "SMURFIT WESTROCK PLC (SMURF)",
+      "ticker": "SW",
+      "security": "SMURFIT WESTROCK PLC (SW)",
       "name": "SMURFIT WESTROCK PLC",
       "sector": "Materials",
       "weight": 1.08,
@@ -1406,8 +1406,8 @@
     },
     {
       "cusip": "254687106",
-      "ticker": "DISNE",
-      "security": "DISNEY WALT CO (DISNE)",
+      "ticker": "DIS",
+      "security": "DISNEY WALT CO (DIS)",
       "name": "DISNEY WALT CO",
       "sector": "Communication Services",
       "weight": 1.03,
@@ -1448,8 +1448,8 @@
     },
     {
       "cusip": "285512109",
-      "ticker": "ELECT",
-      "security": "ELECTRONIC ARTS INC (ELECT)",
+      "ticker": "EA",
+      "security": "ELECTRONIC ARTS INC (EA)",
       "name": "ELECTRONIC ARTS INC",
       "sector": "Communication Services",
       "weight": 1.01,
@@ -1994,8 +1994,8 @@
     },
     {
       "cusip": "98389B100",
-      "ticker": "XCEL",
-      "security": "XCEL ENERGY INC (XCEL)",
+      "ticker": "XEL",
+      "security": "XCEL ENERGY INC (XEL)",
       "name": "XCEL ENERGY INC",
       "sector": "Utilities",
       "weight": 0.63,
@@ -2015,8 +2015,8 @@
     },
     {
       "cusip": "23804L103",
-      "ticker": "DATAD",
-      "security": "DATADOG INC (DATAD)",
+      "ticker": "DDOG",
+      "security": "DATADOG INC (DDOG)",
       "name": "DATADOG INC",
       "sector": "Information Technology",
       "weight": 0.6,
@@ -2057,8 +2057,8 @@
     },
     {
       "cusip": "45841N107",
-      "ticker": "INTER",
-      "security": "INTERACTIVE BROKERS GROUP IN (INTER)",
+      "ticker": "IBKR",
+      "security": "INTERACTIVE BROKERS GROUP IN (IBKR)",
       "name": "INTERACTIVE BROKERS GROUP IN",
       "sector": "Financials",
       "weight": 0.57,
@@ -2351,8 +2351,8 @@
     },
     {
       "cusip": "11135F101",
-      "ticker": "BROAD",
-      "security": "BROADCOM INC (BROAD)",
+      "ticker": "AVGO",
+      "security": "BROADCOM INC (AVGO)",
       "name": "BROADCOM INC",
       "sector": "Information Technology",
       "weight": 0.41,
@@ -2372,8 +2372,8 @@
     },
     {
       "cusip": "816851109",
-      "ticker": "SEMPR",
-      "security": "SEMPRA (SEMPR)",
+      "ticker": "SRE",
+      "security": "SEMPRA (SRE)",
       "name": "SEMPRA",
       "sector": "Utilities",
       "weight": 0.41,
@@ -2435,8 +2435,8 @@
     },
     {
       "cusip": "G1151C101",
-      "ticker": "ACCEN",
-      "security": "ACCENTURE PLC IRELAND (ACCEN)",
+      "ticker": "ACN",
+      "security": "ACCENTURE PLC IRELAND (ACN)",
       "name": "ACCENTURE PLC IRELAND",
       "sector": "Information Technology",
       "weight": 0.39,
@@ -2477,8 +2477,8 @@
     },
     {
       "cusip": "25809K105",
-      "ticker": "DOORD",
-      "security": "DOORDASH INC (DOORD)",
+      "ticker": "DASH",
+      "security": "DOORDASH INC (DASH)",
       "name": "DOORDASH INC",
       "sector": "Consumer Discretionary",
       "weight": 0.37,
@@ -2582,8 +2582,8 @@
     },
     {
       "cusip": "46284V101",
-      "ticker": "IRON",
-      "security": "IRON MTN INC DEL (IRON)",
+      "ticker": "IRM",
+      "security": "IRON MTN INC DEL (IRM)",
       "name": "IRON MTN INC DEL",
       "sector": "Real Estate",
       "weight": 0.31,
@@ -2603,8 +2603,8 @@
     },
     {
       "cusip": "30161N101",
-      "ticker": "EXELO",
-      "security": "EXELON CORP (EXELO)",
+      "ticker": "EXC",
+      "security": "EXELON CORP (EXC)",
       "name": "EXELON CORP",
       "sector": "Utilities",
       "weight": 0.31,
@@ -2624,8 +2624,8 @@
     },
     {
       "cusip": "464288414",
-      "ticker": "ISHAR",
-      "security": "ISHARES TR (ISHAR)",
+      "ticker": "ETF-464288",
+      "security": "ISHARES TR (ETF-464288)",
       "name": "ISHARES TR",
       "sector": "Unclassified",
       "weight": 0.3,
@@ -2645,8 +2645,8 @@
     },
     {
       "cusip": "46434G764",
-      "ticker": "ISHAR",
-      "security": "ISHARES INC (ISHAR)",
+      "ticker": "ETF-46434G",
+      "security": "ISHARES INC (ETF-46434G)",
       "name": "ISHARES INC",
       "sector": "Unclassified",
       "weight": 0.3,
@@ -2750,8 +2750,8 @@
     },
     {
       "cusip": "532457108",
-      "ticker": "ELI",
-      "security": "ELI LILLY & CO (ELI)",
+      "ticker": "LLY",
+      "security": "ELI LILLY & CO (LLY)",
       "name": "ELI LILLY & CO",
       "sector": "Health Care",
       "weight": 0.28,
@@ -2813,8 +2813,8 @@
     },
     {
       "cusip": "49177J102",
-      "ticker": "KENVU",
-      "security": "KENVUE INC (KENVU)",
+      "ticker": "KVUE",
+      "security": "KENVUE INC (KVUE)",
       "name": "KENVUE INC",
       "sector": "Consumer Staples",
       "weight": 0.25,
@@ -2834,8 +2834,8 @@
     },
     {
       "cusip": "78464A888",
-      "ticker": "SPDR",
-      "security": "SPDR SERIES TRUST (SPDR)",
+      "ticker": "ETF-78464A",
+      "security": "SPDR SERIES TRUST (ETF-78464A)",
       "name": "SPDR SERIES TRUST",
       "sector": "Unclassified",
       "weight": 0.24,
@@ -2855,8 +2855,8 @@
     },
     {
       "cusip": "37959E102",
-      "ticker": "GLOBE",
-      "security": "GLOBE LIFE INC (GLOBE)",
+      "ticker": "GL",
+      "security": "GLOBE LIFE INC (GL)",
       "name": "GLOBE LIFE INC",
       "sector": "Financials",
       "weight": 0.24,
@@ -3023,8 +3023,8 @@
     },
     {
       "cusip": "98978V103",
-      "ticker": "ZOETI",
-      "security": "ZOETIS INC (ZOETI)",
+      "ticker": "ZTS",
+      "security": "ZOETIS INC (ZTS)",
       "name": "ZOETIS INC",
       "sector": "Health Care",
       "weight": 0.22,
@@ -3065,8 +3065,8 @@
     },
     {
       "cusip": "174610105",
-      "ticker": "CITIZ",
-      "security": "CITIZENS FINL GROUP INC (CITIZ)",
+      "ticker": "CFG",
+      "security": "CITIZENS FINL GROUP INC (CFG)",
       "name": "CITIZENS FINL GROUP INC",
       "sector": "Financials",
       "weight": 0.2,
@@ -3086,8 +3086,8 @@
     },
     {
       "cusip": "81369Y605",
-      "ticker": "SELEC",
-      "security": "SELECT SECTOR SPDR TR (SELEC)",
+      "ticker": "XLF",
+      "security": "SELECT SECTOR SPDR TR (XLF)",
       "name": "SELECT SECTOR SPDR TR",
       "sector": "Unclassified",
       "weight": 0.2,
@@ -3107,8 +3107,8 @@
     },
     {
       "cusip": "882508104",
-      "ticker": "TEXAS",
-      "security": "TEXAS INSTRS INC (TEXAS)",
+      "ticker": "TXN",
+      "security": "TEXAS INSTRS INC (TXN)",
       "name": "TEXAS INSTRS INC",
       "sector": "Information Technology",
       "weight": 0.2,
@@ -3128,8 +3128,8 @@
     },
     {
       "cusip": "989207105",
-      "ticker": "ZEBRA",
-      "security": "ZEBRA TECHNOLOGIES CORPORATI (ZEBRA)",
+      "ticker": "ZTS",
+      "security": "ZEBRA TECHNOLOGIES CORPORATI (ZTS)",
       "name": "ZEBRA TECHNOLOGIES CORPORATI",
       "sector": "Information Technology",
       "weight": 0.19,
@@ -3149,8 +3149,8 @@
     },
     {
       "cusip": "026874784",
-      "ticker": "AMERI",
-      "security": "AMERICAN INTL GROUP INC (AMERI)",
+      "ticker": "AIG",
+      "security": "AMERICAN INTL GROUP INC (AIG)",
       "name": "AMERICAN INTL GROUP INC",
       "sector": "Financials",
       "weight": 0.18,
@@ -3191,8 +3191,8 @@
     },
     {
       "cusip": "26614N102",
-      "ticker": "DUPON",
-      "security": "DUPONT DE NEMOURS INC (DUPON)",
+      "ticker": "DD",
+      "security": "DUPONT DE NEMOURS INC (DD)",
       "name": "DUPONT DE NEMOURS INC",
       "sector": "Materials",
       "weight": 0.17,
@@ -3233,8 +3233,8 @@
     },
     {
       "cusip": "29364G103",
-      "ticker": "ENTER",
-      "security": "ENTERGY CORP NEW (ENTER)",
+      "ticker": "ETR",
+      "security": "ENTERGY CORP NEW (ETR)",
       "name": "ENTERGY CORP NEW",
       "sector": "Utilities",
       "weight": 0.17,
@@ -3275,8 +3275,8 @@
     },
     {
       "cusip": "87165B103",
-      "ticker": "SYNCH",
-      "security": "SYNCHRONY FINANCIAL (SYNCH)",
+      "ticker": "SYF",
+      "security": "SYNCHRONY FINANCIAL (SYF)",
       "name": "SYNCHRONY FINANCIAL",
       "sector": "Financials",
       "weight": 0.16,
@@ -3296,8 +3296,8 @@
     },
     {
       "cusip": "438516106",
-      "ticker": "HONEY",
-      "security": "HONEYWELL INTL INC (HONEY)",
+      "ticker": "HON",
+      "security": "HONEYWELL INTL INC (HON)",
       "name": "HONEYWELL INTL INC",
       "sector": "Industrials",
       "weight": 0.16,
@@ -3380,8 +3380,8 @@
     },
     {
       "cusip": "444859102",
-      "ticker": "HUMAN",
-      "security": "HUMANA INC (HUMAN)",
+      "ticker": "HUM",
+      "security": "HUMANA INC (HUM)",
       "name": "HUMANA INC",
       "sector": "Health Care",
       "weight": 0.15,
@@ -3422,8 +3422,8 @@
     },
     {
       "cusip": "464287184",
-      "ticker": "ISHAR",
-      "security": "ISHARES TR (ISHAR)",
+      "ticker": "FXI",
+      "security": "ISHARES TR (FXI)",
       "name": "ISHARES TR",
       "sector": "Unclassified",
       "weight": 0.14,
@@ -3548,8 +3548,8 @@
     },
     {
       "cusip": "29476L107",
-      "ticker": "EQUIT",
-      "security": "EQUITY RESIDENTIAL (EQUIT)",
+      "ticker": "EQR",
+      "security": "EQUITY RESIDENTIAL (EQR)",
       "name": "EQUITY RESIDENTIAL",
       "sector": "Real Estate",
       "weight": 0.12,
@@ -3695,8 +3695,8 @@
     },
     {
       "cusip": "253868103",
-      "ticker": "DIGIT",
-      "security": "DIGITAL RLTY TR INC (DIGIT)",
+      "ticker": "DLR",
+      "security": "DIGITAL RLTY TR INC (DLR)",
       "name": "DIGITAL RLTY TR INC",
       "sector": "Real Estate",
       "weight": 0.1,
@@ -3800,8 +3800,8 @@
     },
     {
       "cusip": "12572Q105",
-      "ticker": "CME",
-      "security": "CME GROUP INC (CME)",
+      "ticker": "CMG",
+      "security": "CME GROUP INC (CMG)",
       "name": "CME GROUP INC",
       "sector": "Financials",
       "weight": 0.1,
@@ -3821,8 +3821,8 @@
     },
     {
       "cusip": "H11356104",
-      "ticker": "BUNGE",
-      "security": "BUNGE GLOBAL SA (BUNGE)",
+      "ticker": "BG",
+      "security": "BUNGE GLOBAL SA (BG)",
       "name": "BUNGE GLOBAL SA",
       "sector": "Consumer Staples",
       "weight": 0.09,
@@ -3842,8 +3842,8 @@
     },
     {
       "cusip": "19260Q107",
-      "ticker": "COINB",
-      "security": "COINBASE GLOBAL INC (COINB)",
+      "ticker": "COIN",
+      "security": "COINBASE GLOBAL INC (COIN)",
       "name": "COINBASE GLOBAL INC",
       "sector": "Financials",
       "weight": 0.09,
@@ -4052,8 +4052,8 @@
     },
     {
       "cusip": "74743L100",
-      "ticker": "QNITY",
-      "security": "QNITY ELECTRONICS INC (QNITY)",
+      "ticker": "Q",
+      "security": "QNITY ELECTRONICS INC (Q)",
       "name": "QNITY ELECTRONICS INC",
       "sector": "Information Technology",
       "weight": 0.08,
@@ -4073,8 +4073,8 @@
     },
     {
       "cusip": "874054109",
-      "ticker": "TAKE",
-      "security": "TAKE-TWO INTERACTIVE SOFTWAR (TAKE)",
+      "ticker": "TTWO",
+      "security": "TAKE-TWO INTERACTIVE SOFTWAR (TTWO)",
       "name": "TAKE-TWO INTERACTIVE SOFTWAR",
       "sector": "Communication Services",
       "weight": 0.08,
@@ -4199,8 +4199,8 @@
     },
     {
       "cusip": "032654105",
-      "ticker": "ANALO",
-      "security": "ANALOG DEVICES INC (ANALO)",
+      "ticker": "ADI",
+      "security": "ANALOG DEVICES INC (ADI)",
       "name": "ANALOG DEVICES INC",
       "sector": "Information Technology",
       "weight": 0.07,
@@ -4283,8 +4283,8 @@
     },
     {
       "cusip": "25746U109",
-      "ticker": "DOMIN",
-      "security": "DOMINION ENERGY INC (DOMIN)",
+      "ticker": "D",
+      "security": "DOMINION ENERGY INC (D)",
       "name": "DOMINION ENERGY INC",
       "sector": "Utilities",
       "weight": 0.06,
@@ -4304,8 +4304,8 @@
     },
     {
       "cusip": "464286509",
-      "ticker": "ISHAR",
-      "security": "ISHARES INC (ISHAR)",
+      "ticker": "ETF-464286",
+      "security": "ISHARES INC (ETF-464286)",
       "name": "ISHARES INC",
       "sector": "Unclassified",
       "weight": 0.06,
@@ -4409,8 +4409,8 @@
     },
     {
       "cusip": "934423104",
-      "ticker": "WARNE",
-      "security": "WARNER BROS DISCOVERY INC (WARNE)",
+      "ticker": "WBD",
+      "security": "WARNER BROS DISCOVERY INC (WBD)",
       "name": "WARNER BROS DISCOVERY INC",
       "sector": "Communication Services",
       "weight": 0.05,
@@ -4493,8 +4493,8 @@
     },
     {
       "cusip": "36266G107",
-      "ticker": "GE",
-      "security": "GE HEALTHCARE TECHNOLOGIES I (GE)",
+      "ticker": "GEHC",
+      "security": "GE HEALTHCARE TECHNOLOGIES I (GEHC)",
       "name": "GE HEALTHCARE TECHNOLOGIES I",
       "sector": "Health Care",
       "weight": 0.04,
@@ -4514,8 +4514,8 @@
     },
     {
       "cusip": "007903107",
-      "ticker": "ADVAN",
-      "security": "ADVANCED MICRO DEVICES INC (ADVAN)",
+      "ticker": "AMD",
+      "security": "ADVANCED MICRO DEVICES INC (AMD)",
       "name": "ADVANCED MICRO DEVICES INC",
       "sector": "Information Technology",
       "weight": 0.04,
@@ -4787,8 +4787,8 @@
     },
     {
       "cusip": "20030N101",
-      "ticker": "COMCA",
-      "security": "COMCAST CORP NEW (COMCA)",
+      "ticker": "CMCSA",
+      "security": "COMCAST CORP NEW (CMCSA)",
       "name": "COMCAST CORP NEW",
       "sector": "Communication Services",
       "weight": 0.03,
@@ -4871,8 +4871,8 @@
     },
     {
       "cusip": "931142103",
-      "ticker": "WALMA",
-      "security": "WALMART INC (WALMA)",
+      "ticker": "WMT",
+      "security": "WALMART INC (WMT)",
       "name": "WALMART INC",
       "sector": "Consumer Staples",
       "weight": 0.02,
@@ -4913,8 +4913,8 @@
     },
     {
       "cusip": "46982L108",
-      "ticker": "JACOB",
-      "security": "JACOBS SOLUTIONS INC (JACOB)",
+      "ticker": "J",
+      "security": "JACOBS SOLUTIONS INC (J)",
       "name": "JACOBS SOLUTIONS INC",
       "sector": "Industrials",
       "weight": 0.02,
@@ -5060,8 +5060,8 @@
     },
     {
       "cusip": "159864107",
-      "ticker": "CHARL",
-      "security": "CHARLES RIV LABS INTL INC (CHARL)",
+      "ticker": "CRL",
+      "security": "CHARLES RIV LABS INTL INC (CRL)",
       "name": "CHARLES RIV LABS INTL INC",
       "sector": "Health Care",
       "weight": 0.02,
@@ -5102,8 +5102,8 @@
     },
     {
       "cusip": "29084Q100",
-      "ticker": "EMCOR",
-      "security": "EMCOR GROUP INC (EMCOR)",
+      "ticker": "EME",
+      "security": "EMCOR GROUP INC (EME)",
       "name": "EMCOR GROUP INC",
       "sector": "Industrials",
       "weight": 0.01,
@@ -5186,8 +5186,8 @@
     },
     {
       "cusip": "12008R107",
-      "ticker": "BUILD",
-      "security": "BUILDERS FIRSTSOURCE INC (BUILD)",
+      "ticker": "BLDR",
+      "security": "BUILDERS FIRSTSOURCE INC (BLDR)",
       "name": "BUILDERS FIRSTSOURCE INC",
       "sector": "Industrials",
       "weight": 0.01,
@@ -5207,8 +5207,8 @@
     },
     {
       "cusip": "30040W108",
-      "ticker": "EVERS",
-      "security": "EVERSOURCE ENERGY (EVERS)",
+      "ticker": "ES",
+      "security": "EVERSOURCE ENERGY (ES)",
       "name": "EVERSOURCE ENERGY",
       "sector": "Utilities",
       "weight": 0.01,
@@ -5249,8 +5249,8 @@
     },
     {
       "cusip": "78464A474",
-      "ticker": "SPDR",
-      "security": "SPDR SERIES TRUST (SPDR)",
+      "ticker": "ETF-78464A",
+      "security": "SPDR SERIES TRUST (ETF-78464A)",
       "name": "SPDR SERIES TRUST",
       "sector": "Unclassified",
       "weight": 0.01,
@@ -5501,8 +5501,8 @@
     },
     {
       "cusip": "46625H100",
-      "ticker": "JPMOR",
-      "security": "JPMORGAN CHASE & CO. (JPMOR)",
+      "ticker": "JPM",
+      "security": "JPMORGAN CHASE & CO. (JPM)",
       "name": "JPMORGAN CHASE & CO.",
       "sector": "Financials",
       "weight": 0.01,
@@ -5690,8 +5690,8 @@
     },
     {
       "cusip": "303250104",
-      "ticker": "FAIR",
-      "security": "FAIR ISAAC CORP (FAIR)",
+      "ticker": "FICO",
+      "security": "FAIR ISAAC CORP (FICO)",
       "name": "FAIR ISAAC CORP",
       "sector": "Information Technology",
       "weight": 0,
@@ -5859,7 +5859,7 @@
   ],
   "topAdds": [
     {
-      "ticker": "SPDR",
+      "ticker": "ETF-78468R",
       "security": "SPDR SERIES TRUST",
       "rawDelta": 415483782,
       "deltaValue": "+$415.48M",
@@ -5877,7 +5877,7 @@
       "type": "New"
     },
     {
-      "ticker": "SELEC",
+      "ticker": "XLE",
       "security": "SELECT SECTOR SPDR TR",
       "rawDelta": 162735458,
       "deltaValue": "+$162.74M",
@@ -5951,7 +5951,7 @@
   ],
   "topTrims": [
     {
-      "ticker": "SMURF",
+      "ticker": "SW",
       "security": "SMURFIT WESTROCK PLC",
       "rawDelta": -236902558,
       "deltaValue": "-$236.90M",
@@ -5978,7 +5978,7 @@
       "type": "Trim"
     },
     {
-      "ticker": "ISHAR",
+      "ticker": "FXI",
       "security": "ISHARES TR",
       "rawDelta": -120232250,
       "deltaValue": "-$120.23M",
@@ -6023,7 +6023,7 @@
       "type": "Exit"
     },
     {
-      "ticker": "ISHAR",
+      "ticker": "TLT",
       "security": "ISHARES TR",
       "rawDelta": -89370000,
       "deltaValue": "-$89.37M",

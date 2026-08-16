@@ -156,19 +156,19 @@
   "assetTrend": [
     {
       "year": "2024 Q4",
-      "value": "301.0"
+      "value": "255.2"
     },
     {
       "year": "2025 Q1",
-      "value": "289.1"
+      "value": "284.7"
     },
     {
       "year": "2025 Q2",
-      "value": "300.4"
+      "value": "280.1"
     },
     {
       "year": "2025 Q3",
-      "value": "262.7"
+      "value": "240.2"
     },
     {
       "year": "2025 Q4",
@@ -177,11 +177,11 @@
     },
     {
       "year": "2026 Q1",
-      "value": "259.7"
+      "value": "234.6"
     },
     {
       "year": "2026 Q2",
-      "value": "307.1"
+      "value": "275.7"
     }
   ],
   "sectorHistory": [
@@ -585,8 +585,8 @@
     },
     {
       "cusip": "501044101",
-      "ticker": "KROGE",
-      "security": "KROGER CO (KROGE)",
+      "ticker": "KR",
+      "security": "KROGER CO (KR)",
       "name": "KROGER CO",
       "sector": "Consumer Staples",
       "weight": 1.14,
@@ -669,8 +669,8 @@
     },
     {
       "cusip": "92343E102",
-      "ticker": "VERIS",
-      "security": "VERISIGN INC (VERIS)",
+      "ticker": "VRSN",
+      "security": "VERISIGN INC (VRSN)",
       "name": "VERISIGN INC",
       "sector": "Information Technology",
       "weight": 0.8,
@@ -690,8 +690,8 @@
     },
     {
       "cusip": "21036P108",
-      "ticker": "CONST",
-      "security": "CONSTELLATION BRANDS INC (CONST)",
+      "ticker": "STZ",
+      "security": "CONSTELLATION BRANDS INC (STZ)",
       "name": "CONSTELLATION BRANDS INC",
       "sector": "Consumer Staples",
       "weight": 0.65,
@@ -711,8 +711,8 @@
     },
     {
       "cusip": "14040H105",
-      "ticker": "CAPIT",
-      "security": "CAPITAL ONE FINL CORP (CAPIT)",
+      "ticker": "COF",
+      "security": "CAPITAL ONE FINL CORP (COF)",
       "name": "CAPITAL ONE FINL CORP",
       "sector": "Financials",
       "weight": 0.63,
@@ -753,8 +753,8 @@
     },
     {
       "cusip": "25754A201",
-      "ticker": "DOMIN",
-      "security": "DOMINOS PIZZA INC (DOMIN)",
+      "ticker": "DPZ",
+      "security": "DOMINOS PIZZA INC (DPZ)",
       "name": "DOMINOS PIZZA INC",
       "sector": "Consumer Discretionary",
       "weight": 0.51,
@@ -816,8 +816,8 @@
     },
     {
       "cusip": "670346105",
-      "ticker": "NUCOR",
-      "security": "NUCOR CORP (NUCOR)",
+      "ticker": "NUE",
+      "security": "NUCOR CORP (NUE)",
       "name": "NUCOR CORP",
       "sector": "Materials",
       "weight": 0.38,
@@ -858,8 +858,8 @@
     },
     {
       "cusip": "526057104",
-      "ticker": "LENNA",
-      "security": "LENNAR CORP (LENNA)",
+      "ticker": "LEN",
+      "security": "LENNAR CORP (LEN)",
       "name": "LENNAR CORP",
       "sector": "Consumer Discretionary",
       "weight": 0.26,
@@ -1112,8 +1112,8 @@
     },
     {
       "cusip": "501044101",
-      "ticker": "KROGE",
-      "security": "KROGER CO (KROGE)",
+      "ticker": "KR",
+      "security": "KROGER CO (KR)",
       "name": "KROGER CO",
       "sector": "Consumer Staples",
       "weight": 1.14,
@@ -1196,8 +1196,8 @@
     },
     {
       "cusip": "92343E102",
-      "ticker": "VERIS",
-      "security": "VERISIGN INC (VERIS)",
+      "ticker": "VRSN",
+      "security": "VERISIGN INC (VRSN)",
       "name": "VERISIGN INC",
       "sector": "Information Technology",
       "weight": 0.8,
@@ -1217,8 +1217,8 @@
     },
     {
       "cusip": "21036P108",
-      "ticker": "CONST",
-      "security": "CONSTELLATION BRANDS INC (CONST)",
+      "ticker": "STZ",
+      "security": "CONSTELLATION BRANDS INC (STZ)",
       "name": "CONSTELLATION BRANDS INC",
       "sector": "Consumer Staples",
       "weight": 0.65,
@@ -1238,8 +1238,8 @@
     },
     {
       "cusip": "14040H105",
-      "ticker": "CAPIT",
-      "security": "CAPITAL ONE FINL CORP (CAPIT)",
+      "ticker": "COF",
+      "security": "CAPITAL ONE FINL CORP (COF)",
       "name": "CAPITAL ONE FINL CORP",
       "sector": "Financials",
       "weight": 0.63,
@@ -1280,8 +1280,8 @@
     },
     {
       "cusip": "25754A201",
-      "ticker": "DOMIN",
-      "security": "DOMINOS PIZZA INC (DOMIN)",
+      "ticker": "DPZ",
+      "security": "DOMINOS PIZZA INC (DPZ)",
       "name": "DOMINOS PIZZA INC",
       "sector": "Consumer Discretionary",
       "weight": 0.51,
@@ -1343,8 +1343,8 @@
     },
     {
       "cusip": "670346105",
-      "ticker": "NUCOR",
-      "security": "NUCOR CORP (NUCOR)",
+      "ticker": "NUE",
+      "security": "NUCOR CORP (NUE)",
       "name": "NUCOR CORP",
       "sector": "Materials",
       "weight": 0.38,
@@ -1385,8 +1385,8 @@
     },
     {
       "cusip": "526057104",
-      "ticker": "LENNA",
-      "security": "LENNAR CORP (LENNA)",
+      "ticker": "LEN",
+      "security": "LENNAR CORP (LEN)",
       "name": "LENNAR CORP",
       "sector": "Consumer Discretionary",
       "weight": 0.26,
@@ -1553,8 +1553,8 @@
     },
     {
       "cusip": "16119P108",
-      "ticker": "CHART",
-      "security": "CHARTER COMMUNICATIONS INC N (CHART)",
+      "ticker": "CHTR",
+      "security": "CHARTER COMMUNICATIONS INC N (CHTR)",
       "name": "CHARTER COMMUNICATIONS INC N",
       "sector": "Communication Services",
       "weight": 0.08,
@@ -1595,8 +1595,8 @@
     },
     {
       "cusip": "G0176J109",
-      "ticker": "ALLEG",
-      "security": "ALLEGION PLC (ALLEG)",
+      "ticker": "ALLE",
+      "security": "ALLEGION PLC (ALLE)",
       "name": "ALLEGION PLC",
       "sector": "Industrials",
       "weight": 0.05,
@@ -1818,7 +1818,7 @@
       "type": "New"
     },
     {
-      "ticker": "DOMIN",
+      "ticker": "DPZ",
       "security": "DOMINOS PIZZA INC",
       "rawDelta": 109011524,
       "deltaValue": "+$109.01M",
@@ -1901,7 +1901,7 @@
       "type": "Trim"
     },
     {
-      "ticker": "CONST",
+      "ticker": "STZ",
       "security": "CONSTELLATION BRANDS INC",
       "rawDelta": -11098000,
       "deltaValue": "-$11.10M",
