@@ -2,18 +2,18 @@
   "institution": {
     "id": "pershing",
     "name": "Pershing Square Capital Management, L.P.",
-    "cik": "0001336528",
+    "cik": "0002026053",
     "manager": "Bill Ackman",
     "style": "Activist",
     "imageUrl": "https://images.unsplash.com/photo-1566492031523-87d28ebd9cb0?q=80&w=200&h=200&fit=crop",
-    "aum": "13.71B",
-    "quarter": "2026 Q1",
-    "holdingsCount": 11,
-    "displayedHoldingsCount": 11,
-    "reportDate": "2026-03-31",
-    "latestFilingDate": "2026-05-15"
+    "aum": "19.47B",
+    "quarter": "2026 Q2",
+    "holdingsCount": 14,
+    "displayedHoldingsCount": 14,
+    "reportDate": "2026-06-30",
+    "latestFilingDate": "2026-08-14"
   },
-  "snapshotNote": "Bundled static snapshot for 2026 Q1. Full position count is 11; holdings table stores the top 11.",
+  "snapshotNote": "Bundled static snapshot for 2026 Q2. Full position count is 14; holdings table stores the top 14.",
   "classificationSummary": {
     "schema": "GICS-style sector mapping",
     "asOf": "2026-05-19",
@@ -22,10 +22,10 @@
       "ticker"
     ],
     "unmatchedSector": "Unclassified",
-    "holdingsClassifiedCount": 6,
-    "holdingsUnclassifiedCount": 5,
-    "classifiedWeight": 60.19,
-    "unclassifiedWeight": 39.81,
+    "holdingsClassifiedCount": 8,
+    "holdingsUnclassifiedCount": 6,
+    "classifiedWeight": 65.95,
+    "unclassifiedWeight": 34.05,
     "sectorWeightTotal": 100,
     "sources": [
       {
@@ -48,12 +48,12 @@
   "sectorWeights": [
     {
       "sector": "Information Technology",
-      "weight": 15.26,
+      "weight": 11.89,
       "benchmarkWeight": 37.02
     },
     {
       "sector": "Financials",
-      "weight": 0,
+      "weight": 16.8,
       "benchmarkWeight": 11.54
     },
     {
@@ -63,17 +63,17 @@
     },
     {
       "sector": "Consumer Discretionary",
-      "weight": 17.39,
+      "weight": 10.49,
       "benchmarkWeight": 9.55
     },
     {
       "sector": "Communication Services",
-      "weight": 11.82,
+      "weight": 14.05,
       "benchmarkWeight": 10.77
     },
     {
       "sector": "Industrials",
-      "weight": 15.71,
+      "weight": 12.72,
       "benchmarkWeight": 8.34
     },
     {
@@ -103,20 +103,20 @@
     },
     {
       "sector": "Unclassified",
-      "weight": 39.81,
+      "weight": 34.05,
       "benchmarkWeight": 0
     }
   ],
   "radarData": [
     {
       "subject": "Information Technology",
-      "A": 15.3,
+      "A": 11.9,
       "B": 37,
       "fullMark": 100
     },
     {
       "subject": "Financials",
-      "A": 0,
+      "A": 16.8,
       "B": 11.5,
       "fullMark": 100
     },
@@ -128,19 +128,19 @@
     },
     {
       "subject": "Consumer Discretionary",
-      "A": 17.4,
+      "A": 10.5,
       "B": 9.6,
       "fullMark": 100
     },
     {
       "subject": "Communication Services",
-      "A": 11.8,
+      "A": 14,
       "B": 10.8,
       "fullMark": 100
     },
     {
       "subject": "Industrials",
-      "A": 15.7,
+      "A": 12.7,
       "B": 8.3,
       "fullMark": 100
     },
@@ -176,250 +176,221 @@
     },
     {
       "subject": "Unclassified",
-      "A": 39.8,
+      "A": 34.1,
       "B": 0,
       "fullMark": 100
     }
   ],
   "assetTrend": [
     {
-      "year": "2022 Q3",
-      "value": "7.9"
-    },
-    {
-      "year": "2022 Q4",
-      "value": "8.8"
-    },
-    {
-      "year": "2023 Q1",
-      "value": "10.2"
-    },
-    {
-      "year": "2023 Q2",
-      "value": "10.8"
-    },
-    {
-      "year": "2023 Q3",
-      "value": "10.5"
-    },
-    {
-      "year": "2023 Q4",
-      "value": "10.4"
-    },
-    {
-      "year": "2024 Q1",
-      "value": "10.8"
-    },
-    {
-      "year": "2024 Q2",
-      "value": "10.4"
-    },
-    {
-      "year": "2024 Q3",
-      "value": "12.9"
-    },
-    {
-      "year": "2024 Q4",
-      "value": "12.6"
-    },
-    {
-      "year": "2025 Q1",
-      "value": "11.9"
-    },
-    {
       "year": "2025 Q2",
-      "value": "13.7"
+      "value": "607.5"
     },
     {
       "year": "2025 Q3",
-      "value": "14.6"
+      "value": "739.5"
     },
     {
       "year": "2025 Q4",
-      "value": "15.5"
+      "value": "717.9"
     },
     {
       "year": "2026 Q1",
-      "value": "13.7"
+      "value": "569.3"
+    },
+    {
+      "year": "2026 Q2",
+      "value": "19.5"
     }
   ],
   "holdings": [
     {
-      "cusip": "11271J107",
-      "security": "BROOKFIELD CORP (BROOK)",
-      "weight": 17.616254803282665,
-      "rawMktValue": 2415946008,
-      "mktValue": "2.42B",
-      "qOqDelta": "-0.40B",
-      "sector": "Unclassified",
+      "cusip": "90353T100",
+      "security": "UBER TECHNOLOGIES INC (UBER)",
+      "weight": 12.72484170490431,
+      "rawMktValue": 2476978592,
+      "mktValue": "2.48B",
+      "qOqDelta": "+2.48B",
+      "sector": "Industrials",
       "color": "#3b82f6"
     },
     {
-      "cusip": "023135106",
-      "security": "AMAZON COM INC (AMZN)",
-      "weight": 17.391365998804158,
-      "rawMktValue": 2385104083,
-      "mktValue": "2.39B",
-      "qOqDelta": "+0.17B",
-      "sector": "Consumer Discretionary",
+      "cusip": "11271J107",
+      "security": "BROOKFIELD CORP (BROOK)",
+      "weight": 12.576576753134836,
+      "rawMktValue": 2448117792,
+      "mktValue": "2.45B",
+      "qOqDelta": "+2.45B",
+      "sector": "Unclassified",
       "color": "#1d4ed8"
-    },
-    {
-      "cusip": "90353T100",
-      "security": "UBER TECHNOLOGIES INC (UBER)",
-      "weight": 15.713047110250871,
-      "rawMktValue": 2154934398,
-      "mktValue": "2.15B",
-      "qOqDelta": "-0.31B",
-      "sector": "Industrials",
-      "color": "#2dd4bf"
     },
     {
       "cusip": "594918104",
       "security": "MICROSOFT CORP (MSFT)",
-      "weight": 15.261224227361964,
-      "rawMktValue": 2092970053,
-      "mktValue": "2.09B",
-      "qOqDelta": "+2.09B",
+      "weight": 11.89392256478176,
+      "rawMktValue": 2315234425,
+      "mktValue": "2.32B",
+      "qOqDelta": "+2.32B",
       "sector": "Information Technology",
+      "color": "#2dd4bf"
+    },
+    {
+      "cusip": "023135106",
+      "security": "AMAZON COM INC (AMZN)",
+      "weight": 10.485677036555256,
+      "rawMktValue": 2041109677,
+      "mktValue": "2.04B",
+      "qOqDelta": "+2.04B",
+      "sector": "Consumer Discretionary",
       "color": "#a855f7"
-    },
-    {
-      "cusip": "76131D103",
-      "security": "RESTAURANT BRANDS INTL INC (RE",
-      "weight": 12.20260028555314,
-      "rawMktValue": 1673501194,
-      "mktValue": "1.67B",
-      "qOqDelta": "+0.11B",
-      "sector": "Unclassified",
-      "color": "#22c55e"
-    },
-    {
-      "cusip": "30303M102",
-      "security": "META PLATFORMS INC (META)",
-      "weight": 11.100518578634862,
-      "rawMktValue": 1522358404,
-      "mktValue": "1.52B",
-      "qOqDelta": "-0.24B",
-      "sector": "Communication Services",
-      "color": "#ec4899"
     },
     {
       "cusip": "44267T102",
       "security": "HOWARD HUGHES HOLDINGS INC (HO",
-      "weight": 8.695898303867486,
-      "rawMktValue": 1192581569,
-      "mktValue": "1.19B",
-      "qOqDelta": "-0.31B",
+      "weight": 10.228991479122271,
+      "rawMktValue": 1991144055,
+      "mktValue": "1.99B",
+      "qOqDelta": "+1.42B",
       "sector": "Unclassified",
+      "color": "#22c55e"
+    },
+    {
+      "cusip": "76131D103",
+      "security": "RESTAURANT BRANDS INTL INC (RE",
+      "weight": 9.618467346269693,
+      "rawMktValue": 1872301303,
+      "mktValue": "1.87B",
+      "qOqDelta": "+1.87B",
+      "sector": "Unclassified",
+      "color": "#ec4899"
+    },
+    {
+      "cusip": "30303M102",
+      "security": "META PLATFORMS INC (META)",
+      "weight": 9.24862929404504,
+      "rawMktValue": 1800309764,
+      "mktValue": "1.80B",
+      "qOqDelta": "+1.80B",
+      "sector": "Communication Services",
       "color": "#10b981"
+    },
+    {
+      "cusip": "92826C839",
+      "security": "VISA INC (V)",
+      "weight": 5.764323752268456,
+      "rawMktValue": 1122065552,
+      "mktValue": "1.12B",
+      "qOqDelta": "+1.12B",
+      "sector": "Financials",
+      "color": "#f97316"
+    },
+    {
+      "cusip": "57636Q104",
+      "security": "MASTERCARD INCORPORATED (MA)",
+      "weight": 5.605853327602288,
+      "rawMktValue": 1091218186,
+      "mktValue": "1.09B",
+      "qOqDelta": "+1.09B",
+      "sector": "Financials",
+      "color": "#1e3a8a"
+    },
+    {
+      "cusip": "78409V104",
+      "security": "S&P GLOBAL INC (S)",
+      "weight": 5.425382581395239,
+      "rawMktValue": 1056088305,
+      "mktValue": "1.06B",
+      "qOqDelta": "+1.06B",
+      "sector": "Financials",
+      "color": "#312e81"
+    },
+    {
+      "cusip": "64110L106",
+      "security": "NETFLIX INC. (NETFL)",
+      "weight": 4.798270536476953,
+      "rawMktValue": 934016601,
+      "mktValue": "0.93B",
+      "qOqDelta": "+0.93B",
+      "sector": "Communication Services",
+      "color": "#3b82f6"
+    },
+    {
+      "cusip": "71531T105",
+      "security": "PERSHING SQUARE USA LTD (PERSH",
+      "weight": 0.7681206199610515,
+      "rawMktValue": 149520000,
+      "mktValue": "0.15B",
+      "qOqDelta": "+0.15B",
+      "sector": "Unclassified",
+      "color": "#1d4ed8"
     },
     {
       "cusip": "812215200",
       "security": "SEAPORT ENTMT GROUP INC (SEAPO",
-      "weight": 0.7868487279242815,
-      "rawMktValue": 107910794,
-      "mktValue": "0.11B",
-      "qOqDelta": "+0.01B",
+      "weight": 0.686502913434557,
+      "rawMktValue": 133632548,
+      "mktValue": "0.13B",
+      "qOqDelta": "+0.13B",
       "sector": "Unclassified",
-      "color": "#f97316"
-    },
-    {
-      "cusip": "02079K107",
-      "security": "ALPHABET INC (GOOG)",
-      "weight": 0.6520327024078915,
-      "rawMktValue": 89421720,
-      "mktValue": "0.09B",
-      "qOqDelta": "-1.84B",
-      "sector": "Communication Services",
-      "color": "#1e3a8a"
+      "color": "#2dd4bf"
     },
     {
       "cusip": "42806J700",
       "security": "HERTZ GLOBAL HLDGS INC (HERTZ)",
-      "weight": 0.512323601730528,
-      "rawMktValue": 70261595,
-      "mktValue": "0.07B",
-      "qOqDelta": "-0.01B",
+      "weight": 0.17444009004828856,
+      "rawMktValue": 33955972,
+      "mktValue": "0.03B",
+      "qOqDelta": "+0.03B",
       "sector": "Unclassified",
-      "color": "#312e81"
-    },
-    {
-      "cusip": "02079K305",
-      "security": "ALPHABET INC (GOOGL)",
-      "weight": 0.06788566018215343,
-      "rawMktValue": 9310043,
-      "mktValue": "0.01B",
-      "qOqDelta": "-0.20B",
-      "sector": "Communication Services",
-      "color": "#3b82f6"
+      "color": "#a855f7"
     }
   ],
   "topAdds": [
     {
+      "ticker": "UBER",
+      "security": "UBER TECHNOLOGIES IN",
+      "deltaValue": "+2.48B",
+      "rawDelta": 2476978592,
+      "shareChange": "+100.0%",
+      "newWeight": "12.72%",
+      "type": "New"
+    },
+    {
+      "ticker": "BROOK",
+      "security": "BROOKFIELD CORP",
+      "deltaValue": "+2.45B",
+      "rawDelta": 2448117792,
+      "shareChange": "+100.0%",
+      "newWeight": "12.58%",
+      "type": "New"
+    },
+    {
       "ticker": "MSFT",
       "security": "MICROSOFT CORP",
-      "deltaValue": "+2.09B",
-      "rawDelta": 2092970053,
+      "deltaValue": "+2.32B",
+      "rawDelta": 2315234425,
       "shareChange": "+100.0%",
-      "newWeight": "15.26%",
+      "newWeight": "11.89%",
       "type": "New"
     },
     {
       "ticker": "AMZN",
       "security": "AMAZON COM INC",
-      "deltaValue": "+0.17B",
-      "rawDelta": 167426147,
-      "shareChange": "+19.2%",
-      "newWeight": "17.39%",
-      "type": "Add"
+      "deltaValue": "+2.04B",
+      "rawDelta": 2041109677,
+      "shareChange": "+100.0%",
+      "newWeight": "10.49%",
+      "type": "New"
+    },
+    {
+      "ticker": "RESTA",
+      "security": "RESTAURANT BRANDS IN",
+      "deltaValue": "+1.87B",
+      "rawDelta": 1872301303,
+      "shareChange": "+100.0%",
+      "newWeight": "9.62%",
+      "type": "New"
     }
   ],
-  "topTrims": [
-    {
-      "ticker": "GOOG",
-      "security": "ALPHABET INC",
-      "deltaValue": "-1.84B",
-      "rawDelta": 1844801000,
-      "shareChange": "-94.9%",
-      "newWeight": "0.65%",
-      "type": "Trim"
-    },
-    {
-      "ticker": "HILTO",
-      "security": "HILTON WORLDWIDE HLD",
-      "deltaValue": "-0.87B",
-      "rawDelta": 869983734,
-      "shareChange": "-100.0%",
-      "newWeight": "0.00%",
-      "type": "Exit"
-    },
-    {
-      "ticker": "BROOK",
-      "security": "BROOKFIELD CORP",
-      "deltaValue": "-0.40B",
-      "rawDelta": 401841746,
-      "shareChange": "-2.8%",
-      "newWeight": "17.62%",
-      "type": "Trim"
-    },
-    {
-      "ticker": "UBER",
-      "security": "UBER TECHNOLOGIES IN",
-      "deltaValue": "-0.31B",
-      "rawDelta": 313339547,
-      "shareChange": "-0.8%",
-      "newWeight": "15.71%",
-      "type": "Trim"
-    },
-    {
-      "ticker": "META",
-      "security": "META PLATFORMS INC",
-      "deltaValue": "-0.24B",
-      "rawDelta": 242437757,
-      "shareChange": "-0.5%",
-      "newWeight": "11.10%",
-      "type": "Trim"
-    }
-  ]
+  "topTrims": []
 }

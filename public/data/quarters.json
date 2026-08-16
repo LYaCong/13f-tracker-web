@@ -4,11 +4,10 @@
     "label": "2026 Q2",
     "path": "/data/quarters/2026-Q2",
     "isLatest": true,
-    "status": "mixed",
-    "summary": "Archived 2026 Q2 snapshot with mixed filing coverage: 11 institutions on 2026 Q2; 1 institutions on 2026 Q1.",
+    "status": "complete",
+    "summary": "Archived 2026 Q2 snapshot for all tracked institutions.",
     "quarterCounts": {
-      "2026 Q2": 11,
-      "2026 Q1": 1
+      "2026 Q2": 12
     },
     "createdAt": "2026-08-16"
   },

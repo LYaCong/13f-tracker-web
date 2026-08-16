@@ -27,15 +27,14 @@
   {
     "ticker": "GOOGL",
     "heat": 100,
-    "avgWeight": "6.24%",
+    "avgWeight": "7.13%",
     "value": "32.82B",
-    "instCount": 8,
+    "instCount": 7,
     "holdingInstitutions": [
       "berkshire",
       "tci",
       "tiger",
       "bridgewater",
-      "pershing",
       "ark",
       "soros",
       "himalaya"
@@ -92,15 +91,14 @@
   {
     "ticker": "GOOG",
     "heat": 100,
-    "avgWeight": "5.72%",
-    "value": "15.16B",
-    "instCount": 7,
+    "avgWeight": "6.57%",
+    "value": "15.07B",
+    "instCount": 6,
     "holdingInstitutions": [
       "berkshire",
       "tci",
       "bridgewater",
       "hh",
-      "pershing",
       "ark",
       "himalaya"
     ]
@@ -155,6 +153,19 @@
     ]
   },
   {
+    "ticker": "V",
+    "heat": 100,
+    "avgWeight": "6.71%",
+    "value": "11.89B",
+    "instCount": 4,
+    "holdingInstitutions": [
+      "tci",
+      "tiger",
+      "bridgewater",
+      "pershing"
+    ]
+  },
+  {
     "ticker": "CB",
     "heat": 29,
     "avgWeight": "1.36%",
@@ -164,18 +175,6 @@
       "berkshire",
       "bridgewater",
       "soros"
-    ]
-  },
-  {
-    "ticker": "V",
-    "heat": 100,
-    "avgWeight": "7.03%",
-    "value": "10.76B",
-    "instCount": 3,
-    "holdingInstitutions": [
-      "tci",
-      "tiger",
-      "bridgewater"
     ]
   },
   {
@@ -199,6 +198,19 @@
     "holdingInstitutions": [
       "tci",
       "gates"
+    ]
+  },
+  {
+    "ticker": "S",
+    "heat": 87,
+    "avgWeight": "4.24%",
+    "value": "6.87B",
+    "instCount": 4,
+    "holdingInstitutions": [
+      "tci",
+      "bridgewater",
+      "pershing",
+      "soros"
     ]
   },
   {
@@ -232,20 +244,6 @@
     "instCount": 1,
     "holdingInstitutions": [
       "gates"
-    ]
-  },
-  {
-    "ticker": "AMZN",
-    "heat": 100,
-    "avgWeight": "6.98%",
-    "value": "5.84B",
-    "instCount": 5,
-    "holdingInstitutions": [
-      "tiger",
-      "bridgewater",
-      "pershing",
-      "ark",
-      "soros"
     ]
   }
 ]
