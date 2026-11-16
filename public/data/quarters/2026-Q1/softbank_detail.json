@@ -154,27 +154,27 @@
   "assetTrend": [
     {
       "year": "2024 Q3",
-      "value": "11.6"
+      "value": "12.1"
     },
     {
       "year": "2024 Q4",
-      "value": "10.5"
+      "value": "11.0"
     },
     {
       "year": "2025 Q1",
-      "value": "12.5"
-    },
-    {
-      "year": "2025 Q2",
       "value": "11.3"
     },
     {
+      "year": "2025 Q2",
+      "value": "11.8"
+    },
+    {
       "year": "2025 Q3",
-      "value": "9.8"
+      "value": "10.4"
     },
     {
       "year": "2025 Q4",
-      "value": "11.5"
+      "value": "11.2"
     },
     {
       "year": "2026 Q1",
@@ -183,7 +183,7 @@
     },
     {
       "year": "2026 Q2",
-      "value": "12.5"
+      "value": "11.2"
     }
   ],
   "sectorHistory": [
