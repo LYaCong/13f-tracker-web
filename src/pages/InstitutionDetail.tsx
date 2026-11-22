@@ -315,10 +315,10 @@ export default function InstitutionDetail() {
             {lang.cashReserves}
           </p>
           <p className="text-xl font-black mt-1 text-text-primary">
-            {institution.cashReserves?.amount || '$1.00B'}
+            {institution.cashReserves?.amount || '—'}
           </p>
           <p className="text-[10px] font-semibold text-accent-green mt-0.5">
-            {lang.cashQoQChange}: {institution.cashReserves?.delta || '+0.00B'}
+            {lang.cashQoQChange}: {institution.cashReserves?.delta || '—'}
           </p>
         </div>
 

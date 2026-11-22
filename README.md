@@ -38,12 +38,14 @@ No paywalls. No ads. Just clean data visualization.
 The app keeps the latest dataset at `public/data/*.json` for backwards compatibility, and also archives every saved quarter under `public/data/quarters/<quarter-id>/`.
 
 - Archive index: `public/data/quarters.json`
-- Latest archive: `public/data/quarters/2026-Q1/`
+- Latest archive: `public/data/quarters/2026-Q3/`
 - Baseline archive: `public/data/quarters/2025-Q4/`
 - Header selector: switches the app with `?quarter=2025-Q4`
 - Future runs of `npm run data:fetch` update the latest files and archive the dominant quarter without deleting older quarters
-- To rebuild a specific quarter archive, run `SEC_REPORT_DATE=YYYY-MM-DD npm run data:fetch` before refreshing the latest dataset
-- The `2025 Q4` and `2026 Q1` archives currently include complete coverage for all 12 tracked institutions
+- To fetch a specific quarter, run `npm run data:fetch -- --quarter=YYYY-MM-DD`; this also makes it the latest dataset
+- The `2025 Q4` through `2026 Q3` archives each cover all 12 tracked institutions
+- The fetcher combines additional-holdings amendments with the original filing and uses restatements as replacements. It stops if a required institution or filing is unavailable.
+- Pershing Square's Q3 holdings are reported by its parent, Pershing Square Inc. (CIK 0002026053).
 - Detail pages show the full position count, but the bundled holdings table stores the top positions for a compact static payload
 - `latestFilingDate`, `reportDate`, and displayed holding counts are included in the JSON files
 
@@ -188,12 +190,14 @@ MIT
 应用会继续把最新数据放在 `public/data/*.json`，同时把每个已保存季度归档到 `public/data/quarters/<quarter-id>/`。
 
 - 归档索引：`public/data/quarters.json`
-- 最新归档：`public/data/quarters/2026-Q1/`
+- 最新归档：`public/data/quarters/2026-Q3/`
 - 起始归档：`public/data/quarters/2025-Q4/`
 - 顶部选择器：通过 `?quarter=2025-Q4` 切换数据集
 - 以后运行 `npm run data:fetch` 会更新最新版文件，并把主季度归档起来，不删除旧季度
-- 如需重建某个指定季度，可先运行 `SEC_REPORT_DATE=YYYY-MM-DD npm run data:fetch`，再刷新最新数据集
-- 当前 `2025 Q4` 和 `2026 Q1` 归档都已经覆盖全部 12 家追踪机构
+- 抓取指定季度可运行 `npm run data:fetch -- --quarter=YYYY-MM-DD`；该季度也会成为最新数据集
+- `2025 Q4` 至 `2026 Q3` 各季度归档均覆盖全部 12 家追踪机构
+- 抓取器将追加持仓修订与原始文件合并，重述修订则替换旧持仓表；机构或所需申报缺失时会停止。
+- Pershing Square 的 Q3 持仓由母公司 Pershing Square Inc.（CIK 0002026053）申报。
 - 详情页展示完整持仓数量，但静态 JSON 的持仓表只打包头部持仓，便于保持轻量
 - JSON 已包含 `latestFilingDate`、`reportDate` 和当前展示持仓数量
 

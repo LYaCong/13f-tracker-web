@@ -1,9 +1,21 @@
 [
   {
+    "id": "2026-Q3",
+    "label": "2026 Q3",
+    "path": "/data/quarters/2026-Q3",
+    "isLatest": true,
+    "status": "complete",
+    "summary": "Archived 2026 Q3 snapshot for all tracked institutions.",
+    "quarterCounts": {
+      "2026 Q3": 12
+    },
+    "createdAt": "2026-11-22"
+  },
+  {
     "id": "2026-Q2",
     "label": "2026 Q2",
     "path": "/data/quarters/2026-Q2",
-    "isLatest": true,
+    "isLatest": false,
     "status": "complete",
     "summary": "Archived 2026 Q2 snapshot for all tracked institutions.",
     "quarterCounts": {

@@ -1,0 +1,573 @@
+{
+  "institution": {
+    "id": "himalaya",
+    "name": "Himalaya Capital Management LLC",
+    "cik": "0001709323",
+    "manager": "Li Lu",
+    "style": "Concentrated",
+    "imageUrl": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=200&h=200&fit=crop",
+    "aum": "3.78",
+    "quarter": "2026 Q3",
+    "holdingsCount": 8,
+    "displayedHoldingsCount": 8,
+    "reportDate": "2026-09-30",
+    "latestFilingDate": "2026-11-16",
+    "totalBought": "$158.33M",
+    "totalSold": "$0.00B",
+    "netCapitalFlow": "+$158.33M",
+    "turnoverRate": "2.1%"
+  },
+  "snapshotNote": "Extracted from official SEC 13F-HR filing accession 0002043585-26-000030",
+  "classificationSummary": {
+    "schema": "GICS-style Local Mapping",
+    "asOf": "2026-09-30",
+    "matchingPriority": [
+      "CUSIP exact match",
+      "Ticker exact match",
+      "Unclassified"
+    ],
+    "unmatchedSector": "Unclassified",
+    "holdingsClassifiedCount": 4,
+    "holdingsUnclassifiedCount": 4,
+    "classifiedWeight": 60.79,
+    "unclassifiedWeight": 39.2,
+    "sectorWeightTotal": 99.99,
+    "sources": [
+      {
+        "name": "SEC EDGAR",
+        "url": "https://www.sec.gov/edgar/browse/?CIK=0001709323"
+      }
+    ],
+    "benchmark": {
+      "name": "S&P 500 ETF Proxy",
+      "methodology": "ETF holdings proxy aggregated by published SPY fund sector breakdown",
+      "asOf": "2026-05-19",
+      "sourceName": "SPDR S&P 500 ETF Trust (SPY)",
+      "sourceUrl": "https://www.ssga.com"
+    }
+  },
+  "sectorWeights": [
+    {
+      "sector": "Information Technology",
+      "weight": 0.97,
+      "benchmarkWeight": 37.02
+    },
+    {
+      "sector": "Financials",
+      "weight": 14.59,
+      "benchmarkWeight": 11.54
+    },
+    {
+      "sector": "Health Care",
+      "weight": 0,
+      "benchmarkWeight": 8.43
+    },
+    {
+      "sector": "Consumer Discretionary",
+      "weight": 0,
+      "benchmarkWeight": 9.55
+    },
+    {
+      "sector": "Communication Services",
+      "weight": 45.23,
+      "benchmarkWeight": 10.77
+    },
+    {
+      "sector": "Industrials",
+      "weight": 0,
+      "benchmarkWeight": 8.34
+    },
+    {
+      "sector": "Consumer Staples",
+      "weight": 0,
+      "benchmarkWeight": 4.97
+    },
+    {
+      "sector": "Energy",
+      "weight": 0,
+      "benchmarkWeight": 3.52
+    },
+    {
+      "sector": "Utilities",
+      "weight": 0,
+      "benchmarkWeight": 2.17
+    },
+    {
+      "sector": "Real Estate",
+      "weight": 0,
+      "benchmarkWeight": 1.86
+    },
+    {
+      "sector": "Materials",
+      "weight": 0,
+      "benchmarkWeight": 1.82
+    },
+    {
+      "sector": "Unclassified",
+      "weight": 39.2,
+      "benchmarkWeight": 0
+    }
+  ],
+  "radarData": [
+    {
+      "subject": "Information Technology",
+      "A": 0.97,
+      "B": 37.02,
+      "fullMark": 100
+    },
+    {
+      "subject": "Financials",
+      "A": 14.59,
+      "B": 11.54,
+      "fullMark": 100
+    },
+    {
+      "subject": "Health Care",
+      "A": 0,
+      "B": 8.43,
+      "fullMark": 100
+    },
+    {
+      "subject": "Consumer Discretionary",
+      "A": 0,
+      "B": 9.55,
+      "fullMark": 100
+    },
+    {
+      "subject": "Communication Services",
+      "A": 45.23,
+      "B": 10.77,
+      "fullMark": 100
+    },
+    {
+      "subject": "Industrials",
+      "A": 0,
+      "B": 8.34,
+      "fullMark": 100
+    }
+  ],
+  "assetTrend": [
+    {
+      "year": "2026 Q2",
+      "value": "3.7",
+      "rawValue": 3702921099
+    },
+    {
+      "year": "2026 Q3",
+      "value": "3.8",
+      "rawValue": 3781431260
+    }
+  ],
+  "sectorHistory": [
+    {
+      "quarter": "2026 Q3",
+      "Information Technology": 1,
+      "Financials": 14.6,
+      "Health Care": 0,
+      "Consumer Discretionary": 0,
+      "Communication Services": 45.2,
+      "Industrials": 0,
+      "Consumer Staples": 0,
+      "Energy": 0,
+      "Utilities": 0,
+      "Real Estate": 0,
+      "Materials": 0,
+      "Unclassified": 39.2
+    }
+  ],
+  "capitalFlow": {
+    "totalBought": "$158.33M",
+    "rawTotalBought": 158327977,
+    "totalSold": "$0.00B",
+    "rawTotalSold": 0,
+    "netCapitalFlow": "+$158.33M",
+    "rawNetCapitalFlow": 158327977,
+    "turnoverRate": "2.1%",
+    "sankey": {
+      "nodes": [
+        {
+          "name": "Capital Liquidity Pool"
+        },
+        {
+          "name": "PDD (Add)"
+        },
+        {
+          "name": "TENCE (Add)"
+        }
+      ],
+      "links": [
+        {
+          "source": 0,
+          "target": 1,
+          "value": 0.1
+        },
+        {
+          "source": 0,
+          "target": 2,
+          "value": 0.06
+        }
+      ]
+    }
+  },
+  "holdings": [
+    {
+      "cusip": "722304102",
+      "ticker": "PDD",
+      "security": "PDD HOLDINGS INC (PDD)",
+      "name": "PDD HOLDINGS INC",
+      "sector": "Unclassified",
+      "weight": 24.24,
+      "prevWeight": 22.17,
+      "weightChange": 2.07,
+      "weightChangeText": "+2.07%",
+      "shares": 11761119,
+      "sharesFormatted": "11.76M",
+      "shareChangePct": 9.3,
+      "shareChangeText": "+9.3%",
+      "action": "Add",
+      "rawMktValue": 916661615,
+      "mktValue": "0.92",
+      "rawDelta": 95803458,
+      "qOqDelta": "+0.10B",
+      "color": "#3b82f6"
+    },
+    {
+      "cusip": "02079K305",
+      "ticker": "GOOGL",
+      "security": "ALPHABET INC (GOOGL)",
+      "name": "ALPHABET INC",
+      "sector": "Communication Services",
+      "weight": 23.14,
+      "prevWeight": 24.55,
+      "weightChange": -1.4,
+      "weightChangeText": "-1.40%",
+      "shares": 2543300,
+      "sharesFormatted": "2.54M",
+      "shareChangePct": 0,
+      "shareChangeText": "0.0%",
+      "action": "Hold",
+      "rawMktValue": 875098664,
+      "mktValue": "0.88",
+      "rawDelta": -33800457,
+      "qOqDelta": "-0.03B",
+      "color": "#1d4ed8"
+    },
+    {
+      "cusip": "02079K107",
+      "ticker": "GOOG",
+      "security": "ALPHABET INC (GOOG)",
+      "name": "ALPHABET INC",
+      "sector": "Communication Services",
+      "weight": 22.09,
+      "prevWeight": 23.39,
+      "weightChange": -1.3,
+      "weightChangeText": "-1.30%",
+      "shares": 2451300,
+      "sharesFormatted": "2.45M",
+      "shareChangePct": 0,
+      "shareChangeText": "0.0%",
+      "action": "Hold",
+      "rawMktValue": 835255962,
+      "mktValue": "0.84",
+      "rawDelta": -30861867,
+      "qOqDelta": "-0.03B",
+      "color": "#2dd4bf"
+    },
+    {
+      "cusip": "084670702",
+      "ticker": "BRK-B",
+      "security": "BERKSHIRE HATHAWAY INC DEL (BRK-B)",
+      "name": "BERKSHIRE HATHAWAY INC DEL",
+      "sector": "Financials",
+      "weight": 14.59,
+      "prevWeight": 14.98,
+      "weightChange": -0.38,
+      "weightChangeText": "-0.38%",
+      "shares": 1108318,
+      "sharesFormatted": "1.11M",
+      "shareChangePct": 0,
+      "shareChangeText": "0.0%",
+      "action": "Hold",
+      "rawMktValue": 551886948,
+      "mktValue": "0.55",
+      "rawDelta": -2704296,
+      "qOqDelta": "-0.00B",
+      "color": "#a855f7"
+    },
+    {
+      "cusip": "27579R104",
+      "ticker": "EAST",
+      "security": "EAST WEST BANCORP INC (EAST)",
+      "name": "EAST WEST BANCORP INC",
+      "sector": "Unclassified",
+      "weight": 9.1,
+      "prevWeight": 9.68,
+      "weightChange": -0.58,
+      "weightChangeText": "-0.58%",
+      "shares": 2776351,
+      "sharesFormatted": "2.78M",
+      "shareChangePct": 0,
+      "shareChangeText": "0.0%",
+      "action": "Hold",
+      "rawMktValue": 344073179,
+      "mktValue": "0.34",
+      "rawDelta": -14325972,
+      "qOqDelta": "-0.01B",
+      "color": "#22c55e"
+    },
+    {
+      "cusip": "88034P109",
+      "ticker": "TENCE",
+      "security": "TENCENT MUSIC ENTERTAINM (TENCE)",
+      "name": "TENCENT MUSIC ENTERTAINM",
+      "sector": "Unclassified",
+      "weight": 3.11,
+      "prevWeight": 1.49,
+      "weightChange": 1.62,
+      "weightChangeText": "+1.62%",
+      "shares": 14824464,
+      "sharesFormatted": "14.82M",
+      "shareChangePct": 124.9,
+      "shareChangeText": "+124.9%",
+      "action": "Add",
+      "rawMktValue": 117558000,
+      "mktValue": "0.12",
+      "rawDelta": 62524519,
+      "qOqDelta": "+0.06B",
+      "color": "#ec4899"
+    },
+    {
+      "cusip": "227046109",
+      "ticker": "CROCS",
+      "security": "CROCS INC (CROCS)",
+      "name": "CROCS INC",
+      "sector": "Unclassified",
+      "weight": 2.75,
+      "prevWeight": 2.89,
+      "weightChange": -0.14,
+      "weightChangeText": "-0.14%",
+      "shares": 887093,
+      "sharesFormatted": "887.1K",
+      "shareChangePct": 0,
+      "shareChangeText": "0.0%",
+      "action": "Hold",
+      "rawMktValue": 104064880,
+      "mktValue": "0.10",
+      "rawDelta": -2954020,
+      "qOqDelta": "-0.00B",
+      "color": "#10b981"
+    },
+    {
+      "cusip": "037833100",
+      "ticker": "AAPL",
+      "security": "APPLE INC (AAPL)",
+      "name": "APPLE INC",
+      "sector": "Information Technology",
+      "weight": 0.97,
+      "prevWeight": 0.86,
+      "weightChange": 0.11,
+      "weightChangeText": "+0.11%",
+      "shares": 110600,
+      "sharesFormatted": "110.6K",
+      "shareChangePct": 0,
+      "shareChangeText": "0.0%",
+      "action": "Hold",
+      "rawMktValue": 36832012,
+      "mktValue": "0.04",
+      "rawDelta": 4828796,
+      "qOqDelta": "+0.00B",
+      "color": "#f97316"
+    }
+  ],
+  "allHoldings": [
+    {
+      "cusip": "722304102",
+      "ticker": "PDD",
+      "security": "PDD HOLDINGS INC (PDD)",
+      "name": "PDD HOLDINGS INC",
+      "sector": "Unclassified",
+      "weight": 24.24,
+      "prevWeight": 22.17,
+      "weightChange": 2.07,
+      "weightChangeText": "+2.07%",
+      "shares": 11761119,
+      "sharesFormatted": "11.76M",
+      "shareChangePct": 9.3,
+      "shareChangeText": "+9.3%",
+      "action": "Add",
+      "rawMktValue": 916661615,
+      "mktValue": "0.92",
+      "rawDelta": 95803458,
+      "qOqDelta": "+0.10B",
+      "color": "#3b82f6"
+    },
+    {
+      "cusip": "02079K305",
+      "ticker": "GOOGL",
+      "security": "ALPHABET INC (GOOGL)",
+      "name": "ALPHABET INC",
+      "sector": "Communication Services",
+      "weight": 23.14,
+      "prevWeight": 24.55,
+      "weightChange": -1.4,
+      "weightChangeText": "-1.40%",
+      "shares": 2543300,
+      "sharesFormatted": "2.54M",
+      "shareChangePct": 0,
+      "shareChangeText": "0.0%",
+      "action": "Hold",
+      "rawMktValue": 875098664,
+      "mktValue": "0.88",
+      "rawDelta": -33800457,
+      "qOqDelta": "-0.03B",
+      "color": "#1d4ed8"
+    },
+    {
+      "cusip": "02079K107",
+      "ticker": "GOOG",
+      "security": "ALPHABET INC (GOOG)",
+      "name": "ALPHABET INC",
+      "sector": "Communication Services",
+      "weight": 22.09,
+      "prevWeight": 23.39,
+      "weightChange": -1.3,
+      "weightChangeText": "-1.30%",
+      "shares": 2451300,
+      "sharesFormatted": "2.45M",
+      "shareChangePct": 0,
+      "shareChangeText": "0.0%",
+      "action": "Hold",
+      "rawMktValue": 835255962,
+      "mktValue": "0.84",
+      "rawDelta": -30861867,
+      "qOqDelta": "-0.03B",
+      "color": "#2dd4bf"
+    },
+    {
+      "cusip": "084670702",
+      "ticker": "BRK-B",
+      "security": "BERKSHIRE HATHAWAY INC DEL (BRK-B)",
+      "name": "BERKSHIRE HATHAWAY INC DEL",
+      "sector": "Financials",
+      "weight": 14.59,
+      "prevWeight": 14.98,
+      "weightChange": -0.38,
+      "weightChangeText": "-0.38%",
+      "shares": 1108318,
+      "sharesFormatted": "1.11M",
+      "shareChangePct": 0,
+      "shareChangeText": "0.0%",
+      "action": "Hold",
+      "rawMktValue": 551886948,
+      "mktValue": "0.55",
+      "rawDelta": -2704296,
+      "qOqDelta": "-0.00B",
+      "color": "#a855f7"
+    },
+    {
+      "cusip": "27579R104",
+      "ticker": "EAST",
+      "security": "EAST WEST BANCORP INC (EAST)",
+      "name": "EAST WEST BANCORP INC",
+      "sector": "Unclassified",
+      "weight": 9.1,
+      "prevWeight": 9.68,
+      "weightChange": -0.58,
+      "weightChangeText": "-0.58%",
+      "shares": 2776351,
+      "sharesFormatted": "2.78M",
+      "shareChangePct": 0,
+      "shareChangeText": "0.0%",
+      "action": "Hold",
+      "rawMktValue": 344073179,
+      "mktValue": "0.34",
+      "rawDelta": -14325972,
+      "qOqDelta": "-0.01B",
+      "color": "#22c55e"
+    },
+    {
+      "cusip": "88034P109",
+      "ticker": "TENCE",
+      "security": "TENCENT MUSIC ENTERTAINM (TENCE)",
+      "name": "TENCENT MUSIC ENTERTAINM",
+      "sector": "Unclassified",
+      "weight": 3.11,
+      "prevWeight": 1.49,
+      "weightChange": 1.62,
+      "weightChangeText": "+1.62%",
+      "shares": 14824464,
+      "sharesFormatted": "14.82M",
+      "shareChangePct": 124.9,
+      "shareChangeText": "+124.9%",
+      "action": "Add",
+      "rawMktValue": 117558000,
+      "mktValue": "0.12",
+      "rawDelta": 62524519,
+      "qOqDelta": "+0.06B",
+      "color": "#ec4899"
+    },
+    {
+      "cusip": "227046109",
+      "ticker": "CROCS",
+      "security": "CROCS INC (CROCS)",
+      "name": "CROCS INC",
+      "sector": "Unclassified",
+      "weight": 2.75,
+      "prevWeight": 2.89,
+      "weightChange": -0.14,
+      "weightChangeText": "-0.14%",
+      "shares": 887093,
+      "sharesFormatted": "887.1K",
+      "shareChangePct": 0,
+      "shareChangeText": "0.0%",
+      "action": "Hold",
+      "rawMktValue": 104064880,
+      "mktValue": "0.10",
+      "rawDelta": -2954020,
+      "qOqDelta": "-0.00B",
+      "color": "#10b981"
+    },
+    {
+      "cusip": "037833100",
+      "ticker": "AAPL",
+      "security": "APPLE INC (AAPL)",
+      "name": "APPLE INC",
+      "sector": "Information Technology",
+      "weight": 0.97,
+      "prevWeight": 0.86,
+      "weightChange": 0.11,
+      "weightChangeText": "+0.11%",
+      "shares": 110600,
+      "sharesFormatted": "110.6K",
+      "shareChangePct": 0,
+      "shareChangeText": "0.0%",
+      "action": "Hold",
+      "rawMktValue": 36832012,
+      "mktValue": "0.04",
+      "rawDelta": 4828796,
+      "qOqDelta": "+0.00B",
+      "color": "#f97316"
+    }
+  ],
+  "topAdds": [
+    {
+      "ticker": "PDD",
+      "security": "PDD HOLDINGS INC",
+      "rawDelta": 95803458,
+      "deltaValue": "+$95.80M",
+      "shareChange": "+9.3%",
+      "newWeight": "24.24%",
+      "type": "Add"
+    },
+    {
+      "ticker": "TENCE",
+      "security": "TENCENT MUSIC ENTERTAINM",
+      "rawDelta": 62524519,
+      "deltaValue": "+$62.52M",
+      "shareChange": "+124.9%",
+      "newWeight": "3.11%",
+      "type": "Add"
+    }
+  ],
+  "topTrims": []
+}

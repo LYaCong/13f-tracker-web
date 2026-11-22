@@ -24,7 +24,7 @@ const INSTITUTIONS = [
 const USER_AGENT = "13FTrackerApp/1.0 (contact@example.com)";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const OUTPUT_DIR = path.resolve(__dirname, '../public/data');
+const OUTPUT_DIR = path.resolve(process.env.SEC_OUTPUT_DIR || path.resolve(__dirname, '../public/data'));
 const SECTOR_MAP_PATH = path.resolve(__dirname, './data/gics_sector_map.json');
 const SP500_BENCHMARK_PATH = path.resolve(__dirname, './data/sp500_sector_benchmark.json');
 
@@ -373,6 +373,35 @@ async function parseHoldingsXml(xmlString) {
   return { holdings, totalValue };
 }
 
+async function loadQuarterHoldings(cik, recent, indices, reportDate) {
+  const filings = indices.filter(i => recent.reportDate[i] === reportDate).reverse();
+  if (!filings.length || recent.form[filings[0]] !== '13F-HR') {
+    throw new Error(`Missing original 13F-HR for ${reportDate}`);
+  }
+  let holdings = new Map();
+  for (const index of filings) {
+    const accession = recent.accessionNumber[index];
+    if (recent.form[index] === '13F-HR/A') {
+      const primaryUrl = `https://www.sec.gov/Archives/edgar/data/${parseInt(cik, 10)}/${accession.replace(/-/g, '')}/primary_doc.xml`;
+      const doc = await parseStringPromise(await (await fetchWithRetry(primaryUrl)).text(), { explicitArray: false, tagNameProcessors: [stripPrefix] });
+      const amendmentType = doc.edgarSubmission?.formData?.coverPage?.amendmentInfo?.amendmentType;
+      if (amendmentType === 'RESTATEMENT') holdings = new Map();
+      else if (amendmentType !== 'NEW HOLDINGS') throw new Error(`Unknown amendment type for ${accession}: ${amendmentType}`);
+    }
+    const tableUrl = await getInformationTableUrl(cik, accession);
+    if (!tableUrl) throw new Error(`Missing information table for ${accession}`);
+    const part = await parseHoldingsXml(await (await fetchWithRetry(tableUrl)).text());
+    if (!part.holdings.length) throw new Error(`Empty information table for ${accession}`);
+    for (const h of part.holdings) {
+      const existing = holdings.get(h.cusip);
+      if (existing) { existing.value += h.value; existing.shares += h.shares; }
+      else holdings.set(h.cusip, { ...h });
+    }
+  }
+  const totalValue = [...holdings.values()].reduce((sum, h) => sum + h.value, 0);
+  return { totalValue, holdings: [...holdings.values()].map(h => ({ ...h, weight: h.value / totalValue * 100 })).sort((a, b) => b.value - a.value) };
+}
+
 function normalizeBillion(val) {
   if (val >= 1e9) {
     return (val / 1e9).toFixed(2) + 'B';
@@ -456,11 +485,10 @@ async function processInstitutionForDate(inst, targetReportDate) {
     }
 
     if (currentPosition === -1) {
-      console.warn(`No 13F-HR found for ${inst.name} on ${targetReportDate}, falling back to latest.`);
-      currentPosition = 0;
+      throw new Error(`No 13F-HR found for ${inst.name} on ${targetReportDate}`);
     }
 
-    const previousIndex = all13FIndices[currentPosition + 1];
+    const previousIndex = all13FIndices.find(index => data.filings.recent.reportDate[index] < targetReportDate);
     formIndices = previousIndex === undefined
       ? [all13FIndices[currentPosition]]
       : [all13FIndices[currentPosition], previousIndex];
@@ -477,10 +505,7 @@ async function processInstitutionForDate(inst, targetReportDate) {
   const latestFilingDate = data.filings.recent.filingDate?.[latestIndex] || null;
   
   console.log(`Downloading Current XML (${latestAcc})...`);
-  const currentXmlUrl = await getInformationTableUrl(targetCik, latestAcc);
-  const currentXmlRes = await fetchWithRetry(currentXmlUrl);
-  const currentXmlText = await currentXmlRes.text();
-  const currentData = await parseHoldingsXml(currentXmlText);
+  const currentData = await loadQuarterHoldings(targetCik, data.filings.recent, all13FIndices, reportDate);
   console.log(`  -> Parsed current quarter: ${currentData.holdings.length} holdings, totalValue=${currentData.totalValue}`);
   
   let previousData = { holdings: [], totalValue: 0 };
@@ -488,12 +513,7 @@ async function processInstitutionForDate(inst, targetReportDate) {
     const prevIndex = formIndices[1];
     const prevAcc = data.filings.recent.accessionNumber[prevIndex];
     console.log(`Downloading Previous XML (${prevAcc})...`);
-    const prevXmlUrl = await getInformationTableUrl(targetCik, prevAcc);
-    if (prevXmlUrl) {
-      const prevXmlRes = await fetchWithRetry(prevXmlUrl);
-      const prevXmlText = await prevXmlRes.text();
-      previousData = await parseHoldingsXml(prevXmlText);
-    }
+    previousData = await loadQuarterHoldings(targetCik, data.filings.recent, all13FIndices, data.filings.recent.reportDate[prevIndex]);
   }
   await sleep(350);
 
@@ -658,14 +678,14 @@ async function processInstitutionForDate(inst, targetReportDate) {
   for (const q of sortedQuarters) {
     if (q.qLabel === quarterLabel) {
       assetTrend.push({ year: q.qLabel, value: (currentData.totalValue / 1e9).toFixed(1), rawValue: currentData.totalValue });
-    } else {
-      assetTrend.push({ year: q.qLabel, value: ((currentData.totalValue * (0.85 + Math.random() * 0.3)) / 1e9).toFixed(1) });
+    } else if (formIndices.length > 1 && q.reportDate === data.filings.recent.reportDate[formIndices[1]]) {
+      assetTrend.push({ year: q.qLabel, value: (previousData.totalValue / 1e9).toFixed(1), rawValue: previousData.totalValue });
     }
   }
 
   // Sector History (Multi-Quarter Drift)
   const sectorHistory = [];
-  const quartersList = ['2025 Q3', '2025 Q4', '2026 Q1', quarterLabel];
+  const quartersList = [quarterLabel];
   quartersList.forEach((q, qIdx) => {
     const row = { quarter: q };
     SECTOR_ORDER.forEach(sector => {
@@ -708,7 +728,7 @@ async function processInstitutionForDate(inst, targetReportDate) {
   const netCapitalFlowVal = totalBoughtVal - totalSoldVal;
   const netCapitalFlowSign = netCapitalFlowVal >= 0 ? '+' : '-';
   const turnoverRateVal = currentData.totalValue > 0 ? ((totalBoughtVal + totalSoldVal) / (2 * currentData.totalValue)) * 100 : 0;
-  const cashReserves = getCashReserves(inst.id, quarterLabel);
+  const cashReserves = quarterLabel === '2026 Q3' ? undefined : getCashReserves(inst.id, quarterLabel);
 
   const detailData = {
     institution: {
@@ -795,9 +815,13 @@ async function processQuarter(targetReportDate, targetDir, isLatest = false) {
   const treemapAggregator = new Map();
   const tickerMasterMap = new Map();
   
+  const processedInstitutions = [];
   for (const inst of INSTITUTIONS) {
-    try {
-      const processed = await processInstitutionForDate(inst, targetReportDate);
+    const processed = await processInstitutionForDate(inst, targetReportDate);
+    if (!processed) throw new Error(`Missing data for ${inst.name}`);
+    processedInstitutions.push({ inst, processed });
+  }
+  for (const { inst, processed } of processedInstitutions) {
       if (processed) {
         const { detailData, meta, allHoldings } = processed;
         metaResults.push(meta);
@@ -868,9 +892,6 @@ async function processQuarter(targetReportDate, targetDir, isLatest = false) {
           if (h.action === 'New') holderRecord.action = 'New';
         });
       }
-    } catch (e) {
-      console.error(`Failed processing for ${inst.name}:`, e.message);
-    }
   }
   
   writeJson(path.join(targetDir, 'institutions_meta.json'), metaResults);
@@ -1088,7 +1109,8 @@ async function main() {
   const targetArg = args.find(a => a.startsWith('--quarter='))?.split('=')[1] || process.env.SEC_REPORT_DATE;
 
   const QUARTERS_CONFIG = [
-    { reportDate: '2026-06-30', quarterId: '2026-Q2', isLatest: true },
+    { reportDate: '2026-09-30', quarterId: '2026-Q3', isLatest: true },
+    { reportDate: '2026-06-30', quarterId: '2026-Q2', isLatest: false },
     { reportDate: '2026-03-31', quarterId: '2026-Q1', isLatest: false },
     { reportDate: '2025-12-31', quarterId: '2025-Q4', isLatest: false },
   ];
@@ -1101,7 +1123,7 @@ async function main() {
   const processedManifest = [];
 
   if (targetArg) {
-    const targetDir = path.join(OUTPUT_DIR, 'quarters', quarterToId(targetArg));
+    const targetDir = path.join(OUTPUT_DIR, 'quarters', quarterToId(formatQuarter(targetArg)));
     const res = await processQuarter(targetArg, targetDir, true);
     processedManifest.push({
       id: res.quarterId,
@@ -1132,7 +1154,7 @@ async function main() {
 
   const mergedManifest = [
     ...processedManifest,
-    ...existingManifest.filter(e => !processedManifest.some(p => p.id === e.id))
+    ...existingManifest.filter(e => !processedManifest.some(p => p.id === e.id)).map(e => ({ ...e, isLatest: false }))
   ].sort((a, b) => b.id.localeCompare(a.id));
 
   writeJson(manifestPath, mergedManifest);
